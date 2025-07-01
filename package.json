@@ -6,7 +6,9 @@
   "scripts": {
     "start": "npm run clean && npx @11ty/eleventy --serve",
     "build": "npm run clean && npx @11ty/eleventy",
-    "clean": "rimraf -I _site"
+    "clean": "rimraf -I _site",
+    "lint:scss": "npm run lint:scss:cli -- '**/*.scss'",
+    "lint:scss:cli": "stylelint --cache --cache-location .cache/stylelint --cache-strategy content --color --ignore-path .gitignore --max-warnings 0"
   },
   "license": "MIT",
   "devDependencies": {
@@ -18,6 +20,9 @@
     "markdown-it-govuk": "^0.6.0",
     "nunjucks": "^3.2.4",
     "rimraf": "^5.0.10",
-    "sass": "^1.89.2"
+    "sass": "^1.89.2",
+    "stylelint": "^16.21.0",
+    "stylelint-config-gds": "^2.0.0",
+    "stylelint-order": "^7.0.0"
   }
 }
