@@ -1,5 +1,5 @@
-import markdownIt from "markdown-it";
-import markdownItGovuk from "markdown-it-govuk";
+import markdownIt from 'markdown-it'
+import markdownItGovuk from 'markdown-it-govuk'
 
 /**
  * Process a string as Markdown, treating it as a block of content (i.e. it will
@@ -9,13 +9,13 @@ import markdownItGovuk from "markdown-it-govuk";
  * @returns {string} - The resulting HTML.
  */
 const markdownFilter = function (str) {
-  return markdownConfig.render(str);
-};
+  return markdownConfig.render(str)
+}
 
 const markdownConfig = markdownIt({
   html: true,
   typographer: true,
-  breaks: true,
-}).use(markdownItGovuk);
+  breaks: true
+}).use(markdownItGovuk)
 
-export { markdownConfig, markdownFilter };
+export { markdownConfig, markdownFilter }

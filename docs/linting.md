@@ -39,7 +39,7 @@ The following npm scripts are available:
 ## Linting on commit
 
 Linting runs automatically before each commit, automatically fixing any error that can be fixed automatically.
-In very exceptional cases where you need to bypass linting before committing, add the `--no-verify` option 
+In very exceptional cases where you need to bypass linting before committing, add the `--no-verify` option
 to your `git commit` command.
 
 This is powered by [Husky] and [lint-staged].
