@@ -46,3 +46,7 @@ This is powered by [Husky] and [lint-staged].
 
 [Husky]: https://typicode.github.io/husky/
 [lint-staged]: https://github.com/lint-staged/lint-staged
+
+## Linting on CI
+
+The `.github/workflows/test.yml` GitHub workflow runs all linter on CI to ensure code being merged into `main` is properly formatted and doesn't have automatically findable issues.
