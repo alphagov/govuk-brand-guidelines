@@ -12,3 +12,15 @@ The following npm scripts are available:
 [gds-way-css-linting]: https://gds-way.digital.cabinet-office.gov.uk/manuals/programming-languages/css.html#linting
 [stylelint]: https://stylelint.io/
 [stylelint-config-gds]: https://github.com/alphagov/stylelint-config-gds/
+
+## JavaScript
+
+JavaScript files are linted using [ESLint] and [neostandard], configured in [eslint.config.js](../eslint.config.js).
+
+The following npm scripts are available:
+
+- `npm run lint:js`: Lints all the JavaScript files in the project
+- `npm run lint:js:cli -- <PATH_TO_FILE_OR_GLOB>`: Lints a specific file (or multiple ones if a glob matches multiple files)
+
+[ESLint]: https://eslint.org/
+[neostandard]: https://github.com/neostandard/neostandard
