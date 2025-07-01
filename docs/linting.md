@@ -25,6 +25,17 @@ The following npm scripts are available:
 [ESLint]: https://eslint.org/
 [neostandard]: https://github.com/neostandard/neostandard
 
+## Prettier
+
+To ensure consistent formatting of files, Prettier is set up in the repository, to run over both Sass and JavaScript, but also Markdown and YAML.
+
+To conform with our usual code style, some adaptations are made in [`.prettierrc.js`](.prettierrc.js)
+
+The following npm scripts are available:
+
+- `npm run lint:prettier`: Formats Sass, JavaScript, Markdown and YAML files in the project
+- `npm run lint:prettier:cli -- <PATH_TO_FILE_OR_GLOB>`: Lints a specific file (or multiple ones if a glob matches multiple files)
+
 ## Linting on commit
 
 Linting runs automatically before each commit, automatically fixing any error that can be fixed automatically.
