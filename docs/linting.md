@@ -24,3 +24,14 @@ The following npm scripts are available:
 
 [ESLint]: https://eslint.org/
 [neostandard]: https://github.com/neostandard/neostandard
+
+## Linting on commit
+
+Linting runs automatically before each commit, automatically fixing any error that can be fixed automatically.
+In very exceptional cases where you need to bypass linting before committing, add the `--no-verify` option 
+to your `git commit` command.
+
+This is powered by [Husky] and [lint-staged].
+
+[Husky]: https://typicode.github.io/husky/
+[lint-staged]: https://github.com/lint-staged/lint-staged
