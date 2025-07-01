@@ -1,5 +1,6 @@
 import paths from "./config/paths.js";
 
+import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import nunjucks from "nunjucks";
 
 import { markdownConfig, markdownFilter } from "./config/markdown.js";
@@ -10,8 +11,32 @@ import compileSass from "./tasks/sass.js";
  */
 
 export default function (eleventyConfig) {
+  // Load Eleventy image plugin. In this configuration, it automatically
+  // resizes and compresses the sources of <img>s referenced in output HTML
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+    // Output image formats
+    formats: ["svg", "avif", "webp"],
+
+    // If the input is SVG, only output SVG
+    svgShortCircuit: true,
+
+    // Output image widths
+    // These represent full-width, two-thirds and one-third grid widths respectively
+    widths: [960, 630, 300],
+
+    // Attributes on the output HTML
+    htmlOptions: {
+      imgAttributes: {
+        class: "app-prose-image",
+        loading: "lazy",
+        decoding: "async",
+      },
+      pictureAttributes: {},
+    },
+  });
+
   // Add govuk-frontend to places Nunjucks will look for templates
-  let nunjucksEnvironment = new nunjucks.Environment(
+  const nunjucksEnvironment = new nunjucks.Environment(
     new nunjucks.FileSystemLoader([
       "./src",
       "./node_modules/govuk-frontend/dist",
