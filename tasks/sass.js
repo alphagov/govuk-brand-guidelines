@@ -1,6 +1,7 @@
 import paths from "../config/paths.js";
 
 import { mkdir, writeFile } from "node:fs/promises";
+import { basename } from "node:path";
 import { glob } from "glob";
 import * as sass from "sass";
 
@@ -8,7 +9,7 @@ const compileSassFile = function (file) {
   const result = sass.compile(file, {
     loadPaths: ["./node_modules/govuk-frontend/dist"],
     sourceMap: false,
-    outputStyle: "expanded",
+    outputStyle: "compressed",
   });
   return result.css.toString();
 };
@@ -20,16 +21,13 @@ export default async function () {
   });
 
   // Loop through files
-  for await (const file of files) {
+  for (const file of files) {
     // Get the filename and replace .scss with .css
-    const filenameParts = file.split("/");
-    const filename = filenameParts[filenameParts.length - 1].replace(
-      ".scss",
-      ".css",
-    );
+    const sourceFileName = basename(file);
+    const filename = sourceFileName.replace(".scss", ".css");
 
     // Compile Sass to CSS
-    let css = compileSassFile(file);
+    const css = compileSassFile(file);
 
     // Create the output assets directory if it doesn't already exist
     await mkdir(`${paths.output}/assets`, {
