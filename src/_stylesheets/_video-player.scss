@@ -1,0 +1,87 @@
+.app-video-player {
+  // Shrink to fit the width of the video element
+  display: inline-block;
+  position: relative;
+
+  // Remove additional whitespace below the video element
+  line-height: 0;
+
+  video {
+    // Show the pause button when the video is being hovered over
+    &:hover + .app-video-player__button--pause {
+      opacity: 1;
+    }
+
+    // Ensure video element has visible focus state if it does receive focus
+    &:focus {
+      @include govuk-focused-box;
+    }
+  }
+}
+
+.app-video-player__button {
+  $button-size: 5em;
+  $symbol-size: 2.5em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: $button-size;
+  height: $button-size;
+  padding: 0;
+  border: $govuk-border-width-form-element solid govuk-colour("white");
+  border-radius: 50%;
+  position: absolute;
+  top: calc(50% - ($button-size * 0.5));
+  left: calc(50% - ($button-size * 0.5));
+  color: govuk-colour("white");
+  background: govuk-colour("blue");
+  cursor: pointer;
+  @include govuk-font(19, $weight: "bold");
+
+  &::before {
+    content: "";
+    display: block;
+    width: $symbol-size;
+    height: $symbol-size;
+    background-color: currentcolor;
+  }
+
+  &:focus {
+    @include govuk-focused-box;
+  }
+}
+
+.app-video-player__button--play {
+  &::before {
+    // Play buttons are visually lopsided, so nudge it over a bit
+    margin-left: 0.5em;
+
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
+  }
+}
+
+.app-video-player__button--pause {
+  opacity: 0;
+  transition: opacity 0.3333s ease-in-out;
+
+  &::before {
+    // This clip path intentionally leaves the bounds of the element to create
+    // the two distinct shapes
+    clip-path: polygon(
+      0 101%,
+      0 0,
+      33% 0,
+      33% 101%,
+      67% 101%,
+      67% 0,
+      100% 0,
+      100% 101%
+    );
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+}
