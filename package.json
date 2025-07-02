@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "type": "module",
+  "name": "govuk-brand-guidelines",
+  "description": "GOV.UK brand guidelines website.",
+  "scripts": {
+    "start": "npm run clean && npx @11ty/eleventy --serve",
+    "build": "npm run clean && npx @11ty/eleventy",
+    "clean": "rimraf -I _site"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "@11ty/eleventy-img": "^6.0.4",
+    "glob": "^11.0.3",
+    "govuk-frontend": "^5.11.0",
+    "markdown-it": "^14.1.0",
+    "markdown-it-govuk": "^0.6.0",
+    "nunjucks": "^3.2.4",
+    "rimraf": "^5.0.10",
+    "sass": "^1.89.2"
+  }
+}

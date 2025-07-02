@@ -1,0 +1,18 @@
+{% extends "govuk/template.njk" %}
+
+{% block pageTitle %}
+  {{- title -}}
+{% endblock %}
+
+{% block head %}
+  {{ super() }}
+  <link rel="stylesheet" href="{{ '/assets/stylesheet.css' | url }}">
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      {{ content | safe }}
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,15 @@
+# Temporary only
+.cache/
+.tmp/
+
+# Node.js modules
+node_modules/
+
+# Build output
+_site/
+
+# Files to ignore
+.DS_Store
+*.log
+*.tsbuildinfo
+*.zip
