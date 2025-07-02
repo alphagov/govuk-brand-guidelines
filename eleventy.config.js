@@ -4,6 +4,7 @@ import { eleventyImageTransformPlugin } from '@11ty/eleventy-img'
 import nunjucks from 'nunjucks'
 
 import { markdownConfig, markdownFilter } from './config/markdown.js'
+import bundleJs from "./tasks/javascript.js";
 import compileSass from './tasks/sass.js'
 
 /**
@@ -51,6 +52,10 @@ export default function (eleventyConfig) {
   // Watch and compile Sass files on change
   eleventyConfig.addWatchTarget(`${paths.source}/**/*.scss`)
   eleventyConfig.on('beforeBuild', compileSass)
+
+  // Watch and bundle JS files on change
+  eleventyConfig.addWatchTarget(`${paths.source}/**/*.js`);
+  eleventyConfig.on("beforeBuild", bundleJs);
 
   // Copy font and image assets from govuk-frontend to the project
   eleventyConfig.addPassthroughCopy({

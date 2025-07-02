@@ -30,11 +30,11 @@ export default async function () {
     const css = compileSassFile(file)
 
     // Create the output assets directory if it doesn't already exist
-    await mkdir(`${paths.output}/assets`, {
+    await mkdir(`${paths.outputAssets}`, {
       recursive: true
     })
 
     // Write the CSS file
-    await writeFile(`${paths.output}/assets/${filename}`, css)
+    await writeFile(`${paths.outputAssets}/${filename}`, css)
   }
 }
