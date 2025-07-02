@@ -9,7 +9,9 @@ const compileSassFile = function (file) {
   const result = sass.compile(file, {
     loadPaths: ['./node_modules/govuk-frontend/dist'],
     sourceMap: false,
-    outputStyle: 'compressed'
+    outputStyle: 'compressed',
+    silenceDeprecations: ['import'],
+    quietDeps: true // silence warnings from govuk-frontend
   })
   return result.css.toString()
 }
