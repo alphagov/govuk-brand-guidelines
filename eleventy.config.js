@@ -46,7 +46,6 @@ export default function (eleventyConfig) {
 
   // Enable the rebrand styles and assets
   nunjucksEnvironment.addGlobal('govukRebrand', true)
-
   eleventyConfig.setLibrary('njk', nunjucksEnvironment)
 
   // Watch and compile Sass files on change
@@ -61,6 +60,9 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
     './node_modules/govuk-frontend/dist/govuk/assets': 'assets'
   })
+
+  // Copy video files
+  eleventyConfig.addPassthroughCopy(`${paths.source}/videos`, 'videos')
 
   // Configure markdown-it and add Markdown shortcode/filter
   eleventyConfig.setLibrary('md', markdownConfig)
