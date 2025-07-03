@@ -14,5 +14,5 @@ export default {
 
   // Output directory
   output: join(rootPath, '_site'),
-  outputAssets: join(rootPath, "_site", "assets"),
-};
+  outputAssets: join(rootPath, '_site', 'assets')
+}
