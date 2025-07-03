@@ -5,6 +5,7 @@ import { basename } from "node:path";
 import { globSync } from "glob";
 import { rollup } from "rollup";
 import nodeResolve from "@rollup/plugin-node-resolve";
+import terser from "@rollup/plugin-terser";
 
 const generateOutputs = async function (bundle) {
   const { output } = await bundle.generate({
@@ -39,7 +40,7 @@ export default async function () {
   try {
     bundle = await rollup({
       input: globSync(`${paths.source}/_javascript/**/*.js`),
-      plugins: [nodeResolve()],
+      plugins: [nodeResolve(), terser()],
     });
 
     await generateOutputs(bundle);
