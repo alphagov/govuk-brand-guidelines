@@ -8,17 +8,21 @@ import postcss from 'postcss'
 import autoprefixer from 'autoprefixer'
 import cssnano from 'cssnano'
 
-const compileSassFile = function (file) {
-  const result = sass.compile(file, {
+const compileSassFile = async function (file) {
+  const sassCompilationResult = sass.compile(file, {
     loadPaths: ['./node_modules/govuk-frontend/dist'],
     sourceMap: false,
     outputStyle: 'compressed',
     silenceDeprecations: ['import'],
     quietDeps: true // silence warnings from govuk-frontend
   })
-  return postcss([autoprefixer, cssnano])
-    .process(result.css.toString(), { from: undefined })
-    .then(async (result) => result.css)
+
+  const postcssCompilationResult = await postcss([
+    autoprefixer,
+    cssnano
+  ]).process(sassCompilationResult.css.toString(), { from: undefined })
+
+  return postcssCompilationResult.css
 }
 
 export default async function () {
