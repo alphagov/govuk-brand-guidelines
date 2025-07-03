@@ -4,6 +4,9 @@ import { mkdir, writeFile } from 'node:fs/promises'
 import { basename } from 'node:path'
 import { glob } from 'glob'
 import * as sass from 'sass'
+import postcss from 'postcss'
+import autoprefixer from 'autoprefixer'
+import cssnano from 'cssnano'
 
 const compileSassFile = function (file) {
   const result = sass.compile(file, {
@@ -13,7 +16,9 @@ const compileSassFile = function (file) {
     silenceDeprecations: ['import'],
     quietDeps: true // silence warnings from govuk-frontend
   })
-  return result.css.toString()
+  return postcss([autoprefixer, cssnano])
+    .process(result.css.toString(), { from: undefined })
+    .then(async (result) => result.css)
 }
 
 export default async function () {
@@ -29,7 +34,7 @@ export default async function () {
     const filename = sourceFileName.replace('.scss', '.css')
 
     // Compile Sass to CSS
-    const css = compileSassFile(file)
+    const css = await compileSassFile(file)
 
     // Create the output assets directory if it doesn't already exist
     await mkdir(`${paths.outputAssets}`, {
