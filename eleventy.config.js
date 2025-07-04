@@ -46,8 +46,28 @@ export default function (eleventyConfig) {
     './node_modules/govuk-frontend/dist/govuk/assets': 'assets'
   })
 
+  // Configure markdown-it and add Markdown shortcode/filter
   eleventyConfig.addPlugin(setupMarkdownCompilation)
-  console.log('Ending Eleventy configuration')
+
+  eleventyConfig.addGlobalData('layout', 'generic')
+
+  eleventyConfig.addCollection('navigation', (collectionAPI) => {
+    const firstLevelPages = collectionAPI
+      .getFilteredByGlob('src/*/index.md')
+      .filter((page) => !page.data.excludeFromNavigation)
+      .toSorted((a, b) => a.data.order - b.data.order)
+
+    const navigationItems = firstLevelPages.map((page) => {
+      const title = page.rawInput.match(/# (.*)/).at(1)
+      return {
+        href: page.url,
+        text: title
+      }
+    })
+
+    return navigationItems
+  })
+
   return {
     markdownTemplateEngine: 'njk',
     dir: {
