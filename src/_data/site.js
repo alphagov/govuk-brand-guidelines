@@ -1,5 +1,8 @@
 export default function () {
   return {
+    // The absolute URL of the site
+    url: 'http://example.com',
+
     env: {
       // Netlify deploy context
       // Possible values: "dev", "branch-deploy", "deploy-preview", "production"
