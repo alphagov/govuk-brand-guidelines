@@ -1,3 +1,7 @@
+---
+order: 0
+---
+
 # GOV.UK brand guidelines
 
 ## Brand ambition

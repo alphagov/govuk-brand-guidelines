@@ -1,3 +1,7 @@
+---
+order: 2
+---
+
 # Maps
 
 ## Elements of a map
