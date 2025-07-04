@@ -1,4 +1,18 @@
-@use 'govuk' as *;
+// Import govuk-frontend's settings, helpers, etc. into global namespace
+@use 'govuk/base' as *;
+
+// Other partials can't be @use'd as they lack internal dependency references
+@import 'govuk/core';
+@import 'govuk/objects';
+
+@import 'govuk/components/footer';
+@import 'govuk/components/header';
+@import 'govuk/components/phase-banner';
+@import 'govuk/components/service-navigation';
+@import 'govuk/components/skip-link';
+
+@import 'govuk/utilities';
+@import 'govuk/overrides';
 
 .app-prose-image {
   max-width: 100%;

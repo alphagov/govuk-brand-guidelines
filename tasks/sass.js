@@ -4,14 +4,25 @@ import { mkdir, writeFile } from 'node:fs/promises'
 import { basename } from 'node:path'
 import { glob } from 'glob'
 import * as sass from 'sass'
+import postcss from 'postcss'
+import autoprefixer from 'autoprefixer'
+import cssnano from 'cssnano'
 
-const compileSassFile = function (file) {
-  const result = sass.compile(file, {
+const compileSassFile = async function (file) {
+  const sassCompilationResult = sass.compile(file, {
     loadPaths: ['./node_modules/govuk-frontend/dist'],
     sourceMap: false,
-    outputStyle: 'compressed'
+    outputStyle: 'compressed',
+    silenceDeprecations: ['import'],
+    quietDeps: true // silence warnings from govuk-frontend
   })
-  return result.css.toString()
+
+  const postcssCompilationResult = await postcss([
+    autoprefixer,
+    cssnano
+  ]).process(sassCompilationResult.css.toString(), { from: undefined })
+
+  return postcssCompilationResult.css
 }
 
 export default async function () {
@@ -27,14 +38,14 @@ export default async function () {
     const filename = sourceFileName.replace('.scss', '.css')
 
     // Compile Sass to CSS
-    const css = compileSassFile(file)
+    const css = await compileSassFile(file)
 
     // Create the output assets directory if it doesn't already exist
-    await mkdir(`${paths.output}/assets`, {
+    await mkdir(`${paths.outputAssets}`, {
       recursive: true
     })
 
     // Write the CSS file
-    await writeFile(`${paths.output}/assets/${filename}`, css)
+    await writeFile(`${paths.outputAssets}/${filename}`, css)
   }
 }

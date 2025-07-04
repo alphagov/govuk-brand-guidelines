@@ -13,5 +13,6 @@ export default {
   source: join(rootPath, 'src'),
 
   // Output directory
-  output: join(rootPath, '_site')
+  output: join(rootPath, '_site'),
+  outputAssets: join(rootPath, '_site', 'assets')
 }
