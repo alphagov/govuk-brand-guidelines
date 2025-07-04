@@ -5,6 +5,7 @@ import { promisify } from 'node:util'
 import { parse } from 'csv'
 import slug from 'slug'
 import { dirname, join } from 'node:path'
+import matter from 'gray-matter'
 
 const parseCSV = promisify(parse)
 
@@ -54,7 +55,7 @@ for (const heading of headings) {
 
 const promises = []
 // Now let's traverse the pages to create the appropriate files
-traverse(headings[0], 'pages', (page, ancestors) => {
+traverse(headings[0], 'pages', (page, {ancestors, index}) => {
   const pathParts = ancestors
     // Ignore the home page's slug for generating the paths
     // as we want the pages to be directly in `src` not in `src/<HOMEPAGE_SLUG>`
@@ -69,7 +70,13 @@ traverse(headings[0], 'pages', (page, ancestors) => {
     .join('\n\n')
   const content = `# ${page.proposedTitle}\n\n${sections}`
 
-  promises.push(writeDeepFile(filePath, content))
+  const data = {
+    order: index
+  }
+
+  const fileContent = matter.stringify(content, data)
+
+  promises.push(writeDeepFile(filePath, fileContent))
 })
 
 await Promise.all(promises)
@@ -82,12 +89,16 @@ async function writeDeepFile(filePath, ...args) {
   await writeFile(filePath, ...args)
 }
 
-function traverse(object, property, callback, ancestors = []) {
-  callback(object, ancestors)
+function traverse(object, property, callback, {ancestors = [], index = 0} = {}) {
+  callback(object, {ancestors, index})
   if (object[property]) {
     const childAncestors = [...ancestors, object]
-    for (const child of object[property]) {
-      traverse(child, property, callback, childAncestors)
-    }
+
+    object[property].forEach((child, index) => {
+      traverse(child, property, callback, {
+        index,
+        ancestors: childAncestors
+      })
+    })
   }
 }

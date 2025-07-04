@@ -1,3 +1,7 @@
+---
+order: 1
+---
+
 # Charts
 
 ## Elements of a chart

@@ -1,3 +1,7 @@
+---
+order: 1
+---
+
 # Examples
 
 ## App splash screen

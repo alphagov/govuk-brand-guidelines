@@ -1,3 +1,7 @@
+---
+order: 1
+---
+
 # Logo
 
 ## The GOV.UK logo system

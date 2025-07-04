@@ -28,6 +28,7 @@
     "eslint-config-prettier": "^10.1.5",
     "glob": "^11.0.3",
     "govuk-frontend": "^5.11.0",
+    "gray-matter": "^4.0.3",
     "husky": "^9.1.7",
     "lint-staged": "^16.1.2",
     "markdown-it": "^14.1.0",
@@ -38,10 +39,10 @@
     "prettier": "^3.6.2",
     "rimraf": "^5.0.10",
     "rollup": "^4.44.1",
+    "sass": "^1.89.2",
     "slug": "^11.0.0",
     "stylelint": "^16.21.0",
     "stylelint-config-gds": "^2.0.0",
-    "stylelint-order": "^7.0.0",
-    "sass": "^1.89.2"
+    "stylelint-order": "^7.0.0"
   }
 }
