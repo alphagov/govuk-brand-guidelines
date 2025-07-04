@@ -8,3 +8,13 @@ Aliquip incididunt officia proident pariatur pariatur laborum sit labore deserun
 Non minim irure nisi adipisicing laborum. Dolor dolore minim ex ad et excepteur irure minim consectetur est.
 
 ![This is a test SVG.](images/Lock-up_PrimaryBlack.svg)
+
+{% from "./_includes/video-player.njk" import appVideoPlayer %}
+{{ appVideoPlayer({
+  width: 225,
+  height: 400,
+  sources: [{
+    fileName: "/videos/endcard-portrait.mp4",
+    type: "video/mp4"
+  }]
+}) }}
