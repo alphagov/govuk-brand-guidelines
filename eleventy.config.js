@@ -4,6 +4,7 @@ import { setupNunjucks } from './eleventy/nunjucks.js'
 import { setupStylesheetCompilation } from './eleventy/stylesheets.js'
 import { setupJavaScriptCompilation } from './eleventy/javascript.js'
 import { setupMarkdownCompilation } from './eleventy/markdown.js'
+import { dirname as posixDirname } from 'node:path/posix'
 
 /**
  *  @param {import("@11ty/eleventy/UserConfig")} eleventyConfig
@@ -52,20 +53,53 @@ export default function (eleventyConfig) {
   eleventyConfig.addGlobalData('layout', 'generic')
 
   eleventyConfig.addCollection('navigation', (collectionAPI) => {
-    const firstLevelPages = collectionAPI
-      .getFilteredByGlob('src/*/index.md')
-      .filter((page) => !page.data.excludeFromNavigation)
-      .toSorted((a, b) => a.data.order - b.data.order)
+    // First sort the pages by the depth of their URL.
+    // This will simplify the processing, ensuring parents
+    // are processed before their decendants, making it easier
+    // to look up a parent when processing a descendant
+    const pages = collectionAPI
+      .getFilteredByGlob('src/**/*.md')
+      .toSorted((a, b) => depth(a) - depth(b))
 
-    const navigationItems = firstLevelPages.map((page) => {
-      const title = page.rawInput.match(/# (.*)/).at(1)
-      return {
-        href: page.url,
-        text: title
+    // To associate a child page with its parent, we'll look up
+    // the parent using its URL. Storing the pages in a `url => page`
+    // hash will help that look up
+    const pagesByUrl = {}
+
+    // Off we go, through the pages, looking up their parent in the hash
+    // making the association in their `data` through the `parent` and `children`
+    // properties
+    for (const page of pages) {
+      const parentPath = posixDirname(page.url)
+      const parentUrl = parentPath.endsWith('/') ? parentPath : parentPath + '/'
+
+      const parent = pagesByUrl[parentUrl]
+      if (parent) {
+        page.data.parent = parent
+        parent.data.children.push(page)
       }
-    })
 
-    return navigationItems
+      page.data.children = []
+      pagesByUrl[page.url] = page
+    }
+
+    // Last thing before we can use the `children` data is to make
+    // sure it is sorted according to the `order` property
+    for (const page of pages) {
+      page.data.children?.sort((a, b) => a.data.order - b.data.order)
+      // Pre-compute navigation items
+      page.data.navigationItems = page.data.children.map((page) => {
+        const title = page.data.title ?? page.rawInput.match(/# (.*)/).at(1)
+        return {
+          href: page.url,
+          text: title
+        }
+      })
+    }
+
+    const homepage = pagesByUrl['/']
+
+    return homepage.data.navigationItems
   })
 
   return {
@@ -76,4 +110,8 @@ export default function (eleventyConfig) {
       layouts: '_layouts'
     }
   }
+}
+
+function depth(eleventyPage) {
+  return eleventyPage.page.url.split('/').length
 }
