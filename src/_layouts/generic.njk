@@ -19,6 +19,12 @@
   {{ govukServiceNavigation({
     navigation: collections.navigation
   }) }}
+
+  {%- if page.url != '/' and navigationItems | length %}
+    {{ govukServiceNavigation({
+      navigation: navigationItems
+    }) }}
+  {% endif %}
 {% endblock %}
 
 {% block beforeContent %}
