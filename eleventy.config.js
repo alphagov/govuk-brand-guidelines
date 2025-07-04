@@ -67,6 +67,25 @@ export default function (eleventyConfig) {
   eleventyConfig.addPairedNunjucksShortcode('markdown', markdownFilter)
   eleventyConfig.addFilter('markdown', markdownFilter)
 
+  eleventyConfig.addGlobalData('layout', 'generic')
+
+  eleventyConfig.addCollection('navigation', (collectionAPI) => {
+    const firstLevelPages = collectionAPI
+      .getFilteredByGlob('src/*/index.md')
+      .filter((page) => !page.data.excludeFromNavigation)
+      .toSorted((a, b) => a.data.order - b.data.order)
+
+    const navigationItems = firstLevelPages.map((page) => {
+      const title = page.rawInput.match(/# (.*)/).at(1)
+      return {
+        href: page.url,
+        text: title
+      }
+    })
+
+    return navigationItems
+  })
+
   return {
     markdownTemplateEngine: 'njk',
     dir: {
