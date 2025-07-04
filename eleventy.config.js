@@ -113,11 +113,23 @@ export default function (eleventyConfig) {
           text: title
         }
       })
+
+      page.data.ancestors = getAncestors(page)
     }
 
     const homepage = pagesByUrl['/']
 
     return homepage.data.navigationItems
+  })
+
+  eleventyConfig.addFilter('asBreadcrumbItems', (pages) => {
+    return pages.map((page) => {
+      const title = page.data.title ?? page.rawInput.match(/# (.*)/).at(1)
+      return {
+        href: page.url,
+        text: page.url === '/' ? 'Home' : title
+      }
+    })
   })
 
   return {
@@ -128,6 +140,16 @@ export default function (eleventyConfig) {
       layouts: '_layouts'
     }
   }
+}
+
+function getAncestors(page) {
+  const ancestors = []
+  let current = page
+  while (current.data.parent) {
+    ancestors.push(current.data.parent)
+    current = current.data.parent
+  }
+  return ancestors.toReversed()
 }
 
 function depth(eleventyPage) {
