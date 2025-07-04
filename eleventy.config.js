@@ -48,7 +48,7 @@ export default function (eleventyConfig) {
   })
 
   // Copy video files
-  eleventyConfig.addPassthroughCopy(`${paths.source}/videos`, 'videos')
+  eleventyConfig.addPassthroughCopy(`./src/videos`, 'videos')
 
   // Configure markdown-it and add Markdown shortcode/filter
   eleventyConfig.addPlugin(setupMarkdownCompilation)
