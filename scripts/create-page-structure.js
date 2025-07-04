@@ -61,7 +61,16 @@ traverse(headings[0], 'pages', (page, {ancestors, index}) => {
     // as we want the pages to be directly in `src` not in `src/<HOMEPAGE_SLUG>`
     .filter((ancestor) => ancestor.level !== 1)
     .map((ancestor) => ancestor.slug)
-  const filePath = join('src', ...pathParts, page.slug, 'index.md')
+
+  const filePathParts = [
+    'src',
+    ...pathParts,
+    // We don't want the home page to be `src/<HOMEPAGE_SLUG>/index.md`, just `src/index.md`
+    page.level !== 1 && page.slug,
+    'index.md'
+  ].filter(Boolean)
+
+  const filePath = join(...filePathParts)
 
   const sections = page.sections
     // Ignore sections that are being dropped because of lack of content
