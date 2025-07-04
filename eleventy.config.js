@@ -6,6 +6,7 @@ import nunjucks from 'nunjucks'
 import { markdownConfig, markdownFilter } from './config/markdown.js'
 import bundleJs from './tasks/javascript.js'
 import compileSass from './tasks/sass.js'
+import { dirname as posixDirname } from 'node:path/posix'
 
 /**
  *  @param {import("@11ty/eleventy/src/UserConfig")} eleventyConfig
@@ -67,6 +68,70 @@ export default function (eleventyConfig) {
   eleventyConfig.addPairedNunjucksShortcode('markdown', markdownFilter)
   eleventyConfig.addFilter('markdown', markdownFilter)
 
+  eleventyConfig.addGlobalData('layout', 'generic')
+
+  eleventyConfig.addCollection('navigation', (collectionAPI) => {
+    // First sort the pages by the depth of their URL.
+    // This will simplify the processing, ensuring parents
+    // are processed before their decendants, making it easier
+    // to look up a parent when processing a descendant
+    const pages = collectionAPI
+      .getFilteredByGlob('src/**/*.md')
+      .toSorted((a, b) => depth(a) - depth(b))
+
+    // To associate a child page with its parent, we'll look up
+    // the parent using its URL. Storing the pages in a `url => page`
+    // hash will help that look up
+    const pagesByUrl = {}
+
+    // Off we go, through the pages, looking up their parent in the hash
+    // making the association in their `data` through the `parent` and `children`
+    // properties
+    for (const page of pages) {
+      const parentPath = posixDirname(page.url)
+      const parentUrl = parentPath.endsWith('/') ? parentPath : parentPath + '/'
+
+      const parent = pagesByUrl[parentUrl]
+      if (parent) {
+        page.data.parent = parent
+        parent.data.children.push(page)
+      }
+
+      page.data.children = []
+      pagesByUrl[page.url] = page
+    }
+
+    // Last thing before we can use the `children` data is to make
+    // sure it is sorted according to the `order` property
+    for (const page of pages) {
+      page.data.children?.sort((a, b) => a.data.order - b.data.order)
+      // Pre-compute navigation items
+      page.data.navigationItems = page.data.children.map((page) => {
+        const title = page.data.title ?? page.rawInput.match(/# (.*)/).at(1)
+        return {
+          href: page.url,
+          text: title
+        }
+      })
+
+      page.data.ancestors = getAncestors(page)
+    }
+
+    const homepage = pagesByUrl['/']
+
+    return homepage.data.navigationItems
+  })
+
+  eleventyConfig.addFilter('asBreadcrumbItems', (pages) => {
+    return pages.map((page) => {
+      const title = page.data.title ?? page.rawInput.match(/# (.*)/).at(1)
+      return {
+        href: page.url,
+        text: page.url === '/' ? 'Home' : title
+      }
+    })
+  })
+
   return {
     markdownTemplateEngine: 'njk',
     dir: {
@@ -75,4 +140,18 @@ export default function (eleventyConfig) {
       layouts: '_layouts'
     }
   }
+}
+
+function getAncestors(page) {
+  const ancestors = []
+  let current = page
+  while (current.data.parent) {
+    ancestors.push(current.data.parent)
+    current = current.data.parent
+  }
+  return ancestors.toReversed()
+}
+
+function depth(eleventyPage) {
+  return eleventyPage.page.url.split('/').length
 }

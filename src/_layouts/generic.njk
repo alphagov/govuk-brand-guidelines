@@ -16,16 +16,17 @@
   {{ govukHeader({
     productName: "Brand Guidelines"
   }) }}
-  {{ govukServiceNavigation({
-    navigation: [
-      { href: "#", text: "Graphic device" },
-      { href: "#", text: "Logo" },
-      { href: "#", text: "Colour" },
-      { href: "#", text: "Typography" },
-      { href: "#", text: "Visualising data" },
-      { href: "#", text: "Brand in use" }
-    ]
-  }) }}
+
+  {% for ancestor in ancestors %}
+      {{ govukServiceNavigation({
+        navigation: ancestor.data.navigationItems
+      }) }}
+  {% endfor %}
+  {% if navigationItems | length %}
+    {{ govukServiceNavigation({
+      navigation: navigationItems
+    }) }}
+  {% endif %}
 {% endblock %}
 
 {% block beforeContent %}
@@ -53,6 +54,12 @@
       text: "This is a new service. Help us improve it by giving your feedback."
     }) }}
   {%- endif %}
+  {% from "govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
+  {{
+    govukBreadcrumbs({
+      items: ancestors | asBreadcrumbItems
+    })
+  }}
 {% endblock %}
 
 {% block content %}

@@ -1,10 +1,9 @@
 ---
-layout: generic.njk
-title: GOV.UK Brand Guidelines
+order: 0
 ---
 
-Aliquip incididunt officia proident pariatur pariatur laborum sit labore deserunt anim proident est amet. Do amet sit non consectetur mollit incididunt velit proident exercitation pariatur. Nostrud et elit do aliquip excepteur pariatur culpa sit tempor laboris eu.
+# GOV.UK brand guidelines
 
-Non minim irure nisi adipisicing laborum. Dolor dolore minim ex ad et excepteur irure minim consectetur est.
+## Brand ambition
 
-![This is a test SVG.](images/Lock-up_PrimaryBlack.svg)
+## To inform and inspire across channels, formats and audiences
