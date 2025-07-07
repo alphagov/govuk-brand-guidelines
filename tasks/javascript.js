@@ -50,11 +50,9 @@ export default async function () {
     })
 
     await generateOutputs(bundle)
-  } catch (error) {
-    console.error(error)
-  }
-
-  if (bundle) {
-    await bundle.close()
+  } finally {
+    if (bundle) {
+      await bundle.close()
+    }
   }
 }
