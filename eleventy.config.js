@@ -2,10 +2,10 @@ import paths from './config/paths.js'
 
 import { eleventyImageTransformPlugin } from '@11ty/eleventy-img'
 
-import { markdownConfig, markdownFilter } from './config/markdown.js'
 import { setupNunjucks } from './eleventy/nunjucks.js'
 import { setupStylesheetCompilation } from './eleventy/stylesheets.js'
 import { setupJavaScriptCompilation } from './eleventy/javascript.js'
+import { setupMarkdownCompilation } from './eleventy/markdown.js'
 
 /**
  *  @param {import("@11ty/eleventy/src/UserConfig")} eleventyConfig
@@ -49,10 +49,7 @@ export default function (eleventyConfig) {
     './node_modules/govuk-frontend/dist/govuk/assets': 'assets'
   })
 
-  // Configure markdown-it and add Markdown shortcode/filter
-  eleventyConfig.setLibrary('md', markdownConfig)
-  eleventyConfig.addPairedNunjucksShortcode('markdown', markdownFilter)
-  eleventyConfig.addFilter('markdown', markdownFilter)
+  eleventyConfig.addPlugin(setupMarkdownCompilation)
 
   return {
     markdownTemplateEngine: 'njk',
