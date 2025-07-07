@@ -1,5 +1,11 @@
 export default function () {
   return {
+    // The absolute URL of the site
+    url:
+      process.env.CONTEXT === 'production'
+        ? process.env.URL
+        : process.env.DEPLOY_PRIME_URL,
+
     env: {
       // Netlify deploy context
       // Possible values: "dev", "branch-deploy", "deploy-preview", "production"
