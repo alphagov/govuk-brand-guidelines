@@ -9,6 +9,9 @@ export default function (api) {
     presets: [
       '@babel/preset-env',
       {
+        // Use our JS support query specifically
+        browserslistEnv: 'javascript',
+
         // Apply bug fixes to avoid transforms
         bugfixes: true,
 
