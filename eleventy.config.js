@@ -4,8 +4,8 @@ import { eleventyImageTransformPlugin } from '@11ty/eleventy-img'
 
 import { markdownConfig, markdownFilter } from './config/markdown.js'
 import bundleJs from './tasks/javascript.js'
-import compileSass from './tasks/sass.js'
 import { setupNunjucks } from './eleventy/nunjucks.js'
+import { setupStylesheetCompilation } from './eleventy/stylesheets.js'
 
 /**
  *  @param {import("@11ty/eleventy/src/UserConfig")} eleventyConfig
@@ -39,8 +39,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addPlugin(setupNunjucks)
 
   // Watch and compile Sass files on change
-  eleventyConfig.addWatchTarget(`${paths.source}/**/*.scss`)
-  eleventyConfig.on('beforeBuild', compileSass)
+  eleventyConfig.addPlugin(setupStylesheetCompilation)
 
   // Watch and bundle JS files on change
   eleventyConfig.addWatchTarget(`${paths.source}/**/*.js`)
