@@ -18,7 +18,10 @@ const compileSassFile = async function (file) {
   })
 
   const postcssCompilationResult = await postcss([
-    autoprefixer,
+    autoprefixer({
+      // Use stylesheets Browserslist config
+      env: 'stylesheets'
+    }),
     cssnano
   ]).process(sassCompilationResult.css.toString(), { from: undefined })
 
