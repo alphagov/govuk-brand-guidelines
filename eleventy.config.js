@@ -55,6 +55,7 @@ export default function (eleventyConfig) {
     markdownTemplateEngine: 'njk',
     dir: {
       input: paths.source,
+      output: paths.output,
       includes: '_includes',
       layouts: '_layouts'
     }
