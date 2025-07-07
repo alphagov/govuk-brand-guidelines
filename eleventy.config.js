@@ -1,11 +1,11 @@
 import paths from './config/paths.js'
 
 import { eleventyImageTransformPlugin } from '@11ty/eleventy-img'
-import nunjucks from 'nunjucks'
 
 import { markdownConfig, markdownFilter } from './config/markdown.js'
 import bundleJs from './tasks/javascript.js'
 import compileSass from './tasks/sass.js'
+import { setupNunjucks } from './eleventy/nunjucks.js'
 
 /**
  *  @param {import("@11ty/eleventy/src/UserConfig")} eleventyConfig
@@ -36,18 +36,7 @@ export default function (eleventyConfig) {
     }
   })
 
-  // Add govuk-frontend to places Nunjucks will look for templates
-  const nunjucksEnvironment = new nunjucks.Environment(
-    new nunjucks.FileSystemLoader([
-      './src',
-      './node_modules/govuk-frontend/dist'
-    ])
-  )
-
-  // Enable the rebrand styles and assets
-  nunjucksEnvironment.addGlobal('govukRebrand', true)
-
-  eleventyConfig.setLibrary('njk', nunjucksEnvironment)
+  eleventyConfig.addPlugin(setupNunjucks)
 
   // Watch and compile Sass files on change
   eleventyConfig.addWatchTarget(`${paths.source}/**/*.scss`)
