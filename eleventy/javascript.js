@@ -7,7 +7,36 @@ import babel from '@rollup/plugin-babel'
 import nodeResolve from '@rollup/plugin-node-resolve'
 import terser from '@rollup/plugin-terser'
 
-const generateOutputs = async function (bundle) {
+export function setupJavaScriptCompilation(eleventyConfig) {
+  eleventyConfig.addWatchTarget(`${paths.source}/**/*.js`)
+  eleventyConfig.on('beforeBuild', compileJavaScriptFiles)
+}
+
+async function compileJavaScriptFiles() {
+  let bundle
+  try {
+    bundle = await rollup({
+      input: globSync(`${paths.source}/_javascript/*.js`, {
+        ignore: '**/_*'
+      }),
+      plugins: [
+        nodeResolve(),
+        babel({
+          babelHelpers: 'bundled'
+        }),
+        terser()
+      ]
+    })
+
+    await generateOutputs(bundle)
+  } finally {
+    if (bundle) {
+      await bundle.close()
+    }
+  }
+}
+
+async function generateOutputs(bundle) {
   const { output } = await bundle.generate({
     dir: paths.outputAssets,
     format: 'es'
@@ -31,28 +60,6 @@ const generateOutputs = async function (bundle) {
         `${paths.outputAssets}/${chunkOrAsset.fileName}`,
         chunkOrAsset.code
       )
-    }
-  }
-}
-
-export default async function () {
-  let bundle
-  try {
-    bundle = await rollup({
-      input: globSync(`${paths.source}/_javascript/**/*.js`),
-      plugins: [
-        nodeResolve(),
-        babel({
-          babelHelpers: 'bundled'
-        }),
-        terser()
-      ]
-    })
-
-    await generateOutputs(bundle)
-  } finally {
-    if (bundle) {
-      await bundle.close()
     }
   }
 }

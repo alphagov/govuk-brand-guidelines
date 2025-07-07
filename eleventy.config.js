@@ -3,9 +3,9 @@ import paths from './config/paths.js'
 import { eleventyImageTransformPlugin } from '@11ty/eleventy-img'
 
 import { markdownConfig, markdownFilter } from './config/markdown.js'
-import bundleJs from './tasks/javascript.js'
 import { setupNunjucks } from './eleventy/nunjucks.js'
 import { setupStylesheetCompilation } from './eleventy/stylesheets.js'
+import { setupJavaScriptCompilation } from './eleventy/javascript.js'
 
 /**
  *  @param {import("@11ty/eleventy/src/UserConfig")} eleventyConfig
@@ -42,8 +42,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addPlugin(setupStylesheetCompilation)
 
   // Watch and bundle JS files on change
-  eleventyConfig.addWatchTarget(`${paths.source}/**/*.js`)
-  eleventyConfig.on('beforeBuild', bundleJs)
+  eleventyConfig.addPlugin(setupJavaScriptCompilation)
 
   // Copy font and image assets from govuk-frontend to the project
   eleventyConfig.addPassthroughCopy({
