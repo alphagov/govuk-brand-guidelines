@@ -12,7 +12,7 @@ const STYLESHEETS_GLOB = `${paths.source}/_stylesheets/**/*.scss`
 
 export function setupStylesheetCompilation(eleventyConfig) {
   eleventyConfig.addWatchTarget(STYLESHEETS_GLOB)
-  eleventyConfig.on('beforeBuild', compileStylesheets)
+  eleventyConfig.on('eleventy.before', compileStylesheets)
 }
 
 async function compileStylesheets() {

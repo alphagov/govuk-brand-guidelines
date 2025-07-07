@@ -9,7 +9,7 @@ import terser from '@rollup/plugin-terser'
 
 export function setupJavaScriptCompilation(eleventyConfig) {
   eleventyConfig.addWatchTarget(`${paths.source}/**/*.js`)
-  eleventyConfig.on('beforeBuild', compileJavaScriptFiles)
+  eleventyConfig.on('eleventy.before', compileJavaScriptFiles)
 }
 
 async function compileJavaScriptFiles() {
