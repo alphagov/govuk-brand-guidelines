@@ -3,6 +3,7 @@ import paths from '../config/paths.js'
 import { mkdir, writeFile } from 'node:fs/promises'
 import { globSync } from 'glob'
 import { rollup } from 'rollup'
+import babel from '@rollup/plugin-babel'
 import nodeResolve from '@rollup/plugin-node-resolve'
 import terser from '@rollup/plugin-terser'
 
@@ -39,7 +40,13 @@ export default async function () {
   try {
     bundle = await rollup({
       input: globSync(`${paths.source}/_javascript/**/*.js`),
-      plugins: [nodeResolve(), terser()]
+      plugins: [
+        nodeResolve(),
+        babel({
+          babelHelpers: 'bundled'
+        }),
+        terser()
+      ]
     })
 
     await generateOutputs(bundle)
