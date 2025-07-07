@@ -23,12 +23,16 @@
 
   {% for ancestor in ancestors %}
       {{ govukServiceNavigation({
-        navigation: ancestor.data.navigationItems
+        navigation: ancestor.data.navigationItems,
+        navigationId: ancestor.data.slug + "-navigation" if ancestor.data.parent else null,
+        menuButtonText: '"' + ancestor.data.title + '" menu' if ancestor.data.parent else null
       }) }}
   {% endfor %}
   {% if navigationItems | length %}
     {{ govukServiceNavigation({
-      navigation: navigationItems
+      navigation: navigationItems,
+      navigationId: slug + "-navigation" if parent else null,
+      menuButtonText: '"' + title + '" menu' if parent else null
     }) }}
   {% endif %}
 {% endblock %}

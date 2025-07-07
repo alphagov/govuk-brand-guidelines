@@ -73,6 +73,11 @@ export default function (eleventyConfig) {
       const parentPath = posixDirname(page.url)
       const parentUrl = parentPath.endsWith('/') ? parentPath : parentPath + '/'
 
+      // Set a title to the page from the markdown
+      // For production, probably better set through
+      // having consistent 'title' properties in the frontmatter
+      page.data.title ??= page.rawInput.match(/# (.*)/).at(1)
+
       const parent = pagesByUrl[parentUrl]
       if (parent) {
         page.data.parent = parent
@@ -89,10 +94,9 @@ export default function (eleventyConfig) {
       page.data.children?.sort((a, b) => a.data.order - b.data.order)
       // Pre-compute navigation items
       page.data.navigationItems = page.data.children.map((page) => {
-        const title = page.data.title ?? page.rawInput.match(/# (.*)/).at(1)
         return {
           href: page.url,
-          text: title
+          text: page.data.title
         }
       })
 
@@ -106,10 +110,9 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addFilter('asBreadcrumbItems', (pages) => {
     return pages.map((page) => {
-      const title = page.data.title ?? page.rawInput.match(/# (.*)/).at(1)
       return {
         href: page.url,
-        text: page.url === '/' ? 'Home' : title
+        text: page.url === '/' ? 'Home' : page.data.title
       }
     })
   })
