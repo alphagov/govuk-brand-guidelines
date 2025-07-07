@@ -1,4 +1,4 @@
-import paths from '../config/paths.js'
+import * as paths from '../config/paths.js'
 
 import { mkdir, writeFile } from 'node:fs/promises'
 import { basename } from 'node:path'

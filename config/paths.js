@@ -1,18 +1,26 @@
 import { join, resolve } from 'node:path'
 
-// Repository root directory
-const rootPath = resolve(import.meta.dirname, '../')
+/**
+ * Repository's root directory
+ */
+export const root = resolve(import.meta.dirname, '../')
 
 /**
- * Config paths
+ * Source code directory
  */
-export default {
-  root: rootPath,
+export const source = join(root, 'src')
 
-  // Source code directory
-  source: join(rootPath, 'src'),
+/**
+ * Output directory
+ */
+export const output = join(root, '_site')
 
-  // Output directory
-  output: join(rootPath, '_site'),
-  outputAssets: join(rootPath, '_site', 'assets')
-}
+/**
+ * Directory within the output where the assets are written
+ */
+export const assetsDirectory = 'assets'
+
+/**
+ * Assets output directory
+ */
+export const outputAssets = join(output, assetsDirectory)

@@ -1,4 +1,4 @@
-import paths from './config/paths.js'
+import * as paths from './config/paths.js'
 
 import { eleventyImageTransformPlugin } from '@11ty/eleventy-img'
 
@@ -46,7 +46,7 @@ export default function (eleventyConfig) {
 
   // Copy font and image assets from govuk-frontend to the project
   eleventyConfig.addPassthroughCopy({
-    './node_modules/govuk-frontend/dist/govuk/assets': 'assets'
+    './node_modules/govuk-frontend/dist/govuk/assets': paths.assetsDirectory
   })
 
   eleventyConfig.addPlugin(setupMarkdownCompilation)
