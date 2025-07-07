@@ -10,6 +10,9 @@ import cssnano from 'cssnano'
 
 const STYLESHEETS_GLOB = `${paths.source}/_stylesheets/**/*.scss`
 
+/**
+ *  @param {import("@11ty/eleventy/UserConfig")} eleventyConfig
+ */
 export function setupStylesheetCompilation(eleventyConfig) {
   eleventyConfig.addWatchTarget(STYLESHEETS_GLOB)
   eleventyConfig.on('eleventy.before', compileStylesheets)

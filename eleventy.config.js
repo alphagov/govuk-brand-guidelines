@@ -8,9 +8,8 @@ import { setupJavaScriptCompilation } from './eleventy/javascript.js'
 import { setupMarkdownCompilation } from './eleventy/markdown.js'
 
 /**
- *  @param {import("@11ty/eleventy/src/UserConfig")} eleventyConfig
+ *  @param {import("@11ty/eleventy/UserConfig")} eleventyConfig
  */
-
 export default function (eleventyConfig) {
   // Load Eleventy image plugin. In this configuration, it automatically
   // resizes and compresses the sources of <img>s referenced in output HTML

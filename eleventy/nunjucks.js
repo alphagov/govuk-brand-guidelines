@@ -1,7 +1,7 @@
 import nunjucks from 'nunjucks'
+
 /**
- *
- * @param {import("@11ty/eleventy/src/UserConfig")} eleventyConfig
+ *  @param {import("@11ty/eleventy/UserConfig")} eleventyConfig
  */
 export function setupNunjucks(eleventyConfig) {
   // Add govuk-frontend to places Nunjucks will look for templates

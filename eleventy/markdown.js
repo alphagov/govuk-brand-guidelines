@@ -1,6 +1,9 @@
 import markdownIt from 'markdown-it'
 import markdownItGovuk from 'markdown-it-govuk'
 
+/**
+ *  @param {import("@11ty/eleventy/UserConfig")} eleventyConfig
+ */
 export function setupMarkdownCompilation(eleventyConfig) {
   const markdownConfig = markdownIt({
     html: true,
