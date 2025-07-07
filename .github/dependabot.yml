@@ -1,0 +1,64 @@
+version: 2
+
+updates:
+  # Update npm packages
+  - package-ecosystem: npm
+    directory: /
+    open-pull-requests-limit: 15
+
+    # Group packages into shared PR
+    groups:
+      eleventy:
+        patterns:
+          - '@11ty/*'
+
+      css:
+        patterns:
+          - 'sass'
+          - 'autoprefixer'
+          - 'cssnano'
+          - 'cssnano-*'
+          - 'postcss'
+          - 'postcss-*'
+
+      javascript:
+        patterns:
+          - '@babel/*'
+          - '@rollup/*'
+          - 'rollup'
+          - 'rollup-*'
+
+      lint:
+        patterns:
+          - 'eslint'
+          - 'eslint-*'
+          - 'neostandard'
+          - 'prettier'
+          - 'stylelint'
+          - 'stylelint-*'
+
+    # Schedule run every Monday, local time
+    schedule:
+      interval: monthly
+      time: '10:30'
+      timezone: 'Europe/London'
+
+    versioning-strategy: increase
+
+    allow:
+      # Include direct package.json updates
+      - dependency-type: direct
+
+      # Include indirect browser data updates
+      # https://caniuse.com
+      - dependency-name: caniuse-lite
+
+  # Update GitHub Actions
+  - package-ecosystem: github-actions
+    directory: /
+
+    # Schedule run every Monday, local time
+    schedule:
+      interval: monthly
+      time: '10:30'
+      timezone: 'Europe/London'
