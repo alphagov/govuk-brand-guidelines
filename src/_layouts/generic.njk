@@ -65,7 +65,7 @@
   {% from "govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
   {{
     govukBreadcrumbs({
-      items: ancestors | asBreadcrumbItems
+      items: breadcrumbItems
     })
   }}
 {% endblock %}
