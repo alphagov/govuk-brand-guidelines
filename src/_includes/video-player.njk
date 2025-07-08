@@ -1,0 +1,26 @@
+{#
+  This defaults videos to having controls, playing inline, and being muted
+  for the benefit of users without JS available. The video player module will
+  override some of these when it initialises.
+  
+  NOTE: Because this is output in Markdown we need to be careful about
+  whitespace management.
+#}
+
+{% from "govuk/macros/attributes.njk" import govukAttributes %}
+
+{% macro appVideoPlayer(params) %}
+  <video
+    {%- if params.classes %} class="{{ params.classes }}"{% endif %}
+    width="{{ params.width | default(600) }}"
+    height="{{ params.height | default(338) }}"
+    data-module="app-video-player"
+    controls
+    playsinline
+    muted
+    {{- govukAttributes(params.attributes) }}>
+    {%- for source in params.sources -%}
+    <source src="{{ source.fileName }}" type="{{ source.type }}">
+    {%- endfor -%}
+  </video>
+{% endmacro %}
