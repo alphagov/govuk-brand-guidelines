@@ -7,7 +7,7 @@ export function setupNunjucks(eleventyConfig) {
   // Add govuk-frontend to places Nunjucks will look for templates
   const nunjucksEnvironment = new nunjucks.Environment(
     new nunjucks.FileSystemLoader([
-      './src',
+      eleventyConfig.dir.input,
       './node_modules/govuk-frontend/dist'
     ])
   )

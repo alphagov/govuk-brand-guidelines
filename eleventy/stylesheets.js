@@ -1,29 +1,32 @@
-import * as paths from '../config/paths.js'
-
 import { mkdir, writeFile } from 'node:fs/promises'
-import { basename } from 'node:path'
+import { basename, join } from 'node:path'
 import { glob } from 'glob'
 import * as sass from 'sass'
 import postcss from 'postcss'
 import autoprefixer from 'autoprefixer'
 import cssnano from 'cssnano'
 
-const STYLESHEETS_GLOB = `${paths.source}/_stylesheets/**/*.scss`
-
 /**
- *  @param {import("@11ty/eleventy/UserConfig")} eleventyConfig
+ * @param {import("@11ty/eleventy/UserConfig")} eleventyConfig
+ * @param {CompilationOptions} options
  */
-export function setupStylesheetCompilation(eleventyConfig) {
-  eleventyConfig.addWatchTarget(STYLESHEETS_GLOB)
-  eleventyConfig.on('eleventy.before', compileStylesheets)
+export function setupStylesheetCompilation(eleventyConfig, { to }) {
+  const assetsDir = join(eleventyConfig.dir.output, to)
+
+  const stylesheetsGlob = `${eleventyConfig.dir.input}/_stylesheets/**/*.scss`
+
+  eleventyConfig.addWatchTarget(stylesheetsGlob)
+  eleventyConfig.on('eleventy.before', async () => {
+    // Get all Sass files in the source assets directory, excluding partials
+    const files = await glob(stylesheetsGlob, {
+      ignore: `**/_*`
+    })
+
+    compileStylesheets(files, assetsDir)
+  })
 }
 
-async function compileStylesheets() {
-  // Get all Sass files in the source assets directory, excluding partials
-  const files = await glob(STYLESHEETS_GLOB, {
-    ignore: `**/_*`
-  })
-
+async function compileStylesheets(files, outputDir) {
   // Loop through files
   for (const file of files) {
     // Get the filename and replace .scss with .css
@@ -34,12 +37,12 @@ async function compileStylesheets() {
     const css = await compileSassFile(file)
 
     // Create the output assets directory if it doesn't already exist
-    await mkdir(`${paths.outputAssets}`, {
+    await mkdir(`${outputDir}`, {
       recursive: true
     })
 
     // Write the CSS file
-    await writeFile(`${paths.outputAssets}/${filename}`, css)
+    await writeFile(`${outputDir}/${filename}`, css)
   }
 }
 
@@ -62,3 +65,8 @@ async function compileSassFile(file) {
 
   return postcssCompilationResult.css
 }
+
+/**
+ * @typedef CompilationOptions
+ * @property {string} to - Into the output directory to which assets should be compiled
+ */

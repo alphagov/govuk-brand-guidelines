@@ -1,26 +1,40 @@
-import * as paths from '../config/paths.js'
-
-import { globSync } from 'glob'
+import { glob } from 'glob'
 import { rollup } from 'rollup'
 import babel from '@rollup/plugin-babel'
 import nodeResolve from '@rollup/plugin-node-resolve'
 import terser from '@rollup/plugin-terser'
+import { join } from 'node:path'
 
 /**
- *  @param {import("@11ty/eleventy/UserConfig")} eleventyConfig
+ * @param {import("@11ty/eleventy/UserConfig")} eleventyConfig
+ * @param {CompilationOptions} options
  */
-export function setupJavaScriptCompilation(eleventyConfig) {
-  eleventyConfig.addWatchTarget(`${paths.source}/**/*.js`)
-  eleventyConfig.on('eleventy.before', compileJavaScriptFiles)
+export function setupJavaScriptCompilation(eleventyConfig, { to }) {
+  const outputDir = join(eleventyConfig.dir.output, to)
+
+  eleventyConfig.addWatchTarget(`${eleventyConfig.dir.input}/**/*.js`)
+  eleventyConfig.on('eleventy.before', async () => {
+    // Grab only the JavaScript files at the root of the javascript directory
+    // to avoid compiling `import`ed files into their own bundle
+    const files = await glob(`${eleventyConfig.dir.input}/_javascript/*.js`, {
+      ignore: `**/_*`
+    })
+
+    compileJavaScriptFiles(files, outputDir)
+  })
 }
 
-async function compileJavaScriptFiles() {
+/**
+ * Compiles the given JavaScript files into the given outputDir
+ *
+ * @param {string[]} files - Paths to the files to compile
+ * @param {string} outputDir - The output directory
+ */
+async function compileJavaScriptFiles(files, outputDir) {
   let bundle
   try {
     bundle = await rollup({
-      input: globSync(`${paths.source}/_javascript/*.js`, {
-        ignore: '**/_*'
-      }),
+      input: files,
       plugins: [
         nodeResolve(),
         babel({
@@ -31,7 +45,7 @@ async function compileJavaScriptFiles() {
     })
 
     await bundle.write({
-      dir: paths.outputAssets,
+      dir: outputDir,
       format: 'es'
     })
   } finally {
@@ -40,3 +54,8 @@ async function compileJavaScriptFiles() {
     }
   }
 }
+
+/**
+ * @typedef CompilationOptions
+ * @property {string} to - Into the output directory to which assets should be compiled
+ */

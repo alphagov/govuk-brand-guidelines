@@ -1,5 +1,3 @@
-import * as paths from './config/paths.js'
-
 import { eleventyImageTransformPlugin } from '@11ty/eleventy-img'
 
 import { setupNunjucks } from './eleventy/nunjucks.js'
@@ -38,23 +36,22 @@ export default function (eleventyConfig) {
   eleventyConfig.addPlugin(setupNunjucks)
 
   // Watch and compile Sass files on change
-  eleventyConfig.addPlugin(setupStylesheetCompilation)
+  eleventyConfig.addPlugin(setupStylesheetCompilation, { to: 'assets' })
 
   // Watch and bundle JS files on change
-  eleventyConfig.addPlugin(setupJavaScriptCompilation)
+  eleventyConfig.addPlugin(setupJavaScriptCompilation, { to: 'assets' })
 
   // Copy font and image assets from govuk-frontend to the project
   eleventyConfig.addPassthroughCopy({
-    './node_modules/govuk-frontend/dist/govuk/assets': paths.assetsDirectory
+    './node_modules/govuk-frontend/dist/govuk/assets': 'assets'
   })
 
   eleventyConfig.addPlugin(setupMarkdownCompilation)
-
+  console.log('Ending Eleventy configuration')
   return {
     markdownTemplateEngine: 'njk',
     dir: {
-      input: paths.source,
-      output: paths.output,
+      input: 'src',
       includes: '_includes',
       layouts: '_layouts'
     }
