@@ -1,16 +1,13 @@
-import paths from './config/paths.js'
-
 import { eleventyImageTransformPlugin } from '@11ty/eleventy-img'
-import nunjucks from 'nunjucks'
 
-import { markdownConfig, markdownFilter } from './config/markdown.js'
-import bundleJs from './tasks/javascript.js'
-import compileSass from './tasks/sass.js'
+import { setupNunjucks } from './eleventy/nunjucks.js'
+import { setupStylesheetCompilation } from './eleventy/stylesheets.js'
+import { setupJavaScriptCompilation } from './eleventy/javascript.js'
+import { setupMarkdownCompilation } from './eleventy/markdown.js'
 
 /**
- *  @param {import("@11ty/eleventy/src/UserConfig")} eleventyConfig
+ *  @param {import("@11ty/eleventy/UserConfig")} eleventyConfig
  */
-
 export default function (eleventyConfig) {
   // Load Eleventy image plugin. In this configuration, it automatically
   // resizes and compresses the sources of <img>s referenced in output HTML
@@ -36,41 +33,25 @@ export default function (eleventyConfig) {
     }
   })
 
-  // Add govuk-frontend to places Nunjucks will look for templates
-  const nunjucksEnvironment = new nunjucks.Environment(
-    new nunjucks.FileSystemLoader([
-      './src',
-      './node_modules/govuk-frontend/dist'
-    ])
-  )
-
-  // Enable the rebrand styles and assets
-  nunjucksEnvironment.addGlobal('govukRebrand', true)
-
-  eleventyConfig.setLibrary('njk', nunjucksEnvironment)
+  eleventyConfig.addPlugin(setupNunjucks)
 
   // Watch and compile Sass files on change
-  eleventyConfig.addWatchTarget(`${paths.source}/**/*.scss`)
-  eleventyConfig.on('beforeBuild', compileSass)
+  eleventyConfig.addPlugin(setupStylesheetCompilation, { to: 'assets' })
 
   // Watch and bundle JS files on change
-  eleventyConfig.addWatchTarget(`${paths.source}/**/*.js`)
-  eleventyConfig.on('beforeBuild', bundleJs)
+  eleventyConfig.addPlugin(setupJavaScriptCompilation, { to: 'assets' })
 
   // Copy font and image assets from govuk-frontend to the project
   eleventyConfig.addPassthroughCopy({
     './node_modules/govuk-frontend/dist/govuk/assets': 'assets'
   })
 
-  // Configure markdown-it and add Markdown shortcode/filter
-  eleventyConfig.setLibrary('md', markdownConfig)
-  eleventyConfig.addPairedNunjucksShortcode('markdown', markdownFilter)
-  eleventyConfig.addFilter('markdown', markdownFilter)
-
+  eleventyConfig.addPlugin(setupMarkdownCompilation)
+  console.log('Ending Eleventy configuration')
   return {
     markdownTemplateEngine: 'njk',
     dir: {
-      input: paths.source,
+      input: 'src',
       includes: '_includes',
       layouts: '_layouts'
     }
