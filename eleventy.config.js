@@ -55,6 +55,22 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addGlobalData('layout', 'generic')
 
+
+  eleventyConfig.addPairedShortcode("figure", function(caption, src, alt) {
+
+    const markdown = eleventyConfig.getFilter('markdown');
+    return `<figure>
+      <figcaption>${markdown(caption)}</figcaption>
+      <img src=${src} alt=${alt}>
+    </figure>`
+  })
+
+  eleventyConfig.addPairedShortcode("grid", function(content, columns = 2) {
+    return `<div class="app-grid" style="--app-grid-columns: ${columns}">
+      ${content}
+    </div>`
+  })
+
   return {
     markdownTemplateEngine: 'njk',
     dir: {
