@@ -4,3 +4,5 @@ title: Graphic device
 ---
 
 ## Concept
+
+## The Dot

@@ -16,7 +16,10 @@ const rows = await parseCSV(content, {
 })
 
 // Arrays are nice, but objects will give us better access
-const headings = rows.map((row) => {
+const headings = rows
+  // Ignore rows for which what the heading represents has not been decided yet
+  .filter(row => row.slice(0,5).some(value => value))
+  .map((row) => {
   // First four columns represent the page level, with an `x` marking the level
   // let's turn this into a column
   const pageLevel = row.splice(0, 4).findIndex((value) => value === 'x') + 1

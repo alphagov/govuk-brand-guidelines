@@ -3,4 +3,6 @@ order: 0
 title: Expression
 ---
 
-## In motion
+## The dot is a guide and companion
+
+## Dot motion behaviours

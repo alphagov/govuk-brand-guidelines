@@ -9,8 +9,8 @@ title: Dot use examples
 
 ## Social media
 
-### End frames
+## Social end frames
 
 ## Video thumbnails
 
-## Static examples
+## Static dot examples

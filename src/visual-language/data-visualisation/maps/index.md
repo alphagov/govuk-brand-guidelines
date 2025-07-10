@@ -3,11 +3,9 @@ order: 2
 title: Maps
 ---
 
-## Elements of a map
+### Source and Legend
 
 ## Map considerations
-
-### Remove extraneous features
 
 ## Map palette
 
