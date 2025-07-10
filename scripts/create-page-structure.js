@@ -21,12 +21,28 @@ const headings = rows.map((row) => {
   // let's turn this into a column
   const pageLevel = row.splice(0, 4).findIndex((value) => value === 'x') + 1
 
-  const [isSubsection, titleInPDF, proposedTitle] = row
+  const [isSubsection, titleInPDF, titleForFirstUpload, proposedTitle] = row
+
+  let title = titleForFirstUpload
+  // Not all pages/sections have a 'titleForFirstUpload'
+  if (pageLevel) {
+    if (proposedTitle === '—') {
+      // If a page was previously an omitted section, use the title in PDF
+      title ||= titleInPDF.replace(/^\d(.\d)+\s*/, '')
+    } else {
+      // Use the proposed title, but remove any markdown heading for sections
+      // that got promoted to pages
+      title ||= proposedTitle.replace(/^#+\s*/, '')
+    }
+  } else {
+    title ||= proposedTitle
+  }
+
   return {
     level: pageLevel,
     titleInPDF,
-    proposedTitle,
-    slug: slug(proposedTitle),
+    title,
+    slug: slug(title),
     isSubsection,
     pages: [],
     sections: []
@@ -55,7 +71,7 @@ for (const heading of headings) {
 
 const promises = []
 // Now let's traverse the pages to create the appropriate files
-traverse(headings[0], 'pages', (page, {ancestors, index}) => {
+traverse(headings[0], 'pages', (page, { ancestors, index }) => {
   const pathParts = ancestors
     // Ignore the home page's slug for generating the paths
     // as we want the pages to be directly in `src` not in `src/<HOMEPAGE_SLUG>`
@@ -72,20 +88,20 @@ traverse(headings[0], 'pages', (page, {ancestors, index}) => {
 
   const filePath = join(...filePathParts)
 
-  const sections = page.sections
+  const content = page.sections
     // Ignore sections that are being dropped because of lack of content
-    .filter((section) => section.proposedTitle !== '—')
-    .map((section) => section.proposedTitle)
+    .filter((section) => section.title !== '—')
+    .map((section) => section.title)
     .join('\n\n')
-  const content = `# ${page.proposedTitle}\n\n${sections}`
 
   const data = {
-    order: index
+    order: index,
+    title: page.title
   }
 
   const fileContent = matter.stringify(content, data)
 
-  promises.push(writeDeepFile(filePath, fileContent))
+  promises.push(writeDeepFile(filePath, fileContent, { encoding: 'utf-8' }))
 })
 
 await Promise.all(promises)
@@ -98,8 +114,13 @@ async function writeDeepFile(filePath, ...args) {
   await writeFile(filePath, ...args)
 }
 
-function traverse(object, property, callback, {ancestors = [], index = 0} = {}) {
-  callback(object, {ancestors, index})
+function traverse(
+  object,
+  property,
+  callback,
+  { ancestors = [], index = 0 } = {}
+) {
+  callback(object, { ancestors, index })
   if (object[property]) {
     const childAncestors = [...ancestors, object]
 

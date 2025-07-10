@@ -1,7 +1,6 @@
 ---
-order: 5
+order: 4
+title: Examples
 ---
-
-# Examples
 
 ## One brand. Many places
