@@ -1,6 +1,6 @@
 ---
 order: 0
-title: '## Creating dashboards'
+title: Creating dashboards
 ---
 
 ## Creating interactive visualisations

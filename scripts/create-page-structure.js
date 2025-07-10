@@ -31,12 +31,14 @@ const headings = rows
   if (pageLevel) {
     if (proposedTitle === '—') {
       // If a page was previously an omitted section, use the title in PDF
-      title ||= titleInPDF.replace(/^\d(.\d)+\s*/, '')
+      title ||= titleInPDF.replace(/^\s*\d(.\d)+\s*/, '')
     } else {
-      // Use the proposed title, but remove any markdown heading for sections
-      // that got promoted to pages
-      title ||= proposedTitle.replace(/^#+\s*/, '')
+      title ||= proposedTitle
     }
+
+    // Some titles have leading `#` to treat them as markdown headings
+    // we need to remove those for the page titles
+    title = title.replace(/^\s*#+\s*/, '')
   } else {
     title ||= proposedTitle
   }
