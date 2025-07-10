@@ -20,16 +20,21 @@
   {{ govukHeader({
     productName: "Brand Guidelines"
   }) }}
-  {{ govukServiceNavigation({
-    navigation: [
-      { href: "#", text: "Graphic device" },
-      { href: "#", text: "Logo" },
-      { href: "#", text: "Colour" },
-      { href: "#", text: "Typography" },
-      { href: "#", text: "Visualising data" },
-      { href: "#", text: "Brand in use" }
-    ]
-  }) }}
+
+  {% for ancestor in ancestors %}
+      {{ govukServiceNavigation({
+        navigation: ancestor.data.navigationItems,
+        navigationId: ancestor.data.slug + "-navigation" if ancestor.data.parent else null,
+        menuButtonText: '"' + ancestor.data.title + '" menu' if ancestor.data.parent else null
+      }) }}
+  {% endfor %}
+  {% if navigationItems | length %}
+    {{ govukServiceNavigation({
+      navigation: navigationItems,
+      navigationId: slug + "-navigation" if parent else null,
+      menuButtonText: '"' + title + '" menu' if parent else null
+    }) }}
+  {% endif %}
 {% endblock %}
 
 {% block beforeContent %}
@@ -57,11 +62,18 @@
       text: "This is a new service. Help us improve it by giving your feedback."
     }) }}
   {%- endif %}
+  {% from "govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
+  {{
+    govukBreadcrumbs({
+      items: breadcrumbItems
+    })
+  }}
 {% endblock %}
 
 {% block content %}
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">{{title}}</h1>
       {{ content | safe }}
     </div>
   </div>
