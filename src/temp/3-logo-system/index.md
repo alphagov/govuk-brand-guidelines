@@ -1,5 +1,5 @@
 ---
-order: 1
+order: 3
 title: Logo system
 hero: # TODO: missing (not extracted yet)
 ---
