@@ -21,3 +21,17 @@
   max-width: 100%;
   height: auto;
 }
+
+.app-grid {
+  --app-grid-columns: auto-fill;
+  --app-grid-gap: #{$govuk-gutter};
+  --app-grid-min-width: 20ch;
+
+  display: grid;
+  grid-template-columns: repeat(
+    var(--app-grid-columns),
+    minmax(var(--app-grid-min-width), 1fr)
+  );
+  gap: var(--app-grid-gap);
+  align-items: end;
+}

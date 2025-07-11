@@ -1,0 +1,16 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="200" height="200" fill="#F3F9F9"/>
+<ellipse cx="103.433" cy="155.378" rx="26.0411" ry="2.20815" fill="#0B4144"/>
+<path d="M111.386 43.1532L55.6378 63.4439C54.1621 63.981 53.3992 65.6071 53.9338 67.0758L84.9714 152.351C85.506 153.82 87.1356 154.575 88.6113 154.038L144.36 133.747C145.835 133.21 146.598 131.584 146.063 130.115L115.026 44.8401C114.491 43.3714 112.862 42.6161 111.386 43.1532Z" fill="white" stroke="#0B4144" stroke-width="3.06541" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M102.534 105.569C112.804 101.831 118.114 90.5138 114.393 80.2918C110.673 70.0698 99.3311 64.8135 89.0612 68.5514C78.7912 72.2894 73.4819 83.6061 77.2024 93.8281C80.9229 104.05 92.2644 109.307 102.534 105.569Z" fill="#00FFE0"/>
+<mask id="mask0_59_496" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="76" y="67" width="40" height="40">
+<path d="M102.537 105.569C112.807 101.831 118.116 90.5138 114.396 80.2918C110.675 70.0698 99.3336 64.8135 89.0636 68.5515C78.7937 72.2895 73.4843 83.6063 77.2048 93.8283C80.9252 104.05 92.2667 109.307 102.537 105.569Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_59_496)">
+<path d="M102.41 105.217C107.297 103.438 108.299 93.8667 104.649 83.8382C100.999 73.8096 94.0784 67.1217 89.1914 68.9004C84.3044 70.6792 83.3018 80.2509 86.9519 90.2794C90.6019 100.308 97.5226 106.996 102.41 105.217Z" stroke="#0B4144" stroke-width="3.06541" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M79.6538 100.532L116.839 86.9978" stroke="#0B4144" stroke-width="3.06541" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M74.7671 87.1125L111.952 73.5782" stroke="#0B4144" stroke-width="3.06541" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<path d="M88.6982 125.395L125.884 111.861" stroke="#0B4144" stroke-width="3.06541" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M91.9507 134.331L129.136 120.797" stroke="#0B4144" stroke-width="3.06541" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
