@@ -7,15 +7,6 @@
 @import 'govuk/core';
 @import 'govuk/objects';
 
-figure {
-  margin: 0;
-}
-
-img {
-  width: 100%;
-  height: auto;
-}
-
 @import 'govuk/components/breadcrumbs';
 @import 'govuk/components/footer';
 @import 'govuk/components/header';
@@ -40,11 +31,15 @@ img {
 }
 
 .app-grid {
-  --app-grid-columns: 1;
-  --app-grid-gap: govuk-spacing(3);
+  --app-grid-columns: auto-fill;
+  --app-grid-gap: #{$govuk-gutter};
+  --app-grid-min-width: 20ch;
 
   display: grid;
-  grid-template-columns: repeat(var(--app-grid-columns, 1), 1fr);
+  grid-template-columns: repeat(
+    var(--app-grid-columns),
+    minmax(var(--app-grid-min-width), 1fr)
+  );
   gap: var(--app-grid-gap);
   align-items: end;
 }
