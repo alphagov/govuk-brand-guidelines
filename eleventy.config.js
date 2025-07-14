@@ -4,6 +4,7 @@ import { setupNunjucks } from './eleventy/nunjucks.js'
 import { setupStylesheetCompilation } from './eleventy/stylesheets.js'
 import { setupJavaScriptCompilation } from './eleventy/javascript.js'
 import { setupMarkdownCompilation } from './eleventy/markdown.js'
+import { setupNavigation } from './eleventy/navigation.js'
 
 /**
  *  @param {import("@11ty/eleventy/UserConfig")} eleventyConfig
@@ -46,8 +47,14 @@ export default function (eleventyConfig) {
     './node_modules/govuk-frontend/dist/govuk/assets': 'assets'
   })
 
+  // Configure markdown-it and add Markdown shortcode/filter
   eleventyConfig.addPlugin(setupMarkdownCompilation)
-  console.log('Ending Eleventy configuration')
+
+  // Set up data to help compute navigation
+  eleventyConfig.addPlugin(setupNavigation)
+
+  eleventyConfig.addGlobalData('layout', 'generic')
+
   return {
     markdownTemplateEngine: 'njk',
     dir: {
