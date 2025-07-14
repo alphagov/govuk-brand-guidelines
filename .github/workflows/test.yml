@@ -52,3 +52,6 @@ jobs:
       - name: Run linter
         id: lint
         run: ${{ matrix.linter.run }}
+
+      - name: Check links
+        run: npm run check-links
