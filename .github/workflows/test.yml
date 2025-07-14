@@ -12,8 +12,42 @@ on:
   workflow_dispatch:
 
 jobs:
+  build:
+    name: Build
+    runs-on: 'ubuntu-latest'
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4.2.2
+
+      - name: Restore build
+        uses: actions/cache@v4.2.3
+        id: build-cache
+
+        with:
+          key: build-cache-${{ runner.os }}-${{ github.sha }}
+          path: _site
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4.4.0
+        if: steps.build-cache.outputs.cache-hit != 'true'
+
+        with:
+          cache: npm
+          check-latest: true
+          node-version-file: .nvmrc
+
+      - name: Install dependencies
+        if: steps.build-cache.outputs.cache-hit != 'true'
+        run: npm ci
+
+      - name: Build
+        if: steps.build-cache.outputs.cache-hit != 'true'
+        run: npm run build
+
   lint:
     name: Lint
+    needs: [build]
     runs-on: 'ubuntu-latest'
 
     strategy:
@@ -47,12 +81,40 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build the site
-        run: npm run build
+      - name: Restore build
+        uses: actions/cache/restore@v4.2.3
+        with:
+          key: build-cache-${{ runner.os }}-${{ github.sha }}
+          path: _site
 
       - name: Run linter
         id: lint
         run: ${{ matrix.linter.run }}
+
+  check-links:
+    name: Check links
+    needs: [build]
+    runs-on: 'ubuntu-latest'
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.2.2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4.4.0
+        with:
+          cache: npm
+          check-latest: true
+          node-version-file: .nvmrc
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Restore build
+        uses: actions/cache/restore@v4.2.3
+        with:
+          key: build-cache-${{ runner.os }}-${{ github.sha }}
+          path: _site
 
       - name: Check links
         run: npm run check-links
