@@ -81,7 +81,7 @@ The size of the crown can be adjusted depending on context. For example, when be
 <div class="app-grid" style="--app-grid-columns: 2">
 <figure>
 
-<figcaption><strong>Standard crown size</strong><br>Wordmark dot = 2x crown dot</figcaption>
+<figcaption><strong>Standard crown size</strong><br/>Wordmark dot = 2x crown dot</figcaption>
 
 ![TODO](./propotional-scaling-desktop.svg)
 
@@ -89,7 +89,7 @@ The size of the crown can be adjusted depending on context. For example, when be
 
 <figure>
 
-<figcaption><strong>Enlarged crown size</strong><br>Wordmark dot = 1x crown dot</figcaption>
+<figcaption><strong>Enlarged crown size</strong><br/>Wordmark dot = 1x crown dot</figcaption>
 
 ![TODO](./propotional-scaling-mobile.svg)
 
@@ -108,8 +108,6 @@ The clear space area is defined by the dot size within our wordmark.
 ![TODO](./space-around-wordmark.svg)
 
 TODO: missing image with space around crown
-
-<section class="">
 
 ## Minimum sizing
 
@@ -142,8 +140,6 @@ Keeping the logo at its minimum size helps ensure it stays legible and accessibl
 </figure>
 
 </div>
-
-</section>
 
 ## Logo colour
 
@@ -193,8 +189,5 @@ Do not distort, stretch or skew the wordmark
 ![TODO](./incorrect-effects.svg)
 Do not apply drop shadows or effects to the wordmark
 
-![TODO](./incorrect-busy.svg)
-Do not use the wordmark on overly busy or low-contrast backgrounds
-
-![TODO](./incorrect-mirrored.svg)
-Do not flip, mirror, or rotate the wordmark
+<!-- ![TODO](./incorrect-busy.svg)
+Do not use the wordmark on overly busy or low-contrast backgrounds -->
