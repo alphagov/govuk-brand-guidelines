@@ -23,7 +23,6 @@ An exception to this principle includes other GOV.UK apps, where the symbol or i
 
 ![TODO](./app-icon-on-blue.svg)
 
-
 ## Logo elements within the app
 
 We always lead with the wordmark as our primary brand identifier - positioning it in a prominent position.
@@ -42,10 +41,9 @@ TODO:
 
 ### Crown watermark
 
-![TODO](./app-watermark-example-x2.gif)
+![TODO](./app-watermark-example-x2.png)
 
 Indicative examples for illustrative purposes only.
-
 
 ## App icon
 
@@ -58,7 +56,6 @@ As this is a small use application of the logo elements, we use the enlarged cro
 ![TODO](./app-icon.svg)
 
 ![TODO](./app-store-example-x2.png)
-
 
 ### App icon suite
 
@@ -79,4 +76,3 @@ Example 1: GOV.UK app
 ![TODO](./app-icon-one-login.svg)
 
 Example 2: GOV.UK One Login
-

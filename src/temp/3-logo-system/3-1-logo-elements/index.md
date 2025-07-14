@@ -31,13 +31,11 @@ To aid recognition the lock-up combines the crown and wordmark and is used prima
 
 TODO: missing image
 
-
 ## Wordmark
 
 Our wordmark has been redrawn, elevating the dot into a position that signifies the connection between government and the UK.
 
 TODO: missing image
-
 
 As our primary identifier, the GOV.UK wordmark should be used in all applications of the logo.
 
@@ -45,15 +43,13 @@ The exception to this rule is the GOV.UK website. See the Web Logo section (3.3)
 
 ![TODO](./wordmark.svg)
 
-
 ## Crown
 
 As our primary identifier, the GOV.UK wordmark should be used in all applications of the logo.
 
-The exception to this rule is the GOV.UK website. See the Web Logo section (3.3)  for more details.
+The exception to this rule is the GOV.UK website. See the Web Logo section (3.3) for more details.
 
 ![TODO](./crown.svg)
-
 
 ### Using the crown as a supporting element
 
@@ -61,7 +57,6 @@ A lock-up system where we can position the crown in close proximity to the GOV.U
 
 ![TODO](./crown-support-desktop.svg)
 ![TODO](./crown-support-mobile.svg)
-
 
 ## Lock-up
 
@@ -75,6 +70,7 @@ This ensures visual balance and harmony between the elements.
 
 ![TODO](./lockup-detail.svg)
 
+<section class="app-section--blue">
 
 ### Use proportional scaling
 
@@ -82,18 +78,26 @@ In order to maintain visual hierarchy, consistency and balance between the two e
 
 The size of the crown can be adjusted depending on context. For example, when being used at smaller sizes such as within the app icon, the enlarged crown should be used to aid accessibility and legibility.
 
-#### Standard crown size
-Scaling should follow this rule;
-Wordmark dot = 2x crown dot
+<div class="app-grid" style="--app-grid-columns: 2">
+<figure>
+
+<figcaption><strong>Standard crown size</strong><br>Wordmark dot = 2x crown dot</figcaption>
 
 ![TODO](./propotional-scaling-desktop.svg)
 
-#### Enlarged crown size
-Scaling should follow this rule;
-Wordmark dot = 1x crown dot
+</figure>
+
+<figure>
+
+<figcaption><strong>Enlarged crown size</strong><br>Wordmark dot = 1x crown dot</figcaption>
 
 ![TODO](./propotional-scaling-mobile.svg)
 
+</figure>
+
+</div>
+
+</section>
 
 ### Maintain clear space around logo elements
 
@@ -105,6 +109,7 @@ The clear space area is defined by the dot size within our wordmark.
 
 TODO: missing image with space around crown
 
+<section class="">
 
 ## Minimum sizing
 
@@ -112,20 +117,33 @@ Keeping the logo at its minimum size helps ensure it stays legible and accessibl
 
 <!-- TODO: suggest adding the arrow to the image -->
 
-![TODO](./wordmark.svg)
+<div class="app-grid app-wip app-section--blue" style="--app-grid-columns: 2; --app-grid-align-items: end">
 
-Minimum size:
-50px
+<figure>
 
-![TODO](./crown.svg)
+![TODO](./wordmark-with-arrow.svg)
 
-Minimum size:
-10px
+<figcaption>Minimum width: <span>50px</span></figcaption>
 
-![TODO](./crown-favicon.svg)
+</figure>
 
-Use the small crown version for anything below the crown’s minimum size, such as web favicons.
+<figure>
 
+![TODO](./crown-with-arrow.svg)
+
+<figcaption>Minimum width: <span>16px</span></figcaption>
+</figure>
+
+<figure class="app-grid-cell" style="--app-grid-cell-span: 2">
+
+![TODO](./crown-favicon-with-arrow.svg)
+
+<figcaption>Use the small crown version for anything below the crown’s minimum size, such as web favicons.</figcaption>
+</figure>
+
+</div>
+
+</section>
 
 ## Logo colour
 
@@ -150,7 +168,6 @@ When using against a busy background or in print situations where colour isn’t
 
 <!-- TODO: the logo-special-dark needs to be extracted as an SVG -->
 
-
 ## In motion
 
 Both logo elements have a standalone animation that can be used to add dynamism to the brand.
@@ -162,7 +179,6 @@ Both logo elements have a standalone animation that can be used to add dynamism 
 ### Crown
 
 ![TODO](./crown-motion.gif)
-
 
 ## Incorrect usage
 
@@ -182,4 +198,3 @@ Do not use the wordmark on overly busy or low-contrast backgrounds
 
 ![TODO](./incorrect-mirrored.svg)
 Do not flip, mirror, or rotate the wordmark
-

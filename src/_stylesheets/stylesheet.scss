@@ -7,6 +7,18 @@
 @import 'govuk/core';
 @import 'govuk/objects';
 
+img {
+  background-color: govuk-colour('blue');
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  @include govuk-font($size: 19);
+}
+
 @import 'govuk/components/breadcrumbs';
 @import 'govuk/components/footer';
 @import 'govuk/components/header';
@@ -20,4 +32,55 @@
 .app-prose-image {
   max-width: 100%;
   height: auto;
+}
+
+.app-grid {
+  --app-grid-columns: auto-fill;
+  --app-grid-gap: #{$govuk-gutter};
+  --app-grid-min-width: 20ch;
+  --app-grid-align-items: start;
+
+  display: grid;
+  grid-template-columns: repeat(
+    var(--app-grid-columns),
+    minmax(var(--app-grid-min-width), 1fr)
+  );
+  gap: var(--app-grid-gap);
+  align-items: var(--app-grid-align-items);
+}
+
+.app-grid-cell {
+  --app-grid-cell-span: 1;
+  grid-column: 1 / span var(--app-grid-cell-span);
+}
+
+.app-section--blue {
+  padding: govuk-spacing(4);
+  color: govuk-colour('white');
+  background-color: govuk-colour('blue');
+
+  .govuk-body,
+  .govuk-heading-l,
+  .govuk-heading-m,
+  .govuk-heading-s {
+    color: inherit;
+  }
+}
+
+.app-wip {
+  img {
+    box-sizing: border-box;
+    display: block;
+    max-width: 100%;
+    background: govuk-colour('blue');
+  }
+
+  [src$='crown-with-arrow.svg'] {
+    width: 100%;
+  }
+
+  span {
+    display: block;
+    @include govuk-font($size: 24);
+  }
 }
