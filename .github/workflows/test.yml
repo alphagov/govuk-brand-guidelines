@@ -30,7 +30,8 @@ jobs:
           - description: Prettier
             run: npm run lint:prettier
 
-          - name: Run task
+          - description: Built HTML
+            run: npm run lint:html
 
     steps:
       - name: Checkout
