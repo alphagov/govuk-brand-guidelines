@@ -42,16 +42,10 @@ export function setupNavigation(eleventyConfig) {
     for (const page of pages) {
       page.data.children?.sort((a, b) => a.data.order - b.data.order)
 
-      // Pre-compute navigation related items
-      // These cannot be Computed properties as Collections are computed
+      // Compute the list of ancestors for the page
+      // This cannot be a computed property as Collections are computed
       // after Computed properties, so parent and children wouldn't be available
-      page.data.navigationItems = page.data.children.map(
-        asGOVUKFrontendNavigationItem
-      )
       page.data.ancestors = getAncestors(page)
-      page.data.breadcrumbItems = page.data.ancestors.map(
-        asGOVUKFrontendNavigationItem
-      )
     }
 
     for (const page of pages) {
@@ -67,14 +61,49 @@ export function setupNavigation(eleventyConfig) {
   })
 
   eleventyConfig.addFilter('ariaCurrentValue', function (page) {
-    const renderedPage = this.page;
+    const renderedPage = this.page
 
-    if (renderedPage.url === page.url) {
+    if (isCurrent(page.url, renderedPage.url)) {
       return 'page'
-    } else if (renderedPage.url.startsWith(page.url)) {
+    } else if (isActive(page.url, renderedPage.url)) {
       return 'true'
     }
   })
+
+  eleventyConfig.addFilter('asNavigationItems', function (pages) {
+    const renderedPage = this.page
+
+    return pages.map((page) => ({
+      href: page.url,
+      text: page.url === '/' ? 'Home' : page.data.title,
+      current: isCurrent(page.url, renderedPage.url),
+      active: isActive(page.url, renderedPage.url)
+    }))
+  })
+}
+
+/**
+ * Returns whether the given URL should be marked as 'active'
+ * when rendering the page for the `renderedUrl`
+ *
+ * @param {string} url
+ * @param {string} renderedUrl
+ * @returns {boolean}
+ */
+function isActive(url, renderedUrl) {
+  return renderedUrl.startsWith(url)
+}
+
+/**
+ * Returns whether the given URL should be marked as 'current'
+ * when rendering the page for the `renderedUrl`
+ *
+ * @param {string} url
+ * @param {string} renderedUrl
+ * @return {boolean}
+ */
+function isCurrent(url, renderedUrl) {
+  return renderedUrl === url
 }
 
 /**
@@ -105,18 +134,4 @@ function getAncestors(page) {
     current = current.data.parent
   }
   return ancestors.toReversed()
-}
-
-/**
- * Converts an Eleventy page into data that can be fed
- * to GOV.UK Frontend's Breadcrumbs or Service Navigation
- *
- * @param {{url:string, data: {title: string}}} page
- * @returns {{href: string, text: string}}
- */
-function asGOVUKFrontendNavigationItem(page) {
-  return {
-    href: page.url,
-    text: page.url === '/' ? 'Home' : page.data.title
-  }
 }
