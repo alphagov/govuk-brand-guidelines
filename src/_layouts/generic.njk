@@ -23,7 +23,7 @@
   }) }}
 
   {{ govukServiceNavigation({
-    navigation: collections.pages[0].data.navigationItems
+    navigation: collections.pages[0].data.children | asNavigationItems
   }) }}
 {% endblock %}
 
@@ -55,7 +55,7 @@
   {% from "govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
   {{
     govukBreadcrumbs({
-      items: breadcrumbItems
+      items: ancestors | asNavigationItems if ancestors
     })
   }}
 {% endblock %}
