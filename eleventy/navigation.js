@@ -65,6 +65,16 @@ export function setupNavigation(eleventyConfig) {
 
     return pages
   })
+
+  eleventyConfig.addFilter('ariaCurrentValue', function (page) {
+    const renderedPage = this.page;
+
+    if (renderedPage.url === page.url) {
+      return 'page'
+    } else if (renderedPage.url.startsWith(page.url)) {
+      return 'true'
+    }
+  })
 }
 
 /**
