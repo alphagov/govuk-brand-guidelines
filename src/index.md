@@ -1,6 +1,12 @@
 ---
 order: 0
+<<<<<<< HEAD
 title: GOV.UK Brand Guidelines
+||||||| parent of ff53d74 (Import latest version of site structure)
+title: GOV.UK brand guidelines
+=======
+title: Homepage
+>>>>>>> ff53d74 (Import latest version of site structure)
 ---
 
 ## Brand ambition
