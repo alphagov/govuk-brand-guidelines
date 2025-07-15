@@ -1,6 +1,6 @@
 ---
 order: 0
-title: GOV.UK brand guidelines
+title: Homepage
 ---
 
 ## Brand ambition

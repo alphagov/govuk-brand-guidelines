@@ -1,6 +1,6 @@
 ---
-order: 4
+order: 3
 title: Examples
 ---
 
-## One brand. Many places
+# One brand. Many places

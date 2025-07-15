@@ -3,4 +3,8 @@ order: 0
 title: Creating dashboards
 ---
 
-## Creating interactive visualisations
+## Use a dashboard when:
+
+## Disadvantages of dashboards:
+
+## Tips

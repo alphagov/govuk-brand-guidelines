@@ -3,7 +3,7 @@ order: 0
 title: Palette overview
 ---
 
-## GOV.UK is a blue brand
+(moved to chapter page "colour")
 
 ## Coherency across channels
 

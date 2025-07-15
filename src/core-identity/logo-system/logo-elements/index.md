@@ -21,4 +21,4 @@ title: Logo elements
 
 ## In motion
 
-## Incorrect usage
+(Moved to chapter page "Logo system")

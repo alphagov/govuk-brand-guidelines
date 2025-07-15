@@ -14,3 +14,9 @@ title: Dot use examples
 ## Video thumbnails
 
 ## Static dot examples
+
+## Static dot storyboard
+
+Incorrect usage
+
+## Incorrect dot usage
