@@ -20,10 +20,6 @@
   {{ govukHeader({
     productName: "Brand Guidelines"
   }) }}
-
-  {{ govukServiceNavigation({
-    navigation: collections.pages[0].data.children | asNavigationItems
-  }) }}
 {% endblock %}
 
 {% block beforeContent %}
@@ -83,7 +79,7 @@
 {% block content %}
   <div class="govuk-grid-row">
     <nav class="govuk-grid-column-one-third">
-      {{ appLinkList(sidebarNavigationRoot.data.children)}}
+      {{ appLinkList(collections.pages[0].data.children)}}
     </nav>
     <div class="govuk-grid-column-two-thirds">
       <h1 class="govuk-heading-xl">{{title}}</h1>
