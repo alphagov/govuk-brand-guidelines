@@ -65,7 +65,15 @@
     <ul class="govuk-list">
       {% for child in pages %}
         <li>
-          <a href="{{child.url | url}}">{{child.data.title}}</a>
+          {% set ariaCurrent = child | ariaCurrentValue %}
+          <a
+            href="{{child.url | url}}"
+            {% if ariaCurrent %}
+            aria-current="{{ariaCurrent}}"
+            {% endif %}
+            >
+            {{child.data.title}}
+          </a>
           {{appLinkList(child.data.children)}}
         </li>
       {% endfor %}

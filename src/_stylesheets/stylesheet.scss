@@ -27,3 +27,7 @@
 .govuk-list .govuk-list {
   padding-left: govuk-spacing(3);
 }
+
+[aria-current] {
+  font-weight: bold;
+}
