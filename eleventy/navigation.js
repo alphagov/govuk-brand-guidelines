@@ -54,6 +54,15 @@ export function setupNavigation(eleventyConfig) {
       )
     }
 
+    for (const page of pages) {
+      page.data.sidebarNavigationRoot =
+        page.data.ancestors.length === 1
+          ? page
+          : page.data.ancestors
+              .filter((ancestor) => ancestor.data.ancestors.length === 1)
+              .at(0)
+    }
+
     return pages
   })
 }

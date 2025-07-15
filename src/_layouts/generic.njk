@@ -21,20 +21,9 @@
     productName: "Brand Guidelines"
   }) }}
 
-  {% for ancestor in ancestors %}
-      {{ govukServiceNavigation({
-        navigation: ancestor.data.navigationItems,
-        navigationId: ancestor.page.fileSlug + "-navigation" if ancestor.data.parent else null,
-        menuButtonText: '"' + ancestor.data.title + '" menu' if ancestor.data.parent else null
-      }) }}
-  {% endfor %}
-  {% if navigationItems | length %}
-    {{ govukServiceNavigation({
-      navigation: navigationItems,
-      navigationId: page.fileSlug + "-navigation" if parent else null,
-      menuButtonText: '"' + title + '" menu' if parent else null
-    }) }}
-  {% endif %}
+  {{ govukServiceNavigation({
+    navigation: collections.pages[0].data.navigationItems
+  }) }}
 {% endblock %}
 
 {% block beforeContent %}
@@ -70,8 +59,24 @@
   }}
 {% endblock %}
 
+{% macro appLinkList(pages) %}
+  {% if pages | length %}
+    <ul class="govuk-list">
+      {% for child in pages %}
+        <li>
+          <a href="{{child.url | url}}">{{child.data.title}}</a>
+          {{appLinkList(child.data.children)}}
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+{% endmacro %}
+
 {% block content %}
   <div class="govuk-grid-row">
+    <nav class="govuk-grid-column-one-third">
+      {{ appLinkList(sidebarNavigationRoot.data.children)}}
+    </nav>
     <div class="govuk-grid-column-two-thirds">
       <h1 class="govuk-heading-xl">{{title}}</h1>
       {{ content | safe }}
