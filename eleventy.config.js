@@ -57,7 +57,12 @@ export default function (eleventyConfig) {
   // Import custom shortcodes
   eleventyConfig.addPlugin(setupShortcodes)
 
+  // Set a default layout for pages
   eleventyConfig.addGlobalData('layout', 'generic')
+
+  // Set up CSS and SVG bundles for page-specific elements
+  eleventyConfig.addBundle('css')
+  eleventyConfig.addBundle('svg')
 
   return {
     markdownTemplateEngine: 'njk',
