@@ -77,15 +77,20 @@
 {% endmacro %}
 
 {% block content %}
-  <div class="govuk-grid-row">
-    <nav class="govuk-grid-column-one-third">
-      {{ appLinkList(collections.pages[0].data.children)}}
-    </nav>
-    <div class="govuk-grid-column-two-thirds">
-      <h1 class="govuk-heading-xl">{{title}}</h1>
-      {{ content | safe }}
+  {% if page.url === '/' %}
+    <h1 class="govuk-heading-xl">{{title}}</h1>
+    {{ content | safe }}
+  {% else %}
+    <div class="govuk-grid-row">
+      <nav class="govuk-grid-column-one-third">
+        {{ appLinkList(collections.pages[0].data.children)}}
+      </nav>
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">{{title}}</h1>
+        {{ content | safe }}
+      </div>
     </div>
-  </div>
+  {% endif %}
 {% endblock %}
 
 {% block bodyEnd %}

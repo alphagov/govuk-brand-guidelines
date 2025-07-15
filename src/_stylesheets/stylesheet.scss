@@ -22,6 +22,39 @@
   height: auto;
 }
 
+.app-grid {
+  --app-grid-columns: auto-fill;
+  --app-grid-gap: #{$govuk-gutter};
+  --app-grid-min-width: 20ch;
+
+  display: grid;
+  grid-template-columns: repeat(
+    var(--app-grid-columns),
+    minmax(var(--app-grid-min-width), 1fr)
+  );
+  gap: var(--app-grid-gap);
+}
+
+.app-link--card {
+  display: block;
+  padding: 1rem;
+  padding-bottom: 30%;
+  border: solid 3px;
+  color: govuk-colour('blue');
+  background-color: govuk-tint(govuk-colour('blue'), 95);
+  font-weight: bold;
+  text-decoration: none;
+  @include govuk-font($size: 24);
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+}
+
 .govuk-list .govuk-list {
   padding-left: govuk-spacing(3);
 }
