@@ -10,6 +10,8 @@
     "lint:scss": "npm run lint:scss:cli -- '**/*.scss'",
     "lint:scss:cli": "stylelint --cache --cache-location .cache/stylelint --cache-strategy content --color --ignore-path .gitignore --max-warnings 0",
     "lint:html": "html-validate \"_site/**/*.html\"",
+    "lint:svg": "npm run lint:svg:cli \"src/**/*.svg\"",
+    "lint:svg:cli": "svglint --config svglint.config.js",
     "lint:js": "npm run lint:js:cli -- \"**/*.{cjs,js,md,mjs}\"",
     "lint:js:cli": "eslint --cache --cache-location .cache/eslint --cache-strategy content --color",
     "lint:prettier": "npm run lint:prettier:cli -- \"**/*.{cjs,js,json,md,mjs,scss,yaml,yml}\"",
@@ -52,6 +54,7 @@
     "slug": "^11.0.0",
     "stylelint": "^16.21.1",
     "stylelint-config-gds": "^2.0.0",
-    "stylelint-order": "^7.0.0"
+    "stylelint-order": "^7.0.0",
+    "svglint": "^4.1.0"
   }
 }
