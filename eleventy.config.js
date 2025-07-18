@@ -15,7 +15,7 @@ export default function (eleventyConfig) {
   // resizes and compresses the sources of <img>s referenced in output HTML
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
     // Output image formats
-    formats: ['svg', 'avif', 'webp'],
+    formats: ['svg', 'avif', 'webp', 'gif'],
 
     // If the input is SVG, only output SVG
     svgShortCircuit: true,
@@ -32,6 +32,12 @@ export default function (eleventyConfig) {
         decoding: 'async'
       },
       pictureAttributes: {}
+    },
+
+    // Handle animated GIFs for now
+    sharpOptions: {
+      animated: true,
+      limitInputPixels: false
     }
   })
 
