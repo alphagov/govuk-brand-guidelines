@@ -9,4 +9,4 @@ title: Social platforms
 
 ## X (formally Twitter)
 
-## Youtube
+## YouTube
