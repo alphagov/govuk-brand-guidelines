@@ -7,6 +7,15 @@
 @import 'govuk/core';
 @import 'govuk/objects';
 
+figure {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
 @import 'govuk/components/breadcrumbs';
 @import 'govuk/components/footer';
 @import 'govuk/components/header';
@@ -28,4 +37,14 @@
 
 [aria-current] {
   font-weight: bold;
+}
+
+.app-grid {
+  --app-grid-columns: 1;
+  --app-grid-gap: govuk-spacing(3);
+
+  display: grid;
+  grid-template-columns: repeat(var(--app-grid-columns, 1), 1fr);
+  gap: var(--app-grid-gap);
+  align-items: end;
 }
