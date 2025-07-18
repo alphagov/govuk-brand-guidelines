@@ -4,7 +4,7 @@ export default {
     'npm run lint:prettier:cli -- --write'
   ],
   '*.scss': [
-    'npm run lint:scss -- --fix',
+    'npm run lint:scss:cli -- --fix',
     'npm run lint:prettier:cli -- --write'
   ],
   '*.md': ['npm run lint:prettier:cli -- --write'],
