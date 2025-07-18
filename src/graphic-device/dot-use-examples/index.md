@@ -101,7 +101,15 @@ The dot can also be used as a static graphic, adding emphasis and helping guide 
 
 <!-- TODO: Half of these images are out of date and they're all low res, so need to be replaced -->
 
-![TODO](./static-dot-1.png) ![TODO](./static-dot-2.png) ![TODO](./static-dot-3.png) ![TODO](./static-dot-4.png)
+{% grid {columns:  2} %}
+![TODO](./static-dot-1.png)
+
+![TODO](./static-dot-2.png)
+
+![TODO](./static-dot-3.png)
+
+![TODO](./static-dot-4.png)
+{% endgrid %}
 
 Indicative examples for illustrative purposes only.
 
@@ -110,7 +118,21 @@ Indicative examples for illustrative purposes only.
 While it's important to use the dot in a purposeful way, it can effectively guide user attention and break down information to enhance the overall experience.
 Such as in the instagram story below;
 
-![TODO](./storyboard-1.png) ![TODO](./storyboard-2.png) ![TODO](./storyboard-3.png) ![TODO](./storyboard-4.png) ![TODO](./storyboard-5.png) ![TODO](./storyboard-6.png)
+{% grid {columns: 3} %}
+
+![TODO](./storyboard-1.png)
+
+![TODO](./storyboard-2.png)
+
+![TODO](./storyboard-3.png)
+
+![TODO](./storyboard-4.png)
+
+![TODO](./storyboard-5.png)
+
+![TODO](./storyboard-6.png)
+
+{% endgrid %}
 
 Indicative examples for illustrative purposes only.
 
