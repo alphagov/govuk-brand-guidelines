@@ -47,6 +47,9 @@ export default function (eleventyConfig) {
     './node_modules/govuk-frontend/dist/govuk/assets': 'assets'
   })
 
+  // Copy video files
+  eleventyConfig.addPassthroughCopy(`./src/videos`, 'videos')
+
   // Configure markdown-it and add Markdown shortcode/filter
   eleventyConfig.addPlugin(setupMarkdownCompilation)
 
