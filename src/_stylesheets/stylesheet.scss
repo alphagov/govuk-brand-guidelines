@@ -7,6 +7,12 @@
 @import 'govuk/core';
 @import 'govuk/objects';
 
+video,
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 @import 'govuk/components/breadcrumbs';
 @import 'govuk/components/footer';
 @import 'govuk/components/header';

@@ -48,6 +48,8 @@ export default function (eleventyConfig) {
     './node_modules/govuk-frontend/dist/govuk/assets': 'assets'
   })
 
+  eleventyConfig.addPassthroughCopy('**/*.mp4')
+
   // Configure markdown-it and add Markdown shortcode/filter
   eleventyConfig.addPlugin(setupMarkdownCompilation)
 
