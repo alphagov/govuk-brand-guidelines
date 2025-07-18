@@ -95,3 +95,79 @@ img {
     fill: #11875a; // primary green
   }
 }
+
+.app-inform-inspire {
+  $padding-left: govuk-spacing(6);
+  $border-width: 2px;
+  $gap: $padding-left;
+  $arrow-width: 8px;
+  margin-top: govuk-spacing(1);
+  margin-bottom: govuk-spacing(4);
+  padding-left: $padding-left;
+
+  border-left: solid $border-width;
+
+  &::before {
+    content: '';
+    box-sizing: border-box;
+    display: block;
+    width: $arrow-width;
+    height: $arrow-width;
+    margin-left: -$padding-left;
+    transform: rotate(45deg) translateX(-$border-width) translateY(-1px);
+    border-top: solid $border-width;
+    border-left: solid $border-width;
+    transform-origin: top left;
+  }
+
+  &::after {
+    content: '';
+    box-sizing: border-box;
+    display: block;
+    width: $arrow-width;
+    height: $arrow-width;
+    margin-left: -$padding-left;
+    transform: rotate(-45deg) translateX(-$border-width) translateY(1px);
+    border-bottom: solid $border-width;
+    border-left: solid $border-width;
+    transform-origin: bottom left;
+  }
+
+  figure {
+    margin-inline: 0;
+  }
+
+  figcaption {
+    margin-top: govuk-spacing(1);
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  > * {
+    margin-block: 0;
+  }
+
+  > * + * {
+    margin-top: $padding-left;
+  }
+
+  .app-inform-inspire__inform {
+    margin-top: -16px;
+
+    + * {
+      margin-top: 0.75 * $gap;
+    }
+  }
+
+  .app-inform-inspire__inspire {
+    margin-top: 0.5 * $gap;
+    margin-bottom: -16px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}

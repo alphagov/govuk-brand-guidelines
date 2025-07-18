@@ -78,25 +78,20 @@ Thumbnails should always use the dot in a purposeful way. See examples of dot us
 
 <!-- Obviously, that's not the right heading, needs proper design -->
 
-### Inform <--------> Inspire
+<div class="app-inform-inspire">
 
+<p class="govuk-visually-hidden">From most infomative to most inspiring</p>
 <!-- TODO: These images are all out of date and low res, so need to be replaced -->
+<p class="govuk-heading-s app-inform-inspire__inform" aria-hidden="true">Inform</p>
 
-Get help with...
+{% figure {src: "./video-thumb-get-help.png", caption: "Get help with..."} %}
+{% figure {src: "./video-thumb-60s.png", caption: "60s guides" } %}
+{% figure {src: "./video-thumb-step.png", caption: "Step-by-step guides" } %}
+{% figure {src: "./video-thumb-influencer.png", caption: "Influencer/presenter" } %}
 
-![TODO](./video-thumb-get-help.png)
+<p aria-hidden="true" class="govuk-heading-s app-inform-inspire__inspire">Inspire</p>
 
-60s guides
-
-![TODO](./video-thumb-60s.png)
-
-Step-by-step guides
-
-![TODO](./video-thumb-step.png)
-
-Influencer/presenter
-
-![TODO](./video-thumb-influencer.png)
+</div>
 
 Indicative examples for illustrative purposes only.
 
