@@ -5,6 +5,7 @@ import { setupStylesheetCompilation } from './eleventy/stylesheets.js'
 import { setupJavaScriptCompilation } from './eleventy/javascript.js'
 import { setupMarkdownCompilation } from './eleventy/markdown.js'
 import { setupNavigation } from './eleventy/navigation.js'
+import { setupShortcodes } from './eleventy/shortcodes.js'
 
 /**
  *  @param {import("@11ty/eleventy/UserConfig")} eleventyConfig
@@ -52,6 +53,9 @@ export default function (eleventyConfig) {
 
   // Set up data to help compute navigation
   eleventyConfig.addPlugin(setupNavigation)
+
+  // Import custom shortcodes
+  eleventyConfig.addPlugin(setupShortcodes)
 
   eleventyConfig.addGlobalData('layout', 'generic')
 
