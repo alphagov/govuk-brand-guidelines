@@ -4,7 +4,7 @@ import { setupNunjucks } from './eleventy/nunjucks.js'
 import { setupStylesheetCompilation } from './eleventy/stylesheets.js'
 import { setupJavaScriptCompilation } from './eleventy/javascript.js'
 import { setupMarkdownCompilation } from './eleventy/markdown.js'
-import { setupNavigation } from './eleventy/navigation.js'
+import { setupNavigation, tableOfContents } from './eleventy/navigation.js'
 
 /**
  *  @param {import("@11ty/eleventy/UserConfig")} eleventyConfig
@@ -52,6 +52,7 @@ export default function (eleventyConfig) {
 
   // Set up data to help compute navigation
   eleventyConfig.addPlugin(setupNavigation)
+  eleventyConfig.addPlugin(tableOfContents)
 
   eleventyConfig.addGlobalData('layout', 'generic')
 
