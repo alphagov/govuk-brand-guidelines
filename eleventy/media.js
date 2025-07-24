@@ -27,6 +27,14 @@ export function setupMedia(eleventyConfig) {
         decoding: 'async'
       },
       pictureAttributes: {}
+    },
+
+    // Sharp does not handle GIFs by default and limits
+    // the size of the images it can process (which we lift
+    // to be more open )
+    sharpOptions: {
+      animated: true,
+      limitInputPixels: false
     }
   })
 
