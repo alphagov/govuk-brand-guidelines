@@ -1,0 +1,53 @@
+name: Compare output
+
+on:
+  pull_request:
+
+jobs:
+  compare-output:
+    name: Compare output
+    runs-on: 'ubuntu-latest'
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4.2.2
+        with:
+          fetch-depth: 0 # We need the base branch to be available as well
+
+      - name: Restore build
+        uses: actions/cache@v4.2.3
+        id: build-cache
+
+        with:
+          key: build-cache-${{ runner.os }}-${{ github.sha }}
+          path: _site
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4.4.0
+        if: steps.build-cache.outputs.cache-hit != 'true'
+
+        with:
+          cache: npm
+          check-latest: true
+          node-version-file: .nvmrc
+
+      - name: Install dependencies
+        if: steps.build-cache.outputs.cache-hit != 'true'
+        run: npm ci
+
+      - name: Build
+        if: steps.build-cache.outputs.cache-hit != 'true'
+        run: npm run build
+
+      - name: Generate diff
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          scripts/compare-output.sh $GITHUB_BASE_REF $GITHUB_WORKSPACE
+
+      - name: Save npm package diffs
+        uses: actions/upload-artifact@v4.6.2
+        with:
+          name: Package diff
+          path: .cache/diff/package/*.diff
+          if-no-files-found: ignore
