@@ -27,7 +27,10 @@ export function swatch(options = {}) {
     label: 'Unnamed',
 
     // Toggle for print colours, switches RGB/hex for CMYK/Pantone
-    print: false
+    print: false,
+
+    // Removes the wrapping `dl` element if this is an item in a list of swatches
+    isInSwatchList: false
   }
   options = { ...defaultOptions, ...options }
 
@@ -38,23 +41,24 @@ export function swatch(options = {}) {
   // Not all print colours in the palette have defined CMYK and Pantone
   // equivalents (e.g. white), so those need conditional checks
   const colourLabels = options.print
-    ? `${options.cmyk ? `<div class="app-swatch__value" data-swatch-value="${options.cmyk.join(',')}">CMYK ${options.cmyk.join(' ')}</div>` : ''}
-  ${options.pantone ? `<div class="app-swatch__value" data-swatch-value="${options.pantone}">${options.pantone}</div>` : ''}`
-    : `<div class="app-swatch__value" data-swatch-value="${colourRGB.join(',')}">RGB ${colourRGB.join(' ')}</div>
-  <div class="app-swatch__value" data-swatch-value="${options.hex}">${options.hex}</div>`
+    ? `${options.cmyk.length ? `<dd class="app-swatch__value" data-swatch-value="${options.cmyk.join(',')}">CMYK ${options.cmyk.join(' ')}</dd>` : ''}
+  ${options.pantone ? `<dd class="app-swatch__value" data-swatch-value="${options.pantone}">${options.pantone}</dd>` : ''}`
+    : `<dd class="app-swatch__value" data-swatch-value="${colourRGB.join(',')}">RGB ${colourRGB.join(' ')}</dd>
+  <dd class="app-swatch__value" data-swatch-value="${options.hex}">${options.hex.toUpperCase()}</dd>`
 
   const label = options.label
     ? `<div class="app-swatch__label">
-      <div class="app-swatch__name"><strong>${options.label}</strong></div>
+      <dt class="app-swatch__name"><strong>${options.label}</strong></dt>
       ${colourLabels}
       </div>`
     : ''
 
-  return trimTemplateLiteral(`<div class="app-swatch${options.classes ? ` ${options.classes}` : ''}" data-module="app-swatch" style="--app-swatch-colour:${options.hex};">
-    ${label}
-  </div>`)
-}
+  // Assemble attributes for the wrapping element, as what it is can change
+  const attributes = `class="app-swatch${options.classes ? ` ${options.classes}` : ''}" data-module="app-swatch" style="--app-swatch-colour:${options.hex};"`
 
-export function filterColours(palette, use, group) {
-  return palette.filter((c) => c.uses.includes(use) && c.group === group)
+  return trimTemplateLiteral(
+    options.isInSwatchList
+      ? `<div ${attributes}>${label}</div>`
+      : `<dl ${attributes}>${label}</dl>`
+  )
 }

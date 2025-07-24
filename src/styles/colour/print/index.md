@@ -7,54 +7,36 @@ title: Print
 
 ### Blues
 
-{%- for c in colours | filterColours("print", "blue") %}
-{% swatch { hex: c.hex, cmyk: c.cmyk, pantone: c.pantone, label: c.label, print: true } %}
-{%- endfor %}
+{% swatchList { palette: colours, use: "print", group: "blue" } %}
 
 ### Greens
 
-{%- for c in colours | filterColours("print", "green") %}
-{% swatch { hex: c.hex, cmyk: c.cmyk, pantone: c.pantone, label: c.label, print: true } %}
-{%- endfor %}
+{% swatchList { palette: colours, use: "print", group: "green" } %}
 
 ### Teals
 
-{%- for c in colours | filterColours("print", "teal") %}
-{% swatch { hex: c.hex, cmyk: c.cmyk, pantone: c.pantone, label: c.label, print: true } %}
-{%- endfor %}
+{% swatchList { palette: colours, use: "print", group: "teal" } %}
 
 ### Purples
 
-{%- for c in colours | filterColours("print", "purple") %}
-{% swatch { hex: c.hex, cmyk: c.cmyk, pantone: c.pantone, label: c.label, print: true } %}
-{%- endfor %}
+{% swatchList { palette: colours, use: "print", group: "purple" } %}
 
 ### Magentas
 
-{%- for c in colours | filterColours("print", "magenta") %}
-{% swatch { hex: c.hex, cmyk: c.cmyk, pantone: c.pantone, label: c.label, print: true } %}
-{%- endfor %}
+{% swatchList { palette: colours, use: "print", group: "magenta" } %}
 
 ### Reds
 
-{%- for c in colours | filterColours("print", "red") %}
-{% swatch { hex: c.hex, cmyk: c.cmyk, pantone: c.pantone, label: c.label, print: true } %}
-{%- endfor %}
+{% swatchList { palette: colours, use: "print", group: "red" } %}
 
 ### Oranges
 
-{%- for c in colours | filterColours("print", "orange") %}
-{% swatch { hex: c.hex, cmyk: c.cmyk, pantone: c.pantone, label: c.label, print: true } %}
-{%- endfor %}
+{% swatchList { palette: colours, use: "print", group: "orange" } %}
 
 ### Yellows
 
-{%- for c in colours | filterColours("print", "yellow") %}
-{% swatch { hex: c.hex, cmyk: c.cmyk, pantone: c.pantone, label: c.label, print: true } %}
-{%- endfor %}
+{% swatchList { palette: colours, use: "print", group: "yellow" } %}
 
 ### Neutrals
 
-{%- for c in colours | filterColours("print", "neutral") %}
-{% swatch { hex: c.hex, cmyk: c.cmyk, pantone: c.pantone, label: c.label, print: true } %}
-{%- endfor %}
+{% swatchList { palette: colours, use: "print", group: "neutral" } %}

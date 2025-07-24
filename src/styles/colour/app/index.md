@@ -7,57 +7,39 @@ title: App
 
 ### Blues
 
-{%- for c in colours | filterColours("app", "blue") %}
-{% swatch { hex: c.hex, label: c.label } %}
-{%- endfor %}
+{% swatchList { palette: colours, use: "app", group: "blue" } %}
 
 ### Greens
 
-{%- for c in colours | filterColours("app", "green") %}
-{% swatch { hex: c.hex, label: c.label } %}
-{%- endfor %}
+{% swatchList { palette: colours, use: "app", group: "green" } %}
 
 ### Teals
 
-{%- for c in colours | filterColours("app", "teal") %}
-{% swatch { hex: c.hex, label: c.label } %}
-{%- endfor %}
+{% swatchList { palette: colours, use: "app", group: "teal" } %}
 
 ### Purples
 
-{%- for c in colours | filterColours("app", "purple") %}
-{% swatch { hex: c.hex, label: c.label } %}
-{%- endfor %}
+{% swatchList { palette: colours, use: "app", group: "purple" } %}
 
 ### Magentas
 
-{%- for c in colours | filterColours("app", "magenta") %}
-{% swatch { hex: c.hex, label: c.label } %}
-{%- endfor %}
+{% swatchList { palette: colours, use: "app", group: "magenta" } %}
 
 ### Reds
 
-{%- for c in colours | filterColours("app", "red") %}
-{% swatch { hex: c.hex, label: c.label } %}
-{%- endfor %}
+{% swatchList { palette: colours, use: "app", group: "red" } %}
 
 ### Oranges
 
-{%- for c in colours | filterColours("app", "orange") %}
-{% swatch { hex: c.hex, label: c.label } %}
-{%- endfor %}
+{% swatchList { palette: colours, use: "app", group: "orange" } %}
 
 ### Yellows
 
-{%- for c in colours | filterColours("app", "yellow") %}
-{% swatch { hex: c.hex, label: c.label } %}
-{%- endfor %}
+{% swatchList { palette: colours, use: "app", group: "yellow" } %}
 
 ### Neutrals
 
-{%- for c in colours | filterColours("app", "neutral") %}
-{% swatch { hex: c.hex, label: c.label } %}
-{%- endfor %}
+{% swatchList { palette: colours, use: "app", group: "neutral" } %}
 
 ## App header
 

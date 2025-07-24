@@ -186,7 +186,7 @@ export default function () {
       cmyk: [100, 0, 12, 0],
       pantone: '3255 C',
       label: 'Accent teal',
-      uses: ['app', 'social', 'print']
+      uses: ['app', 'social', 'web', 'print']
     },
     {
       group: 'purple',

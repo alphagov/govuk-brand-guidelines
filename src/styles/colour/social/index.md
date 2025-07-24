@@ -7,57 +7,39 @@ title: Social
 
 ### Blues
 
-{%- for c in colours | filterColours("social", "blue") %}
-{% swatch { hex: c.hex, label: c.label } %}
-{%- endfor %}
+{% swatchList { palette: colours, use: "social", group: "blue" } %}
 
 ### Greens
 
-{%- for c in colours | filterColours("social", "green") %}
-{% swatch { hex: c.hex, label: c.label } %}
-{%- endfor %}
+{% swatchList { palette: colours, use: "social", group: "green" } %}
 
 ### Teals
 
-{%- for c in colours | filterColours("social", "teal") %}
-{% swatch { hex: c.hex, label: c.label } %}
-{%- endfor %}
+{% swatchList { palette: colours, use: "social", group: "teal" } %}
 
 ### Purples
 
-{%- for c in colours | filterColours("social", "purple") %}
-{% swatch { hex: c.hex, label: c.label } %}
-{%- endfor %}
+{% swatchList { palette: colours, use: "social", group: "purple" } %}
 
 ### Magentas
 
-{%- for c in colours | filterColours("social", "magenta") %}
-{% swatch { hex: c.hex, label: c.label } %}
-{%- endfor %}
+{% swatchList { palette: colours, use: "social", group: "magenta" } %}
 
 ### Reds
 
-{%- for c in colours | filterColours("social", "red") %}
-{% swatch { hex: c.hex, label: c.label } %}
-{%- endfor %}
+{% swatchList { palette: colours, use: "social", group: "red" } %}
 
 ### Oranges
 
-{%- for c in colours | filterColours("social", "orange") %}
-{% swatch { hex: c.hex, label: c.label } %}
-{%- endfor %}
+{% swatchList { palette: colours, use: "social", group: "orange" } %}
 
 ### Yellows
 
-{%- for c in colours | filterColours("social", "yellow") %}
-{% swatch { hex: c.hex, label: c.label } %}
-{%- endfor %}
+{% swatchList { palette: colours, use: "social", group: "yellow" } %}
 
 ### Neutrals
 
-{%- for c in colours | filterColours("social", "neutral") %}
-{% swatch { hex: c.hex, label: c.label } %}
-{%- endfor %}
+{% swatchList { palette: colours, use: "social", group: "neutral" } %}
 
 ## Use colour to reflect tone
 

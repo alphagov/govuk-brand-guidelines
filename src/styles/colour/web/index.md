@@ -7,62 +7,42 @@ title: Web
 
 ### Blues
 
-{%- for c in colours | filterColours("web", "blue") %}
-{% swatch { hex: c.hex, label: c.label } %}
-{%- endfor %}
+{% swatchList { palette: colours, use: "web", group: "blue" } %}
 
 ### Greens
 
-{%- for c in colours | filterColours("web", "green") %}
-{% swatch { hex: c.hex, label: c.label } %}
-{%- endfor %}
+{% swatchList { palette: colours, use: "web", group: "green" } %}
 
 ### Teals
 
-{%- for c in colours | filterColours("web", "teal") %}
-{% swatch { hex: c.hex, label: c.label } %}
-{%- endfor %}
+{% swatchList { palette: colours, use: "web", group: "teal" } %}
 
 ### Purples
 
-{%- for c in colours | filterColours("web", "purple") %}
-{% swatch { hex: c.hex, label: c.label } %}
-{%- endfor %}
+{% swatchList { palette: colours, use: "web", group: "purple" } %}
 
 ### Magentas
 
-{%- for c in colours | filterColours("web", "magenta") %}
-{% swatch { hex: c.hex, label: c.label } %}
-{%- endfor %}
+{% swatchList { palette: colours, use: "web", group: "magenta" } %}
 
 ### Reds
 
-{%- for c in colours | filterColours("web", "red") %}
-{% swatch { hex: c.hex, label: c.label } %}
-{%- endfor %}
+{% swatchList { palette: colours, use: "web", group: "red" } %}
 
 ### Oranges
 
-{%- for c in colours | filterColours("web", "orange") %}
-{% swatch { hex: c.hex, label: c.label } %}
-{%- endfor %}
+{% swatchList { palette: colours, use: "web", group: "orange" } %}
 
 ### Yellows
 
-{%- for c in colours | filterColours("web", "yellow") %}
-{% swatch { hex: c.hex, label: c.label } %}
-{%- endfor %}
+{% swatchList { palette: colours, use: "web", group: "yellow" } %}
 
 ### Browns
 
-{%- for c in colours | filterColours("web", "brown") %}
-{% swatch { hex: c.hex, label: c.label } %}
-{%- endfor %}
+{% swatchList { palette: colours, use: "web", group: "brown" } %}
 
 ### Neutrals
 
-{%- for c in colours | filterColours("web", "neutral") %}
-{% swatch { hex: c.hex, label: c.label } %}
-{%- endfor %}
+{% swatchList { palette: colours, use: "web", group: "neutral" } %}
 
 ### Web functional colours
