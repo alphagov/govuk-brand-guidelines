@@ -28,7 +28,7 @@ jobs:
           clean: false # So that we retain the stats generated from base
 
       - name: Setup and build
-        uses: ./.github/workflows/actions/setup-again
+        uses: ./.github/workflows/actions/setup
         id: setup-build-head
 
       - name: Make base build available
