@@ -8,8 +8,8 @@ set -ex
 
 # Default the base branch to main to allow running locally quickly
 base="${1:-main}"
-# Default the head branch to the commit SHA
-head=$(git rev-parse HEAD)
+# Default the head branch to the commit SHA if detached
+head=$(git branch --show-current | git rev-parse HEAD)
 # And the output folder to the current working directory
 output_folder="${2:-`pwd`}"
 
