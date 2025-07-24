@@ -4,3 +4,39 @@ title: Print
 ---
 
 ## Print palette
+
+### Blues
+
+{% swatchList { palette: colours, use: "print", group: "blue" } %}
+
+### Greens
+
+{% swatchList { palette: colours, use: "print", group: "green" } %}
+
+### Teals
+
+{% swatchList { palette: colours, use: "print", group: "teal" } %}
+
+### Purples
+
+{% swatchList { palette: colours, use: "print", group: "purple" } %}
+
+### Magentas
+
+{% swatchList { palette: colours, use: "print", group: "magenta" } %}
+
+### Reds
+
+{% swatchList { palette: colours, use: "print", group: "red" } %}
+
+### Oranges
+
+{% swatchList { palette: colours, use: "print", group: "orange" } %}
+
+### Yellows
+
+{% swatchList { palette: colours, use: "print", group: "yellow" } %}
+
+### Neutrals
+
+{% swatchList { palette: colours, use: "print", group: "neutral" } %}
