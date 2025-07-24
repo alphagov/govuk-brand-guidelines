@@ -16,6 +16,7 @@ jobs:
 
       - name: Setup and build
         uses: ./.github/workflows/actions/setup
+        id: setup-build-base
 
       - name: Save base build
         run: mv _site _site--base
@@ -28,6 +29,7 @@ jobs:
 
       - name: Setup and build
         uses: ./.github/workflows/actions/setup
+        id: setup-build-head
 
       - name: Make base build available
         uses: actions/upload-artifact@v4
