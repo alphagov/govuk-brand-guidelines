@@ -34,6 +34,9 @@ export default function (eleventyConfig) {
     }
   })
 
+  // Copy `mp4` files in the output site
+  eleventyConfig.addPassthroughCopy('**/*.mp4')
+
   eleventyConfig.addPlugin(setupNunjucks)
 
   // Watch and compile Sass files on change
