@@ -37,6 +37,12 @@ export default function (eleventyConfig) {
   // Copy `mp4` files in the output site
   eleventyConfig.addPassthroughCopy('**/*.mp4')
 
+  // Eleventy doesn't watch the plugins the configuration
+  // depends on, so we need to give it a little nudge
+  eleventyConfig.addWatchTarget('./eleventy/**', {
+    resetConfig: true
+  })
+
   eleventyConfig.addPlugin(setupNunjucks)
 
   // Watch and compile Sass files on change
