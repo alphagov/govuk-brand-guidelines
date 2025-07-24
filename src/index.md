@@ -6,7 +6,7 @@ title: GOV.UK Brand Guidelines
 ## Brand ambition
 
 Since our launch in 2012, GOV.UK has become one of the most recognisable and trusted online destinations in the UK.
-As we increase the number of places that people meet GOV.UK, such as in people's social feeds, and launch more personalised services like the GOV.UK app, we need our brand identity to do more. It needs to be able to compete for attention in busy environments like social media, be equipped to come to life when used in formats including video, while remaining approachable and welcoming for all the people we serve.
+As we increase the number of places that people meet GOV.UK, such as in people's social feeds, and launch more personalised services like the GOV.UK app, we need our brand identity to do more.
 
 The updated GOV.UK identity has been designed with this in mind. It builds on our recognisable and trusted foundations whilst introducing new elements so we can thrive in the broader range of channels that people expect us in today and tomorrow.
 

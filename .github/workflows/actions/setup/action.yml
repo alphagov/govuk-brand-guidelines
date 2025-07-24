@@ -37,15 +37,23 @@ runs:
       shell: bash
       run: npm ci
 
+    # Find the current commit's SHA to serve as a cache key
+    # Not using `github.sha` so the action can cache builds
+    # of other branches (eg. the main branch)
+    - name: Get current commit SHA
+      shell: bash
+      run: |
+        echo "commit_sha=$(git rev-parse "$GITHUB_SHA")" >> "$GITHUB_ENV"
+
     - name: Restore build
       uses: actions/cache@v4.2.3
-      id: build-cache
+      id: build-cache-${{env.commit_sha}}
 
       with:
-        key: build-cache-${{ runner.os }}-${{ github.sha }}
+        key: build-cache-${{ runner.os }}-${{ env.commit_sha }}
         path: _site
 
     - name: Build
-      if: steps.build-cache.outputs.cache-hit != 'true'
+      # if: steps.build-cache.outputs.cache-hit != 'true'
       shell: bash
       run: npm run build
