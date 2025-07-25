@@ -41,6 +41,7 @@
     "gray-matter": "^4.0.3",
     "html-validate": "^9.7.1",
     "husky": "^9.1.7",
+    "jsdiff": "^1.1.1",
     "linkinator": "^6.1.4",
     "lint-staged": "^16.1.2",
     "markdown-it": "^14.1.0",
