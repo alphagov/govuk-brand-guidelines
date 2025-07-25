@@ -3,6 +3,9 @@ name: Compare output
 on:
   pull_request:
 
+permissions:
+  pull-requests: write
+
 jobs:
   compare-output:
     name: Compare output
