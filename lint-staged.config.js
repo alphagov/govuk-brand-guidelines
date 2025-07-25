@@ -9,5 +9,5 @@ export default {
   ],
   '*.md': ['npm run lint:prettier:cli -- --write'],
   '*.{yaml,yml}': ['npm run lint:prettier:cli -- --write'],
-  '*.svg': ['npm run lint:svg:cli', 'npm run lint:prettier:cli -- --write']
+  '*.svg': ['npm run lint:svg:cli']
 }
