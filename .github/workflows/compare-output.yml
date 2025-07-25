@@ -43,11 +43,11 @@ jobs:
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          scripts/compare-output.sh $GITHUB_BASE_REF $GITHUB_WORKSPACE
+          .github/workflows/compare-output/diff-output.sh $GITHUB_BASE_REF $GITHUB_WORKSPACE
 
       - name: Save npm package diffs
         uses: actions/upload-artifact@v4.6.2
         with:
           name: Package diff
-          path: .cache/diff/package/*.diff
+          path: .cache/diff/output/*.diff
           if-no-files-found: ignore
