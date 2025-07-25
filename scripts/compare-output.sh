@@ -42,11 +42,7 @@ git commit --allow-empty -m "Build output for '$head'" --no-verify
 # See https://git-scm.com/docs/gitglossary#Documentation/gitglossary.txt-aiddefpathspecapathspec
 
 # Diff the rendered HTML output
-git diff -M05 HEAD^ -- "_site/**/*.html" \
-  > $output_folder/.cache/diff/output/html.diff
+git diff -M05 HEAD^ -- "_site/**/*.html" > $output_folder/.cache/diff/output/html.diff
 
 # Diff the rest of the files, excluding the sourcemaps and the minified files
-git diff -M05 HEAD^ -- _site \
-  ":(exclude)**/*.html" \
-  ":(exclude)**/*.map" \
-  > $output_folder/.cache/diff/outpu/other.diff
+git diff -M05 HEAD^ -- _site ":(exclude)**/*.html" ":(exclude)**/*.map" $output_folder/.cache/diff/outpu/other.diff
