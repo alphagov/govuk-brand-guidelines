@@ -13,8 +13,8 @@ head=$(git branch --show-current | git rev-parse HEAD)
 # And the output folder to the current working directory
 output_folder="${2:-`pwd`}"
 
-rm -Rf .cache/diff/package
-mkdir -p .cache/diff/package
+rm -Rf .cache/diff/output
+mkdir -p .cache/diff/output
 
 # Switch to base branch
 git checkout $base
@@ -43,10 +43,10 @@ git commit --allow-empty -m "Build output for '$head'" --no-verify
 
 # Diff the rendered HTML output
 git diff -M05 HEAD^ -- "_site/**/*.html" \
-  > $output_folder/.cache/diff/package/html.diff
+  > $output_folder/.cache/diff/output/html.diff
 
 # Diff the rest of the files, excluding the sourcemaps and the minified files
 git diff -M05 HEAD^ -- _site \
   ":(exclude)**/*.html" \
   ":(exclude)**/*.map" \
-  > $output_folder/.cache/diff/package/other.diff
+  > $output_folder/.cache/diff/outpu/other.diff
