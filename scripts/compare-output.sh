@@ -43,7 +43,8 @@ git commit --allow-empty -m "Build output for '$head'" --no-verify
 
 # Diff the rendered HTML output
 git diff -M05 HEAD^ --output=$output_folder/.cache/diff/output/html.diff -- \
-  "_site/**/*.html"
+  "_site/**/*.html" \
+  "_site/*.html"
 # Diff the rest of the files, excluding the sourcemaps and the minified files
 git diff -M05 HEAD^ --output=$output_folder/.cache/diff/output/other.diff -- \
   _site \
