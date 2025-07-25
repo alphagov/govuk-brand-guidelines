@@ -1,0 +1,51 @@
+# A composite action regrouping the shared steps
+# for setting up workflows ahead of running their tasks:
+# - installing node and dependencies
+# - building the project
+name: Setup
+
+runs:
+  using: composite
+
+  steps:
+    - name: Setup Node.js
+      uses: actions/setup-node@v4.4.0
+      with:
+        cache: npm
+        check-latest: true
+        node-version-file: .nvmrc
+
+    - name: Cache dependencies
+      uses: actions/cache@v4.2.3
+      id: npm-install-cache
+
+      with:
+        # Use faster GNU tar for all runners
+        enableCrossOsArchive: true
+
+        # Restore `node_modules` cache (unless packages change)
+        key: npm-install-${{ runner.os }}-${{ hashFiles('package-lock.json', '**/package.json') }}
+        path: |
+          node_modules
+          **/node_modules
+
+    - name: Install dependencies
+      id: install-node
+
+      # Skip install when dependencies are cached
+      if: steps.npm-install-cache.outputs.cache-hit != 'true'
+      shell: bash
+      run: npm ci
+
+    - name: Restore build
+      uses: actions/cache@v4.2.3
+      id: build-cache
+
+      with:
+        key: build-cache-${{ runner.os }}-${{ github.sha }}
+        path: _site
+
+    - name: Build
+      if: steps.build-cache.outputs.cache-hit != 'true'
+      shell: bash
+      run: npm run build

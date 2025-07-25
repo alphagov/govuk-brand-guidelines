@@ -1,0 +1,42 @@
+name: Compare output
+
+on:
+  pull_request:
+
+jobs:
+  compare-output:
+    name: Compare output
+    runs-on: 'ubuntu-latest'
+
+    steps:
+      - name: Checkout base branch
+        uses: actions/checkout@v4.2.2
+        with:
+          ref: ${{ github.base_ref }}
+
+      - name: Setup and build
+        uses: ./.github/workflows/actions/setup
+
+      - name: Save base build
+        run: mv _site _site--base
+
+      - name: Checkout head
+        uses: actions/checkout@v4.2.2
+        with:
+          ref: ${{ github.head_ref }}
+          clean: false # So that we retain the stats generated from base
+
+      - name: Setup and build
+        uses: ./.github/workflows/actions/setup
+
+      - name: Make base build available
+        uses: actions/upload-artifact@v4
+        with:
+          name: base-build
+          path: _site--base
+
+      - name: Make build available
+        uses: actions/upload-artifact@v4
+        with:
+          name: head-build
+          path: _site
