@@ -55,6 +55,17 @@ jobs:
           path: .cache/diff/output/*.diff
           if-no-files-found: ignore
 
+      - name: Format HTML diff
+        run: |
+          .github/workflows/compare-output/format-html-diff.js ${{ github.workspace }}/.cache/diff/output/html.diff $GITHUB_REF > .cache/diff/output/html.json
+
+      - name: Save formatted HTML diff
+        uses: actions/upload-artifact@v4.6.2
+        with:
+          name: Formatted HTML diff
+          path: .cache/diff/output/html.json
+          if-no-files-found: ignore
+
       - name: Add comment to PR
         uses: actions/github-script@v7.0.1
         with:
@@ -74,7 +85,7 @@ jobs:
                 skipEmpty: true
               },
               {
-                path: '${{ github.workspace }}/.cache/diff/output/css.diff',
+                path: '${{ github.workspace }}/.cache/diff/output/other.diff',
                 titleText: 'Other changes to output',
                 markerText: 'output/other.diff',
                 skipEmpty: true
