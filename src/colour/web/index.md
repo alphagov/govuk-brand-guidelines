@@ -324,4 +324,4 @@ RGB 29 112 184
 
 Indicative examples for illustrative purposes only.
 
-TODO: missing image
+![TODO](./example.png)

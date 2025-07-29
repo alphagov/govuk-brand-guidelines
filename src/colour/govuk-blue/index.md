@@ -49,7 +49,7 @@ Indicative examples for illustrative purposes only.
 
 You must make sure that the contrast ratio of colours used meets [Web Content Accessibility Guidelines (WCAG 2.2) success criterion 1.4.3 Contrast (minimum) level AA](https://www.w3.org/TR/WCAG22/#contrast-minimum).
 
-TODO: missing image
+![TODO](./colour-contrast.png)
 
 ## Incorrect colour usage
 
