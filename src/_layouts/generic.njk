@@ -60,31 +60,12 @@
   }}
 {% endblock %}
 
-{% macro appLinkList(pages) %}
-  {% if pages | length %}
-    <ul class="govuk-list">
-      {% for child in pages %}
-        <li>
-          {% set ariaCurrent = child | ariaCurrentValue %}
-          <a
-            href="{{child.url | url}}"
-            {% if ariaCurrent %}
-            aria-current="{{ariaCurrent}}"
-            {% endif %}
-            >
-            {{child.data.title}}
-          </a>
-          {{appLinkList(child.data.children)}}
-        </li>
-      {% endfor %}
-    </ul>
-  {% endif %}
-{% endmacro %}
+{% from "link-list.njk" import appLinkList %}
 
 {% block content %}
   <div class="govuk-grid-row">
     <nav class="govuk-grid-column-one-third">
-      {{ appLinkList(sidebarNavigationRoot.data.children)}}
+      {{ appLinkList(sidebarNavigationRoot.data.children, page.url)}}
     </nav>
     <div class="govuk-grid-column-two-thirds">
       <h1 class="govuk-heading-xl">{{title}}</h1>

@@ -60,15 +60,16 @@ export function setupNavigation(eleventyConfig) {
     return pages
   })
 
-  eleventyConfig.addFilter('ariaCurrentValue', function (page) {
-    const renderedPage = this.page
-
-    if (isCurrent(page.url, renderedPage.url)) {
-      return 'page'
-    } else if (isActive(page.url, renderedPage.url)) {
-      return 'true'
+  eleventyConfig.addFilter(
+    'ariaCurrentValue',
+    function (pageUrl, renderedPageUrl) {
+      if (isCurrent(pageUrl, renderedPageUrl)) {
+        return 'page'
+      } else if (isActive(pageUrl, renderedPageUrl)) {
+        return 'true'
+      }
     }
-  })
+  )
 
   eleventyConfig.addFilter('asNavigationItems', function (pages) {
     const renderedPage = this.page
