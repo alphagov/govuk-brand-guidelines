@@ -6,22 +6,30 @@ export function grid(content, options = {}) {
     classes: undefined,
 
     // The number of columns to use
-    // If undefined, it will use as many columns as the content allows
-    columns: undefined,
-
-    // The narrowest that any column can be before it will coerce other
-    // columns to wrap onto a new line. — Default is set in CSS
-    minWidth: undefined
+    columns: undefined
   }
   options = { ...defaultOptions, ...options }
 
   // Assemble custom properties
   const cssProperties = []
-  if (options.columns) {
-    cssProperties.push(`--app-grid-columns: ${options.columns}`)
-  }
-  if (options.minWidth) {
-    cssProperties.push(`--app-grid-min-width: ${options.minWidth}`)
+  if (typeof options.columns === 'number') {
+    cssProperties.push(`--app-grid-columns-mobile: ${options.columns};`)
+  } else if (typeof options.columns === 'object') {
+    if (options.columns.mobile) {
+      cssProperties.push(
+        `--app-grid-columns-mobile: ${options.columns.mobile};`
+      )
+    }
+    if (options.columns.tablet) {
+      cssProperties.push(
+        `--app-grid-columns-tablet: ${options.columns.tablet};`
+      )
+    }
+    if (options.columns.desktop) {
+      cssProperties.push(
+        `--app-grid-columns-desktop: ${options.columns.desktop};`
+      )
+    }
   }
 
   return trimTemplateLiteral(`<div class="app-grid${options.classes ? ` ${options.classes}` : ''}" style="${cssProperties.join('')}">
