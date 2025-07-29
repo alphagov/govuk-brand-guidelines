@@ -1,7 +1,6 @@
-import { markdown } from '../markdown.js'
-import { trimTemplateLiteral } from '../utils.js'
+import { blockShortcode } from './util.js'
 
-export function grid(content, options = {}) {
+export const grid = blockShortcode((content, options = {}) => {
   const defaultOptions = {
     classes: undefined,
 
@@ -32,7 +31,5 @@ export function grid(content, options = {}) {
     }
   }
 
-  return trimTemplateLiteral(`<div class="app-grid${options.classes ? ` ${options.classes}` : ''}" style="${cssProperties.join('')}">
-    ${markdown(content)}
-  </div>`)
-}
+  return `<div class="app-grid${options.classes ? ` ${options.classes}` : ''}" style="${cssProperties.join(';')}">${content}</div>`
+})
