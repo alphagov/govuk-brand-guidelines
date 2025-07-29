@@ -10,7 +10,7 @@ import { outdent } from 'outdent'
  * @returns
  */
 export function blockShortcode(shortcode) {
-  return function (content, options) {
+  return function (content, {insideHTML, indent = 0, ...options} = {}) {
     // For content to be formatted properly inside the `<div>`
     // we need two things to happen for markdown to be processed properly:
     // 1. Removing any indentation, so that markdown blocks are properly at the start of the line
@@ -19,10 +19,18 @@ export function blockShortcode(shortcode) {
       outdent.string(content)
     )
 
-    const output = shortcode(formattedContent, options)
+    const output = indentLines(shortcode(formattedContent, options), {amount: indent})
 
-    return `\n\n${output}\n\n`
+    return insideHTML ? output : `\n\n${output}\n\n`
   }
+}
+
+function indentLines(content, {amount = 0, character = ' '}) {
+  const indentation = character.repeat(amount);
+
+  return content.split('\n')
+    .map(line => indentation + line)
+    .join('\n')
 }
 
 function ensureLeadingTrailingNewLines(content) {
