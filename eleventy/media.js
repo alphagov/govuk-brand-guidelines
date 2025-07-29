@@ -10,7 +10,7 @@ export function setupMedia(eleventyConfig) {
   // resizes and compresses the sources of <img>s referenced in output HTML
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
     // Output image formats
-    formats: ['svg', 'avif', 'webp'],
+    formats: ['auto', 'avif', 'webp'],
 
     // If the input is SVG, only output SVG
     svgShortCircuit: true,
