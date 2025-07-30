@@ -19,11 +19,11 @@ TODO:
 
 The lock-up combining the crown and wordmark is for use throughout the web experience, in moments such as the web header and footer.
 
+The examples on this page are indicative and for illustrative purposes only.
+
 ![TODO](./web-header.png)
 
 ![TODO](./web-header-example.png)
-
-Indicative examples for illustrative purposes only.
 
 ## Footer
 
@@ -31,12 +31,8 @@ Indicative examples for illustrative purposes only.
 
 ![TODO](./web-footer-example.png)
 
-Indicative examples for illustrative purposes only.
-
 ## Favicon
 
 In line with minimum size guidance, within web favicons we use the simplified crown. This is to retain legibility and brand recognition and small sizes.
 
 ![TODO](./favicon.png)
-
-Indicative examples for illustrative purposes only.

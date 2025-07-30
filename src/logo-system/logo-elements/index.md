@@ -17,7 +17,7 @@ The exception to this rule is the GOV.UK website. See the Web Logo section (3.3)
 
 As our primary identifier, the GOV.UK wordmark should be used in all applications of the logo.
 
-The exception to this rule is the GOV.UK website. See the Web Logo section (3.3) for more details.
+The exception to this rule is the GOV.UK website. See the [Web – Logo system page](/logo-system/web/).
 
 ![TODO](./crown.svg)
 
@@ -33,9 +33,9 @@ The elements that make up our logo lock-up are all scaled using the dot from wit
 
 The spacing between the crown and the wordmark is 3 dots, and the dot within the wordmark is 2 dots in width.
 
-Pixel size displayed here is indicative and will vary across devices.Please refer to platform teams for exact pixel sizes.
-
 This ensures visual balance and harmony between the elements.
+
+The pixel sizes displayed on this page are indicative and will vary across devices.
 
 ![TODO](./lockup-detail.svg)
 
@@ -47,21 +47,23 @@ The size of the crown can be adjusted depending on context. For example, when be
 
 #### Standard crown size
 
-Scaling should follow this rule;
-Wordmark dot = 2x crown dot
+Scaling should follow this rule:
+Wordmark dot = 2× crown dot
 
 ![TODO](./propotional-scaling-desktop.svg)
 
 #### Enlarged crown size
 
-Scaling should follow this rule;
-Wordmark dot = 1x crown dot
+Scaling should follow this rule:
+Wordmark dot = 1× crown dot
 
 ![TODO](./propotional-scaling-mobile.svg)
 
 ### Maintain clear space around logo elements
 
-Maintaining clear space around the logo is essential to ensure its visibility, impact, and legibility. By respecting clear space guidelines, we preserve the logo’s integrity and ensure it remains a strong and recognisable brand asset.
+Maintaining clear space around the logo is essential to ensure its visibility, impact, and legibility.
+
+By respecting clear space guidelines, we preserve the logo’s integrity and ensure it remains a strong and recognisable brand asset.
 
 The clear space area is defined by the dot size within our wordmark.
 
@@ -69,7 +71,9 @@ The clear space area is defined by the dot size within our wordmark.
 
 ## Minimum sizing
 
-Keeping the logo at its minimum size helps ensure it stays legible and accessible. If it’s too small, it can lose detail and be harder for some users to read or recognise.
+Keeping the logo at its minimum size helps ensure it stays legible and accessible.
+
+If it’s too small, it can lose detail and be harder for some users to read or recognise.
 
 <!-- TODO: suggest adding the arrow to the image -->
 
@@ -103,7 +107,7 @@ When using against a light background, the wordmark colour should use Black and 
 
 ### Special use
 
-When using against a busy background or in print situations where colour isn’t possible, white or black versions of the wordmark can be used.
+When using against a busy background or in print situations where colour is not possible, white or black versions of the wordmark can be used.
 
 ![TODO](./logo-special-dark.svg)
 ![TODO](./logo-special-light.svg)
