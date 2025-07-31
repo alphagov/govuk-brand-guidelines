@@ -1,4 +1,6 @@
-export function grid(content, options = {}) {
+import { blockShortcode } from './utils.js'
+
+export const grid = blockShortcode((content, options = {}) => {
   const defaultOptions = {
     classes: undefined,
 
@@ -32,4 +34,4 @@ export function grid(content, options = {}) {
   return `<div class="app-grid${options.classes ? ` ${options.classes}` : ''}" style="${cssProperties.join(';')}">
     ${content}
   </div>`
-}
+})
