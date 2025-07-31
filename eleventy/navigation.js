@@ -77,11 +77,14 @@ export function setupNavigation(eleventyConfig) {
     return pages.map((page) => asNavigationItem(page, renderedPage.url))
   })
 
-  eleventyConfig.addFilter('asNavigationItem', function (page) {
-    const renderedPage = this.page
+  eleventyConfig.addFilter(
+    'asNavigationItem',
+    function (page, navigationItemData) {
+      const renderedPage = this.page
 
-    return asNavigationItem(page, renderedPage.url)
-  })
+      return asNavigationItem(page, renderedPage.url, navigationItemData)
+    }
+  )
 }
 
 /**
@@ -92,13 +95,18 @@ export function setupNavigation(eleventyConfig) {
  * @param {string} renderedPageUrl - The page currently being rendered
  * @returns {GOVUKFrontendNavigationItem}
  */
-function asNavigationItem(navigationItemPage, renderedPageUrl) {
+function asNavigationItem(
+  navigationItemPage,
+  renderedPageUrl,
+  navigationItemData = {}
+) {
   return {
     href: navigationItemPage.url,
     text:
       navigationItemPage.url === '/' ? 'Home' : navigationItemPage.data.title,
     current: isCurrent(navigationItemPage.url, renderedPageUrl),
-    active: isActive(navigationItemPage.url, renderedPageUrl)
+    active: isActive(navigationItemPage.url, renderedPageUrl),
+    ...navigationItemData
   }
 }
 
