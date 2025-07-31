@@ -9,7 +9,11 @@ export function setupNunjucks(eleventyConfig) {
     new nunjucks.FileSystemLoader([
       eleventyConfig.dir.input,
       './node_modules/govuk-frontend/dist'
-    ])
+    ]),
+    // As we take over Eleventy's Nunjucks environment, we need to replicate the same
+    // default it sets up
+    // https://github.com/11ty/eleventy/blob/2b5e72c5fbea41bd82a03472679d90ef75fc3119/src/Engines/Nunjucks.js#L19
+    eleventyConfig.nunjucksEnvironmentOptions || { dev: true }
   )
 
   // Enable the rebrand styles and assets
