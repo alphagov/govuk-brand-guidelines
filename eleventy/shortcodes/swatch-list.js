@@ -28,7 +28,7 @@ export const swatchList = blockShortcode((options = {}) => {
     return { ...c, print: options.use === 'print', isInSwatchList: true }
   })
 
-  return `<dl class="app-swatch-list ${options.classes ? ` ${options.classes}` : ''}">
+  return `<dl class="app-swatch-list${options.classes ? ` ${options.classes}` : ''}">
     ${colourList.map((c) => swatch(c)).join(' ')}
   </dl>`
 })
