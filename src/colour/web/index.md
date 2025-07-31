@@ -61,88 +61,44 @@ Only use the variables in the context they’re designed for. In all other cases
 
 #### Text
 
-$govuk-text-colour
-Black
-RGB 11 12 12
-#0B0C0C
-
-$govuk-secondary-text-colour
-Black Tint 25%
-RGB 72 73 73
-#484949
+{% swatch { label: "$govuk-text-colour", hex: "#0B0C0C" } %}
+{% swatch { label: "$govuk-secondary-text-colour", hex: "#484949" } %}
 
 #### Links
 
-$govuk-link-colour
-Primary Blue
-RGB 29 112 184
-#1D70B8
-
-$govuk-link-visited-colour
-Primary Purple
-RGB 84 49 159
-#54319F
-
-$govuk-link-hover-colour
-Blue Shade 50%
-RGB 15 56 92
-#0F385C
-
-$govuk-link-active-colour
-Black
-RGB 11 12 12
-#0B0C0C
+{% swatch { label: "$govuk-link-colour", hex: "#1D70B8" } %}
+{% swatch { label: "$govuk-link-visited-colour", hex: "#54319F" } %}
+{% swatch { label: "$govuk-link-hover-colour", hex: "#0F385C" } %}
+{% swatch { label: "$govuk-link-active-colour", hex: "#0B0C0C" } %}
 
 #### Border
 
-$govuk-border-colour
-Black Tint 80%
-RGB 206 206 206
-#CECECE
-
-$govuk-input-border-colour
-Black
-RGB 11 12 12
-#0B0C0C
+{% swatch { label: "$govuk-border-colour", hex: "#CECECE" } %}
+{% swatch { label: "$govuk-input-border-colour", hex: "#0B0C0C" } %}
 
 #### Focus state
 
-$govuk-focus-colour
-Primary Yellow
-RGB 255 221 0
-#FFDD00
+{% swatch { label: "$govuk-focus-colour", hex: "#FFDD00" } %}
 
 Only use this colour to indicate which element is focused on. For example, when a user tabs to an element with their keyboard.
 
-$govuk-focus-text-colour
-Black
-RGB 11 12 12
-#0B0C0C
+{% swatch { label: "$govuk-focus-text-colour", hex: "#0B0C0C" } %}
 
 #### Error state
 
-$govuk-error-colour
-Primary Red
-RGB 202 53 53
-#CA3535
+{% swatch { label: "$govuk-error-colour", hex: "#CA3535" } %}
 
 Use for error messages
 
 #### Success state
 
-$govuk-success-colour
-Primary Green
-RGB 17 135 90
-#11875A
+{% swatch { label: "$govuk-success-colour", hex: "#11875A" } %}
 
 Use for success messages
 
 #### Brand colour
 
-$govuk-brand-colour
-Primary Blue
-RGB 29 112 184
-#1D70B8
+{% swatch { label: "$govuk-brand-colour", hex: "#1D70B8" } %}
 
 ### Web palette example
 
