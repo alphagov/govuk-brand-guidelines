@@ -41,9 +41,9 @@ export const swatch = blockShortcode((options = {}) => {
   // Not all print colours in the palette have defined CMYK and Pantone
   // equivalents (e.g. white), so those need conditional checks
   const colourLabels = options.print
-    ? `${options.cmyk.length ? `<dd class="app-swatch__value" data-swatch-value="${options.cmyk.join(',')}">CMYK ${options.cmyk.join(' ')}</dd>` : ''}
+    ? `${options.cmyk.length ? `<dd class="app-swatch__value" data-swatch-value="${options.cmyk.join(' ')}">CMYK ${options.cmyk.join(' ')}</dd>` : ''}
   ${options.pantone ? `<dd class="app-swatch__value" data-swatch-value="${options.pantone}">${options.pantone}</dd>` : ''}`
-    : `<dd class="app-swatch__value" data-swatch-value="${colourRGB.join(',')}">RGB ${colourRGB.join(' ')}</dd>
+    : `<dd class="app-swatch__value" data-swatch-value="${colourRGB.join(' ')}">RGB ${colourRGB.join(' ')}</dd>
   <dd class="app-swatch__value" data-swatch-value="${options.hex}">${options.hex.toUpperCase()}</dd>`
 
   const label = options.label
