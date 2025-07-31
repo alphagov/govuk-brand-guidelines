@@ -2,8 +2,8 @@
 title: Whitespace handling within the `grid` shortcode
 ---
 
-<!-- prettier-ignore-start -->
-<!-- This file has a few tests about managing whitespace so we need it to stay as authored -->
+{% css %}
+
 <style>
     .app-grid {
         outline: dashed 2px grey;
@@ -13,6 +13,11 @@ title: Whitespace handling within the `grid` shortcode
         }
     }
 </style>
+
+{% endcss %}
+
+<!-- prettier-ignore-start -->
+<!-- This file has a few tests about managing whitespace so we need it to stay as authored -->
 
 ## `content`
 

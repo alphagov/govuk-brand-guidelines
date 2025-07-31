@@ -2,6 +2,20 @@
 title: Test page for the `grid` shortcode
 ---
 
+{% css %}
+
+<style>
+    .app-grid {
+        outline: dashed 2px grey;
+    
+        > * {
+            outline: solid
+        }
+    }
+</style>
+
+{% endcss %}
+
 ## No configuration
 
 1 column across all breakpoints.
