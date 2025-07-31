@@ -74,13 +74,32 @@ export function setupNavigation(eleventyConfig) {
   eleventyConfig.addFilter('asNavigationItems', function (pages) {
     const renderedPage = this.page
 
-    return pages.map((page) => ({
-      href: page.url,
-      text: page.url === '/' ? 'Home' : page.data.title,
-      current: isCurrent(page.url, renderedPage.url),
-      active: isActive(page.url, renderedPage.url)
-    }))
+    return pages.map((page) => asNavigationItem(page, renderedPage.url))
   })
+
+  eleventyConfig.addFilter('asNavigationItem', function (page) {
+    const renderedPage = this.page
+
+    return asNavigationItem(page, renderedPage.url)
+  })
+}
+
+/**
+ * Transforms an Eleventy page into a navigation item that can be
+ * consumed by GOV.UK Frontend components
+ *
+ * @param {EleventyTemplate} navigationItemPage - The page the navigation item represents
+ * @param {string} renderedPageUrl - The page currently being rendered
+ * @returns {GOVUKFrontendNavigationItem}
+ */
+function asNavigationItem(navigationItemPage, renderedPageUrl) {
+  return {
+    href: navigationItemPage.url,
+    text:
+      navigationItemPage.url === '/' ? 'Home' : navigationItemPage.data.title,
+    current: isCurrent(navigationItemPage.url, renderedPageUrl),
+    active: isActive(navigationItemPage.url, renderedPageUrl)
+  }
 }
 
 /**

@@ -1,0 +1,10 @@
+{% from "govuk/components/service-navigation/macro.njk" import govukServiceNavigation %}
+
+{%- set navigation = [] %}
+{%- for child in collections.pages[0].data.children %}
+  {%- set navigation = navigation.concat([child | asNavigationItem]) %}
+{%- endfor %}
+
+{{ govukServiceNavigation({
+  navigation: navigation
+}) }}

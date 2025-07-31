@@ -22,9 +22,7 @@
     productName: "Brand Guidelines"
   }) }}
 
-  {{ govukServiceNavigation({
-    navigation: collections.pages[0].data.children | asNavigationItems
-  }) }}
+  {% include "navigation.njk" %}
 {% endblock %}
 
 {% block beforeContent %}
