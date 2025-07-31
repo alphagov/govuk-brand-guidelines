@@ -1,0 +1,19 @@
+.app-grid {
+  --app-grid-columns-mobile: 1;
+  --app-grid-gap: #{$govuk-gutter};
+
+  display: grid;
+  grid-template-columns: repeat(var(--app-grid-columns-mobile), 1fr);
+  gap: var(--app-grid-gap);
+  align-items: end;
+
+  @include govuk-media-query($from: tablet) {
+    --app-grid-columns-tablet: var(--app-grid-columns-mobile);
+    grid-template-columns: repeat(var(--app-grid-columns-tablet), 1fr);
+  }
+
+  @include govuk-media-query($from: desktop) {
+    --app-grid-columns-desktop: var(--app-grid-columns-tablet);
+    grid-template-columns: repeat(var(--app-grid-columns-desktop), 1fr);
+  }
+}
