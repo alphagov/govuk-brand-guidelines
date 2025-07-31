@@ -1,16 +1,32 @@
 import { outdent } from 'outdent'
 
 /**
- * Wraps a shortcode function so it handles whitespace correctly
- * both inside and outside the shortcode tags
+ * Wraps a *non-paired* shortcode function so that it applies
+ * appropriate whitespace around the output HTML.
+ *
+ * @param {(options:Object) => string} shortcode
+ * @returns
+ */
+
+export function blockShortcode(shortcode) {
+  return function ({ indent = 0, ...options } = {}) {
+    const output = indentLines(shortcode(options), { amount: indent })
+
+    return `\n\n${output}\n\n`
+  }
+}
+
+/**
+ * Wraps a paired shortcode function so it handles whitespace
+ * correctly both inside and outside the shortcode tags
  *
  * Allows shortcodes to receive both markdown and HTML
  *
  * @param {(content:string, options:Object) => string} shortcode
  * @returns
  */
-export function blockShortcode(shortcode) {
-  return function (content, {insideHTML, indent = 0, ...options} = {}) {
+export function blockPairedShortcode(shortcode) {
+  return function (content, { insideHTML, indent = 0, ...options } = {}) {
     // For content to be formatted properly inside the `<div>`
     // we need two things to happen for markdown to be processed properly:
     // 1. Removing any indentation, so that markdown blocks are properly at the start of the line
@@ -19,17 +35,20 @@ export function blockShortcode(shortcode) {
       outdent.string(content)
     )
 
-    const output = indentLines(shortcode(formattedContent, options), {amount: indent})
+    const output = indentLines(shortcode(formattedContent, options), {
+      amount: indent
+    })
 
     return insideHTML ? output : `\n\n${output}\n\n`
   }
 }
 
-function indentLines(content, {amount = 0, character = ' '}) {
-  const indentation = character.repeat(amount);
+function indentLines(content, { amount = 0, character = ' ' }) {
+  const indentation = character.repeat(amount)
 
-  return content.split('\n')
-    .map(line => indentation + line)
+  return content
+    .split('\n')
+    .map((line) => indentation + line)
     .join('\n')
 }
 
