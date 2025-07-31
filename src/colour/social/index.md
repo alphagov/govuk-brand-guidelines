@@ -77,45 +77,21 @@ For more sensitive messaging, colours from within the same tonal range are used 
 
 ![TODO](./example-tonal-1.png)
 
-Green Tint 95%
-RGB 243 249 247
-#F3F9F7
-
-Green Shade 50%
-RGB 9 68 45
-#09442D
+{% swatch { label: "Green tint 95%", hex: "#F3F9F7" } %}
+{% swatch { label: "Green shade 50%", hex: "#09442D" } %}
 
 ![TODO](./example-tonal-2.png)
 
-Primary Red
-RGB 202 53 53
-#CA3535
-
-Red Shade 50%
-RGB 101 27 27
-#651B1B
-
-Accent Red
-RGB 255 94 94
-#FF5E5E
+{% swatch { label: "Primary red", hex: "#CA3535" } %}
+{% swatch { label: "Red shade 50%", hex: "#651B1B" } %}
+{% swatch { label: "Accent red", hex: "#FF5E5E" } %}
 
 ![TODO](./example-tonal-3.png)
 
-Purple Tint 95%
-RGB 246 245 250
-#F6F5FA
-
-Primary Blue
-RGB 29 112 184
-#1D70B8
-
-Blue Shade 50%
-RGB 15 56 92
-#0F385C
-
-Accent Blue
-RGB 17 224 241
-#11E0F
+{% swatch { label: "Purple tint 95%", hex: "#F6F5FA" } %}
+{% swatch { label: "Primary purple", hex: "#54319F" } %}
+{% swatch { label: "Purple shade 50%", hex: "#2A1950" } %}
+{% swatch { label: "Accent purple", hex: "#BA4AFF" } %}
 
 ## Companion colours
 
@@ -129,93 +105,48 @@ Remember, some users browse with high-contrast settings or dark mode. Colours ma
 
 <!-- the horizontal lines should not be there, but I added those temporarily to make groups clearer -->
 
-Primary Blue
-RGB 29 112 184
-#1D70B8
-
-Primary Yellow
-RGB 255 221 0
-#FFDD00
+{% swatch { label: "Primary blue", hex: "#1D70B8" } %}
+{% swatch { label: "Primary yellow", hex: "#FFDD00" } %}
 
 ---
 
-Magenta Tint 95%
-RGB 252 245 248
-#FCF5F8
-
-Primary Red
-RGB 202 53 53
-#CA3535
+{% swatch { label: "Magenta tint 95%", hex: "#FCF5F8" } %}
+{% swatch { label: "Primary red", hex: "#CA3535" } %}
 
 ---
 
-Blue Tint 95%
-RGB 244 248 251
-#F4F8FB
-
-Primary Magenta
-RGB 202 53 124
-#CA357C
+{% swatch { label: "Blue tint 95%", hex: "#F4F8FB" } %}
+{% swatch { label: "Primary magenta", hex: "#CA357C" } %}
 
 ---
 
-Primary Yellow
-RGB 255 221 0
-#FFDD00
-
-Purple Shade 50%
-RGB 42 25 80
-#2A1950
+{% swatch { label: "Primary yellow", hex: "#FFDD00" } %}
+{% swatch { label: "Purple shade 50%", hex: "#2A1950" } %}
 
 ---
 
-Accent Blue
-RGB 17 224 241
-#11E0F1
-
-Purple Shade 25%
-RGB 63 37 119
-#3F2577
+{% swatch { label: "Accent blue", hex: "#11E0F1" } %}
+{% swatch { label: "Purple shade 25%", hex: "#3F2577" } %}
 
 ---
 
-Accent Green
-RGB 102 243 158
-#66F39E
-
-Blue Shade 50%
-RGB 15 56 92
-#0F385C
+{% swatch { label: "Accent green", hex: "#66F39E" } %}
+{% swatch { label: "Blue shade 50%", hex: "#0F385C" } %}
 
 ---
 
-Green Shade 50%
-RGB 9 68 45
-#09442D
-
-Accent Blue
-RGB 17 224 241
-#11E0F1
+{% swatch { label: "Green shade 50%", hex: "#09442D" } %}
+{% swatch { label: "Accent blue", hex: "#11E0F1" } %}
 
 ---
 
-Primary Blue
-RGB 29 112 184
-#1D70B8
-
-Accent Blue
-RGB 17 224 241
-#11E0F1
+{% swatch { label: "Primary blue", hex: "#1D70B8" } %}
+{% swatch { label: "Accent blue", hex: "#11E0F1" } %}
 
 ---
 
-Red Shade 50%
-RGB 101 27 27
-#651B1B
-
-Primary Yellow
-RGB 255 221 0
-#FFDD00
+{% swatch { label: "Red shade 50%", hex: "#651B1B" } %}
+{% swatch { label: "Primary yellow", hex: "#FFDD00" } %}
 
 ### Examples
 
@@ -224,34 +155,16 @@ For more sensitive messaging, colours from within the same tonal range are used 
 
 ![TODO](./example-companion-1.png)
 
-Primary Blue
-RGB 29 112 184
-#1D70B8
-
-Primary Yellow
-RGB 255 221 0
-#FFDD00
+{% swatch { label: "Primary blue", hex: "#1D70B8" } %}
+{% swatch { label: "Primary yellow", hex: "#FFDD00" } %}
 
 ![TODO](./example-companion-2.png)
 
-Primary Magenta
-RGB 202 53 124
-#CA357C
-
-Blue Shade 50%
-RGB 15 56 92
-#0F385C
-
-Magenta Tint 95%
-RGB 252 245 248
-#FCF5F8
+{% swatch { label: "Primary magenta", hex: "#CA357C" } %}
+{% swatch { label: "Blue shade 50%", hex: "#0F385C" } %}
+{% swatch { label: "Magenta tint 95%", hex: "#FCF5F8" } %}
 
 ![TODO](./example-companion-3.png)
 
-Accent Green
-RGB 102 243 158
-#66F39E
-
-Blue Shade 50%
-RGB 15 56 92
-#0F385C
+{% swatch { label: "Accent green", hex: "#66F39E" } %}
+{% swatch { label: "Blue shade 50%", hex: "#0F385C" } %}

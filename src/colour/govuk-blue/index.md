@@ -9,13 +9,8 @@ We’re building on the primary blue already in place to support recognition and
 
 Accent teal also sits alongside to add impact and help the brand feel more modern.
 
-Primary Blue
-RGB 29 112 184
-#1D70B8
-
-Accent Teal
-RGB 0 255 224
-#00FFE0
+{% swatch { label: "Primary blue", hex: "#1D70B8" } %}
+{% swatch { label: "Accent teal", hex: "#00FFE0" } %}
 
 ![TODO](./wordmark-on-blue.svg)
 
