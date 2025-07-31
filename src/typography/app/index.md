@@ -11,7 +11,9 @@ Using it within our apps can provide significant advantages, particularly in str
 
 Whilst there may be cases where it is not possible, we should always try to use GDS Transport where possible.
 
-TODO: missing image
+<!-- TODO: image is duplicated in ../social/ -->
+
+![TODO](./gds-transport.svg)
 
 ## OS native fonts
 
@@ -23,4 +25,4 @@ For example:
 
 Using the system typeface ensures better performance, scalability, and adherence to platform conventions, resulting in a more polished and user-friendly app, it does however effect brand recognition and consistency.
 
-TODO: missing image
+![TODO](./sf-pro.svg)

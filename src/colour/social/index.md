@@ -324,7 +324,7 @@ Companion colour
 Colour can be used to reflect tone of a message.
 For more sensitive messaging, colours from within the same tonal range are used to feel more serious, informative and functional.
 
-TODO: missing image
+![TODO](./example-tonal-1.png)
 
 Green Tint 95%
 RGB 243 249 247
@@ -334,7 +334,7 @@ Green Shade 50%
 RGB 9 68 45
 #09442D
 
-TODO: missing image
+![TODO](./example-tonal-2.png)
 
 Primary Red
 RGB 202 53 53
@@ -348,7 +348,7 @@ Accent Red
 RGB 255 94 94
 #FF5E5E
 
-TODO: missing image
+![TODO](./example-tonal-3.png)
 
 Purple Tint 95%
 RGB 246 245 250
@@ -471,7 +471,7 @@ RGB 255 221 0
 Colour can be used to reflect tone of a message.
 For more sensitive messaging, colours from within the same tonal range are used to feel more serious, informative and functional.
 
-TODO: missing image
+![TODO](./example-companion-1.png)
 
 Primary Blue
 RGB 29 112 184
@@ -481,7 +481,7 @@ Primary Yellow
 RGB 255 221 0
 #FFDD00
 
-TODO: missing image
+![TODO](./example-companion-2.png)
 
 Primary Magenta
 RGB 202 53 124
@@ -495,7 +495,7 @@ Magenta Tint 95%
 RGB 252 245 248
 #FCF5F8
 
-TODO: missing image
+![TODO](./example-companion-3.png)
 
 Accent Green
 RGB 102 243 158

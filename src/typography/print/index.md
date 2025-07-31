@@ -10,7 +10,7 @@ The recommended sizes for common document formats are illustrated here.
 Minimum size:
 10mm
 
-TODO: missing image
+![TODO](./letter.png)
 
 Header text
 Minimum size:

@@ -26,30 +26,30 @@ TODO: 4 missing images
 
 Product name spacing on horizontal and stacked lock-ups should be: proportionate to the type size. On 14.2pt type should be -0.21 pixel letter spacing.
 
-TODO: 4 missing images
+![TODO](./horizontal-pay.svg) ![TODO](./horizontal-wallet.svg) ![TODO](./horizontal-notify.svg)
 
 ### Horizontal with crown
 
 Spacing between wordmark and crown on horizontal lock-up should be 3 crown dots or 7px spacing on web.
 
-TODO: 4 missing images
+![TODO](./horizontal-with-crown-pay.svg) ![TODO](./horizontal-with-crown-wallet.svg) ![TODO](./horizontal-with-crown-notify.svg)
 
 ### Stacked for web
 
 Product name on stacked lock-ups should be aligned left to GOV.UK wordmark.
 Spacing between wordmark and product name should be 1 large dot or 7 pixels from the bottom of the logo to the top of the product name on web.
 
-TODO: 4 missing images
+![TODO](./stacked-for-web-pay.svg) ![TODO](./stacked-for-web-wallet.svg) ![TODO](./stacked-for-web-notify.svg)
 
 ### Stacked for app
 
 Product name on stacked lock-ups should be centre to GOV.UK wordmark.
 Spacing between wordmark and product name should be 1 large dot or 7 pixels from the bottom of the logo to the top of the product name on web.
 
-TODO: 4 missing images
+![TODO](./stacked-for-app-pay.svg) ![TODO](./stacked-for-app-wallet.svg) ![TODO](./stacked-for-app-notify.svg)
 
 ### Stacked with crown
 
 Product name on stacked lock-ups should be aligned left to crown.
 
-TODO: 4 missing images
+![TODO](./stacked-with-crown-pay.svg) ![TODO](./stacked-with-crown-wallet.svg) ![TODO](./stacked-with-crown-notify.svg)

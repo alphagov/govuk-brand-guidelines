@@ -14,30 +14,26 @@ It’s based on the typeface designed in the 1960s by Jock Kinneir and Margaret 
 The Government Digital Service adapted it in 2012 for digital use, bringing the same clarity and people-first approach to government websites.
 Using GDS Transport makes GOV.UK easier to recognise and information easier to read on any device.
 
-TODO: 2x missing image
+![TODO](./transport-bold.svg)
+![TODO](./transport-light.svg)
 
 ### Weights
 
 GDS transport consists of two weights; **Light** and **Bold**.
 
-TODO: 2x missing image
+![TODO](./bold.svg)
+![TODO](./light.svg)
 
 ### Glyphs
 
 GDS Transport offers a wide range of glyph support. It includes a comprehensive selection of letters, numerals, punctuation, and special symbols, making it suitable for various levels of communications.
 
+<!-- TODO: the labels should maybe be removed from the images? -->
+
 GDS Transport Light
 
-<!-- This should probably be an image -->
-
-Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm
-Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz
-1234567890 !@£%&\*?()”:;,.
+![TODO](./letters-light.svg)
 
 GDS Transport Bold
 
-<!-- This should probably be an image -->
-
-**Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm
-Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz
-1234567890 !@£%&\*?()”:;,.**
+![TODO](./letters-bold.svg)

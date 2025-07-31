@@ -31,8 +31,6 @@ We use the crown as a supporting element that sits below or to theright of the w
 
 ![TODO](./profile-icon-lines.svg) ![TODO](./profile-icon.svg)
 
-<!-- TODO: the YouTube example is low res and needs to be replaced -->
-
 ![TODO](./youtube-example.png) ![TODO](./insta-example.png) ![TODO](./facebook-example.png)
 
 Indicative examples for illustrative purposes only.

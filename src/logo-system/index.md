@@ -25,4 +25,4 @@ The crown must always be present but is used as a supporting asset within close 
 
 To aid recognition the lock-up combines the crown and wordmark and is used primarily within the web channel.
 
-TODO: missing image
+![TODO](./logo-elements/lockup.svg)

@@ -20,4 +20,4 @@ The brand can also shift depending on what we're saying. For sensitive topics, w
 
 This flexibility comes from how we use key brand elements – the wider colour palette, the dot and our motion language. What follows shows how to apply the brand in different contexts to meet the needs of people using GOV.UK every day.
 
-TODO: missing image
+![TODO](./inform-inspire.svg)

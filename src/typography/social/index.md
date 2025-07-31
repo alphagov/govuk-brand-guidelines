@@ -11,7 +11,9 @@ Using it within our social channels can provide significant advantages, particul
 
 Whilst there may be cases where it is not possible, we should always try to use GDS Transport where possible.
 
-TODO: missing image
+<!-- TODO: image is duplicated in ../app/ -->
+
+![TODO](./gds-transport.svg)
 
 ## Building visual hierarchy
 
@@ -49,17 +51,20 @@ Tags should be set in Bold, but to aid hierarchy should be a smaller type size t
 
 ## Alignment
 
-### Left aligned text (TODO: missing image)
+<!-- TODO: the next two headings started with a small image that is not in here yet
+           but we might not need it for consistency reasons? -->
+
+### Left aligned text
 
 Where possible we should lead with left-aligned text. It improves readability by keeping spacing consistent and reducing eye strain. It prevents uneven gaps (rivers of white space) found in fully justified text, making it easier to follow, especially for users with dyslexia or visual impairments.
 
-TODO: missing image
+![TODO](./left-aligned.png)
 
-### Centre aligned text (TODO: missing image)
+### Centre aligned text
 
 Centred text should be used sparingly for shorter headlines, predominantly within social channels. Whilst it grabs attention, it reduces readability in longer text, making it harder for the eye to track.
 
-TODO: missing image
+![TODO](./centre-aligned.png)
 
 Indicative examples for illustrative purposes only.
 
@@ -77,7 +82,7 @@ TODO: missing image
 
 **Don't** use line and letter spacing that is too wide or tight.
 
-TODO: 2x missing images
+TODO: missing images (2)
 
 Indicative examples for illustrative purposes only.
 
@@ -89,4 +94,6 @@ Where standard system fonts are available, Helvetica Neue or Arial should be use
 
 In cases where system fonts are unavailable, the closest replacement should be used. This should always be a sans serif, low contrast typeface with a focus on accessibility.
 
-TODO: 2x missing images
+<!-- TODO: the following image is two images combined, not sure if we need them separately -->
+
+![TODO](./helvetica-arial.svg)

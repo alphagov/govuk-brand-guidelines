@@ -7,8 +7,6 @@ title: Logo elements
 
 Our wordmark has been redrawn, elevating the dot into a position that signifies the connection between government and the UK.
 
-TODO: missing image
-
 As our primary identifier, the GOV.UK wordmark should be used in all applications of the logo.
 
 The exception to this rule is the GOV.UK website. See the Web Logo section (3.3) for more details.
@@ -69,8 +67,6 @@ The clear space area is defined by the dot size within our wordmark.
 
 ![TODO](./space-around-wordmark.svg)
 
-TODO: missing image with space around crown
-
 ## Minimum sizing
 
 Keeping the logo at its minimum size helps ensure it stays legible and accessible. If it’s too small, it can lose detail and be harder for some users to read or recognise.
@@ -109,10 +105,8 @@ When using against a light background, the wordmark colour should use Black and 
 
 When using against a busy background or in print situations where colour isn’t possible, white or black versions of the wordmark can be used.
 
-![TODO](./logo-special-dark.png)
+![TODO](./logo-special-dark.svg)
 ![TODO](./logo-special-light.svg)
-
-<!-- TODO: the logo-special-dark needs to be extracted as an SVG -->
 
 ## In motion
 
