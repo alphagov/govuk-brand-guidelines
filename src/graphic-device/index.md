@@ -1,6 +1,7 @@
 ---
 order: 0
 title: Graphic device
+hero: ./hero.svg
 ---
 
 ## The Dot

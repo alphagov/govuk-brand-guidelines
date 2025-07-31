@@ -1,6 +1,7 @@
 ---
 order: 3
 title: Typography
+hero: ./hero.svg
 ---
 
 Typography is a core element to our identity, shaping how our brand is perceived across all GOV.UK channels.
@@ -28,12 +29,10 @@ GDS transport consists of two weights; **Light** and **Bold**.
 
 GDS Transport offers a wide range of glyph support. It includes a comprehensive selection of letters, numerals, punctuation, and special symbols, making it suitable for various levels of communications.
 
-<!-- TODO: the labels should maybe be removed from the images? -->
-
 GDS Transport Light
 
-![TODO](./letters-light.svg)
+![TODO](./font-specimen-light.svg)
 
 GDS Transport Bold
 
-![TODO](./letters-bold.svg)
+![TODO](./font-specimen-bold.svg)

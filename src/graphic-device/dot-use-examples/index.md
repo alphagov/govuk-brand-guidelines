@@ -104,8 +104,6 @@ Indicative examples for illustrative purposes only.
 
 The dot can also be used as a static graphic, adding emphasis and helping guide users through content.
 
-<!-- TODO: Half of these images are out of date and they're all low res, so need to be replaced -->
-
 ![TODO](./static-dot-1.png) ![TODO](./static-dot-2.png) ![TODO](./static-dot-3.png) ![TODO](./static-dot-4.png)
 
 Indicative examples for illustrative purposes only.

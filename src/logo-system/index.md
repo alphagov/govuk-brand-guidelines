@@ -1,6 +1,7 @@
 ---
 order: 1
 title: Logo system
+hero: ./hero.svg
 ---
 
 ## The GOV.UK logo system

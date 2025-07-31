@@ -1,6 +1,7 @@
 ---
 order: 2
 title: Colour
+hero: ./hero.svg
 ---
 
 Our colour palette is designed with accessibility in mind. It’s flexible enough to work across all GOV.UK channels.
