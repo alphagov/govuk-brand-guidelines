@@ -1,38 +1,21 @@
-import { eleventyImageTransformPlugin } from '@11ty/eleventy-img'
-
 import { setupNunjucks } from './eleventy/nunjucks.js'
 import { setupStylesheetCompilation } from './eleventy/stylesheets.js'
 import { setupJavaScriptCompilation } from './eleventy/javascript.js'
 import { setupMarkdownCompilation } from './eleventy/markdown.js'
 import { setupNavigation } from './eleventy/navigation.js'
+import { setupMedia } from './eleventy/media.js'
 
 /**
  *  @param {import("@11ty/eleventy/UserConfig")} eleventyConfig
  */
 export default function (eleventyConfig) {
-  // Load Eleventy image plugin. In this configuration, it automatically
-  // resizes and compresses the sources of <img>s referenced in output HTML
-  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
-    // Output image formats
-    formats: ['svg', 'avif', 'webp'],
-
-    // If the input is SVG, only output SVG
-    svgShortCircuit: true,
-
-    // Output image widths
-    // These represent full-width, two-thirds and one-third grid widths respectively
-    widths: [960, 630, 300],
-
-    // Attributes on the output HTML
-    htmlOptions: {
-      imgAttributes: {
-        class: 'app-prose-image',
-        loading: 'lazy',
-        decoding: 'async'
-      },
-      pictureAttributes: {}
-    }
+  // Eleventy doesn't watch the plugins the configuration
+  // depends on, so we need to give it a little nudge
+  eleventyConfig.addWatchTarget('./eleventy/**', {
+    resetConfig: true
   })
+
+  eleventyConfig.addPlugin(setupMedia)
 
   eleventyConfig.addPlugin(setupNunjucks)
 
