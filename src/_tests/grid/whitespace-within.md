@@ -1,5 +1,5 @@
 ---
-title: Test page for the `grid` shortcode
+title: Whitespace handling within the `grid` shortcode
 ---
 
 <!-- prettier-ignore-start -->
