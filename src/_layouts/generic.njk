@@ -7,10 +7,11 @@
 {% block head %}
   {{ super() }}
   {#- Prevent search engine indexing for archive, preview and development builds -#}
-  {% if site.env.CONTEXT !== "production" %}
+  {% if site.env.CONTEXT !== "production" or metadata.noRobots %}
     <meta name="robots" content="noindex, nofollow">
   {% endif %}
   <link rel="stylesheet" href="{{ '/assets/stylesheet.css' | url }}">
+  {% getBundle "css" %}
 {% endblock %}
 
 {% block header %}
