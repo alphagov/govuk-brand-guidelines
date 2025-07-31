@@ -5,7 +5,9 @@
 {%- for child in collections.pages[0].data.children %}
 
   {% set subNavigationHtml %}
-    <template>{{ appLinkList(child.data.children, page.url) }}</template>
+    <template>
+      {{ appLinkList(child.data.children, page.url) }}
+    </template>
   {% endset %}
 
   {% set navigationItem = child | asNavigationItem({attributes: {"data-module": "app-mobile-navigation-section"}, html: child.data.title + subNavigationHtml}) %}
@@ -14,5 +16,6 @@
 {%- endfor %}
 
 {{ govukServiceNavigation({
-  navigation: navigation
+  navigation: navigation,
+  navigationClasses: 'app-service-navigation__wrapper'
 }) }}
