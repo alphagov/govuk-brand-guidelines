@@ -1,6 +1,7 @@
 ---
 order: 0
 title: GOV.UK Brand Guidelines
+hero: ./hero.svg
 ---
 
 ## Brand ambition

@@ -21,11 +21,7 @@ Type hierarchy is key to creating content that is readable and easy to follow.
 
 Whilst there are many ways to build visual hierarchy, mixing weight and scale across tags, headlines and body copy is a simple yet effective approach.
 
-Tag style
-Headline style
-Body copy style
-
-TODO: missing image
+![TODO](./type-hierarchy.png)
 
 Indicative examples for illustrative purposes only.
 
@@ -78,11 +74,11 @@ Depending on the size of type, different settings should be applied, as illustra
 
 **Do** use consistent and clear line and letter spacing.
 
-TODO: missing image
+![TODO](./type-settings-do.png)
 
 **Don't** use line and letter spacing that is too wide or tight.
 
-TODO: missing images (2)
+![TODO](./type-settings-dont-1.png) ![TODO](./type-settings-dont-2.png)
 
 Indicative examples for illustrative purposes only.
 
@@ -94,6 +90,5 @@ Where standard system fonts are available, Helvetica Neue or Arial should be use
 
 In cases where system fonts are unavailable, the closest replacement should be used. This should always be a sans serif, low contrast typeface with a focus on accessibility.
 
-<!-- TODO: the following image is two images combined, not sure if we need them separately -->
-
-![TODO](./helvetica-arial.svg)
+![TODO](./helvetica-neue.svg)
+![TODO](./arial.svg)

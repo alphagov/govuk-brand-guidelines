@@ -20,7 +20,8 @@ To keep the brand consistent, use each version exactly as shown – don’t resi
 
 The diagrams show how to space the wordmark and text in a lock-up. Use the width of the dot in the GOV.UK wordmark to set the spacing.
 
-TODO: 4 missing images
+![TODO](./lockup-1.svg) ![TODO](./lockup-2.svg)
+![TODO](./lockup-3.svg) ![TODO](./lockup-4.svg)
 
 ### Horizontal
 

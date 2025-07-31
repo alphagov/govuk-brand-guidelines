@@ -7,17 +7,6 @@ title: Print
 
 The recommended sizes for common document formats are illustrated here.
 
-Minimum size:
-10mm
+![TODO](./print-guide-1.svg)
 
-![TODO](./letter.png)
-
-Header text
-Minimum size:
-16pt
-
-Body text
-Minimum size:
-12pt
-
-TODO: missing image
+![TODO](./print-guide-2.svg)
