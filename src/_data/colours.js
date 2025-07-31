@@ -193,7 +193,7 @@ export default function () {
       hex: '#54319F',
       cmyk: [47, 69, 0, 38],
       pantone: '2103 C',
-      label: 'Primary Purple',
+      label: 'Primary purple',
       uses: ['app', 'social', 'web', 'print']
     },
     {
@@ -241,7 +241,7 @@ export default function () {
     {
       group: 'purple',
       hex: '#BA4AFF',
-      label: 'Accent Purple',
+      label: 'Accent purple',
       uses: ['app', 'social']
     },
     {
@@ -249,7 +249,7 @@ export default function () {
       hex: '#CA357C',
       cmyk: [0, 74, 39, 21],
       pantone: '213 C',
-      label: 'Primary Magenta',
+      label: 'Primary magenta',
       uses: ['app', 'social', 'web', 'print']
     },
     {
@@ -297,7 +297,7 @@ export default function () {
     {
       group: 'magenta',
       hex: '#FF52EE',
-      label: 'Accent Magenta',
+      label: 'Accent magenta',
       uses: ['app', 'social']
     },
     {
@@ -305,7 +305,7 @@ export default function () {
       hex: '#CA3535',
       cmyk: [0, 74, 74, 21],
       pantone: '1795 C',
-      label: 'Primary Red',
+      label: 'Primary red',
       uses: ['app', 'social', 'web', 'print']
     },
     {
@@ -353,7 +353,7 @@ export default function () {
     {
       group: 'red',
       hex: '#FF5E5E',
-      label: 'Accent Red',
+      label: 'Accent red',
       uses: ['app', 'social']
     },
     {
@@ -409,7 +409,7 @@ export default function () {
     {
       group: 'orange',
       hex: '#FFAF4A',
-      label: 'Accent Orange',
+      label: 'Accent orange',
       uses: ['app', 'social']
     },
     {
@@ -417,7 +417,7 @@ export default function () {
       hex: '#FFDD00',
       cmyk: [0, 13, 100, 0],
       pantone: 'Yellow C',
-      label: 'Primary Yellow',
+      label: 'Primary yellow',
       uses: ['app', 'social', 'web', 'print']
     },
     {
@@ -465,7 +465,7 @@ export default function () {
     {
       group: 'yellow',
       hex: '#FCFF52',
-      label: 'Accent Yellow',
+      label: 'Accent yellow',
       uses: ['app', 'social']
     },
     {
