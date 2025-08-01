@@ -7,7 +7,7 @@ title: App
 
 In GOV.UK apps we follow the primary logo system, using the wordmark as the main identifier whilst incorporating the crown as a supporting element to aid trust and recognition.
 
-An exception to this principle includes other GOV.UK apps, where the symbol or identifier may be used instead of the crown within the app icon. For more guidance on this see the ‘App icon suite’ page within section 3.4.
+An exception to this principle includes other GOV.UK apps, where the symbol or identifier may be used instead of the crown within the app icon, see the [App icon suite section on this page](#app-icon-suite).
 
 ### Wordmark
 
@@ -47,7 +47,7 @@ As this is a small use application of the logo elements, we use the enlarged cro
 
 ![TODO](./app-icon-lines.svg) ![TODO](./app-icon.svg) ![TODO](./app-store-example.png)
 
-### App icon suite
+### <a name="app-icon-suite"></a>App icon suite
 
 As the family of GOV.UK applications grows, the need for a consistent approach to app icon design is necessary.
 

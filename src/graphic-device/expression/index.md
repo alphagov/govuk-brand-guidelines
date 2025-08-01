@@ -9,6 +9,8 @@ The dot can take on different roles – guiding users through content, journeys 
 
 It should always serve a clear purpose.
 
+The examples on this page are indicative and for illustrative purposes only.
+
 Guides
 
 ![TODO](./expression-guides.png)
@@ -56,5 +58,3 @@ TODO: missing video
 Illustrates
 
 TODO: missing video
-
-Indicative examples for illustrative purposes only.

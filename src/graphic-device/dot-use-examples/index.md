@@ -44,7 +44,9 @@ TODO: missing video
 
 ## Social media
 
-Within the context of social media, strong brand expression and impact are essential for capturing attention and driving engagement. With content competing for visibility, our brand needs to stand out through more impactful visuals and dynamic motion.
+Within the context of social media, strong brand expression and impact are essential for capturing attention and driving engagement.
+
+With content competing for visibility, our brand needs to stand out through more impactful visuals and dynamic motion.
 
 To ensure consistency across all content, our dot graphic language should serve as a unifying anchor, reinforcing brand recognition and cohesion.
 
@@ -74,19 +76,19 @@ We can build on our dot graphic language to create engaging thumbnails that enco
 
 Dot behaviours provide flexibility in how thumbnails can be created for a variety of content types, across a scale from informing to inspiring.
 
-Thumbnails should always use the dot in a purposeful way. See examples of dot use within indicative thumbnails below.
+Thumbnails should always use the dot in a purposeful way.
+
+See these indicative examples of dot use within thumbnails. These examples are shown for illustrative purposes only.
 
 <!-- Obviously, that's not the right heading, needs proper design -->
 
 ### Inform <--------> Inspire
 
-<!-- TODO: These images are all out of date and low res, so need to be replaced -->
-
 Get help with...
 
 ![TODO](./video-thumb-get-help.png)
 
-60s guides
+60 second guides
 
 ![TODO](./video-thumb-60s.png)
 
@@ -94,23 +96,24 @@ Step-by-step guides
 
 ![TODO](./video-thumb-step.png)
 
-Influencer/presenter
+Influencer or presenter
 
 ![TODO](./video-thumb-influencer.png)
-
-Indicative examples for illustrative purposes only.
 
 ## Static dot examples
 
 The dot can also be used as a static graphic, adding emphasis and helping guide users through content.
 
-![TODO](./static-dot-1.png) ![TODO](./static-dot-2.png) ![TODO](./static-dot-3.png) ![TODO](./static-dot-4.png)
+See these indicative examples of static dot graphics. These examples are shown for illustrative purposes only.
 
-Indicative examples for illustrative purposes only.
+![TODO](./static-dot-1.png) ![TODO](./static-dot-2.png) ![TODO](./static-dot-3.png) ![TODO](./static-dot-4.png)
 
 ## Static dot storyboard
 
 While it's important to use the dot in a purposeful way, it can effectively guide user attention and break down information to enhance the overall experience.
+
+See this indicative example of the dot used throughout a storyboard. This example is shown for illustrative purposes only.
+
 Such as in the instagram story below;
 
 ![TODO](./storyboard-1.png) ![TODO](./storyboard-2.png) ![TODO](./storyboard-3.png) ![TODO](./storyboard-4.png) ![TODO](./storyboard-5.png) ![TODO](./storyboard-6.png)
@@ -119,7 +122,9 @@ Indicative examples for illustrative purposes only.
 
 ## Incorrect dot usage
 
-The dot has defined roles and behaviours, set out earlier in this guidance. To keep things consistent, avoid the following:
+The dot has defined roles and behaviours, set out earlier in this guidance.
+
+To keep things consistent, avoid the following:
 
 ### Overuse
 

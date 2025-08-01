@@ -37,7 +37,7 @@ Indicative examples for illustrative purposes only.
 
 ## Social end frames
 
-Social end frames can be used at the end of animated or filmed content. They incorporate both the wordmark and crown and act as a branded sign off.
+Social end frames can be used at the end of animated or filmed content. They incorporate both the wordmark and crown and act as a branded sign-off.
 
 ### Video end frame 16:9
 
@@ -53,13 +53,13 @@ Social end frames can be used at the end of animated or filmed content. They inc
 
 ## Adaptive dot colour
 
-At times, our social content will need greater impact. One of the ways this can be achieved is through the use
-of colour. Our logo follows the adaptive dot colour principle, which allows the dot to change colour depending on the background. This must always
-follow the tonal range of a colour.
+At times, our social content will need greater impact. One of the ways this can be achieved is through the use of colour.
+
+Our logo follows the adaptive dot colour principle, which allows the dot to change colour depending on the background. This must always follow the tonal range of a colour.
 
 The adaptive dot colour should be reserved for moments where the brand requires more expression, and should not be used in communications that require a more somber or serious tone.
 
-For example, if using **Purple Shade 50%** as a background, the dot colour would become the **Accent Purple**.
+For example, if using Purple Shade 50% as a background, the dot colour would become the Accent Purple.
 
 This can be applied within the live artwork files using the relevant swatches. Always consider accessibility when making these changes.
 
@@ -69,14 +69,14 @@ To aid brand recognition and coherency, adaptive dot colour should not be used w
 
 ### Incorrect adaptive dot colour usage
 
-**Do not** use colour combinations that are not accessible.
+Do not use colour combinations that are not accessible.
 
 ![TODO](./incorrect-not-accessible-1.svg) ![TODO](./incorrect-not-accessible-2.svg)
 
-**Do not** use colour combinations that lack contrast between the wordmark and dot.
+Do not use colour combinations that lack contrast between the wordmark and dot.
 
 ![TODO](./incorrect-low-contrast-1.svg) ![TODO](./incorrect-low-contrast-2.svg)
 
-**Do not** use colour combinations that are not from the same tonal range.
+Do not use colour combinations that are not from the same tonal range.
 
 ![TODO](./incorrect-tonal-1.svg) ![TODO](./incorrect-tonal-2.svg)

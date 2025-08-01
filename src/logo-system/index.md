@@ -8,7 +8,9 @@ hero: ./hero.svg
 
 Our logo represents our visual identity at the very highest level and is vitally important to our brand. This guidance will give you the confidence and knowledge you need to use it correctly.
 
-There are two elements to the GOV.UK logo system; the wordmark and crown. The wordmark is our primary GOV.UK identifier, with the crown being used as a supporting element to indicate trust.
+There are two elements to the GOV.UK logo system: the wordmark and crown.
+
+The wordmark is our primary GOV.UK identifier, with the crown being used as a supporting element to indicate trust.
 
 ## Wordmark
 
