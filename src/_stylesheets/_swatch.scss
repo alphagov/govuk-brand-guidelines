@@ -3,7 +3,8 @@
 
   display: flex;
   gap: govuk-spacing(3);
-  @include govuk-responsive-margin(3, $direction: 'bottom');
+  margin-top: 0;
+  @include govuk-responsive-margin(5, $direction: 'bottom');
   @include govuk-font(19);
 
   // The colour sample
@@ -47,5 +48,15 @@
 
   &--copied {
     fill: #11875a; // primary green
+  }
+}
+
+// Reduce the spacing between swatches in a list
+.app-swatch-list {
+  margin-top: 0;
+  @include govuk-responsive-margin(5, $direction: 'bottom');
+
+  .app-swatch {
+    @include govuk-responsive-margin(3, $direction: 'bottom');
   }
 }
