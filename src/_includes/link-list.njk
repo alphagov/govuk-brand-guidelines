@@ -1,0 +1,20 @@
+{% macro appLinkList(pages, renderedPageUrl) %}
+  {% if pages | length %}
+    <ul class="govuk-list">
+      {% for child in pages %}
+        <li>
+          {% set ariaCurrent = child.url | ariaCurrentValue(renderedPageUrl) %}
+          <a
+            href="{{child.url | url}}"
+            {% if ariaCurrent %}
+            aria-current="{{ariaCurrent}}"
+            {% endif %}
+            >
+            {{child.data.title}}
+          </a>
+          {{appLinkList(child.data.children, renderedPageUrl)}}
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+{% endmacro %}

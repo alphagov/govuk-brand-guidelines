@@ -15,6 +15,7 @@
 @import 'govuk/components/skip-link';
 
 @import 'grid';
+@import 'mobile-navigation-section';
 
 @import 'govuk/utilities';
 @import 'govuk/overrides';
@@ -22,4 +23,12 @@
 .app-prose-image {
   max-width: 100%;
   height: auto;
+}
+
+.govuk-list .govuk-list {
+  padding-left: govuk-spacing(3);
+}
+
+[aria-current] {
+  font-weight: bold;
 }

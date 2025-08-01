@@ -22,20 +22,7 @@
     productName: "Brand Guidelines"
   }) }}
 
-  {% for ancestor in ancestors %}
-      {{ govukServiceNavigation({
-        navigation: ancestor.data.navigationItems,
-        navigationId: ancestor.page.fileSlug + "-navigation" if ancestor.data.parent else null,
-        menuButtonText: '"' + ancestor.data.title + '" menu' if ancestor.data.parent else null
-      }) }}
-  {% endfor %}
-  {% if navigationItems | length %}
-    {{ govukServiceNavigation({
-      navigation: navigationItems,
-      navigationId: page.fileSlug + "-navigation" if parent else null,
-      menuButtonText: '"' + title + '" menu' if parent else null
-    }) }}
-  {% endif %}
+  {% include "navigation.njk" %}
 {% endblock %}
 
 {% block beforeContent %}
@@ -66,13 +53,18 @@
   {% from "govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
   {{
     govukBreadcrumbs({
-      items: breadcrumbItems
+      items: ancestors | asNavigationItems if ancestors
     })
   }}
 {% endblock %}
 
+{% from "link-list.njk" import appLinkList %}
+
 {% block content %}
   <div class="govuk-grid-row">
+    <nav class="govuk-grid-column-one-third">
+      {{ appLinkList(sidebarNavigationRoot.data.children, page.url)}}
+    </nav>
     <div class="govuk-grid-column-two-thirds">
       <h1 class="govuk-heading-xl">{{title}}</h1>
       {{ content | safe }}

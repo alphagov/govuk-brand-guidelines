@@ -1,3 +1,5 @@
+import { join } from 'node:path'
+
 import nunjucks from 'nunjucks'
 
 /**
@@ -8,6 +10,8 @@ export function setupNunjucks(eleventyConfig) {
   const nunjucksEnvironment = new nunjucks.Environment(
     new nunjucks.FileSystemLoader([
       eleventyConfig.dir.input,
+      join(eleventyConfig.dir.input, eleventyConfig.dir.includes),
+      join(eleventyConfig.dir.input, eleventyConfig.dir.layouts),
       './node_modules/govuk-frontend/dist'
     ])
   )

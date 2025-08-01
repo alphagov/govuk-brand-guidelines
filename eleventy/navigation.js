@@ -42,20 +42,96 @@ export function setupNavigation(eleventyConfig) {
     for (const page of pages) {
       page.data.children?.sort((a, b) => a.data.order - b.data.order)
 
-      // Pre-compute navigation related items
-      // These cannot be Computed properties as Collections are computed
+      // Compute the list of ancestors for the page
+      // This cannot be a computed property as Collections are computed
       // after Computed properties, so parent and children wouldn't be available
-      page.data.navigationItems = page.data.children.map(
-        asGOVUKFrontendNavigationItem
-      )
       page.data.ancestors = getAncestors(page)
-      page.data.breadcrumbItems = page.data.ancestors.map(
-        asGOVUKFrontendNavigationItem
-      )
+    }
+
+    for (const page of pages) {
+      page.data.sidebarNavigationRoot =
+        page.data.ancestors.length === 1
+          ? page
+          : page.data.ancestors
+              .filter((ancestor) => ancestor.data.ancestors.length === 1)
+              .at(0)
     }
 
     return pages
   })
+
+  eleventyConfig.addFilter(
+    'ariaCurrentValue',
+    function (pageUrl, renderedPageUrl) {
+      if (isCurrent(pageUrl, renderedPageUrl)) {
+        return 'page'
+      } else if (isActive(pageUrl, renderedPageUrl)) {
+        return 'true'
+      }
+    }
+  )
+
+  eleventyConfig.addFilter('asNavigationItems', function (pages) {
+    const renderedPage = this.page
+
+    return pages.map((page) => asNavigationItem(page, renderedPage.url))
+  })
+
+  eleventyConfig.addFilter(
+    'asNavigationItem',
+    function (page, navigationItemData) {
+      const renderedPage = this.page
+
+      return asNavigationItem(page, renderedPage.url, navigationItemData)
+    }
+  )
+}
+
+/**
+ * Transforms an Eleventy page into a navigation item that can be
+ * consumed by GOV.UK Frontend components
+ *
+ * @param {EleventyTemplate} navigationItemPage - The page the navigation item represents
+ * @param {string} renderedPageUrl - The page currently being rendered
+ * @returns {GOVUKFrontendNavigationItem}
+ */
+function asNavigationItem(
+  navigationItemPage,
+  renderedPageUrl,
+  navigationItemData = {}
+) {
+  return {
+    href: navigationItemPage.url,
+    text:
+      navigationItemPage.url === '/' ? 'Home' : navigationItemPage.data.title,
+    current: isCurrent(navigationItemPage.url, renderedPageUrl),
+    active: isActive(navigationItemPage.url, renderedPageUrl),
+    ...navigationItemData
+  }
+}
+
+/**
+ * Returns whether the given URL should be marked as 'active'
+ * when rendering the page for the `renderedUrl`
+ *
+ * @param {string} url
+ * @param {string} renderedUrl
+ * @returns {boolean}
+ */
+function isActive(url, renderedUrl) {
+  return renderedUrl.startsWith(url)
+}
+
+/**
+ * Returns whether the given URL should be marked as 'current'
+ * when rendering the page for the `renderedUrl`
+ *
+ * @param {string} url
+ * @param {string} renderedUrl
+ * @return {boolean}
+ */
+function isCurrent(url, renderedUrl) {
+  return renderedUrl === url
 }
 
 /**
@@ -86,18 +162,4 @@ function getAncestors(page) {
     current = current.data.parent
   }
   return ancestors.toReversed()
-}
-
-/**
- * Converts an Eleventy page into data that can be fed
- * to GOV.UK Frontend's Breadcrumbs or Service Navigation
- *
- * @param {{url:string, data: {title: string}}} page
- * @returns {{href: string, text: string}}
- */
-function asGOVUKFrontendNavigationItem(page) {
-  return {
-    href: page.url,
-    text: page.url === '/' ? 'Home' : page.data.title
-  }
 }
