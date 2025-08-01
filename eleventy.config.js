@@ -3,7 +3,7 @@ import { setupStylesheetCompilation } from './eleventy/stylesheets.js'
 import { setupJavaScriptCompilation } from './eleventy/javascript.js'
 import { setupMarkdownCompilation } from './eleventy/markdown.js'
 import { setupMedia } from './eleventy/media.js'
-import { setupNavigation } from './eleventy/navigation.js'
+import { setupNavigation, tableOfContents } from './eleventy/navigation.js'
 import { setupShortcodes } from './eleventy/shortcodes.js'
 
 /**
@@ -36,6 +36,7 @@ export default function (eleventyConfig) {
 
   // Set up data to help compute navigation
   eleventyConfig.addPlugin(setupNavigation)
+  eleventyConfig.addPlugin(tableOfContents)
 
   // Import custom shortcodes
   eleventyConfig.addPlugin(setupShortcodes)
