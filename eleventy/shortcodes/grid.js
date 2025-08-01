@@ -1,6 +1,6 @@
-import { blockShortcode } from './utils.js'
+import { blockPairedShortcode } from './utils.js'
 
-export const grid = blockShortcode((content, options = {}) => {
+export const grid = blockPairedShortcode((content, options = {}) => {
   const defaultOptions = {
     classes: undefined,
 
@@ -15,14 +15,10 @@ export const grid = blockShortcode((content, options = {}) => {
     cssProperties.push(`--app-grid-columns-mobile: ${options.columns}`)
   } else if (typeof options.columns === 'object') {
     if (options.columns.mobile) {
-      cssProperties.push(
-        `--app-grid-columns-mobile: ${options.columns.mobile}`
-      )
+      cssProperties.push(`--app-grid-columns-mobile: ${options.columns.mobile}`)
     }
     if (options.columns.tablet) {
-      cssProperties.push(
-        `--app-grid-columns-tablet: ${options.columns.tablet}`
-      )
+      cssProperties.push(`--app-grid-columns-tablet: ${options.columns.tablet}`)
     }
     if (options.columns.desktop) {
       cssProperties.push(
