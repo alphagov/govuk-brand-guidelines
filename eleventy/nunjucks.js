@@ -9,7 +9,8 @@ export function setupNunjucks(eleventyConfig) {
     new nunjucks.FileSystemLoader([
       eleventyConfig.dir.input,
       './node_modules/govuk-frontend/dist'
-    ])
+    ]),
+    eleventyConfig.nunjucksEnvironmentOptions
   )
 
   // Enable the rebrand styles and assets
