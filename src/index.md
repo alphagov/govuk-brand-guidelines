@@ -2,6 +2,7 @@
 order: 0
 title: GOV.UK Brand Guidelines
 hero: ./hero.svg
+colour: '#1D70B8'
 ---
 
 ## Brand ambition
