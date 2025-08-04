@@ -1,19 +1,5 @@
 import { blockShortcode } from './utils.js'
 
-// Function to convert hex values to RGB
-// HT: https://stackoverflow.com/a/11508164
-function convertHexToRGB(hex) {
-  // Remove the # if one is present
-  hex = hex.replace('#', '')
-
-  const bigint = parseInt(hex, 16)
-  const r = (bigint >> 16) & 255
-  const g = (bigint >> 8) & 255
-  const b = bigint & 255
-
-  return [r, g, b]
-}
-
 export const swatch = blockShortcode((options = {}) => {
   const defaultOptions = {
     classes: undefined,
@@ -58,3 +44,23 @@ export const swatch = blockShortcode((options = {}) => {
     ? `<div ${attributes}>${label}</div>`
     : `<dl ${attributes}>${label}</dl>`
 })
+
+/**
+ * Function to convert hex values to RGB
+ *
+ * @link https://stackoverflow.com/a/11508164
+ *
+ * @property {string} hex - The hexadecimal value to convert to RGB
+ * @returns {Array<number>} - Array containing R, G, and B values normalised to 0–255
+ */
+function convertHexToRGB(hex) {
+  // Remove the # if one is present
+  hex = hex.replace('#', '')
+
+  const bigint = parseInt(hex, 16)
+  const r = (bigint >> 16) & 255
+  const g = (bigint >> 8) & 255
+  const b = bigint & 255
+
+  return [r, g, b]
+}
