@@ -1,9 +1,9 @@
-{% macro appLinkList(pages, renderedPageUrl) %}
-  {% if pages | length %}
-    <ul class="govuk-list">
-      {% for child in pages %}
+{% macro appLinkList(options) %}
+  {% if options.pages | length %}
+    <ul class="govuk-list{% if options.classes %} {{options.classes}}{% endif %}">
+      {% for child in options.pages %}
         <li>
-          {% set ariaCurrent = child.url | ariaCurrentValue(renderedPageUrl) %}
+          {% set ariaCurrent = child.url | ariaCurrentValue(options.renderedPageUrl) %}
           <a
             href="{{child.url | url}}"
             {% if ariaCurrent %}
@@ -12,7 +12,10 @@
             >
             {{child.data.title}}
           </a>
-          {{appLinkList(child.data.children, renderedPageUrl)}}
+          {{appLinkList({
+            pages: child.data.children,
+            renderedPageUrl: options.renderedPageUrl
+          })}}
         </li>
       {% endfor %}
     </ul>

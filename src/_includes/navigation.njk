@@ -6,7 +6,10 @@
 
   {% set subNavigationHtml %}
     <template>
-      {{ appLinkList(child.data.children, page.url) }}
+      {{ appLinkList({
+        pages: child.data.children,
+        renderedPageUrl: page.url
+      }) }}
     </template>
   {% endset %}
 
