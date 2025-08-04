@@ -47,10 +47,8 @@ export const swatch = blockShortcode((options = {}) => {
   <dd class="app-swatch__value" data-swatch-value="${options.hex}">${options.hex.toUpperCase()}</dd>`
 
   const label = options.label
-    ? `<div class="app-swatch__label">
-      <dt class="app-swatch__name"><strong>${options.label}</strong></dt>
-      ${colourLabels}
-      </div>`
+    ? `<dt class="app-swatch__name"><strong>${options.label}</strong></dt>
+      ${colourLabels}`
     : ''
 
   // Assemble attributes for the wrapping element, as what it is can change

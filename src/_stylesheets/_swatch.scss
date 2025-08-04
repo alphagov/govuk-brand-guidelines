@@ -1,8 +1,9 @@
 .app-swatch {
   $sample-size: 2.5em;
 
-  display: flex;
-  gap: govuk-spacing(3);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: govuk-spacing(3);
   margin-top: 0;
   @include govuk-responsive-margin(5, $direction: 'bottom');
   @include govuk-font(19);
@@ -10,7 +11,7 @@
   // The colour sample
   &::before {
     content: '';
-    flex: 0 0 $sample-size;
+    grid-row: 1 / 4;
     display: inline-block;
     width: $sample-size;
     height: $sample-size;
@@ -25,7 +26,9 @@
   }
 }
 
+.app-swatch__name,
 .app-swatch__value {
+  grid-column: 2;
   margin: 0;
 }
 
