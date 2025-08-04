@@ -65,7 +65,8 @@
     <nav class="govuk-grid-column-one-third">
       {{ appLinkList({
         pages: sidebarNavigationRoot.data.children,
-        renderedPageUrl: page.url
+        renderedPageUrl: page.url,
+        classes: 'app-chapter-navigation'
       })}}
     </nav>
     <div class="govuk-grid-column-two-thirds">

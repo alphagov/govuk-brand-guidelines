@@ -6,6 +6,7 @@
           {% set ariaCurrent = child.url | ariaCurrentValue(options.renderedPageUrl) %}
           <a
             href="{{child.url | url}}"
+            class="govuk-link govuk-link--no-underline govuk-link--no-visited-state"
             {% if ariaCurrent %}
             aria-current="{{ariaCurrent}}"
             {% endif %}
