@@ -92,28 +92,7 @@ class MobileNavigationSection extends Component {
    */
   createSubNav() {
     const $template = this.$root.querySelector('template')
-    const $subnav = $template.content.cloneNode(true).children[0]
-    $subnav.classList.add('app-mobile-navigation-section__subnav')
-
-    for (const $list of $subnav.querySelectorAll('ul')) {
-      $list.classList.add('govuk-service-navigation__list')
-    }
-
-    for (const $item of $subnav.querySelectorAll('li')) {
-      $item.classList.add('app-mobile-navigation-section__item')
-    }
-
-    for (const $activeLinks of $subnav.querySelectorAll('[aria-current]')) {
-      const $item = $activeLinks.closest('li');
-      $item.classList.add('app-mobile-navigation-section__item--active')
-    }
-
-    const links = $subnav.querySelectorAll('a');
-    for (const link of links) {
-      link.classList.add('govuk-service-navigation__link')
-    }
-
-    return $subnav;
+    return $template.content.cloneNode(true).children[0]
   }
 
   /**
