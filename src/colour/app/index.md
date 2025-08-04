@@ -7,43 +7,41 @@ title: App
 
 The app palette contains all primary colours, tints, shades and accents. Guidance outlined within the overview section should be followed to ensure brand coherence across channels.
 
-{% swatch { hex: "#00ffcc", label: "Test" } %}
-
 ### Blues
 
-{% swatchList { palette: colours, use: "app", group: "blue" } %}
+{% swatchList { use: "app", group: "blue" } %}
 
 ### Greens
 
-{% swatchList { palette: colours, use: "app", group: "green" } %}
+{% swatchList { use: "app", group: "green" } %}
 
 ### Teals
 
-{% swatchList { palette: colours, use: "app", group: "teal" } %}
+{% swatchList { use: "app", group: "teal" } %}
 
 ### Purples
 
-{% swatchList { palette: colours, use: "app", group: "purple" } %}
+{% swatchList { use: "app", group: "purple" } %}
 
 ### Magentas
 
-{% swatchList { palette: colours, use: "app", group: "magenta" } %}
+{% swatchList { use: "app", group: "magenta" } %}
 
 ### Reds
 
-{% swatchList { palette: colours, use: "app", group: "red" } %}
+{% swatchList { use: "app", group: "red" } %}
 
 ### Oranges
 
-{% swatchList { palette: colours, use: "app", group: "orange" } %}
+{% swatchList { use: "app", group: "orange" } %}
 
 ### Yellows
 
-{% swatchList { palette: colours, use: "app", group: "yellow" } %}
+{% swatchList { use: "app", group: "yellow" } %}
 
 ### Neutrals
 
-{% swatchList { palette: colours, use: "app", group: "neutral" } %}
+{% swatchList { use: "app", group: "neutral" } %}
 
 ## App header
 

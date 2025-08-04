@@ -10,7 +10,7 @@ import { outdent } from 'outdent'
 
 export function blockShortcode(shortcode) {
   return function ({ indent = 0, ...options } = {}) {
-    const output = indentLines(shortcode(options), { amount: indent })
+    const output = indentLines(shortcode.call(this, options), { amount: indent })
 
     return `\n\n${output}\n\n`
   }
@@ -35,7 +35,7 @@ export function blockPairedShortcode(shortcode) {
       outdent.string(content)
     )
 
-    const output = indentLines(shortcode(formattedContent, options), {
+    const output = indentLines(shortcode.call(this, formattedContent, options), {
       amount: indent
     })
 

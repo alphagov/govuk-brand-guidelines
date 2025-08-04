@@ -1,16 +1,13 @@
 import { blockShortcode } from './utils.js'
 import { swatch } from './swatch.js'
 
-export const swatchList = blockShortcode((options = {}) => {
+export const swatchList = blockShortcode(function (options = {}) {
   const defaultOptions = {
     classes: undefined,
 
     // The colour palette to use
-    //
-    // TODO: See if there's some way of pulling this from Eleventy's global
-    // data file? Could just import it, but that means crossing into the
-    // `src` directory.
-    palette: [],
+    // Default to the brand colour palette
+    palette: this.ctx.colours ?? [],
 
     // Filter by the intended use of the colour, 'web', 'app', 'print', etc.
     use: 'app',

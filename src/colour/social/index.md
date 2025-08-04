@@ -9,39 +9,39 @@ The social palette requires moments of increased brand expression and flex and t
 
 ### Blues
 
-{% swatchList { palette: colours, use: "social", group: "blue" } %}
+{% swatchList { use: "social", group: "blue" } %}
 
 ### Greens
 
-{% swatchList { palette: colours, use: "social", group: "green" } %}
+{% swatchList { use: "social", group: "green" } %}
 
 ### Teals
 
-{% swatchList { palette: colours, use: "social", group: "teal" } %}
+{% swatchList { use: "social", group: "teal" } %}
 
 ### Purples
 
-{% swatchList { palette: colours, use: "social", group: "purple" } %}
+{% swatchList { use: "social", group: "purple" } %}
 
 ### Magentas
 
-{% swatchList { palette: colours, use: "social", group: "magenta" } %}
+{% swatchList { use: "social", group: "magenta" } %}
 
 ### Reds
 
-{% swatchList { palette: colours, use: "social", group: "red" } %}
+{% swatchList { use: "social", group: "red" } %}
 
 ### Oranges
 
-{% swatchList { palette: colours, use: "social", group: "orange" } %}
+{% swatchList { use: "social", group: "orange" } %}
 
 ### Yellows
 
-{% swatchList { palette: colours, use: "social", group: "yellow" } %}
+{% swatchList { use: "social", group: "yellow" } %}
 
 ### Neutrals
 
-{% swatchList { palette: colours, use: "social", group: "neutral" } %}
+{% swatchList { use: "social", group: "neutral" } %}
 
 ## Use colour to reflect tone
 
