@@ -15,6 +15,6 @@ Used within our wordmark and as a graphic device across all GOV.UK channels, the
 <!-- TODO: this is not the final MP4 file
 but it's good to have one file to see and play around with the video player -->
 
-<video src="./dot-animations.mp4" controls width="720"></video>
+The examples shown in this video are indicative and for illustrative purposes only.
 
-Indicative examples for illustrative purposes only.
+<video src="./dot-animations.mp4" controls width="720"></video>
