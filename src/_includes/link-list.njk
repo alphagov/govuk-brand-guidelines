@@ -1,24 +1,22 @@
 {% macro appLinkList(options) %}
   {% if options.pages | length %}
     <ul class="govuk-list app-current-with-dot {% if options.classes %} {{options.classes}}{% endif %}">
-      {% for child in options.pages %}
+      {%- for page in options.pages -%}
         <li>
-          {% set ariaCurrent = child.url | ariaCurrentValue(options.renderedPageUrl) %}
-          <a
-            href="{{child.url | url}}"
+          {%- set ariaCurrent = page.url | ariaCurrentValue(options.renderedPageUrl) -%}
+          <a href="{{page.url | url}}"
             class="govuk-link govuk-link--no-underline govuk-link--no-visited-state"
-            {% if ariaCurrent %}
-            aria-current="{{ariaCurrent}}"
-            {% endif %}
-            >
-            {{child.data.title}}
+            {% if ariaCurrent -%} aria-current="{{ariaCurrent}}" {%- endif -%} >
+            {{- page.data.title -}}
           </a>
-          {{appLinkList({
-            pages: child.data.children,
-            renderedPageUrl: options.renderedPageUrl
-          })}}
+          {%- if page.data.children | length %}
+            {{- appLinkList({
+              pages: page.data.children,
+              renderedPageUrl: options.renderedPageUrl
+            }) -}}
+          {% endif -%}
         </li>
-      {% endfor %}
+      {%- endfor -%}
     </ul>
   {% endif %}
 {% endmacro %}
