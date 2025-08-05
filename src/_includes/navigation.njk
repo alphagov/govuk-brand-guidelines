@@ -1,14 +1,17 @@
 {% from "govuk/components/service-navigation/macro.njk" import govukServiceNavigation %}
-{% from "mobile-navigation.njk" import appMobileNavigation %}
+{% from "link-list.njk" import appLinkList %}
 
 {%- set navigation = [] %}
 {%- for child in collections.pages[0].data.children %}
 
   {% set subNavigationHtml %}
     <template>
-      {{ appMobileNavigation({
+      {{ appLinkList({
         pages: child.data.children,
-        renderedPageUrl: page.url
+        renderedPageUrl: page.url,
+        classes: 'app-mobile-navigation-section__subnav',
+        itemClasses: 'app-mobile-navigation-section__item',
+        linkClasses: 'govuk-service-navigation__link'
       }) }}
     </template>
   {% endset %}
