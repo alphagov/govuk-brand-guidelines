@@ -1,9 +1,9 @@
 {% macro appMobileNavigation(options) %}
   {% if options.pages | length %}
-    <ul class="govuk-list app-mobile-navigation-section__subnav {% if options.classes %} {{options.classes}}{% endif %}">
+    <ul class="govuk-list app-current-with-dot app-mobile-navigation-section__subnav {% if options.classes %} {{options.classes}}{% endif %}">
       {% for child in options.pages %}
         {% set ariaCurrent = child.url | ariaCurrentValue(options.renderedPageUrl) %}
-        <li class="app-mobile-navigation-section__item {% if ariaCurrent %}app-mobile-navigation-section__item--active{% endif %}">
+        <li class="app-mobile-navigation-section__item">
           <a
             href="{{child.url | url}}"
             class="govuk-link govuk-link--no-underline govuk-link--no-visited-state govuk-service-navigation__link"

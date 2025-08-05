@@ -20,8 +20,31 @@
 @import 'govuk/utilities';
 @import 'govuk/overrides';
 
-[aria-current] {
-  font-weight: bold;
+.app-current-with-dot {
+  [aria-current] {
+    font-weight: bold;
+  }
+
+  [aria-current='page'] {
+    display: inline-flex;
+    align-items: baseline;
+
+    &::before {
+      $dot-size: 1ex;
+
+      content: '';
+      display: block;
+      width: $dot-size;
+      height: $dot-size;
+      margin-right: govuk-spacing(2);
+      margin-left: calc(-#{$dot-size} - #{govuk-spacing(2)});
+
+      // Better alignment with the text
+      transform: translateY(-1px);
+      border-radius: 100%;
+      background: currentcolor;
+    }
+  }
 }
 
 .app-prose-image {
@@ -36,27 +59,6 @@
 
   li {
     padding: 5px 0;
-  }
-
-  [aria-current] {
-    display: inline-flex;
-    align-items: baseline;
-
-    &::before {
-      $dot-size: 1ex;
-
-      content: '';
-      display: block;
-      width: $dot-size;
-      height: $dot-size;
-      margin-right: govuk-spacing(1);
-      margin-left: calc(-#{$dot-size} - #{govuk-spacing(1)});
-
-      // Better alignment with the text
-      transform: translateY(-1px);
-      border-radius: 100%;
-      background: currentcolor;
-    }
   }
 }
 

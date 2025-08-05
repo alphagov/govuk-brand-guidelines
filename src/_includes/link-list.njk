@@ -1,6 +1,6 @@
 {% macro appLinkList(options) %}
   {% if options.pages | length %}
-    <ul class="govuk-list{% if options.classes %} {{options.classes}}{% endif %}">
+    <ul class="govuk-list app-current-with-dot {% if options.classes %} {{options.classes}}{% endif %}">
       {% for child in options.pages %}
         <li>
           {% set ariaCurrent = child.url | ariaCurrentValue(options.renderedPageUrl) %}
