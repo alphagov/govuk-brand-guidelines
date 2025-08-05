@@ -314,7 +314,30 @@ Mobile navigation sections are just link list with specific classes
 
 #### In situ
 
-<div class="govuk-service-navigation">
+When displayed in the mobile navigation the dot marking the current item aligns with the centre of the chevron.
+
+<style>
+    /* Overlay an element on top of the test area and draw a line where the centre of the chevron is */
+    .test-chevron-centre {
+        position: relative;
+        z-index: 0;
+    }
+
+    .test-chevron-centre::before {
+        content: '';
+        display: block;
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+
+        background-image: linear-gradient(red, red);
+        background-size: 1px 100%;
+        background-repeat: no-repeat;
+        background-position: 13.5px 0;
+    }
+</style>
+
+<div class="govuk-service-navigation test-chevron-centre">
 <ul class="govuk-service-navigation__list">
 <li class="govuk-service-navigation__item app-mobile-navigation-section__service-navigation-item">
 <button class="app-mobile-navigation-section__toggle" aria-expanded="true"><span>Test navigation section (non-interactive)</span></button>
