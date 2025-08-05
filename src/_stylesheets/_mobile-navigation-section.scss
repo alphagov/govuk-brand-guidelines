@@ -184,3 +184,11 @@ $subnav-padding-left: $app-chevron-width + $app-chevron-margin-left +
 .app-mobile-navigation-section__item {
   padding: govuk-spacing(2) 0;
 }
+
+.app-current-with-dot.app-mobile-navigation-section__subnav {
+  --dot-spacing: 11.5px;
+
+  ul {
+    --dot-spacing: 10px;
+  }
+}

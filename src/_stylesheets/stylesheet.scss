@@ -21,6 +21,8 @@
 @import 'govuk/overrides';
 
 .app-current-with-dot {
+  --dot-spacing: #{govuk-spacing(2)};
+
   [aria-current] {
     font-weight: bold;
   }
@@ -36,8 +38,8 @@
       display: block;
       width: $dot-size;
       height: $dot-size;
-      margin-right: govuk-spacing(2);
-      margin-left: calc(-#{$dot-size} - #{govuk-spacing(2)});
+      margin-right: var(--dot-spacing);
+      margin-left: calc(-#{$dot-size} - var(--dot-spacing));
 
       // Better alignment with the text
       transform: translateY(-1px);

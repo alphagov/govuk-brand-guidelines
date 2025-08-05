@@ -312,18 +312,20 @@ Mobile navigation sections are just link list with specific classes
 })}}
 </div>
 
-#### In situ
+#### In situ - Flat
 
 When displayed in the mobile navigation the dot marking the current item aligns with the centre of the chevron.
 
 <style>
     /* Overlay an element on top of the test area and draw a line where the centre of the chevron is */
-    .test-chevron-centre {
+    .test-vertical-guideline {
         position: relative;
         z-index: 0;
+
+        --x: 50%;
     }
 
-    .test-chevron-centre::before {
+    .test-vertical-guideline::before {
         content: '';
         display: block;
         position: absolute;
@@ -333,11 +335,11 @@ When displayed in the mobile navigation the dot marking the current item aligns 
         background-image: linear-gradient(red, red);
         background-size: 1px 100%;
         background-repeat: no-repeat;
-        background-position: 13.5px 0;
+        background-position: var(--x) 0;
     }
 </style>
 
-<div class="govuk-service-navigation test-chevron-centre">
+<div class="govuk-service-navigation test-vertical-guideline" style="--x: 13.5px">
 <ul class="govuk-service-navigation__list">
 <li class="govuk-service-navigation__item app-mobile-navigation-section__service-navigation-item">
 <button class="app-mobile-navigation-section__toggle" aria-expanded="true"><span>Test navigation section (non-interactive)</span></button>
@@ -363,6 +365,58 @@ When displayed in the mobile navigation the dot marking the current item aligns 
         }
     ],
     renderedPageUrl: '/another-page/',
+    classes: "app-mobile-navigation-section__subnav",
+    itemClasses: 'app-mobile-navigation-section__item',
+    linkClasses: 'govuk-service-navigation__link'
+})}}
+</li>
+</ul>
+</div>
+
+#### In situ - Nested current page
+
+When the current page is nested, the dot aligns back with the start of the previous level
+
+<div class="govuk-service-navigation test-vertical-guideline" style="--x: 30px">
+<ul class="govuk-service-navigation__list">
+<li class="govuk-service-navigation__item app-mobile-navigation-section__service-navigation-item">
+<button class="app-mobile-navigation-section__toggle" aria-expanded="true"><span>Test navigation section (non-interactive)</span></button>
+{{ appLinkList({
+    pages: [
+        {
+            data: {
+                title: 'A page'
+            },
+            url: '/a-page/'
+        },
+        {
+            data: {
+                title: 'Another page',
+                children: [
+                    {
+                        data: {
+                            title: 'Child page'
+                        },
+                        url: '/another-page/child/'
+                    },
+                    {
+                        data: {
+                            title: 'Another child page'
+                        },
+                        url: '/another-page/another-child/'
+                    }
+                ]
+            },
+            url: '/another-page/'
+        },
+        {
+            data: {
+                title: 'One more page'
+            },
+            url: '/one-more-page/'
+        }
+    ],
+    renderedPageUrl: '/another-page/another-child/',
     classes: "app-mobile-navigation-section__subnav",
     itemClasses: 'app-mobile-navigation-section__item',
     linkClasses: 'govuk-service-navigation__link'
