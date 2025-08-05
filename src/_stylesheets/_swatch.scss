@@ -32,6 +32,10 @@
   margin: 0;
 }
 
+.app-swatch__name {
+  @include govuk-typography-weight-bold;
+}
+
 .app-swatch__copy-button {
   margin-left: govuk-spacing(1);
   padding: 0;

@@ -24,25 +24,45 @@ export const swatch = blockShortcode((options = {}) => {
   // instead of storing both separately.
   const colourRGB = convertHexToRGB(options.hex)
 
-  // Not all print colours in the palette have defined CMYK and Pantone
-  // equivalents (e.g. white), so those need conditional checks
-  const colourLabels = options.print
-    ? `${options.cmyk.length ? `<dd class="app-swatch__value" data-swatch-value="${options.cmyk.join(' ')}">CMYK ${options.cmyk.join(' ')}</dd>` : ''}
-  ${options.pantone ? `<dd class="app-swatch__value" data-swatch-value="${options.pantone}">${options.pantone}</dd>` : ''}`
-    : `<dd class="app-swatch__value" data-swatch-value="${colourRGB.join(' ')}">RGB ${colourRGB.join(' ')}</dd>
-  <dd class="app-swatch__value" data-swatch-value="${options.hex}">${options.hex.toUpperCase()}</dd>`
+  // Assemble values to display
+  let colourValues = []
+  if (options.print) {
+    // Not all print colours in the palette have defined CMYK and Pantone
+    // equivalents (e.g. white), so those need conditional checks
+    if (options.cmyk.length) {
+      colourValues.push({
+        label: `CMYK ${options.cmyk.join(' ')}`,
+        value: options.cmyk.join(' ')
+      })
+    }
+    if (options.pantone) {
+      colourValues.push({ label: options.pantone, value: options.pantone })
+    }
+  } else {
+    colourValues = [
+      { label: `RGB ${colourRGB.join(' ')}`, value: colourRGB.join(' ') },
+      { label: options.hex.toUpperCase(), value: options.hex }
+    ]
+  }
 
-  const label = options.label
-    ? `<dt class="app-swatch__name"><strong>${options.label}</strong></dt>
-      ${colourLabels}`
+  // Assemble the label's HTML
+  const $values = colourValues.map(
+    ({ label, value }) =>
+      `<dd class="app-swatch__value" data-swatch-value="${value}">${label}</dd>`
+  )
+
+  const $label = options.label
+    ? `<dt class="app-swatch__name">${options.label}</dt>
+      ${$values.join(' ')}`
     : ''
 
-  // Assemble attributes for the wrapping element, as what it is can change
+  // Assemble attributes for the wrapping element separately, as what element
+  // that is changes depending on `isInSwatchList`
   const attributes = `class="app-swatch${options.classes ? ` ${options.classes}` : ''}" data-module="app-swatch" style="--app-swatch-colour:${options.hex};"`
 
   return options.isInSwatchList
-    ? `<div ${attributes}>${label}</div>`
-    : `<dl ${attributes}>${label}</dl>`
+    ? `<div ${attributes}>${$label}</div>`
+    : `<dl ${attributes}>${$label}</dl>`
 })
 
 /**
