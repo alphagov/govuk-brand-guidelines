@@ -1,6 +1,6 @@
 import { createAll, ServiceNavigation, SkipLink } from 'govuk-frontend'
-import { Swatch } from './swatch.js'
+import { InlineCopy } from './inline-copy.js'
 
+createAll(InlineCopy)
 createAll(ServiceNavigation)
 createAll(SkipLink)
-createAll(Swatch)

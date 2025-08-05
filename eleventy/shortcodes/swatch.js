@@ -48,7 +48,7 @@ export const swatch = blockShortcode((options = {}) => {
   // Assemble the label's HTML
   const $values = colourValues.map(
     ({ label, value }) =>
-      `<dd class="app-swatch__value" data-swatch-value="${value}">${label}</dd>`
+      `<dd class="app-swatch__value" data-module="app-inline-copy" data-copy-value="${value}">${label}</dd>`
   )
 
   const $label = options.label
@@ -58,7 +58,7 @@ export const swatch = blockShortcode((options = {}) => {
 
   // Assemble attributes for the wrapping element separately, as what element
   // that is changes depending on `isInSwatchList`
-  const attributes = `class="app-swatch${options.classes ? ` ${options.classes}` : ''}" data-module="app-swatch" style="--app-swatch-colour:${options.hex};"`
+  const attributes = `class="app-swatch${options.classes ? ` ${options.classes}` : ''}" style="--app-swatch-colour:${options.hex};"`
 
   return options.isInSwatchList
     ? `<div ${attributes}>${$label}</div>`
