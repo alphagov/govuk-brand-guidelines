@@ -16,13 +16,15 @@ logo system > app and colour > palette overview -->
     
  ### App splash screen (long version)
 
-<img src="./splash-screen-long.gif" alt="" class="app-prose-image" style="border: 1px solid">
+<video src="./splash-screen-long-version.mp4" controls width="405" style="max-width: 100%"></video>
+
 </div>
 <div>
 
 ### App splash screen (short version)
 
-<img src="./splash-screen-short.gif" alt="" class="app-prose-image" style="border: 1px solid">
+<video src="./splash-screen-short-version.mp4" controls width="405" style="max-width: 100%"></video>
+
 </div>
 {% endgrid %}
 
@@ -78,19 +80,34 @@ The dot provides a distinctive, flexible visual thread that ties together differ
 
 To build coherence across channels, our social end frames follow the same motion behaviour as the app splash screen.
 
+{% grid %}
+
+<div>
+
 ### Video end frame 16:9
 
-<!-- TODO: these files are duplicated in logo system > social -->
+<video src="./End-frame-1920-1080.mp4" controls width="720" style="max-width: 100%"></video>
 
-![TODO](./end-frame-1920x1080.gif)
+</div>
+{% endgrid %}
+
+{% grid { columns: { tablet: 2 } } %}
+
+<div>
 
 ### Video end frame 9:16
 
-![TODO](./end-frame-1080x1920.gif)
+<video src="./End-frame-1080-1920.mp4" controls width="402" style="max-width: 100%"></video>
+
+</div>
+<div>
 
 ### Video end frame 1:1
 
-![TODO](./end-frame-1080x1080.gif)
+<video src="./End-frame-1080-1080.mp4" controls width="720" style="max-width: 100%"></video>
+
+</div>
+{% endgrid %}
 
 ## Video thumbnails
 
