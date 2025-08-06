@@ -118,11 +118,15 @@ Both logo elements have a standalone animation that can be used to add dynamism 
 
 ### Wordmark
 
-![TODO](./wordmark-motion.gif)
+{% video { source: "./wordmark-motion.mp4" } %}
+
+<!--<video src="./wordmark-motion.mp4"controls width="405" style="max-width: 100%"></video>-->
 
 ### Crown
 
-![TODO](./crown-motion.gif)
+{% video { source: "./crown-motion.mp4" } %}
+
+<!--<video src="./crown-motion.mp4"controls width="405" style="max-width: 100%"></video>-->
 
 ## Incorrect usage
 

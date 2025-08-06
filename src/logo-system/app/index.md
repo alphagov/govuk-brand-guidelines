@@ -26,7 +26,7 @@ The examples of logo elements within the app are indicative examples for illustr
 
 ### App splash screen
 
-![TODO](./splash-screen-short.gif)
+<video src="/graphic-device/dot-use-examples/splash-screen-short-version.mp4" controls width="720" style="max-width: 100%"></video>
 
 <!-- TODO: not sure if this should be the short or long version (both files are in the folder) -->
 
