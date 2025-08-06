@@ -16,14 +16,18 @@ logo system > app and colour > palette overview -->
     
  ### App splash screen (long version)
 
-<video src="./splash-screen-long-version.mp4" controls width="405" style="max-width: 100%"></video>
+<video src="./splash-screen-long-version.mp4" controls width="405" style="max-width: 100%">
+This video does not contain any audio.
+</video>
 
 </div>
 <div>
 
 ### App splash screen (short version)
 
-<video src="./splash-screen-short-version.mp4" controls width="405" style="max-width: 100%"></video>
+<video src="./splash-screen-short-version.mp4" controls width="405" style="max-width: 100%">
+This video does not contain any audio.
+</video>
 
 </div>
 {% endgrid %}
@@ -86,7 +90,9 @@ To build coherence across channels, our social end frames follow the same motion
 
 ### Video end frame 16:9
 
-<video src="./End-frame-1920-1080.mp4" controls width="720" style="max-width: 100%"></video>
+<video src="./End-frame-1920-1080.mp4" controls width="720" style="max-width: 100%">
+This video does not contain any audio.
+</video>
 
 </div>
 {% endgrid %}
@@ -97,14 +103,18 @@ To build coherence across channels, our social end frames follow the same motion
 
 ### Video end frame 9:16
 
-<video src="./End-frame-1080-1920.mp4" controls width="402" style="max-width: 100%"></video>
+<video src="./End-frame-1080-1920.mp4" controls width="402" style="max-width: 100%">
+This video does not contain any audio.
+</video>
 
 </div>
 <div>
 
 ### Video end frame 1:1
 
-<video src="./End-frame-1080-1080.mp4" controls width="720" style="max-width: 100%"></video>
+<video src="./End-frame-1080-1080.mp4" controls width="720" style="max-width: 100%">
+This video does not contain any audio.
+</video>
 
 </div>
 {% endgrid %}
@@ -121,23 +131,53 @@ See these indicative examples of dot use within thumbnails. These examples are s
 
 <!-- Obviously, that's not the right heading, needs proper design -->
 
-### Inform <--------> Inspire
+{% grid { columns: 4 } %}
+
+<div style="grid-column: span 3">
+
+### Inform
+
+</div>
+<div style="text-align:right">
+
+### Inspire
+
+</div>
+{% endgrid %}
+
+<hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+{% grid { columns: 4 } %}
+
+<div>
 
 Get help with...
 
 ![TODO](./video-thumb-get-help.png)
 
+</div>
+<div>
+
 60 second guides
 
 ![TODO](./video-thumb-60s.png)
+
+</div>
+<div>
 
 Step-by-step guides
 
 ![TODO](./video-thumb-step.png)
 
+</div>
+<div>
+
 Influencer or presenter
 
 ![TODO](./video-thumb-influencer.png)
+
+</div>
+{% endgrid %}
 
 ## Static dot examples
 
