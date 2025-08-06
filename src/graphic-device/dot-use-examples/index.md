@@ -10,37 +10,59 @@ The app splash screen utilises the dot in motion to represent GOV.UK bringing to
 <!-- TODO: these files are partly duplicated in
 logo system > app and colour > palette overview -->
 
-### App splash screen (long version)
+{% grid { columns: { desktop: 2 }, classes: "govuk-!-padding-bottom-6" } %}
 
-![TODO](./splash-screen-long.gif)
+<div>
+    
+ ### App splash screen (long version)
+
+<img src="./splash-screen-long.gif" alt="" class="app-prose-image" style="border: 1px solid">
+</div>
+<div>
 
 ### App splash screen (short version)
 
-![TODO](./splash-screen-short.gif)
+<img src="./splash-screen-short.gif" alt="" class="app-prose-image" style="border: 1px solid">
+</div>
+{% endgrid %}
 
 ## Illustration
 
 The dot can be brought to life through animation in illustrations, adding personality and expression to moments such as app onboarding, or to tell visual stories within social.
 
-Person
+{% grid { columns: { mobile: 2, tablet: 3 }, classes: "govuk-!-padding-bottom-6" } %}
 
-TODO: missing video
+<div>
+
+Person
+![TODO](./wave.gif)
+
+</div>
+<div>
 
 Travel
+![TODO](./travel.gif)
 
-TODO: missing video
+</div>
+<div>
 
 Lock
+![TODO](./padlock.gif)
 
-TODO: missing video
+</div>
+<div>
 
 Onboarding
+![TODO](./onboarding.gif)
 
-TODO: missing video
+</div>
+<div>
 
-Piggy bank
+Driving
+![TODO](./driving.gif)
 
-TODO: missing video
+</div>
+{% endgrid %}
 
 ## Social media
 
