@@ -7,6 +7,12 @@ title: Dot use examples
 
 The app splash screen utilises the dot in motion to represent GOV.UK bringing together government services and departments, all in one place.
 
+The dot leads a trail of other dots of various colours in a spiral towards the centre of a mobile screen, where it becomes the dot within the GOV.UK logo as it fades and pushes in. The crown logo is revealed by an circular iris effect at the bottom of the screen.
+
+{% sectionHighlight {classes: "light-blue" } %}
+
+<p class="govuk-body govuk-!-margin-bottom-0">These videos do not contain any audio.</p>
+{% endsectionHighlight %}
 <!-- TODO: these files are partly duplicated in
 logo system > app and colour > palette overview -->
 
@@ -32,36 +38,46 @@ logo system > app and colour > palette overview -->
 
 The dot can be brought to life through animation in illustrations, adding personality and expression to moments such as app onboarding, or to tell visual stories within social.
 
-{% grid { columns: { mobile: 2, tablet: 3 }, classes: "govuk-!-padding-bottom-6" } %}
+{% sectionHighlight {classes: "light-blue" } %}
+
+<p class="govuk-body govuk-!-margin-bottom-0">These videos do not contain any audio.</p>
+{% endsectionHighlight %}
+
+{% grid { columns: { mobile: 1, tablet: 2 }, classes: "govuk-!-padding-bottom-6" } %}
 
 <div>
 
-Person
-![TODO](./wave.gif)
+### Person
+
+<video src="./illustration-wave.mp4" controls width="600" style ="max-width:100%"></video>
 
 </div>
 <div>
 
-Travel
-![TODO](./travel.gif)
+### Travel
+
+<video src="./illustration-travel.mp4" controls width="600" style ="max-width:100%"></video>
 
 </div>
 <div>
 
-Lock
-![TODO](./padlock.gif)
+### Lock
+
+<video src="./illustration-lock.mp4" controls width="600" style ="max-width:100%"></video>
 
 </div>
 <div>
 
-Onboarding
-![TODO](./onboarding.gif)
+### Onboarding
+
+<video src="./illustration-onboarding.mp4" controls width="600" style ="max-width:100%"></video>
 
 </div>
 <div>
 
-Driving
-![TODO](./driving.gif)
+### Piggy bank
+
+<video src="./illustration-piggy-bank.mp4" controls width="600" style ="max-width:100%"></video>
 
 </div>
 {% endgrid %}
@@ -80,31 +96,44 @@ The dot provides a distinctive, flexible visual thread that ties together differ
 
 To build coherence across channels, our social end frames follow the same motion behaviour as the app splash screen.
 
+This video gives a few indicative examples of how the dot could be used in motion, for illustrative purposes only.
+
+{% sectionHighlight {classes: "light-blue" } %}
+
+<p class="govuk-body govuk-!-margin-bottom-0">These videos do not contain any audio.</p>
+{% endsectionHighlight %}
+
 {% grid %}
 
 <div>
 
 ### Video end frame 16:9
 
-<video src="./End-frame-1920-1080.mp4" controls width="720" style="max-width: 100%"></video>
+<video src="./End-frame-1920-1080.mp4" controls width="720" style="max-width: 100%">
+This video does not contain any audio.
+</video>
 
 </div>
 {% endgrid %}
 
-{% grid { columns: { tablet: 2 } } %}
+{% grid { columns: { tablet: 2 }, classes:"govuk-!-padding-bottom-6" } %}
 
 <div>
 
 ### Video end frame 9:16
 
-<video src="./End-frame-1080-1920.mp4" controls width="402" style="max-width: 100%"></video>
+<video src="./End-frame-1080-1920.mp4" controls width="402" style="max-width: 100%">
+This video does not contain any audio.
+</video>
 
 </div>
 <div>
 
 ### Video end frame 1:1
 
-<video src="./End-frame-1080-1080.mp4" controls width="720" style="max-width: 100%"></video>
+<video src="./End-frame-1080-1080.mp4" controls width="720" style="max-width: 100%">
+This video does not contain any audio.
+</video>
 
 </div>
 {% endgrid %}
@@ -120,8 +149,18 @@ Thumbnails should always use the dot in a purposeful way.
 See these indicative examples of dot use within thumbnails. These examples are shown for illustrative purposes only.
 
 <!-- Obviously, that's not the right heading, needs proper design -->
+<div>
+    <span>Inform</span>
+    <ol>
+        <li class="video-thumbnail-scale-item">
+            <div>
+                <h2>Get help with...</h2>
+                <img class="app-prose-image" loading="lazy" decoding="async" src="./video-thumb-get-help.png" alt="A video thumbnail for 'Get help with registering a death'. Title is shown within a simple blue circle graphic on a blue background." width="300" height="168">
+            </div>
+        </li>
+    </ol>
 
-### Inform <--------> Inspire
+### Inspire
 
 Get help with...
 
@@ -138,6 +177,8 @@ Step-by-step guides
 Influencer or presenter
 
 ![TODO](./video-thumb-influencer.png)
+
+</div>
 
 ## Static dot examples
 

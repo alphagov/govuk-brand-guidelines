@@ -29,7 +29,7 @@ We use the crown as a supporting element that sits below or at the end of conten
 
 ### App splash screen
 
-![TODO](./splash-screen-short.gif)
+<video src="/graphic-device/dot-use-examples/splash-screen-short-version.mp4" controls width="720" style="max-width: 50%">
 
 <!-- TODO: not sure if this should be the short or long version (both files are in the folder) -->
 
