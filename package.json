@@ -57,5 +57,8 @@
     "stylelint-config-gds": "^2.0.0",
     "stylelint-order": "^7.0.0",
     "svglint": "^4.1.0"
+  },
+  "dependencies": {
+    "sharp": "^0.34.3"
   }
 }

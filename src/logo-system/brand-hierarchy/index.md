@@ -23,8 +23,36 @@ To keep the brand consistent, use each version exactly as shown – do not resiz
 
 The diagrams on this page show how to space the wordmark and text in a lock-up. Use the width of the dot in the GOV.UK wordmark to set the spacing.
 
-![TODO](./lockup-1.svg) ![TODO](./lockup-2.svg)
-![TODO](./lockup-3.svg) ![TODO](./lockup-4.svg)
+{% sectionHighlight { classes: "light-grey" } %}
+{% grid { columns: { mobile: 2, desktop: 2 } } %}
+
+<div class="flex-end">
+
+![TODO](./lockup-1.svg)
+
+</div>
+<div class="flex-end">
+
+![TODO](./lockup-2.svg)
+
+</div>
+<div class="flex-end">
+
+![TODO](./lockup-3.svg)
+
+</div>
+<div class="flex-end">
+
+![TODO](./lockup-4.svg)
+
+</div>
+
+{% endgrid %}
+{% endsectionHighlight %}
+
+{% grid { columns: { mobile: 2, desktop: 2 } } %}
+
+<div class="border">
 
 ### Horizontal
 
@@ -32,13 +60,27 @@ Product name spacing on horizontal and stacked lock-ups should be proportionate 
 
 On 14.2pt type, letter spacing should be -0.21 pixels.
 
+</div>
+<div class="img-fit">
+
 ![TODO](./horizontal-pay.svg) ![TODO](./horizontal-wallet.svg) ![TODO](./horizontal-notify.svg)
+
+</div>
+
+<div class="border">
 
 ### Horizontal with crown
 
 Spacing between wordmark and crown on horizontal lock-up should be 3 crown dots or 7px spacing on web.
 
+</div>
+<div class="img-fit">
+
 ![TODO](./horizontal-with-crown-pay.svg) ![TODO](./horizontal-with-crown-wallet.svg) ![TODO](./horizontal-with-crown-notify.svg)
+
+</div>
+
+<div class="border">
 
 ### Stacked for web
 
@@ -46,7 +88,14 @@ Product name on stacked lock-ups should be aligned left to GOV.UK wordmark.
 
 Spacing between wordmark and product name should be 1 large dot or 7 pixels from the bottom of the logo to the top of the product name on web.
 
+</div>
+
+<div class="img-fit">
+
 ![TODO](./stacked-for-web-pay.svg) ![TODO](./stacked-for-web-wallet.svg) ![TODO](./stacked-for-web-notify.svg)
+
+</div>
+<div class="border">
 
 ### Stacked for app
 
@@ -54,10 +103,22 @@ Product name on stacked lock-ups should be centre to GOV.UK wordmark.
 
 Spacing between wordmark and product name should be 1 large dot or 7 pixels from the bottom of the logo to the top of the product name on web.
 
+</div>
+<div class="img-fit">
+
 ![TODO](./stacked-for-app-pay.svg) ![TODO](./stacked-for-app-wallet.svg) ![TODO](./stacked-for-app-notify.svg)
+
+</div>
+<div class="border">
 
 ### Stacked with crown
 
 Product name on stacked lock-ups should be aligned left to crown.
 
+</div>
+<div class="img-fit">
+
 ![TODO](./stacked-with-crown-pay.svg) ![TODO](./stacked-with-crown-wallet.svg) ![TODO](./stacked-with-crown-notify.svg)
+
+</div>
+{% endgrid %}
