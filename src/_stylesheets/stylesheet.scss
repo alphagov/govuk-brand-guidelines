@@ -114,27 +114,6 @@ figcaption {
   align-content: flex-start;
 }
 
-// Section highlight adjustments
-.app-section-highlight {
-  margin-bottom: 50px;
-  padding: 30px 30px 10px;
-  border-radius: 3px;
-}
-
-// Light background uses 90% blue tint instead of 95%
-.light-blue {
-  color: #000000;
-  // background-color: #D2E2F1;
-  // background-color: #F4F8FB;
-  // background-color: #DDEAF4;
-  background-color: #e8f1f8;
-}
-
-.light-grey {
-  color: #000000;
-  background-color: #f3f3f3;
-}
-
 // Dark magenta section highlight likely to be deleted as it's just framing an image, and the image should have it's own background
 .dark-magenta {
   color: #ffffff;
