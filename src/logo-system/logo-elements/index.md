@@ -11,7 +11,11 @@ As our primary identifier, the GOV.UK wordmark should be used in all application
 
 The exception to this rule is the GOV.UK website. See the Web Logo section (3.3) for more details.
 
+{% sectionHighlight %}
+
 ![TODO](./wordmark.svg)
+
+{% endsectionHighlight %}
 
 ## Crown
 
@@ -19,13 +23,15 @@ As our primary identifier, the GOV.UK wordmark should be used in all application
 
 The exception to this rule is the GOV.UK website. See the [Web – Logo system page](/logo-system/web/).
 
-![TODO](./crown.svg)
+{% sectionHighlight %}
+
+![TODO][def]
+
+{% endsectionHighlight %}
 
 ### Using the crown as a supporting element
 
 A lock-up system where we can position the crown in close proximity to the GOV.UK wordmark to offer greater flexibility when designing in a wider range of formats and channels.
-
-![TODO](./crown-support-desktop.svg) ![TODO](./crown-support-mobile.svg)
 
 ## Lock-up
 
@@ -37,7 +43,11 @@ This ensures visual balance and harmony between the elements.
 
 The pixel sizes displayed on this page are indicative and will vary across devices.
 
+{% sectionHighlight %}
+
 ![TODO](./lockup-detail.svg)
+
+{% endsectionHighlight %}
 
 ### Use proportional scaling
 
@@ -50,14 +60,22 @@ The size of the crown can be adjusted depending on context. For example, when be
 Scaling should follow this rule:
 Wordmark dot = 2× crown dot
 
+{% sectionHighlight %}
+
 ![TODO](./propotional-scaling-desktop.svg)
+
+{% endsectionHighlight %}
 
 #### Enlarged crown size
 
 Scaling should follow this rule:
 Wordmark dot = 1× crown dot
 
+{% sectionHighlight %}
+
 ![TODO](./propotional-scaling-mobile.svg)
+
+{% endsectionHighlight %}
 
 ### Maintain clear space around logo elements
 
@@ -67,7 +85,11 @@ By respecting clear space guidelines, we preserve the logo’s integrity and ens
 
 The clear space area is defined by the dot size within our wordmark.
 
+{% sectionHighlight %}
+
 ![TODO](./space-around-wordmark.svg)
+
+{% endsectionHighlight %}
 
 ## Minimum sizing
 
@@ -77,17 +99,27 @@ If it’s too small, it can lose detail and be harder for some users to read or 
 
 <!-- TODO: suggest adding the arrow to the image -->
 
+{% sectionHighlight %}
+
 ![TODO](./wordmark.svg)
+
+{% endsectionHighlight %}
 
 Minimum size:
 50px
 
-![TODO](./crown.svg)
+{% sectionHighlight %}
+
+![TODO][def]
+
+{% endsectionHighlight %}
 
 Minimum size:
 10px
 
+{% sectionHighlight %}
 ![TODO](./crown-favicon.svg)
+{% endsectionHighlight %}
 
 Use the small crown version for anything below the crown’s minimum size, such as web favicons.
 
@@ -109,36 +141,92 @@ When using against a light background, the wordmark colour should use Black and 
 
 When using against a busy background or in print situations where colour is not possible, white or black versions of the wordmark can be used.
 
+{% grid { columns: 2 } %}
+
+<div>
+
 ![TODO](./logo-special-dark.svg)
+
+</div>
+<div>
+
 ![TODO](./logo-special-light.svg)
+
+</div>
+{% endgrid %}
 
 ## In motion
 
 Both logo elements have a standalone animation that can be used to add dynamism to the brand.
 
+{% grid { columns: 2 } %}
+
+<div>
 ### Wordmark
+
+{% sectionHighlight %}
 
 ![TODO](./wordmark-motion.gif)
 
+{% endsectionHighlight %}
+
+</div>
+
+<div>
 ### Crown
 
+{% sectionHighlight %}
+
 ![TODO](./crown-motion.gif)
+
+{% endsectionHighlight %}
+
+</div>
+
+{% endgrid %}
 
 ## Incorrect usage
 
 To maintain consistency across channels the logo elements should never be changed or altered.
 
+{% grid { columns: 2 } %}
+
+<div>
+
 ![TODO](./incorrect-altered-colours.png)
 Do not alter colour balance within the wordmark
+
+</div>
+
+<div>
 
 ![TODO](./incorrect-squashed.png)
 Do not distort, stretch or skew the wordmark
 
+</div>
+
+<div>
+
 ![TODO](./incorrect-effects.png)
 Do not apply drop shadows or effects to the wordmark
+
+</div>
+
+<div>
 
 ![TODO](./incorrect-busy.png)
 Do not use the wordmark on overly busy or low-contrast backgrounds
 
+</div>
+
+<div>
+
 ![TODO](./incorrect-mirrored.png)
 Do not flip, mirror, or rotate the wordmark
+
+</div>
+</div>
+
+{% endgrid %}
+
+[def]: ./crown.svg
