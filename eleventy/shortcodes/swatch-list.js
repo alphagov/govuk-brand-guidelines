@@ -9,8 +9,9 @@ export const swatchList = blockShortcode(function (options = {}) {
     // Default to the brand colour palette
     palette: this.ctx.colours ?? [],
 
-    // Filter by the intended use of the colour, 'web', 'app', 'print', etc.
-    use: 'app',
+    // Filter by the intended use of the colour.
+    // One of 'web', 'app', 'print', `social`.
+    use: undefined,
 
     // What group of colours to filter down to
     group: undefined
