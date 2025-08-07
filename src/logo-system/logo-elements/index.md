@@ -25,7 +25,7 @@ The exception to this rule is the GOV.UK website. See the [Web – Logo system p
 
 {% sectionHighlight %}
 
-![](def)
+![](./crown.svg)
 
 {% endsectionHighlight %}
 
@@ -114,7 +114,7 @@ Minimum size:
 
 {% sectionHighlight %}
 
-![][def]
+![](./crown.svg)
 
 {% endsectionHighlight %}
 
@@ -234,5 +234,3 @@ Do not flip, mirror, or rotate the wordmark
 </div>
 
 {% endgrid %}
-
-[def]: ./crown.svg
