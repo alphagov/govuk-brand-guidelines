@@ -1,0 +1,29 @@
+/// Classes to help build component's test pages
+@use 'govuk/base' as * with (
+  $govuk-new-typography-scale: true
+);
+
+//////
+/// Outlines
+///
+/// Use these classes to outline specific elements in the tests
+///
+/// @example
+/// <div class=".test-outline--loose">I have an outline a little outside</div>
+/// <div class=".test-outline--tight">I have an outline a little inside</div>
+//////
+.test-outline {
+  outline: solid 2px;
+}
+
+.test-outline--loose {
+  outline: dotted 2px govuk-colour('bright-purple');
+
+  outline-offset: 2px;
+}
+
+.test-outline--tight {
+  outline: dashed 2px govuk-colour('turquoise');
+
+  outline-offset: -2px;
+}
