@@ -82,3 +82,87 @@ pre code {
   padding-top: 10px;
   border-top: 1px solid #16548a;
 }
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  @include govuk-typography-common;
+
+  font-size: 16px;
+  text-align: center;
+}
+
+// Flexbox for arranging things inside the grid
+// Centering elements in flex
+.flex-center {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+}
+
+// Aligning content in flexbox
+.flex-end {
+  align-content: flex-end;
+}
+
+.flex-start {
+  align-content: flex-start;
+}
+
+// Section highlight adjustments
+.app-section-highlight {
+  margin-bottom: 50px;
+  padding: 30px 30px 10px;
+  border-radius: 3px;
+}
+
+// Light background uses 90% blue tint instead of 95%
+.light-blue {
+  color: #000000;
+  // background-color: #D2E2F1;
+  // background-color: #F4F8FB;
+  // background-color: #DDEAF4;
+  background-color: #e8f1f8;
+}
+
+.light-grey {
+  color: #000000;
+  background-color: #f3f3f3;
+}
+
+// Image and video styling
+.img-fit img {
+  width: 100%;
+  height: auto;
+}
+
+.img-scale img {
+  max-width: 60%;
+  padding: 30px;
+}
+
+.img-border {
+  margin: 50px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+}
+
+// Grid adjustments
+.app-grid {
+  gap: 15px;
+}
+
+// Other
+.border {
+  padding-top: 10px;
+  border-top: 1px solid #16548a;
+}
+
+h2 {
+  margin-top: 50px;
+}
