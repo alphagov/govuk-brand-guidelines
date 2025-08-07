@@ -3,6 +3,7 @@ import { sectionHighlight } from './shortcodes/section-highlight.js'
 import { swatch } from './shortcodes/swatch.js'
 import { swatchList, filterColours } from './shortcodes/swatch-list.js'
 import { testExample } from './shortcodes/test-example.js'
+import { videoPlayer } from './shortcodes/video-player.js'
 
 /**
  *  @param {import("@11ty/eleventy/UserConfig")} eleventyConfig
@@ -17,6 +18,7 @@ export function setupShortcodes(eleventyConfig) {
   // function image(param1, param2)
   eleventyConfig.addShortcode('swatch', swatch)
   eleventyConfig.addShortcode('swatchList', swatchList)
+  eleventyConfig.addShortcode('video', videoPlayer)
 
   // Paired shortcodes require a starting and ending tag. Any content between
   // those tags is passed as the first parameter.
