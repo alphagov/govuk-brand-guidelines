@@ -6,6 +6,8 @@ To facilitate creating test pages, we have a couple of utilities
 
 ## Outlines CSS classes
 
+### Outlining elements
+
 Use the following classes on your elements to give them an outline
 and make them visually recognisable in the tests:
 
@@ -16,3 +18,35 @@ and make them visually recognisable in the tests:
 <p class="govuk-body test-outline">.test-outline</p>
 <p class="govuk-body test-outline--loose">.test-outline--loose</p>
 <p class="govuk-body test-outline--tight">.test-outline--tight</p>
+
+### Outlining children
+
+If you need to outline children of an element in bulk, you can use the following classes:
+
+- `test-outline-children`
+- `test-outline-children--loose`
+- `test-outline-children--tight`
+
+<div class="test-outline-children">
+
+`.test-outline-children`
+
+And some more
+
+</div>
+
+<div class="test-outline-children--loose">
+
+`.test-outline-children--loose`
+
+And some more
+
+</div>
+
+<div class="test-outline-children--tight">
+
+`.test-outline-children--tight`
+
+And some more
+
+</div>

@@ -12,17 +12,20 @@
 /// <div class=".test-outline--loose">I have an outline a little outside</div>
 /// <div class=".test-outline--tight">I have an outline a little inside</div>
 //////
-.test-outline {
+.test-outline,
+.test-outline-children > * {
   outline: solid 2px;
 }
 
-.test-outline--loose {
+.test-outline--loose,
+.test-outline-children--loose > * {
   outline: dotted 2px govuk-colour('bright-purple');
 
   outline-offset: 2px;
 }
 
-.test-outline--tight {
+.test-outline--tight,
+.test-outline-children--tight > * {
   outline: dashed 2px govuk-colour('turquoise');
 
   outline-offset: -2px;
