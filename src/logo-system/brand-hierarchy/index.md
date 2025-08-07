@@ -28,22 +28,22 @@ The diagrams on this page show how to space the wordmark and text in a lock-up. 
 
 <div class="flex-end">
 
-![TODO](./lockup-1.svg)
+![Various diagrams of the GOV.UK Pay lockup, showing how the dot is used to set spacing within the wordmark. The capitalised G is also shown to set padding around the outside of the wordmark.](./lockup-1.svg)
 
 </div>
 <div class="flex-end">
 
-![TODO](./lockup-2.svg)
+![](./lockup-2.svg)
 
 </div>
 <div class="flex-end">
 
-![TODO](./lockup-3.svg)
+![](./lockup-3.svg)
 
 </div>
 <div class="flex-end">
 
-![TODO](./lockup-4.svg)
+![](./lockup-4.svg)
 
 </div>
 
@@ -63,7 +63,7 @@ On 14.2pt type, letter spacing should be -0.21 pixels.
 </div>
 <div class="img-fit">
 
-![TODO](./horizontal-pay.svg) ![TODO](./horizontal-wallet.svg) ![TODO](./horizontal-notify.svg)
+![Horizontal lock-ups for GOV.UK Pay, GOV.UK Wallet and GOV.UK Notify. Each lock-up is shown is on a single line.](./horizontal-pay.svg) ![](./horizontal-wallet.svg) ![](./horizontal-notify.svg)
 
 </div>
 
@@ -76,7 +76,7 @@ Spacing between wordmark and crown on horizontal lock-up should be 3 crown dots 
 </div>
 <div class="img-fit">
 
-![TODO](./horizontal-with-crown-pay.svg) ![TODO](./horizontal-with-crown-wallet.svg) ![TODO](./horizontal-with-crown-notify.svg)
+![Horizontal lock-ups with the crown for GOV.UK Pay, GOV.UK Wallet and GOV.UK Notify. Each lock-up is shown is on a single line after the crown.](./horizontal-with-crown-pay.svg) ![](./horizontal-with-crown-wallet.svg) ![](./horizontal-with-crown-notify.svg)
 
 </div>
 
@@ -92,7 +92,7 @@ Spacing between wordmark and product name should be 1 large dot or 7 pixels from
 
 <div class="img-fit">
 
-![TODO](./stacked-for-web-pay.svg) ![TODO](./stacked-for-web-wallet.svg) ![TODO](./stacked-for-web-notify.svg)
+![Stacked lock-ups for GOV.UK Pay, GOV.UK Wallet and GOV.UK Notify. Each lock-up shows GOV.UK and the product name on separate lines. Both lines are left aligned.](./stacked-for-web-pay.svg) ![](./stacked-for-web-wallet.svg) ![](./stacked-for-web-notify.svg)
 
 </div>
 <div class="border">
@@ -106,7 +106,7 @@ Spacing between wordmark and product name should be 1 large dot or 7 pixels from
 </div>
 <div class="img-fit">
 
-![TODO](./stacked-for-app-pay.svg) ![TODO](./stacked-for-app-wallet.svg) ![TODO](./stacked-for-app-notify.svg)
+![Stacked lock-ups for GOV.UK Pay, GOV.UK Wallet and GOV.UK Notify. Each lock-up shows GOV.UK and the product name on separate lines. Both lines are centred.](./stacked-for-app-pay.svg) ![](./stacked-for-app-wallet.svg) ![](./stacked-for-app-notify.svg)
 
 </div>
 <div class="border">
@@ -118,7 +118,7 @@ Product name on stacked lock-ups should be aligned left to crown.
 </div>
 <div class="img-fit">
 
-![TODO](./stacked-with-crown-pay.svg) ![TODO](./stacked-with-crown-wallet.svg) ![TODO](./stacked-with-crown-notify.svg)
+![Stacked lock-ups for GOV.UK Pay, GOV.UK Wallet and GOV.UK Notify with the crown. Each lock-up shows GOV.UK after the crown and product name on separate lines. Both lines are left aligned, so the product name starts directly under the crown.](./stacked-with-crown-pay.svg) ![](./stacked-with-crown-wallet.svg) ![](./stacked-with-crown-notify.svg)
 
 </div>
 {% endgrid %}

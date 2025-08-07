@@ -16,14 +16,14 @@ An exception to this principle includes other GOV.UK apps, where the symbol or i
 
 ### Wordmark
 
-![TODO](./wordmark-on-blue.svg)
+![](./wordmark-on-blue.svg)
 
 </div>
 <div class="flex-center">
 
 ### Crown
 
-![TODO](./crown-on-blue.svg)
+![](./crown-on-blue.svg)
 
 </div>
 
@@ -31,7 +31,7 @@ An exception to this principle includes other GOV.UK apps, where the symbol or i
 
 ### App icon
 
-![TODO](./app-icon-on-blue.svg)
+![](./app-icon-on-blue.svg)
 
 </div>
 
@@ -45,6 +45,8 @@ An exception to this principle includes other GOV.UK apps, where the symbol or i
 We always lead with the wordmark as our primary brand identifier - positioning it in a prominent position.
 
 We use the crown as a supporting element that sits below or at the end of content.
+
+The examples of logo elements within the app are indicative examples for illustrative purposes only.
 
 {% grid { columns: { mobile: 1, desktop: 2 } } %}
 
@@ -61,13 +63,11 @@ We use the crown as a supporting element that sits below or at the end of conten
 
 ### Crown watermark
 
-![TODO](./app-watermark-example.png)
+![Screenshot of the GOV.UK app, showing the GOV.UK wordmark centred in the top header and the crown watermark centred at the end of a page.](./app-watermark-example.png)
 
 </div>
 
 {% endgrid %}
-
-Indicative examples for illustrative purposes only.
 
 {% endsectionHighlight %}
 
@@ -82,13 +82,13 @@ As this is a small use application of the logo elements, we use the enlarged cro
 
 <div class="flex-center">
 
-![TODO](./app-icon-lines.svg) ![TODO](./app-icon.svg)
+![Icon of the GOV.UK app, with gridlines showing how the crown is placed centred directly under GOV.UK.](./app-icon-lines.svg) ![](./app-icon.svg)
 
 </div>
 
 <div class="flex-center">
 
-![TODO](./app-store-example.png)
+![Mockup of the GOV.UK app's page in an App Store.](./app-store-example.png)
 
 </div>
 
@@ -109,7 +109,7 @@ Example of the GOV.UK One Login app as shown here.
 
 <div class="flex-center">
 
-![TODO](./app-icon-template.svg)
+![Logo template for GOV.UK-branded apps.](./app-icon-template.svg)
 
 Framework
 
@@ -117,7 +117,7 @@ Framework
 
 <div class="flex-center">
 
-![TODO](./app-icon.svg)
+![](./app-icon.svg)
 
 Example 1: GOV.UK app
 
@@ -125,7 +125,7 @@ Example 1: GOV.UK app
 
 <div class="flex-center">
 
-![TODO](./app-icon-one-login.svg)
+![](./app-icon-one-login.svg)
 
 Example 2: GOV.UK One Login
 

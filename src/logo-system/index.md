@@ -16,16 +16,16 @@ The wordmark is our primary GOV.UK identifier, with the crown being used as a su
 
 Our wordmark is our primary identifier and should be used as the lead asset on touchpoints such as the app splash screen and video end frames.
 
-![TODO](./logo-elements/wordmark.svg)
+![](./logo-elements/wordmark.svg)
 
 ### Crown
 
 The crown must always be present but is used as a supporting asset within close proximity to the wordmark.
 
-![TODO](./logo-elements/crown.svg)
+![](./logo-elements/crown.svg)
 
 ### Lock-up
 
 To aid recognition the lock-up combines the crown and wordmark and is used primarily within the web channel.
 
-![TODO](./logo-elements/lockup.svg)
+![](./logo-elements/lockup.svg)

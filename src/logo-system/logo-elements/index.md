@@ -9,11 +9,11 @@ Our wordmark has been redrawn, elevating the dot into a position that signifies 
 
 As our primary identifier, the GOV.UK wordmark should be used in all applications of the logo.
 
-The exception to this rule is the GOV.UK website. See the Web Logo section (3.3) for more details.
+The exception to this rule is the GOV.UK website. See the [Web – Logo system page](/logo-system/web/).
 
 {% sectionHighlight %}
 
-![TODO](./wordmark.svg)
+![](./wordmark.svg)
 
 {% endsectionHighlight %}
 
@@ -25,13 +25,17 @@ The exception to this rule is the GOV.UK website. See the [Web – Logo system p
 
 {% sectionHighlight %}
 
-![TODO][def]
+![](def)
 
 {% endsectionHighlight %}
 
 ### Using the crown as a supporting element
 
 A lock-up system where we can position the crown in close proximity to the GOV.UK wordmark to offer greater flexibility when designing in a wider range of formats and channels.
+
+<!-- These images were removed from Hazal's changes, not sure if that was intentional -->
+
+![Desktop background showing the GOV.UK wordmark placed at the very centre with the crown centred at the bottom.](./crown-support-desktop.svg) ![Mobile background showing the GOV.UK wordmark placed at the very centre with the crown centred at the bottom.](./crown-support-mobile.svg)
 
 ## Lock-up
 
@@ -45,7 +49,7 @@ The pixel sizes displayed on this page are indicative and will vary across devic
 
 {% sectionHighlight %}
 
-![TODO](./lockup-detail.svg)
+![Dots from the crown are used to show the correct spacing and scaling within the logo lockup.](./lockup-detail.svg)
 
 {% endsectionHighlight %}
 
@@ -62,7 +66,7 @@ Wordmark dot = 2× crown dot
 
 {% sectionHighlight %}
 
-![TODO](./propotional-scaling-desktop.svg)
+![Dots from the crown are used to show the correct scale between the crown and wordmark.](./propotional-scaling-desktop.svg)
 
 {% endsectionHighlight %}
 
@@ -73,7 +77,7 @@ Wordmark dot = 1× crown dot
 
 {% sectionHighlight %}
 
-![TODO](./propotional-scaling-mobile.svg)
+![Dots from the crown are used to show the correct scale between the crown and wordmark for use in mobile.](./propotional-scaling-mobile.svg)
 
 {% endsectionHighlight %}
 
@@ -87,7 +91,7 @@ The clear space area is defined by the dot size within our wordmark.
 
 {% sectionHighlight %}
 
-![TODO](./space-around-wordmark.svg)
+![Dots from the wordmark are used to show that its width is the equal to the minimum clear space required around logo elements.](./space-around-wordmark.svg)
 
 {% endsectionHighlight %}
 
@@ -101,7 +105,7 @@ If it’s too small, it can lose detail and be harder for some users to read or 
 
 {% sectionHighlight %}
 
-![TODO](./wordmark.svg)
+![](./wordmark.svg)
 
 {% endsectionHighlight %}
 
@@ -110,7 +114,7 @@ Minimum size:
 
 {% sectionHighlight %}
 
-![TODO][def]
+![][def]
 
 {% endsectionHighlight %}
 
@@ -118,7 +122,7 @@ Minimum size:
 10px
 
 {% sectionHighlight %}
-![TODO](./crown-favicon.svg)
+![Smaller version of the crown, with adjustments such as fewer dots.](./crown-favicon.svg)
 {% endsectionHighlight %}
 
 Use the small crown version for anything below the crown’s minimum size, such as web favicons.
@@ -129,13 +133,13 @@ Use the small crown version for anything below the crown’s minimum size, such 
 
 When using on a Primary Blue background, the wordmark colour should use White and Accent Teal.
 
-![TODO](./logo-primary.svg)
+![](./logo-primary.svg)
 
 ### Light background
 
 When using against a light background, the wordmark colour should use Black and Primary Blue.
 
-![TODO](./logo-light.svg)
+![](./logo-light.svg)
 
 ### Special use
 
@@ -145,12 +149,12 @@ When using against a busy background or in print situations where colour is not 
 
 <div>
 
-![TODO](./logo-special-dark.svg)
+![](./logo-special-dark.svg)
 
 </div>
 <div>
 
-![TODO](./logo-special-light.svg)
+![](./logo-special-light.svg)
 
 </div>
 {% endgrid %}
@@ -162,6 +166,7 @@ Both logo elements have a standalone animation that can be used to add dynamism 
 {% grid { columns: 2 } %}
 
 <div>
+
 ### Wordmark
 
 {% sectionHighlight %}
@@ -173,6 +178,7 @@ Both logo elements have a standalone animation that can be used to add dynamism 
 </div>
 
 <div>
+
 ### Crown
 
 {% sectionHighlight %}
@@ -193,35 +199,35 @@ To maintain consistency across channels the logo elements should never be change
 
 <div>
 
-![TODO](./incorrect-altered-colours.png)
+![](./incorrect-altered-colours.png)
 Do not alter colour balance within the wordmark
 
 </div>
 
 <div>
 
-![TODO](./incorrect-squashed.png)
+![](./incorrect-squashed.png)
 Do not distort, stretch or skew the wordmark
 
 </div>
 
 <div>
 
-![TODO](./incorrect-effects.png)
+![](./incorrect-effects.png)
 Do not apply drop shadows or effects to the wordmark
 
 </div>
 
 <div>
 
-![TODO](./incorrect-busy.png)
+![](./incorrect-busy.png)
 Do not use the wordmark on overly busy or low-contrast backgrounds
 
 </div>
 
 <div>
 
-![TODO](./incorrect-mirrored.png)
+![](./incorrect-mirrored.png)
 Do not flip, mirror, or rotate the wordmark
 
 </div>

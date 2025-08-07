@@ -18,7 +18,7 @@ Within GOV.UK social channels we follow the primary logo system, using the wordm
 
 <!-- TODO: duplicated file also in ../app -->
 
-![TODO](./wordmark-on-blue.svg)
+![](./wordmark-on-blue.svg)
 
 </div>
 
@@ -28,7 +28,7 @@ Within GOV.UK social channels we follow the primary logo system, using the wordm
 
 <!-- TODO: duplicated file also in ../app -->
 
-![TODO](./crown-on-blue.svg)
+![](./crown-on-blue.svg)
 
 </div>
 
@@ -36,7 +36,7 @@ Within GOV.UK social channels we follow the primary logo system, using the wordm
 
 ### Profile icons (App Icon Grid)
 
-![TODO](./profile-icon-on-blue.svg)
+![Stacked lock-up of the GOV.UK logo.](./profile-icon-on-blue.svg)
 
 </div>
 {% endgrid %}
@@ -53,13 +53,13 @@ Within GOV.UK social channels we follow the primary logo system, using the wordm
 
 We always lead with the wordmark as our primary brand identifier – positioning it in a prominent position.
 
-We use the crown as a supporting element that sits below or to theright of the wordmark, or at the end of content.
+We use the crown as a supporting element that sits below or to the right of the wordmark, or at the end of content.
 
 </div>
 
 <div class="flex-center">
 
-![TODO](./profile-icon-lines.svg) ![TODO](./profile-icon.svg)
+![Logo lock-up of the GOV.UK logo, with gridlines showing how the crown is placed centred directly under GOV.UK. A circle also shows how it could be cropped for use as a profile image.](./profile-icon-lines.svg) ![](./profile-icon.svg)
 
 </div>
 {% endgrid %}
@@ -67,11 +67,11 @@ We use the crown as a supporting element that sits below or to theright of the w
 {% sectionHighlight { classes: "light-bg" } %}
 {% grid { columns: { mobile: 3, desktop: 3 } } %}
 
-![TODO](./youtube-example.png)
+![Mock-up of the GOV.UK channel page on YouTube.](./youtube-example.png)
 
-![TODO](./insta-example.png)
+![Mock-up of a post from GOV.UK on Instagram.](./insta-example.png)
 
-![TODO](./facebook-example.png)
+![Mock-up of the GOV.UK profile page on Instagram.](./facebook-example.png)
 
 {% endgrid %}
 
@@ -143,32 +143,32 @@ To aid brand recognition and coherency, adaptive dot colour should not be used w
 
 <div class="img-fit">
 
-![TODO](./adaptive-primary-blue.svg)
+![GOV.UK wordmark shown with adaptive dot to tonally match different coloured backgrounds.](./adaptive-primary-blue.svg)
 
 </div>
 <div class="img-fit">
 
-![TODO](./adaptive-primary-green.svg)
+![](./adaptive-primary-green.svg)
 
 </div>
 <div class="img-fit">
 
-![TODO](./adaptive-shade50-blue.svg)
+![](./adaptive-shade50-blue.svg)
 
 </div> 
 <div class="img-fit">
 
-![TODO](./adaptive-shade50-purple.svg)
+![](./adaptive-shade50-purple.svg)
 
 </div>
 <div class="img-fit">
 
-![TODO](./adaptive-shade50-red.svg)
+![](./adaptive-shade50-red.svg)
 
 </div>
 <div class="img-fit">
 
-![TODO](./adaptive-shade50-teal.svg)
+![](./adaptive-shade50-teal.svg)
 
 </div>
 {% endgrid %}
@@ -186,7 +186,7 @@ Do not use colour combinations that are not accessible.
 
 <div class="img-fit">
 
-![TODO](./incorrect-not-accessible-1.svg) ![TODO](./incorrect-not-accessible-2.svg)
+![Crossed out GOV.UK wordmark with dot. The dot is diificult to see against the background, as colours are too similiar and do not meet minimum contrast requirements for accessibility.](./incorrect-not-accessible-1.svg) ![](./incorrect-not-accessible-2.svg)
 
 </div>
 
@@ -198,7 +198,7 @@ Do not use colour combinations that lack contrast between the wordmark and dot.
 
 <div class="img-fit">
 
-![TODO](./incorrect-low-contrast-1.svg) ![TODO](./incorrect-low-contrast-2.svg)
+![Crossed out GOV.UK wordmark with the dot shown in similar, nearly indistinguishable colours.](./incorrect-low-contrast-1.svg) ![](./incorrect-low-contrast-2.svg)
 
 </div>
 
@@ -209,7 +209,7 @@ Do not use colour combinations that are not from the same tonal range.
 </div>
 <div class="img-fit">
 
-![TODO](./incorrect-tonal-1.svg) ![TODO](./incorrect-tonal-2.svg)
+![Crossed out GOV.UK wordmark with the dot shown in mismatching colours.](./incorrect-tonal-1.svg) ![](./incorrect-tonal-2.svg)
 
 </div>
 {% endgrid %}
