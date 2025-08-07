@@ -74,3 +74,14 @@
   background-position: 0 var(--y);
   background-size: 100% 1px;
 }
+
+.test-example {
+  margin-bottom: govuk-spacing(3);
+  padding: govuk-spacing(3);
+  overflow: hidden;
+  border: solid 2px govuk-colour('blue');
+  background-image:
+    linear-gradient(#ffffff),
+    linear-gradient(govuk-tint(govuk-colour('light-blue'), 80%));
+  background-clip: content-box, border-box;
+}

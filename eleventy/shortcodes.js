@@ -1,5 +1,6 @@
 import { grid } from './shortcodes/grid.js'
 import { sectionHighlight } from './shortcodes/section-highlight.js'
+import { testExample } from './shortcodes/test-example.js'
 
 /**
  *  @param {import("@11ty/eleventy/UserConfig")} eleventyConfig
@@ -20,4 +21,5 @@ export function setupShortcodes(eleventyConfig) {
   // function grid(content, param1, param2)
   eleventyConfig.addPairedShortcode('grid', grid)
   eleventyConfig.addPairedShortcode('sectionHighlight', sectionHighlight)
+  eleventyConfig.addPairedShortcode('testExample', testExample)
 }
