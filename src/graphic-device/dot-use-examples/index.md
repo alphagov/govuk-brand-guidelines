@@ -10,37 +10,65 @@ The app splash screen utilises the dot in motion to represent GOV.UK bringing to
 <!-- TODO: these files are partly duplicated in
 logo system > app and colour > palette overview -->
 
-### App splash screen (long version)
+{% grid { columns: { desktop: 2 }, classes: "govuk-!-padding-bottom-6" } %}
 
-![TODO](./splash-screen-long.gif)
+<div>
+    
+ ### App splash screen (long version)
+
+<video src="./splash-screen-long-version.mp4" controls width="405" style="max-width: 100%">
+This video does not contain any audio.
+</video>
+
+</div>
+<div>
 
 ### App splash screen (short version)
 
-![TODO](./splash-screen-short.gif)
+<video src="./splash-screen-short-version.mp4" controls width="405" style="max-width: 100%">
+This video does not contain any audio.
+</video>
+
+</div>
+{% endgrid %}
 
 ## Illustration
 
 The dot can be brought to life through animation in illustrations, adding personality and expression to moments such as app onboarding, or to tell visual stories within social.
 
-Person
+{% grid { columns: { mobile: 2, tablet: 3 }, classes: "govuk-!-padding-bottom-6" } %}
 
-TODO: missing video
+<div>
+
+Person
+![TODO](./wave.gif)
+
+</div>
+<div>
 
 Travel
+![TODO](./travel.gif)
 
-TODO: missing video
+</div>
+<div>
 
 Lock
+![TODO](./padlock.gif)
 
-TODO: missing video
+</div>
+<div>
 
 Onboarding
+![TODO](./onboarding.gif)
 
-TODO: missing video
+</div>
+<div>
 
-Piggy bank
+Driving
+![TODO](./driving.gif)
 
-TODO: missing video
+</div>
+{% endgrid %}
 
 ## Social media
 
@@ -56,19 +84,40 @@ The dot provides a distinctive, flexible visual thread that ties together differ
 
 To build coherence across channels, our social end frames follow the same motion behaviour as the app splash screen.
 
+{% grid %}
+
+<div>
+
 ### Video end frame 16:9
 
-<!-- TODO: these files are duplicated in logo system > social -->
+<video src="./End-frame-1920-1080.mp4" controls width="720" style="max-width: 100%">
+This video does not contain any audio.
+</video>
 
-![TODO](./end-frame-1920x1080.gif)
+</div>
+{% endgrid %}
+
+{% grid { columns: { tablet: 2 } } %}
+
+<div>
 
 ### Video end frame 9:16
 
-![TODO](./end-frame-1080x1920.gif)
+<video src="./End-frame-1080-1920.mp4" controls width="402" style="max-width: 100%">
+This video does not contain any audio.
+</video>
+
+</div>
+<div>
 
 ### Video end frame 1:1
 
-![TODO](./end-frame-1080x1080.gif)
+<video src="./End-frame-1080-1080.mp4" controls width="720" style="max-width: 100%">
+This video does not contain any audio.
+</video>
+
+</div>
+{% endgrid %}
 
 ## Video thumbnails
 
@@ -82,23 +131,53 @@ See these indicative examples of dot use within thumbnails. These examples are s
 
 <!-- Obviously, that's not the right heading, needs proper design -->
 
-### Inform <--------> Inspire
+{% grid { columns: 4 } %}
+
+<div style="grid-column: span 3">
+
+### Inform
+
+</div>
+<div style="text-align:right">
+
+### Inspire
+
+</div>
+{% endgrid %}
+
+<hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+{% grid { columns: 4 } %}
+
+<div>
 
 Get help with...
 
 ![TODO](./video-thumb-get-help.png)
 
+</div>
+<div>
+
 60 second guides
 
 ![TODO](./video-thumb-60s.png)
+
+</div>
+<div>
 
 Step-by-step guides
 
 ![TODO](./video-thumb-step.png)
 
+</div>
+<div>
+
 Influencer or presenter
 
 ![TODO](./video-thumb-influencer.png)
+
+</div>
+{% endgrid %}
 
 ## Static dot examples
 

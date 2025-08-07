@@ -10,11 +10,20 @@ Our dot is the bridge between government and the UK, by the side of users to hel
 
 Used within our wordmark and as a graphic device across all GOV.UK channels, the dot is a guiding hand, for life.
 
-![TODO](./the-dot.svg)
+{% grid %}
 
-<!-- TODO: this is not the final MP4 file
-but it's good to have one file to see and play around with the video player -->
+<div>
+    <img src="./the-dot.svg" alt="The GOV.UK wordmark, with an arrow that points to the dot." class="app-prose-image" loading="lazy" decoding="async" width="669" height="180" style="padding: 30px; max-width: calc(100% - 60px); background-color: #1d70b8;">
+</div>
+<div>
 
 The examples shown in this video are indicative and for illustrative purposes only.
 
-<video src="./dot-animations.mp4" controls width="720"></video>
+<video src="./dot-animations.mp4" controls width="720" style="max-width: 100%" class="govuk-!-padding-bottom-6">
+This video does not contain any audio.
+</video>
+
+The dot starts from its place within the GOV.UK logo, then playfully expands, bounces and moves through a range of animation examples that introduce government information and services.
+
+</div>
+{% endgrid %}
