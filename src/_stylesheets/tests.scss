@@ -30,3 +30,47 @@
 
   outline-offset: -2px;
 }
+
+//////
+/// Guide lines
+///
+/// Use these classes to draw lines over an element to verify alignment
+//////
+.test-guide-line--vertical,
+.test-guide-line--horizontal {
+  position: relative;
+  z-index: 0;
+
+  // Use custom properties to allow easily changing the position from the element itself
+  --x: 50%;
+  --y: 50%;
+  --guide-line-colour: #{govuk-colour('pink')};
+  --vertical-guide-line-colour: var(--guide-line-colour);
+  --horizontal-guide-line-colour: var(--guide-line-colour);
+}
+
+.test-guide-line--vertical::before,
+.test-guide-line--horizontal::after {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+
+.test-guide-line--vertical::before {
+  background-image: linear-gradient(var(--vertical-guide-line-colour));
+  background-position: var(--x) 0;
+  background-size: 1px 100%;
+}
+
+.test-guide-line--horizontal::after {
+  background-image: linear-gradient(var(--horizontal-guide-line-colour));
+  background-position: 0 var(--y);
+  background-size: 100% 1px;
+}
