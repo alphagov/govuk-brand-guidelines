@@ -61,7 +61,7 @@ We use the crown as a supporting element that sits below or to the right of the 
 </div>
 {% endgrid %}
 
-{% sectionHighlight { classes: "light-bg" } %}
+{% sectionHighlight { classes: "light-blue" } %}
 {% grid { columns: { mobile: 3, desktop: 3 } } %}
 
 ![Mock-up of the GOV.UK channel page on YouTube.](./youtube-example.png)

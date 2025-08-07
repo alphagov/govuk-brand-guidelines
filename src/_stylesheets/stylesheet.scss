@@ -135,6 +135,12 @@ figcaption {
   background-color: #f3f3f3;
 }
 
+// Dark magenta section highlight likely to be deleted as it's just framing an image, and the image should have it's own background
+.dark-magenta {
+  color: #ffffff;
+  background-color: #651B3E;
+}
+
 // Image and video styling
 .img-fit img {
   width: 100%;
