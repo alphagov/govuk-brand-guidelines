@@ -2,20 +2,6 @@
 title: Whitespace handling within the `grid` shortcode
 ---
 
-{% css %}
-
-<style>
-    .app-grid {
-        outline: dashed 2px grey;
-
-        > * {
-            outline: solid
-        }
-    }
-</style>
-
-{% endcss %}
-
 <!-- prettier-ignore-start -->
 <!-- This file has a few tests about managing whitespace so we need it to stay as authored -->
 
@@ -23,99 +9,124 @@ title: Whitespace handling within the `grid` shortcode
 
 ### Single line
 
-{% grid %}Hello{% endgrid %}
+{% testExample %}
+{% grid {classes: 'test-outline-children test-outline--loose'} %}Hello{% endgrid %}
+{% endtestExample %}
 
 ### Next line both ends
 
-{% grid %}
+{% testExample %}
+{% grid {classes: 'test-outline-children test-outline--loose'} %}
 Grid content
 {% endgrid %}
+{% endtestExample %}
 
 ### Line break
 
-{% grid %}
+{% testExample %}
+{% grid {classes: 'test-outline-children test-outline--loose'} %}
 
 Grid content
 
 {% endgrid %}
+{% endtestExample %}
 
 ### Intended
 
-{% grid %}
+{% testExample %}
+{% grid {classes: 'test-outline-children test-outline--loose'} %}
     Grid content
 {% endgrid %}
+{% endtestExample %}
 
 ### Same line at start
-{% grid %}Grid content
+{% testExample %}
+{% grid {classes: 'test-outline-children test-outline--loose'} %}Grid content
 {% endgrid %}
+{% endtestExample %}
 
 ### Next line at start
-{% grid %}
+{% testExample %}
+{% grid {classes: 'test-outline-children test-outline--loose'} %}
 Grid content{% endgrid %}
+{% endtestExample %}
 
 ### Markdown
 
 #### Next line both ends
 
-{% grid %}
+{% testExample %}
+{% grid {classes: 'test-outline-children test-outline--loose'} %}
 A paragraph introducing:
 
 - a list
 {% endgrid %}
+{% endtestExample %}
 
 #### Line break at start, line break at end
 
 It shouldn't have extra `<p>` from markdown transformation
 
-{% grid %}
+{% testExample %}
+{% grid {classes: 'test-outline-children test-outline--loose'} %}
 
 A paragraph introducing:
 
 - a list
 
 {% endgrid %}
+{% endtestExample %}
 
 #### Indented
 
 It shouldn't be turned into a Markdown code block
 
-{% grid %}
+{% testExample %}
+{% grid {classes: 'test-outline-children test-outline--loose'} %}
     A paragraph introducing:
 
     - a list
 {% endgrid %}
+{% endtestExample %}
 
 #### Same line at start
 
-{% grid %}A paragraph introducing:
+{% testExample %}
+{% grid {classes: 'test-outline-children test-outline--loose'} %}A paragraph introducing:
 
     - a list
 {% endgrid %}
+{% endtestExample %}
 
 #### Same line at end
 
-{% grid %}
+{% testExample %}
+{% grid {classes: 'test-outline-children test-outline--loose'} %}
     A paragraph introducing:
 
     - a list{% endgrid %}
+    {% endtestExample %}
 
 ### HTML
 
 #### Next line both ends
 
-{% grid %}
+{% testExample %}
+{% grid {classes: 'test-outline-children test-outline--loose'} %}
 <p class="govuk-body">A paragraph introducing:</p>
 
 <ul class="govuk-list">
     <li>a list
 </ul>
 {% endgrid %}
+{% endtestExample %}
 
 #### Line break at start, line break at end
 
 It shouldn't have extra `<p>` from Markdown transformation
 
-{% grid %}
+{% testExample %}
+{% grid {classes: 'test-outline-children test-outline--loose'} %}
 
 <p class="govuk-body">A paragraph introducing:</p>
 
@@ -124,12 +135,14 @@ It shouldn't have extra `<p>` from Markdown transformation
 </ul>
 
 {% endgrid %}
+{% endtestExample %}
 
 #### Indented
 
 It shouldn't be turned into a Markdown code block
 
-{% grid %}
+{% testExample %}
+{% grid {classes: 'test-outline-children test-outline--loose'} %}
 
 <p class="govuk-body">A paragraph introducing:</p>
 
@@ -138,58 +151,70 @@ It shouldn't be turned into a Markdown code block
 </ul>
 
 {% endgrid %}
+{% endtestExample %}
 
 #### Same line at start
 
-{% grid %}<p class="govuk-body">A paragraph introducing:</p>
+{% testExample %}
+{% grid {classes: 'test-outline-children test-outline--loose'} %}<p class="govuk-body">A paragraph introducing:</p>
 
 <ul class="govuk-list">
     <li>a list
 </ul>
 {% endgrid %}
+{% endtestExample %}
 
 #### Same line at end
 
-{% grid %}
+{% testExample %}
+{% grid {classes: 'test-outline-children test-outline--loose'} %}
 <p class="govuk-body">A paragraph introducing:</p>
 
 <ul class="govuk-list">
     <li>a list
 </ul>{% endgrid %}
+{% endtestExample %}
 
 #### Pre-formatted text
 
-{% grid %}
+{% testExample %}
+{% grid {classes: 'test-outline-children test-outline--loose'} %}
 <pre>
 Hello,
     How does this look?
   Some space indentation as well
 </pre>
 {% endgrid %}
+{% endtestExample %}
 
 #### Mixed with markdown
 
 ##### Markdown first
 
-{% grid %}
+{% testExample %}
+{% grid {classes: 'test-outline-children test-outline--loose'} %}
 - a list
 - with two items
 
 <small>Followed by some HTML</small>
 {% endgrid %}
+{% endtestExample %}
 
 ##### Markdown last
 
-{% grid %}
+{% testExample %}
+{% grid {classes: 'test-outline-children test-outline--loose'} %}
 <small>Some HTML...</small>
 
 - a list
 - with two items
 {% endgrid %}
+{% endtestExample %}
 
 ##### Markdown around
 
-{% grid %}
+{% testExample %}
+{% grid {classes: 'test-outline-children test-outline--loose'} %}
 1. One
 2. Two
 
@@ -198,10 +223,12 @@ Hello,
 - a list
 - with two items
 {% endgrid %}
+{% endtestExample %}
 
 ##### HTML around
 
-{% grid %}
+{% testExample %}
+{% grid {classes: 'test-outline-children test-outline--loose'} %}
 <small>Some initial HTML...</small>
 
 - a list
@@ -209,13 +236,15 @@ Hello,
 
 <small>HTML again</small>
 {% endgrid %}
+{% endtestExample %}
 
 ##### Markdown inside
 
 Like with any nesting of Markdown inside HTML,
 the markdown blocks need to be at the start of the line
 
-{% grid %}
+{% testExample %}
+{% grid {classes: 'test-outline-children test-outline--loose'} %}
 <article>
 
 ###### Here's the heading
@@ -224,11 +253,13 @@ And some content
 
 </article>
 {% endgrid %}
+{% endtestExample %}
 
 Markdown blocks (headings, lists...) won't get detected if they're not at the start of the line,
 only `<p>` tags will be created
 
-{% grid %}
+{% testExample %}
+{% grid {classes: 'test-outline-children test-outline--loose'} %}
 <article>
 
     ###### Here's the heading
@@ -237,10 +268,12 @@ only `<p>` tags will be created
 
 </article>
 {% endgrid %}
+{% endtestExample %}
 
 Without a line break after the HTML opening tag, Markdown won't be detected either
 
-{% grid %}
+{% testExample %}
+{% grid {classes: 'test-outline-children test-outline--loose'} %}
 <article>
 Some **bold text**
 ###### Here's the heading
@@ -248,6 +281,7 @@ Some **bold text**
 And some content, including **bold text**
 </article>
 {% endgrid %}
+{% endtestExample %}
 
 ## Surrounding content
 
@@ -256,23 +290,29 @@ and after the shortcode
 
 ### On different line than previous and following content
 Content before
-{% grid %}
+{% testExample %}
+{% grid {classes: 'test-outline-children test-outline--loose'} %}
 Grid content
 {% endgrid %}
+{% endtestExample %}
 Content after
 
 ### Same line before
 
-Content before{% grid %}
+{% testExample %}Content before
+{% grid {classes: 'test-outline-children test-outline--loose'} %}
 Grid content
 {% endgrid %}
+{% endtestExample %}
 Content after
 
 ### Same line after
 
 Content before
-{% grid %}
+{% testExample %}
+{% grid {classes: 'test-outline-children test-outline--loose'} %}
 Grid content
-{% endgrid %}Content after
+{% endgrid %}
+{% endtestExample %}Content after
 
 <!-- prettier-ignore-end -->

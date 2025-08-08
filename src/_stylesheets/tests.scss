@@ -1,0 +1,87 @@
+/// Classes to help build component's test pages
+@use 'govuk/base' as * with (
+  $govuk-new-typography-scale: true
+);
+
+//////
+/// Outlines
+///
+/// Use these classes to outline specific elements in the tests
+///
+/// @example
+/// <div class=".test-outline--loose">I have an outline a little outside</div>
+/// <div class=".test-outline--tight">I have an outline a little inside</div>
+//////
+.test-outline,
+.test-outline-children > * {
+  outline: solid 2px;
+}
+
+.test-outline--loose,
+.test-outline-children--loose > * {
+  outline: dotted 2px govuk-colour('bright-purple');
+
+  outline-offset: 2px;
+}
+
+.test-outline--tight,
+.test-outline-children--tight > * {
+  outline: dashed 2px govuk-colour('turquoise');
+
+  outline-offset: -2px;
+}
+
+//////
+/// Guide lines
+///
+/// Use these classes to draw lines over an element to verify alignment
+//////
+.test-guide-line--vertical,
+.test-guide-line--horizontal {
+  position: relative;
+  z-index: 0;
+
+  // Use custom properties to allow easily changing the position from the element itself
+  --x: 50%;
+  --y: 50%;
+  --guide-line-colour: #{govuk-colour('pink')};
+  --vertical-guide-line-colour: var(--guide-line-colour);
+  --horizontal-guide-line-colour: var(--guide-line-colour);
+}
+
+.test-guide-line--vertical::before,
+.test-guide-line--horizontal::after {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+
+.test-guide-line--vertical::before {
+  background-image: linear-gradient(var(--vertical-guide-line-colour));
+  background-position: var(--x) 0;
+  background-size: 1px 100%;
+}
+
+.test-guide-line--horizontal::after {
+  background-image: linear-gradient(var(--horizontal-guide-line-colour));
+  background-position: 0 var(--y);
+  background-size: 100% 1px;
+}
+
+.test-example {
+  margin-bottom: govuk-spacing(3);
+  padding: govuk-spacing(3);
+  overflow: hidden;
+  border: solid 2px govuk-colour('blue');
+  background-image:
+    linear-gradient(#ffffff),
+    linear-gradient(govuk-tint(govuk-colour('light-blue'), 80%));
+  background-clip: content-box, border-box;
+}
