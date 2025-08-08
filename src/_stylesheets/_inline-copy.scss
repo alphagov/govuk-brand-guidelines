@@ -1,0 +1,25 @@
+.app-inline-copy {
+  margin: 0;
+  padding: 0;
+  border: none;
+  color: inherit;
+  background: none;
+  font: inherit;
+  vertical-align: middle;
+  cursor: pointer;
+  @include govuk-font(16);
+
+  &:focus {
+    @include govuk-focused-text;
+  }
+
+  svg {
+    width: 1em;
+    height: 1em;
+    fill: currentcolor;
+  }
+
+  &--copied svg {
+    fill: #11875a; // primary green
+  }
+}

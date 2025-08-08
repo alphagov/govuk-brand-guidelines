@@ -1,5 +1,5 @@
-import { blockShortcode } from './utils.js'
+import { blockPairedShortcode } from './utils.js'
 
-export const testExample = blockShortcode((content) => {
+export const testExample = blockPairedShortcode((content) => {
   return `<div class="test-example">${content}</div>`
 })
