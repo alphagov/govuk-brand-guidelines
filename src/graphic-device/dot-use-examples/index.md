@@ -149,35 +149,35 @@ Thumbnails should always use the dot in a purposeful way.
 See these indicative examples of dot use within thumbnails. These examples are shown for illustrative purposes only.
 
 <!-- Obviously, that's not the right heading, needs proper design -->
-<div>
-    <span>Inform</span>
-    <ol>
+<div class="govuk-!-padding-bottom-2">
+    <span><h3 class="govuk-heading-s">Inform</h3></span>
+    <ol class="video-thumbnail-scale">
         <li class="video-thumbnail-scale-item">
             <div>
-                <h2>Get help with...</h2>
+                <p class="govuk-body">Get help with...</p>
                 <img class="app-prose-image" loading="lazy" decoding="async" src="./video-thumb-get-help.png" alt="A video thumbnail for 'Get help with registering a death'. Title is shown within a simple blue circle graphic on a blue background." width="300" height="168">
             </div>
         </li>
+        <li class="video-thumbnail-scale-item">
+            <div>
+                <p class="govuk-body">60 second guides</p>
+                <img class="app-prose-image" loading="lazy" decoding="async" src="./video-thumb-60s.png" alt="A video thumbnail showing a title overlay for 'Check a vehicle before you buy', includes an icon of a small clock that resembles the dot." width="300" height="168">
+            </div>
+        </li>
+         <li class="video-thumbnail-scale-item">
+            <div>
+                <p class="govuk-body">Step-by-step guides</p>
+                <img class="app-prose-image" loading="lazy" decoding="async" src="./video-thumb-step.png" alt="A video thumbnail for 'How to apple for a Visa'. Title is shown on light blue background beside an illustration of travel documents incorporating the dot." width="300" height="168">
+            </div>
+        </li>
+        <li class="video-thumbnail-scale-item">
+            <div>
+                <p class="govuk-body">Influencer or presenter</p>
+                <img class="app-prose-image" loading="lazy" decoding="async" src="./video-thumb-influencer.png" alt="A video thumbnail for 'How I learnt to drive. A smiling young adult is shown in front of a background, which is a purple circular title graphic." width="300" height="168">
+            </div>
+        </li>
     </ol>
-
-### Inspire
-
-Get help with...
-
-![TODO](./video-thumb-get-help.png)
-
-60 second guides
-
-![TODO](./video-thumb-60s.png)
-
-Step-by-step guides
-
-![TODO](./video-thumb-step.png)
-
-Influencer or presenter
-
-![TODO](./video-thumb-influencer.png)
-
+    <span><h3 class="govuk-heading-s govuk-!-margin-top-3">Inspire</h3></span>
 </div>
 
 ## Static dot examples
