@@ -28,7 +28,7 @@ It should correctly compile the markdown before and after the shortcode
 #### On different line than previous and following content
 
 Content before
-{% grid %}
+{% grid {classes: 'test-outline-children test-outline--loose'} %}
 Grid content
 {% endgrid %}
 Content after
@@ -36,7 +36,7 @@ Content after
 ### Within markdown block
 
 - First item
-    {% grid {indent: 2} %}
+    {% grid {indent: 2, classes: 'test-outline-children test-outline--loose'} %}
     Grid content
     {% endgrid %}
 - Second item
@@ -45,7 +45,7 @@ Content after
 
 Content before
 
-{% grid %}
+{% grid {classes: 'test-outline-children test-outline--loose'} %}
 Grid content
 {% endgrid %}
 
@@ -54,7 +54,7 @@ Content after
 
 #### Same line before
 
-Content before{% grid %}
+Content before{% grid {classes: 'test-outline-children test-outline--loose'}%}
 Grid content
 {% endgrid %}
 Content after
@@ -72,7 +72,7 @@ Grid content
 #### Tags before and after
 
 <p class="govuk-body">Content before</p>
-{% grid %}
+{% grid {classes: 'test-outline-children test-outline--loose'}%}
 Grid content
 {% endgrid %}
 <p class="govuk-body">Content after</p>
@@ -83,7 +83,7 @@ Shouldn't add extra paragraphs when Markdown is processed
 
 <p class="govuk-body">Content before</p>
 
-{% grid %}
+{% grid {classes: 'test-outline-children test-outline--loose'}%}
 Grid content
 {% endgrid %}
 
@@ -92,7 +92,7 @@ Grid content
 #### At start of tag
 
 <article>
-{% grid %}
+{% grid {classes: 'test-outline-children test-outline--loose'}%}
 Grid content
 {% endgrid %}
 </article>
@@ -101,7 +101,7 @@ Grid content
 
 <article>
 Content before
-{% grid {insideHTML: true} %}
+{% grid {insideHTML: true, classes: 'test-outline-children test-outline--loose'} %}
 Grid content
 {% endgrid %}
 Content after
@@ -111,7 +111,7 @@ Content after
 
 <article>
 <span>Content before</span>
-{% grid {insideHTML: true} %}
+{% grid {insideHTML: true, classes: 'test-outline-children test-outline--loose'} %}
 Grid content
 {% endgrid %}
 <span>Content after</span>
@@ -121,7 +121,7 @@ Grid content
 
 <article>
 <ul><li>Content before</ul>
-{% grid %}
+{% grid {classes: 'test-outline-children test-outline--loose'}%}
 Grid content
 {% endgrid %}
 <ul><li>Content after</ul>
@@ -130,7 +130,7 @@ Grid content
 ### Markdown before, HTML after
 
 - A list before
-{% grid %}
+{% grid {classes: 'test-outline-children test-outline--loose'}%}
 Grid content
 {% endgrid %}
 <ul><li>Content after</ul>
@@ -138,7 +138,7 @@ Grid content
 ### HTML before, Markdown after
 
 <ul><li>Content before</ul>
-{% grid %}
+{% grid {classes: 'test-outline-children test-outline--loose'}%}
 Grid content
 {% endgrid %}
 - A list after
