@@ -11,21 +11,23 @@ An exception to this principle includes other GOV.UK apps, where the symbol or i
 
 ### Wordmark
 
-![TODO](./wordmark-on-blue.svg)
+![](./wordmark-on-blue.svg)
 
 ### Crown
 
-![TODO](./crown-on-blue.svg)
+![](./crown-on-blue.svg)
 
 ### App icon
 
-![TODO](./app-icon-on-blue.svg)
+![](./app-icon-on-blue.svg)
 
 ## Logo elements within the app
 
 We always lead with the wordmark as our primary brand identifier - positioning it in a prominent position.
 
 We use the crown as a supporting element that sits below or at the end of content.
+
+The examples of logo elements within the app are indicative examples for illustrative purposes only.
 
 ### App splash screen
 
@@ -35,9 +37,7 @@ We use the crown as a supporting element that sits below or at the end of conten
 
 ### Crown watermark
 
-![TODO](./app-watermark-example.png)
-
-Indicative examples for illustrative purposes only.
+![Screenshot of the GOV.UK app, showing the GOV.UK wordmark centred in the top header and the crown watermark centred at the end of a page.](./app-watermark-example.png)
 
 ## App icon
 
@@ -45,7 +45,7 @@ The GOV.UK app icon should follow the same principle, leading with the wordmark 
 
 As this is a small use application of the logo elements, we use the enlarged crown size to maximise legibility and recognition.
 
-![TODO](./app-icon-lines.svg) ![TODO](./app-icon.svg) ![TODO](./app-store-example.png)
+![Icon of the GOV.UK app, with gridlines showing how the crown is placed centred directly under GOV.UK.](./app-icon-lines.svg) ![](./app-icon.svg) ![Mockup of the GOV.UK app's page in an App Store.](./app-store-example.png)
 
 ### <a name="app-icon-suite"></a>App icon suite
 
@@ -55,14 +55,14 @@ The suite of icons should follow the same principles, leading with the GOV.UK wo
 
 Example of the GOV.UK One Login app as shown here.
 
-![TODO](./app-icon-template.svg)
+![Logo template for GOV.UK-branded apps.](./app-icon-template.svg)
 
 Framework
 
-![TODO](./app-icon.svg)
+![](./app-icon.svg)
 
 Example 1: GOV.UK app
 
-![TODO](./app-icon-one-login.svg)
+![](./app-icon-one-login.svg)
 
 Example 2: GOV.UK One Login
