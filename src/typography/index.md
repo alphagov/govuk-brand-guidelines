@@ -2,6 +2,7 @@
 order: 3
 title: Typography
 hero: ./hero.svg
+colour: '#CA357C'
 ---
 
 Typography is a core element to our identity, shaping how our brand is perceived across all GOV.UK channels.

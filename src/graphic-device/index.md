@@ -2,6 +2,7 @@
 order: 0
 title: Graphic device
 hero: ./hero.svg
+colour: '#158187'
 ---
 
 ## The Dot
