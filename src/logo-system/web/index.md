@@ -7,7 +7,7 @@ title: Web
 
 To aid recognition and trust we retain the locked-up version of the crown and wordmark on web.
 
-![](../logo-elements/logo-primary.svg)
+![](../logo-elements/lockup.svg)
 
 <!--
 TODO:
