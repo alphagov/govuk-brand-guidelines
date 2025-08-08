@@ -25,6 +25,10 @@
   height: auto;
 }
 
+.app-grid-reduced-gap {
+  --app-grid-gap: 10px;
+}
+
 .video-thumbnail-scale {
   margin: 0;
   padding: 0;

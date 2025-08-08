@@ -116,7 +116,7 @@ This video does not contain any audio.
 </div>
 {% endgrid %}
 
-{% grid { columns: { tablet: 2 }, classes:"govuk-!-padding-bottom-6" } %}
+{% grid { columns: { tablet: 2 }, classes: "govuk-!-padding-bottom-6" " govuk-!-padding-top-4" } %}
 
 <div>
 
@@ -180,13 +180,37 @@ See these indicative examples of dot use within thumbnails. These examples are s
     <span><h3 class="govuk-heading-s govuk-!-margin-top-3">Inspire</h3></span>
 </div>
 
+{% sectionHighlight {classes: "light-blue" } %}
+
 ## Static dot examples
 
 The dot can also be used as a static graphic, adding emphasis and helping guide users through content.
 
 See these indicative examples of static dot graphics. These examples are shown for illustrative purposes only.
 
-![TODO](./static-dot-1.png) ![TODO](./static-dot-2.png) ![TODO](./static-dot-3.png) ![TODO](./static-dot-4.png)
+{% grid { columns: { mobile: 2, tablet: 4 }, classes: "app-grid-reduced-gap" } %}
+
+<div>
+
+![TODO](./static-dot-1.png)
+
+</div> 
+<div>
+
+![TODO](./static-dot-2.png)
+
+</div> 
+<div>
+
+![TODO](./static-dot-3.png)
+
+</div> 
+<div>
+
+![TODO](./static-dot-4.png)
+
+</div>
+{% endgrid %}
 
 ## Static dot storyboard
 
@@ -196,9 +220,43 @@ See this indicative example of the dot used throughout a storyboard. This exampl
 
 Such as in the instagram story below;
 
-![TODO](./storyboard-1.png) ![TODO](./storyboard-2.png) ![TODO](./storyboard-3.png) ![TODO](./storyboard-4.png) ![TODO](./storyboard-5.png) ![TODO](./storyboard-6.png)
+{% grid { columns: { mobile: 3, tablet: 6 }, classes: "app-grid-reduced-gap" } %}
+
+<div>
+
+![TODO](./storyboard-1.png)
+
+</div> 
+<div>
+
+![TODO](./storyboard-2.png)
+
+</div>
+<div>
+
+![TODO](./storyboard-3.png)
+
+</div>
+<div>
+
+![TODO](./storyboard-4.png)
+
+</div>
+<div>
+
+![TODO](./storyboard-5.png)
+
+</div>
+<div>
+
+![TODO](./storyboard-6.png)
+
+</div>
+{% endgrid %}
 
 Indicative examples for illustrative purposes only.
+
+{% endsectionHighlight %}
 
 ## Incorrect dot usage
 
@@ -206,11 +264,18 @@ The dot has defined roles and behaviours, set out earlier in this guidance.
 
 To keep things consistent, avoid the following:
 
+{% grid { columns: { mobile: 1, tablet: 2 } } %}
+
+<div>
+
 ### Overuse
 
 Dot not overuse the dot
 
 ![TODO](./incorrect-overuse.png)
+
+</div>
+<div>
 
 ### Decorative elements
 
@@ -218,11 +283,17 @@ Dot not use the dot in a decorative way
 
 ![TODO](./incorrect-decorative.png)
 
+</div>
+<div>
+
 ### Distortions
 
 Do not distort or skew the dot
 
 ![TODO](./incorrect-distorted.png)
+
+</div>
+<div>
 
 ### Stroke
 
@@ -230,14 +301,23 @@ Do not use stroke versions of the dot
 
 ![TODO](./incorrect-stroke.png)
 
+</div>
+<div>
+
 ### Crops
 
 Do not use abstract crops of the dot
 
 ![TODO](./incorrect-crop.png)
 
+</div>
+<div>
+
 ### Unapproved filters and effects
 
 Do not apply shadows or gradients
 
 ![TODO](./incorrect-shadow.png)
+{% endgrid %}
+
+</div>
