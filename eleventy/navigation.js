@@ -1,5 +1,9 @@
 import { dirname as posixDirname } from 'node:path/posix'
-import { ariaCurrentValue } from './navigation/aria-current.js'
+import {
+  ariaCurrentValue,
+  isActive,
+  isCurrent
+} from './navigation/aria-current.js'
 
 export function setupNavigation(eleventyConfig) {
   eleventyConfig.addCollection('pages', (collectionAPI) => {
@@ -43,16 +47,11 @@ export function setupNavigation(eleventyConfig) {
     for (const page of pages) {
       page.data.children?.sort((a, b) => a.data.order - b.data.order)
 
-      // Pre-compute navigation related items
-      // These cannot be Computed properties as Collections are computed
-      // after Computed properties, so parent and children wouldn't be available
-      page.data.navigationItems = page.data.children.map(
-        asGOVUKFrontendNavigationItem
-      )
       page.data.ancestors = getAncestors(page)
-      page.data.breadcrumbItems = page.data.ancestors.map(
-        asGOVUKFrontendNavigationItem
-      )
+      page.data.breadcrumbItems = page.data.ancestors.map((page) => ({
+        href: page.url,
+        text: page.url === '/' ? 'Home' : page.data.title
+      }))
 
       page.data.sidebarNavigationRoot =
         page.data.ancestors.length === 1
@@ -65,7 +64,24 @@ export function setupNavigation(eleventyConfig) {
     return pages
   })
 
+  eleventyConfig.addFilter('asServiceNavigationItem', asServiceNavigationItem)
+
   eleventyConfig.addFilter('ariaCurrentValue', ariaCurrentValue)
+}
+
+/**
+ * Converts an Eleventy page object into the shape expected for Service Navigation's `navigation` option
+ *
+ * @param {{url: string, data: {title: string}}} page -- The Eleventy page to convert into a Service Navigation item
+ * @param {string} renderedPageUrl -- The URL of the page currently being rendered (for marking active and current link)
+ */
+function asServiceNavigationItem(page, renderedPageUrl) {
+  return {
+    href: page.url,
+    text: page.data.title,
+    current: isCurrent(page.url, renderedPageUrl),
+    active: isActive(page.url, renderedPageUrl)
+  }
 }
 
 /**
@@ -96,18 +112,4 @@ function getAncestors(page) {
     current = current.data.parent
   }
   return ancestors.toReversed()
-}
-
-/**
- * Converts an Eleventy page into data that can be fed
- * to GOV.UK Frontend's Breadcrumbs or Service Navigation
- *
- * @param {{url:string, data: {title: string}}} page
- * @returns {{href: string, text: string}}
- */
-function asGOVUKFrontendNavigationItem(page) {
-  return {
-    href: page.url,
-    text: page.url === '/' ? 'Home' : page.data.title
-  }
 }

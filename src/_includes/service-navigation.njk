@@ -1,0 +1,16 @@
+{% from "govuk/components/service-navigation/macro.njk" import govukServiceNavigation %}
+
+{% macro appServiceNavigation(params) %}
+
+{%- set navigation = [] %}
+{%- for page in params.pages %}
+  {% set navigation = navigation.concat([
+    page | asServiceNavigationItem(params.renderedPageUrl)
+  ])%}
+{% endfor %}
+
+{{ govukServiceNavigation({
+  navigation: navigation
+}) }}
+
+{% endmacro %}
