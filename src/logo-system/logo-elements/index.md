@@ -105,6 +105,10 @@ If it’s too small, it can lose detail and be harder for some users to read or 
 
 {% endsectionHighlight %}
 
+{% grid { columns: 2 } %}
+
+<div>
+
 Minimum size:
 50px
 
@@ -114,6 +118,10 @@ Minimum size:
 
 {% endsectionHighlight %}
 
+</div>
+
+<div>
+
 Minimum size:
 10px
 
@@ -121,38 +129,51 @@ Minimum size:
 ![TODO](./crown-favicon.svg)
 {% endsectionHighlight %}
 
+</div>
+{% endgrid %}
+
 Use the small crown version for anything below the crown’s minimum size, such as web favicons.
 
 ## Logo colour
+
+{% grid { columns: { mobile: 2, desktop: 2 } } %}
+
+<div class="border">
 
 ### Primary Blue background
 
 When using on a Primary Blue background, the wordmark colour should use White and Accent Teal.
 
+</div>
+
 ![TODO](./logo-primary.svg)
+
+<div class="border">
 
 ### Light background
 
 When using against a light background, the wordmark colour should use Black and Primary Blue.
 
+</div>
+
 ![TODO](./logo-light.svg)
+
+<div class="border">
 
 ### Special use
 
 When using against a busy background or in print situations where colour is not possible, white or black versions of the wordmark can be used.
 
-{% grid { columns: 2 } %}
+</div>
 
 <div>
 
 ![TODO](./logo-special-dark.svg)
 
-</div>
-<div>
-
 ![TODO](./logo-special-light.svg)
 
 </div>
+
 {% endgrid %}
 
 ## In motion
@@ -162,6 +183,7 @@ Both logo elements have a standalone animation that can be used to add dynamism 
 {% grid { columns: 2 } %}
 
 <div>
+
 ### Wordmark
 
 {% sectionHighlight %}
@@ -173,6 +195,7 @@ Both logo elements have a standalone animation that can be used to add dynamism 
 </div>
 
 <div>
+
 ### Crown
 
 {% sectionHighlight %}
@@ -191,42 +214,41 @@ To maintain consistency across channels the logo elements should never be change
 
 {% grid { columns: 2 } %}
 
-<div>
+<div class="img-fit">
 
 ![TODO](./incorrect-altered-colours.png)
 Do not alter colour balance within the wordmark
 
 </div>
 
-<div>
+<div class="img-fit">
 
 ![TODO](./incorrect-squashed.png)
 Do not distort, stretch or skew the wordmark
 
 </div>
 
-<div>
+<div class="img-fit">
 
 ![TODO](./incorrect-effects.png)
 Do not apply drop shadows or effects to the wordmark
 
 </div>
 
-<div>
+<div class="img-fit">
 
 ![TODO](./incorrect-busy.png)
 Do not use the wordmark on overly busy or low-contrast backgrounds
 
 </div>
 
-<div>
+<div class="img-fit">
 
 ![TODO](./incorrect-mirrored.png)
 Do not flip, mirror, or rotate the wordmark
 
 </div>
-</div>
-
-{% endgrid %}
 
 [def]: ./crown.svg
+
+{% endgrid %}
