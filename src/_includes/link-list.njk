@@ -3,7 +3,15 @@
     <ul class="govuk-list app-link-list app-current-with-dot {% if options.classes %} {{options.classes}}{% endif %}">
       {%- for page in options.pages -%}
         <li {% if options.itemClasses %}class="{{options.itemClasses}}"{% endif %}>
-          {%- set ariaCurrent = page.url | ariaCurrentValue(options.renderedPageUrl) -%}
+          {#
+            Allow pages to define an `appLinkList.ariaCurrent` data to take control
+            of the value of `aria-current`
+          #}
+          {%- if page.data.appLinkList and 'ariaCurrent' in page.data.appLinkList %}
+            {%- set ariaCurrent = page.data.appLinkList.ariaCurrent -%}
+          {% else %}
+            {% set ariaCurrent = page.url | ariaCurrentValue(options.renderedPageUrl) -%}
+          {% endif -%}
           <a href="{{page.url | url}}"
             class="govuk-link govuk-link--no-underline govuk-link--no-visited-state {% if options.linkClasses %} {{options.linkClasses}}{% endif %}"
             {% if ariaCurrent -%} aria-current="{{ariaCurrent}}" {%- endif -%} >

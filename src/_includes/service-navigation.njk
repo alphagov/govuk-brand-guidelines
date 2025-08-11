@@ -6,10 +6,21 @@
 {%- set navigation = [] %}
 {%- for page in params.pages %}
 
+  {# Mock a link to the overview page, only setting ariaCurrent if the link is the current on, not just active #}
+  {% set overviewLink = {
+    url: page.url,
+    data: {
+      title: page.data.title + " overview",
+      appLinkList: {
+        ariaCurrent: "page" if page.url | ariaCurrentValue(params.renderedPageUrl) === "page" else null
+      }
+    }
+  } %}
+
   {% set subNavigationHtml %}
     <template>
       {{ appLinkList({
-        pages: page.data.children,
+        pages: [overviewLink].concat(page.data.children),
         renderedPageUrl: params.renderedPageUrl,
         classes: 'app-mobile-navigation-section__subnav',
         itemClasses: 'app-mobile-navigation-section__item',
