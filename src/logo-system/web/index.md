@@ -15,7 +15,7 @@ TODO:
 - it's probably not the correct file either
 -->
 
-## Header
+## Header and footer
 
 The lock-up combining the crown and wordmark is for use throughout the web experience, in moments such as the web header and footer.
 
@@ -24,10 +24,6 @@ The examples on this page are indicative and for illustrative purposes only.
 ![Screenshot showing web header on mobile.](./web-header.png)
 
 ![Screenshot showing web header on desktop.](./web-header-example.png)
-
-## Footer
-
-<!-- TODO: There is no text in the PDF but should have something here -->
 
 ![Screenshot showing web footer on desktop.s](./web-footer-example.png)
 

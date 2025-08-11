@@ -7,21 +7,15 @@ title: Social
 
 Within GOV.UK social channels we follow the primary logo system, using the wordmark as the main identifier whilst incorporating the crown as a supporting element to aid trust and recognition.
 
-### Wordmark
+<!-- TODO: duplicated file also in ../app -->
+![GOV.UK wordmark shown on blue background.](./wordmark-on-blue.svg)
 
 <!-- TODO: duplicated file also in ../app -->
+![Crown shown on blue background.](./crown-on-blue.svg)
 
-![](./wordmark-on-blue.svg)
+An example of this is in profile icons.
 
-### Crown
-
-<!-- TODO: duplicated file also in ../app -->
-
-![](./crown-on-blue.svg)
-
-### Profile icons (App Icon Grid)
-
-![Stacked lock-up of the GOV.UK logo.](./profile-icon-on-blue.svg)
+![App icon showing a stacked lock-up of the GOV.UK wordmark and crown. A circle outline shows positioning of logo elements.](./profile-icon-on-blue.svg)
 
 ## Logo elements within social
 
@@ -29,7 +23,7 @@ We always lead with the wordmark as our primary brand identifier – positioning
 
 We use the crown as a supporting element that sits below or to the right of the wordmark, or at the end of content.
 
-![Logo lock-up of the GOV.UK logo, with gridlines showing how the crown is placed centred directly under GOV.UK. A circle also shows how it could be cropped for use as a profile image.](./profile-icon-lines.svg) ![](./profile-icon.svg)
+![Logo lock-up of the GOV.UK logo, with gridlines showing how the crown is placed centred directly under GOV.UK. A circle outline shows positioning of logo elements.](./profile-icon-lines.svg) ![](./profile-icon.svg)
 
 ![Mock-up of the GOV.UK channel page on YouTube.](./youtube-example.png) ![Mock-up of a post from GOV.UK on Instagram.](./insta-example.png) ![Mock-up of the GOV.UK profile page on Instagram.](./facebook-example.png)
 

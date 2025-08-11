@@ -7,19 +7,14 @@ title: App
 
 In GOV.UK apps we follow the primary logo system, using the wordmark as the main identifier whilst incorporating the crown as a supporting element to aid trust and recognition.
 
-An exception to this principle includes other GOV.UK apps, where the symbol or identifier may be used instead of the crown within the app icon, see the [App icon suite section on this page](#app-icon-suite).
+![GOV.UK wordmark shown on blue background.](./wordmark-on-blue.svg)
+![Crown shown on blue background.](./crown-on-blue.svg)
 
-### Wordmark
+An example of this is the GOV.UK app icon.
 
-![](./wordmark-on-blue.svg)
+![Wordmark and crown on blue background, with a border outline to show positioning of these logo elements as an app icon.](./app-icon-on-blue.svg)
 
-### Crown
-
-![](./crown-on-blue.svg)
-
-### App icon
-
-![](./app-icon-on-blue.svg)
+An exception to this principle includes other GOV.UK apps, where the symbol or identifier may be used instead of the crown within the app icon. See the [App icon suite section on this page](#app-icon-suite).
 
 ## Logo elements within the app
 
