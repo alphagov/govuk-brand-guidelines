@@ -10,7 +10,10 @@
     <template>
       {{ appLinkList({
         pages: page.data.children,
-        renderedPageUrl: params.renderedPageUrl
+        renderedPageUrl: params.renderedPageUrl,
+        classes: 'app-mobile-navigation-section__subnav',
+        itemClasses: 'app-mobile-navigation-section__item',
+        linkClasses: 'govuk-service-navigation__link'
       }) }}
     </template>
   {% endset %}
@@ -27,7 +30,8 @@
 {% endfor %}
 
 {{ govukServiceNavigation({
-  navigation: navigation
+  navigation: navigation,
+  navigationClasses: 'app-service-navigation__wrapper'
 }) }}
 
 {% endmacro %}
