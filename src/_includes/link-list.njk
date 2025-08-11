@@ -1,0 +1,33 @@
+{%- macro appLinkList(options) -%}
+  {%- if options.pages | length -%}
+    <ul class="govuk-list app-link-list app-current-with-dot {% if options.classes %} {{options.classes}}{% endif %}">
+      {%- for page in options.pages -%}
+        <li {% if options.itemClasses %}class="{{options.itemClasses}}"{% endif %}>
+          {%- set ariaCurrent = page.url | ariaCurrentValue(options.renderedPageUrl) -%}
+          <a href="{{page.url | url}}"
+            class="govuk-link govuk-link--no-underline govuk-link--no-visited-state {% if options.linkClasses %} {{options.linkClasses}}{% endif %}"
+            {% if ariaCurrent -%} aria-current="{{ariaCurrent}}" {%- endif -%} >
+            {#
+              Wrap the current item in a `<strong>` tag
+              so that it's identifiable even if CSS hasn't loaded
+              or has been disabled/overriden by user styles
+            #}
+            {%- if ariaCurrent -%}
+              <strong>{{- page.data.title -}}</strong>
+            {% else %}
+              {{- page.data.title -}}
+            {% endif %}
+          </a>
+          {%- if page.data.children | length -%}
+            {{- appLinkList({
+              pages: page.data.children,
+              renderedPageUrl: options.renderedPageUrl,
+              itemClasses: options.itemClasses,
+              linkClasses: options.linkClasses
+            }) -}}
+          {%- endif -%}
+        </li>
+      {%- endfor -%}
+    </ul>
+  {%- endif -%}
+{%- endmacro -%}

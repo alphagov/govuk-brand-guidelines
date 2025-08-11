@@ -1,4 +1,5 @@
 import { dirname as posixDirname } from 'node:path/posix'
+import { ariaCurrentValue } from './navigation/aria-current.js'
 
 export function setupNavigation(eleventyConfig) {
   eleventyConfig.addCollection('pages', (collectionAPI) => {
@@ -56,6 +57,8 @@ export function setupNavigation(eleventyConfig) {
 
     return pages
   })
+
+  eleventyConfig.addFilter('ariaCurrentValue', ariaCurrentValue)
 }
 
 /**
