@@ -1,11 +1,25 @@
 {% from "govuk/components/service-navigation/macro.njk" import govukServiceNavigation %}
+{% from "link-list.njk" import appLinkList %}
 
 {% macro appServiceNavigation(params) %}
 
 {%- set navigation = [] %}
 {%- for page in params.pages %}
+
+  {% set subNavigationHtml %}
+    <template>
+      {{ appLinkList({
+        pages: page.data.children,
+        renderedPageUrl: params.renderedPageUrl
+      }) }}
+    </template>
+  {% endset %}
+
   {% set navigation = navigation.concat([
-    page | asServiceNavigationItem(params.renderedPageUrl)
+    page | asServiceNavigationItem({
+      renderedPageUrl: params.renderedPageUrl,
+      html: page.data.title + subNavigationHtml
+    })
   ])%}
 {% endfor %}
 

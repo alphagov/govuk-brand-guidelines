@@ -60,7 +60,6 @@ export function setupNavigation(eleventyConfig) {
     return pages
   })
 
-
   eleventyConfig.addFilter('asBreadcrumbItems', asBreadcrumbItems)
 
   eleventyConfig.addFilter('asServiceNavigationItem', asServiceNavigationItem)
@@ -84,14 +83,19 @@ function asBreadcrumbItems(pages) {
  * Converts an Eleventy page object into the shape expected for Service Navigation's `navigation` option
  *
  * @param {{url: string, data: {title: string}}} page -- The Eleventy page to convert into a Service Navigation item
- * @param {string} renderedPageUrl -- The URL of the page currently being rendered (for marking active and current link)
+ * @param {object} itemOptions -- Options merged into the generated item for the Service Navigation, except `renderedPageUrl`
+ * @param {string} itemOptions.renderedPageUrl -- URL of the page currently being rendered
  */
-function asServiceNavigationItem(page, renderedPageUrl) {
+function asServiceNavigationItem(
+  page,
+  { renderedPageUrl, ...serviceNavigationItemOptions }
+) {
   return {
     href: page.url,
     text: page.data.title,
     current: isCurrent(page.url, renderedPageUrl),
-    active: isActive(page.url, renderedPageUrl)
+    active: isActive(page.url, renderedPageUrl),
+    ...serviceNavigationItemOptions
   }
 }
 
