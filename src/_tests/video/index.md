@@ -8,6 +8,46 @@ At a minimum, a `source` parameter must be defined.
 
 {% video { source: "test-video.mp4" } %}
 
+## Video sources
+
+Different browsers and operating systems support different video formats. Most modern browsers support MP4 and WebM video, but some other browsers may require different formats to be used.
+
+All formats are provided via the `source` parameter.
+
+### Defining a single source
+
+Videos with a single source file can simply refer to the file:
+
+```
+{ source: "path/to/video.mp4" }
+```
+
+### Defining multiple sources
+
+Videos with multiple source files can pass them as an array:
+
+```
+{ source: [
+  "path/to/video.mp4",
+  "path/to/another/video.webm"
+] }
+```
+
+### Defining sources with unusual media types
+
+Usually, a video file's [media type](https://en.wikipedia.org/wiki/Media_type) is assumed from the file extension, however not all video files use the extension as their media type. For example, .mov, .avi, .mkv, and .ogv files.
+
+If **any** of the video sources have differing IMEs, all video sources must be defined with explicit media types.
+
+```
+{ source: {
+  "mp4": "path/to/video.mp4",
+  "webm": "path/to/another/video.webm",
+  "ogg": "path/to/yet/another/video.ogv",
+  "quicktime": "path/to/another/another/video.mov"
+} }
+```
+
 ## `description` parameter
 
 Provides a short description of the video, which is shown if the video is unable to load.
@@ -31,12 +71,6 @@ The **maximum** width and height of the video player can be customised with `wid
 These values aren't fixed. The video player's height will adapt to match the aspect ratio of the video being played, and the width will be capped to the maximum width of the container.
 
 {% video { source: "test-video.mp4", width: 300 } %}
-
-## `sourceType` parameter
-
-Changes the [media type](https://en.wikipedia.org/wiki/Media_type) (formerly known as a MIME type) of the video file. For example, MP4 files typically use `video/mp4`.
-
-This only needs to be set for some unusual media types, otherwise it can be ignored.
 
 ## `classes` parameter
 
