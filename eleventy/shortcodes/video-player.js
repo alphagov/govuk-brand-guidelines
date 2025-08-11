@@ -6,7 +6,7 @@ export const videoPlayer = blockShortcode((options = {}) => {
 
     // Player dimensions
     width: 600,
-    height: 450,
+    height: 338,
 
     // Filepath to video
     source: undefined,

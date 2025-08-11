@@ -7,8 +7,7 @@ import markdownItGovuk from 'markdown-it-govuk'
 export function setupMarkdownCompilation(eleventyConfig) {
   const markdownConfig = markdownIt({
     html: true,
-    typographer: true,
-    breaks: true
+    typographer: true
   }).use(markdownItGovuk)
 
   /**
