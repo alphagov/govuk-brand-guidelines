@@ -113,8 +113,6 @@ Social end frames can be used at the end of animated or filmed content. They inc
 </div>
 {% endgrid %}
 {% endsectionHighlight %}
-</section>
-<section>
 
 ## Adaptive dot colour
 

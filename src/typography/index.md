@@ -19,8 +19,11 @@ The Government Digital Service adapted it in 2012 for digital use, bringing the 
 
 Using GDS Transport makes GOV.UK easier to recognise and information easier to read on any device.
 
+<div class="scale width-80 right edge">
+
 ![TODO](./transport-font.svg)
 
+</div>
 {% endsectionHighlight %}
 
 ### Weights

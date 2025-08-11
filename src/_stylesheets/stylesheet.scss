@@ -117,7 +117,7 @@ figcaption {
 // Dark magenta section highlight likely to be deleted as it's just framing an image, and the image should have it's own background
 .dark-magenta {
   color: #ffffff;
-  background-color: #651B3E;
+  background-color: #651b3e;
 }
 
 // Image and video styling
@@ -148,6 +148,49 @@ figcaption {
   border-top: 1px solid #16548a;
 }
 
-h2 {
+// Section highlight adjustments
+.app-section-highlight {
   margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 30px 30px 10px;
+  border-radius: 3px;
+}
+
+// Light background uses 90% blue tint instead of 95%
+.light-blue {
+  color: #000000;
+  background-color: #e8f1f8;
+}
+
+.light-grey {
+  color: #000000;
+  background-color: #f3f3f3;
+}
+
+// Scale, float images
+// container for scaling
+.scale {
+  display: inline-block;
+  // border: 1px solid red;
+}
+
+// image alignment
+.right img {
+  float: right;
+}
+
+// image width
+.width-80 img {
+  max-width: 80%;
+}
+
+.edge {
+  margin-right: -30px;
+  margin-bottom: -10px;
+}
+
+// Typography
+.govuk-heading-m {
+  margin-bottom: 10px;
+  // color: red;
 }
