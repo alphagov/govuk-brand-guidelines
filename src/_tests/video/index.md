@@ -64,11 +64,11 @@ This defaults to `true` so that users don't need to repeatedly restart short dem
 
 {% video { source: "test-video.mp4", loop: false } %}
 
-## `width` and `height` parameters
+## `width` parameter
 
-The **maximum** width and height of the video player can be customised with `width` and `height` parameters.
+The **maximum** width of the video player can be customised with `width` parameter.
 
-These values aren't fixed. The video player's height will adapt to match the aspect ratio of the video being played, and the width will be capped to the maximum width of the container.
+The dimensions of videos aren't fixed. The video player's width will be capped to the maximum width of the container or viewport, and the height will adapt to match the aspect ratio of the video being played.
 
 {% video { source: "test-video.mp4", width: 300 } %}
 

@@ -6,7 +6,6 @@ export const videoPlayer = blockShortcode((options = {}) => {
 
     // Player dimensions
     width: 600,
-    height: 338,
 
     // The source(s) for video files
     //
@@ -76,7 +75,6 @@ export const videoPlayer = blockShortcode((options = {}) => {
   return `<video
     class="app-prose-video${options.classes ? ` ${options.classes}` : ''}"
     width="${options.width}"
-    height="${options.height}"
     controls
     playsinline
     muted
