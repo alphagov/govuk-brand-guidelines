@@ -56,11 +56,15 @@
     }) }}
   {%- endif %}
   {% from "govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
-  {{
-    govukBreadcrumbs({
-      items: breadcrumbItems
-    })
-  }}
+
+  {# Some pages, like test pages, don't have ancestors #}
+  {% if ancestors.length %}
+    {{
+      govukBreadcrumbs({
+        items: ancestors | asBreadcrumbItems
+      })
+    }}
+  {% endif %}
 
   <div class="govuk-grid-row govuk-main-wrapper">
     <nav class="govuk-grid-column-one-third" aria-label="Pages in this section">

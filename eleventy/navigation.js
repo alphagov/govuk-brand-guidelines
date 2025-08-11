@@ -48,10 +48,6 @@ export function setupNavigation(eleventyConfig) {
       page.data.children?.sort((a, b) => a.data.order - b.data.order)
 
       page.data.ancestors = getAncestors(page)
-      page.data.breadcrumbItems = page.data.ancestors.map((page) => ({
-        href: page.url,
-        text: page.url === '/' ? 'Home' : page.data.title
-      }))
 
       page.data.sidebarNavigationRoot =
         page.data.ancestors.length === 1
@@ -64,9 +60,24 @@ export function setupNavigation(eleventyConfig) {
     return pages
   })
 
+
+  eleventyConfig.addFilter('asBreadcrumbItems', asBreadcrumbItems)
+
   eleventyConfig.addFilter('asServiceNavigationItem', asServiceNavigationItem)
 
   eleventyConfig.addFilter('ariaCurrentValue', ariaCurrentValue)
+}
+
+/**
+ * Bulk converts and Eleventy pages object into the shape expected for Breadcrumb's `items` option
+ *
+ * @param {Array<{url: string, data: {title: string}}>} pages -- The Eleventy pages to convert into a Service Navigation item
+ */
+function asBreadcrumbItems(pages) {
+  return pages.map((page) => ({
+    href: page.url,
+    text: page.url === '/' ? 'Home' : page.data.title
+  }))
 }
 
 /**
