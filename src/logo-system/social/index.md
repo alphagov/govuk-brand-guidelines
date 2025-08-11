@@ -59,18 +59,18 @@ This can be applied within the live artwork files using the relevant swatches. A
 
 To aid brand recognition and coherency, adaptive dot colour should not be used within video end frames.
 
-![GOV.UK wordmark shown with adaptive dot to tonally match different coloured backgrounds.](./adaptive-primary-blue.svg) ![](./adaptive-primary-green.svg) ![](./adaptive-shade50-blue.svg) ![](./adaptive-shade50-purple.svg) ![](./adaptive-shade50-red.svg) ![](./adaptive-shade50-teal.svg)
+![GOV.UK wordmark shown with adaptive dot to tonally match different coloured backgrouds.](./adaptive-primary-blue.svg) ![](./adaptive-primary-green.svg) ![](./adaptive-shade50-blue.svg) ![](./adaptive-shade50-purple.svg) ![](./adaptive-shade50-red.svg) ![](./adaptive-shade50-teal.svg)
 
 ### Incorrect adaptive dot colour usage
 
 Do not use colour combinations that are not accessible.
 
-![Crossed out GOV.UK wordmark with dot. The dot is diificult to see against the background, as colours are too similiar and do not meet minimum contrast requirements for accessibility.](./incorrect-not-accessible-1.svg) ![](./incorrect-not-accessible-2.svg)
+![](./incorrect-not-accessible-1.svg) ![](./incorrect-not-accessible-2.svg)
 
 Do not use colour combinations that lack contrast between the wordmark and dot.
 
-![Crossed out GOV.UK wordmark with the dot shown in similar, nearly indistinguishable colours.](./incorrect-low-contrast-1.svg) ![](./incorrect-low-contrast-2.svg)
+![](./incorrect-low-contrast-1.svg) ![](./incorrect-low-contrast-2.svg)
 
 Do not use colour combinations that are not from the same tonal range.
 
-![Crossed out GOV.UK wordmark with the dot shown in mismatching colours.](./incorrect-tonal-1.svg) ![](./incorrect-tonal-2.svg)
+![](./incorrect-tonal-1.svg) ![](./incorrect-tonal-2.svg)

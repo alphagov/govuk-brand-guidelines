@@ -21,9 +21,11 @@ We have five versions:
 
 To keep the brand consistent, use each version exactly as shown – do not resize, reposition or remove any part.
 
-The diagrams on this page show how to space the wordmark and text in a lock-up. Use the width of the dot in the GOV.UK wordmark to set the spacing.
+The diagrams on this page show how to space the wordmark and text in a lock-up. Use the width of the dot in the GOV.UK wordmark to set the spacing. 
 
-![Various diagrams of the GOV.UK Pay lockup, showing how the dot is used to set spacing within the wordmark. The capitalised G is also shown to set padding around the outside of the wordmark.](./lockup-1.svg) ![](./lockup-2.svg)
+In both horizontal and stacked lock-ups, the space between the wordmark and product name should be the width of the dot.
+
+![Various diagrams of the GOV.UK Pay lock-up, showing how the dot is used to set spacing between the product name and wordmark. Horizontal and stacked lock-ups are shown.](./lockup-1.svg) ![](./lockup-2.svg)
 ![](./lockup-3.svg) ![](./lockup-4.svg)
 
 ### Horizontal

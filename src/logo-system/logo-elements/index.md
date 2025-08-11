@@ -11,7 +11,7 @@ As our primary identifier, the GOV.UK wordmark should be used in all application
 
 The exception to this rule is the GOV.UK website. See the [Web – Logo system page](/logo-system/web/).
 
-![](./wordmark.svg)
+![The wordmark for "GOV.UK". The dot is centred vertically and coloured in accent teal.](./wordmark.svg)
 
 ## Crown
 
@@ -19,7 +19,7 @@ As our primary identifier, the GOV.UK wordmark should be used in all application
 
 The exception to this rule is the GOV.UK website. See the [Web – Logo system page](/logo-system/web/).
 
-![](./crown.svg)
+![The crown element of the GOV.UK logo.](./crown.svg)
 
 ### Using the crown as a supporting element
 
@@ -37,7 +37,7 @@ This ensures visual balance and harmony between the elements.
 
 The pixel sizes displayed on this page are indicative and will vary across devices.
 
-![Dots from the crown are used to show the correct spacing and scaling within the logo lockup.](./lockup-detail.svg)
+![Dots from the crown are used to show the correct spacing and scaling within the logo lock-up.](./lockup-detail.svg)
 
 ### Use proportional scaling
 
@@ -50,14 +50,14 @@ The size of the crown can be adjusted depending on context. For example, when be
 Scaling should follow this rule:
 Wordmark dot = 2× crown dot
 
-![Dots from the crown are used to show the correct scale between the crown and wordmark.](./propotional-scaling-desktop.svg)
+![Dots from the crown are used to show the correct size of the dot in the wordmark.](./propotional-scaling-desktop.svg)
 
 #### Enlarged crown size
 
 Scaling should follow this rule:
 Wordmark dot = 1× crown dot
 
-![Dots from the crown are used to show the correct scale between the crown and wordmark for use in mobile.](./propotional-scaling-mobile.svg)
+![Dots from the enlarged crown that's used in the app icon are used to show the correct size of the dot in the wordmark.](./propotional-scaling-mobile.svg)
 
 ### Maintain clear space around logo elements
 
@@ -77,12 +77,12 @@ If it’s too small, it can lose detail and be harder for some users to read or 
 
 <!-- TODO: suggest adding the arrow to the image -->
 
-![](./wordmark.svg)
+![The wordmark for "GOV.UK". Minimum width of the wordmark: 50px.](./wordmark.svg)
 
 Minimum size:
 50px
 
-![](./crown.svg)
+![The crown element of the GOV.UK logo. Minimum width of the crown on it own: 10px.](./crown.svg)
 
 Minimum size:
 10px

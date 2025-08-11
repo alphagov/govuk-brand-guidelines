@@ -25,7 +25,7 @@ The examples on this page are indicative and for illustrative purposes only.
 
 ![Screenshot showing web header on desktop.](./web-header-example.png)
 
-![Screenshot showing web footer on desktop.s](./web-footer-example.png)
+![Screenshot showing web footer on desktop.](./web-footer-example.png)
 
 ## Favicon
 
