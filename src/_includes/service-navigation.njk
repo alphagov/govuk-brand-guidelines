@@ -18,7 +18,10 @@
   {% set navigation = navigation.concat([
     page | asServiceNavigationItem({
       renderedPageUrl: params.renderedPageUrl,
-      html: page.data.title + subNavigationHtml
+      html: page.data.title + subNavigationHtml,
+      attributes: {
+        "data-module": "app-mobile-navigation-section"
+      }
     })
   ])%}
 {% endfor %}

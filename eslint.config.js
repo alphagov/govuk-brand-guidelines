@@ -1,4 +1,5 @@
 import { join } from 'node:path'
+import globals from 'globals'
 import neostandard from 'neostandard'
 import { includeIgnoreFile } from '@eslint/compat'
 import eslintConfigPrettier from 'eslint-config-prettier/flat'
@@ -11,6 +12,14 @@ export default [
   ...neostandard({
     noStyle: true
   }),
+  {
+    files: ['src/_javascript/**/*.js'],
+    languageOptions: {
+      globals: {
+        ...globals.browser
+      }
+    }
+  },
   pluginPromise.configs['flat/recommended'],
   eslintConfigPrettier
 ]
