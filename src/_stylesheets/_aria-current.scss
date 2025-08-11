@@ -19,6 +19,8 @@
       height: $dot-size;
       margin-right: var(--dot-spacing);
       margin-left: calc(-#{$dot-size} - var(--dot-spacing));
+      // Prevent dot from shrinking in a flex context
+      flex-shrink: 0;
 
       // Better alignment with the text
       transform: translateY(-1px);

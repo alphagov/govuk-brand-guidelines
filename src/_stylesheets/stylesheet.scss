@@ -24,6 +24,12 @@
 @import 'govuk/utilities';
 @import 'govuk/overrides';
 
+// Padding on the `<main>` element needs removing as it's been shifted to a parent
+.app-main-wrapper {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 .app-prose-image {
   max-width: 100%;
   height: auto;
