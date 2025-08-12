@@ -16,3 +16,9 @@
     grid-template-columns: repeat(var(--app-grid-columns-desktop), 1fr);
   }
 }
+
+.app-grid-cell {
+  --app-grid-cell-vertical-align:;
+
+  align-self: var(--app-grid-cell-vertical-align);
+}
