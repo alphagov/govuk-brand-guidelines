@@ -55,6 +55,8 @@ export function setupNavigation(eleventyConfig) {
           : page.data.ancestors
               .filter((ancestor) => ancestor.data.ancestors.length === 1)
               .at(0)
+
+      page.data.isSidebarNavigationRoot = page.data.sidebarNavigationRoot === page
     }
 
     return pages

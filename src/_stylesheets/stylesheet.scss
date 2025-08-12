@@ -37,6 +37,12 @@
   }
 }
 
+.app-chapter-navigation--mobile-fallback {
+  @include govuk-media-query($from: tablet) {
+    display: none;
+  }
+}
+
 .app-prose-image {
   max-width: 100%;
   height: auto;
