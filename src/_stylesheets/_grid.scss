@@ -21,13 +21,35 @@
   --app-grid-gap: 10px;
 }
 
-.app-grid__cell > :last-child {
-  margin-bottom: 0;
+.app-grid__cell {
+  --app-grid-cell-vertical-align:;
+  --app-grid-cell-span:;
+
+  align-content: var(--app-grid-cell-vertical-align);
+  grid-column: var(--app-grid-cell-span, var(--app-grid-cell-span-mobile));
+
+  @include govuk-media-query($from: tablet) {
+    --app-grid-cell-span: var(
+      --app-grid-cell-span-tablet,
+      var(--app-grid-cell-span-mobile)
+    );
+  }
+
+  @include govuk-media-query($from: desktop) {
+    --app-grid-cell-span: var(
+      --app-grid-cell-span-desktop,
+      var(--app-grid-cell-span-tablet, var(--app-grid-cell-span-mobile))
+    );
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
 }
 
 @each $alignment in (start, center, end) {
   .app-grid__cell--vertical-align-#{$alignment} {
-    align-content: $alignment;
+    --app-grid-cell-vertical-align: #{$alignment};
   }
 }
 
