@@ -77,7 +77,7 @@ Indicative examples for illustrative purposes only.
 
 Social end frames can be used at the end of animated or filmed content. They incorporate both the wordmark and crown and act as a branded sign-off.
 
-{% sectionHighlight %}
+{% sectionHighlight { classes: "light-blue" } %}
 
 <div>
 
@@ -128,7 +128,6 @@ This can be applied within the live artwork files using the relevant swatches. A
 
 To aid brand recognition and coherency, adaptive dot colour should not be used within video end frames.
 
-{% sectionHighlight { classes: "light-blue" } %}
 {% grid { columns: { mobile: 2, desktop: 3 } } %}
 
 <div class="img-fit">
@@ -162,7 +161,6 @@ To aid brand recognition and coherency, adaptive dot colour should not be used w
 
 </div>
 {% endgrid %}
-{% endsectionHighlight %}
 
 {% grid { columns: { mobile: 2, desktop: 2 } } %}
 
