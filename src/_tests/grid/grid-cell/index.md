@@ -44,4 +44,36 @@ It accepts any of the keywords for the [`align-self`](https://developer.mozilla.
     {% endgridCell %}
 {% endgrid %}
 
+
+## Spanning multiple columns
+
+Use the `span` property to make a cell span multiple column.
+
+{% grid {columns: { desktop: 3, tablet: 2, mobile: 1 }, classes: 'test-outline-children' }%}
+    {% gridCell {span: 3} %} 
+        I span 3 columns
+    {% endgridCell %}
+    {% gridCell {span: 2} %}
+        I span 2 columns
+    {% endgridCell %}
+    {% gridCell %}
+        I'm only a single column
+    {% endgridCell %}
+{% endgrid %}
+
+Like with the `columns` option of the `grid` shortcode, the property can be set responsively:
+
+{% grid {columns: 3, classes: 'test-outline-children' } %}
+    {% gridCell {span: { desktop: 3, tablet: 2, mobile: 1 }, nothing: false} %} 
+        I span 3 columns on desktop, 2 on tablet and 1 on mobile
+    {% endgridCell %}
+    {% gridCell {span: 2} %}
+        I span 2 columns
+    {% endgridCell %}
+    {% gridCell %}
+        I'm only a single column
+    {% endgridCell %}
+{% endgrid %}
+
+
 <!-- prettier-ignore-end -->
