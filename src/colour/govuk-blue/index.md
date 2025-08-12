@@ -100,12 +100,18 @@ To maintain consistency across channels the colours within our palette should ne
 
 ![TODO](./incorrect-colour-combos.png)
 
+</div>
+<div class="border">
+
 Do not use colour combinations that do not meet [WCAG2.2 guidelines](https://www.w3.org/TR/WCAG22/#contrast-minimum)
 
 </div>
 <div>
 
 ![TODO](./incorrect-new-colours.png)
+
+</div>
+<div class="border">
 
 Do not create new colours
 
@@ -114,12 +120,18 @@ Do not create new colours
 
 ![TODO](./incorrect-too-many-colours.png)
 
+</div>
+<div class="border">
+
 Do not use too many colours within an application
 
 </div>
 <div>
 
 ![TODO](./incorrect-gradients.png)
+
+</div>
+<div class="border">
 
 Do not mix colours to create gradients (single colour gradients are permitted for use over imagery)
 

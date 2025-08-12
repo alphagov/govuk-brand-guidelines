@@ -1,8 +1,14 @@
 ---
 order: 3
 title: Typography
-hero: ./hero.svg
+hero: ./type-hero.svg
 ---
+
+<div class="hero">
+
+![TODO](./type-hero.svg)
+
+</div>
 
 Typography is a core element to our identity, shaping how our brand is perceived across all GOV.UK channels.
 

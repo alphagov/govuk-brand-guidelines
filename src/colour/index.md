@@ -1,7 +1,7 @@
 ---
 order: 2
 title: Colour
-hero: ./hero.svg
+hero: ./colour-hero.svg
 ---
 
 <div class="hero">
