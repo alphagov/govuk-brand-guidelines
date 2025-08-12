@@ -19,8 +19,9 @@ export const videoPlayer = blockShortcode((options = {}) => {
     // {% video { source: {"video/mp4": "path/to/file.mp4", "video/quicktime": "path/to/file.mov" } } %}
     source: undefined,
 
-    // A fallback description for the video, if the video is unavailable
-    description: undefined,
+    // A fallback description for the video, if the video is unavailable.
+    // NOTE: Fallback text does not support block-level HTML elements!
+    fallbackText: 'This video is unavailable.',
 
     // Whether to loop the video once played
     loop: true
@@ -61,13 +62,9 @@ export const videoPlayer = blockShortcode((options = {}) => {
     videoSourcesHtml.push(`<source src="${source.file}" type="${source.type}">`)
   })
 
-  // Assemble fallback HTML
-  // NOTE: Fallback text does not support block-level HTML elements!
-  let fallbackHtml = `<a class="govuk-link" href="${options.source}">Download this video.</a>`
-  if (options.description) {
-    fallbackHtml = `${options.description}` + fallbackHtml
-  }
-
+  // Create video element
+  //
+  // Video specific parameters:
   // controls = display video playback buttons, seek bar, volume control
   // playsinline = prevents video defaulting to fullscreen on mobile devices
   // muted = has the video muted by default (can be unmuted with controls)
@@ -80,7 +77,7 @@ export const videoPlayer = blockShortcode((options = {}) => {
     muted
     ${options.loop ? 'loop' : ''}>
     ${videoSourcesHtml.join('\n')}
-    ${fallbackHtml}
+    ${options.fallbackText ? ` <span class="govuk-body">${options.fallbackText}</span>` : ''}
   </video>`
 })
 

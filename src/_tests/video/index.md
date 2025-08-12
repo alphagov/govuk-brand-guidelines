@@ -48,13 +48,15 @@ If **any** of the video sources have differing IMEs, all video sources must be d
 } }
 ```
 
-## `description` parameter
+## `fallbackText` parameter
 
 Provides a short description of the video, which is shown if the video is unable to load.
 
-Descriptions must be plain text (no HTML or Markdown formatting) and a single paragraph. They automatically include a link to download the video.
+Fallback text must be plain text (no HTML or Markdown formatting) and a single paragraph.
 
-{% video { source: "test-video.mp4", description: "A series of examples of the dot in motion, first expanding into a speech bubble, then as numbered steps, highlighting one of four sections in turn, expanding to highlight a particular word in a statement, and then splitting, rotating and recombining to form the dot in the GOV.UK wordmark." } %}
+This defaults to the text "This video is unavailable."
+
+{% video { source: "test-video.mp4", fallbackText: "A series of examples of the dot in motion, first expanding into a speech bubble, then as numbered steps, highlighting one of four sections in turn, expanding to highlight a particular word in a statement, and then splitting, rotating and recombining to form the dot in the GOV.UK wordmark." } %}
 
 ## `loop` parameter
 
