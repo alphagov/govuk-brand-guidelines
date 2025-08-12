@@ -3,6 +3,7 @@ import { sectionHighlight } from './shortcodes/section-highlight.js'
 import { swatch } from './shortcodes/swatch.js'
 import { swatchList, filterColours } from './shortcodes/swatch-list.js'
 import { testExample } from './shortcodes/test-example.js'
+import { gridCell } from './shortcodes/grid-cell.js'
 
 /**
  *  @param {import("@11ty/eleventy/UserConfig")} eleventyConfig
@@ -26,8 +27,10 @@ export function setupShortcodes(eleventyConfig) {
   // ↓
   // function grid(content, param1, param2)
   eleventyConfig.addPairedShortcode('grid', grid)
+  eleventyConfig.addPairedShortcode('gridCell', gridCell)
   eleventyConfig.addPairedShortcode('sectionHighlight', sectionHighlight)
   eleventyConfig.addPairedShortcode('testExample', testExample)
+
 
   // Filters manipulate how a piece of data is formatted prior to outputting
   // it. They are separated using vertical bar character (|) after the value.
