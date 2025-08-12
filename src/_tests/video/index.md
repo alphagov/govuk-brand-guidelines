@@ -2,12 +2,6 @@
 title: Test page for the `video` shortcode
 ---
 
-## Basic configuration
-
-At a minimum, a `source` parameter must be defined.
-
-{% video { source: "test-video.mp4" } %}
-
 ## Video sources
 
 Different browsers and operating systems support different video formats. Most modern browsers support MP4 and WebM video, but some other browsers may require different formats to be used.
@@ -22,6 +16,8 @@ Videos with a single source file can simply refer to the file:
 { source: "path/to/video.mp4" }
 ```
 
+{% video { source: "mp4-h264.mp4" } %}
+
 ### Defining multiple sources
 
 Videos with multiple source files can pass them as an array:
@@ -32,6 +28,11 @@ Videos with multiple source files can pass them as an array:
   "path/to/another/video.webm"
 ] }
 ```
+
+{% video { source: [
+  "mp4-h264.mp4",
+  "webm-vp8.webm"
+] } %}
 
 ### Defining sources with unusual media types
 
@@ -48,6 +49,12 @@ If **any** of the video sources have differing IMEs, all video sources must be d
 } }
 ```
 
+{% video { source: {
+  "mp4": "mp4-h264.mp4",
+  "webm": "webm-vp8.webm",
+  "ogg": "ogg-theora.ogv"
+} } %}
+
 ## `fallbackText` parameter
 
 Provides a short description of the video, which is shown if the video is unable to load.
@@ -56,7 +63,7 @@ Fallback text must be plain text (no HTML or Markdown formatting) and a single p
 
 This defaults to the text "This video is unavailable."
 
-{% video { source: "test-video.mp4", fallbackText: "A series of examples of the dot in motion, first expanding into a speech bubble, then as numbered steps, highlighting one of four sections in turn, expanding to highlight a particular word in a statement, and then splitting, rotating and recombining to form the dot in the GOV.UK wordmark." } %}
+{% video { source: "mp4-h264.mp4", fallbackText: "A series of examples of the dot in motion, first expanding into a speech bubble, then as numbered steps, highlighting one of four sections in turn, expanding to highlight a particular word in a statement, and then splitting, rotating and recombining to form the dot in the GOV.UK wordmark." } %}
 
 ## `loop` parameter
 
@@ -64,7 +71,7 @@ Whether the video should repeat indefinitely once played.
 
 This defaults to `true` so that users don't need to repeatedly restart short demos. Set `{ loop: false }` to turn off looping.
 
-{% video { source: "test-video.mp4", loop: false } %}
+{% video { source: "mp4-h264.mp4", loop: false } %}
 
 ## `width` parameter
 
@@ -72,7 +79,7 @@ The **maximum** width of the video player can be customised with `width` paramet
 
 The dimensions of videos aren't fixed. The video player's width will be capped to the maximum width of the container or viewport, and the height will adapt to match the aspect ratio of the video being played.
 
-{% video { source: "test-video.mp4", width: 300 } %}
+{% video { source: "mp4-h264.mp4", width: 200 } %}
 
 ## `classes` parameter
 
