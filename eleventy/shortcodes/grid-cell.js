@@ -1,4 +1,4 @@
-import { blockPairedShortcode } from './utils.js'
+import { blockPairedShortcode, CustomProperties } from './utils.js'
 
 export const gridCell = blockPairedShortcode((content, options) => {
   const defaultOptions = {
@@ -9,12 +9,15 @@ export const gridCell = blockPairedShortcode((content, options) => {
   options = { ...defaultOptions, ...options }
 
   // Assemble custom properties
-  const cssProperties = []
+  const properties = new CustomProperties();
   if (options.verticalAlign) {
-    cssProperties.push(`--app-grid-cell-vertical-align: ${options.verticalAlign}`)
+    properties.set(`app-grid-cell-vertical-align`, options.verticalAlign)
+  }
+  if (options.span) {
+    properties.setResponsive(`app-grid-cell-span`, options.span, {format: value => `span ${value}`})
   }
 
-  return `<div class="app-grid-cell${options.classes ? ` ${options.classes}` : ''}" style="${cssProperties.join(';')}">
+  return `<div class="app-grid-cell${options.classes ? ` ${options.classes}` : ''}" style="${properties.declarations}">
     ${content}
   </div>`
 })
