@@ -23,4 +23,25 @@ It creates a `<div>` without having to add extra whitespace
     {% endgridCell %}
 {% endgrid %}
 
+## Content positioning - vertical
+
+Use the `verticalAlign` option to control the alignment of shorter cells
+relative to their taller neighbours. 
+
+It accepts any of the keywords for the [`align-self`](https://developer.mozilla.org/en-US/docs/Web/CSS/align-self) CSS property.
+
+{% grid {columns: { desktop: 3, tablet: 2, mobile: 1 }, classes: 'test-outline-children' }%}
+    {% gridCell {verticalAlign: 'start'} %} 
+        I'm a cell with a fair amount of content.
+
+        This is me who'll dictate the height of that row
+    {% endgridCell %}
+    {% gridCell {verticalAlign: 'end'} %}
+        I've got less content, I can be aligned differently and go to the bottom (the `end`)
+    {% endgridCell %}
+    {% gridCell {verticalAlign: 'center'} %}
+        I prefer sitting in the `center`
+    {% endgridCell %}
+{% endgrid %}
+
 <!-- prettier-ignore-end -->
