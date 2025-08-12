@@ -10,7 +10,9 @@ import { outdent } from 'outdent'
 
 export function blockShortcode(shortcode) {
   return function ({ insideHTML, indent = 0, ...options } = {}) {
-    const output = indentLines(shortcode.call(this, options), { amount: indent })
+    const output = indentLines(shortcode.call(this, options), {
+      amount: indent
+    })
 
     return insideHTML ? output : `\n\n${output}\n\n`
   }
@@ -35,9 +37,12 @@ export function blockPairedShortcode(shortcode) {
       outdent.string(content)
     )
 
-    const output = indentLines(shortcode.call(this, formattedContent, options), {
-      amount: indent
-    })
+    const output = indentLines(
+      shortcode.call(this, formattedContent, options),
+      {
+        amount: indent
+      }
+    )
 
     return insideHTML ? output : `\n\n${output}\n\n`
   }
@@ -70,4 +75,45 @@ function startsWithHTML(string) {
 
 function endsWithHTML(string) {
   return string.match(/<\/[\w]+[\w-]?>$/)
+}
+
+/**
+ * Builds a list of custom properties to prepare their output as CSS declarations
+ *
+ * @example
+ *  const properties = new CustomProperties();
+ *  properties.set(')
+ */
+export class CustomProperties {
+  constructor() {
+    this.properties = []
+  }
+
+  set(propertyName, propertyValue) {
+    this.properties.push(`--${propertyName}: ${propertyValue}`)
+  }
+
+  setResponsive(propertyBase, value, { format = NOOP } = {}) {
+    if (typeof value === 'object') {
+      if (value.mobile) {
+        this.set(`${propertyBase}-mobile`, format(value.mobile))
+      }
+      if (value.tablet) {
+        this.set(`${propertyBase}-tablet`, format(value.tablet))
+      }
+      if (value.desktop) {
+        this.set(`${propertyBase}-desktop`, format(value.desktop))
+      }
+    } else {
+      this.set(`${propertyBase}-mobile`, format(value))
+    }
+  }
+
+  get declarations() {
+    return this.properties.join(';')
+  }
+}
+
+function NOOP(v) {
+  return v
 }
