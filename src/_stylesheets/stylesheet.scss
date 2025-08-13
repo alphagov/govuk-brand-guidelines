@@ -99,9 +99,9 @@ figcaption {
 .flex-center {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start;
+  // align-items: flex-start;
   text-align: center;
 }
 

@@ -30,7 +30,7 @@ The exception to this rule is the GOV.UK website. See the [Web – Logo system p
 
 <div class="img-scale flex-center">
 
-![The crown element of the GOV.UK logo.](./crown.svg)
+![The crown element of the GOV.UK logo.](./crown2.svg)
 
 </div>
 {% endsectionHighlight %}
@@ -78,7 +78,7 @@ Scaling should follow this rule:
 Wordmark dot = 2× crown dot
 
 </div>
-<div class="flex-center">
+<div class="flex-end">
 
 ![Dots from the crown are used to show the correct size of the dot in the wordmark.](./standard-crown.svg)
 
@@ -91,13 +91,17 @@ Scaling should follow this rule:
 Wordmark dot = 1× crown dot
 
 </div>
-<div class="flex-center">
+<div>
 
 ![Dots from the enlarged crown that's used in the app icon are used to show the correct size of the dot in the wordmark.](./enlarged-crown.svg)
 
 </div>
 {% endgrid %}
+{% endsectionHighlight %}
+
+{% sectionHighlight %}
 {% grid { columns: { mobile: 1, desktop: 1 } } %}
+
 <div>
 
 ### Maintain clear space around logo elements
@@ -108,14 +112,13 @@ By respecting clear space guidelines, we preserve the logo’s integrity and ens
 
 The clear space area is defined by the dot size within our wordmark.
 
-<div class="img-scale flex-center">
+<div>
 
 ![Dots from the wordmark are used to show that its width is the equal to the minimum clear space required around logo elements.](./space-around-wordmark.svg)
 
 </div>
 </div>
 {% endgrid %}
-
 {% endsectionHighlight %}
 
 ## Minimum sizing
@@ -131,14 +134,14 @@ If it’s too small, it can lose detail and be harder for some users to read or 
 
 <div class="flex-end">
 
-![The wordmark for "GOV.UK". Minimum width of the wordmark: 50px.](./wordmark.svg)
+![The wordmark for "GOV.UK". Minimum width of the wordmark: 50px.](./wordmark-min-width.svg)
 Minimum size:
 50px
 
 </div>
 <div class="flex-end">
 
-![The crown element of the GOV.UK logo. Minimum width of the crown on it own: 10px.](./crown2.svg)
+![The crown element of the GOV.UK logo. Minimum width of the crown on it own: 10px.](./crown-min-width.svg)
 Minimum size:
 10px
 
