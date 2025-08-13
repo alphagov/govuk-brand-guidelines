@@ -42,33 +42,36 @@ Consistent use of type styles aids clarity and hierarchy. Headings should be att
 
 <div class="border">
 
-### Headline styles</div>
-
-<div>
+### Headline styles
 
 Bold, over a maximum 5 lines
 Light, over a maximum 5 lines
 Any content over 5 lines should be formatted as a body style
 
 </div>
+<div>
+img goes here
+</div>
 
 <div class="border">
 
-### Body copy styles</div>
-
-<div>
+### Body copy styles
 
 Body copy styles should always be set in Light and should be used for all longer form content.
 
 </div>
+<div>
+img goes here
+</div>
 <div class="border">
 
-### Tags styles </div>
-
-<div>
+### Tags styles
 
 Tags should be set in Bold, but to aid hierarchy should be a smaller type size than body copy.
 
+</div>
+<div>
+img goes here
 </div>
 {% endgrid %}
 {% endsectionHighlight %}
