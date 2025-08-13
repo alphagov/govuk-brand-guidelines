@@ -91,6 +91,8 @@ The clear space area is defined by the dot size within our wordmark.
 
 {% endsectionHighlight %}
 
+<section>
+
 ## Minimum sizing
 
 Keeping the logo at its minimum size helps ensure it stays legible and accessible.
@@ -101,36 +103,38 @@ If it’s too small, it can lose detail and be harder for some users to read or 
 
 {% sectionHighlight %}
 
+<div>
+
 ![TODO](./wordmark.svg)
 
-{% endsectionHighlight %}
+<div>
 
 {% grid { columns: 2 } %}
 
 <div>
 
-Minimum size:
+## Minimum size:
+
 50px
 
-{% sectionHighlight %}
-
 ![TODO][def]
-
-{% endsectionHighlight %}
 
 </div>
 
 <div>
 
-Minimum size:
+## Minimum size:
+
 10px
 
-{% sectionHighlight %}
 ![TODO](./crown-favicon.svg)
-{% endsectionHighlight %}
 
 </div>
+
 {% endgrid %}
+{% endsectionHighlight %}
+
+</section>
 
 Use the small crown version for anything below the crown’s minimum size, such as web favicons.
 
@@ -166,13 +170,25 @@ When using against a busy background or in print situations where colour is not 
 
 </div>
 
+<section>
+<div>
+
+{% grid { columns: { mobile: 2, desktop: 2 } } %}
+
 <div>
 
 ![TODO](./logo-special-dark.svg)
 
+</div>
+
+<div>
+
 ![TODO](./logo-special-light.svg)
 
 </div>
+{% endgrid %}
+
+</section>
 
 {% endgrid %}
 
