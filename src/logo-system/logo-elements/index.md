@@ -200,6 +200,8 @@ When using against a busy background or in print situations where colour is not 
 
 Both logo elements have a standalone animation that can be used to add dynamism to the brand.
 
+<p class="govuk-body-s app-meta-info">This video does not contain any audio. The examples shown in this video are indicative and for illustrative purposes only.</p>
+
 {% grid { columns: 2 } %}
 
 <div>
