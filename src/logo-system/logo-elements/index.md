@@ -134,9 +134,9 @@ If it’s too small, it can lose detail and be harder for some users to read or 
 {% endgrid %}
 {% endsectionHighlight %}
 
-</section>
-
 Use the small crown version for anything below the crown’s minimum size, such as web favicons.
+
+</section>
 
 ## Logo colour
 
