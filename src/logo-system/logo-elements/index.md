@@ -64,13 +64,13 @@ The size of the crown can be adjusted depending on context. For example, when be
 Scaling should follow this rule:
 Wordmark dot = 2× crown dot
 
+</div>
+
 {% sectionHighlight %}
 
 ![TODO](./propotional-scaling-desktop.svg)
 
 {% endsectionHighlight %}
-
-</div>
 
 <div class="border">
 
@@ -79,13 +79,13 @@ Wordmark dot = 2× crown dot
 Scaling should follow this rule:
 Wordmark dot = 1× crown dot
 
+</div>
+
 {% sectionHighlight %}
 
 ![TODO](./propotional-scaling-mobile.svg)
 
 {% endsectionHighlight %}
-
-</div>
 
 {% endgrid %}
 
