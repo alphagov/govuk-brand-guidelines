@@ -83,7 +83,7 @@ Wordmark dot = 2× crown dot
 ![Dots from the crown are used to show the correct size of the dot in the wordmark.](./standard-crown.svg)
 
 </div>
-<div>
+<div class="border-white">
 
 #### Enlarged crown size
 
@@ -91,7 +91,7 @@ Scaling should follow this rule:
 Wordmark dot = 1× crown dot
 
 </div>
-<div>
+<div class="border-white">
 
 ![Dots from the enlarged crown that's used in the app icon are used to show the correct size of the dot in the wordmark.](./enlarged-crown.svg)
 
@@ -136,15 +136,23 @@ If it’s too small, it can lose detail and be harder for some users to read or 
 
 ![The wordmark for "GOV.UK". Minimum width of the wordmark: 50px.](./wordmark-min-width.svg)
 Minimum size:
+
+<div class="big-font">
+
 50px
 
+</div>
 </div>
 <div class="flex-end">
 
 ![The crown element of the GOV.UK logo. Minimum width of the crown on it own: 10px.](./crown-min-width.svg)
 Minimum size:
+
+<div class="big-font">
+
 10px
 
+</div>
 </div>
 {% endgrid %}
 
