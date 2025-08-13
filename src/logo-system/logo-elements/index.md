@@ -132,9 +132,10 @@ If it’s too small, it can lose detail and be harder for some users to read or 
 </div>
 
 {% endgrid %}
-{% endsectionHighlight %}
 
 Use the small crown version for anything below the crown’s minimum size, such as web favicons.
+
+{% endsectionHighlight %}
 
 </section>
 
