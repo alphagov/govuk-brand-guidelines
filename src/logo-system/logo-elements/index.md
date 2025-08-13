@@ -43,11 +43,9 @@ This ensures visual balance and harmony between the elements.
 
 The pixel sizes displayed on this page are indicative and will vary across devices.
 
-{% sectionHighlight %}
+{% grid { columns: { mobile: 2, desktop: 2 } } %}
 
-![TODO](./lockup-detail.svg)
-
-{% endsectionHighlight %}
+<div class="border">
 
 ### Use proportional scaling
 
@@ -55,7 +53,13 @@ In order to maintain visual hierarchy, consistency and balance between the two e
 
 The size of the crown can be adjusted depending on context. For example, when being used at smaller sizes such as within the app icon, the enlarged crown should be used to aid accessibility and legibility.
 
-{% grid { columns: { mobile: 2, desktop: 2 } } %}
+</div>
+
+{% sectionHighlight %}
+
+![TODO](./lockup-detail.svg)
+
+{% endsectionHighlight %}
 
 <div class="border">
 
