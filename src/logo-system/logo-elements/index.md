@@ -206,11 +206,7 @@ Both logo elements have a standalone animation that can be used to add dynamism 
 
 ### Wordmark
 
-{% sectionHighlight %}
-
-<video src="/graphic-device/dot-use-examples/splash-screen-short-version.mp4" controls width="720" style="max-width: 100%"></video>
-
-{% endsectionHighlight %}
+<video src="./wordmark-motion.mp4" controls width="405" style="max-width: 100%"></video>
 
 </div>
 
@@ -218,11 +214,7 @@ Both logo elements have a standalone animation that can be used to add dynamism 
 
 ### Crown
 
-{% sectionHighlight %}
-
 <video src="./crown-motion.mp4" controls width="405" style="max-width: 100%"></video>
-
-{% endsectionHighlight %}
 
 </div>
 {% endgrid %}
