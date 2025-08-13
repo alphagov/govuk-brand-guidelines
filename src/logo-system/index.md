@@ -34,7 +34,7 @@ Our wordmark is our primary identifier and should be used as the lead asset on t
 ![The wordmark for "GOV.UK". The dot is centred vertically and coloured in accent teal.](./logo-elements/wordmark.svg)
 
 </div>
-<div>
+<div class="border-white">
 
 ### Crown
 
@@ -42,12 +42,12 @@ The crown must always be present but is used as a supporting asset within close 
 
 </div>
 
-<div class="flex-end flex-center">
+<div class="flex-end flex-center border-white">
 
 ![The crown element of the GOV.UK logo.](./logo-elements/crown.svg)
 
 </div>
-<div>
+<div class="border-white">
 
 ### Lock-up
 
@@ -55,7 +55,7 @@ To aid recognition the lock-up combines the crown and wordmark and is used prima
 
 </div>
 
-<div class="flex-end flex-center">
+<div class="flex-end flex-center border-white">
 
 ![The lock-up of the crown and GOV.UK wordmark shown together.](./logo-elements/lockup.svg)
 
