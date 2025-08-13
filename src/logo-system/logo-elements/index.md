@@ -172,6 +172,7 @@ When using against a busy background or in print situations where colour is not 
 </div>
 
 <section>
+
 <div>
 
 {% grid { columns: { mobile: 2, desktop: 2 } } %}
@@ -193,6 +194,8 @@ When using against a busy background or in print situations where colour is not 
 
 {% endgrid %}
 
+<section>
+
 ## In motion
 
 Both logo elements have a standalone animation that can be used to add dynamism to the brand.
@@ -205,7 +208,7 @@ Both logo elements have a standalone animation that can be used to add dynamism 
 
 {% sectionHighlight %}
 
-![TODO](./wordmark-motion.gif)
+<video src="/graphic-device/dot-use-examples/splash-screen-short-version.mp4" controls width="720" style="max-width: 100%"></video>
 
 {% endsectionHighlight %}
 
@@ -217,13 +220,13 @@ Both logo elements have a standalone animation that can be used to add dynamism 
 
 {% sectionHighlight %}
 
-![TODO](./crown-motion.gif)
+<video src="./crown-motion.mp4" controls width="405" style="max-width: 100%"></video>
 
 {% endsectionHighlight %}
 
 </div>
-
 {% endgrid %}
+<section>
 
 ## Incorrect usage
 
