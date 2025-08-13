@@ -39,20 +39,11 @@ The exception to this rule is the GOV.UK website. See the [Web – Logo system p
 
 A lock-up system where we can position the crown in close proximity to the GOV.UK wordmark to offer greater flexibility when designing in a wider range of formats and channels.
 
-{% sectionHighlight %}
-
 <div>
 
-![Desktop background showing the GOV.UK wordmark placed at the very centre with the crown centred at the bottom.](./crown-support-desktop.svg)
+![Desktop and mobile background showing the GOV.UK wordmark placed at the very centre with the crown centred at the bottom.](./crown-supporting-element.svg)
 
 </div>
-<div>
-
-![Mobile background showing the GOV.UK wordmark placed at the very centre with the crown centred at the bottom.](./crown-support-mobile.svg)
-
-</div>
-
-{% endsectionHighlight %}
 
 ## Lock-up
 
@@ -64,14 +55,11 @@ This ensures visual balance and harmony between the elements.
 
 The pixel sizes displayed on this page are indicative and will vary across devices.
 
-{% sectionHighlight %}
-
 <div class="flex-center">
 
 ![Dots from the crown are used to show the correct spacing and scaling within the logo lock-up.](./lockup-detail.svg)
 
 </div>
-{% endsectionHighlight %}
 
 ### Use proportional scaling
 
@@ -90,9 +78,9 @@ Scaling should follow this rule:
 Wordmark dot = 2× crown dot
 
 </div>
-<div class="img-scale flex-center">
+<div class="flex-center">
 
-![Dots from the crown are used to show the correct size of the dot in the wordmark.](./propotional-scaling-desktop.svg)
+![Dots from the crown are used to show the correct size of the dot in the wordmark.](./standard-crown.svg)
 
 </div>
 <div>
@@ -103,9 +91,9 @@ Scaling should follow this rule:
 Wordmark dot = 1× crown dot
 
 </div>
-<div class="img-scale flex-center">
+<div class="flex-center">
 
-![Dots from the enlarged crown that's used in the app icon are used to show the correct size of the dot in the wordmark.](./propotional-scaling-mobile.svg)
+![Dots from the enlarged crown that's used in the app icon are used to show the correct size of the dot in the wordmark.](./enlarged-crown.svg)
 
 </div>
 {% endgrid %}
@@ -144,15 +132,13 @@ If it’s too small, it can lose detail and be harder for some users to read or 
 <div class="flex-end">
 
 ![The wordmark for "GOV.UK". Minimum width of the wordmark: 50px.](./wordmark.svg)
-
 Minimum size:
 50px
 
 </div>
-<div class="flex-end flex-center">
+<div class="flex-end">
 
-![The crown element of the GOV.UK logo. Minimum width of the crown on it own: 10px.](./crown.svg)
-
+![The crown element of the GOV.UK logo. Minimum width of the crown on it own: 10px.](./crown2.svg)
 Minimum size:
 10px
 
@@ -160,7 +146,6 @@ Minimum size:
 {% endgrid %}
 
 ![Smaller version of the crown, with adjustments such as fewer dots.](./crown-favicon.svg)
-
 Use the small crown version for anything below the crown’s minimum size, such as web favicons.
 {% endsectionHighlight %}
 
@@ -201,8 +186,7 @@ When using against a busy background or in print situations where colour is not 
 </div>
 <div>
 
-![](./logo-special-dark.svg)
-![](./logo-special-light.svg)
+![](./logo-special-dark-light.svg)
 
 </div>
 {% endgrid %}
