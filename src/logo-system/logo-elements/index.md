@@ -55,6 +55,10 @@ In order to maintain visual hierarchy, consistency and balance between the two e
 
 The size of the crown can be adjusted depending on context. For example, when being used at smaller sizes such as within the app icon, the enlarged crown should be used to aid accessibility and legibility.
 
+{% grid { columns: { mobile: 2, desktop: 2 } } %}
+
+<div class="border">
+
 #### Standard crown size
 
 Scaling should follow this rule:
@@ -66,6 +70,10 @@ Wordmark dot = 2× crown dot
 
 {% endsectionHighlight %}
 
+</div>
+
+<div class="border">
+
 #### Enlarged crown size
 
 Scaling should follow this rule:
@@ -76,6 +84,10 @@ Wordmark dot = 1× crown dot
 ![TODO](./propotional-scaling-mobile.svg)
 
 {% endsectionHighlight %}
+
+</div>
+
+{% endgrid %}
 
 ### Maintain clear space around logo elements
 
