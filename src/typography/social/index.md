@@ -37,7 +37,6 @@ Consistent use of type styles aids clarity and hierarchy. Headings should be att
 
 <!-- TODO: lots to do here, some of the below should probably be in images -->
 
-{% sectionHighlight { classes: "light-blue" } %}
 {% grid { columns: { mobile: 2, desktop: 2 } } %}
 
 <div class="border">
@@ -74,10 +73,14 @@ Tags should be set in Bold, but to aid hierarchy should be a smaller type size t
 img goes here
 </div>
 {% endgrid %}
-{% endsectionHighlight %}
 
 ## Alignment
 
+<div class="inset">
+
+Indicative examples for illustrative purposes only.
+
+</div>
 <!-- TODO: the next two headings started with a small image that is not in here yet
            but we might not need it for consistency reasons? -->
 
@@ -104,17 +107,19 @@ Centred text should be used sparingly for shorter headlines, predominantly withi
 ![TODO](./centre-aligned.png)
 {% endgrid %}
 
-Indicative examples for illustrative purposes only.
-
 ## Type settings
 
 Type settings are essential for both accessibility and brand consistency. Well-structured typography improves readability, ensuring that content is clear and easy to understand for all users.
 
 Consistent application of font sizes, line height, and letter spacing creates a cohesive visual experience across all content types.
 
-{% sectionHighlight { classes: "light-blue" } %}
-
 Depending on the size of type, different settings should be applied, as illustrated here.
+
+<div class="inset">
+
+Indicative examples for illustrative purposes only.
+
+</div>
 
 {% grid { columns: { mobile: 2, desktop: 2 } } %}
 
@@ -135,10 +140,7 @@ Depending on the size of type, different settings should be applied, as illustra
 
 ![TODO](./type-settings-dont-1.png) ![TODO](./type-settings-dont-2.png)</div>
 
-Indicative examples for illustrative purposes only.
-
 {% endgrid %}
-{% endsectionHighlight %}
 
 ## Fallback fonts
 
