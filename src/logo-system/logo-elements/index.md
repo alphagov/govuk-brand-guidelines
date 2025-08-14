@@ -228,6 +228,12 @@ Both logo elements have a standalone animation that can be used to add dynamism 
 
 To maintain consistency across channels the logo elements should never be changed or altered.
 
+<div class="inset">
+
+Indicative examples for illustrative purposes only.
+
+</div>
+
 {% grid { columns: { mobile: 1, desktop: 2 } } %}
 
 <div class="border">

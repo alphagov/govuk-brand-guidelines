@@ -38,15 +38,17 @@ An example of this is the GOV.UK app icon.
 
 An exception to this principle includes other GOV.UK apps, where the symbol or identifier may be used instead of the crown within the app icon. See the [App icon suite section on this page](#app-icon-suite).
 
-{% sectionHighlight { classes: "light-blue" } %}
-
 ## Logo elements within the app
 
 We always lead with the wordmark as our primary brand identifier - positioning it in a prominent position.
 
 We use the crown as a supporting element that sits below or at the end of content.
 
+<div class="inset">
+
 The examples of logo elements within the app are indicative examples for illustrative purposes only.
+
+</div>
 
 {% grid { columns: { mobile: 1, desktop: 2 } } %}
 <div>
@@ -65,7 +67,6 @@ The examples of logo elements within the app are indicative examples for illustr
 </div>
 
 {% endgrid %}
-{% endsectionHighlight %}
 
 ## App icon
 
