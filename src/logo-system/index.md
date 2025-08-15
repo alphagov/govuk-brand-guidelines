@@ -2,6 +2,7 @@
 order: 1
 title: Logo system
 hero: ./hero.svg
+colour: '#11875A'
 ---
 
 ## The GOV.UK logo system
