@@ -7,25 +7,22 @@ title: App
 
 In GOV.UK apps we follow the primary logo system, using the wordmark as the main identifier whilst incorporating the crown as a supporting element to aid trust and recognition.
 
-An exception to this principle includes other GOV.UK apps, where the symbol or identifier may be used instead of the crown within the app icon, see the [App icon suite section on this page](#app-icon-suite).
+![GOV.UK wordmark shown on blue background.](./wordmark-on-blue.svg)
+![Crown shown on blue background.](./crown-on-blue.svg)
 
-### Wordmark
+An example of this is the GOV.UK app icon.
 
-![TODO](./wordmark-on-blue.svg)
+![Wordmark and crown on blue background, with a border outline to show positioning of these logo elements as an app icon.](./app-icon-on-blue.svg)
 
-### Crown
-
-![TODO](./crown-on-blue.svg)
-
-### App icon
-
-![TODO](./app-icon-on-blue.svg)
+An exception to this principle includes other GOV.UK apps, where the symbol or identifier may be used instead of the crown within the app icon. See the [App icon suite section on this page](#app-icon-suite).
 
 ## Logo elements within the app
 
 We always lead with the wordmark as our primary brand identifier - positioning it in a prominent position.
 
 We use the crown as a supporting element that sits below or at the end of content.
+
+The examples of logo elements within the app are indicative examples for illustrative purposes only.
 
 ### App splash screen
 
@@ -35,9 +32,7 @@ We use the crown as a supporting element that sits below or at the end of conten
 
 ### Crown watermark
 
-![TODO](./app-watermark-example.png)
-
-Indicative examples for illustrative purposes only.
+![Screenshot of the GOV.UK app, showing the GOV.UK wordmark centred in the top header and the crown watermark centred at the end of a page.](./app-watermark-example.png)
 
 ## App icon
 
@@ -45,24 +40,24 @@ The GOV.UK app icon should follow the same principle, leading with the wordmark 
 
 As this is a small use application of the logo elements, we use the enlarged crown size to maximise legibility and recognition.
 
-![TODO](./app-icon-lines.svg) ![TODO](./app-icon.svg) ![TODO](./app-store-example.png)
+![App icon of the GOV.UK app, with gridlines showing how the crown is placed centred directly under GOV.UK.](./app-icon-lines.svg) ![](./app-icon.svg) ![Mockup of the GOV.UK app's page in an App Store.](./app-store-example.png)
 
 ### <a name="app-icon-suite"></a>App icon suite
 
 As the family of GOV.UK applications grows, the need for a consistent approach to app icon design is necessary.
 
-The suite of icons should follow the same principles, leading with the GOV.UK wordmark for recognition, with the symbol below, replacing the crown.
+The suite of icons should follow the same principles, leading with the GOV.UK wordmark for recognition, with the symbol below, replacing the crown. 
 
-Example of the GOV.UK One Login app as shown here.
+An example of this is the GOV.UK One Login app.
 
-![TODO](./app-icon-template.svg)
+![Logo template for GOV.UK-branded apps. The wordmark is shown above a placeholder space for a symbol to replace the crown.](./app-icon-template.svg)
 
 Framework
 
-![TODO](./app-icon.svg)
+![App icon of the GOV.UK app.](./app-icon.svg)
 
 Example 1: GOV.UK app
 
-![TODO](./app-icon-one-login.svg)
+![App icon of the GOV.UK One Login app, showing the symbol for One Login below the wordmark. ](./app-icon-one-login.svg)
 
 Example 2: GOV.UK One Login

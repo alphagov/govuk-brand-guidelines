@@ -7,31 +7,25 @@ title: Social
 
 Within GOV.UK social channels we follow the primary logo system, using the wordmark as the main identifier whilst incorporating the crown as a supporting element to aid trust and recognition.
 
-### Wordmark
+<!-- TODO: duplicated file also in ../app -->
+![GOV.UK wordmark shown on blue background.](./wordmark-on-blue.svg)
 
 <!-- TODO: duplicated file also in ../app -->
+![Crown shown on blue background.](./crown-on-blue.svg)
 
-![TODO](./wordmark-on-blue.svg)
+An example of this is in profile icons.
 
-### Crown
-
-<!-- TODO: duplicated file also in ../app -->
-
-![TODO](./crown-on-blue.svg)
-
-### Profile icons (App Icon Grid)
-
-![TODO](./profile-icon-on-blue.svg)
+![App icon showing a stacked lock-up of the GOV.UK wordmark and crown. A circle outline shows positioning of logo elements.](./profile-icon-on-blue.svg)
 
 ## Logo elements within social
 
 We always lead with the wordmark as our primary brand identifier – positioning it in a prominent position.
 
-We use the crown as a supporting element that sits below or to theright of the wordmark, or at the end of content.
+We use the crown as a supporting element that sits below or to the right of the wordmark, or at the end of content.
 
-![TODO](./profile-icon-lines.svg) ![TODO](./profile-icon.svg)
+![Logo lock-up of the GOV.UK logo, with gridlines showing how the crown is placed centred directly under GOV.UK. A circle outline shows positioning of logo elements.](./profile-icon-lines.svg) ![](./profile-icon.svg)
 
-![TODO](./youtube-example.png) ![TODO](./insta-example.png) ![TODO](./facebook-example.png)
+![Mock-up of the GOV.UK channel page on YouTube.](./youtube-example.png) ![Mock-up of a post from GOV.UK on Instagram.](./insta-example.png) ![Mock-up of the GOV.UK profile page on Instagram.](./facebook-example.png)
 
 Indicative examples for illustrative purposes only.
 
@@ -65,18 +59,18 @@ This can be applied within the live artwork files using the relevant swatches. A
 
 To aid brand recognition and coherency, adaptive dot colour should not be used within video end frames.
 
-![TODO](./adaptive-primary-blue.svg) ![TODO](./adaptive-primary-green.svg) ![TODO](./adaptive-shade50-blue.svg) ![TODO](./adaptive-shade50-purple.svg) ![TODO](./adaptive-shade50-red.svg) ![TODO](./adaptive-shade50-teal.svg)
+![GOV.UK wordmark shown with adaptive dot to tonally match different coloured backgrouds.](./adaptive-primary-blue.svg) ![](./adaptive-primary-green.svg) ![](./adaptive-shade50-blue.svg) ![](./adaptive-shade50-purple.svg) ![](./adaptive-shade50-red.svg) ![](./adaptive-shade50-teal.svg)
 
 ### Incorrect adaptive dot colour usage
 
 Do not use colour combinations that are not accessible.
 
-![TODO](./incorrect-not-accessible-1.svg) ![TODO](./incorrect-not-accessible-2.svg)
+![](./incorrect-not-accessible-1.svg) ![](./incorrect-not-accessible-2.svg)
 
 Do not use colour combinations that lack contrast between the wordmark and dot.
 
-![TODO](./incorrect-low-contrast-1.svg) ![TODO](./incorrect-low-contrast-2.svg)
+![](./incorrect-low-contrast-1.svg) ![](./incorrect-low-contrast-2.svg)
 
 Do not use colour combinations that are not from the same tonal range.
 
-![TODO](./incorrect-tonal-1.svg) ![TODO](./incorrect-tonal-2.svg)
+![](./incorrect-tonal-1.svg) ![](./incorrect-tonal-2.svg)
