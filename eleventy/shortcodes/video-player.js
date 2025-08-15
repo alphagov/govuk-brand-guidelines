@@ -1,3 +1,5 @@
+import { extname } from 'node:path'
+
 import { blockShortcode } from './utils.js'
 
 export const videoPlayer = blockShortcode((options = {}) => {
@@ -56,11 +58,9 @@ export const videoPlayer = blockShortcode((options = {}) => {
   }
 
   // Assemble sources HTML
-  const videoSourcesHtml = []
-
-  videoSources.forEach((source) => {
-    videoSourcesHtml.push(`<source src="${source.file}" type="${source.type}">`)
-  })
+  const videoSourcesHtml = videoSources.map(
+    (source) => `<source src="${source.file}" type="${source.type}">`
+  )
 
   // Create video element
   //
@@ -82,5 +82,5 @@ export const videoPlayer = blockShortcode((options = {}) => {
 })
 
 function getVideoFileTypeFromFileName(fileName) {
-  return 'video/' + fileName.split('.').pop().toLowerCase()
+  return 'video/' + extname(fileName)?.slice(1).toLowerCase()
 }
