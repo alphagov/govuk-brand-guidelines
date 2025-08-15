@@ -7,40 +7,110 @@ title: Dot use examples
 
 The app splash screen utilises the dot in motion to represent GOV.UK bringing together government services and departments, all in one place.
 
-<!-- TODO: these files are partly duplicated in
-logo system > app and colour > palette overview -->
+{% grid { columns: { desktop: 2 } } %}
 
-### App splash screen (long version)
+<div>
+    
+ ### App splash screen (long version)
 
-![TODO](./splash-screen-long.gif)
+{% video { source: "./splash-screen-long-version.mp4" } %}
+
+</div>
+<div>
 
 ### App splash screen (short version)
 
-![TODO](./splash-screen-short.gif)
+{% video { source: "./splash-screen-short-version.mp4" } %}
+
+</div>
+{% endgrid %}
+
+### Video description
+
+No audio. The dot leads a trail of other dots of various colours in a spiral towards the centre of a mobile screen, where it becomes the dot within the GOV.UK logo as it fades and pushes in. The crown logo is revealed by an circular iris effect at the bottom of the screen.
 
 ## Illustration
 
 The dot can be brought to life through animation in illustrations, adding personality and expression to moments such as app onboarding, or to tell visual stories within social.
 
-Person
+{% grid { columns: { mobile: 1, tablet: 2 }, classes: "govuk-!-padding-bottom-6" } %}
 
-TODO: missing video
+<div class="app-top-border">
 
-Travel
+### Person
 
-TODO: missing video
+No audio. An animation of a person giving a friendly wave. Circles are used to draw the head and hand, whilst pieces of a circle are used to draw the shoulders and hairstyle.
 
-Lock
+</div>
+<div>
 
-TODO: missing video
+{% video { source: [
+  "./illustration-wave.mp4",
+  "./illustration-wave.webm"
+] } %}
 
-Onboarding
+</div>
+<div class="app-top-border">
 
-TODO: missing video
+### Travel
 
-Piggy bank
+No audio. An animation of luggage moving aross the frame. Suitcases are drawn as rectangles with corners. Circles are used to draw wheels and luggage tags, whilst pieces of a circle are used to draw the handles.
 
-TODO: missing video
+</div>
+<div>
+
+{% video { source: [
+  "./illustration-travel.mp4",
+  "./illustration-travel.webm"
+] } %}
+
+</div>
+<div class="app-top-border">
+
+### Lock
+
+No audio. An animation of a circle-shaped padlock opening and closing.
+
+</div>
+<div>
+
+{% video { source: [
+  "./illustration-lock.mp4",
+  "./illustration-lock.webm"
+] } %}
+
+</div>
+<div class="app-top-border">
+
+### Onboarding
+
+No audio. Animation of various circle-themed icons, including a speech bubble, notification bell, map pin and toggle switch.
+
+</div>
+<div>
+
+{% video { source: [
+  "./illustration-onboarding.mp4",
+  "./illustration-onboarding.webm"
+] } %}
+
+</div>
+<div class="app-top-border">
+
+### Piggy bank
+
+No audio. Animation of a circle-shaped piggy bank. Several coins drop into the piggy bank before it does a happy shake.
+
+</div>
+<div>
+
+{% video { source: [
+  "./illustration-piggy-bank.mp4",
+  "./illustration-piggy-bank.webm"
+] } %}
+
+</div>
+{% endgrid %}
 
 ## Social media
 
@@ -56,19 +126,38 @@ The dot provides a distinctive, flexible visual thread that ties together differ
 
 To build coherence across channels, our social end frames follow the same motion behaviour as the app splash screen.
 
+This video gives a few indicative examples of how the dot could be used in motion, for illustrative purposes only.
+
+<p class="govuk-body-s app-meta-info">These videos do not contain any audio.</p>
+
+{% grid %}
+
+<div>
+
 ### Video end frame 16:9
 
-<!-- TODO: these files are duplicated in logo system > social -->
+{% video { source: "./End-frame-1920-1080.mp4" } %}
 
-![TODO](./end-frame-1920x1080.gif)
+</div>
+{% endgrid %}
+
+{% grid { columns: { tablet: 2 }, classes: "govuk-!-padding-bottom-6 govuk-!-padding-top-4" } %}
+
+<div>
 
 ### Video end frame 9:16
 
-![TODO](./end-frame-1080x1920.gif)
+{% video { source: "./End-frame-1080-1920.mp4" } %}
+
+</div>
+<div>
 
 ### Video end frame 1:1
 
-![TODO](./end-frame-1080x1080.gif)
+{% video { source: "./End-frame-1080-1080.mp4" } %}
+
+</div>
+{% endgrid %}
 
 ## Video thumbnails
 
@@ -82,43 +171,132 @@ See these indicative examples of dot use within thumbnails. These examples are s
 
 <!-- Obviously, that's not the right heading, needs proper design -->
 
-### Inform <--------> Inspire
+<div class="app-inform-inspire">
+<p class="govuk-visually-hidden">From most infomative to most inspiring</p>
+<p class="govuk-heading-s app-inform-inspire__inform" aria-hidden="true">Inform</p>
 
-Get help with...
+<figure class="app-figure">
+    <div class="app-figure-container">
+        <picture>
+            <img class="app-prose-image" src="./video-thumb-get-help.png" alt="A video thumbnail for 'Get help with registering a death'. Title is shown within a simple blue circle graphic on a blue background.">
+        </picture>
+        <figcaption class="app-figure__caption">
+            <p class="govuk-body">Get help with...</p>
+        </figcaption>
+    </div>
+</figure>
+<figure class="app-figure">
+    <div class="app-figure-container"> 
+        <picture>
+            <img class="app-prose-image" src="./video-thumb-60s.png" alt="A video thumbnail showing a title overlay for 'Check a vehicle before you buy', includes an icon of a small clock that resembles the dot.">
+        </picture>
+        <figcaption class="app-figure__caption">
+            <p class="govuk-body">60s guides</p>
+        </figcaption>
+    </div>
+</figure>
+<figure class="app-figure">
+    <div class="app-figure-container">
+        <picture>
+            <img class="app-prose-image" src="./video-thumb-step.png" alt="A video thumbnail for 'How to apple for a Visa'. Title is shown on light blue background beside an illustration of travel documents incorporating the dot.">
+        </picture>
+        <figcaption class="app-figure__caption">
+            <p class="govuk-body">Step-by-step guides</p>
+        </figcaption>
+    </div>
+</figure>
+<figure class="app-figure">
+    <div class="app-figure-container">
+        <picture>
+            <img class="app-prose-image" src="./video-thumb-influencer.png" alt="A video thumbnail for 'How I learnt to drive. A smiling young adult is shown in front of a background, which is a purple circular title graphic.">
+        </picture>
+        <figcaption class="app-figure__caption">
+            <p class="govuk-body">Influencer/presenter</p>
+        </figcaption>
+    </div>
+</figure>
+    
+<p aria-hidden="true" class="govuk-heading-s app-inform-inspire__inspire">Inspire</p>
+</div>
 
-![TODO](./video-thumb-get-help.png)
-
-60 second guides
-
-![TODO](./video-thumb-60s.png)
-
-Step-by-step guides
-
-![TODO](./video-thumb-step.png)
-
-Influencer or presenter
-
-![TODO](./video-thumb-influencer.png)
+{% sectionHighlight {classes: "light-blue" } %}
 
 ## Static dot examples
 
 The dot can also be used as a static graphic, adding emphasis and helping guide users through content.
 
-See these indicative examples of static dot graphics. These examples are shown for illustrative purposes only.
+See these indicative examples of static dot graphics.
 
-![TODO](./static-dot-1.png) ![TODO](./static-dot-2.png) ![TODO](./static-dot-3.png) ![TODO](./static-dot-4.png)
+<p class="govuk-body-s app-meta-info">These examples are shown for illustrative purposes only.</p>
+
+{% grid { columns: { mobile: 2, tablet: 4 }, classes: "app-grid-reduced-gap" } %}
+
+<div>
+
+![Instagram post with image saying "Today is the Summer bank holiday" alongside a graphic of the sun, made up of a yellow circle with yellow half circles as sun rays.](./static-dot-1.png)
+
+</div> 
+<div>
+
+![Instagram post with image saying "Get help with your pension" alongside a graphic of a circular-shaped piggy bank.](./static-dot-2.png)
+
+</div> 
+<div>
+
+![Instagram post with image saying "Register to vote" inside a green circle.](./static-dot-3.png)
+
+</div> 
+<div>
+
+![Instagram post with image saying "Here's how I got my driving licence" with various circular and rounded-corner graphics. "Driving license" is in a lozenge-shaped highlight.](./static-dot-4.png)
+
+</div>
+{% endgrid %}
+{% endsectionHighlight %}
 
 ## Static dot storyboard
 
 While it's important to use the dot in a purposeful way, it can effectively guide user attention and break down information to enhance the overall experience.
 
-See this indicative example of the dot used throughout a storyboard. This example is shown for illustrative purposes only.
+See this indicative example of the dot used throughout a storyboard.
 
 Such as in the instagram story below;
 
-![TODO](./storyboard-1.png) ![TODO](./storyboard-2.png) ![TODO](./storyboard-3.png) ![TODO](./storyboard-4.png) ![TODO](./storyboard-5.png) ![TODO](./storyboard-6.png)
+<p class="govuk-body-s app-meta-info">This example is shown for illustrative purposes only.</p>
 
-Indicative examples for illustrative purposes only.
+{% grid { columns: { mobile: 3, tablet: 6 }, classes: "app-grid-reduced-gap" } %}
+
+<div>
+
+![TODO](./storyboard-1.png)
+
+</div> 
+<div>
+
+![TODO](./storyboard-2.png)
+
+</div>
+<div>
+
+![TODO](./storyboard-3.png)
+
+</div>
+<div>
+
+![TODO](./storyboard-4.png)
+
+</div>
+<div>
+
+![TODO](./storyboard-5.png)
+
+</div>
+<div>
+
+![TODO](./storyboard-6.png)
+
+</div>
+{% endgrid %}
 
 ## Incorrect dot usage
 
@@ -126,38 +304,60 @@ The dot has defined roles and behaviours, set out earlier in this guidance.
 
 To keep things consistent, avoid the following:
 
+{% grid { columns: { mobile: 1, tablet: 2 } } %}
+
+<div>
+
 ### Overuse
 
 Dot not overuse the dot
 
-![TODO](./incorrect-overuse.png)
+![Crossed out title graphic with an blank dot on the top left. The title is placed in the centre within a large circle, and also contains a lozenge-shaped text highlight.](./incorrect-overuse.png)
+
+</div>
+<div>
 
 ### Decorative elements
 
 Dot not use the dot in a decorative way
 
-![TODO](./incorrect-decorative.png)
+![Crossed out title graphic with a dot placed off-centre in the background.](./incorrect-decorative.png)
+
+</div>
+<div>
 
 ### Distortions
 
 Do not distort or skew the dot
 
-![TODO](./incorrect-distorted.png)
+![Crossed out title graphic with the title placed inside an oval.](./incorrect-distorted.png)
+
+</div>
+<div>
 
 ### Stroke
 
 Do not use stroke versions of the dot
 
-![TODO](./incorrect-stroke.png)
+![Crossed out graphic of a circular outline, resembling a ring.](./incorrect-stroke.png)
+
+</div>
+<div>
 
 ### Crops
 
 Do not use abstract crops of the dot
 
-![TODO](./incorrect-crop.png)
+![Crossed out graphic showing only the cropped corner of a large circle.](./incorrect-crop.png)
+
+</div>
+<div>
 
 ### Unapproved filters and effects
 
 Do not apply shadows or gradients
 
-![TODO](./incorrect-shadow.png)
+![Crossed out graphic of a circle with drop shadow.](./incorrect-shadow.png)
+
+</div>
+{% endgrid %}

@@ -16,3 +16,7 @@
     grid-template-columns: repeat(var(--app-grid-columns-desktop), 1fr);
   }
 }
+
+.app-grid-reduced-gap {
+  --app-grid-gap: 10px;
+}

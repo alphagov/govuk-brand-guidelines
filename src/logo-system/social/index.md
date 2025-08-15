@@ -8,9 +8,11 @@ title: Social
 Within GOV.UK social channels we follow the primary logo system, using the wordmark as the main identifier whilst incorporating the crown as a supporting element to aid trust and recognition.
 
 <!-- TODO: duplicated file also in ../app -->
+
 ![GOV.UK wordmark shown on blue background.](./wordmark-on-blue.svg)
 
 <!-- TODO: duplicated file also in ../app -->
+
 ![Crown shown on blue background.](./crown-on-blue.svg)
 
 An example of this is in profile icons.
@@ -35,15 +37,15 @@ Social end frames can be used at the end of animated or filmed content. They inc
 
 ### Video end frame 16:9
 
-![TODO](./end-frame-1920x1080.gif)
+{% video { source: "/graphic-device/dot-use-examples/End-frame-1920-1080.mp4" } %}
 
 ### Video end frame 9:16
 
-![TODO](./end-frame-1080x1920.gif)
+{% video { source: "/graphic-device/dot-use-examples/End-frame-1080-1920.mp4" } %}
 
 ### Video end frame 1:1
 
-![TODO](./end-frame-1080x1080.gif)
+{% video { source: "/graphic-device/dot-use-examples/End-frame-1080-1080.mp4" } %}
 
 ## Adaptive dot colour
 
