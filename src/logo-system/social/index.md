@@ -34,7 +34,7 @@ An example of this is in profile icons.
 
 <div class="flex-center flex-end">
 
-### Profile icons (App Icon Grid)
+### Profile icons
 
 ![App icon showing a stacked lock-up of the GOV.UK wordmark and crown. A circle outline shows positioning of logo elements.](./profile-icon-on-blue.svg)
 
@@ -61,16 +61,22 @@ We use the crown as a supporting element that sits below or to the right of the 
 </div>
 {% endgrid %}
 
+<div class="inset">
+
+Indicative examples for illustrative purposes only.
+
+</div>
+
 {% sectionHighlight { classes: "light-blue" } %}
 {% grid { columns: { mobile: 3, desktop: 3 } } %}
 
 ![Mock-up of the GOV.UK channel page on YouTube.](./youtube-example.png)
+
 ![Mock-up of a post from GOV.UK on Instagram.](./insta-example.png)
+
 ![Mock-up of the GOV.UK profile page on Instagram.](./facebook-example.png)
 
 {% endgrid %}
-
-Indicative examples for illustrative purposes only.
 {% endsectionHighlight %}
 
 ## Social end frames

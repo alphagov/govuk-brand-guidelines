@@ -135,28 +135,20 @@ If it’s too small, it can lose detail and be harder for some users to read or 
 <div class="flex-end">
 
 ![The wordmark for "GOV.UK". Minimum width of the wordmark: 50px.](./wordmark-min-width.svg)
-Minimum size:
 
-<div class="big-font">
+<p class="govuk-body">Minimum size:<strong class="app-size-recommendation">50px</strong></p>
 
-50px
-
-</div>
 </div>
 <div class="flex-end">
 
 ![The crown element of the GOV.UK logo. Minimum width of the crown on it own: 10px.](./crown-min-width.svg)
-Minimum size:
 
-<div class="big-font">
-
-10px
-
-</div>
+<p class="govuk-body">Minimum size:<strong class="app-size-recommendation">16px</strong></p>
 </div>
 {% endgrid %}
 
 ![Smaller version of the crown, with adjustments such as fewer dots.](./crown-favicon.svg)
+
 Use the small crown version for anything below the crown’s minimum size, such as web favicons.
 {% endsectionHighlight %}
 
@@ -241,7 +233,7 @@ Indicative examples for illustrative purposes only.
 Do not alter colour balance within the wordmark
 
 </div>
-<div class="border">
+<div>
 
 ![](./incorrect-altered-colours.png)
 

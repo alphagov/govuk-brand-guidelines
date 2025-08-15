@@ -49,6 +49,11 @@
   height: auto;
 }
 
+.app-size-recommendation {
+  display: block;
+  font-size: larger;
+}
+
 pre code,
 .app-code {
   border: 1px solid govuk-colour('mid-grey');
@@ -133,8 +138,15 @@ figcaption {
 
 .img-border {
   margin: 50px;
+  overflow: hidden;
   border: 1px solid #ffffff;
   border-radius: 10px;
+
+  > * {
+    display: block;
+    margin-bottom: 0;
+    line-height: 0;
+  }
 }
 
 // Grid adjustments

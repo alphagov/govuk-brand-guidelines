@@ -24,11 +24,9 @@ It may not always be possible to use GDS Transport, such as within native operat
 
 {% sectionHighlight { classes: "light-blue" } %}
 
-For example:
+For example, on Apple (iOS, macOS) use SF Pro, the system font designed for optimal legibility and integration with Apple’s UI.
 
-- **Apple (iOS, macOS):** Use SF Pro, the system font designed for optimal legibility and integration with Apple’s UI.
-
-Using the system typeface ensures better performance, scalability, and adherence to platform conventions, resulting in a more polished and user-friendly app, it does however effect brand recognition and consistency.
+Using the system typeface ensures better performance, scalability, and adherence to platform conventions, resulting in a more polished and user-friendly app, it does however affect brand recognition and consistency.
 
 ![TODO](./sf-pro.svg)
 {% endsectionHighlight %}

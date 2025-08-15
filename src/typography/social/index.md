@@ -24,11 +24,16 @@ Type hierarchy is key to creating content that is readable and easy to follow.
 
 Whilst there are many ways to build visual hierarchy, mixing weight and scale across tags, headlines and body copy is a simple yet effective approach.
 
+<div class="inset">
+
+Indicative examples for illustrative purposes only.
+
+</div>
+
 {% sectionHighlight { classes: "light-blue" } %}
 
 ![TODO](./type-hierarchy.png)
 
-Indicative examples for illustrative purposes only.
 {% endsectionHighlight %}
 
 ## Styles
@@ -76,11 +81,6 @@ img goes here
 
 ## Alignment
 
-<div class="inset">
-
-Indicative examples for illustrative purposes only.
-
-</div>
 <!-- TODO: the next two headings started with a small image that is not in here yet
            but we might not need it for consistency reasons? -->
 
@@ -114,12 +114,6 @@ Type settings are essential for both accessibility and brand consistency. Well-s
 Consistent application of font sizes, line height, and letter spacing creates a cohesive visual experience across all content types.
 
 Depending on the size of type, different settings should be applied, as illustrated here.
-
-<div class="inset">
-
-Indicative examples for illustrative purposes only.
-
-</div>
 
 {% grid { columns: { mobile: 2, desktop: 2 } } %}
 
