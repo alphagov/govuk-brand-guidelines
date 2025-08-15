@@ -26,8 +26,6 @@ Used within our wordmark and as a graphic device across all GOV.UK channels, the
   "./dot-animations.webm"
 ] } %}
 
-<!--<video src="./dot-animations.mp4" controls width="720" style="max-width: 100%"></video>-->
-
 No audio. The dot starts from its place within the GOV.UK logo, then playfully expands, bounces and moves through a range of animation examples that introduce government information and services.
 
 </div>

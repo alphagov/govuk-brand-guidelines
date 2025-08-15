@@ -62,7 +62,6 @@ The dot moves playfully from left to right, pausing briefly at points to show nu
 </div>
 <div>
 {% video { source: "./expression-dot-guides.mp4" } %}
-<!--<video src="./expression-dot-guides.mp4" controls width="720" style="max-width: 100%" class="govuk-!-padding-bottom-3"></video>-->
 </div>
 <div class="app-top-border">
 
@@ -73,7 +72,6 @@ The dot moves in a straight line from left to right across a navigation list of 
 </div>
 <div>
 {% video { source: "./expression-dot-navigates.mp4" } %}
-<!--<video src="./expression-dot-navigates.mp4" controls width="720" style="max-width: 100%" class="govuk-!-padding-bottom-3"></video>-->
 </div>
 <div class="app-top-border">
 
@@ -84,7 +82,6 @@ The dot is shown at the end of a "Don't forget to vote" message as it transforms
 </div>
 <div>
 {% video { source: "./expression-dot-highlights.mp4" } %}
-<!--<video src="./expression-dot-highlights.mp4" controls width="720" style="max-width: 100%" class="govuk-!-padding-bottom-3"></video>-->
 </div>
 <div class="app-top-border">
 
@@ -95,7 +92,6 @@ The small dot with a label showing 1% starts growing whilst the percentage label
 </div>
 <div>
 {% video { source: "./expression-dot-informs.mp4" } %}
-<!--<video src="./expression-dot-informs.mp4" controls width="720" style="max-width: 100%" class="govuk-!-padding-bottom-3"></video>-->
 </div>
 <div class="app-top-border">
 
@@ -106,7 +102,6 @@ The dot shown in a title card, where it's the dotted "i" in "Childcare". The dot
 </div>
 <div>
 {% video { source: "./expression-dot-transitions.mp4" } %}
-<!--<video src="./expression-dot-transitions.mp4" controls width="720" style="max-width: 100%" class="govuk-!-padding-bottom-3"></video>-->
 </div>
 <div class="app-top-border">
 
@@ -117,6 +112,5 @@ The dot swiftly moves like a drawing cursor to draw a simple icon of a circle wi
 </div>
 <div>
 {% video { source: "./expression-dot-illustrates.mp4" } %}
-<!--<video src="./expression-dot-illustrates.mp4" controls width="720" style="max-width: 100%" class="govuk-!-padding-bottom-3"></video>-->
 </div>
 {% endgrid %}
