@@ -14,13 +14,34 @@
 @import 'govuk/components/service-navigation';
 @import 'govuk/components/skip-link';
 
+@import 'aria-current';
 @import 'grid';
 @import 'inline-copy';
+@import 'link-list';
+@import 'mobile-navigation-section';
 @import 'section-highlight';
 @import 'swatch';
 
 @import 'govuk/utilities';
 @import 'govuk/overrides';
+
+// Padding on the `<main>` element needs removing as it's been shifted to a parent
+.app-main-wrapper {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.app-chapter-navigation {
+  @include govuk-media-query($until: tablet) {
+    display: none;
+  }
+}
+
+.app-chapter-navigation--mobile-fallback {
+  @include govuk-media-query($from: tablet) {
+    display: none;
+  }
+}
 
 .app-prose-image {
   max-width: 100%;

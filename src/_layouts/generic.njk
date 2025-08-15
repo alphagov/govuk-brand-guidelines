@@ -16,25 +16,17 @@
 
 {% block header %}
   {% from "govuk/components/header/macro.njk" import govukHeader %}
-  {% from "govuk/components/service-navigation/macro.njk" import govukServiceNavigation %}
 
   {{ govukHeader({
     productName: "Brand Guidelines"
   }) }}
 
-  {% for ancestor in ancestors %}
-      {{ govukServiceNavigation({
-        navigation: ancestor.data.navigationItems,
-        navigationId: ancestor.page.fileSlug + "-navigation" if ancestor.data.parent else null,
-        menuButtonText: '"' + ancestor.data.title + '" menu' if ancestor.data.parent else null
-      }) }}
-  {% endfor %}
-  {% if navigationItems | length %}
-    {{ govukServiceNavigation({
-      navigation: navigationItems,
-      navigationId: page.fileSlug + "-navigation" if parent else null,
-      menuButtonText: '"' + title + '" menu' if parent else null
-    }) }}
+  {% from "service-navigation.njk" import appServiceNavigation %}
+  {% if collections.pages[0].data.children | length %}
+    {{ appServiceNavigation({
+      pages: collections.pages[0].data.children,
+      renderedPageUrl: page.url
+    })}}
   {% endif %}
 {% endblock %}
 
@@ -64,19 +56,52 @@
     }) }}
   {%- endif %}
   {% from "govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
-  {{
-    govukBreadcrumbs({
-      items: breadcrumbItems
-    })
-  }}
+
+  {# Some pages, like test pages, don't have ancestors #}
+  {% if ancestors.length %}
+    {{
+      govukBreadcrumbs({
+        items: ancestors | asBreadcrumbItems
+      })
+    }}
+  {% endif %}
+
+  <div class="govuk-grid-row govuk-main-wrapper">
+    <nav class="govuk-grid-column-one-third app-chapter-navigation" aria-label="Pages in this section">
+      {% from "link-list.njk" import appLinkList %}
+      {{ appLinkList({
+        pages: sidebarNavigationRoot.data.children,
+        renderedPageUrl: page.url
+      })}}
+    </nav>
+  {#
+    To avoid re-producing GOV.UK Frontend's markup for the `main` block
+    the grid-row will be closed at the end of the `main` block
+  #}
 {% endblock %}
 
+{% set mainClasses = 'govuk-grid-column-two-thirds app-main-wrapper' %}
+
 {% block content %}
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
-      <h1 class="govuk-heading-xl">{{title}}</h1>
-      {{ content | safe }}
-    </div>
+  <h1 class="govuk-heading-xl">{{title}}</h1>
+  {{ content | safe }}
+
+  {# Render the list of pages under each chapter after the content
+    as a fallback for mobile navigation if JavaScript does not load #}
+  {% if isSidebarNavigationRoot %}
+    <nav class="app-chapter-navigation--mobile-fallback" aria-labelledby="chapter-navigation">
+      <h2 class="govuk-heading-l" id="chapter-navigation">Pages in {{title}}</h2>
+      {% from "link-list.njk" import appLinkList %}
+      {{ appLinkList({
+        pages: sidebarNavigationRoot.data.children,
+        renderedPageUrl: page.url
+      })}}
+    </nav>
+  {% endif %}
+{% endblock %}
+
+{% block main %}
+  {{super()}}
   </div>
 {% endblock %}
 
