@@ -24,11 +24,7 @@ We lead with the Primary Blue and Accent Teal across all GOV.UK channels. From t
 
 ### App splash screen
 
-<!-- TODO: these files are partly duplicated in
-logo system > app and graphic device > dot use examples -->
-<!-- TODO: not sure if it should be ...-long.gif or ...-short.gif -->
-
-![TODO](./splash-screen-long.gif)
+{% video { source: "/graphic-device/dot-use-examples/splash-screen-long-version.mp4" } %}
 
 ### App header
 
