@@ -1,8 +1,14 @@
 ---
 order: 2
 title: Colour
-hero: ./hero.svg
+hero: ./colour-hero.svg
 ---
+
+<div class="hero">
+
+![TODO](./colour-hero.svg)
+
+</div>
 
 Our colour palette is designed with accessibility in mind. It’s flexible enough to work across all GOV.UK channels.
 

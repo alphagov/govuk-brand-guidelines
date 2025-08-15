@@ -7,6 +7,10 @@ title: Web
 
 If your service is on the service.gov.uk subdomain you must use the GDS Transport font.
 
+{% sectionHighlight { classes: "light-blue" } %}
+
 For in depth guidance on how to correctly apply typography within the web channel, refer to the [Design System Guidelines](https://design-system.service.gov.uk/styles/typeface/).
 
 ![TODO](./design-system.png)
+
+{% endsectionHighlight %}

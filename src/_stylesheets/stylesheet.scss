@@ -49,6 +49,11 @@
   height: auto;
 }
 
+.app-size-recommendation {
+  display: block;
+  font-size: larger;
+}
+
 pre code,
 .app-code {
   border: 1px solid govuk-colour('mid-grey');
@@ -81,4 +86,143 @@ pre code {
 .app-top-border {
   padding-top: 10px;
   border-top: 1px solid #16548a;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  @include govuk-typography-common;
+
+  font-size: 16px;
+  text-align: center;
+}
+
+// Flexbox for arranging things inside the grid
+// Centering elements in flex
+.flex-center {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+}
+
+// Aligning content in flexbox
+.flex-end {
+  align-content: flex-end;
+}
+
+.flex-start {
+  align-content: flex-start;
+}
+
+// Dark magenta section highlight likely to be deleted as it's just framing an image, and the image should have it's own background
+.dark-magenta {
+  color: #ffffff;
+  background-color: #651b3e;
+}
+
+// Image and video styling
+.img-fit img {
+  width: 100%;
+  height: auto;
+}
+
+.img-scale img {
+  max-width: 60%;
+  padding: 30px;
+}
+
+.img-border {
+  margin: 50px;
+  overflow: hidden;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+
+  > * {
+    display: block;
+    margin-bottom: 0;
+    line-height: 0;
+  }
+}
+
+// Grid adjustments
+.app-grid {
+  gap: 15px;
+}
+
+// Other
+.border {
+  padding-top: 10px;
+  border-top: 1px solid #16548a;
+}
+
+.border-white {
+  padding-top: 10px;
+  border-top: 1px solid #ffffff;
+}
+
+// Section highlight adjustments
+.app-section-highlight {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 30px 30px 10px;
+  border-radius: 3px;
+}
+
+// Light background uses 90% blue tint instead of 95%
+.light-blue {
+  color: #000000;
+  background-color: #e8f1f8;
+}
+
+.light-grey {
+  color: #000000;
+  background-color: #f3f3f3;
+}
+
+// Scale, float images
+// container for scaling
+.scale {
+  display: inline-block;
+  // border: 1px solid red;
+}
+
+// image alignment
+.right img {
+  float: right;
+}
+
+// image width
+.width-80 img {
+  max-width: 80%;
+}
+
+.edge {
+  margin-right: -30px;
+  margin-bottom: -10px;
+}
+
+// Typography
+.govuk-heading-m {
+  margin-bottom: 10px;
+  // color: red;
+}
+
+.inset {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 35px;
+  padding: 15px;
+  border-left: 2px solid #1d70b8;
+  border-radius: 0 3px 3px 0;
+  background-color: #e8f1f8;
+}
+
+.inset p {
+  margin: 0;
+  padding: 0;
 }
