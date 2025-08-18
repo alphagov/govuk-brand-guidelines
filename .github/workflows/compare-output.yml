@@ -71,25 +71,22 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            const { commentDiffs } = await import('${{ github.workspace }}/.github/workflows/compare-output/comment-diff.js')
+            const { commentDiff, commentFormattedDiff } = await import('${{ github.workspace }}/.github/workflows/compare-output/comment-diff.js')
 
             // PR information
             const issueNumber = ${{ github.event.pull_request.number }}
             const commit = '${{ github.event.pull_request.head.sha }}'
 
-            const diffs = [
-              {
-                path: '${{ github.workspace }}/.cache/diff/output/html.diff',
-                titleText: 'Changes to HTML output',
-                markerText: 'output/html.diff',
-                skipEmpty: true
-              },
-              {
-                path: '${{ github.workspace }}/.cache/diff/output/other.diff',
-                titleText: 'Other changes to output',
-                markerText: 'output/other.diff',
-                skipEmpty: true
-              }
-            ]
+            await commentFormattedDiff({ github, context, commit }, issueNumber, {
+              path: '${{ github.workspace }}/.cache/diff/output/html.json',
+              titleText: 'Changes to HTML output',
+              markerText: 'output/html.diff',
+              skipEmpty: true
+            })
 
-            await commentDiffs({ github, context, commit }, issueNumber, diffs)
+            await commentDiff({ github, context, commit }, issueNumber, {
+              path: '${{ github.workspace }}/.cache/diff/output/other.diff',
+              titleText: 'Other changes to output',
+              markerText: 'output/other.diff',
+              skipEmpty: true
+            })

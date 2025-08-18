@@ -37,6 +37,46 @@ export async function commentDiffs(githubActionContext, issueNumber, diffs) {
   }
 }
 
+export async function commentFormattedDiff(
+  githubActionContext,
+  issueNumber,
+  { path, titleText, markerText, skipEmpty }
+) {
+  // Read diff from previous step
+  const diffContent = await readFile(path, 'utf8')
+
+  // Skip or delete comment for empty diff
+  if (!diffContent && skipEmpty) {
+    console.log(`Skipping GitHub comment for ${basename(path)}`)
+    await deleteComment(githubActionContext, issueNumber, markerText)
+    return
+  }
+
+  try {
+    await comment(githubActionContext, issueNumber, {
+      markerText,
+      titleText,
+
+      // Add a little note if the diff is empty
+      bodyText: render(JSON.parse(diffContent))
+    })
+  } catch (error) {
+    console.error(error)
+
+    await comment(githubActionContext, issueNumber, {
+      markerText,
+      titleText,
+
+      // Unfortunately the best we can do here is a link to the "Artifacts"
+      // section as [the upload-artifact action doesn't provide the public
+      // URL](https://github.com/actions/upload-artifact/issues/50) :'(
+      bodyText: `The diff could not be posted as a comment. You can download it from the [workflow artifacts](${githubActionRunUrl(
+        githubActionContext.context
+      )}#artifacts).`
+    })
+  }
+}
+
 /**
  * Posts the content of a diff as a comment on a GitHub issue
  *
@@ -83,4 +123,36 @@ export async function commentDiff(
       )}#artifacts).`
     })
   }
+}
+
+function render(diffContent) {
+  const pageChanges = diffContent
+    .map(({ path, url, content }) => {
+      return `<tr><td>
+
+[${path}](${url})
+
+</td>
+<td>
+<details>
+<summary>Diff for ${path}</summary>
+
+\`\`\`diff\n${content}\n\`\`\`
+
+</details>
+</td>
+</tr>`
+    })
+    .join('\n')
+
+  return `
+<table>
+<caption>Pages with content changes</caption>
+<tr>
+  <th>Path</th>
+  <th>Diff</th>
+</tr>
+${pageChanges}
+</table>
+  `
 }
