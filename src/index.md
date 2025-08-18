@@ -4,9 +4,9 @@ title: GOV.UK Brand Guidelines
 hero: ./hero.svg
 ---
 
-## Brand ambition
-
 Since our launch in 2012, GOV.UK has become one of the most recognisable and trusted online destinations in the UK.
+
+## Brand ambition
 
 As we increase the number of places that people meet GOV.UK, such as in people's social feeds, and launch more personalised services like the GOV.UK app, we need our brand identity to do more.
 

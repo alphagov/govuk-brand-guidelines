@@ -4,6 +4,8 @@ title: Logo system
 hero: ./hero.svg
 ---
 
+Some new content in the page
+
 <div class="hero">
 
 ![TODO](./hero.svg)
