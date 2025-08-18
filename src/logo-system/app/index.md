@@ -51,11 +51,15 @@ The examples of logo elements within the app are indicative examples for illustr
 </div>
 
 {% grid { columns: { mobile: 1, desktop: 2 } } %}
+
 <div>
 
 ### App splash screen
 
-<video src="/graphic-device/dot-use-examples/splash-screen-short-version.mp4" controls width="720" style="max-width: 100%"></video>
+{% video { source: [
+    "/graphic-device/dot-use-examples/splash-screen-short-version.mp4",
+    "/graphic-device/dot-use-examples/splash-screen-short-version.webm"
+] } %}
 
 <!-- TODO: not sure if this should be the short or long version (both files are in the folder) -->
 </div>
@@ -63,7 +67,9 @@ The examples of logo elements within the app are indicative examples for illustr
 <div>
 
 ### Crown watermark
+
 ![Screenshot of the GOV.UK app, showing the GOV.UK wordmark centred in the top header and the crown watermark centred at the end of a page.](./app-watermark-example.png)
+
 </div>
 
 {% endgrid %}
@@ -96,7 +102,7 @@ As this is a small use application of the logo elements, we use the enlarged cro
 
 As the family of GOV.UK applications grows, the need for a consistent approach to app icon design is necessary.
 
-The suite of icons should follow the same principles, leading with the GOV.UK wordmark for recognition, with the symbol below, replacing the crown. 
+The suite of icons should follow the same principles, leading with the GOV.UK wordmark for recognition, with the symbol below, replacing the crown.
 
 {% sectionHighlight %}
 

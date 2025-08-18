@@ -211,7 +211,10 @@ Both logo elements have a standalone animation that can be used to add dynamism 
 
 ### Crown
 
-{% video { source: "./wordmark-motion.mp4" } %}
+{% video { source: [
+    "./crown-motion.mp4",
+    "./crown-motion.webm"
+] } %}
 
 </div>
 {% endgrid %}

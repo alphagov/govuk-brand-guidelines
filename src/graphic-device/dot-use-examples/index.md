@@ -13,14 +13,20 @@ The app splash screen utilises the dot in motion to represent GOV.UK bringing to
     
  ### App splash screen (long version)
 
-{% video { source: "./splash-screen-long-version.mp4" } %}
+{% video { source: [
+    "./splash-screen-long-version.mp4",
+    "./splash-screen-long-version.webm"
+] } %}
 
 </div>
 <div>
 
 ### App splash screen (short version)
 
-{% video { source: "./splash-screen-short-version.mp4" } %}
+{% video { source: [
+    "./splash-screen-short-version.mp4",
+    "./splash-screen-short-version.webm"
+] } %}
 
 </div>
 {% endgrid %}
@@ -126,9 +132,9 @@ The dot provides a distinctive, flexible visual thread that ties together differ
 
 To build coherence across channels, our social end frames follow the same motion behaviour as the app splash screen.
 
-This video gives a few indicative examples of how the dot could be used in motion, for illustrative purposes only.
-
-<p class="govuk-body-s app-meta-info">These videos do not contain any audio.</p>
+<div class="inset">
+    <p class="govuk-body">This video gives a few indicative examples of how the dot could be used in motion, for illustrative purposes only.</p>
+</div>
 
 {% grid %}
 
@@ -136,7 +142,12 @@ This video gives a few indicative examples of how the dot could be used in motio
 
 ### Video end frame 16:9
 
-{% video { source: "./End-frame-1920-1080.mp4" } %}
+No audio.
+
+{% video { source: [
+    "./End-frame-1920-1080.mp4",
+    "./End-frame-1920-1080.webm"
+] } %}
 
 </div>
 {% endgrid %}
@@ -147,14 +158,24 @@ This video gives a few indicative examples of how the dot could be used in motio
 
 ### Video end frame 9:16
 
-{% video { source: "./End-frame-1080-1920.mp4" } %}
+No audio.
+
+{% video { source: [
+    "./End-frame-1080-1920.mp4",
+    "./End-frame-1080-1920.webm"
+] } %}
 
 </div>
 <div>
 
 ### Video end frame 1:1
 
-{% video { source: "./End-frame-1080-1080.mp4" } %}
+No audio.
+
+{% video { source: [
+    "./End-frame-1080-1080.mp4",
+    "./End-frame-1080-1080.webm"
+]} %}
 
 </div>
 {% endgrid %}
