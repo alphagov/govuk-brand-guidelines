@@ -1,35 +1,33 @@
 import { blockShortcode } from './utils.js'
 import { swatch } from './swatch.js'
 
-export const swatchList = blockShortcode(function (options = {}) {
-  const defaultOptions = {
-    classes: undefined,
+export const swatchList = blockShortcode(
+  /**
+   * Renders a list of swatches from the provided palette, optionally filtered by group or use
+   *
+   * @param {object} options
+   * @param {string} [options.classes] - A space separated list of CSS classes to add to the swatch list's `class` attribute
+   * @param {string} [options.palette] - The palette from which to pull the colours, default to the one in the site's data
+   * @param {string} [options.group] - Filter for the group of colour (eg. 'blue', 'green', 'red',...) to render from the palette
+   * @param {string} [options.use] - Filter for the use of the colour ('web', 'app',...) to render from the palette
+   * @returns {string}
+   */
+  function ({ classes, palette, use, group } = {}) {
+    palette ??= this.ctx.colours ?? []
 
-    // The colour palette to use
-    // Default to the brand colour palette
-    palette: this.ctx.colours ?? [],
+    // Get an array of colours for the given options
+    let colourList = filterColours(palette, use, group)
 
-    // Filter by the intended use of the colour.
-    // One of 'web', 'app', 'print', `social`.
-    use: undefined,
+    // Modify the array to implant the print option and indicate this is a list of swatches
+    colourList = colourList.map((c) => {
+      return { ...c, print: use === 'print', isInSwatchList: true }
+    })
 
-    // What group of colours to filter down to
-    group: undefined
-  }
-  options = { ...defaultOptions, ...options }
-
-  // Get an array of colours for the given options
-  let colourList = filterColours(options.palette, options.use, options.group)
-
-  // Modify the array to implant the print option and indicate this is a list of swatches
-  colourList = colourList.map((c) => {
-    return { ...c, print: options.use === 'print', isInSwatchList: true }
-  })
-
-  return `<dl class="app-swatch-list${options.classes ? ` ${options.classes}` : ''}">
+    return `<dl class="app-swatch-list${classes ? ` ${classes}` : ''}">
     ${colourList.map((c) => swatch(c)).join(' ')}
   </dl>`
-})
+  }
+)
 
 export function filterColours(palette, use, group) {
   if (use) {

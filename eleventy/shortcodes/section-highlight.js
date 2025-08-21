@@ -1,13 +1,16 @@
 import { blockPairedShortcode } from './utils.js'
 
 export const sectionHighlight = blockPairedShortcode(
-  (content, options = {}) => {
-    const defaultOptions = {
-      classes: undefined
-    }
-    options = { ...defaultOptions, ...options }
-
-    return `<div class="app-section-highlight${options.classes ? ` ${options.classes}` : ''}">
+  /**
+   * Wraps the content in a section whose design makes it stand out from the page
+   *
+   * @param {string} content - The content of the section
+   * @param {object} options
+   * @param {string} [options.classes] - A space separated list of CSS classes to add to the section's `class` attribute
+   * @returns
+   */
+  function (content, { classes } = {}) {
+    return `<div class="app-section-highlight${classes ? ` ${classes}` : ''}">
     ${content}
   </div>`
   }

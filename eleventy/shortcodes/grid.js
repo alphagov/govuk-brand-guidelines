@@ -1,33 +1,44 @@
 import { blockPairedShortcode } from './utils.js'
 
-export const grid = blockPairedShortcode((content, options = {}) => {
-  const defaultOptions = {
-    classes: undefined,
-
-    // The number of columns to use
-    columns: undefined
-  }
-  options = { ...defaultOptions, ...options }
-
-  // Assemble custom properties
-  const cssProperties = []
-  if (typeof options.columns === 'number') {
-    cssProperties.push(`--app-grid-columns-mobile: ${options.columns}`)
-  } else if (typeof options.columns === 'object') {
-    if (options.columns.mobile) {
-      cssProperties.push(`--app-grid-columns-mobile: ${options.columns.mobile}`)
+export const grid = blockPairedShortcode(
+  /**
+   * Wraps the content in a grid of the specified number of columns
+   *
+   * @param {string} content - The content of the grid
+   * @param {options} options
+   * @param {string} [options.classes] - A space separated list of CSS classes to add to the grid's `class` attribute
+   * @param {number | ResponsiveValue<number>} options.columns - The number of columns in the grid
+   * @returns
+   */
+  function (content, { classes, columns } = {}) {
+    // Assemble custom properties
+    const cssProperties = []
+    if (typeof columns === 'number') {
+      cssProperties.push(`--app-grid-columns-mobile: ${columns}`)
+    } else if (typeof columns === 'object') {
+      if (columns.mobile) {
+        cssProperties.push(`--app-grid-columns-mobile: ${columns.mobile}`)
+      }
+      if (columns.tablet) {
+        cssProperties.push(`--app-grid-columns-tablet: ${columns.tablet}`)
+      }
+      if (columns.desktop) {
+        cssProperties.push(`--app-grid-columns-desktop: ${columns.desktop}`)
+      }
     }
-    if (options.columns.tablet) {
-      cssProperties.push(`--app-grid-columns-tablet: ${options.columns.tablet}`)
-    }
-    if (options.columns.desktop) {
-      cssProperties.push(
-        `--app-grid-columns-desktop: ${options.columns.desktop}`
-      )
-    }
-  }
 
-  return `<div class="app-grid${options.classes ? ` ${options.classes}` : ''}" style="${cssProperties.join(';')}">
+    return `<div class="app-grid${classes ? ` ${classes}` : ''}" style="${cssProperties.join(';')}">
     ${content}
   </div>`
-})
+  }
+)
+
+/**
+ * An object representing responsive values of a given type
+ *
+ * @template Type
+ * @typedef {object} ResponsiveValue
+ * @property {Type} [mobile]
+ * @property {Type} [tablet]
+ * @property {Type} [desktop]
+ */
