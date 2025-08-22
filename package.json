@@ -4,7 +4,7 @@
   "name": "govuk-brand-guidelines",
   "description": "GOV.UK brand guidelines website.",
   "scripts": {
-    "start": "npm run clean && npx @11ty/eleventy --serve",
+    "start": "npm run clean && npx nodemon --watch eleventy --exec 'npx @11ty/eleventy --serve'",
     "build": "npm run clean && npx @11ty/eleventy",
     "clean": "rimraf -I _site",
     "lint:scss": "npm run lint:scss:cli -- '**/*.scss'",
@@ -46,6 +46,7 @@
     "markdown-it": "^14.1.0",
     "markdown-it-govuk": "^0.6.0",
     "neostandard": "^0.12.2",
+    "nodemon": "^3.1.10",
     "nunjucks": "^3.2.4",
     "outdent": "^0.8.0",
     "postcss": "^8.5.6",
