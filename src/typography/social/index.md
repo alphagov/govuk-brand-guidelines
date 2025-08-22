@@ -5,8 +5,6 @@ title: Social
 
 ## GDS Transport and social media
 
-GDS Transport is our primary brand typeface.
-
 Using it within our social channels can provide significant advantages, particularly in strengthening brand recognition and creating a cohesive user experience across platforms and channels.
 
 {% sectionHighlight { classes: "light-blue" } %}
