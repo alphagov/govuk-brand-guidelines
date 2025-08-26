@@ -17,9 +17,9 @@ Used within our wordmark and as a graphic device across all GOV.UK channels, the
 </div>
 <div>
 
-<div class="inset">
-    <p class="govuk-body">The examples shown in this video are indicative and for illustrative purposes only.</p>
-</div>
+{% callout %}
+The examples shown in this video are indicative and for illustrative purposes only.
+{% endcallout %}
 
 {% video { source: [
   "./dot-animations.mp4",

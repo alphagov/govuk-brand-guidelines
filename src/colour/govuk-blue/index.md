@@ -94,11 +94,9 @@ You must make sure that the contrast ratio of colours used meets [Web Content Ac
 
 To maintain consistency across channels the colours within our palette should never be changed or altered. Exceptions to the recommendations below must be approved by the brand team.
 
-<div class="inset">
-
+{% callout %}
 Indicative examples for illustrative purposes only.
-
-</div>
+{% endcallout %}
 
 {% grid { columns: { mobile: 2, desktop: 2 } } %}
 

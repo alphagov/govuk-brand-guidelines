@@ -24,11 +24,9 @@ Type hierarchy is key to creating content that is readable and easy to follow.
 
 Whilst there are many ways to build visual hierarchy, mixing weight and scale across tags, headlines and body copy is a simple yet effective approach.
 
-<div class="inset">
-
+{% callout %}
 Indicative examples for illustrative purposes only.
-
-</div>
+{% endcallout %}
 
 {% sectionHighlight { classes: "light-blue" } %}
 

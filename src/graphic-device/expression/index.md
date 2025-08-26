@@ -9,9 +9,9 @@ The dot can take on different roles – guiding users through content, journeys 
 
 It should always serve a clear purpose.
 
-<div class="inset">
-    <p class="govuk-body">The examples on this page are indicative and for illustrative purposes only.</p>
-</div>
+{% callout %}
+The examples on this page are indicative and for illustrative purposes only.
+{% endcallout %}
 
 {% grid { columns: 2 } %}
 

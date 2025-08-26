@@ -4,6 +4,7 @@ import { swatch } from './shortcodes/swatch.js'
 import { swatchList, filterColours } from './shortcodes/swatch-list.js'
 import { testExample } from './shortcodes/test-example.js'
 import { videoPlayer } from './shortcodes/video-player.js'
+import { callout } from './shortcodes/callout.js'
 
 /**
  *  @param {import("@11ty/eleventy/UserConfig")} eleventyConfig
@@ -27,6 +28,7 @@ export function setupShortcodes(eleventyConfig) {
   // {% grid(param1, param2) %} Content {% endgrid %}
   // ↓
   // function grid(content, param1, param2)
+  eleventyConfig.addPairedShortcode('callout', callout)
   eleventyConfig.addPairedShortcode('grid', grid)
   eleventyConfig.addPairedShortcode('sectionHighlight', sectionHighlight)
   eleventyConfig.addPairedShortcode('testExample', testExample)

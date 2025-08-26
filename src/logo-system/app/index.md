@@ -44,11 +44,9 @@ We always lead with the wordmark as our primary brand identifier - positioning i
 
 We use the crown as a supporting element that sits below or at the end of content.
 
-<div class="inset">
-
+{% callout %}
 The examples of logo elements within the app are indicative examples for illustrative purposes only.
-
-</div>
+{% endcallout %}
 
 {% grid { columns: { mobile: 1, desktop: 2 } } %}
 
