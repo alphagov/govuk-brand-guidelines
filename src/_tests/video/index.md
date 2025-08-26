@@ -77,9 +77,26 @@ This defaults to `true` so that users don't need to repeatedly restart short dem
 
 The **maximum** width of the video player can be customised with `width` parameter.
 
-The dimensions of videos aren't fixed. The video player's width will be capped to the maximum width of the container or viewport, and the height will adapt to match the aspect ratio of the video being played.
+The dimensions of videos aren't fixed. The video player's width will be capped to the maximum width of the container or viewport.
 
 {% video { source: "mp4-h264.mp4", width: 200 } %}
+
+## `height` and `aspectRatio` parameters
+
+Define a height for the video player, or calculate the height using an aspect ratio. You only need to specify one of these.
+
+- `height` is provided as a number: `{ height: 300 }`
+- `aspectRatio` is provided as a colon-separated string: `{ aspectRatio: "9:16" }`
+
+**Both `height` and `aspectRatio` are overridden by the intrinsic dimensions of the video file, once it has loaded.** This is only to 'reserve' space on the page so that the video player appears correctly sized before the video has loaded.
+
+{% grid { columns: 2 } %}
+
+{% video { source: "mp4-h264.mp4", width: 200, height: 300 } %}
+
+{% video { source: "mp4-h264.mp4", width: 200, aspectRatio: "9:16" } %}
+
+{% endgrid %}
 
 ## `classes` parameter
 
