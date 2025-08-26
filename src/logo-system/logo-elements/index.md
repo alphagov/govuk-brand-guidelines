@@ -11,14 +11,11 @@ As our primary identifier, the GOV.UK wordmark should be used in all application
 
 The exception to this rule is the GOV.UK website. See the [Web – Logo system page](/logo-system/web/).
 
-{% sectionHighlight %}
-
 <div class="img-scale flex-center">
 
 ![The wordmark for "GOV.UK". The dot is centred vertically and coloured in accent teal.](./wordmark.svg)
 
 </div>
-{% endsectionHighlight %}
 
 ## Crown
 
@@ -26,14 +23,11 @@ As our primary identifier, the GOV.UK wordmark should be used in all application
 
 The exception to this rule is the GOV.UK website. See the [Web – Logo system page](/logo-system/web/).
 
-{% sectionHighlight %}
-
 <div class="img-scale flex-center">
 
 ![The crown element of the GOV.UK logo.](./crown2.svg)
 
 </div>
-{% endsectionHighlight %}
 
 ### Using the crown as a supporting element
 
@@ -44,6 +38,8 @@ A lock-up system where we can position the crown in close proximity to the GOV.U
 ![Desktop and mobile background showing the GOV.UK wordmark placed at the very centre with the crown centred at the bottom.](./crown-supporting-element.svg)
 
 </div>
+
+{% sectionHighlight %}
 
 ## Lock-up
 
@@ -67,7 +63,6 @@ In order to maintain visual hierarchy, consistency and balance between the two e
 
 The size of the crown can be adjusted depending on context. For example, when being used at smaller sizes such as within the app icon, the enlarged crown should be used to aid accessibility and legibility.
 
-{% sectionHighlight %}
 {% grid { columns: { mobile: 1, desktop: 2 } } %}
 
 <div>
@@ -97,9 +92,7 @@ Wordmark dot = 1× crown dot
 
 </div>
 {% endgrid %}
-{% endsectionHighlight %}
 
-{% sectionHighlight %}
 {% grid { columns: { mobile: 1, desktop: 1 } } %}
 
 <div>
@@ -119,7 +112,6 @@ The clear space area is defined by the dot size within our wordmark.
 </div>
 </div>
 {% endgrid %}
-{% endsectionHighlight %}
 
 ## Minimum sizing
 
@@ -127,7 +119,6 @@ Keeping the logo at its minimum size helps ensure it stays legible and accessibl
 
 If it’s too small, it can lose detail and be harder for some users to read or recognise.
 
-{% sectionHighlight %}
 {% grid { columns: { mobile: 1, desktop: 2 } } %}
 
 <!-- TODO: suggest adding the arrow to the image -->
