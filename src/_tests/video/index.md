@@ -13,7 +13,7 @@ All formats are provided via the `source` parameter.
 Videos with a single source file can simply refer to the file:
 
 ```
-{ source: "path/to/video.mp4" }
+{% raw %}{% video { source: "path/to/video.mp4" } %}{% endraw %}
 ```
 
 {% video { source: "mp4-h264.mp4" } %}
@@ -23,10 +23,10 @@ Videos with a single source file can simply refer to the file:
 Videos with multiple source files can pass them as an array:
 
 ```
-{ source: [
+{% raw %}{% video { source: [
   "path/to/video.mp4",
-  "path/to/another/video.webm"
-] }
+  "path/to/video.webm"
+] } %}{% endraw %}
 ```
 
 {% video { source: [
@@ -41,12 +41,11 @@ Usually, a video file's [media type](https://en.wikipedia.org/wiki/Media_type) i
 If **any** of the video sources have differing IMEs, all video sources must be defined with explicit media types.
 
 ```
-{ source: {
+{% raw %}{% video { source: {
   "mp4": "path/to/video.mp4",
-  "webm": "path/to/another/video.webm",
-  "ogg": "path/to/yet/another/video.ogv",
-  "quicktime": "path/to/another/another/video.mov"
-} }
+  "webm": "path/to/video.webm",
+  "quicktime": "path/to/video.mov"
+} } %}{% endraw %}
 ```
 
 {% video { source: {
@@ -63,6 +62,13 @@ Fallback text must be plain text (no HTML or Markdown formatting) and a single p
 
 This defaults to the text "This video is unavailable."
 
+```
+{% raw %}{% video {
+  source: "video.mp4",
+  fallbackText: "No video for you."
+} %}{% endraw %}
+```
+
 {% video { source: "mp4-h264.mp4", fallbackText: "A series of examples of the dot in motion, first expanding into a speech bubble, then as numbered steps, highlighting one of four sections in turn, expanding to highlight a particular word in a statement, and then splitting, rotating and recombining to form the dot in the GOV.UK wordmark." } %}
 
 ## `loop` parameter
@@ -71,6 +77,13 @@ Whether the video should repeat indefinitely once played.
 
 This defaults to `true` so that users don't need to repeatedly restart short demos. Set `{ loop: false }` to turn off looping.
 
+```
+{% raw %}{% video {
+  source: "path/to/video.mp4",
+  loop: false
+} %}{% endraw %}
+```
+
 {% video { source: "mp4-h264.mp4", loop: false } %}
 
 ## `width` parameter
@@ -78,6 +91,13 @@ This defaults to `true` so that users don't need to repeatedly restart short dem
 The **maximum** width of the video player can be customised with `width` parameter.
 
 The dimensions of videos aren't fixed. The video player's width will be capped to the maximum width of the container or viewport.
+
+```
+{% raw %}{% video {
+  source: "path/to/video.mp4",
+  width: 200
+} %}{% endraw %}
+```
 
 {% video { source: "mp4-h264.mp4", width: 200 } %}
 
@@ -90,12 +110,23 @@ Define a height for the video player, or calculate the height using an aspect ra
 
 **Both `height` and `aspectRatio` are overridden by the intrinsic dimensions of the video file, once it has loaded.** This is only to 'reserve' space on the page so that the video player appears correctly sized before the video has loaded.
 
-{% grid { columns: 2 } %}
+```
+{% raw %}{% video {
+  source: "path/to/video.mp4",
+  width: 200,
+  height: 300
+} %}
 
+{% video {
+  source: "path/to/video.mp4",
+  width: 200,
+  aspectRatio: "9:16"
+} %}{% endraw %}
+```
+
+{% grid { columns: { tablet: 2 } } %}
 {% video { source: "mp4-h264.mp4", width: 200, height: 300 } %}
-
 {% video { source: "mp4-h264.mp4", width: 200, aspectRatio: "9:16" } %}
-
 {% endgrid %}
 
 ## `classes` parameter
