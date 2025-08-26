@@ -125,7 +125,7 @@ Define a height for the video player, or calculate the height using an aspect ra
 ```
 
 {% grid { columns: { tablet: 2 } } %}
-{% video { source: "mp4-h264.mp4", width: 200, height: 300 } %}
+{% video { source: "mp4-h264.mp4", width: 200, height: 200 } %}
 {% video { source: "mp4-h264.mp4", width: 200, aspectRatio: "9:16" } %}
 {% endgrid %}
 
