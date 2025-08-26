@@ -132,9 +132,9 @@ The dot provides a distinctive, flexible visual thread that ties together differ
 
 To build coherence across channels, our social end frames follow the same motion behaviour as the app splash screen.
 
-<div class="inset">
-    <p class="govuk-body">This video gives a few indicative examples of how the dot could be used in motion, for illustrative purposes only.</p>
-</div>
+{% callout %}
+This video gives a few indicative examples of how the dot could be used in motion, for illustrative purposes only.
+{% endcallout %}
 
 {% grid %}
 

@@ -1,0 +1,7 @@
+// Intended to be used as a modifier on top of the govuk inset text component
+.app-callout {
+  margin: govuk-spacing(4) 0 35px;
+  border-left: 2px solid govuk-colour('blue');
+  border-radius: 0 3px 3px 0;
+  background-color: $app-light-blue;
+}

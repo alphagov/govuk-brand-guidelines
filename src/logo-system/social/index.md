@@ -61,11 +61,9 @@ We use the crown as a supporting element that sits below or to the right of the 
 </div>
 {% endgrid %}
 
-<div class="inset">
-
+{% callout %}
 Indicative examples for illustrative purposes only.
-
-</div>
+{% endcallout %}
 
 {% sectionHighlight { classes: "light-blue" } %}
 {% grid { columns: { mobile: 3, desktop: 3 } } %}

@@ -20,11 +20,9 @@ To aid recognition and trust we retain the locked-up version of the crown and wo
 
 The lock-up combining the crown and wordmark is for use throughout the web experience, in moments such as the web header and footer.
 
-<div class="inset">
-
+{% callout %}
 Indicative examples for illustrative purposes only.
-
-</div>
+{% endcallout %}
 
 ![Screenshot showing web header on mobile and desktop.](./web-headers-grouped.png)
 
