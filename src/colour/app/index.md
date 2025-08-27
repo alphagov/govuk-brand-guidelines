@@ -47,6 +47,10 @@ The app palette contains all primary colours, tints, shades and accents. Guidanc
 
 For coherence with web, the app also uses the blue header throughout key screens. This also adds visual hierarchy and aids brand recognition.
 
+{% callout %}
+Indicative examples for illustrative purposes only.
+{% endcallout %}
+
 ### Mobile web header
 
 ![TODO](./mobile-header.png)
@@ -58,6 +62,10 @@ For coherence with web, the app also uses the blue header throughout key screens
 Indicative examples for illustrative purposes only.
 
 ## Examples
+
+{% callout %}
+Indicative examples for illustrative purposes only.
+{% endcallout %}
 
 Within app we lead with the Primary Blue and Accent Teal, from splash screen to core components.
 

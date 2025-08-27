@@ -70,9 +70,14 @@ Tonal colour
 ![TODO](./tone-companion-colour.png)
 Companion colour
 
-### Examples
+### Tonal colour examples
+
+{% callout %}
+Indicative examples for illustrative purposes only.
+{% endcallout %}
 
 Colour can be used to reflect tone of a message.
+
 For more sensitive messaging, colours from within the same tonal range are used to feel more serious, informative and functional.
 
 ![TODO](./example-tonal-1.png)
@@ -148,10 +153,15 @@ Remember, some users browse with high-contrast settings or dark mode. Colours ma
 {% swatch { label: "Red shade 50%", hex: "#651B1B" } %}
 {% swatch { label: "Primary yellow", hex: "#FFDD00" } %}
 
-### Examples
+### Companion colour examples
 
 Colour can be used to reflect tone of a message.
+
 For more sensitive messaging, colours from within the same tonal range are used to feel more serious, informative and functional.
+
+{% callout %}
+Indicative examples for illustrative purposes only.
+{% endcallout %}
 
 ![TODO](./example-companion-1.png)
 
