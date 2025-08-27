@@ -13,11 +13,11 @@ Lock-ups help show the relationship between GOV.UK and the service, channel or d
 
 We have five versions:
 
-1. Horizontal
-2. Horizontal with crown
-3. Stacked (web)
-4. Stacked (apps)
-5. Stacked with crown
+1. [Horizontal](#horizontal)
+2. [Horizontal with crown](#horizontal-with-crown)
+3. [Stacked for web](#stacked-for-web)
+4. [Stacked for apps](#stacked-for-app)
+5. [Stacked with crown](#stacked-with-crown)
 
 To keep the brand consistent, use each version exactly as shown – do not resize, reposition or remove any part.
 
@@ -56,7 +56,7 @@ In both horizontal and stacked lock-ups, the space between the wordmark and prod
 
 <div class="app-top-border">
 
-### Horizontal
+### <a name="horizontal"></a>Horizontal
 
 Product name spacing on horizontal and stacked lock-ups should be proportionate to the type size.
 
@@ -71,7 +71,7 @@ On 14.2pt type, letter spacing should be -0.21 pixels.
 
 <div class="app-top-border">
 
-### Horizontal with crown
+### <a name="horizontal-with-crown"></a>Horizontal with crown
 
 Spacing between wordmark and crown on horizontal lock-up should be 3 crown dots or 7px spacing on web.
 
@@ -84,7 +84,7 @@ Spacing between wordmark and crown on horizontal lock-up should be 3 crown dots 
 
 <div class="app-top-border">
 
-### Stacked for web
+### <a name="stacked-for-web"></a>Stacked for web
 
 Product name on stacked lock-ups should be aligned left to GOV.UK wordmark.
 
@@ -99,7 +99,7 @@ Spacing between wordmark and product name should be 1 large dot or 7 pixels from
 </div>
 <div class="app-top-border">
 
-### Stacked for app
+### <a name="stacked-for-app"></a>Stacked for app
 
 Product name on stacked lock-ups should be centre to GOV.UK wordmark.
 
@@ -113,7 +113,7 @@ Spacing between wordmark and product name should be 1 large dot or 7 pixels from
 </div>
 <div class="app-top-border">
 
-### Stacked with crown
+### <a name="stacked-with-crown"></a>Stacked with crown
 
 Product name on stacked lock-ups should be aligned left to crown.
 

@@ -9,7 +9,7 @@ Our wordmark has been redrawn, elevating the dot into a position that signifies 
 
 As our primary identifier, the GOV.UK wordmark should be used in all applications of the logo.
 
-The exception to this rule is the GOV.UK website. See the [Web – Logo system page](/logo-system/web/).
+[The exception to this rule is the GOV.UK website](/logo-system/web/).
 
 {% sectionHighlight %}
 
@@ -24,7 +24,7 @@ The exception to this rule is the GOV.UK website. See the [Web – Logo system p
 
 As our primary identifier, the GOV.UK wordmark should be used in all applications of the logo.
 
-The exception to this rule is the GOV.UK website. See the [Web – Logo system page](/logo-system/web/).
+[The exception to this rule is the GOV.UK website](/logo-system/web/).
 
 {% sectionHighlight %}
 

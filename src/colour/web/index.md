@@ -11,47 +11,61 @@ To reference colours from the palette directly you should use the `govuk-colour`
 
 Avoid using the palette colours if there is a Sass variable that is designed for your context. For example, if you are styling the error state of a component you should use the `$govuk-error-colour` Sass variable rather than `govuk-colour("red")`.
 
-### Blues
+Our web palette has:
+ 
+- [blues](#blues)
+- [greens](#greens)
+- [teals](#teals)
+- [purples](#purples)
+- [magentas](#magentas)
+- [reds](#reds)
+- [oranges](#oranges)
+- [yellows](#yellows)
+- [browns](#browns)
+- [neutrals](#neutrals)
+- [web functional colours](#web-functional-colours)
+
+### <a name="blues"></a>Blues
 
 {% swatchList { use: "web", group: "blue" } %}
 
-### Greens
+### <a name="greens"></a>Greens
 
 {% swatchList { use: "web", group: "green" } %}
 
-### Teals
+### <a name="teals"></a>Teals
 
 {% swatchList { use: "web", group: "teal" } %}
 
-### Purples
+### <a name="purples"></a>Purples
 
 {% swatchList { use: "web", group: "purple" } %}
 
-### Magentas
+### <a name="magentas"></a>Magentas
 
 {% swatchList { use: "web", group: "magenta" } %}
 
-### Reds
+### <a name="reds"></a>Reds
 
 {% swatchList { use: "web", group: "red" } %}
 
-### Oranges
+### <a name="oranges"></a>Oranges
 
 {% swatchList { use: "web", group: "orange" } %}
 
-### Yellows
+### <a name="yellows"></a>Yellows
 
 {% swatchList { use: "web", group: "yellow" } %}
 
-### Browns
+### <a name="browns"></a>Browns
 
 {% swatchList { use: "web", group: "brown" } %}
 
-### Neutrals
+### <a name="neutrals"></a>Neutrals
 
 {% swatchList { use: "web", group: "neutral" } %}
 
-### Web functional colours
+### <a name="web-functional-colours"></a>Web functional colours
 
 If you are using GOV.UK Frontend or the GOV.UK Prototype Kit, use the [Sass variables](https://frontend.design-system.service.gov.uk/sass-api-reference/#colours) provided rather than copying the hexadecimal (hex) colour values. For example, use `$govuk-brand-colour` rather than `#1d70b8`.
 

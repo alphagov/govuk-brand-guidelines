@@ -7,39 +7,51 @@ title: App
 
 The app palette contains all primary colours, tints, shades and accents. Guidance outlined within the overview section should be followed to ensure brand coherence across channels.
 
-### Blues
+Our app palette has:
+ 
+- [blues](#blues)
+- [greens](#greens)
+- [teals](#teals)
+- [purples](#purples)
+- [magentas](#magentas)
+- [reds](#reds)
+- [oranges](#oranges)
+- [yellows](#yellows)
+- [neutrals](#neutrals)
+
+### <a name="blues"></a>Blues
 
 {% swatchList { use: "app", group: "blue" } %}
 
-### Greens
+### <a name="greens"></a>Greens
 
 {% swatchList { use: "app", group: "green" } %}
 
-### Teals
+### <a name="teals"></a>Teals
 
 {% swatchList { use: "app", group: "teal" } %}
 
-### Purples
+### <a name="purples"></a>Purples
 
 {% swatchList { use: "app", group: "purple" } %}
 
-### Magentas
+### <a name="magentas"></a>Magentas
 
 {% swatchList { use: "app", group: "magenta" } %}
 
-### Reds
+### <a name="reds"></a>Reds
 
 {% swatchList { use: "app", group: "red" } %}
 
-### Oranges
+### <a name="oranges"></a>Oranges
 
 {% swatchList { use: "app", group: "orange" } %}
 
-### Yellows
+### <a name="yellows"></a>Yellows
 
 {% swatchList { use: "app", group: "yellow" } %}
 
-### Neutrals
+### <a name="neutrals"></a>Neutrals
 
 {% swatchList { use: "app", group: "neutral" } %}
 
