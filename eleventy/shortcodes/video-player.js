@@ -90,9 +90,9 @@ export const videoPlayer = blockShortcode((options = {}) => {
   // playsinline = prevents video defaulting to fullscreen on mobile devices
   // muted = has the video muted by default (can be unmuted with controls)
   // loop = video repeats itself once concluded (useful for short videos)
-  return `<video
-    class="app-prose-video${options.classes ? ` ${options.classes}` : ''}"
-    width="${playerWidth}"
+
+  return `<video${options.classes ? ` class="${options.classes}"` : ''}
+    width="${options.width}"
     height="${playerHeight}"
     controls
     playsinline

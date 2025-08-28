@@ -1,0 +1,10 @@
+.app-prose img,
+.app-prose video {
+  max-width: 100%;
+  height: auto;
+}
+
+.app-prose video {
+  width: auto;
+  max-height: 90vh;
+}

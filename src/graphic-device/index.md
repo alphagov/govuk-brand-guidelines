@@ -13,7 +13,7 @@ Used within our wordmark and as a graphic device across all GOV.UK channels, the
 {% grid %}
 
 <div>
-    <img src="./the-dot.svg" alt="The GOV.UK wordmark, with an arrow that points to the dot." class="app-prose-image" loading="lazy" decoding="async" width="669" height="180" style="padding: 30px; max-width: calc(100% - 60px); background-color: #1d70b8;">
+    <img src="./the-dot.svg" alt="The GOV.UK wordmark, with an arrow that points to the dot." loading="lazy" decoding="async" width="669" height="180" style="padding: 30px; max-width: calc(100% - 60px); background-color: #1d70b8;">
 </div>
 <div>
 

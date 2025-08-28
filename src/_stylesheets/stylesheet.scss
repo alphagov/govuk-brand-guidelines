@@ -19,6 +19,8 @@
 @import 'govuk/components/service-navigation';
 @import 'govuk/components/skip-link';
 
+@import 'prose';
+
 // App components
 @import 'aria-current';
 @import 'callout';
@@ -49,17 +51,6 @@
   @include govuk-media-query($from: tablet) {
     display: none;
   }
-}
-
-.app-prose-image,
-.app-prose-video {
-  max-width: 100%;
-  height: auto;
-}
-
-.app-prose-video {
-  width: auto;
-  max-height: 90vh;
 }
 
 .app-size-recommendation {
