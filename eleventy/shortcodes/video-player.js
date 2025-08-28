@@ -8,6 +8,8 @@ export const videoPlayer = blockShortcode((options = {}) => {
 
     // Player dimensions
     width: 600,
+    height: undefined,
+    aspectRatio: '16:9',
 
     // The source(s) for video files
     //
@@ -62,6 +64,25 @@ export const videoPlayer = blockShortcode((options = {}) => {
     (source) => `<source src="${source.file}" type="${source.type}">`
   )
 
+  // If width is undefined or not a valid number, set a default
+  // Later calculations rely on this existing
+  const playerWidth = !isNaN(options.width)
+    ? Number(options.width)
+    : defaultOptions.width
+
+  // If height is undefined, calculate player height from width and aspectRatio
+  let playerHeight = !isNaN(options.width) ? Number(options.height) : null
+
+  if (!playerHeight && options.aspectRatio) {
+    const aspectRatio = options.aspectRatio.match(/^[0-9]+:[0-9]+$/)
+      ? options.aspectRatio
+      : defaultOptions.aspectRatio
+
+    const ratioParts = aspectRatio.split(':')
+    const multiplier = Number(ratioParts[1]) / Number(ratioParts[0])
+    playerHeight = Math.ceil(playerWidth * multiplier)
+  }
+
   // Create video element
   //
   // Video specific parameters:
@@ -71,7 +92,8 @@ export const videoPlayer = blockShortcode((options = {}) => {
   // loop = video repeats itself once concluded (useful for short videos)
   return `<video
     class="app-prose-video${options.classes ? ` ${options.classes}` : ''}"
-    width="${options.width}"
+    width="${playerWidth}"
+    height="${playerHeight}"
     controls
     playsinline
     muted
