@@ -18,7 +18,7 @@ Used within our wordmark and as a graphic device across all GOV.UK channels, the
 <div>
 
 {% callout %}
-The examples shown in this video are indicative and for illustrative purposes only.
+Indicative examples for illustrative purposes only.
 {% endcallout %}
 
 {% video { source: [

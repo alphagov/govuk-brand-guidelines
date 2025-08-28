@@ -35,6 +35,10 @@ Accent teal also sits alongside to add impact and help the brand feel more moder
 
 We lead with the Primary Blue and Accent Teal across all GOV.UK channels. From the blue header on web and app, to branded banners within social platforms, this aids brand recognition and establishes trust.
 
+{% callout %}
+Indicative examples for illustrative purposes only.
+{% endcallout %}
+
 {% sectionHighlight { classes: "light-blue" } %}
 {% grid { columns: { mobile: 1, desktop: 2 } } %}
 
@@ -80,8 +84,6 @@ We lead with the Primary Blue and Accent Teal across all GOV.UK channels. From t
 </div>
 {% endgrid %}
 
-Indicative examples for illustrative purposes only.
-
 {% endsectionHighlight %}
 
 ## Colour accessibility
@@ -92,11 +94,7 @@ You must make sure that the contrast ratio of colours used meets [Web Content Ac
 
 ## Incorrect colour usage
 
-To maintain consistency across channels the colours within our palette should never be changed or altered. Exceptions to the recommendations below must be approved by the brand team.
-
-{% callout %}
-Indicative examples for illustrative purposes only.
-{% endcallout %}
+To maintain consistency across channels the colours within our palette should never be changed or altered. Exceptions to these recommendations must be approved by the brand team.
 
 {% grid { columns: { mobile: 2, desktop: 2 } } %}
 

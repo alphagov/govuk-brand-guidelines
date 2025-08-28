@@ -132,10 +132,6 @@ The dot provides a distinctive, flexible visual thread that ties together differ
 
 To build coherence across channels, our social end frames follow the same motion behaviour as the app splash screen.
 
-{% callout %}
-This video gives a few indicative examples of how the dot could be used in motion, for illustrative purposes only.
-{% endcallout %}
-
 {% grid %}
 
 <div>
@@ -188,7 +184,9 @@ Dot behaviours provide flexibility in how thumbnails can be created for a variet
 
 Thumbnails should always use the dot in a purposeful way.
 
-See these indicative examples of dot use within thumbnails. These examples are shown for illustrative purposes only.
+{% callout %}
+Indicative examples for illustrative purposes only.
+{% endcallout %}
 
 <!-- Obviously, that's not the right heading, needs proper design -->
 
@@ -246,9 +244,9 @@ See these indicative examples of dot use within thumbnails. These examples are s
 
 The dot can also be used as a static graphic, adding emphasis and helping guide users through content.
 
-See these indicative examples of static dot graphics.
-
-<p class="govuk-body-s app-meta-info">These examples are shown for illustrative purposes only.</p>
+{% callout %}
+Indicative examples for illustrative purposes only.
+{% endcallout %}
 
 {% grid { columns: { mobile: 2, tablet: 4 }, classes: "app-grid-reduced-gap" } %}
 
@@ -279,11 +277,9 @@ See these indicative examples of static dot graphics.
 
 While it's important to use the dot in a purposeful way, it can effectively guide user attention and break down information to enhance the overall experience.
 
-See this indicative example of the dot used throughout a storyboard.
-
-Such as in the instagram story below;
-
-<p class="govuk-body-s app-meta-info">This example is shown for illustrative purposes only.</p>
+{% callout %}
+Indicative examples for illustrative purposes only.
+{% endcallout %}
 
 {% grid { columns: { mobile: 3, tablet: 6 }, classes: "app-grid-reduced-gap" } %}
 

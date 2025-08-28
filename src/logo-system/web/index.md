@@ -26,11 +26,9 @@ Indicative examples for illustrative purposes only.
 
 ![Screenshot showing web header on mobile and desktop.](./web-headers-grouped.png)
 
-## Footer
-
 {% sectionHighlight { classes: "light-blue" } %}
 
-<!-- TODO: There is no text in the PDF but should have something here -->
+We also use the crown as a supporting element within the footer at the end of content.
 
 ![Screenshot showing web footer on desktop.](./web-footer-example.png)
 {% endsectionHighlight %}
@@ -38,6 +36,10 @@ Indicative examples for illustrative purposes only.
 ## Favicon
 
 In line with minimum size guidance, within web favicons we use the simplified crown. This is to retain legibility and brand recognition and small sizes.
+
+{% callout %}
+Indicative examples for illustrative purposes only.
+{% endcallout %}
 
 {% sectionHighlight { classes: "light-blue" } %}
 

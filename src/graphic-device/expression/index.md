@@ -10,7 +10,7 @@ The dot can take on different roles – guiding users through content, journeys 
 It should always serve a clear purpose.
 
 {% callout %}
-The examples on this page are indicative and for illustrative purposes only.
+Indicative examples for illustrative purposes only.
 {% endcallout %}
 
 {% grid { columns: 2 } %}
@@ -50,6 +50,10 @@ The examples on this page are indicative and for illustrative purposes only.
 Motion adds energy to our brand, especially when we need to capture attention or guide the user.
 
 The examples below show how the dot takes on different roles through motion.
+
+{% callout %}
+Indicative examples for illustrative purposes only.
+{% endcallout %}
 
 {% grid { columns: { tablet: 2 } } %}
 

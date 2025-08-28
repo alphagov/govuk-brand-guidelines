@@ -102,6 +102,8 @@ Use for success messages
 
 ### Web palette example
 
+{% callout %}
 Indicative examples for illustrative purposes only.
+{% endcallout %}
 
 ![TODO](./example.png)

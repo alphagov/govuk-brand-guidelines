@@ -82,6 +82,10 @@ img goes here
 <!-- TODO: the next two headings started with a small image that is not in here yet
            but we might not need it for consistency reasons? -->
 
+{% callout %}
+Indicative examples for illustrative purposes only.
+{% endcallout %}
+
 {% grid { columns: { mobile: 2, desktop: 2 } } %}
 
 <div class="border">
@@ -112,6 +116,10 @@ Type settings are essential for both accessibility and brand consistency. Well-s
 Consistent application of font sizes, line height, and letter spacing creates a cohesive visual experience across all content types.
 
 Depending on the size of type, different settings should be applied, as illustrated here.
+
+{% callout %}
+Indicative examples for illustrative purposes only.
+{% endcallout %}
 
 {% grid { columns: { mobile: 2, desktop: 2 } } %}
 
