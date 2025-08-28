@@ -8,7 +8,7 @@ title: Print
 Use these colours for printed materials like documents, or in custom formats where appropriate.
 
 Our print palette has:
- 
+
 - [blues](#blues)
 - [greens](#greens)
 - [teals](#teals)
@@ -19,38 +19,38 @@ Our print palette has:
 - [yellows](#yellows)
 - [neutrals](#neutrals)
 
-### <a name="blues"></a>Blues
+### Blues
 
 {% swatchList { use: "print", group: "blue" } %}
 
-### <a name="greens"></a>Greens
+### Greens
 
 {% swatchList { use: "print", group: "green" } %}
 
-### <a name="teals"></a>Teals
+### Teals
 
 {% swatchList { use: "print", group: "teal" } %}
 
-### <a name="purples"></a>Purples
+### Purples
 
 {% swatchList { use: "print", group: "purple" } %}
 
-### <a name="magentas"></a>Magentas
+### Magentas
 
 {% swatchList { use: "print", group: "magenta" } %}
 
-### <a name="reds"></a>Reds
+### Reds
 
 {% swatchList { use: "print", group: "red" } %}
 
-### <a name="oranges"></a>Oranges
+### Oranges
 
 {% swatchList { use: "print", group: "orange" } %}
 
-### <a name="yellows"></a>Yellows
+### Yellows
 
 {% swatchList { use: "print", group: "yellow" } %}
 
-### <a name="neutrals"></a>Neutrals
+### Neutrals
 
 {% swatchList { use: "print", group: "neutral" } %}
