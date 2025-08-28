@@ -67,17 +67,6 @@
   border-top: 1px solid #16548a;
 }
 
-figure {
-  margin: 0;
-}
-
-figcaption {
-  @include govuk-typography-common;
-
-  font-size: 16px;
-  text-align: center;
-}
-
 // Flexbox for arranging things inside the grid
 // Centering elements in flex
 .flex-center {

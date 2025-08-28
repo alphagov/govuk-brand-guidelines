@@ -194,42 +194,42 @@ Indicative examples for illustrative purposes only.
 <p class="govuk-visually-hidden">From most infomative to most inspiring</p>
 <p class="govuk-heading-s app-inform-inspire__inform" aria-hidden="true">Inform</p>
 
-<figure class="app-figure">
+<figure>
     <div class="app-figure-container">
         <picture>
             <img src="./video-thumb-get-help.png" alt="A video thumbnail for 'Get help with registering a death'. Title is shown within a simple blue circle graphic on a blue background.">
         </picture>
-        <figcaption class="app-figure__caption">
+        <figcaption>
             <p class="govuk-body">Get help with...</p>
         </figcaption>
     </div>
 </figure>
-<figure class="app-figure">
+<figure>
     <div class="app-figure-container"> 
         <picture>
             <img src="./video-thumb-60s.png" alt="A video thumbnail showing a title overlay for 'Check a vehicle before you buy', includes an icon of a small clock that resembles the dot.">
         </picture>
-        <figcaption class="app-figure__caption">
+        <figcaption>
             <p class="govuk-body">60s guides</p>
         </figcaption>
     </div>
 </figure>
-<figure class="app-figure">
+<figure>
     <div class="app-figure-container">
         <picture>
             <img src="./video-thumb-step.png" alt="A video thumbnail for 'How to apple for a Visa'. Title is shown on light blue background beside an illustration of travel documents incorporating the dot.">
         </picture>
-        <figcaption class="app-figure__caption">
+        <figcaption>
             <p class="govuk-body">Step-by-step guides</p>
         </figcaption>
     </div>
 </figure>
-<figure class="app-figure">
+<figure>
     <div class="app-figure-container">
         <picture>
             <img src="./video-thumb-influencer.png" alt="A video thumbnail for 'How I learnt to drive. A smiling young adult is shown in front of a background, which is a purple circular title graphic.">
         </picture>
-        <figcaption class="app-figure__caption">
+        <figcaption>
             <p class="govuk-body">Influencer/presenter</p>
         </figcaption>
     </div>
