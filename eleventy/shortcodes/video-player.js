@@ -2,56 +2,48 @@ import { extname } from 'node:path'
 
 import { blockShortcode } from './utils.js'
 
-export const videoPlayer = blockShortcode((options = {}) => {
-  const defaultOptions = {
-    classes: undefined,
+export const videoPlayer = blockShortcode(_videoPlayer)
 
-    // Player dimensions
-    width: 600,
-
-    // The source(s) for video files
-    //
-    // As a string: path to a video file
-    // {% video { source: "path/to/file.mp4" } %}
-    //
-    // As an array: array of strings that are paths to video files
-    // {% video { source: ["path/to/file.mp4", "path/to/file.webm"] } %}
-    //
-    // As an object: object containing media types (as keys) and file paths (values)
-    // {% video { source: {"video/mp4": "path/to/file.mp4", "video/quicktime": "path/to/file.mov" } } %}
-    source: undefined,
-
-    // A fallback description for the video, if the video is unavailable.
-    // NOTE: Fallback text does not support block-level HTML elements!
-    fallbackText: 'This video is unavailable.',
-
-    // Whether to loop the video once played
-    loop: true
-  }
-  options = { ...defaultOptions, ...options }
-
+/**
+ * Renders a video player with the provided source(s)
+ *
+ * @param {object} options
+ * @param {string | Array<string> | {[mediaType: string]: string}} options.source - The sources of the video
+ * @param {string} [options.classes] - A space separated list of CSS classes to add to the player's `class` attribute
+ * @param {number} [options.width] - The width of the video player
+ * @param {string} [options.fallbackText] - A fallback description for the video, shown when the video is unavailable
+ * @param {boolean} [options.loop] - Whether the video should loop once played
+ * @returns {string}
+ */
+function _videoPlayer({
+  source,
+  classes,
+  width = 600,
+  fallbackText = 'This video is unavailable',
+  loop = true
+} = {}) {
   const videoSources = []
 
-  if (typeof options.source === 'string') {
+  if (typeof source === 'string') {
     // Source is a string, assume it's a file path
     videoSources.push({
-      file: options.source,
-      type: getVideoFileTypeFromFileName(options.source)
+      file: source,
+      type: getVideoFileTypeFromFileName(source)
     })
-  } else if (Array.isArray(options.source)) {
+  } else if (Array.isArray(source)) {
     // Source is an array of file paths
-    options.source.forEach((path) => {
+    source.forEach((path) => {
       // Array item is a string, assume it's a file path
       videoSources.push({
         file: path,
         type: getVideoFileTypeFromFileName(path)
       })
     })
-  } else if (typeof options.source === 'object') {
+  } else if (typeof source === 'object') {
     // Source is an object of file type : paths
-    Object.keys(options.source).forEach((key) => {
+    Object.keys(source).forEach((key) => {
       videoSources.push({
-        file: options.source[key],
+        file: source[key],
         type: `video/${key}`
       })
     })
@@ -70,16 +62,16 @@ export const videoPlayer = blockShortcode((options = {}) => {
   // muted = has the video muted by default (can be unmuted with controls)
   // loop = video repeats itself once concluded (useful for short videos)
   return `<video
-    class="app-prose-video${options.classes ? ` ${options.classes}` : ''}"
-    width="${options.width}"
-    controls
-    playsinline
-    muted
-    ${options.loop ? 'loop' : ''}>
-    ${videoSourcesHtml.join('\n')}
-    ${options.fallbackText ? ` <span class="govuk-body">${options.fallbackText}</span>` : ''}
-  </video>`
-})
+  class="app-prose-video${classes ? ` ${classes}` : ''}"
+  width="${width}"
+  controls
+  playsinline
+  muted
+  ${loop ? 'loop' : ''}>
+  ${videoSourcesHtml.join('\n')}
+  ${fallbackText ? ` <span class="govuk-body">${fallbackText}</span>` : ''}
+</video>`
+}
 
 function getVideoFileTypeFromFileName(fileName) {
   return 'video/' + extname(fileName)?.slice(1).toLowerCase()
