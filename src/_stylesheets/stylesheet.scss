@@ -58,31 +58,6 @@
   font-size: larger;
 }
 
-pre code,
-.app-code {
-  border: 1px solid govuk-colour('mid-grey');
-  border-radius: 3px;
-  background-color: govuk-colour('light-grey');
-  font-family: ui-monospace, monospace;
-
-  // Monospace fonts tend to look larger than the surrounding text due to having
-  // exaggerated x-heights, making them smaller makes text look more uniform.
-  // Setting using a keyword instead of a fixed size as headings may also
-  // contain inline code snippets.
-  font-size: smaller;
-}
-
-pre code {
-  display: block;
-  padding: govuk-spacing(1);
-  @include govuk-font-size(16);
-}
-
-.app-code--inline {
-  padding-right: govuk-spacing(1);
-  padding-left: govuk-spacing(1);
-}
-
 .app-meta-info {
   color: #484949;
 }
