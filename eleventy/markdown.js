@@ -8,7 +8,10 @@ export function setupMarkdownCompilation(eleventyConfig) {
   const markdownConfig = markdownIt({
     html: true,
     typographer: true
-  }).use(markdownItGovuk)
+  }).use(markdownItGovuk, {
+    // Makes h1 -> xl, h2 -> l, h3 -> m, etc.
+    headingsStartWith: 'xl'
+  })
 
   /**
    * Process a string as Markdown, treating it as a block of content (i.e. it will
