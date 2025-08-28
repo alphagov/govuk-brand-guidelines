@@ -31,6 +31,7 @@
 @import 'mobile-navigation-section';
 @import 'section-highlight';
 @import 'swatch';
+@import 'top-border';
 
 @import 'govuk/utilities';
 @import 'govuk/overrides';
@@ -60,11 +61,6 @@
 
 .app-meta-info {
   color: #484949;
-}
-
-.app-top-border {
-  padding-top: 10px;
-  border-top: 1px solid #16548a;
 }
 
 // Flexbox for arranging things inside the grid
@@ -113,15 +109,3 @@
 .app-grid {
   gap: 15px;
 }
-
-// Other
-.border {
-  padding-top: 10px;
-  border-top: 1px solid #16548a;
-}
-
-.border-white {
-  padding-top: 10px;
-  border-top: 1px solid #ffffff;
-}
-
