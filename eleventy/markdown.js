@@ -10,7 +10,10 @@ export function setupMarkdownCompilation(eleventyConfig) {
     html: true,
     typographer: true
   })
-    .use(markdownItGovuk)
+    .use(markdownItGovuk, {
+      // Makes h1 -> xl, h2 -> l, h3 -> m, etc.
+      headingsStartWith: 'xl'
+    })
     .use(markdownItAnchor)
 
   /**
