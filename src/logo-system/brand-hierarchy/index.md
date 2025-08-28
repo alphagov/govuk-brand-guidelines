@@ -25,7 +25,7 @@ The diagrams on this page show how to space the wordmark and text in a lock-up. 
 
 In both horizontal and stacked lock-ups, the space between the wordmark and product name should be the width of the dot.
 
-{% sectionHighlight { classes: "light-grey" } %}
+{% sectionHighlight { classes: "app-section-highlight--light-grey" } %}
 {% grid { columns: { mobile: 2, desktop: 2 } } %}
 
 <div class="flex-end">

@@ -26,7 +26,7 @@ Indicative examples for illustrative purposes only.
 
 ![Screenshot showing web header on mobile and desktop.](./web-headers-grouped.png)
 
-{% sectionHighlight { classes: "light-blue" } %}
+{% sectionHighlight { classes: "app-section-highlight--light-blue" } %}
 
 We also use the crown as a supporting element within the footer at the end of content.
 

@@ -39,7 +39,7 @@ We lead with the Primary Blue and Accent Teal across all GOV.UK channels. From t
 Indicative examples for illustrative purposes only.
 {% endcallout %}
 
-{% sectionHighlight { classes: "light-blue" } %}
+{% sectionHighlight { classes: "app-section-highlight--light-blue" } %}
 {% grid { columns: { mobile: 1, desktop: 2 } } %}
 
 <div>

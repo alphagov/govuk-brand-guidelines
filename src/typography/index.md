@@ -39,7 +39,7 @@ GDS transport consists of two weights; **Light** and **Bold**.
 
 GDS Transport offers a wide range of glyph support. It includes a comprehensive selection of letters, numerals, punctuation, and special symbols, making it suitable for various levels of communications.
 
-{% sectionHighlight { classes: "light-blue" } %}
+{% sectionHighlight { classes: "app-section-highlight--light-blue" } %}
 
 GDS Transport Light
 
