@@ -78,3 +78,72 @@
     height: auto;
   }
 }
+
+.app-inform-inspire-scale__bar {
+  @include govuk-font($size: 16, $weight: bold);
+  width: 100%;
+  margin-bottom: govuk-spacing(3);
+  padding: govuk-spacing(8) 0;
+  color: govuk-colour('white');
+  text-align: center;
+
+  &:nth-child(1) {
+    width: 33%;
+    background-color: govuk-colour('blue');
+  }
+
+  &:nth-child(2) {
+    width: 66%;
+    background-color: govuk-colour('green');
+  }
+
+  &:nth-child(3) {
+    width: 100%;
+    margin-bottom: govuk-spacing(5);
+    background-color: govuk-colour('pink');
+  }
+}
+
+.app-inform-inspire-scale__axis {
+  $border-width: 1px;
+  $arrow-width: 9px;
+  $top-position: -5px;
+
+  display: flex;
+  position: relative;
+  padding-top: govuk-spacing(3);
+  border-top: 1px solid;
+  color: govuk-colour('black');
+  justify-content: space-between;
+
+  &::before {
+    content: '';
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    top: $top-position;
+    width: $arrow-width;
+    height: $arrow-width;
+    transform: rotate(-45deg);
+    border-top: solid $border-width;
+    border-left: solid $border-width;
+  }
+
+  &::after {
+    content: '';
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    top: $top-position;
+    right: 0;
+    width: $arrow-width;
+    height: $arrow-width;
+    transform: rotate(-225deg);
+    border-top: solid $border-width;
+    border-left: solid $border-width;
+  }
+}
+
+.app-inform-inspire-scale__axis-label {
+  @include govuk-font($size: 16, $weight: bold);
+}

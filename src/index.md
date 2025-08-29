@@ -29,3 +29,13 @@ This flexibility comes from how we use key brand elements – the wider colour p
 These guidelines show how to apply the brand in different contexts to meet the needs of people using GOV.UK every day.
 
 ![TODO](./inform-inspire.svg)
+
+<div class="app-inform-inspire-scale">
+  <div class="app-inform-inspire-scale__bar">Web</div>
+  <div class="app-inform-inspire-scale__bar">App</div>
+  <div class="app-inform-inspire-scale__bar">Social</div>
+  <div class="app-inform-inspire-scale__axis">
+    <div class="app-inform-inspire-scale__axis-label">Inform</div>
+    <div class="app-inform-inspire-scale__axis-label">Inspire</div>
+  </div>
+</div>
