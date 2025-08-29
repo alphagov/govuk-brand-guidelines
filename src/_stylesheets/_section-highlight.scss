@@ -1,8 +1,10 @@
 .app-section-highlight {
+  border-radius: 3px;
   color: govuk-colour('white');
   background-color: govuk-colour('blue');
-  @include govuk-responsive-padding(3);
-  @include govuk-responsive-margin(5, $direction: 'bottom');
+  @include govuk-responsive-padding(6);
+  @include govuk-responsive-margin(8, $direction: 'top');
+  @include govuk-responsive-margin(8, $direction: 'bottom');
 
   [class^='govuk-heading'],
   [class^='govuk-body'],
@@ -10,8 +12,17 @@
     color: inherit;
   }
 
-  &.light-blue {
-    color: #000000;
-    background-color: $app-light-blue;
+  p:last-child {
+    margin-bottom: 0;
   }
+}
+
+.app-section-highlight--light-blue {
+  color: govuk-colour('black');
+  background-color: $app-light-blue;
+}
+
+.app-section-highlight--light-grey {
+  color: govuk-colour('black');
+  background-color: govuk-colour('light-grey');
 }

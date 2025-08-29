@@ -78,7 +78,7 @@ The GOV.UK app icon should follow the same principle, leading with the wordmark 
 
 As this is a small use application of the logo elements, we use the enlarged crown size to maximise legibility and recognition.
 
-{% sectionHighlight { classes: "light-blue" } %}
+{% sectionHighlight { classes: "app-section-highlight--light-blue" } %}
 {% grid { columns: { mobile: 2, desktop: 2 } } %}
 
 <div class="flex-center">

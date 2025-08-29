@@ -238,7 +238,7 @@ Indicative examples for illustrative purposes only.
 <p aria-hidden="true" class="govuk-heading-s app-inform-inspire__inspire">Inspire</p>
 </div>
 
-{% sectionHighlight {classes: "light-blue" } %}
+{% sectionHighlight {classes: "app-section-highlight--light-blue" } %}
 
 ## Static dot examples
 

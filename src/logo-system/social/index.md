@@ -65,7 +65,7 @@ We use the crown as a supporting element that sits below or to the right of the 
 Indicative examples for illustrative purposes only.
 {% endcallout %}
 
-{% sectionHighlight { classes: "light-blue" } %}
+{% sectionHighlight { classes: "app-section-highlight--light-blue" } %}
 {% grid { columns: { mobile: 3, desktop: 3 } } %}
 
 ![Mock-up of the GOV.UK channel page on YouTube.](./youtube-example.png)
@@ -81,7 +81,7 @@ Indicative examples for illustrative purposes only.
 
 Social end frames can be used at the end of animated or filmed content. They incorporate both the wordmark and crown and act as a branded sign-off.
 
-{% sectionHighlight { classes: "light-blue" } %}
+{% sectionHighlight { classes: "app-section-highlight--light-blue" } %}
 
 <div>
 

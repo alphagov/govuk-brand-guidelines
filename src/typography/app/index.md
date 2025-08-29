@@ -9,7 +9,7 @@ GDS Transport is our primary brand typeface.
 
 Using it within our apps can provide significant advantages, particularly in strengthening brand recognition and creating a cohesive user experience across platforms and channels.
 
-{% sectionHighlight { classes: "light-blue" } %}
+{% sectionHighlight { classes: "app-section-highlight--light-blue" } %}
 
 Whilst there may be cases where it is not possible, we should always try to use GDS Transport where possible.
 
@@ -22,7 +22,7 @@ Whilst there may be cases where it is not possible, we should always try to use 
 
 It may not always be possible to use GDS Transport, such as within native operating system environments. In such cases, it is recommended to use the platform’s default system typeface to ensure consistency, performance, and accessibility.
 
-{% sectionHighlight { classes: "light-blue" } %}
+{% sectionHighlight { classes: "app-section-highlight--light-blue" } %}
 
 For example, on Apple (iOS, macOS) use SF Pro, the system font designed for optimal legibility and integration with Apple’s UI.
 
