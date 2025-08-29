@@ -37,3 +37,16 @@
 .app-section-highlight--light-grey {
   background-color: govuk-colour('light-grey');
 }
+
+.app-section-highlight__wrapper--logo {
+  text-align: center;
+
+  img {
+    max-width: 60%;
+    padding: govuk-spacing(6);
+  }
+}
+
+.app-section-highlight__wrapper--space-around {
+  margin: govuk-spacing(8);
+}
