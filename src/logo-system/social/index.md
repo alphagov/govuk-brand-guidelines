@@ -87,7 +87,7 @@ Social end frames can be used at the end of animated or filmed content. They inc
 
 ### Video end frame 16:9
 
-<div class="img-border">
+<div class="app-section-highlight__wrapper--space-around">
 
 <!-- ![TODO](./end-frame-1920x1080.gif) -->
 
@@ -105,7 +105,7 @@ Social end frames can be used at the end of animated or filmed content. They inc
 
 ### Video end frame 9:16
 
-<div class="img-border">
+<div class="app-section-highlight__wrapper--space-around">
 
 <!-- ![TODO](./end-frame-1080x1920.gif) -->
 
@@ -120,7 +120,7 @@ Social end frames can be used at the end of animated or filmed content. They inc
 
 ### Video end frame 1:1
 
-<div class="img-border">
+<div class="app-section-highlight__wrapper--space-around">
 
 <!-- ![TODO](./end-frame-1080x1080.gif) -->
 
