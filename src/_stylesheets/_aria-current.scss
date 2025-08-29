@@ -11,7 +11,7 @@
     align-items: baseline;
 
     &::before {
-      $dot-size: 1ex;
+      $dot-size: 0.5rem;
 
       content: '';
       display: block;
