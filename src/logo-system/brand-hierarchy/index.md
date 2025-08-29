@@ -13,15 +13,15 @@ Lock-ups help show the relationship between GOV.UK and the service, channel or d
 
 We have five versions:
 
-1. Horizontal
-2. Horizontal with crown
-3. Stacked (web)
-4. Stacked (apps)
-5. Stacked with crown
+1. [Horizontal](#horizontal)
+2. [Horizontal with crown](#horizontal-with-crown)
+3. [Stacked for web](#stacked-for-web)
+4. [Stacked for apps](#stacked-for-app)
+5. [Stacked with crown](#stacked-with-crown)
 
 To keep the brand consistent, use each version exactly as shown – do not resize, reposition or remove any part.
 
-The diagrams on this page show how to space the wordmark and text in a lock-up. Use the width of the dot in the GOV.UK wordmark to set the spacing. 
+The diagrams on this page show how to space the wordmark and text in a lock-up. Use the width of the dot in the GOV.UK wordmark to set the spacing.
 
 In both horizontal and stacked lock-ups, the space between the wordmark and product name should be the width of the dot.
 

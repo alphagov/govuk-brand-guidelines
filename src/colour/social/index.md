@@ -7,6 +7,18 @@ title: Social
 
 The social palette requires moments of increased brand expression and flex and therefore contains all primary colours, tints, shades and accents. Guidance outlined within the overview section should be followed to ensure brand coherence across channels.
 
+Our social palette has:
+
+- [blues](#blues)
+- [greens](#greens)
+- [teals](#teals)
+- [purples](#purples)
+- [magentas](#magentas)
+- [reds](#reds)
+- [oranges](#oranges)
+- [yellows](#yellows)
+- [neutrals](#neutrals)
+
 ### Blues
 
 {% swatchList { use: "social", group: "blue" } %}

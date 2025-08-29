@@ -1,5 +1,6 @@
 import markdownIt from 'markdown-it'
 import markdownItGovuk from 'markdown-it-govuk'
+import markdownItAnchor from 'markdown-it-anchor'
 
 /**
  *  @param {import("@11ty/eleventy/UserConfig")} eleventyConfig
@@ -8,7 +9,9 @@ export function setupMarkdownCompilation(eleventyConfig) {
   const markdownConfig = markdownIt({
     html: true,
     typographer: true
-  }).use(markdownItGovuk)
+  })
+    .use(markdownItGovuk)
+    .use(markdownItAnchor)
 
   /**
    * Process a string as Markdown, treating it as a block of content (i.e. it will

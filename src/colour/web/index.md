@@ -11,6 +11,20 @@ To reference colours from the palette directly you should use the `govuk-colour`
 
 Avoid using the palette colours if there is a Sass variable that is designed for your context. For example, if you are styling the error state of a component you should use the `$govuk-error-colour` Sass variable rather than `govuk-colour("red")`.
 
+Our web palette has:
+
+- [blues](#blues)
+- [greens](#greens)
+- [teals](#teals)
+- [purples](#purples)
+- [magentas](#magentas)
+- [reds](#reds)
+- [oranges](#oranges)
+- [yellows](#yellows)
+- [browns](#browns)
+- [neutrals](#neutrals)
+- [web functional colours](#web-functional-colours)
+
 ### Blues
 
 {% swatchList { use: "web", group: "blue" } %}

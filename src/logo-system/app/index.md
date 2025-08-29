@@ -96,7 +96,7 @@ As this is a small use application of the logo elements, we use the enlarged cro
 {% endgrid %}
 {% endsectionHighlight %}
 
-### <a name="app-icon-suite"></a>App icon suite
+### App icon suite
 
 As the family of GOV.UK applications grows, the need for a consistent approach to app icon design is necessary.
 

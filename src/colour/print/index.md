@@ -7,6 +7,18 @@ title: Print
 
 Use these colours for printed materials like documents, or in custom formats where appropriate.
 
+Our print palette has:
+
+- [blues](#blues)
+- [greens](#greens)
+- [teals](#teals)
+- [purples](#purples)
+- [magentas](#magentas)
+- [reds](#reds)
+- [oranges](#oranges)
+- [yellows](#yellows)
+- [neutrals](#neutrals)
+
 ### Blues
 
 {% swatchList { use: "print", group: "blue" } %}
