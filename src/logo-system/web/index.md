@@ -9,7 +9,7 @@ To aid recognition and trust we retain the locked-up version of the crown and wo
 
 {% sectionHighlight %}
 
-<div class="govuk-!-text-align-centre img-scale">
+<div class="app-section-highlight__wrapper--logo">
 
 ![](./web-logo-primary.svg)
 

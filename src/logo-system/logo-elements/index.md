@@ -13,7 +13,7 @@ As our primary identifier, the GOV.UK wordmark should be used in all application
 
 {% sectionHighlight %}
 
-<div class="img-scale govuk-!-text-align-centre">
+<div class="app-section-highlight__wrapper--logo">
 
 ![The wordmark for "GOV.UK". The dot is centred vertically and coloured in accent teal.](./wordmark.svg)
 
@@ -28,7 +28,7 @@ As our primary identifier, the GOV.UK wordmark should be used in all application
 
 {% sectionHighlight %}
 
-<div class="img-scale govuk-!-text-align-centre">
+<div class="app-section-highlight__wrapper--logo">
 
 ![The crown element of the GOV.UK logo.](./crown2.svg)
 
