@@ -92,7 +92,7 @@ export const videoPlayer = blockShortcode((options = {}) => {
   // loop = video repeats itself once concluded (useful for short videos)
 
   return `<video${options.classes ? ` class="${options.classes}"` : ''}
-    width="${options.width}"
+    width="${playerWidth}"
     height="${playerHeight}"
     controls
     playsinline
