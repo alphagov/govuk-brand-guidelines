@@ -46,7 +46,7 @@ Indicative examples for illustrative purposes only.
 
 ### Mobile web header
 
-<div class="img-border flex-center">
+<div class="img-border">
 
 ![TODO](./mobile-web-header.png)
 
@@ -65,7 +65,7 @@ Indicative examples for illustrative purposes only.
 
 ### App header
 
-<div class="img-border flex-center">
+<div class="img-border">
 
 ![TODO](./app-header.png)
 
@@ -76,7 +76,7 @@ Indicative examples for illustrative purposes only.
 
 ### YouTube profile
 
-<div class="img-border flex-center">
+<div class="img-border">
 
 ![TODO](./youtube-profile.png)
 

@@ -63,26 +63,6 @@
   color: #484949;
 }
 
-// Flexbox for arranging things inside the grid
-// Centering elements in flex
-.flex-center {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  text-align: center;
-}
-
-// Aligning content in flexbox
-.flex-end {
-  align-content: flex-end;
-}
-
-.flex-start {
-  align-content: flex-start;
-}
-
 // Dark magenta section highlight likely to be deleted as it's just framing an image, and the image should have it's own background
 .dark-magenta {
   color: #ffffff;

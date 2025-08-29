@@ -17,6 +17,12 @@
   }
 }
 
+@each $alignment in (start, center, end) {
+  .app-grid__cell--vertical-align-#{$alignment} {
+    align-content: $alignment;
+  }
+}
+
 .app-grid-reduced-gap {
   --app-grid-gap: 10px;
 }

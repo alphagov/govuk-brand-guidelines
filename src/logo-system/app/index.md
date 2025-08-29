@@ -12,21 +12,21 @@ An example of this is the GOV.UK app icon.
 {% sectionHighlight %}
 {% grid { columns: 3 } %}
 
-<div class="flex-center">
+<div class="govuk-!-text-align-centre">
 
 ### Wordmark
 
 ![GOV.UK wordmark shown on blue background.](./wordmark-on-blue.svg)
 
 </div>
-<div class="flex-center">
+<div class="govuk-!-text-align-centre">
 
 ### Crown
 
 ![Crown shown on blue background.](./crown-on-blue.svg)
 
 </div>
-<div class="flex-center">
+<div class="govuk-!-text-align-centre">
 
 ### App icon
 
@@ -81,13 +81,13 @@ As this is a small use application of the logo elements, we use the enlarged cro
 {% sectionHighlight { classes: "app-section-highlight--light-blue" } %}
 {% grid { columns: { mobile: 2, desktop: 2 } } %}
 
-<div class="flex-center">
+<div class="govuk-!-text-align-centre">
 
 ![App icon of the GOV.UK app, with gridlines showing how the crown is placed centred directly under GOV.UK.](./app-icon-lines.svg) ![](./app-icon.svg)
 
 </div>
 
-<div class="flex-center">
+<div>
 
 ![Mockup of the GOV.UK app's page in an App Store.](./app-store-example.png)
 
@@ -108,7 +108,7 @@ An example of this is the GOV.UK One Login app.
 
 {% grid { columns: 3 } %}
 
-<figure class="flex-center">
+<figure class="govuk-!-text-align-centre">
 
 ![Logo template for GOV.UK-branded apps. The wordmark is shown above a placeholder space for a symbol to replace the crown.](./app-icon-template.svg)
 
@@ -116,14 +116,14 @@ An example of this is the GOV.UK One Login app.
 
 </figure>
 
-<figure class="flex-center">
+<figure class="govuk-!-text-align-centre">
 
 ![App icon of the GOV.UK app.](./app-icon.svg)
 
 <figcaption>Example 1: GOV.UK app</figcaption>
 </figure>
 
-<figure class="flex-center">
+<figure class="govuk-!-text-align-centre">
 
 ![App icon of the GOV.UK One Login app, showing the symbol for One Login below the wordmark. ](./app-icon-one-login.svg)
 

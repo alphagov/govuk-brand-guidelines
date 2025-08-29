@@ -12,7 +12,7 @@ An example of this is in profile icons.
 {% sectionHighlight %}
 {% grid { columns: 3 } %}
 
-<div class="flex-center flex-end">
+<div class="govuk-!-text-align-centre">
 
 ### Wordmark
 
@@ -22,7 +22,7 @@ An example of this is in profile icons.
 
 </div>
 
-<div class="flex-center flex-end">
+<div class="govuk-!-text-align-centre">
 
 ### Crown
 
@@ -32,7 +32,7 @@ An example of this is in profile icons.
 
 </div>
 
-<div class="flex-center flex-end">
+<div class="govuk-!-text-align-centre">
 
 ### Profile icons
 
@@ -54,7 +54,7 @@ We use the crown as a supporting element that sits below or to the right of the 
 
 </div>
 
-<div class="flex-center">
+<div class="govuk-!-text-align-centre">
 
 ![Logo lock-up of the GOV.UK logo, with gridlines showing how the crown is placed centred directly under GOV.UK. A circle outline shows positioning of logo elements.](./profile-icon-lines.svg) ![](./profile-icon.svg)
 

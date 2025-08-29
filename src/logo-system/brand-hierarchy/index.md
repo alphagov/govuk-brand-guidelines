@@ -28,22 +28,22 @@ In both horizontal and stacked lock-ups, the space between the wordmark and prod
 {% sectionHighlight { classes: "app-section-highlight--light-grey" } %}
 {% grid { columns: { mobile: 2, desktop: 2 } } %}
 
-<div class="flex-end">
+<div class="app-grid__cell--vertical-align-end">
 
 ![Various diagrams of the GOV.UK Pay lock-up, showing how the dot is used to set spacing between the product name and wordmark. Horizontal and stacked lock-ups are shown.](./lockup-1.svg)
 
 </div>
-<div class="flex-end">
+<div class="app-grid__cell--vertical-align-end">
 
 ![](./lockup-2.svg)
 
 </div>
-<div class="flex-end">
+<div class="app-grid__cell--vertical-align-end">
 
 ![](./lockup-3.svg)
 
 </div>
-<div class="flex-end">
+<div class="app-grid__cell--vertical-align-end">
 
 ![](./lockup-4.svg)
 
