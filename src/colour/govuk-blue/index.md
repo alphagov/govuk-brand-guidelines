@@ -3,7 +3,7 @@ order: 0
 title: GOV.UK is a blue brand
 ---
 
-Our core brand colours are Primary Blue and Accent Teal.
+Our core brand colours are Primary blue and Accent teal.
 
 We’re building on the primary blue already in place to support recognition and trust. Using it more consistently will make it a clear visual signature of GOV.UK.
 
@@ -26,14 +26,14 @@ Accent teal also sits alongside to add impact and help the brand feel more moder
 </div>
 <div>
 
-![TODO](./wordmark-on-blue.svg)
+![GOV.UK wordmark shown on blue background.](./wordmark-on-blue.svg)
 
 </div>
 {% endgrid %}
 
 ## Coherency across channels
 
-We lead with the Primary Blue and Accent Teal across all GOV.UK channels. From the blue header on web and app, to branded banners within social platforms, this aids brand recognition and establishes trust.
+We lead with the Primary blue and Accent teal across all GOV.UK channels. From the blue header on web and app, to branded banners within social platforms, this aids brand recognition and establishes trust.
 
 {% callout %}
 Indicative examples for illustrative purposes only.
@@ -48,7 +48,7 @@ Indicative examples for illustrative purposes only.
 
 <div class="img-border flex-center">
 
-![TODO](./mobile-web-header.png)
+![Screenshot of GOV.UK website on mobile, showing the blue header with the lock-up of the wordmark and crown.](./mobile-web-header.png)
 
 </div>
 </div>
@@ -67,7 +67,7 @@ Indicative examples for illustrative purposes only.
 
 <div class="img-border flex-center">
 
-![TODO](./app-header.png)
+![Screenshot of GOV.UK app, showing the app header with the wordmark](./app-header.png)
 
 </div>
 </div>
@@ -78,7 +78,7 @@ Indicative examples for illustrative purposes only.
 
 <div class="img-border flex-center">
 
-![TODO](./youtube-profile.png)
+![Screenshot of YouTube profile on mobile, showing blue and teal used in the banner and social profile image.](./youtube-profile.png)
 
 </div>
 </div>
@@ -90,7 +90,7 @@ Indicative examples for illustrative purposes only.
 
 You must make sure that the contrast ratio of colours used meets [Web Content Accessibility Guidelines (WCAG 2.2) success criterion 1.4.3 Contrast (minimum) level AA](https://www.w3.org/TR/WCAG22/#contrast-minimum).
 
-![TODO](./colour-contrast.png)
+![A very large grid of colour combinations. Tiny red tags show where combinations do not meet minimum colour contrast.](./colour-contrast.png)
 
 ## Incorrect colour usage
 
