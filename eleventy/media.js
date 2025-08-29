@@ -22,7 +22,6 @@ export function setupMedia(eleventyConfig) {
     // Attributes on the output HTML
     htmlOptions: {
       imgAttributes: {
-        class: 'app-prose-image',
         loading: 'lazy',
         decoding: 'async'
       },
