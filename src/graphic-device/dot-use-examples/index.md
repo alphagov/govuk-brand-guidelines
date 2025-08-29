@@ -206,7 +206,7 @@ Get help with...
 Step-by-step guides
 {% endfigure %}
 
-{% figure { src: "./video-thumb-influencer.png", alt: "A video thumbnail for 'How I learnt to drive. A smiling young adult is shown in front of a background, which is a purple circular title graphic.", classes: "govuk-!-text-align-left" } %}
+{% figure { src: "./video-thumb-influencer.png", alt: "A video thumbnail for 'How I learnt to drive. A smiling young adult is shown in front of a purple background, with the title in a dark purple circle.", classes: "govuk-!-text-align-left" } %}
 Influencer/presenter
 {% endfigure %}
 
@@ -260,32 +260,32 @@ Indicative examples for illustrative purposes only.
 
 <div>
 
-![TODO](./storyboard-1.png)
+![Series of images showing the storyboard for an Instagram story that guides the user through a DBS (Disclosure and Barring Service) check. Light blue circular and lozenge shapes are used to create icons and highlights to emphasise key information.](./storyboard-1.png)
 
 </div> 
 <div>
 
-![TODO](./storyboard-2.png)
+![](./storyboard-2.png)
 
 </div>
 <div>
 
-![TODO](./storyboard-3.png)
+![](./storyboard-3.png)
 
 </div>
 <div>
 
-![TODO](./storyboard-4.png)
+![](./storyboard-4.png)
 
 </div>
 <div>
 
-![TODO](./storyboard-5.png)
+![](./storyboard-5.png)
 
 </div>
 <div>
 
-![TODO](./storyboard-6.png)
+![](./storyboard-6.png)
 
 </div>
 {% endgrid %}
@@ -304,7 +304,7 @@ To keep things consistent, avoid the following:
 
 Dot not overuse the dot
 
-![Crossed out title graphic with an blank dot on the top left. The title is placed in the centre within a large circle, and also contains a lozenge-shaped text highlight.](./incorrect-overuse.png)
+![Crossed out graphic with a small blank dot on the top left. Text placed in the centre within a large circle, and also contains a lozenge-shaped text highlight.](./incorrect-overuse.png)
 
 </div>
 <div>
@@ -313,7 +313,7 @@ Dot not overuse the dot
 
 Dot not use the dot in a decorative way
 
-![Crossed out title graphic with a dot placed off-centre in the background.](./incorrect-decorative.png)
+![Crossed out graphic some text, with a dot placed off-centre in the background.](./incorrect-decorative.png)
 
 </div>
 <div>
@@ -322,7 +322,7 @@ Dot not use the dot in a decorative way
 
 Do not distort or skew the dot
 
-![Crossed out title graphic with the title placed inside an oval.](./incorrect-distorted.png)
+![Crossed out graphic with some text placed inside a stretched-out oval.](./incorrect-distorted.png)
 
 </div>
 <div>

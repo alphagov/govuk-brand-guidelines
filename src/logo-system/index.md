@@ -6,7 +6,7 @@ hero: ./hero.svg
 
 <div class="hero">
 
-![TODO](./hero.svg)
+![](./hero.svg)
 
 </div>
 
@@ -31,7 +31,7 @@ Our wordmark is our primary identifier and should be used as the lead asset on t
 
 <div class="app-grid__cell--vertical-align-end">
 
-![The wordmark for "GOV.UK". The dot is centred vertically and coloured in accent teal.](./logo-elements/wordmark.svg)
+![Wordmark for GOV.UK in white. The dot between 'GOV' and 'UK' is Accent teal and vertically-centred. Shown on a Primary blue background.](./logo-elements/wordmark.svg)
 
 </div>
 <div class="app-top-border">

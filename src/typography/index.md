@@ -6,13 +6,13 @@ hero: ./type-hero.svg
 
 <div class="hero">
 
-![TODO](./type-hero.svg)
+![](./type-hero.svg)
 
 </div>
 
 Typography is a core element to our identity, shaping how our brand is perceived across all GOV.UK channels.
 
-This section outlines the correct application of typography throughout our channels. Providing guidance on weight, scale, hierarchy and alternatives for when our primary typeface isn’t available.
+This section outlines the correct application of typography throughout our channels. Providing guidance on weight, scale, hierarchy and alternatives for when our primary typeface is not available.
 
 ## GDS Transport
 
@@ -25,15 +25,17 @@ The Government Digital Service adapted it in 2012 for digital use, bringing the 
 
 Using GDS Transport makes GOV.UK easier to recognise and information easier to read on any device.
 
-![TODO](./transport-font.svg)
+<div class="scale width-80 right edge">
+
+![Sample of GDS Transport typeface in bold and light weight](./transport-font.svg)
 
 {% endsectionHighlight %}
 
 ### Weights
 
-GDS transport consists of two weights; **Light** and **Bold**.
+GDS Transport consists of two weights: light and bold.
 
-![TODO](./bold-light.svg)
+![Another sample of GDS Transport typeface in bold and light weight](./bold-light.svg)
 
 ### Glyphs
 
@@ -43,9 +45,9 @@ GDS Transport offers a wide range of glyph support. It includes a comprehensive 
 
 GDS Transport Light
 
-![TODO](./font-specimen-light.svg)
+![GDS Transport character set in light weight.](./font-specimen-light.svg)
 
 GDS Transport Bold
 
-![TODO](./font-specimen-bold.svg)
+![GDS Transport character set in bold weight.](./font-specimen-bold.svg)
 {% endsectionHighlight %}
