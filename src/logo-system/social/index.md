@@ -151,32 +151,32 @@ To aid brand recognition and coherency, adaptive dot colour should not be used w
 
 {% grid { columns: { mobile: 2, desktop: 3 } } %}
 
-<div class="img-fit">
+<div>
 
 ![GOV.UK wordmark shown with adaptive dot to tonally match different coloured backgrouds.](./adaptive-primary-blue.svg)
 
 </div>
-<div class="img-fit">
+<div>
 
 ![](./adaptive-primary-green.svg)
 
 </div>
-<div class="img-fit">
+<div>
 
 ![](./adaptive-shade50-blue.svg)
 
 </div> 
-<div class="img-fit">
+<div>
 
 ![](./adaptive-shade50-purple.svg)
 
 </div>
-<div class="img-fit">
+<div>
 
 ![](./adaptive-shade50-red.svg)
 
 </div>
-<div class="img-fit">
+<div>
 
 ![](./adaptive-shade50-teal.svg)
 
@@ -193,7 +193,7 @@ Do not use colour combinations that are not accessible.
 
 </div>
 
-<div class="img-fit">
+<div class="app-grid__cell--image-full-width">
 
 ![](./incorrect-not-accessible-1.svg) ![](./incorrect-not-accessible-2.svg)
 
@@ -205,7 +205,7 @@ Do not use colour combinations that lack contrast between the wordmark and dot.
 
 </div>
 
-<div class="img-fit">
+<div class="app-grid__cell--image-full-width">
 
 ![](./incorrect-low-contrast-1.svg) ![](./incorrect-low-contrast-2.svg)
 
@@ -216,7 +216,7 @@ Do not use colour combinations that lack contrast between the wordmark and dot.
 Do not use colour combinations that are not from the same tonal range.
 
 </div>
-<div class="img-fit">
+<div class="app-grid__cell--image-full-width">
 
 ![](./incorrect-tonal-1.svg) ![](./incorrect-tonal-2.svg)
 

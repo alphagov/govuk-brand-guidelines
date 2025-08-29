@@ -23,6 +23,10 @@
   }
 }
 
+.app-grid__cell--image-full-width img {
+  width: 100%;
+}
+
 .app-grid-reduced-gap {
   --app-grid-gap: 10px;
 }
