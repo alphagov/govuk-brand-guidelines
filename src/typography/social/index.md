@@ -42,7 +42,7 @@ Consistent use of type styles aids clarity and hierarchy. Headings should be att
 
 {% grid { columns: { mobile: 2, desktop: 2 } } %}
 
-<div class="border">
+<div class="app-top-border">
 
 ### Headline styles
 
@@ -55,7 +55,7 @@ Any content over 5 lines should be formatted as a body style
 img goes here
 </div>
 
-<div class="border">
+<div class="app-top-border">
 
 ### Body copy styles
 
@@ -65,7 +65,7 @@ Body copy styles should always be set in Light and should be used for all longer
 <div>
 img goes here
 </div>
-<div class="border">
+<div class="app-top-border">
 
 ### Tags styles
 
@@ -88,7 +88,7 @@ Indicative examples for illustrative purposes only.
 
 {% grid { columns: { mobile: 2, desktop: 2 } } %}
 
-<div class="border">
+<div class="app-top-border">
 
 ### Left aligned text
 
@@ -98,7 +98,7 @@ Where possible we should lead with left-aligned text. It improves readability by
 
 ![TODO](./left-aligned.png)
 
-<div class="border">
+<div class="app-top-border">
 
 ### Centre aligned text
 
@@ -123,7 +123,7 @@ Indicative examples for illustrative purposes only.
 
 {% grid { columns: { mobile: 2, desktop: 2 } } %}
 
-<div class="border">
+<div class="app-top-border">
 
 **Do** use consistent and clear line and letter spacing.
 
@@ -131,7 +131,7 @@ Indicative examples for illustrative purposes only.
 
 ![TODO](./type-settings-do.png)
 
-<div class="border">
+<div class="app-top-border">
 
 **Don't** use line and letter spacing that is too wide or tight.
 

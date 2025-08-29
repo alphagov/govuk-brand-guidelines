@@ -12,12 +12,12 @@ Accent teal also sits alongside to add impact and help the brand feel more moder
 {% grid { columns: { mobile: 2, desktop: 2 } } %}
 
 <div>
-<div class="border">
+<div class="app-top-border">
 
 {% swatch { label: "Primary blue", hex: "#1D70B8" } %}
 
 </div>
-<div class="border">
+<div class="app-top-border">
 
 {% swatch { label: "Accent teal", hex: "#00FFE0" } %}
 
@@ -103,7 +103,7 @@ To maintain consistency across channels the colours within our palette should ne
 ![TODO](./incorrect-colour-combos.png)
 
 </div>
-<div class="border">
+<div class="app-top-border">
 
 Do not use colour combinations that do not meet [WCAG2.2 guidelines](https://www.w3.org/TR/WCAG22/#contrast-minimum)
 
@@ -113,7 +113,7 @@ Do not use colour combinations that do not meet [WCAG2.2 guidelines](https://www
 ![TODO](./incorrect-new-colours.png)
 
 </div>
-<div class="border">
+<div class="app-top-border">
 
 Do not create new colours
 
@@ -123,7 +123,7 @@ Do not create new colours
 ![TODO](./incorrect-too-many-colours.png)
 
 </div>
-<div class="border">
+<div class="app-top-border">
 
 Do not use too many colours within an application
 
@@ -133,7 +133,7 @@ Do not use too many colours within an application
 ![TODO](./incorrect-gradients.png)
 
 </div>
-<div class="border">
+<div class="app-top-border">
 
 Do not mix colours to create gradients (single colour gradients are permitted for use over imagery)
 
