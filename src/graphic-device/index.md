@@ -4,7 +4,7 @@ title: Graphic device
 hero: ./hero.svg
 ---
 
-## The Dot
+## The dot
 
 Our dot is the bridge between government and the UK, by the side of users to help make information and services easier and more useful.
 
