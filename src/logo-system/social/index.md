@@ -12,7 +12,7 @@ An example of this is in profile icons.
 {% sectionHighlight %}
 {% grid { columns: 3 } %}
 
-<div class="flex-center flex-end">
+<div class="govuk-!-text-align-centre">
 
 ### Wordmark
 
@@ -22,7 +22,7 @@ An example of this is in profile icons.
 
 </div>
 
-<div class="flex-center flex-end">
+<div class="govuk-!-text-align-centre">
 
 ### Crown
 
@@ -32,7 +32,7 @@ An example of this is in profile icons.
 
 </div>
 
-<div class="flex-center flex-end">
+<div class="govuk-!-text-align-centre">
 
 ### Profile icons
 
@@ -54,7 +54,7 @@ We use the crown as a supporting element that sits below or to the right of the 
 
 </div>
 
-<div class="flex-center">
+<div class="govuk-!-text-align-centre">
 
 ![Logo lock-up of the GOV.UK logo, with gridlines showing how the crown is placed centred directly under GOV.UK. A circle outline shows positioning of logo elements.](./profile-icon-lines.svg) ![](./profile-icon.svg)
 
@@ -87,7 +87,7 @@ Social end frames can be used at the end of animated or filmed content. They inc
 
 ### Video end frame 16:9
 
-<div class="img-border">
+<div class="app-section-highlight__wrapper--space-around">
 
 <!-- ![TODO](./end-frame-1920x1080.gif) -->
 
@@ -105,7 +105,7 @@ Social end frames can be used at the end of animated or filmed content. They inc
 
 ### Video end frame 9:16
 
-<div class="img-border">
+<div class="app-section-highlight__wrapper--space-around">
 
 <!-- ![TODO](./end-frame-1080x1920.gif) -->
 
@@ -120,7 +120,7 @@ Social end frames can be used at the end of animated or filmed content. They inc
 
 ### Video end frame 1:1
 
-<div class="img-border">
+<div class="app-section-highlight__wrapper--space-around">
 
 <!-- ![TODO](./end-frame-1080x1080.gif) -->
 
@@ -151,32 +151,32 @@ To aid brand recognition and coherency, adaptive dot colour should not be used w
 
 {% grid { columns: { mobile: 2, desktop: 3 } } %}
 
-<div class="img-fit">
+<div>
 
 ![GOV.UK wordmark shown with adaptive dot to tonally match different coloured backgrouds.](./adaptive-primary-blue.svg)
 
 </div>
-<div class="img-fit">
+<div>
 
 ![](./adaptive-primary-green.svg)
 
 </div>
-<div class="img-fit">
+<div>
 
 ![](./adaptive-shade50-blue.svg)
 
 </div> 
-<div class="img-fit">
+<div>
 
 ![](./adaptive-shade50-purple.svg)
 
 </div>
-<div class="img-fit">
+<div>
 
 ![](./adaptive-shade50-red.svg)
 
 </div>
-<div class="img-fit">
+<div>
 
 ![](./adaptive-shade50-teal.svg)
 
@@ -193,7 +193,7 @@ Do not use colour combinations that are not accessible.
 
 </div>
 
-<div class="img-fit">
+<div class="app-grid__cell--image-full-width">
 
 ![](./incorrect-not-accessible-1.svg) ![](./incorrect-not-accessible-2.svg)
 
@@ -205,7 +205,7 @@ Do not use colour combinations that lack contrast between the wordmark and dot.
 
 </div>
 
-<div class="img-fit">
+<div class="app-grid__cell--image-full-width">
 
 ![](./incorrect-low-contrast-1.svg) ![](./incorrect-low-contrast-2.svg)
 
@@ -216,7 +216,7 @@ Do not use colour combinations that lack contrast between the wordmark and dot.
 Do not use colour combinations that are not from the same tonal range.
 
 </div>
-<div class="img-fit">
+<div class="app-grid__cell--image-full-width">
 
 ![](./incorrect-tonal-1.svg) ![](./incorrect-tonal-2.svg)
 

@@ -13,7 +13,7 @@ As our primary identifier, the GOV.UK wordmark should be used in all application
 
 {% sectionHighlight %}
 
-<div class="img-scale flex-center">
+<div class="app-section-highlight__wrapper--logo">
 
 ![The wordmark for "GOV.UK". The dot is centred vertically and coloured in accent teal.](./wordmark.svg)
 
@@ -28,7 +28,7 @@ As our primary identifier, the GOV.UK wordmark should be used in all application
 
 {% sectionHighlight %}
 
-<div class="img-scale flex-center">
+<div class="app-section-highlight__wrapper--logo">
 
 ![The crown element of the GOV.UK logo.](./crown2.svg)
 
@@ -55,7 +55,7 @@ This ensures visual balance and harmony between the elements.
 
 The pixel sizes displayed on this page are indicative and will vary across devices.
 
-<div class="flex-center">
+<div>
 
 ![Dots from the crown are used to show the correct spacing and scaling within the logo lock-up.](./lockup-detail.svg)
 
@@ -78,7 +78,7 @@ Scaling should follow this rule:
 Wordmark dot = 2× crown dot
 
 </div>
-<div class="flex-end">
+<div class="app-grid__cell--vertical-align-end">
 
 ![Dots from the crown are used to show the correct size of the dot in the wordmark.](./standard-crown.svg)
 
@@ -132,14 +132,14 @@ If it’s too small, it can lose detail and be harder for some users to read or 
 
 <!-- TODO: suggest adding the arrow to the image -->
 
-<div class="flex-end">
+<div class="app-grid__cell--vertical-align-end">
 
 ![The wordmark for "GOV.UK". Minimum width of the wordmark: 50px.](./wordmark-min-width.svg)
 
 <p class="govuk-body">Minimum size:<strong class="app-size-recommendation">50px</strong></p>
 
 </div>
-<div class="flex-end">
+<div>
 
 ![The crown element of the GOV.UK logo. Minimum width of the crown on it own: 10px.](./crown-min-width.svg)
 

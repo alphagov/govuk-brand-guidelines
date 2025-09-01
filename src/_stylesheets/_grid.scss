@@ -17,6 +17,16 @@
   }
 }
 
+@each $alignment in (start, center, end) {
+  .app-grid__cell--vertical-align-#{$alignment} {
+    align-content: $alignment;
+  }
+}
+
+.app-grid__cell--image-full-width img {
+  width: 100%;
+}
+
 .app-grid-reduced-gap {
   --app-grid-gap: 10px;
 }
