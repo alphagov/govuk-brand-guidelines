@@ -26,6 +26,12 @@
       transform: translateY(-1px);
       border-radius: 100%;
       background: currentcolor;
+
+      // Force dot colour to match link text in high contrast mode
+      // stylelint-disable-next-line max-nesting-depth
+      @media (forced-colors: active) {
+        background: LinkText;
+      }
     }
   }
 }
