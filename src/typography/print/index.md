@@ -6,7 +6,7 @@ title: Print
 ## Document element sizes
 
 The recommended sizes for common document formats are illustrated here.
-{% sectionHighlight { classes: "dark-magenta" } %}
+{% sectionHighlight { classes: "app-section-highlight--dark-magenta" } %}
 
 ![TODO](./print-guides.svg)
 {% endsectionHighlight %}
