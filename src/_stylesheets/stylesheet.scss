@@ -23,6 +23,7 @@
 
 // App components
 @import 'aria-current';
+@import 'breadcrumbs';
 @import 'callout';
 @import 'grid';
 @import 'inform-inspire';
@@ -40,6 +41,12 @@
 .app-main-wrapper {
   padding-top: 0;
   padding-bottom: 0;
+}
+
+// The parent
+.app-page-wrapper {
+  @include govuk-responsive-margin(6, $direction: top);
+  @include govuk-responsive-margin(7, $direction: bottom);
 }
 
 .app-chapter-navigation {
