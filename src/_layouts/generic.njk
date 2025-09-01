@@ -55,16 +55,6 @@
       text: "This is a new service. Help us improve it by giving your feedback."
     }) }}
   {%- endif %}
-  {% from "govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
-
-  {# Some pages, like test pages, don't have ancestors #}
-  {% if ancestors.length %}
-    {{
-      govukBreadcrumbs({
-        items: ancestors | asBreadcrumbItems
-      })
-    }}
-  {% endif %}
 
   <div class="govuk-grid-row govuk-main-wrapper">
     <nav class="govuk-grid-column-one-third app-chapter-navigation" aria-label="Pages in this section">
@@ -74,13 +64,27 @@
         renderedPageUrl: page.url
       })}}
     </nav>
-  {#
-    To avoid re-producing GOV.UK Frontend's markup for the `main` block
-    the grid-row will be closed at the end of the `main` block
-  #}
+
+    <div class="govuk-grid-column-two-thirds">
+      {% from "govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
+
+      {# Some pages, like test pages, don't have ancestors #}
+      {% if ancestors.length %}
+        {{
+          govukBreadcrumbs({
+            classes: 'app-breadcrumbs',
+            items: ancestors | asBreadcrumbItems
+          })
+        }}
+      {% endif %}
+
+      {#
+        To avoid re-producing GOV.UK Frontend's markup for the `main` block
+        the grid row and column will be closed at the end of the `main` block
+      #}
 {% endblock %}
 
-{% set mainClasses = 'govuk-grid-column-two-thirds app-main-wrapper app-prose' %}
+{% set mainClasses = 'app-main-wrapper app-prose' %}
 
 {% block content %}
   <h1 class="govuk-heading-xl">{{title}}</h1>
@@ -101,7 +105,8 @@
 {% endblock %}
 
 {% block main %}
-  {{super()}}
+    {{super()}}
+    </div>
   </div>
 {% endblock %}
 
