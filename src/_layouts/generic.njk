@@ -84,6 +84,20 @@
 
 {% block content %}
   <h1 class="govuk-heading-xl">{{title}}</h1>
+
+  {# In-page table of contents #}
+  {%- set headingList = getTableOfContents(content) %}
+  {%- if headingList | length > 0 %}
+    <h2 class="govuk-heading-s">On this page</h2>
+    <ul class="govuk-list">
+      {%- for heading in headingList %}
+      <li>
+        <a class="govuk-link" href="#{{ heading.id }}">{{ heading.html | safe }}</a>
+      </li>
+      {%- endfor %}
+    </ul>
+  {%- endif %}
+
   {{ content | safe }}
 
   {# Render the list of pages under each chapter after the content

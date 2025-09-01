@@ -1,4 +1,5 @@
 import markdownIt from 'markdown-it'
+import markdownItAnchor from 'markdown-it-anchor'
 import markdownItGovuk from 'markdown-it-govuk'
 import markdownItAnchor from 'markdown-it-anchor'
 
