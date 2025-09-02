@@ -24,10 +24,6 @@
 
     box-shadow: inset 0 0 0 4px govuk-colour('white');
   }
-
-  .app-inline-copy {
-    margin-left: govuk-spacing(1);
-  }
 }
 
 .app-swatch__name,
@@ -40,10 +36,16 @@
   @include govuk-typography-weight-bold;
 }
 
+.app-swatch__value {
+  margin-top: govuk-spacing(1);
+  font-family: monospace;
+  font-size: smaller;
+}
+
 // Reduce the spacing between swatches in a list
 .app-swatch-list {
   margin-top: 0;
-  column-width: 16rem;
+  column-width: 17rem;
   column-gap: $govuk-gutter-half;
   @include govuk-responsive-margin(5, $direction: 'bottom');
 

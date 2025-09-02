@@ -1,25 +1,66 @@
 .app-inline-copy {
+  display: inline-flex;
+  align-items: center;
   margin: 0;
   padding: 0;
-  border: none;
-  color: inherit;
+  border: 0;
+  border-bottom: 1px solid transparent;
+  color: $app-black-tint-25;
   background: none;
   font: inherit;
   vertical-align: middle;
   cursor: pointer;
-  @include govuk-font(16);
 
-  &:focus {
-    @include govuk-focused-text;
+  // Extend the sides out when there's a background colour or border visible
+  &:hover,
+  &:focus,
+  &--copied {
+    margin-left: 0 - govuk-spacing(1);
+    padding-right: govuk-spacing(1);
+    padding-left: govuk-spacing(1);
+
+    svg {
+      background-color: transparent;
+    }
+  }
+
+  &:hover {
+    border-bottom-color: $app-black-tint-50;
+    background-color: $app-black-tint-95;
+  }
+
+  // Uses :focus-visible as otherwise clicking the button also focuses the
+  // button, so the 'copied' style isn't visible. Also
+  &:focus-visible {
+    border-color: $govuk-focus-colour;
+    border-bottom-color: $govuk-focus-text-colour;
+
+    // Hide browser default outline
+    outline: none;
+    color: $govuk-focus-text-colour;
+    background-color: $govuk-focus-colour;
+
+    // Extend the bottom border's appearance without increasing button height
+    box-shadow: 0 1px 0 0 $govuk-focus-text-colour;
   }
 
   svg {
-    width: 1em;
-    height: 1em;
+    // Aiming for about 18px
+    // The icon SVGs contain whitespace within them, making them appear smaller
+    width: 1.125rem;
+    height: 1.125rem;
+    margin-left: govuk-spacing(1);
+    background-color: $app-black-tint-95;
     fill: currentcolor;
   }
 
-  &--copied svg {
-    fill: #11875a; // primary green
+  &--copied {
+    // We want these to apply when hovered too
+    &,
+    &:hover {
+      border-color: $app-green-shade-25;
+      color: $app-green-shade-25;
+      background-color: $app-green-tint-95;
+    }
   }
 }
