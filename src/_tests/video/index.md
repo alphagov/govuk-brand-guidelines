@@ -132,3 +132,16 @@ Define a height for the video player, or calculate the height using an aspect ra
 ## `classes` parameter
 
 Adds custom classes to the video player, for bespoke styling.
+
+## Inside HTML block
+
+When using the shortcode inside an HTML block,
+use the `insideHTML` option to avoid having the `<video>`
+tag wrapped in a `<p>` tag.
+
+{% testExample %}
+
+<div>
+{% video { source: "mp4-h264.mp4", width: 200, insideHTML: true } %}
+</div>
+{% endtestExample %}
