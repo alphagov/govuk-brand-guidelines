@@ -45,11 +45,11 @@
 }
 
 .app-section-highlight__wrapper--logo {
+  padding: govuk-spacing(6);
   text-align: center;
 
   img {
     max-width: 60%;
-    padding: govuk-spacing(6);
   }
 }
 
