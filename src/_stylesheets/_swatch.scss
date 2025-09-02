@@ -43,9 +43,16 @@
 // Reduce the spacing between swatches in a list
 .app-swatch-list {
   margin-top: 0;
+  column-width: 16rem;
+  column-gap: $govuk-gutter-half;
   @include govuk-responsive-margin(5, $direction: 'bottom');
 
   .app-swatch {
-    @include govuk-responsive-margin(3, $direction: 'bottom');
+    // Do not break content within swatches
+    break-inside: avoid;
+
+    // Margins can be quite buggy in columns, so use padding instead
+    @include govuk-responsive-margin(0, $direction: 'bottom');
+    @include govuk-responsive-padding(3, $direction: 'bottom');
   }
 }
