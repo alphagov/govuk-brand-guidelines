@@ -136,14 +136,17 @@ If it’s too small, it can lose detail and be harder for some users to read or 
 
 ![The wordmark for "GOV.UK". Minimum width of the wordmark: 50px.](./wordmark-min-width.svg)
 
-<p class="govuk-body">Minimum size:<strong class="app-size-recommendation">50px</strong></p>
+Minimum size:</br>
+<strong class="govuk-!-font-size-24">50px</strong>
 
 </div>
 <div>
 
 ![The crown element of the GOV.UK logo. Minimum width of the crown on it own: 10px.](./crown-min-width.svg)
 
-<p class="govuk-body">Minimum size:<strong class="app-size-recommendation">16px</strong></p>
+Minimum size:</br>
+<strong class="govuk-!-font-size-24">16px</strong>
+
 </div>
 {% endgrid %}
 

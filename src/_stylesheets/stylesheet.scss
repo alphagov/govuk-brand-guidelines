@@ -19,7 +19,9 @@
 @import 'govuk/components/service-navigation';
 @import 'govuk/components/skip-link';
 
+// App foundational styling
 @import 'prose';
+@import 'template';
 
 // App components
 @import 'aria-current';
@@ -36,42 +38,3 @@
 
 @import 'govuk/utilities';
 @import 'govuk/overrides';
-
-// Padding on the `<main>` element needs removing as it's been shifted to a parent
-.app-main-wrapper {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-// The parent
-.app-page-wrapper {
-  @include govuk-responsive-margin(6, $direction: top);
-  @include govuk-responsive-margin(7, $direction: bottom);
-}
-
-.app-chapter-navigation {
-  @include govuk-media-query($until: tablet) {
-    display: none;
-  }
-}
-
-.app-chapter-navigation--mobile-fallback {
-  @include govuk-media-query($from: tablet) {
-    display: none;
-  }
-}
-
-.app-size-recommendation {
-  display: block;
-  font-size: larger;
-}
-
-.app-meta-info {
-  color: #484949;
-}
-
-// Dark magenta section highlight likely to be deleted as it's just framing an image, and the image should have it's own background
-.dark-magenta {
-  color: #ffffff;
-  background-color: #651b3e;
-}

@@ -1,0 +1,23 @@
+// Padding on the `<main>` element needs removing as it's been shifted to a parent
+.app-main-wrapper {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+// The parent
+.app-page-wrapper {
+  @include govuk-responsive-margin(6, $direction: top);
+  @include govuk-responsive-margin(7, $direction: bottom);
+}
+
+.app-chapter-navigation {
+  @include govuk-media-query($until: tablet) {
+    display: none;
+  }
+}
+
+.app-chapter-navigation--mobile-fallback {
+  @include govuk-media-query($from: tablet) {
+    display: none;
+  }
+}
