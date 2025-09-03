@@ -1,10 +1,11 @@
+import { callout } from './shortcodes/callout.js'
+import { figure } from './shortcodes/figure.js'
 import { grid } from './shortcodes/grid.js'
 import { sectionHighlight } from './shortcodes/section-highlight.js'
 import { swatch } from './shortcodes/swatch.js'
 import { swatchList, filterColours } from './shortcodes/swatch-list.js'
 import { testExample } from './shortcodes/test-example.js'
 import { videoPlayer } from './shortcodes/video-player.js'
-import { callout } from './shortcodes/callout.js'
 
 /**
  *  @param {import("@11ty/eleventy/UserConfig")} eleventyConfig
@@ -29,6 +30,7 @@ export function setupShortcodes(eleventyConfig) {
   // ↓
   // function grid(content, param1, param2)
   eleventyConfig.addPairedShortcode('callout', callout)
+  eleventyConfig.addPairedShortcode('figure', figure)
   eleventyConfig.addPairedShortcode('grid', grid)
   eleventyConfig.addPairedShortcode('sectionHighlight', sectionHighlight)
   eleventyConfig.addPairedShortcode('testExample', testExample)

@@ -12,27 +12,39 @@ An example of this is the GOV.UK app icon.
 {% sectionHighlight %}
 {% grid { columns: 3 } %}
 
-<div class="govuk-!-text-align-centre">
+{% figure {
+  src: "./wordmark-on-blue.svg",
+  alt: "GOV.UK wordmark shown on blue background.",
+  classes: "govuk-!-margin-bottom-0",
+  captionPosition: "top"
+} %}
 
 ### Wordmark
 
-![GOV.UK wordmark shown on blue background.](./wordmark-on-blue.svg)
+{% endfigure %}
 
-</div>
-<div class="govuk-!-text-align-centre">
+{% figure {
+  src: "./crown-on-blue.svg",
+  alt: "Crown shown on blue background.",
+  classes: "govuk-!-margin-bottom-0",
+  captionPosition: "top"
+} %}
 
 ### Crown
 
-![Crown shown on blue background.](./crown-on-blue.svg)
+{% endfigure %}
 
-</div>
-<div class="govuk-!-text-align-centre">
+{% figure {
+  src: "./app-icon-on-blue.svg",
+  alt: "[Wordmark and crown on blue background, with a border outline to show positioning of these logo elements as an app icon.",
+  classes: "govuk-!-margin-bottom-0",
+  captionPosition: "top"
+} %}
 
 ### App icon
 
-![Wordmark and crown on blue background, with a border outline to show positioning of these logo elements as an app icon.](./app-icon-on-blue.svg)
+{% endfigure %}
 
-</div>
 {% endgrid %}
 {% endsectionHighlight %}
 
@@ -108,28 +120,17 @@ An example of this is the GOV.UK One Login app.
 
 {% grid { columns: 3 } %}
 
-<figure class="govuk-!-text-align-centre">
+{% figure { src: "./app-icon-template.svg", alt: "Logo template for GOV.UK-branded apps. The wordmark is shown above a placeholder space for a symbol to replace the crown.", classes: "govuk-!-margin-bottom-0" } %}
+Framework
+{% endfigure %}
 
-![Logo template for GOV.UK-branded apps. The wordmark is shown above a placeholder space for a symbol to replace the crown.](./app-icon-template.svg)
+{% figure { src: "./app-icon.svg", alt: "App icon of the GOV.UK app.", classes: "govuk-!-margin-bottom-0" } %}
+**Example 1:** GOV.UK app
+{% endfigure %}
 
-<figcaption>Framework</figcaption>
-
-</figure>
-
-<figure class="govuk-!-text-align-centre">
-
-![App icon of the GOV.UK app.](./app-icon.svg)
-
-<figcaption>Example 1: GOV.UK app</figcaption>
-</figure>
-
-<figure class="govuk-!-text-align-centre">
-
-![App icon of the GOV.UK One Login app, showing the symbol for One Login below the wordmark. ](./app-icon-one-login.svg)
-
-<figcaption>Example 2: GOV.UK One Login</figcaption>
-
-</figure>
+{% figure { src: "./app-icon-one-login.svg", alt: "App icon of the GOV.UK One Login app, showing the symbol for One Login below the wordmark.", classes: "govuk-!-margin-bottom-0" } %}
+**Example 2:** GOV.UK One Login
+{% endfigure %}
 
 {% endgrid %}
 {% endsectionHighlight %}

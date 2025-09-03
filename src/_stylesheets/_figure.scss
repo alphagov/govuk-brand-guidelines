@@ -1,0 +1,29 @@
+.app-figure {
+  margin: 0;
+  text-align: center;
+  @include govuk-responsive-margin(6, $direction: 'bottom');
+}
+
+.app-figure__caption {
+  @include govuk-typography-common;
+  @include govuk-font(16);
+
+  // Remove bottom margin from last child
+  :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.app-figure__image {
+  // Setting vertical-align removes additional space below the image that's
+  // added by inherited line-height
+  vertical-align: middle;
+}
+
+.app-figure--caption-top .app-figure__caption {
+  @include govuk-responsive-margin(3, $direction: 'bottom');
+}
+
+.app-figure--caption-bottom .app-figure__caption {
+  @include govuk-responsive-margin(3, $direction: 'top');
+}
