@@ -67,7 +67,7 @@ Indicative examples for illustrative purposes only.
 
 ### Mobile web header
 
-![Screenshot of the GOV.UK website on mobile, showing the mobile header. Page content is greyed out.](./mobile-header.png)
+![Screenshot of the GOV.UK website on mobile, showing the mobile header in Primary blue.](./mobile-header.png)
 
 ### App header
 

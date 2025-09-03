@@ -285,32 +285,32 @@ Indicative examples for illustrative purposes only.
 
 <div>
 
-![TODO](./storyboard-1.png)
+![Series of images showing the storyboard for an Instagram story that guides the user through a DBS (Disclosure and Barring Service) check. Light blue circular and lozenge shapes are used to create icons and highlights to emphasise key information.](./storyboard-1.png)
 
 </div> 
 <div>
 
-![TODO](./storyboard-2.png)
+![](./storyboard-2.png)
 
 </div>
 <div>
 
-![TODO](./storyboard-3.png)
+![](./storyboard-3.png)
 
 </div>
 <div>
 
-![TODO](./storyboard-4.png)
+![](./storyboard-4.png)
 
 </div>
 <div>
 
-![TODO](./storyboard-5.png)
+![](./storyboard-5.png)
 
 </div>
 <div>
 
-![TODO](./storyboard-6.png)
+![](./storyboard-6.png)
 
 </div>
 {% endgrid %}

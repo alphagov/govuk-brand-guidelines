@@ -102,7 +102,7 @@ It prevents uneven gaps (rivers of white space) found in fully justified text, m
 
 </div>
 
-![Sample of left aligned text.](./left-aligned.png)
+![](./left-aligned.png)
 
 <div class="app-top-border">
 
@@ -114,7 +114,7 @@ Whilst it grabs attention, it reduces readability in longer text, making it hard
 
 </div>
 
-![Sample of centre aligned text inside a circle.](./centre-aligned.png)
+![](./centre-aligned.png)
 {% endgrid %}
 
 ## Type settings
@@ -146,7 +146,7 @@ Indicative examples for illustrative purposes only.
 </div>
 <div>
 
-![](./type-settings-dont-1.png) ![TODO](./type-settings-dont-2.png)</div>
+![](./type-settings-dont-1.png) ![](./type-settings-dont-2.png)</div>
 
 {% endgrid %}
 

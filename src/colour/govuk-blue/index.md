@@ -26,7 +26,7 @@ Accent teal also sits alongside to add impact and help the brand feel more moder
 </div>
 <div>
 
-![GOV.UK wordmark shown on blue background.](./wordmark-on-blue.svg)
+![GOV.UK wordmark shown on blue background. The dot is in Accent teal and the background is in Primary blue.](./wordmark-on-blue.svg)
 
 </div>
 {% endgrid %}
@@ -90,7 +90,7 @@ Indicative examples for illustrative purposes only.
 
 You must make sure that the contrast ratio of colours used meets [Web Content Accessibility Guidelines (WCAG 2.2) success criterion 1.4.3 Contrast (minimum) level AA](https://www.w3.org/TR/WCAG22/#contrast-minimum).
 
-![A very large grid of colour combinations. Tiny red tags show where combinations do not meet minimum colour contrast.](./colour-contrast.png)
+![A very large grid of colour combinations. Tiny red tags show where combinations do not meet minimum colour contrast requirements.](./colour-contrast.png)
 
 ## Incorrect colour usage
 
@@ -100,7 +100,7 @@ To maintain consistency across channels the colours within our palette should ne
 
 <div>
 
-![TODO](./incorrect-colour-combos.png)
+![](./incorrect-colour-combos.png)
 
 </div>
 <div class="app-top-border">
@@ -110,7 +110,7 @@ Do not use colour combinations that do not meet [WCAG2.2 guidelines](https://www
 </div>
 <div>
 
-![TODO](./incorrect-new-colours.png)
+![](./incorrect-new-colours.png)
 
 </div>
 <div class="app-top-border">
@@ -120,7 +120,7 @@ Do not create new colours
 </div>
 <div>
 
-![TODO](./incorrect-too-many-colours.png)
+![](./incorrect-too-many-colours.png)
 
 </div>
 <div class="app-top-border">
@@ -130,7 +130,7 @@ Do not use too many colours within an application
 </div>
 <div>
 
-![TODO](./incorrect-gradients.png)
+![](./incorrect-gradients.png)
 
 </div>
 <div class="app-top-border">

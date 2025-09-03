@@ -96,7 +96,7 @@ For more sensitive messaging, colours from within the same tonal range are used 
 Indicative examples for illustrative purposes only.
 {% endcallout %}
 
-![Title graphic for "Fuel duty will be frozen next year" in green tonal colours combination.](./example-tonal-1.png)
+![Title graphic for "Fuel duty will be frozen next year" in green tonal colour combination.](./example-tonal-1.png)
 
 {% swatch { label: "Green tint 95%", hex: "#F3F9F7" } %}
 {% swatch { label: "Green shade 50%", hex: "#09442D" } %}
@@ -192,7 +192,7 @@ Indicative examples for illustrative purposes only.
 {% swatch { label: "Blue shade 50%", hex: "#0F385C" } %}
 {% swatch { label: "Magenta tint 95%", hex: "#FCF5F8" } %}
 
-![Title graphic for Step by step: Driving abroad" in companion colour combination of accent green and blue.](./example-companion-3.png)
+![Title graphic for "Step by step: Driving abroad" in companion colour combination of accent green and blue.](./example-companion-3.png)
 
 {% swatch { label: "Accent green", hex: "#66F39E" } %}
 {% swatch { label: "Blue shade 50%", hex: "#0F385C" } %}

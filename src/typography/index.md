@@ -27,7 +27,7 @@ Using GDS Transport makes GOV.UK easier to recognise and information easier to r
 
 <div class="scale width-80 right edge">
 
-![Sample of GDS Transport font in heavy (bold) and regular weight](./transport-font.svg)
+![Sample of GDS Transport font in bold and regular weight](./transport-font.svg)
 
 {% endsectionHighlight %}
 
@@ -35,7 +35,7 @@ Using GDS Transport makes GOV.UK easier to recognise and information easier to r
 
 GDS transport consists of two weights: light and bold.
 
-![Sample of GDS Transport font in heavy (bold) and regular weight](./bold-light.svg)
+![Another sample of GDS Transport font in bold and regular weight](./bold-light.svg)
 
 ### Glyphs
 
@@ -49,5 +49,5 @@ GDS Transport Light
 
 GDS Transport Bold
 
-![GDS Transport character set in heavy (bold) weight.](./font-specimen-bold.svg)
+![GDS Transport character set in bold weight.](./font-specimen-bold.svg)
 {% endsectionHighlight %}
