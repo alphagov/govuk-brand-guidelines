@@ -97,7 +97,7 @@ export const videoPlayer = blockShortcode((options = {}) => {
     controls
     playsinline
     muted
-    poster="/assets/videos.poster.jpg"
+    poster="${options.poster ?? '/assets/videos.poster.jpg'}"
     ${options.loop ? 'loop' : ''}>
     ${videoSourcesHtml.join('\n')}
     ${options.fallbackText ? ` <span class="govuk-body">${options.fallbackText}</span>` : ''}
