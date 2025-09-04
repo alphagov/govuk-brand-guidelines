@@ -28,4 +28,4 @@ This flexibility comes from how we use key brand elements – the wider colour p
 
 These guidelines show how to apply the brand in different contexts to meet the needs of people using GOV.UK every day.
 
-![TODO](./inform-inspire.svg)
+![](./inform-inspire.svg)

@@ -15,7 +15,7 @@ Whilst there may be cases where it is not possible, we should always try to use 
 
 <!-- TODO: image is duplicated in ../app/ -->
 
-![TODO](./gds-transport.svg)
+![Sample of GDS Transport font.](./gds-transport.svg)
 {% endsectionHighlight %}
 
 ## Building visual hierarchy
@@ -30,13 +30,15 @@ Indicative examples for illustrative purposes only.
 
 {% sectionHighlight { classes: "app-section-highlight--light-blue" } %}
 
-![TODO](./type-hierarchy.png)
+![Graphic promoting pension information, with labels pointing out different type styles for the tag, headline and body copy, each with different font sizes and weights.](./type-hierarchy.png)
 
 {% endsectionHighlight %}
 
 ## Styles
 
-Consistent use of type styles aids clarity and hierarchy. Headings should be attention-grabbing, whilst body text should prioritize readability with appropriate line spacing and contrast.
+Consistent use of type styles aids clarity and hierarchy.
+
+Headings should be attention-grabbing, whilst body text should prioritize readability with appropriate line spacing and contrast.
 
 <!-- TODO: lots to do here, some of the below should probably be in images -->
 
@@ -92,21 +94,27 @@ Indicative examples for illustrative purposes only.
 
 ### Left aligned text
 
-Where possible we should lead with left-aligned text. It improves readability by keeping spacing consistent and reducing eye strain. It prevents uneven gaps (rivers of white space) found in fully justified text, making it easier to follow, especially for users with dyslexia or visual impairments.
+Where possible we should lead with left-aligned text.
+
+It improves readability by keeping spacing consistent and reducing eye strain.
+
+It prevents uneven gaps (rivers of white space) found in fully justified text, making it easier to follow, especially for users with dyslexia or visual impairments.
 
 </div>
 
-![TODO](./left-aligned.png)
+![](./left-aligned.png)
 
 <div class="app-top-border">
 
 ### Centre aligned text
 
-Centred text should be used sparingly for shorter headlines, predominantly within social channels. Whilst it grabs attention, it reduces readability in longer text, making it harder for the eye to track.
+Centred text should be used sparingly for shorter headlines, predominantly within social channels.
+
+Whilst it grabs attention, it reduces readability in longer text, making it harder for the eye to track.
 
 </div>
 
-![TODO](./centre-aligned.png)
+![](./centre-aligned.png)
 {% endgrid %}
 
 ## Type settings
@@ -129,7 +137,7 @@ Indicative examples for illustrative purposes only.
 
 </div>
 
-![TODO](./type-settings-do.png)
+![](./type-settings-do.png)
 
 <div class="app-top-border">
 
@@ -138,7 +146,7 @@ Indicative examples for illustrative purposes only.
 </div>
 <div>
 
-![TODO](./type-settings-dont-1.png) ![TODO](./type-settings-dont-2.png)</div>
+![](./type-settings-dont-1.png) ![](./type-settings-dont-2.png)</div>
 
 {% endgrid %}
 
@@ -150,9 +158,11 @@ Where standard system fonts are available, Helvetica Neue or Arial should be use
 
 {% sectionHighlight { classes: "app-section-highlight--light-blue" } %}
 
-In cases where system fonts are unavailable, the closest replacement should be used. This should always be a sans serif, low contrast typeface with a focus on accessibility.
+In cases where system fonts are unavailable, the closest replacement should be used.
 
-![TODO](./helvetica-neue.svg)
-![TODO](./arial.svg)
+This should always be a sans serif, low contrast typeface with a focus on accessibility.
+
+![Sample of Helvetica Neue font.](./helvetica-neue.svg)
+![Sample of Arial font.](./arial.svg)
 
 {% endsectionHighlight %}

@@ -6,7 +6,7 @@ hero: ./hero.svg
 
 <div class="hero">
 
-![TODO](./hero.svg)
+![](./hero.svg)
 
 </div>
 

@@ -8,5 +8,5 @@ title: Print
 The recommended sizes for common document formats are illustrated here.
 {% sectionHighlight { classes: "app-section-highlight--dark-magenta" } %}
 
-![TODO](./print-guides.svg)
+![Diagram of A4-sized letterhead and letter. Labels show the minimum sizes for the logo (10mm height), header text (16pt) and body text (12pt).](./print-guides.svg)
 {% endsectionHighlight %}
