@@ -7,6 +7,7 @@
 .app-prose video {
   width: auto;
   max-height: 90vh;
+  object-fit: cover; // Ensure poster covers the whole video
 }
 
 .app-prose figure {
