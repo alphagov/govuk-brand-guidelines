@@ -63,24 +63,17 @@ Within our palette there are two approaches to colour application; tonal colours
 
 Depending on tonal requirement, each can be used to achieve a different level of expression. The following guidance details the use of these two approaches.
 
-<!-- Obviously, that's not the right heading, needs proper design -->
-
-### Inform <--------> Inspire
-
+{% informInspire { contentClasses: 'app-inform-inspire__content--flex app-inform-inspire__content--flex-5-items', list: ['Black and white', 'Dark shade', 'Primary blue', 'Tonal colour', 'Companion colour'] } %}
 ![TODO](./tone-black-and-white.png)
-B&W
 
 ![TODO](./tone-dark-shade.png)
-Dark shade
 
 ![TODO](./tone-primary-blue.png)
-Primary blue
 
 ![TODO](./tone-tonal-colour.png)
-Tonal colour
 
 ![TODO](./tone-companion-colour.png)
-Companion colour
+{% endinformInspire %}
 
 ### Tonal colour examples
 
