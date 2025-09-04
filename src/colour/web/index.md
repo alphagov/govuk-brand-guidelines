@@ -120,4 +120,4 @@ Use for success messages.
 Indicative examples for illustrative purposes only.
 {% endcallout %}
 
-![A screenshot of the GOV.UK homepage on desktop, showing web palette colours such as brand colour blue for the header, link colour blue for the links and visited purple for visited links.](./example.png)
+![A screenshot of the GOV.UK homepage on desktop, showing web palette colours such as Primary blue for the header and links and Primary purple for visited links.](./example.png)

@@ -78,7 +78,7 @@ Indicative examples for illustrative purposes only.
 
 <div class="img-border flex-center">
 
-![Screenshot of YouTube profile on mobile, showing blue and teal used in the banner and social profile image.](./youtube-profile.png)
+![Screenshot of YouTube profile on mobile, showing blue and teal used in the banner image.](./youtube-profile.png)
 
 </div>
 </div>
