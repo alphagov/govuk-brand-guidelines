@@ -110,10 +110,13 @@ No audio. Animation of a circle-shaped piggy bank. Several coins drop into the p
 </div>
 <div>
 
-{% video { source: [
-  "./illustration-piggy-bank.mp4",
-  "./illustration-piggy-bank.webm"
-] } %}
+{% video {
+    source: [
+    "./illustration-piggy-bank.mp4",
+    "./illustration-piggy-bank.webm"
+    ],
+    poster: './custom-name.poster.jpg'
+} %}
 
 </div>
 {% endgrid %}

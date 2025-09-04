@@ -24,8 +24,7 @@ Indicative examples for illustrative purposes only.
   source: [
     "./dot-animations.mp4",
     "./dot-animations.webm"
-  ],
-  poster: './dot-animations.poster.jpg'
+  ]
 } %}
 
 No audio. The dot starts from its place within the GOV.UK logo, then playfully expands, bounces and moves through a range of animation examples that introduce government information and services.

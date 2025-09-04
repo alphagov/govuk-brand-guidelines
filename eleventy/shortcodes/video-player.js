@@ -1,8 +1,9 @@
-import { extname } from 'node:path'
+import { extname, resolve } from 'node:path'
 
 import { blockShortcode } from './utils.js'
+import { existsSync} from 'node:fs'
 
-export const videoPlayer = blockShortcode((options = {}) => {
+export const videoPlayer = blockShortcode(function (options = {}) {
   const defaultOptions = {
     classes: undefined,
 
@@ -97,12 +98,37 @@ export const videoPlayer = blockShortcode((options = {}) => {
     controls
     playsinline
     muted
-    poster="${options.poster ?? '/assets/videos.poster.jpg'}"
+    poster="${options.poster ?? getPosterImage(videoSources, this.ctx.page)}"
     ${options.loop ? 'loop' : ''}>
     ${videoSourcesHtml.join('\n')}
     ${options.fallbackText ? ` <span class="govuk-body">${options.fallbackText}</span>` : ''}
   </video>`
 })
+
+function getPosterImage(videoSources, page) {
+  const pathOfFirstSourceWithRelativeURL = videoSources
+    .filter(source => !/^https?:/.test(source.file))
+    .at(0)?.file
+
+  if (pathOfFirstSourceWithRelativeURL) {
+    const extension = extname(pathOfFirstSourceWithRelativeURL);
+    const posterPath = pathOfFirstSourceWithRelativeURL.replace(extension, '.poster.jpg')
+
+    // Video will be resolved from the page's URL, so we need to use this to
+    // resolve the path. However, the page's URL will start with a leading '/'
+    // so we need to strip that first character when joining with `src`
+    const posterAbsolutePath = resolve('src',page.url.slice(1), posterPath);
+    if (pathOfFirstSourceWithRelativeURL.includes('dot-animations')) {
+      console.log(posterAbsolutePath)
+    }
+
+    if (existsSync(posterAbsolutePath)) {
+      return posterPath
+    }
+  }
+
+  return '/assets/videos.poster.jpg'
+}
 
 function getVideoFileTypeFromFileName(fileName) {
   return 'video/' + extname(fileName)?.slice(1).toLowerCase()
