@@ -5,7 +5,8 @@ import { blockPairedShortcode } from './utils.js'
 export const informInspire = blockPairedShortcode((content, options = {}) => {
   const defaultOptions = {
     classes: undefined,
-    headingLevel: 2
+    headingLevel: 3,
+    contentClasses: undefined
   }
   options = { ...defaultOptions, ...options }
 
@@ -16,7 +17,7 @@ export const informInspire = blockPairedShortcode((content, options = {}) => {
       <div class="app-inform-inspire__axis-dot"></div>
       <div class="app-inform-inspire__axis-label">Inspire</div>
     </div>
-    <div class="app-inform-inspire__content">${
+    <div class="app-inform-inspire__content${options.contentClasses ? ` ${options.contentClasses}` : ''}">${
       content
     }</div>
   </div>`

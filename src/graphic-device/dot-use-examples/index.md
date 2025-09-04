@@ -188,30 +188,14 @@ Thumbnails should always use the dot in a purposeful way.
 Indicative examples for illustrative purposes only.
 {% endcallout %}
 
-<!-- Obviously, that's not the right heading, needs proper design -->
-
-<div class="app-inform-inspire">
-<p class="govuk-visually-hidden">From most infomative to most inspiring</p>
-<p class="govuk-heading-s app-inform-inspire__inform" aria-hidden="true">Inform</p>
-
-{% figure { src: "./video-thumb-get-help.png", alt: "A video thumbnail for 'Get help with registering a death'. Title is shown within a simple blue circle graphic on a blue background.", classes: "govuk-!-text-align-left" } %}
+{% informInspire { contentClasses: 'app-inform-inspire__content--flex app-inform-inspire__content--flex-2-items' } %}
+{% figure { src: "./video-thumb-get-help.png", alt: "A video thumbnail for 'Get help with registering a death'. Title is shown within a simple blue circle graphic on a blue background." } %}
 Get help with...
 {% endfigure %}
-
-{% figure { src: "./video-thumb-60s.png", alt: "A video thumbnail showing a title overlay for 'Check a vehicle before you buy', includes an icon of a small clock that resembles the dot.", classes: "govuk-!-text-align-left" } %}
-60s guides
-{% endfigure %}
-
-{% figure { src: "./video-thumb-step.png", alt: "A video thumbnail for 'How to apple for a Visa'. Title is shown on light blue background beside an illustration of travel documents incorporating the dot.", classes: "govuk-!-text-align-left" } %}
-Step-by-step guides
-{% endfigure %}
-
 {% figure { src: "./video-thumb-influencer.png", alt: "A video thumbnail for 'How I learnt to drive. A smiling young adult is shown in front of a purple background, with the title in a dark purple circle.", classes: "govuk-!-text-align-left" } %}
 Influencer/presenter
 {% endfigure %}
-
-<p aria-hidden="true" class="govuk-heading-s app-inform-inspire__inspire">Inspire</p>
-</div>
+{% endinformInspire %}
 
 {% sectionHighlight {classes: "app-section-highlight--light-blue" } %}
 
