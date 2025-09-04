@@ -9,10 +9,10 @@ import { outdent } from 'outdent'
  */
 
 export function blockShortcode(shortcode) {
-  return function ({ indent = 0, ...options } = {}) {
+  return function ({ insideHTML, indent = 0, ...options } = {}) {
     const output = indentLines(shortcode.call(this, options), { amount: indent })
 
-    return `\n\n${output}\n\n`
+    return insideHTML ? output : `\n\n${output}\n\n`
   }
 }
 
