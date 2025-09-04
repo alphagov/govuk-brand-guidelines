@@ -16,11 +16,23 @@ $arrow-width: 12px;
   display: flex;
 }
 
+// These modifiers could be looped over, however since there's only the need for
+// 2 cases: 2 items and 5 items, and we don't know what we'd want the gaps to be
+// for other cases, nor can we programmatically determine them right now, we
+// manually generate only these 2.
 .app-inform-inspire__content--flex-2-items {
   gap: govuk-spacing(5);
 
   & > * {
     width: 50%;
+  }
+}
+
+.app-inform-inspire__content--flex-5-items {
+  gap: govuk-spacing(1);
+
+  & > * {
+    width: 20%;
   }
 }
 
