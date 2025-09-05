@@ -1,2 +1,7 @@
-$app-light-blue: govuk-tint($govuk-brand-colour, 95%);
-$app-blue-shade-25: govuk-shade($govuk-brand-colour, 25%);
+@use 'colour-palette';
+
+:root {
+  @each $key, $colour in colour-palette.$govuk-new-colours {
+    --palette-#{$key}: #{$colour};
+  }
+}

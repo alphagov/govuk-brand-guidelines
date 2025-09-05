@@ -5,6 +5,7 @@ import { setupMarkdownCompilation } from './eleventy/markdown.js'
 import { setupMedia } from './eleventy/media.js'
 import { setupNavigation } from './eleventy/navigation.js'
 import { setupShortcodes } from './eleventy/shortcodes.js'
+import { generateColourPaletteSass } from './eleventy/colours-stylesheet.js'
 
 /**
  *  @param {import("@11ty/eleventy/UserConfig")} eleventyConfig
@@ -21,6 +22,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addPlugin(setupNunjucks)
 
   // Watch and compile Sass files on change
+  eleventyConfig.addPlugin(generateColourPaletteSass)
   eleventyConfig.addPlugin(setupStylesheetCompilation, { to: 'assets' })
 
   // Watch and bundle JS files on change
@@ -46,7 +48,7 @@ export default function (eleventyConfig) {
 
   // Set up bundle for per-page CSS
   // https://www.11ty.dev/docs/plugins/bundle/
-  eleventyConfig.addBundle("css")
+  eleventyConfig.addBundle('css')
 
   return {
     markdownTemplateEngine: 'njk',
