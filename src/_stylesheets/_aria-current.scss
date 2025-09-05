@@ -11,7 +11,7 @@
     align-items: baseline;
 
     &::before {
-      $dot-size: 1ex;
+      $dot-size: 0.5rem;
 
       content: '';
       display: block;
@@ -26,6 +26,12 @@
       transform: translateY(-1px);
       border-radius: 100%;
       background: currentcolor;
+
+      // Force dot colour to match link text in high contrast mode
+      // stylelint-disable-next-line max-nesting-depth
+      @media (forced-colors: active) {
+        background: LinkText;
+      }
     }
   }
 }
