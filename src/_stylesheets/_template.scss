@@ -6,13 +6,26 @@
 
 // The parent
 .app-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: $govuk-gutter;
   @include govuk-responsive-margin(6, $direction: top);
   @include govuk-responsive-margin(7, $direction: bottom);
+
+  @include govuk-media-query($from: tablet) {
+    flex-direction: row;
+  }
 }
 
 .app-chapter-navigation {
+  flex: 0 0 210px;
+
   @include govuk-media-query($until: tablet) {
     display: none;
+  }
+
+  @include govuk-media-query($from: desktop) {
+    flex-basis: 260px;
   }
 }
 
@@ -20,4 +33,8 @@
   @include govuk-media-query($from: tablet) {
     display: none;
   }
+}
+
+.app-content {
+  flex-grow: 1;
 }
