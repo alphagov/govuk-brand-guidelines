@@ -227,7 +227,7 @@ Indicative examples for illustrative purposes only.
 <figure>
     <div class="app-figure-container">
         <picture>
-            <img src="./video-thumb-influencer.png" alt="A video thumbnail for 'How I learnt to drive. A smiling young adult is shown in front of a background, which is a purple circular title graphic.">
+            <img src="./video-thumb-influencer.png" alt="A video thumbnail for 'How I learnt to drive. A smiling young adult is shown in front of a purple background with the title in dark purple circle.">
         </picture>
         <figcaption>
             <p class="govuk-body">Influencer/presenter</p>
@@ -329,7 +329,7 @@ To keep things consistent, avoid the following:
 
 Dot not overuse the dot
 
-![Crossed out title graphic with an blank dot on the top left. The title is placed in the centre within a large circle, and also contains a lozenge-shaped text highlight.](./incorrect-overuse.png)
+![Crossed out graphic with a small blank dot on the top left. Text placed in the centre within a large circle, and also contains a lozenge-shaped text highlight.](./incorrect-overuse.png)
 
 </div>
 <div>
@@ -338,7 +338,7 @@ Dot not overuse the dot
 
 Dot not use the dot in a decorative way
 
-![Crossed out title graphic with a dot placed off-centre in the background.](./incorrect-decorative.png)
+![Crossed out graphic some text, with a dot placed off-centre in the background.](./incorrect-decorative.png)
 
 </div>
 <div>
@@ -347,7 +347,7 @@ Dot not use the dot in a decorative way
 
 Do not distort or skew the dot
 
-![Crossed out title graphic with the title placed inside an oval.](./incorrect-distorted.png)
+![Crossed out graphic with some text placed inside a stretched-out oval.](./incorrect-distorted.png)
 
 </div>
 <div>

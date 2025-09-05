@@ -71,19 +71,19 @@ Depending on tonal requirement, each can be used to achieve a different level of
 
 ### Inform <--------> Inspire
 
-![Title graphic for "National mourning guidance" in black and white.](./tone-black-and-white.png)
+![Text "National mourning guidance" in black, within a white circle, on a black background.](./tone-black-and-white.png)
 B&W
 
-![Title graphic for "Get support with the cost of living" in a dark shade of blue.](./tone-dark-shade.png)
+![Text "Get support with the cost of living" in blue shade 50%, withiin a white circle, on a blue shade 50% background.](./tone-dark-shade.png)
 Dark shade
 
-![Title graphic for "Fuel duty will be frozen next year" in primary blue colour.](./tone-primary-blue.png)
+![Text "Fuel duty will be frozen next year" in Primary blue, within a white circle, on a Primary blue background.](./tone-primary-blue.png)
 Primary blue
 
-![Title graphic for "Get help with your pension" in primary blue and light blue tonal colour.](./tone-tonal-colour.png)
+![Text "Get help with your pension" in a dark blue, within a Accent blue circle, on a Primary blue background.](./tone-tonal-colour.png)
 Tonal colour
 
-![Title graphic for "Learning to drive a car" in companion colours of accent green and dark blue shade.](./tone-companion-colour.png)
+![Text "Learning to drive a car" in Accent green, within a blue shade 50% background, on an Accent green background.](./tone-companion-colour.png)
 Companion colour
 
 ### Tonal colour examples
@@ -96,18 +96,18 @@ For more sensitive messaging, colours from within the same tonal range are used 
 Indicative examples for illustrative purposes only.
 {% endcallout %}
 
-![Title graphic for "Fuel duty will be frozen next year" in green tonal colour combination.](./example-tonal-1.png)
+![Text "Fuel duty will be frozen next year" in Green shade 50%, within a whte circle, on a Green tint 50% background.](./example-tonal-1.png)
 
 {% swatch { label: "Green tint 95%", hex: "#F3F9F7" } %}
 {% swatch { label: "Green shade 50%", hex: "#09442D" } %}
 
-![Title graphic for "Strong winds and expected disruptions", with graphic of an exclamation mark, in red tonal colour combination.](./example-tonal-2.png)
+![Text "Strong winds and expected disruptions" in white, above the text is an exclamation mark icon in Red shade 50% inside a small circle in Accent red, on a Primary red background.](./example-tonal-2.png)
 
 {% swatch { label: "Primary red", hex: "#CA3535" } %}
 {% swatch { label: "Red shade 50%", hex: "#651B1B" } %}
 {% swatch { label: "Accent red", hex: "#FF5E5E" } %}
 
-![Title graphic for "Get your council bill reduced as a student", with downward arrow graphic and lozenge highlight on "reduced", in purple tonal colour combination.](./example-tonal-3.png)
+![Text "Get your council bill reduced as a student" in white, with a Primary purple lozenge highlighting the word "reduced". Below the text is a large Accent purple arrow. Image background is in Purple shade 50%.](./example-tonal-3.png)
 
 {% swatch { label: "Purple tint 95%", hex: "#F6F5FA" } %}
 {% swatch { label: "Primary purple", hex: "#54319F" } %}
@@ -181,18 +181,18 @@ For more sensitive messaging, colours from within the same tonal range are used 
 Indicative examples for illustrative purposes only.
 {% endcallout %}
 
-![Title graphic for "Get your council bill reduced as a student", with down arrow graphic and lozenge highlight on "reduced", in companion colour combination of blue and yellow.](./example-companion-1.png)
+![Text "Get your council bill reduced as a student" in white, with "reduced" in black text within a Primary yellow lozenge highlight. Above is a large Primary yellow arrow. Image background is in Primary blue.](./example-companion-1.png)
 
 {% swatch { label: "Primary blue", hex: "#1D70B8" } %}
 {% swatch { label: "Primary yellow", hex: "#FFDD00" } %}
 
-![Title graphic for "See to see if you need an Electronic Travel Authorisation (ETA)", with a map pin graphic, in companion colour combination of magenta and blue.](./example-companion-2.png)
+![Text "See to see if you need an Electronic Travel Authorisation (ETA)" in Blue shade 50%. Above is a map pin graphic in Primary magenta. Image background is in Magenta tint 90%.](./example-companion-2.png)
 
 {% swatch { label: "Primary magenta", hex: "#CA357C" } %}
 {% swatch { label: "Blue shade 50%", hex: "#0F385C" } %}
 {% swatch { label: "Magenta tint 95%", hex: "#FCF5F8" } %}
 
-![Title graphic for "Step by step: Driving abroad" in companion colour combination of accent green and blue.](./example-companion-3.png)
+![Text "Driving abroad" in white, with topic text "Step by step" above in Accent green, within a Blue shade 50% circle. Image background is Accent green.](./example-companion-3.png)
 
 {% swatch { label: "Accent green", hex: "#66F39E" } %}
 {% swatch { label: "Blue shade 50%", hex: "#0F385C" } %}
