@@ -1,2 +1,9 @@
 $app-light-blue: govuk-tint($govuk-brand-colour, 95%);
 $app-blue-shade-25: govuk-shade($govuk-brand-colour, 25%);
+
+$app-green: #11875a;
+
+$app-black: govuk-colour('black');
+$app-black-tint-25: govuk-tint($app-black, 25%);
+$app-black-tint-50: govuk-tint($app-black, 50%);
+$app-black-tint-95: govuk-tint($app-black, 95%);
