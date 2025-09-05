@@ -223,7 +223,7 @@ The dot can also be used as a static graphic, adding emphasis and helping guide 
 Indicative examples for illustrative purposes only.
 {% endcallout %}
 
-{% grid { columns: { mobile: 2, tablet: 4 }, classes: "app-grid-reduced-gap" } %}
+{% grid { columns: { mobile: 2, tablet: 4 }, classes: "app-grid--reduced-gap" } %}
 
 <div>
 
@@ -256,7 +256,7 @@ While it's important to use the dot in a purposeful way, it can effectively guid
 Indicative examples for illustrative purposes only.
 {% endcallout %}
 
-{% grid { columns: { mobile: 3, tablet: 6 }, classes: "app-grid-reduced-gap" } %}
+{% grid { columns: { mobile: 3, tablet: 6 }, classes: "app-grid--reduced-gap" } %}
 
 <div>
 
