@@ -57,6 +57,7 @@
   display: grid;
   grid-template-columns: repeat(var(--app-grid-columns), 1fr);
   gap: var(--app-grid-gap);
+  @include govuk-responsive-margin(5, $direction: 'bottom');
 }
 
 .app-grid--reduced-gap {

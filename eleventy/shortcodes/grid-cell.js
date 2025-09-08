@@ -19,7 +19,7 @@ export const gridCell = blockPairedShortcode((content, options) => {
     })
   }
 
-  return `<div class="app-grid-cell${options.classes ? ` ${options.classes}` : ''}" style="${properties.declarations}">
+  return `<div class="app-grid__cell${options.classes ? ` ${options.classes}` : ''}" style="${properties.declarations}">
     ${content}
   </div>`
 })
