@@ -25,7 +25,8 @@
   {% if collections.pages[0].data.children | length %}
     {{ appServiceNavigation({
       pages: collections.pages[0].data.children,
-      renderedPageUrl: page.url
+      renderedPageUrl: page.url,
+      inverse: true
     })}}
   {% endif %}
 {% endblock %}

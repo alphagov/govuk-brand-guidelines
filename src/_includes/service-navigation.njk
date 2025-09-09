@@ -42,7 +42,8 @@
 
 {{ govukServiceNavigation({
   navigation: navigation,
-  navigationClasses: 'app-service-navigation__wrapper'
+  navigationClasses: 'app-service-navigation__wrapper',
+  classes: 'govuk-service-navigation--inverse' if params.inverse else null
 }) }}
 
 {% endmacro %}
