@@ -13,7 +13,7 @@ export const grid = blockPairedShortcode((content, options = {}) => {
   const properties = new CustomProperties()
   properties.setResponsive('app-grid-columns', options.columns)
 
-  return `<div class="app-grid${options.classes ? ` ${options.classes}` : ''}" style="${properties.declarations}">
+  return `<div class="app-grid${options.classes ? ` ${options.classes}` : ''}"${properties.declarations ? ` style="${properties.declarations}"` : ''}>
     ${content}
   </div>`
 })
