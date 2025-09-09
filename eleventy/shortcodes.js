@@ -8,6 +8,7 @@ import { swatch } from './shortcodes/swatch.js'
 import { swatchList, filterColours } from './shortcodes/swatch-list.js'
 import { testExample } from './shortcodes/test-example.js'
 import { videoPlayer } from './shortcodes/video-player.js'
+import { breakOut } from './shortcodes/break-out.js'
 
 /**
  *  @param {import("@11ty/eleventy/UserConfig")} eleventyConfig
@@ -31,6 +32,7 @@ export function setupShortcodes(eleventyConfig) {
   // {% grid(param1, param2) %} Content {% endgrid %}
   // ↓
   // function grid(content, param1, param2)
+  eleventyConfig.addPairedShortcode('breakOut', breakOut)
   eleventyConfig.addPairedShortcode('callout', callout)
   eleventyConfig.addPairedShortcode('figure', figure)
   eleventyConfig.addPairedShortcode('grid', grid)

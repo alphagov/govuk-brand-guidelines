@@ -35,7 +35,7 @@
 
 {% block beforeContent %}
   {% from "govuk/components/phase-banner/macro.njk" import govukPhaseBanner %}
-  <div class="app-break-out app-break-out--blue">
+  {% breakOut %}
     {%- if site.env.CONTEXT === "dev" %}
       {{ govukPhaseBanner({
         tag: {
@@ -59,7 +59,7 @@
         text: "This is a new service. Help us improve it by giving your feedback."
       }) }}
     {%- endif %}
-  </div>
+  {% endbreakOut %}
 {% endblock %}
 
 {% set mainClasses = 'app-main-wrapper app-prose' %}

@@ -62,6 +62,10 @@
     color: inherit;
   }
 
+  .govuk-link {
+    @include govuk-link-style-inverse;
+  }
+
   p:last-child {
     margin-bottom: 0;
   }
