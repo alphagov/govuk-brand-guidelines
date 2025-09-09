@@ -62,7 +62,7 @@
   {% endbreakOut %}
 {% endblock %}
 
-{% set mainClasses = 'app-main-wrapper app-prose' %}
+{% set mainClasses = [mainClasses, 'app-main-wrapper app-prose'] | select('truthy') | join(' ') %}
 
 {% block content %}
   {{ content | safe }}

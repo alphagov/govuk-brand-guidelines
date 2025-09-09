@@ -4,6 +4,23 @@
   padding-bottom: 0;
 }
 
+.app-homepage-section {
+  @include govuk-responsive-padding(6, $direction: top);
+  @include govuk-responsive-padding(6, $direction: bottom);
+}
+
+.app-homepage-masthead {
+  @include govuk-font-size($size: 24);
+
+  h1 {
+    text-wrap: balance;
+  }
+
+  .govuk-body {
+    font-size: inherit;
+  }
+}
+
 // The parent
 .app-page-wrapper {
   @include govuk-responsive-margin(6, $direction: top);

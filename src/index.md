@@ -2,7 +2,22 @@
 order: 0
 title: GOV.UK Brand Guidelines
 layout: homepage.njk
+mainClasses: 'app-homepage'
 ---
+
+{% breakOut {classes: "app-homepage-section app-homepage-masthead"} %}
+
+<div class="govuk-grid-row">
+<div class="govuk-grid-column-two-thirds-from-desktop">
+
+# A brand that can inform and inspire
+
+[Intro text expanding on the idea of a flexible brand that can be expressed in a range of different ways]
+
+</div>
+</div>
+
+{% endbreakOut %}
 
 ## Brand ambition
 

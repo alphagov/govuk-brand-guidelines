@@ -84,7 +84,7 @@
       #}
 {% endblock %}
 
-{% set mainClasses = 'app-main-wrapper app-prose' %}
+{% set mainClasses = [mainClasses, 'app-main-wrapper app-prose'] | select('truthy') | join(' ') %}
 
 {% block content %}
   <h1 class="govuk-heading-xl">{{title}}</h1>
