@@ -193,11 +193,11 @@ Do not use colour combinations that are not accessible.
 
 </div>
 
-<div class="app-grid__cell--image-full-width">
+{% gridCell { classes: 'app-grid__cell--image-full-width' } %}
 
 ![](./incorrect-not-accessible-1.svg) ![](./incorrect-not-accessible-2.svg)
 
-</div>
+{% endgridCell %}
 
 <div class="app-top-border">
 
@@ -205,20 +205,20 @@ Do not use colour combinations that lack contrast between the wordmark and dot.
 
 </div>
 
-<div class="app-grid__cell--image-full-width">
+{% gridCell { classes: 'app-grid__cell--image-full-width' } %}
 
 ![](./incorrect-low-contrast-1.svg) ![](./incorrect-low-contrast-2.svg)
 
-</div>
+{% endgridCell%}
 
 <div class="app-top-border">
 
 Do not use colour combinations that are not from the same tonal range.
 
 </div>
-<div class="app-grid__cell--image-full-width">
+{% gridCell { classes: 'app-grid__cell--image-full-width' } %}
 
 ![](./incorrect-tonal-1.svg) ![](./incorrect-tonal-2.svg)
 
-</div>
+{% endgridCell %}
 {% endgrid %}
