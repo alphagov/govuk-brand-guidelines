@@ -26,12 +26,12 @@
   color: govuk-colour('black');
 
   .app-top-border {
-    --app-top-border-colour: #{$app-blue-shade-25};
+    --app-top-border-colour: var(--palette-blue-shade-25);
   }
 }
 
 .app-section-highlight--light-blue {
-  background-color: $app-light-blue;
+  background-color: var(--palette-blue-tint-95);
 }
 
 .app-section-highlight--light-grey {
