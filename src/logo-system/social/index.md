@@ -18,7 +18,7 @@ An example of this is in profile icons.
 
 <!-- TODO: duplicated file also in ../app -->
 
-![GOV.UK wordmark shown on blue background.](./wordmark-on-blue.svg)
+![Wordmark for GOV.UK in white. The dot between 'GOV' and 'UK' is Accent teal and vertically-centred. Shown on a Primary blue background.](./wordmark-on-blue.svg)
 
 </div>
 
@@ -28,7 +28,7 @@ An example of this is in profile icons.
 
 <!-- TODO: duplicated file also in ../app -->
 
-![Crown shown on blue background.](./crown-on-blue.svg)
+![The crown element of the GOV.UK logo, shown as white on a Primary blue background.](./crown-on-blue.svg)
 
 </div>
 
@@ -36,7 +36,7 @@ An example of this is in profile icons.
 
 ### Profile icons
 
-![App icon showing a stacked lock-up of the GOV.UK wordmark and crown. A circle outline shows positioning of logo elements.](./profile-icon-on-blue.svg)
+![Social profile icon with a Primary blue background, showing a stacked lock-up of the GOV.UK wordmark and crown. A circle outline shows positioning of logo elements.](./profile-icon-on-blue.svg)
 
 </div>
 {% endgrid %}

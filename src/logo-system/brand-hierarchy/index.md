@@ -30,7 +30,7 @@ In both horizontal and stacked lock-ups, the space between the wordmark and prod
 
 <div class="app-grid__cell--vertical-align-end">
 
-![Various diagrams of the GOV.UK Pay lock-up, showing how the dot is used to set spacing between the product name and wordmark. Horizontal and stacked lock-ups are shown.](./lockup-1.svg)
+![Various diagrams of the GOV.UK Pay lock-up in black showing how the dot is used to set spacing between the product name and wordmark. Horizontal and stacked lock-ups are shown. The dot between 'GOV' and 'UK' is Primary blue.](./lockup-1.svg)
 
 </div>
 <div class="app-grid__cell--vertical-align-end">

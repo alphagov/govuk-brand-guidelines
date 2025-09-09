@@ -9,8 +9,8 @@ If your service is on the service.gov.uk subdomain you must use the GDS Transpor
 
 {% sectionHighlight { classes: "app-section-highlight--light-blue" } %}
 
-For in depth guidance on how to correctly apply typography within the web channel, refer to the [Design System Guidelines](https://design-system.service.gov.uk/styles/typeface/).
+For in depth guidance on how to correctly apply typography within the web channel, refer to the guidelines on the [GOV.UK Design System](https://design-system.service.gov.uk/styles/typeface/).
 
-![TODO](./design-system.png)
+![Screenshot of the Typeface page on the GOV.UK Design System.](./design-system.png)
 
 {% endsectionHighlight %}

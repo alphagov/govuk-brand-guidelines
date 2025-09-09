@@ -14,7 +14,7 @@ An example of this is the GOV.UK app icon.
 
 {% figure {
   src: "./wordmark-on-blue.svg",
-  alt: "GOV.UK wordmark shown on blue background.",
+  alt: "Wordmark for GOV.UK in white. The dot between 'GOV' and 'UK' is Accent teal and vertically-centred. Shown on a Primary blue background.",
   classes: "govuk-!-margin-bottom-0",
   captionPosition: "top"
 } %}
@@ -25,7 +25,7 @@ An example of this is the GOV.UK app icon.
 
 {% figure {
   src: "./crown-on-blue.svg",
-  alt: "Crown shown on blue background.",
+  alt: "Crown shown as white on a Primary blue background.",
   classes: "govuk-!-margin-bottom-0",
   captionPosition: "top"
 } %}
@@ -36,7 +36,7 @@ An example of this is the GOV.UK app icon.
 
 {% figure {
   src: "./app-icon-on-blue.svg",
-  alt: "[Wordmark and crown on blue background, with a border outline to show positioning of these logo elements as an app icon.",
+  alt: "App icon with a Primary blue background, showing a stacked lock-up of the GOV.UK wordmark and crown. A rounded square outline shows positioning of logo elements.",
   classes: "govuk-!-margin-bottom-0",
   captionPosition: "top"
 } %}

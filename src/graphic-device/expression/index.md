@@ -19,14 +19,14 @@ Indicative examples for illustrative purposes only.
 
 ### Guides
 
-![A chart showing some statistics presented within circles.](./expression-guides.png)
+![Text "How to register to vote", above is smaller text for the topic "Step by step guide", all within a dark blue circle on a yellow background.](./expression-guides.png)
 
 </div>
 <div>
 
 ### Highlights
 
-![A title graphic for 'Get support with the cost of living'. "Support" is in a lozenge-shaped highlight.](./expression-highlights.png)
+![Text 'Get support with the cost of living' with "support" in a lozenge-shaped highlight.](./expression-highlights.png)
 
 </div>
 <div>
@@ -40,7 +40,7 @@ Indicative examples for illustrative purposes only.
 
 ### Informs
 
-![A title graphic for a 'Step by step guide' called 'How to register to vote'](./expression-informs.png)
+![Infographic showing statistics for the 3 most visited pages on the GOV.UK website.](./expression-informs.png)
 
 </div>
 {% endgrid %}

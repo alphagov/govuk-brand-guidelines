@@ -11,7 +11,7 @@ To reference colours from the palette directly you should use the `govuk-colour`
 
 Avoid using the palette colours if there is a Sass variable that is designed for your context. For example, if you are styling the error state of a component you should use the `$govuk-error-colour` Sass variable rather than `govuk-colour("red")`.
 
-Our web palette has:
+The web palette has:
 
 - [blues](#blues)
 - [greens](#greens)
@@ -102,13 +102,13 @@ Only use this colour to indicate which element is focused on. For example, when 
 
 {% swatch { label: "$govuk-error-colour", hex: "#CA3535" } %}
 
-Use for error messages
+Use for error messages.
 
-#### Success state
+#### Success state.
 
 {% swatch { label: "$govuk-success-colour", hex: "#11875A" } %}
 
-Use for success messages
+Use for success messages.
 
 #### Brand colour
 
@@ -120,4 +120,4 @@ Use for success messages
 Indicative examples for illustrative purposes only.
 {% endcallout %}
 
-![TODO](./example.png)
+![A screenshot of the GOV.UK homepage on desktop, showing web palette colours such as Primary blue for the header and links and Primary purple for visited links.](./example.png)

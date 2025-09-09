@@ -15,7 +15,7 @@ As our primary identifier, the GOV.UK wordmark should be used in all application
 
 <div class="app-section-highlight__wrapper--logo">
 
-![The wordmark for "GOV.UK". The dot is centred vertically and coloured in accent teal.](./wordmark.svg)
+![Wordmark for GOV.UK in white. The dot between 'GOV' and 'UK' is Accent teal and vertically-centred. Shown on a Primary blue background.](./wordmark.svg)
 
 </div>
 {% endsectionHighlight %}
@@ -30,7 +30,7 @@ As our primary identifier, the GOV.UK wordmark should be used in all application
 
 <div class="app-section-highlight__wrapper--logo">
 
-![The crown element of the GOV.UK logo.](./crown2.svg)
+![The crown element of the GOV.UK logo, shown as white on a Primary blue background.](./crown2.svg)
 
 </div>
 {% endsectionHighlight %}
@@ -41,7 +41,7 @@ A lock-up system where we can position the crown in close proximity to the GOV.U
 
 <div>
 
-![Desktop and mobile background showing the GOV.UK wordmark placed at the very centre with the crown centred at the bottom.](./crown-supporting-element.svg)
+![Desktop and mobile backgrounds showing the GOV.UK wordmark centred on a Primary blue background with the crown centred on the bottom margin.](./crown-supporting-element.svg)
 
 </div>
 

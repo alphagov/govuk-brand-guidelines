@@ -4,7 +4,7 @@ title: Graphic device
 hero: ./hero.svg
 ---
 
-## The Dot
+## The dot
 
 Our dot is the bridge between government and the UK, by the side of users to help make information and services easier and more useful.
 
@@ -12,7 +12,7 @@ Used within our wordmark and as a graphic device across all GOV.UK channels, the
 
 {% sectionHighlight %}
 
-![The GOV.UK wordmark, with an arrow that points to the dot.](./the-dot.svg)
+![The GOV.UK wordmark. An arrow points to the vertically-centred dot between 'GOV' and 'UK'.](./the-dot.svg)
 
 {% endsectionHighlight %}
 
