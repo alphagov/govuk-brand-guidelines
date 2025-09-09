@@ -1,4 +1,4 @@
-import { blockPairedShortcode } from './utils.js'
+import { blockPairedShortcode, CustomProperties } from './utils.js'
 
 export const grid = blockPairedShortcode((content, options = {}) => {
   const defaultOptions = {
@@ -10,24 +10,10 @@ export const grid = blockPairedShortcode((content, options = {}) => {
   options = { ...defaultOptions, ...options }
 
   // Assemble custom properties
-  const cssProperties = []
-  if (typeof options.columns === 'number') {
-    cssProperties.push(`--app-grid-columns-mobile: ${options.columns}`)
-  } else if (typeof options.columns === 'object') {
-    if (options.columns.mobile) {
-      cssProperties.push(`--app-grid-columns-mobile: ${options.columns.mobile}`)
-    }
-    if (options.columns.tablet) {
-      cssProperties.push(`--app-grid-columns-tablet: ${options.columns.tablet}`)
-    }
-    if (options.columns.desktop) {
-      cssProperties.push(
-        `--app-grid-columns-desktop: ${options.columns.desktop}`
-      )
-    }
-  }
+  const properties = new CustomProperties()
+  properties.setResponsive('app-grid-columns', options.columns)
 
-  return `<div class="app-grid${options.classes ? ` ${options.classes}` : ''}" style="${cssProperties.join(';')}">
+  return `<div class="app-grid${options.classes ? ` ${options.classes}` : ''}"${properties.declarations ? ` style="${properties.declarations}"` : ''}>
     ${content}
   </div>`
 })

@@ -1,32 +1,86 @@
+/// Creates a custom properties whose value can be set responsively
+/// at mobile, tablet and desktop breakpoint. Wider breakpoints
+/// inherit the value of the narrower ones if not set.
+///
+/// The mixin will make the following properties available in the selector:
+/// - `<PROPERTY_NAME>` The custom property to use for accessing the value
+/// - `<PROPERTY_NAME>-mobile` The custom property to use for setting the value from mobile on
+/// - `<PROPERTY_NAME>-tablet` The custom property to use for setting the value from tablet on
+/// - `<PROPERTY_NAME>-desktop` The custom property to us for setting the value from desktop on
+///
+/// @param $propertyName - The name of the custom property (including the leading `--`)
+///
+/// @example scss - Creating a grid with set numbers of columns at different breakpoints
+///   // A configurable block selector, reading the property
+///   .app-grid {
+///     @include responsive-custom-property(--app-grid-columns)
+///     display: grid;
+///     grid-template-columns: repeat(var(--app-grid-columns))
+///   }
+///
+///   // Modifier classes setting the values at different breakpoints
+///   .app-grid--1-2-3 {
+///     --app-grid-columns-mobile: 1;
+///     --app-grid-columns-tablet: 2;
+///     --app-grid-columns-desktop: 3;
+///   }
+///
+///   .app-grid--1-2 {
+///     --app-grid-columns-mobile: 1;
+///     --app-grid-columns-tablet: 2;
+///     // Desktop will inherit from tablet
+///   }
+@mixin responsive-custom-property($propertyName) {
+  #{$propertyName}: var(#{$propertyName}-mobile);
+
+  @include govuk-media-query($from: tablet) {
+    #{$propertyName}: var(
+      #{$propertyName}-tablet,
+      var(#{$propertyName}-mobile)
+    );
+  }
+
+  @include govuk-media-query($from: desktop) {
+    #{$propertyName}: var(
+      #{$propertyName}-desktop,
+      var(#{$propertyName}-tablet, var(#{$propertyName}-mobile))
+    );
+  }
+}
+
 .app-grid {
+  @include responsive-custom-property(--app-grid-columns);
+
   --app-grid-columns-mobile: 1;
   --app-grid-gap: #{$govuk-gutter};
 
   display: grid;
-  grid-template-columns: repeat(var(--app-grid-columns-mobile), 1fr);
+  grid-template-columns: repeat(var(--app-grid-columns), 1fr);
   gap: var(--app-grid-gap);
+  @include govuk-responsive-margin(5, $direction: 'bottom');
+}
 
-  @include govuk-media-query($from: tablet) {
-    --app-grid-columns-tablet: var(--app-grid-columns-mobile);
-    grid-template-columns: repeat(var(--app-grid-columns-tablet), 1fr);
-  }
+.app-grid--reduced-gap {
+  --app-grid-gap: 10px;
+}
 
-  @include govuk-media-query($from: desktop) {
-    --app-grid-columns-desktop: var(--app-grid-columns-tablet);
-    grid-template-columns: repeat(var(--app-grid-columns-desktop), 1fr);
+.app-grid__cell {
+  @include responsive-custom-property(--app-grid-cell-span);
+
+  align-content: var(--app-grid-cell-vertical-align);
+  grid-column: var(--app-grid-cell-span, var(--app-grid-cell-span-mobile));
+
+  > :last-child {
+    margin-bottom: 0;
   }
 }
 
 @each $alignment in (start, center, end) {
   .app-grid__cell--vertical-align-#{$alignment} {
-    align-content: $alignment;
+    --app-grid-cell-vertical-align: #{$alignment};
   }
 }
 
 .app-grid__cell--image-full-width img {
   width: 100%;
-}
-
-.app-grid-reduced-gap {
-  --app-grid-gap: 10px;
 }
