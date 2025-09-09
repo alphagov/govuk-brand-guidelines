@@ -1,5 +1,7 @@
 {% extends "govuk/template.njk" %}
 
+{% set htmlClasses = 'app-break-out-container' %}
+
 {% block pageTitle %}
   {{- title -}}
 {% endblock %}
@@ -33,7 +35,7 @@
 
 {% block beforeContent %}
   {% from "govuk/components/phase-banner/macro.njk" import govukPhaseBanner %}
-  <div class="app-full-bleed-section--blue govuk-!-padding-top-0 govuk-!-padding-bottom-0">
+  <div class="app-break-out app-break-out--blue">
     {%- if site.env.CONTEXT === "dev" %}
       {{ govukPhaseBanner({
         tag: {

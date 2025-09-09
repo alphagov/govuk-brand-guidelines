@@ -1,0 +1,72 @@
+// Sections with break out backgrounds use an absolutely positioned
+// pseudo-element to render a background that breaks out of the
+// `govuk-width-container`
+//
+// Because the `vw` unit do not account for the presence of a scrollbar, using
+// them to size the pseudo-element leads to horizontal scrollbar (the
+// pseudo-element being wider than the `<html>` element by the size of the
+// scrollbar).
+//
+// So instead, we treat these break-out sections as enhancements only available
+// in browsers that support container queries as container queries let us access
+// the reference the actual width of the `<html>` element.
+.app-break-out-container {
+  container-name: app-break-out;
+  container-type: inline-size;
+}
+
+.app-break-out {
+  margin-right: 0 - govuk-spacing(3);
+  margin-left: 0 - govuk-spacing(3);
+  padding-right: govuk-spacing(3);
+
+  // Add a little space around the section without disturbing the layout
+  // so there's a little space between the content and the background edge
+  padding-left: govuk-spacing(3);
+
+  @container app-break-out (width > 1px) {
+    // Sets a new stacking context, ensuring the `::before` pseudo element
+    // doesn't shift behind another element
+    position: relative;
+    z-index: 0;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      bottom: 0;
+      // Position the pseudo element in the centre of the page
+      left: 50%;
+      // Make it as wide as the `<html>` element
+      width: 100cqi;
+      // And shift it by half its width so it aligns with the left edge of the screen
+      margin-left: -50cqi;
+      // Set a border bottom for forced colours
+      border-bottom: solid 1px transparent;
+      // Inherit the background colour of the section
+      background-color: inherit;
+    }
+  }
+}
+
+.app-break-out--blue {
+  color: govuk-colour('white');
+  background-color: govuk-colour('blue');
+
+  [class^='govuk-heading'],
+  [class^='govuk-body'],
+  .govuk-list,
+  .govuk-phase-banner__content {
+    color: inherit;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  .govuk-phase-banner {
+    border-bottom-color: govuk-tint($govuk-brand-colour, 50%);
+  }
+}
