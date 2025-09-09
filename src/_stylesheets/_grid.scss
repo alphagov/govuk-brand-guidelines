@@ -65,25 +65,10 @@
 }
 
 .app-grid__cell {
-  --app-grid-cell-vertical-align:;
   @include responsive-custom-property(--app-grid-cell-span);
 
   align-content: var(--app-grid-cell-vertical-align);
   grid-column: var(--app-grid-cell-span, var(--app-grid-cell-span-mobile));
-
-  @include govuk-media-query($from: tablet) {
-    --app-grid-cell-span: var(
-      --app-grid-cell-span-tablet,
-      var(--app-grid-cell-span-mobile)
-    );
-  }
-
-  @include govuk-media-query($from: desktop) {
-    --app-grid-cell-span: var(
-      --app-grid-cell-span-desktop,
-      var(--app-grid-cell-span-tablet, var(--app-grid-cell-span-mobile))
-    );
-  }
 
   > :last-child {
     margin-bottom: 0;
