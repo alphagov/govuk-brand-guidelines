@@ -56,8 +56,8 @@
     }) }}
   {%- endif %}
 
-  <div class="govuk-grid-row app-page-wrapper">
-    <nav class="govuk-grid-column-one-third app-chapter-navigation" aria-label="Pages in this section">
+  <div class="app-page-wrapper">
+    <nav class="app-chapter-navigation" aria-label="Pages in this section">
       {% from "link-list.njk" import appLinkList %}
       {{ appLinkList({
         pages: sidebarNavigationRoot.data.children,
@@ -65,7 +65,7 @@
       })}}
     </nav>
 
-    <div class="govuk-grid-column-two-thirds">
+    <div class="app-content">
       {% from "govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
 
       {# Some pages, like test pages, don't have ancestors #}

@@ -8,6 +8,16 @@
 .app-page-wrapper {
   @include govuk-responsive-margin(6, $direction: top);
   @include govuk-responsive-margin(7, $direction: bottom);
+
+  @include govuk-media-query($from: tablet) {
+    display: grid;
+    grid-template-columns: 210px 1fr;
+    gap: $govuk-gutter;
+  }
+
+  @include govuk-media-query($from: desktop) {
+    grid-template-columns: 260px 1fr;
+  }
 }
 
 .app-chapter-navigation {
