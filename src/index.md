@@ -38,3 +38,24 @@ With this flexibility, the brand can adapt its level of expression to work acros
 </div>
 {% endgrid %}
 {% endbreakOut %}
+
+<div class="govuk-grid-row app-homepage-section">
+<div class="govuk-grid-column-two-thirds-from-desktop">
+
+## Key elements
+
+</div>
+<div class="govuk-grid-column-one-third-from-desktop">
+
+## Get brand assets
+
+[TODO: Write link text to find brand assets in GitHub folders]
+
+## Need help?
+
+If you’re part of a team that works on government products and services, and got a question about how to apply the brand guidelines, contact the team.
+
+You can also contact the team to get approval to use the brand.
+
+</div>
+</div>
