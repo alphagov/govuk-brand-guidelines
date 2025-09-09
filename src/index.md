@@ -7,15 +7,15 @@ mainClasses: 'app-homepage'
 
 {% breakOut {classes: "app-homepage-section app-homepage-masthead"} %}
 
-<div class="govuk-grid-row">
-<div class="govuk-grid-column-two-thirds-from-desktop">
+{% grid { columns: {mobile: 1, desktop: 3} } %}
+{% gridCell {span: 2} %}
 
 # A brand that can inform and inspire
 
 [Intro text expanding on the idea of a flexible brand that can be expressed in a range of different ways]
 
-</div>
-</div>
+{% endgridCell %}
+{% endgrid %}
 
 {% endbreakOut %}
 
@@ -39,20 +39,21 @@ With this flexibility, the brand can adapt its level of expression to work acros
 {% endgrid %}
 {% endbreakOut %}
 
-<div class="govuk-grid-row app-homepage-section">
-<div class="govuk-grid-column-two-thirds-from-desktop">
+{% grid { columns: {mobile: 1, desktop: 3}, classes: "app-homepage-section" } %}
+
+{% gridCell {span: 2} %}
 
 ## Key elements
 
-{% grid {columns: { mobile: 1, tablet: 2} } %}
+{% grid {columns: { mobile: 1, tablet: 2, desktop: 2 } } %}
 {% linkCard {title: 'Graphic device', description: 'Using the dot as a guide and companion in images and videos', icon: './graphic-device.svg' } %}
 {% linkCard {title: 'Logo system', description: 'How the logo elements work together in different contexts', icon: './logo-system.svg' } %}
 {% linkCard {title: 'Typography', description: 'Which typeface and font to use, and how to use them', icon: './typography.svg' } %}
 {% linkCard {title: 'Colour', description: 'Core brand colours, palettes and accessibility requirements', icon: './colour.svg' } %}
 {% endgrid %}
 
-</div>
-<div class="govuk-grid-column-one-third-from-desktop">
+{% endgridCell %}
+{% gridCell %}
 
 ## Get brand assets
 
@@ -64,5 +65,5 @@ If you’re part of a team that works on government products and services, and g
 
 You can also contact the team to get approval to use the brand.
 
-</div>
-</div>
+{% endgridCell %}
+{% endgrid %}
