@@ -19,33 +19,22 @@ mainClasses: 'app-homepage'
 
 {% endbreakOut %}
 
-## Brand ambition
+{% breakOut {classes: "app-homepage-section", theme: "light-blue" } %}
+{% grid {columns: { mobile: 1, tablet: 2 } } %}
 
-Since our launch in 2012, GOV.UK has become one of the most recognisable and trusted online destinations in the UK.
+<div>
 
-As we increase the number of places that people meet GOV.UK, such as in people's social feeds, and launch more personalised services like the GOV.UK app, we need our brand identity to do more.
+## Adapting to [xx]
 
-It needs to be able to compete for attention in busy environments like social media, be equipped to come to life when used in formats including video, while remaining approachable and welcoming for all the people we serve.
+GOV.UK’s key brand elements are designed to shift in tone, visuals and motion along an ‘inform to inspire’ scale.
 
-The updated GOV.UK identity has been designed with this in mind.
+With this flexibility, the brand can adapt its level of expression to work across a broad range of channels, formats and audiences.
 
-It builds on our recognisable and trusted foundations whilst introducing new elements so we can thrive in the broader range of channels that people expect us in today and tomorrow.
+</div>
+<div>
 
-## A brand that can inform and inspire
+![](./inform-inspire.svg)
 
-The evolved brand is designed to adapt its tone, visuals and motion for different channels, formats and audiences. We call this the ‘inform to inspire’ scale.
-
-On social media, we aim to capture attention and prompt action. On the web, the focus is on helping people find what they need from government services and act.
-
-The brand can also shift depending on what we're saying. For sensitive topics, we use a more muted and reserved style. For positive content, we can look brighter and bolder.
-
-This flexibility comes from how we use key brand elements – the wider colour palette, the dot and our motion language.
-
-These guidelines show how to apply the brand in different contexts to meet the needs of people using GOV.UK every day.
-
-{% informInspire %}
-
-  <div class="app-inform-inspire__bar">Web</div>
-  <div class="app-inform-inspire__bar">App</div>
-  <div class="app-inform-inspire__bar">Social</div>
-{% endinformInspire %}
+</div>
+{% endgrid %}
+{% endbreakOut %}

@@ -74,3 +74,8 @@
     border-bottom-color: govuk-tint($govuk-brand-colour, 50%);
   }
 }
+
+.app-break-out--light-blue {
+  color: govuk-colour('black');
+  background-color: $app-light-blue;
+}
