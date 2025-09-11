@@ -16,4 +16,6 @@ $app-magenta: #ca357c;
 $app-magenta-shade-50: #651b3e;
 
 // Grid and container widths
+$app-sidebar-nav-desktop: 260px;
+$app-sidebar-nav-tablet: 210px;
 $app-landing-container-width: $govuk-page-width - $app-sidebar-nav-desktop;

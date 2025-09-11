@@ -1,10 +1,93 @@
+.app-landing {
+  @include govuk-responsive-margin(9, $direction: 'bottom');
+
+  @container full-bleed (width > 1px) {
+    position: relative;
+
+    // Because app-landing is within main, which is in a 2/3rds width container,
+    // it's difficult to get a full width background that bleeds across the
+    // whole page. This uses a pseudo element within a container query that uses
+    // $govuk-page-width and the width of the side nav to calculate where the
+    // edge of the screen is.
+    // stylelint-disable max-nesting-depth
+    &::before {
+      content: '';
+
+      @include govuk-media-query($from: tablet) {
+        display: block;
+        position: absolute;
+        z-index: 0;
+        top: govuk-spacing(-9) + govuk-spacing(-6);
+        left: -$app-sidebar-nav-tablet - govuk-spacing(9);
+        // 100cqi is preferable to 100vw because it accounts for scroll bars
+        width: 100cqi;
+        // The height of app-landing + its top padding + app-page-wrapper's padding
+        height: calc(100% + (govuk-spacing(9) + govuk-spacing(6)));
+        background-color: $app-light-blue;
+      }
+
+      @include govuk-media-query($from: desktop) {
+        left: -$app-sidebar-nav-desktop - govuk-spacing(9);
+      }
+
+      // When the viewport width exceeds the width container max width plus its
+      // gutters
+      @include govuk-media-query(
+        $and: '(min-width: #{($govuk-page-width + $govuk-gutter * 2)})'
+      ) {
+        // First get the edge of the govuk width container relative to the
+        // viewport (the full-bleed container) then 'add' the side nav, plus
+        // its padding
+        left: calc(
+          ((-100cqi + $govuk-page-width) / 2) -
+            ($app-sidebar-nav-desktop + govuk-spacing(6))
+        );
+      }
+    }
+    // stylelint-enable max-nesting-depth
+  }
+}
+
 // Override standard govuk black from frontend
 .app-landing .govuk-heading-xl,
 .app-landing .govuk-body-l {
   color: govuk-colour('white');
 }
 
+// Placeholder for the bleed settings for the landing page hero. Used by the
+// hero element itself and the breadcrumb modifier.
+%app-landing-hero-bleed {
+  position: relative;
+  z-index: 1;
+  // Do a 'light' bleed on mobile so the container reaches the edge of either
+  // side of the viewport
+  margin: 0 govuk-spacing(-3);
+
+  @include govuk-media-query($from: tablet) {
+    // Reset bleed on tablet only if container queries aren't available
+    margin-right: 0;
+    margin-left: govuk-spacing(-6);
+  }
+
+  @container full-bleed (width > 1px) {
+    @include govuk-media-query($from: tablet) {
+      margin-right: govuk-spacing(-6);
+    }
+
+    // When the viewport width exceeds the width container max width plus its
+    // gutters
+    @include govuk-media-query(
+      $and: '(min-width: #{($govuk-page-width + $govuk-gutter * 2)})'
+    ) {
+      // Gets the space between the edge of the govuk width container and the
+      // viewport
+      margin-right: calc((-100cqi + $govuk-page-width) / 2);
+    }
+  }
+}
+
 .app-landing__hero {
+  @extend %app-landing-hero-bleed;
   min-height: 410px;
   padding: 0 govuk-spacing(3) govuk-spacing(6);
   // Image plus a fake gradient to create a flat 2-colour effect

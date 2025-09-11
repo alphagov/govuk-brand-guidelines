@@ -44,9 +44,11 @@ export default function (eleventyConfig) {
   // Can be overridden using `layout` front-matter parameter
   eleventyConfig.addGlobalData('layout', 'generic')
 
+  eleventyConfig.addGlobalData('htmlClasses', 'app-template')
+
   // Set up bundle for per-page CSS
   // https://www.11ty.dev/docs/plugins/bundle/
-  eleventyConfig.addBundle("css")
+  eleventyConfig.addBundle('css')
 
   return {
     markdownTemplateEngine: 'njk',
