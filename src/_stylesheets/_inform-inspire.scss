@@ -1,80 +1,147 @@
+$border-width: 2px;
+$arrow-width: 12px;
+
 .app-inform-inspire {
-  $padding-left: govuk-spacing(6);
-  $border-width: 2px;
-  $gap: $padding-left;
-  $arrow-width: 16px;
-  margin-top: govuk-spacing(1);
-  margin-bottom: govuk-spacing(4);
-  padding-left: $padding-left;
+  @include govuk-responsive-margin(6, $direction: 'bottom');
+  @include govuk-responsive-padding(6);
+  background-color: $app-light-blue;
+}
 
-  border-left: solid $border-width;
+// Reset margins in content for non-component elements eg: figures
+.app-inform-inspire__content > * {
+  margin-bottom: 0;
+}
 
-  &::before {
-    content: '';
-    box-sizing: border-box;
-    display: block;
-    width: $arrow-width;
-    height: $arrow-width;
-    margin-left: -$padding-left;
-    transform: rotate(45deg) translateX(-$border-width) translateY(-1px);
-    border-top: solid $border-width;
-    border-left: solid $border-width;
-    transform-origin: top left;
+.app-inform-inspire__content--flex {
+  display: flex;
+}
+
+// These modifiers could be looped over, however since there's only the need for
+// 2 cases: 2 items and 5 items, and we don't know what we'd want the gaps to be
+// for other cases, nor can we programmatically determine them right now, we
+// manually generate only these 2.
+.app-inform-inspire__content--flex-2-items {
+  gap: govuk-spacing(5);
+
+  & > * {
+    width: 50%;
+  }
+}
+
+.app-inform-inspire__content--flex-5-items {
+  gap: govuk-spacing(1);
+
+  & > * {
+    width: 20%;
+  }
+}
+
+// Scale bar elements on the homepage
+.app-inform-inspire__bar {
+  @include govuk-font($size: 19, $weight: bold);
+  @include govuk-responsive-padding(4);
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: govuk-spacing(1);
+  color: govuk-colour('white');
+
+  @media screen and (forced-colors: active) {
+    outline: 1px solid Highlight;
   }
 
-  &::after {
-    content: '';
-    box-sizing: border-box;
-    display: block;
-    width: $arrow-width;
-    height: $arrow-width;
-    margin-left: -$padding-left;
-    transform: rotate(-45deg) translateX(-$border-width) translateY(1px);
-    border-bottom: solid $border-width;
-    border-left: solid $border-width;
-    transform-origin: bottom left;
+  &:nth-of-type(1) {
+    width: calc(100% / 3);
+    background-color: govuk-colour('blue');
   }
 
-  figure {
-    margin-inline: 0;
+  &:nth-of-type(2) {
+    width: calc(100% * 0.666);
+    background-color: govuk-colour('green');
   }
 
-  figure div {
-    width: 60%;
-    margin: 0 auto;
-  }
-
-  figcaption {
-    margin-top: govuk-spacing(1);
-
-    p {
-      margin-bottom: 0;
-    }
-  }
-
-  > * {
-    margin-block: 0;
-  }
-
-  > * + * {
-    margin-top: $padding-left;
-  }
-
-  .app-inform-inspire__inform {
-    margin-top: -16px;
-
-    + * {
-      margin-top: 0.75 * $gap;
-    }
-  }
-
-  .app-inform-inspire__inspire {
-    margin-top: 0.5 * $gap;
-    margin-bottom: -16px;
-  }
-
-  img {
+  &:nth-of-type(3) {
     width: 100%;
-    height: auto;
+    background-color: govuk-colour('pink');
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+// Inform <----> Inspire axis visual element
+.app-inform-inspire__axis {
+  display: flex;
+  position: relative;
+  margin-bottom: govuk-spacing(5);
+  justify-content: space-between;
+}
+
+.app-inform-inspire__axis-label {
+  @include govuk-font($size: 19, $weight: bold);
+  position: relative;
+  width: calc(50% - (#{$arrow-width} * 2));
+  padding-bottom: govuk-spacing(5);
+  border-bottom: $border-width solid;
+  color: $app-blue-shade-50;
+
+  // Arrow on either side is made up of 2 flat elements with borders that are
+  // rotated. Done instead of the rotated box trick so that the arrows have
+  // rounded corners.
+  &:first-of-type::before,
+  &:first-of-type::after,
+  &:last-of-type::before,
+  &:last-of-type::after {
+    content: '';
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: $arrow-width;
+    height: 0;
+    border: ($border-width / 2) solid;
+    border-radius: ($border-width / 2);
+  }
+
+  &:first-of-type {
+    &::before {
+      bottom: $border-width;
+      left: -$border-width;
+      transform: rotate(-45deg);
+    }
+
+    &::after {
+      bottom: -6px;
+      left: -$border-width;
+      transform: rotate(45deg);
+    }
+  }
+
+  &:last-of-type {
+    text-align: right;
+
+    &::before {
+      bottom: $border-width;
+      right: -$border-width;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      bottom: -6px;
+      right: -$border-width;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.app-inform-inspire__axis-dot {
+  width: $arrow-width * 2;
+  height: $arrow-width * 2;
+  margin-bottom: -10px;
+  border-radius: $arrow-width;
+  background-color: $govuk-brand-colour;
+  align-self: end;
+
+  @media screen and (forced-colors: active) {
+    outline: $border-width solid Highlight;
   }
 }

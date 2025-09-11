@@ -67,24 +67,17 @@ Within our palette there are two approaches to colour application: tonal colours
 
 Depending on tonal requirement, each can be used to achieve a different level of expression. The following guidance details the use of these two approaches.
 
-<!-- Obviously, that's not the right heading, needs proper design -->
-
-### Inform <--------> Inspire
-
+{% informInspire { contentClasses: 'app-inform-inspire__content--flex app-inform-inspire__content--flex-5-items', list: ['black and white', 'dark shade', 'Primary blue', 'tonal colour', 'companion colour'], listLabel: 'Colour use options (from left to right):' } %}
 ![Text "National mourning guidance" in black, within a white circle, on a black background.](./tone-black-and-white.png)
-B&W
 
 ![Text "Get support with the cost of living" in blue shade 50%, within a white circle, on a blue shade 50% background.](./tone-dark-shade.png)
-Dark shade
 
 ![Text "Fuel duty will be frozen next year" in Primary blue, within a white circle, on a Primary blue background.](./tone-primary-blue.png)
-Primary blue
 
 ![Text "Get help with your pension" in a dark blue, within a Accent blue circle, on a Primary blue background.](./tone-tonal-colour.png)
-Tonal colour
 
 ![Text "Learning to drive a car" in Accent green, within a blue shade 50% background, on an Accent green background.](./tone-companion-colour.png)
-Companion colour
+{% endinformInspire %}
 
 ### Tonal colour examples
 

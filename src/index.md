@@ -28,4 +28,9 @@ This flexibility comes from how we use key brand elements – the wider colour p
 
 These guidelines show how to apply the brand in different contexts to meet the needs of people using GOV.UK every day.
 
-![](./inform-inspire.svg)
+{% informInspire %}
+
+  <div class="app-inform-inspire__bar">Web</div>
+  <div class="app-inform-inspire__bar">App</div>
+  <div class="app-inform-inspire__bar">Social</div>
+{% endinformInspire %}
