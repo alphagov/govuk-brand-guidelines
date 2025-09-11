@@ -87,7 +87,18 @@
 {% set mainClasses = 'app-main-wrapper app-prose' %}
 
 {% block content %}
-  <h1 class="govuk-heading-xl">{{title}}</h1>
+  {% if landing %}
+    <div class="app-landing">
+      <div class="app-landing__hero app-landing__hero--{{ page.fileSlug }}">
+        <div class="app-landing__hero-container">
+          <h1 class="govuk-heading-xl">{{title}}</h1>
+          <p class="govuk-body-l">{{ lead }}</p>
+        </div>
+      </div>
+    </div>
+  {% else %}
+    <h1 class="govuk-heading-xl">{{title}}</h1>
+  {% endif %}
   {{ content | safe }}
 
   {# Render the list of pages under each chapter after the content

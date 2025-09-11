@@ -1,10 +1,19 @@
+// Colours
 $app-light-blue: govuk-tint($govuk-brand-colour, 95%);
 $app-blue-shade-25: govuk-shade($govuk-brand-colour, 25%);
 $app-blue-shade-50: govuk-shade($govuk-brand-colour, 50%);
-
-$app-green: #11875a;
-
 $app-black: govuk-colour('black');
 $app-black-tint-25: govuk-tint($app-black, 25%);
 $app-black-tint-50: govuk-tint($app-black, 50%);
 $app-black-tint-95: govuk-tint($app-black, 95%);
+$app-teal: #158187;
+$app-teal-shade-25: #106165;
+$app-purple: #54319f;
+$app-purple-shade-25: #3f2577;
+$app-green: #11875a;
+$app-green-tint-25: #4da583;
+$app-magenta: #ca357c;
+$app-magenta-shade-50: #651b3e;
+
+// Grid and container widths
+$app-landing-container-width: $govuk-page-width - $app-sidebar-nav-desktop;
