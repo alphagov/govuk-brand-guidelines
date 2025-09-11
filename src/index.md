@@ -5,6 +5,8 @@ layout: homepage.njk
 mainClasses: 'app-homepage'
 ---
 
+{% from "govuk/components/button/macro.njk" import govukButton %}
+
 {% breakOut {classes: "app-homepage-section app-homepage-masthead"} %}
 
 {% grid { columns: {mobile: 1, desktop: 3} } %}
@@ -12,31 +14,13 @@ mainClasses: 'app-homepage'
 
 # A brand that can inform and inspire
 
-[Intro text expanding on the idea of a flexible brand that can be expressed in a range of different ways]
+We’ve refreshed the GOV.UK brand to meet the needs and changing expectations of users across different channels and contexts.
+
+{{ govukButton({ href: "#", text: "Find out more", isStartButton: true, classes: "govuk-button--inverse govuk-!-margin-top-5" }) }}
 
 {% endgridCell %}
 {% endgrid %}
 
-{% endbreakOut %}
-
-{% breakOut {classes: "app-homepage-section", theme: "light-blue" } %}
-{% grid {columns: { mobile: 1, tablet: 2 } } %}
-
-<div>
-
-## Adapting to [xx]
-
-GOV.UK’s key brand elements are designed to shift in tone, visuals and motion along an ‘inform to inspire’ scale.
-
-With this flexibility, the brand can adapt its level of expression to work across a broad range of channels, formats and audiences.
-
-</div>
-<div>
-
-![](./inform-inspire.svg)
-
-</div>
-{% endgrid %}
 {% endbreakOut %}
 
 {% grid { columns: {mobile: 1, desktop: 3}, classes: "app-homepage-section" } %}
