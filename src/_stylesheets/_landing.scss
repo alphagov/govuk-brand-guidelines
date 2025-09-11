@@ -88,7 +88,7 @@
 
 .app-landing__hero {
   @extend %app-landing-hero-bleed;
-  min-height: 410px;
+  min-height: govuk-em(410px, 16px);
   padding: 0 govuk-spacing(3) govuk-spacing(6);
   // Image plus a fake gradient to create a flat 2-colour effect
   background-image:
@@ -115,53 +115,11 @@
     // Graphic position is always within the last third of the landing page
     // width container
     background-position:
-      (($app-landing-container-width / 3) * 2) + govuk-spacing(6)
+      govuk-em((($app-landing-container-width / 3) * 2) + govuk-spacing(6), 16)
         var(--app-landing-hero-graphic-position-align),
       0;
     background-size: var(--app-landing-hero-graphic-size-big), contain;
   }
-}
-
-// Modifiers for each page which set colours, hero graphic and graphic position
-// and size
-.app-landing__hero--graphic-device {
-  --app-landing-hero-dark-colour: #{$app-teal-shade-25};
-  --app-landing-hero-light-colour: #{$app-teal};
-  --app-landing-hero-graphic: url('/styles/images/heroes/graphic-device.svg');
-  --app-landing-hero-graphic-position-small: center 150px;
-  --app-landing-hero-graphic-position-align: 0;
-  --app-landing-hero-graphic-size-small: 280px;
-  --app-landing-hero-graphic-size-big: 330px;
-}
-
-.app-landing__hero--colour {
-  --app-landing-hero-dark-colour: #{$app-purple-shade-25};
-  --app-landing-hero-light-colour: #{$app-purple};
-  --app-landing-hero-graphic: url('/styles/images/heroes/colour.svg');
-  --app-landing-hero-graphic-position-small: center 160px;
-  --app-landing-hero-graphic-position-align: 100%;
-  --app-landing-hero-graphic-size-small: 360px;
-  --app-landing-hero-graphic-size-big: 580px;
-}
-
-.app-landing__hero--logo-system {
-  --app-landing-hero-dark-colour: #{$app-green};
-  --app-landing-hero-light-colour: #{$app-green-tint-25};
-  --app-landing-hero-graphic: url('/styles/images/heroes/logo-system.svg');
-  --app-landing-hero-graphic-position-small: 0 100%;
-  --app-landing-hero-graphic-position-align: 100%;
-  --app-landing-hero-graphic-size-small: 700px;
-  --app-landing-hero-graphic-size-big: 930px;
-}
-
-.app-landing__hero--typography {
-  --app-landing-hero-dark-colour: #{$app-magenta-shade-50};
-  --app-landing-hero-light-colour: #{$app-magenta};
-  --app-landing-hero-graphic: url('/styles/images/heroes/typography.svg');
-  --app-landing-hero-graphic-position-small: center 150px;
-  --app-landing-hero-graphic-position-align: 100%;
-  --app-landing-hero-graphic-size-small: 350px;
-  --app-landing-hero-graphic-size-big: 450px;
 }
 
 // Container is always at least 2 thirds of the hero container

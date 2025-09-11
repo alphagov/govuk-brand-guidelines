@@ -67,7 +67,8 @@
         renderedPageUrl: page.url
       })}}
     </nav>
-    <div class="app-content">
+    {%  set contentClasses = 'app-content app-content--section-' + page.fileSlug  if landing else 'app-content' %}
+    <div class="{{ contentClasses }}">
       {% from "govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
 
       {# Some pages, like test pages, don't have ancestors #}
@@ -92,7 +93,7 @@
 {% block content %}
   {% if landing %}
     <div class="app-landing">
-      <div class="app-landing__hero app-landing__hero--{{ page.fileSlug }}">
+      <div class="app-landing__hero">
         <div class="app-landing__hero-container">
           <h1 class="govuk-heading-xl">{{title}}</h1>
           <p class="govuk-body-l">{{ lead }}</p>
