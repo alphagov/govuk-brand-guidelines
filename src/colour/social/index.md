@@ -59,7 +59,7 @@ The social palette has:
 
 ## Use colour to reflect tone
 
-Our updated palette has been developed to allow a range in expression across the inform to inspire scale. 
+Our updated palette has been developed to allow a range in expression across the inform to inspire scale.
 
 There are moments where the brand needs to feel functional and serious, guiding users seamlessly to the content and services they need. With the introduction of new channels such as social, there are also moments where the brand needs impact and visual differentiation.
 
@@ -89,29 +89,72 @@ For more sensitive messaging, colours from within the same tonal range are used 
 Indicative examples for illustrative purposes only.
 {% endcallout %}
 
-![Text "Fuel duty will be frozen next year" in Green shade 50%, within a whte circle, on a Green tint 50% background.](./example-tonal-1.png)
+{% grid { columns: { mobile: 2, desktop: 2 } } %}
+
+<div>
+<div class="app-top-border">
 
 {% swatch { label: "Green tint 95%", hex: "#F3F9F7" } %}
 {% swatch { label: "Green shade 50%", hex: "#09442D" } %}
 
-![Text "Strong winds and expected disruptions" in white, above the text is an exclamation mark icon in Red shade 50% inside a small circle in Accent red, on a Primary red background.](./example-tonal-2.png)
+</div>
+
+</div>
+
+<div>
+
+![Text "Fuel duty will be frozen next year" in Green shade 50%, within a whte circle, on a Green tint 50% background.](./example-tonal-1.png)
+
+</div>
+
+{% endgrid %}
+
+{% grid { columns: { mobile: 2, desktop: 2 } } %}
+
+<div>
+<div class="app-top-border">
 
 {% swatch { label: "Primary red", hex: "#CA3535" } %}
 {% swatch { label: "Red shade 50%", hex: "#651B1B" } %}
 {% swatch { label: "Accent red", hex: "#FF5E5E" } %}
 
-![Text "Get your council bill reduced as a student" in white, with a Primary purple lozenge highlighting the word "reduced". Below the text is a large Accent purple arrow. Image background is in Purple shade 50%.](./example-tonal-3.png)
+</div>
+
+</div>
+
+<div>
+
+![Text "Strong winds and expected disruptions" in white, above the text is an exclamation mark icon in Red shade 50% inside a small circle in Accent red, on a Primary red background.](./example-tonal-2.png)
+
+</div>
+{% endgrid %}
+
+{% grid { columns: { mobile: 2, desktop: 2 } } %}
+
+<div>
+<div class="app-top-border">
 
 {% swatch { label: "Purple tint 95%", hex: "#F6F5FA" } %}
 {% swatch { label: "Primary purple", hex: "#54319F" } %}
 {% swatch { label: "Purple shade 50%", hex: "#2A1950" } %}
 {% swatch { label: "Accent purple", hex: "#BA4AFF" } %}
 
+</div>
+
+</div>
+
+<div>
+
+![Text "Get your council bill reduced as a student" in white, with a Primary purple lozenge highlighting the word "reduced". Below the text is a large Accent purple arrow. Image background is in Purple shade 50%.](./example-tonal-3.png)
+
+</div>
+{% endgrid %}
+
 ## Companion colours
 
 Use companion colours when you need to emphasise something, like prompting action or sharing something positive. We’ve kept the set to 9 combinations to make sure they stay accessible.
 
-Some pairings may be harder to see for people with visual impairments or colour blindness. 
+Some pairings may be harder to see for people with visual impairments or colour blindness.
 
 Choose combinations carefully and use a tool like [WhoCanUse.com](https://www.whocanuse.com/) to check they meet [WCAG 2.2 Contrast (Minimum) Level AA](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html).
 
@@ -174,18 +217,60 @@ For more sensitive messaging, colours from within the same tonal range are used 
 Indicative examples for illustrative purposes only.
 {% endcallout %}
 
-![Text "Get your council bill reduced as a student" in white, with "reduced" in black text within a Primary yellow lozenge highlight. Above is a large Primary yellow arrow. Image background is in Primary blue.](./example-companion-1.png)
+{% grid { columns: { mobile: 2, desktop: 2 } } %}
+
+<div>
+<div class="app-top-border">
 
 {% swatch { label: "Primary blue", hex: "#1D70B8" } %}
 {% swatch { label: "Primary yellow", hex: "#FFDD00" } %}
 
-![Text "See to see if you need an Electronic Travel Authorisation (ETA)" in Blue shade 50%. Above is a map pin graphic in Primary magenta. Image background is in Magenta tint 90%.](./example-companion-2.png)
+</div>
+
+</div>
+
+<div>
+
+![Text "Get your council bill reduced as a student" in white, with "reduced" in black text within a Primary yellow lozenge highlight. Above is a large Primary yellow arrow. Image background is in Primary blue.](./example-companion-1.png)
+
+</div>
+{% endgrid %}
+
+{% grid { columns: { mobile: 2, desktop: 2 } } %}
+
+<div>
+<div class="app-top-border">
 
 {% swatch { label: "Primary magenta", hex: "#CA357C" } %}
 {% swatch { label: "Blue shade 50%", hex: "#0F385C" } %}
 {% swatch { label: "Magenta tint 95%", hex: "#FCF5F8" } %}
 
-![Text "Driving abroad" in white, with topic text "Step by step" above in Accent green, within a Blue shade 50% circle. Image background is Accent green.](./example-companion-3.png)
+</div>
+
+</div>
+
+<div>
+
+![Text "See to see if you need an Electronic Travel Authorisation (ETA)" in Blue shade 50%. Above is a map pin graphic in Primary magenta. Image background is in Magenta tint 90%.](./example-companion-2.png)
+
+</div>
+{% endgrid %}
+
+{% grid { columns: { mobile: 2, desktop: 2 } } %}
+
+<div>
+<div class="app-top-border">
 
 {% swatch { label: "Accent green", hex: "#66F39E" } %}
 {% swatch { label: "Blue shade 50%", hex: "#0F385C" } %}
+
+</div>
+
+</div>
+
+<div>
+
+![Text "Driving abroad" in white, with topic text "Step by step" above in Accent green, within a Blue shade 50% circle. Image background is Accent green.](./example-companion-3.png)
+
+</div>
+{% endgrid %}
