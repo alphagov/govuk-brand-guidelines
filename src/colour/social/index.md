@@ -162,50 +162,188 @@ Do not rely on colour alone to show meaning, signal an action or prompt a respon
 
 Remember, some users browse with high-contrast settings or dark mode. Colours may need to be adjusted to work in those contexts.
 
-<!-- the horizontal lines should not be there, but I added those temporarily to make groups clearer -->
+{% set companionColours = [
+  { label: "Primary blue", hex: "#1D70B8", group: "set1" },
+  { label: "Primary yellow", hex: "#FFDD00", group: "set1" },
+  { label: "Magenta tint 95%", hex: "#FCF5F8", group: "set2" },
+  { label: "Primary red", hex: "#CA3535", group: "set2" },
+  { label: "Blue tint 95%", hex: "#F4F8FB", group: "set3" },
+  { label: "Primary magenta", hex: "#CA357C", group: "set3" },
+  { label: "Primary yellow", hex: "#FFDD00", group: "set4" },
+  { label: "Purple shade 50%", hex: "#2A1950", group: "set4" },
+  { label: "Accent blue", hex: "#11E0F1", group: "set5" },
+  { label: "Purple shade 25%", hex: "#3F2577", group: "set5" },
+  { label: "Accent green", hex: "#66F39E", group: "set6" },
+  { label: "Blue shade 50%", hex: "#0F385C", group: "set6" },
+  { label: "Green shade 50%", hex: "#09442D", group: "set7" },
+  { label: "Accent blue", hex: "#11E0F1", group: "set7" },
+  { label: "Primary blue", hex: "#1D70B8", group: "set8" },
+  { label: "Accent blue", hex: "#11E0F1", group: "set8" },
+  { label: "Red shade 50%", hex: "#651B1B", group: "set9" },
+  { label: "Primary yellow", hex: "#FFDD00", group: "set9" }
+] %}
 
-{% swatch { label: "Primary blue", hex: "#1D70B8" } %}
-{% swatch { label: "Primary yellow", hex: "#FFDD00" } %}
+{% grid { columns: { mobile: 2, desktop: 2 } } %}
 
----
+<div>
 
-{% swatch { label: "Magenta tint 95%", hex: "#FCF5F8" } %}
-{% swatch { label: "Primary red", hex: "#CA3535" } %}
+![](./companion-colours-set1.svg)
 
----
+</div>
 
-{% swatch { label: "Blue tint 95%", hex: "#F4F8FB" } %}
-{% swatch { label: "Primary magenta", hex: "#CA357C" } %}
+<div>
+<div class="app-top-border">
 
----
+{% swatchList { palette: companionColours, group: "set1" } %}
 
-{% swatch { label: "Primary yellow", hex: "#FFDD00" } %}
-{% swatch { label: "Purple shade 50%", hex: "#2A1950" } %}
+</div>
 
----
+</div>
+{% endgrid %}
 
-{% swatch { label: "Accent blue", hex: "#11E0F1" } %}
-{% swatch { label: "Purple shade 25%", hex: "#3F2577" } %}
+{% grid { columns: { mobile: 2, desktop: 2 } } %}
 
----
+<div>
 
-{% swatch { label: "Accent green", hex: "#66F39E" } %}
-{% swatch { label: "Blue shade 50%", hex: "#0F385C" } %}
+![](./companion-colours-set2.svg)
 
----
+</div>
 
-{% swatch { label: "Green shade 50%", hex: "#09442D" } %}
-{% swatch { label: "Accent blue", hex: "#11E0F1" } %}
+<div>
+<div class="app-top-border">
 
----
+{% swatchList { palette: companionColours, group: "set2" } %}
 
-{% swatch { label: "Primary blue", hex: "#1D70B8" } %}
-{% swatch { label: "Accent blue", hex: "#11E0F1" } %}
+</div>
 
----
+</div>
+{% endgrid %}
 
-{% swatch { label: "Red shade 50%", hex: "#651B1B" } %}
-{% swatch { label: "Primary yellow", hex: "#FFDD00" } %}
+{% grid { columns: { mobile: 2, desktop: 2 } } %}
+
+<div>
+
+![](./companion-colours-set3.svg)
+
+</div>
+
+<div>
+<div class="app-top-border">
+
+{% swatchList { palette: companionColours, group: "set3" } %}
+
+</div>
+
+</div>
+{% endgrid %}
+
+{% grid { columns: { mobile: 2, desktop: 2 } } %}
+
+<div>
+
+![](./companion-colours-set4.svg)
+
+</div>
+
+<div>
+<div class="app-top-border">
+
+{% swatchList { palette: companionColours, group: "set4" } %}
+
+</div>
+
+</div>
+{% endgrid %}
+
+{% grid { columns: { mobile: 2, desktop: 2 } } %}
+
+<div>
+
+![](./companion-colours-set5.svg)
+
+</div>
+
+<div>
+<div class="app-top-border">
+
+{% swatchList { palette: companionColours, group: "set5" } %}
+
+</div>
+
+</div>
+{% endgrid %}
+
+{% grid { columns: { mobile: 2, desktop: 2 } } %}
+
+<div>
+
+![](./companion-colours-set6.svg)
+
+</div>
+
+<div>
+<div class="app-top-border">
+
+{% swatchList { palette: companionColours, group: "set6" } %}
+
+</div>
+
+</div>
+{% endgrid %}
+
+{% grid { columns: { mobile: 2, desktop: 2 } } %}
+
+<div>
+
+![](./companion-colours-set7.svg)
+
+</div>
+
+<div>
+<div class="app-top-border">
+
+{% swatchList { palette: companionColours, group: "set7" } %}
+
+</div>
+
+</div>
+{% endgrid %}
+
+{% grid { columns: { mobile: 2, desktop: 2 } } %}
+
+<div>
+
+![](./companion-colours-set8.svg)
+
+</div>
+
+<div>
+<div class="app-top-border">
+
+{% swatchList { palette: companionColours, group: "set8" } %}
+
+</div>
+
+</div>
+{% endgrid %}
+
+{% grid { columns: { mobile: 2, desktop: 2 } } %}
+
+<div>
+
+![](./companion-colours-set9.svg)
+
+</div>
+
+<div>
+<div class="app-top-border">
+
+{% swatchList { palette: companionColours, group: "set9" } %}
+
+</div>
+
+</div>
+{% endgrid %}
 
 ### Companion colour examples
 
