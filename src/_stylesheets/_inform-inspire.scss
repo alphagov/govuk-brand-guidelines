@@ -4,7 +4,7 @@ $arrow-width: 12px;
 .app-inform-inspire {
   @include govuk-responsive-margin(6, $direction: 'bottom');
   @include govuk-responsive-padding(6);
-  background-color: $app-light-blue;
+  background-color: $app-blue-tint-95;
 }
 
 // Reset margins in content for non-component elements eg: figures
@@ -120,14 +120,14 @@ $arrow-width: 12px;
     text-align: right;
 
     &::before {
-      bottom: $border-width;
       right: -$border-width;
+      bottom: $border-width;
       transform: rotate(45deg);
     }
 
     &::after {
-      bottom: -6px;
       right: -$border-width;
+      bottom: -6px;
       transform: rotate(-45deg);
     }
   }
