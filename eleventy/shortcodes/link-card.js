@@ -1,4 +1,3 @@
-import { randomUUID } from 'node:crypto'
 import { blockShortcode } from './utils.js'
 
 export const linkCard = blockShortcode((options = {}) => {
@@ -7,36 +6,19 @@ export const linkCard = blockShortcode((options = {}) => {
   }
   options = { ...defaultOptions, ...options }
 
-  const descriptionId = options.description && randomUUID()
-
   const parts = [
-    `<span class="app-link-card__title">${options.title}</span>`,
+    `<span class="app-link-card__title"><a class="app-link-card__link" href="${options.href ?? '#'}">${options.title}</a></span>`,
     options.description &&
-      `<span aria-hidden id="${descriptionId}" class="app-link-card__description">${options.description}</span>`,
+      `<span class="app-link-card__description">${options.description}</span>`,
     options.icon &&
-      `<img class="app-link-card__icon" alt="" src="${options.icon}"></img>`
+      `<img class="app-link-card__icon" alt="" src="${options.icon}">`
   ].filter(Boolean)
 
   const attributes = {
-    class: ['app-link-card', options.classes].filter(Boolean).join(' '),
-    href: options.url || '',
-    'aria-describedby': descriptionId || null
+    class: ['app-link-card', options.classes].filter(Boolean).join(' ')
   }
 
-  return `<a ${asHTMLAttributes(attributes)}>
+  return `<div class="app-link-card${options.classes ? ` ${options.classes}` : ''}">
     ${parts.join('')}
-  </a>`
+  </div>`
 })
-
-function asHTMLAttributes(attributes) {
-  return Object.entries(attributes)
-    .filter(
-      ([attributeName, attributeValue]) =>
-        attributeValue != null || typeof attributeValue === 'undefined'
-    )
-    .map(
-      ([attributeName, attributeValue]) =>
-        `${attributeName}="${attributeValue}"`
-    )
-    .join(' ')
-}
