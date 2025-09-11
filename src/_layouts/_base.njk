@@ -24,7 +24,6 @@
 
 {% block beforeContent %}
   {% from "govuk/components/phase-banner/macro.njk" import govukPhaseBanner %}
-  {% breakOut %}
     {%- if site.env.CONTEXT === "dev" %}
       {{ govukPhaseBanner({
         tag: {
@@ -48,7 +47,6 @@
         text: "This is a new service. Help us improve it by giving your feedback."
       }) }}
     {%- endif %}
-  {% endbreakOut %}
 {% endblock %}
 
 {% set mainClasses = [mainClasses, 'app-main-wrapper app-prose'] | select('truthy') | join(' ') %}

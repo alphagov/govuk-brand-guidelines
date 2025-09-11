@@ -14,6 +14,12 @@
   {% endif %}
 {% endblock %}
 
+{% block beforeContent %}
+  {% breakOut %}
+    {{ super() }}
+  {% endbreakOut %}
+{% endblock %}
+
 {% block content %}
   {{ content | safe }}
 {% endblock %}
