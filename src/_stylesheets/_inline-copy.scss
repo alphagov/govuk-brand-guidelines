@@ -1,25 +1,73 @@
 .app-inline-copy {
+  $inline-padding: govuk-spacing(1);
+
+  display: inline-flex;
+  align-items: center;
   margin: 0;
+  margin-right: 0 - $inline-padding;
+  margin-left: 0 - $inline-padding;
   padding: 0;
-  border: none;
-  color: inherit;
+  padding-right: $inline-padding;
+  padding-left: $inline-padding;
+  border: 1px solid transparent;
+  color: $app-black-tint-25;
   background: none;
   font: inherit;
   vertical-align: middle;
   cursor: pointer;
-  @include govuk-font(16);
-
-  &:focus {
-    @include govuk-focused-text;
-  }
 
   svg {
-    width: 1em;
-    height: 1em;
+    // Aiming for about 18px
+    // The icon SVGs contain whitespace within them, making them appear smaller
+    width: 1.125rem;
+    height: 1.125rem;
+    margin-left: govuk-spacing(1);
+    background-color: $app-black-tint-95;
     fill: currentcolor;
+
+    // Forced colours doesn't override the background-color on SVGs,
+    // override it manually
+    @media (forced-colors: active) {
+      background-color: ButtonFace;
+      fill: ButtonText;
+    }
   }
 
-  &--copied svg {
-    fill: #11875a; // primary green
+  // Extend the sides out when there's a background colour or border visible
+  &:hover,
+  &:focus-visible,
+  &--copied {
+    svg {
+      background-color: transparent;
+    }
+  }
+
+  &:hover {
+    background-color: $app-black-tint-95;
+    box-shadow: 0 2px 0 0 $app-black-tint-50;
+  }
+
+  // Uses :focus-visible as otherwise clicking the button also focuses the
+  // button, so the 'copied' style isn't visible. Also
+  &:focus-visible {
+    border-color: $govuk-focus-colour;
+
+    outline: 3px solid transparent;
+    color: $govuk-focus-text-colour;
+    background-color: $govuk-focus-colour;
+    box-shadow: 0 2px 0 0 $govuk-focus-text-colour;
+  }
+
+  &--copied {
+    // We want these to apply when hovered so that visual feedback appears immediately
+    &,
+    &:hover {
+      border-color: $app-green;
+      color: $app-green;
+      background-color: transparent;
+
+      // Extend bottom border without increasing button dimensions
+      box-shadow: 0 3px 0 0 $app-green;
+    }
   }
 }
