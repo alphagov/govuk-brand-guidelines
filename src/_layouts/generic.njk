@@ -57,14 +57,16 @@
   {%- endif %}
 
   <div class="app-page-wrapper">
-    <nav class="app-chapter-navigation" aria-label="Pages in this section">
+    <nav class="app-chapter-navigation" aria-labelledby="side-navigation">
+      {% if sidebarNavigationRoot.data.children %}
+        <h2 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-6" id="side-navigation">In this section</h2>
+      {% endif %}
       {% from "link-list.njk" import appLinkList %}
       {{ appLinkList({
         pages: sidebarNavigationRoot.data.children,
         renderedPageUrl: page.url
       })}}
     </nav>
-
     <div class="app-content">
       {% from "govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
 
