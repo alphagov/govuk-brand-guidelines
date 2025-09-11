@@ -40,4 +40,5 @@ export function setupMedia(eleventyConfig) {
   // Copy video files in the output site
   eleventyConfig.addPassthroughCopy('**/*.mp4')
   eleventyConfig.addPassthroughCopy('**/*.webm')
+  eleventyConfig.addPassthroughCopy('**/*.poster.{jpg,jpeg,png,avif,webp,svg}')
 }
