@@ -16,7 +16,7 @@ mainClasses: 'app-homepage'
 
 We’ve refreshed the GOV.UK brand to meet the needs and changing expectations of users across different channels and contexts.
 
-{{ govukButton({ href: "#", text: "Find out more", isStartButton: true, classes: "govuk-button--inverse govuk-!-margin-top-5" }) }}
+{{ govukButton({ href: ("/overview/" | url), text: "Find out more", isStartButton: true, classes: "govuk-button--inverse govuk-!-margin-top-5" }) }}
 
 {% endgridCell %}
 {% endgrid %}
@@ -28,10 +28,10 @@ We’ve refreshed the GOV.UK brand to meet the needs and changing expectations o
 ## Key elements
 
 {% grid {columns: { mobile: 1, tablet: 2 } } %}
-{% linkCard {title: 'Graphic device', description: 'Using the dot as a guide and companion in images and videos.', icon: './graphic-device.svg' } %}
-{% linkCard {title: 'Logo system', description: 'How the GOV.UK wordmark and crown work together in different contexts.', icon: './logo-system.svg' } %}
-{% linkCard {title: 'Colour', description: 'Core brand colours, palettes and contrast requirements for accessibility.', icon: './colour.svg' } %}
-{% linkCard {title: 'Typography', description: 'Which typeface and font to use, and how to use them.', icon: './typography.svg' } %}
+{% linkCard {title: 'Graphic device', description: 'Using the dot as a guide and companion in images and videos.', icon: './graphic-device.svg', href: ('/graphic-device/' | url) } %}
+{% linkCard {title: 'Logo system', description: 'How the GOV.UK wordmark and crown work together in different contexts.', icon: './logo-system.svg', href: ('/logo-system/' | url) } %}
+{% linkCard {title: 'Colour', description: 'Core brand colours, palettes and contrast requirements for accessibility.', icon: './colour.svg', href: ('/colour/' | url) } %}
+{% linkCard {title: 'Typography', description: 'Which typeface and font to use, and how to use them.', icon: './typography.svg', href: ('/typography/' | url) } %}
 {% endgrid %}
 
 </div>
