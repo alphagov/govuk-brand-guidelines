@@ -7,7 +7,7 @@ export const linkCard = blockShortcode((options = {}) => {
   options = { ...defaultOptions, ...options }
 
   const parts = [
-    `<span class="app-link-card__title"><a class="app-link-card__link" href="${options.href ?? '#'}">${options.title}</a></span>`,
+    `<div class="app-link-card__title"><a class="app-link-card__link" href="${options.href ?? '#'}">${options.title}</a></div>`,
     options.description &&
       `<span class="app-link-card__description">${options.description}</span>`,
     options.icon &&
