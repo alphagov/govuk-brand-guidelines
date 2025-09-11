@@ -5,7 +5,7 @@
 
 .app-homepage-section--top-border {
   border-top: 1px solid $app-blue-tint-50;
-  @include govuk-responsive-padding(6, $direction: top);
+  @include govuk-responsive-padding(4, $direction: top);
 }
 
 .app-homepage-masthead {
