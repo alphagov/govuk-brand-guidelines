@@ -41,7 +41,7 @@
 // Dark magenta section highlight likely to be deleted as it's just framing an
 // image, and the image should have it's own background
 .app-section-highlight--dark-magenta {
-  background-color: #651b3e;
+  background-color: $app-magenta-shade-50;
 }
 
 .app-section-highlight__wrapper--logo {
