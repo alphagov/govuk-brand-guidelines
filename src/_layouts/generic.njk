@@ -57,22 +57,26 @@
   {%- endif %}
 
   <div class="app-page-wrapper">
-    <nav class="app-chapter-navigation" aria-label="Pages in this section">
+    <nav class="app-chapter-navigation" aria-labelledby="side-navigation">
+      {% if sidebarNavigationRoot.data.children %}
+        <h2 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-6" id="side-navigation">In this section</h2>
+      {% endif %}
       {% from "link-list.njk" import appLinkList %}
       {{ appLinkList({
         pages: sidebarNavigationRoot.data.children,
         renderedPageUrl: page.url
       })}}
     </nav>
-
-    <div class="app-content">
+    {%  set contentClasses = 'app-content app-content--section-' + page.fileSlug  if landing else 'app-content' %}
+    <div class="{{ contentClasses }}">
       {% from "govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
 
       {# Some pages, like test pages, don't have ancestors #}
       {% if ancestors.length %}
+        {%  set breadcrumbClasses = 'app-breadcrumbs govuk-breadcrumbs--inverse app-breadcrumbs--landing app-breadcrumbs--landing-' + page.fileSlug  if landing else 'app-breadcrumbs' %}
         {{
           govukBreadcrumbs({
-            classes: 'app-breadcrumbs',
+            classes: breadcrumbClasses,
             items: ancestors | asBreadcrumbItems
           })
         }}
@@ -87,7 +91,18 @@
 {% set mainClasses = 'app-main-wrapper app-prose' %}
 
 {% block content %}
-  <h1 class="govuk-heading-xl">{{title}}</h1>
+  {% if landing %}
+    <div class="app-landing">
+      <div class="app-landing__hero">
+        <div class="app-landing__hero-container">
+          <h1 class="govuk-heading-xl">{{title}}</h1>
+          <p class="govuk-body-l">{{ lead }}</p>
+        </div>
+      </div>
+    </div>
+  {% else %}
+    <h1 class="govuk-heading-xl">{{title}}</h1>
+  {% endif %}
   {{ content | safe }}
 
   {# Render the list of pages under each chapter after the content

@@ -1,7 +1,8 @@
 ---
 order: 0
 title: Graphic device
-hero: ./hero.svg
+landing: true
+lead: Using the dot as a guide and companion in images and videos.
 ---
 
 ## The dot

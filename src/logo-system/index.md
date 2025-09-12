@@ -1,14 +1,9 @@
 ---
 order: 1
 title: Logo system
-hero: ./hero.svg
+landing: true
+lead: How the GOV.UK wordmark and crown work together in different contexts.
 ---
-
-<div class="hero">
-
-![](./hero.svg)
-
-</div>
 
 ## The GOV.UK logo system
 

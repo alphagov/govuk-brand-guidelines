@@ -40,4 +40,7 @@ export function setupMedia(eleventyConfig) {
   // Copy video files in the output site
   eleventyConfig.addPassthroughCopy('**/*.mp4')
   eleventyConfig.addPassthroughCopy('**/*.webm')
+
+  // Copy sass background images to the output site
+  eleventyConfig.addPassthroughCopy({'src/_stylesheets/images': 'styles/images'})
 }

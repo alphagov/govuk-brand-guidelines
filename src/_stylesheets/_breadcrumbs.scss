@@ -2,3 +2,25 @@
   margin-top: 0;
   margin-bottom: govuk-spacing(1);
 }
+
+// Modifier for breadcrumbs on landing pages.
+// Breadcrumbs are intentionally outside main whilst the hero itself is within
+// main. To get around this and appear to present the breadcrumb 'inside' the
+// hero, we replicate their background colour settings, set the breadcrumb
+// bottom margin and the hero top margin to 0 and position them together to
+// create the illusion of a single element.
+.app-breadcrumbs--landing {
+  @extend %app-landing-hero-bleed;
+  @include govuk-font($size: 19);
+  margin-bottom: 0;
+  padding: govuk-spacing(6) govuk-spacing(6) 0;
+  background-color: var(--app-landing-hero-dark-colour);
+
+  @include govuk-media-query($from: tablet) {
+    background-image: linear-gradient(
+      to right,
+      transparent $app-landing-container-width,
+      var(--app-landing-hero-light-colour) 30%
+    );
+  }
+}

@@ -1,14 +1,9 @@
 ---
 order: 3
 title: Typography
-hero: ./type-hero.svg
+landing: true
+lead: Which typeface and font to use, and how to use them.
 ---
-
-<div class="hero">
-
-![](./type-hero.svg)
-
-</div>
 
 Typography is a core element to our identity, shaping how our brand is perceived across all GOV.UK channels.
 

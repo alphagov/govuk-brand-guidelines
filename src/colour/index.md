@@ -1,14 +1,9 @@
 ---
 order: 2
 title: Colour
-hero: ./colour-hero.svg
+landing: true
+lead: Core brand colours, palettes and contrast requirements for accessibility.
 ---
-
-<div class="hero">
-
-![](./colour-hero.svg)
-
-</div>
 
 Our colour palette is designed with accessibility in mind. It’s flexible enough to work across all GOV.UK channels.
 
