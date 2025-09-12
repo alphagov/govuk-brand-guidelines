@@ -1,36 +1,68 @@
 ---
 order: 0
 title: GOV.UK Brand Guidelines
-hero: ./hero.svg
+layout: homepage.njk
+mainClasses: 'app-homepage'
 ---
 
-## Brand ambition
+{% from "govuk/components/button/macro.njk" import govukButton %}
 
-Since our launch in 2012, GOV.UK has become one of the most recognisable and trusted online destinations in the UK.
+{% breakOut {classes: "app-homepage-masthead"} %}
 
-As we increase the number of places that people meet GOV.UK, such as in people's social feeds, and launch more personalised services like the GOV.UK app, we need our brand identity to do more.
+{% grid { columns: { desktop: 3 }, classes: "govuk-!-margin-bottom-0" } %}
+{% gridCell { span: 2 } %}
 
-It needs to be able to compete for attention in busy environments like social media, be equipped to come to life when used in formats including video, while remaining approachable and welcoming for all the people we serve.
+# A brand that can inform and inspire
 
-The updated GOV.UK identity has been designed with this in mind.
+We’ve refreshed the GOV.UK brand to meet the needs and changing expectations of users across different channels and contexts.
 
-It builds on our recognisable and trusted foundations whilst introducing new elements so we can thrive in the broader range of channels that people expect us in today and tomorrow.
+{{ govukButton({ href: ("/overview/" | url), text: "Find out more", isStartButton: true, classes: "govuk-button--inverse govuk-!-margin-top-5" }) }}
 
-## A brand that can inform and inspire
+{% endgridCell %}
+{% endgrid %}
 
-The evolved brand is designed to adapt its tone, visuals and motion for different channels, formats and audiences. We call this the ‘inform to inspire’ scale.
+{% endbreakOut %}
 
-On social media, we aim to capture attention and prompt action. On the web, the focus is on helping people find what they need from government services and act.
+<div class="app-homepage-section">
 
-The brand can also shift depending on what we're saying. For sensitive topics, we use a more muted and reserved style. For positive content, we can look brighter and bolder.
+## Key elements
 
-This flexibility comes from how we use key brand elements – the wider colour palette, the dot and our motion language.
+{% grid {columns: { mobile: 1, tablet: 2 } } %}
+{% linkCard {title: 'Graphic device', description: 'Using the dot as a guide and companion in images and videos.', icon: './graphic-device.svg', href: ('/graphic-device/' | url) } %}
+{% linkCard {title: 'Logo system', description: 'How the GOV.UK wordmark and crown work together in different contexts.', icon: './logo-system.svg', href: ('/logo-system/' | url) } %}
+{% linkCard {title: 'Colour', description: 'Core brand colours, palettes and contrast requirements for accessibility.', icon: './colour.svg', href: ('/colour/' | url) } %}
+{% linkCard {title: 'Typography', description: 'Which typeface and font to use, and how to use them.', icon: './typography.svg', href: ('/typography/' | url) } %}
+{% endgrid %}
 
-These guidelines show how to apply the brand in different contexts to meet the needs of people using GOV.UK every day.
+</div>
 
-{% informInspire %}
+{% grid { columns: { desktop: 3 }, classes: "app-homepage-section" } %}
+{% gridCell { span: { desktop: 2 } } %}
 
-  <div class="app-inform-inspire__bar">Web</div>
-  <div class="app-inform-inspire__bar">App</div>
-  <div class="app-inform-inspire__bar">Social</div>
-{% endinformInspire %}
+## Using the GOV.UK brand
+
+These guidelines show GOV.UK teams within the Government Digital Service (GDS) how to apply the GOV.UK brand.
+
+Teams in wider government also publish information and services as part of [the GOV.UK proposition](https://www.gov.uk/government/publications/govuk-proposition), with support from GDS. If you’re not part of GDS, you must get approval to apply the GOV.UK brand.
+
+{% endgridCell %}
+{% endgrid %}
+
+{% grid { columns: { tablet: 2, desktop: 3 }, classes: "app-homepage-section app-homepage-section--top-border" } %}
+{% gridCell %}
+
+## Get brand assets
+
+You can find and download brand element and asset files in [the govuk-brand-assets repository on GitHub](https://github.com/alphagov/govuk-brand-assets).
+
+{% endgridCell %}
+{% gridCell { span: { desktop: 2 } } %}
+
+## Need help?
+
+If you’re part of a team that works on government products and services, and got a question about how to apply the brand guidelines, [contact the team](mailto:govuk-brand-team@dsit.gov.uk).
+
+You can also contact the team to get approval to use the brand.
+
+{% endgridCell %}
+{% endgrid %}

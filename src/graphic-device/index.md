@@ -1,5 +1,5 @@
 ---
-order: 0
+order: 1
 title: Graphic device
 landing: true
 lead: Using the dot as a guide and companion in images and videos.

@@ -1,5 +1,5 @@
 ---
-order: 2
+order: 3
 title: Colour
 landing: true
 lead: Core brand colours, palettes and contrast requirements for accessibility.

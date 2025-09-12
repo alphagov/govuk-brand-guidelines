@@ -1,0 +1,23 @@
+.app-homepage-section {
+  @include govuk-responsive-margin(8, $direction: top);
+  @include govuk-responsive-margin(8, $direction: bottom);
+}
+
+.app-homepage-section--top-border {
+  border-top: 1px solid $app-blue-tint-50;
+  @include govuk-responsive-padding(4, $direction: top);
+}
+
+.app-homepage-masthead {
+  @include govuk-responsive-padding(6, $direction: top);
+  @include govuk-responsive-padding(8, $direction: bottom);
+  @include govuk-font-size($size: 24);
+
+  h1 {
+    text-wrap: balance;
+  }
+
+  .govuk-body {
+    font-size: inherit;
+  }
+}

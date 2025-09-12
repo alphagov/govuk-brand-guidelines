@@ -1,5 +1,5 @@
 ---
-order: 1
+order: 2
 title: Logo system
 landing: true
 lead: How the GOV.UK wordmark and crown work together in different contexts.

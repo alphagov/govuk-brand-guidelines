@@ -1,0 +1,56 @@
+{% extends "govuk/template.njk" %}
+
+{% block pageTitle %}
+  {{- title -}}
+{% endblock %}
+
+{% block head %}
+  {{ super() }}
+  {#- Prevent search engine indexing for archive, preview and development builds -#}
+  {% if site.env.CONTEXT !== "production" or metadata.noRobots %}
+    <meta name="robots" content="noindex, nofollow">
+  {% endif %}
+  <link rel="stylesheet" href="{{ '/assets/stylesheet.css' | url }}">
+  {% getBundle "css" %}
+{% endblock %}
+
+{% block header %}
+  {% from "govuk/components/header/macro.njk" import govukHeader %}
+
+  {{ govukHeader({
+    productName: "Brand Guidelines"
+  }) }}
+{% endblock %}
+
+{% block beforeContent %}
+  {% from "govuk/components/phase-banner/macro.njk" import govukPhaseBanner %}
+    {%- if site.env.CONTEXT === "dev" %}
+      {{ govukPhaseBanner({
+        tag: {
+          text: "Development",
+          classes: "govuk-tag--red"
+        }
+      }) }}
+    {%- elif site.env.PULL_REQUEST %}
+      {{ govukPhaseBanner({
+        tag: {
+          text: "Preview",
+          classes: "govuk-tag--light-blue"
+        },
+        html: 'This is a preview of <a class="govuk-link" href="https://github.com/alphagov/govuk-brand-guidelines/pull/' + site.env.REVIEW_ID + '">a proposed change</a> to the brand guidelines.'
+      }) }}
+      {%- elif site.env.CONTEXT === "production" %}
+      {{ govukPhaseBanner({
+        tag: {
+          text: "Alpha"
+        },
+        text: "This is a new service. Help us improve it by giving your feedback."
+      }) }}
+    {%- endif %}
+{% endblock %}
+
+{% set mainClasses = [mainClasses, 'app-main-wrapper app-prose'] | select('truthy') | join(' ') %}
+
+{% block bodyEnd %}
+<script type="module" src="{{ '/assets/app.js' | url }}"></script>
+{% endblock %}

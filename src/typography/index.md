@@ -1,5 +1,5 @@
 ---
-order: 3
+order: 4
 title: Typography
 landing: true
 lead: Which typeface and font to use, and how to use them.

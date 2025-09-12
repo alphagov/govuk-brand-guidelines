@@ -1,0 +1,25 @@
+{% extends "./_base.njk" %}
+
+{% set htmlClasses = 'app-break-out-container' %}
+
+{% block header %}
+  {{ super() }}
+  {% from "service-navigation.njk" import appServiceNavigation %}
+  {% if collections.pages[0].data.children | length %}
+    {{ appServiceNavigation({
+      pages: collections.pages[0].data.children,
+      renderedPageUrl: page.url,
+      inverse: true
+    })}}
+  {% endif %}
+{% endblock %}
+
+{% block beforeContent %}
+  {% breakOut %}
+    {{ super() }}
+  {% endbreakOut %}
+{% endblock %}
+
+{% block content %}
+  {{ content | safe }}
+{% endblock %}
