@@ -9,30 +9,25 @@ Within GOV.UK social channels we follow the primary logo system, using the wordm
 
 An example of this is in profile icons.
 
-{% sectionHighlight %}
 {% grid { columns: 3 } %}
 
-<div class="govuk-!-text-align-centre">
+<div>
 
 ### Wordmark
-
-<!-- TODO: duplicated file also in ../app -->
 
 ![Wordmark for GOV.UK in white. The dot between 'GOV' and 'UK' is Accent teal and vertically-centred. Shown on a Primary blue background.](./wordmark-on-blue.svg)
 
 </div>
 
-<div class="govuk-!-text-align-centre">
+<div>
 
 ### Crown
-
-<!-- TODO: duplicated file also in ../app -->
 
 ![The crown element of the GOV.UK logo, shown as white on a Primary blue background.](./crown-on-blue.svg)
 
 </div>
 
-<div class="govuk-!-text-align-centre">
+<div>
 
 ### Profile icons
 
@@ -40,7 +35,6 @@ An example of this is in profile icons.
 
 </div>
 {% endgrid %}
-{% endsectionHighlight %}
 
 ## Logo elements within social
 
@@ -65,7 +59,6 @@ We use the crown as a supporting element that sits below or to the right of the 
 Indicative examples for illustrative purposes only.
 {% endcallout %}
 
-{% sectionHighlight { classes: "app-section-highlight--light-blue" } %}
 {% grid { columns: { mobile: 3, desktop: 3 } } %}
 
 ![Mock-up of the GOV.UK channel page on YouTube.](./youtube-example.png)
@@ -75,29 +68,17 @@ Indicative examples for illustrative purposes only.
 ![Mock-up of the GOV.UK profile page on Instagram.](./facebook-example.png)
 
 {% endgrid %}
-{% endsectionHighlight %}
 
 ## Social end frames
 
 Social end frames can be used at the end of animated or filmed content. They incorporate both the wordmark and crown and act as a branded sign-off.
 
-{% sectionHighlight { classes: "app-section-highlight--light-blue" } %}
-
-<div>
-
 ### Video end frame 16:9
-
-<div class="app-section-highlight__wrapper--space-around">
-
-<!-- ![TODO](./end-frame-1920x1080.gif) -->
 
 {% video { source: [
     "/graphic-device/dot-use-examples/End-frame-1920-1080.mp4",
     "/graphic-device/dot-use-examples/End-frame-1920-1080.webm"
 ] } %}
-
-</div>
-</div>
 
 {% grid { columns: { mobile: 1, desktop: 2 } } %}
 
@@ -105,35 +86,23 @@ Social end frames can be used at the end of animated or filmed content. They inc
 
 ### Video end frame 9:16
 
-<div class="app-section-highlight__wrapper--space-around">
-
-<!-- ![TODO](./end-frame-1080x1920.gif) -->
-
 {% video { source: [
     "/graphic-device/dot-use-examples/End-frame-1080-1920.mp4",
     "/graphic-device/dot-use-examples/End-frame-1080-1920.webm"
 ] } %}
 
-</div>
 </div>
 <div>
 
 ### Video end frame 1:1
 
-<div class="app-section-highlight__wrapper--space-around">
-
-<!-- ![TODO](./end-frame-1080x1080.gif) -->
-
 {% video { source: [
-    "/graphic-device/dot-use-examples/End-frame-1080-1920.mp4",
-    "/graphic-device/dot-use-examples/End-frame-1080-1920.webm"
+    "/graphic-device/dot-use-examples/End-frame-1080-1080.mp4",
+    "/graphic-device/dot-use-examples/End-frame-1080-1080.webm"
 ] } %}
 
 </div>
-
-</div>
 {% endgrid %}
-{% endsectionHighlight %}
 
 ## Adaptive dot colour
 
@@ -149,7 +118,7 @@ This can be applied within the live artwork files using the relevant swatches. A
 
 To aid brand recognition and coherency, adaptive dot colour should not be used within video end frames.
 
-{% grid { columns: { mobile: 2, desktop: 3 } } %}
+{% grid { columns: { mobile: 2, desktop: 3 }, classes: "app-grid-colour" } %}
 
 <div>
 
