@@ -11,14 +11,11 @@ As our primary identifier, the GOV.UK wordmark should be used in all application
 
 [The exception to this rule is the GOV.UK website](/logo-system/web/).
 
-{% sectionHighlight %}
-
-<div class="app-section-highlight__wrapper--logo">
+<div class="app-section-highlight app-section-highlight__wrapper--logo govuk-!-margin-top-6 govuk-!-margin-bottom-6">
 
 ![Wordmark for GOV.UK in white. The dot between 'GOV' and 'UK' is Accent teal and vertically-centred. Shown on a Primary blue background.](./wordmark.svg)
 
 </div>
-{% endsectionHighlight %}
 
 ## Crown
 
@@ -26,14 +23,11 @@ As our primary identifier, the GOV.UK wordmark should be used in all application
 
 [The exception to this rule is the GOV.UK website](/logo-system/web/).
 
-{% sectionHighlight %}
+<div class="app-section-highlight app-section-highlight__wrapper--logo govuk-!-margin-top-6 govuk-!-margin-bottom-6">
 
-<div class="app-section-highlight__wrapper--logo">
-
-![The crown element of the GOV.UK logo, shown as white on a Primary blue background.](./crown2.svg)
+![The crown element of the GOV.UK logo, shown as white on a Primary blue background.](./crown.svg)
 
 </div>
-{% endsectionHighlight %}
 
 ### Using the crown as a supporting element
 
@@ -67,10 +61,9 @@ In order to maintain visual hierarchy, consistency and balance between the two e
 
 The size of the crown can be adjusted depending on context. For example, when being used at smaller sizes such as within the app icon, the enlarged crown should be used to aid accessibility and legibility.
 
-{% sectionHighlight %}
-{% grid { columns: { mobile: 1, desktop: 2 } } %}
+{% grid { columns: { mobile: 1, desktop: 2 }, classes: 'govuk-!-margin-top-6 govuk-!-margin-bottom-6' } %}
 
-<div>
+<div class="app-top-border">
 
 #### Standard crown size
 
@@ -78,12 +71,11 @@ Scaling should follow this rule:
 Wordmark dot = 2× crown dot
 
 </div>
-{% gridCell { verticalAlign: "end" } %}
+<div class="govuk-!-margin-0">
 
 ![Dots from the crown are used to show the correct size of the dot in the wordmark.](./standard-crown.svg)
 
-{% endgridCell %}
-
+</div>
 <div class="app-top-border">
 
 #### Enlarged crown size
@@ -92,15 +84,13 @@ Scaling should follow this rule:
 Wordmark dot = 1× crown dot
 
 </div>
-<div class="app-top-border">
+<div class="govuk-!-margin-0">
 
 ![Dots from the enlarged crown that's used in the app icon are used to show the correct size of the dot in the wordmark.](./enlarged-crown.svg)
 
 </div>
 {% endgrid %}
-{% endsectionHighlight %}
 
-{% sectionHighlight %}
 {% grid { columns: { mobile: 1, desktop: 1 } } %}
 
 <div>
@@ -113,14 +103,13 @@ By respecting clear space guidelines, we preserve the logo’s integrity and ens
 
 The clear space area is defined by the dot size within our wordmark.
 
-<div>
+<div class="app-section-highlight app-section-highlight__wrapper--logo govuk-!-margin-top-6 govuk-!-margin-bottom-6">
 
 ![Dots from the wordmark are used to show that its width is the equal to the minimum clear space required around logo elements.](./space-around-wordmark.svg)
 
 </div>
 </div>
 {% endgrid %}
-{% endsectionHighlight %}
 
 ## Minimum sizing
 
@@ -128,36 +117,32 @@ Keeping the logo at its minimum size helps ensure it stays legible and accessibl
 
 If it’s too small, it can lose detail and be harder for some users to read or recognise.
 
-{% sectionHighlight %}
-{% grid { columns: { mobile: 1, desktop: 2 } } %}
+{% grid { columns: { mobile: 1, desktop: 2 }, classes: 'app-grid-min-size' } %}
 
-<!-- TODO: suggest adding the arrow to the image -->
-
-{% gridCell { verticalAlign: "end" } %}
+<div class="govuk-!-margin-0">
 
 ![The wordmark for "GOV.UK". Minimum width of the wordmark: 50px.](./wordmark-min-width.svg)
 
 Minimum size:</br>
 <strong class="govuk-!-font-size-24">50px</strong>
 
-{% endgridCell %}
-{% gridCell { verticalAlign: "end" } %}
+</div>
+<div class="govuk-!-margin-0">
 
 ![The crown element of the GOV.UK logo. Minimum width of the crown on it own: 16px.](./crown-min-width.svg)
 
 Minimum size:</br>
 <strong class="govuk-!-font-size-24">16px</strong>
 
-{% endgridCell %}
-{% gridCell { verticalAlign: "end", span: 2 } %}
+</div>
+<div class="govuk-!-margin-bottom-6">
 
 ![Smaller version of the crown, with adjustments such as fewer dots.](./crown-favicon.svg)
 
 Use the small crown version for anything below the crown’s minimum size, such as web favicons.
 
-{% endgridCell%}
+</div>
 {% endgrid %}
-{% endsectionHighlight %}
 
 ## Logo colour
 
@@ -239,7 +224,7 @@ Do not alter colour balance within the wordmark
 </div>
 <div>
 
-![](./incorrect-altered-colours.png)
+![](./incorrect-altered-colours.svg)
 
 </div>
 <div class="app-top-border">
@@ -249,7 +234,7 @@ Do not distort, stretch or skew the wordmark
 </div>
 <div>
 
-![](./incorrect-squashed.png)
+![](./incorrect-squashed.svg)
 
 </div>
 <div class="app-top-border">
@@ -259,7 +244,7 @@ Do not apply drop shadows or effects to the wordmark
 </div>
 <div>
 
-![](./incorrect-effects.png)
+![](./incorrect-effects.svg)
 
 </div>
 <div class="app-top-border">
@@ -279,7 +264,7 @@ Do not flip, mirror, or rotate the wordmark
 </div>
 <div>
 
-![](./incorrect-mirrored.png)
+![](./incorrect-mirrored.svg)
 
 <div>
 {% endgrid %}
