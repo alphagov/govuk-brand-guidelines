@@ -23,7 +23,7 @@
         width: 100cqi;
         // The height of app-landing + its top padding + app-page-wrapper's padding
         height: calc(100% + (govuk-spacing(9) + govuk-spacing(6)));
-        background-color: $app-light-blue;
+        background-color: $app-blue-tint-95;
       }
 
       @include govuk-media-query($from: desktop) {
