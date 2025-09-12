@@ -206,3 +206,14 @@ $subnav-padding-left: $app-chevron-width + $app-chevron-margin-left +
     --dot-spacing: 10px;
   }
 }
+
+// Add padding to mobile menu items that are not drop downs,
+// so they're aligned with their dropdown variants
+@include govuk-media-query($until: tablet) {
+  .js-enabled
+    .govuk-service-navigation__item:not(
+      .app-mobile-navigation-section__service-navigation-item
+    ) {
+    padding-left: $subnav-padding-left;
+  }
+}

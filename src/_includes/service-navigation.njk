@@ -5,6 +5,8 @@
 
 {%- set navigation = [] %}
 {%- for page in params.pages %}
+  {%- if page.data.children | length > 0 %}
+  {# If the page has child pages... #}
 
   {# Mock a link to the overview page, only setting ariaCurrent if the link is the current on, not just active #}
   {% set overviewLink = {
@@ -38,6 +40,18 @@
       }
     })
   ])%}
+
+  {%- else %}
+  {# If the page is standalone... #}
+
+  {% set navigation = navigation.concat([
+    page | asServiceNavigationItem({
+      renderedPageUrl: params.renderedPageUrl,
+      html: page.data.title
+    })
+  ])%}
+
+  {%- endif %}
 {% endfor %}
 
 {{ govukServiceNavigation({
