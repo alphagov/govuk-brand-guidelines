@@ -1,5 +1,9 @@
 {% extends "./_base.njk" %}
 
+{% if landing %}
+  {% set htmlClasses = 'app-break-out-container' %}
+{% endif %}
+
 {% block header %}
   {{ super() }}
   {% from "service-navigation.njk" import appServiceNavigation %}

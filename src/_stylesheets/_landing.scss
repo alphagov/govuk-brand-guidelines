@@ -1,7 +1,7 @@
 .app-landing {
   @include govuk-responsive-margin(9, $direction: 'bottom');
 
-  @container full-bleed (width > 1px) {
+  @container app-break-out (width > 1px) {
     position: relative;
 
     // Because app-landing is within main, which is in a 2/3rds width container,
@@ -36,7 +36,7 @@
         $and: '(min-width: #{($govuk-page-width + $govuk-gutter * 2)})'
       ) {
         // First get the edge of the govuk width container relative to the
-        // viewport (the full-bleed container) then 'add' the side nav, plus
+        // viewport (the app-break-out container) then 'add' the side nav, plus
         // its padding
         left: calc(
           ((-100cqi + $govuk-page-width) / 2) -
@@ -69,7 +69,7 @@
     margin-left: govuk-spacing(-6);
   }
 
-  @container full-bleed (width > 1px) {
+  @container app-break-out (width > 1px) {
     @include govuk-media-query($from: tablet) {
       margin-right: govuk-spacing(-6);
     }
