@@ -1,0 +1,4 @@
+.app-video-border {
+  --app-top-border-colour: #{$govuk-border-colour};
+  border: 1px solid var(--app-top-border-colour);
+}
