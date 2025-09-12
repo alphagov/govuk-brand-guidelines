@@ -156,7 +156,7 @@ Indicative examples for illustrative purposes only.
 </div>
 {% endgrid %}
 
-## Companion colours
+## Companion colour set
 
 Use companion colours when you need to emphasise something, like prompting action or sharing something positive. We’ve kept the set to 9 combinations to make sure they stay accessible.
 
