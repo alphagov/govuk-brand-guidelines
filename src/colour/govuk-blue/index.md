@@ -35,18 +35,14 @@ We lead with the Primary blue and Accent teal across all GOV.UK channels. From t
 Indicative examples for illustrative purposes only.
 {% endcallout %}
 
-{% sectionHighlight { classes: "app-section-highlight--light-blue" } %}
 {% grid { columns: { mobile: 1, desktop: 2 } } %}
 
 <div>
 
 ### Mobile web header
 
-<div class="app-section-highlight__wrapper--space-around">
-
 ![Screenshot of GOV.UK website on mobile, showing the Primary blue header, with the lock-up of the wordmark and crown in white. The dot is in Accent teal.](./mobile-web-header.png)
 
-</div>
 </div>
 
 <div>
@@ -56,37 +52,27 @@ Indicative examples for illustrative purposes only.
 {% video { source: "/graphic-device/dot-use-examples/splash-screen-long-version.mp4" } %}
 
 </div>
-
 <div>
 
 ### App header
 
-<div class="app-section-highlight__wrapper--space-around">
-
 ![Screenshot of GOV.UK app, showing the Primary blue app header with the wordmark in white and the dot in Accent teal.](./app-header.png)
 
 </div>
-</div>
-
 <div>
 
 ### YouTube profile
 
-<div class="app-section-highlight__wrapper--space-around">
+![Screenshot of YouTube profile on mobile, showing blue and teal used in the banner image.](./youtube-example.png)
 
-![Screenshot of YouTube profile on mobile, showing blue and teal used in the banner image.](./youtube-profile.png)
-
-</div>
 </div>
 {% endgrid %}
-
-{% endsectionHighlight %}
 
 ## Colour accessibility
 
 You must make sure that the contrast ratio of colours used meets [Web Content Accessibility Guidelines (WCAG 2.2) success criterion 1.4.3 Contrast (minimum) level AA](https://www.w3.org/TR/WCAG22/#contrast-minimum).
 
-![A very large grid of colour combinations. Tiny red tags show where combinations do not meet minimum colour contrast requirements.](./colour-contrast.png)
+![A grid of colour combinations. Coloured stripes show how well combinations meet minimum colour contrast requirements.](./colour-contrast.png)
 
 ## Incorrect colour usage
 
@@ -96,7 +82,7 @@ To maintain consistency across channels the colours within our palette should ne
 
 <div>
 
-![](./incorrect-colour-combos.png)
+![](./incorrect-colour-combos.svg)
 
 </div>
 <div class="app-top-border">
@@ -106,7 +92,7 @@ Do not use colour combinations that do not meet [WCAG2.2 guidelines](https://www
 </div>
 <div>
 
-![](./incorrect-new-colours.png)
+![](./incorrect-new-colours.svg)
 
 </div>
 <div class="app-top-border">
@@ -116,7 +102,7 @@ Do not create new colours
 </div>
 <div>
 
-![](./incorrect-too-many-colours.png)
+![](./incorrect-too-many-colours.svg)
 
 </div>
 <div class="app-top-border">

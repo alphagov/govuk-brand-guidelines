@@ -7,13 +7,10 @@ title: Web
 
 To aid recognition and trust we retain the locked-up version of the crown and wordmark on web.
 
-{% sectionHighlight %}
-
-<div class="app-section-highlight__wrapper--logo">
+{% sectionHighlight { classes: 'app-section-highlight__wrapper--logo' } %}
 
 ![](./web-logo-primary.svg)
 
-</div>
 {% endsectionHighlight %}
 
 ## Header and footer
@@ -26,12 +23,9 @@ Indicative examples for illustrative purposes only.
 
 ![Screenshot showing web header on mobile and desktop.](./web-headers-grouped.png)
 
-{% sectionHighlight { classes: "app-section-highlight--light-blue" } %}
-
 We also use the crown as a supporting element within the footer at the end of content.
 
 ![Screenshot showing web footer on desktop.](./web-footer-example.png)
-{% endsectionHighlight %}
 
 ## Favicon
 
@@ -41,7 +35,4 @@ In line with minimum size guidance, within web favicons we use the simplified cr
 Indicative examples for illustrative purposes only.
 {% endcallout %}
 
-{% sectionHighlight { classes: "light-blue" } %}
-
 ![Mockup showing the favicon in a browser tab.](./favicon.png)
-{% endsectionHighlight %}
