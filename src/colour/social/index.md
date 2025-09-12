@@ -89,13 +89,24 @@ For more sensitive messaging, colours from within the same tonal range are used 
 Indicative examples for illustrative purposes only.
 {% endcallout %}
 
+{% set tonalColourExamples = [
+  { label: "Green tint 95%", hex: "#F3F9F7", group: "example1" },
+  { label: "Green shade 50%", hex: "#09442D", group: "example1" },
+  { label: "Primary red", hex: "#CA3535", group: "example2" },
+  { label: "Red shade 50%", hex: "#651B1B", group: "example2" },
+  { label: "Accent red", hex: "#FF5E5E", group: "example2" },
+  { label: "Purple tint 95%", hex: "#F6F5FA", group: "example3" },
+  { label: "Primary purple", hex: "#54319F", group: "example3" },
+  { label: "Purple shade 50%", hex: "#2A1950", group: "example3" },
+  { label: "Accent purple", hex: "#BA4AFF", group: "example3" }
+] %}
+
 {% grid { columns: { mobile: 2, desktop: 2 } } %}
 
 <div>
 <div class="app-top-border">
 
-{% swatch { label: "Green tint 95%", hex: "#F3F9F7" } %}
-{% swatch { label: "Green shade 50%", hex: "#09442D" } %}
+{% swatchList { palette: tonalColourExamples, group: "example1" } %}
 
 </div>
 
@@ -114,9 +125,7 @@ Indicative examples for illustrative purposes only.
 <div>
 <div class="app-top-border">
 
-{% swatch { label: "Primary red", hex: "#CA3535" } %}
-{% swatch { label: "Red shade 50%", hex: "#651B1B" } %}
-{% swatch { label: "Accent red", hex: "#FF5E5E" } %}
+{% swatchList { palette: tonalColourExamples, group: "example2" } %}
 
 </div>
 
@@ -134,10 +143,7 @@ Indicative examples for illustrative purposes only.
 <div>
 <div class="app-top-border">
 
-{% swatch { label: "Purple tint 95%", hex: "#F6F5FA" } %}
-{% swatch { label: "Primary purple", hex: "#54319F" } %}
-{% swatch { label: "Purple shade 50%", hex: "#2A1950" } %}
-{% swatch { label: "Accent purple", hex: "#BA4AFF" } %}
+{% swatchList { palette: tonalColourExamples, group: "example3" } %}
 
 </div>
 
@@ -355,13 +361,22 @@ For more sensitive messaging, colours from within the same tonal range are used 
 Indicative examples for illustrative purposes only.
 {% endcallout %}
 
+{% set companionColourExamples = [
+  { label: "Primary blue", hex: "#1D70B8", group: "example1" },
+  { label: "Primary yellow", hex: "#FFDD00", group: "example1" },
+  { label: "Primary magenta", hex: "#CA357C", group: "example2" },
+  { label: "Blue shade 50%", hex: "#0F385C", group: "example2" },
+  { label: "Magenta tint 95%", hex: "#FCF5F8", group: "example2" },
+  { label: "Accent green", hex: "#66F39E", group: "example3" },
+  { label: "Blue shade 50%", hex: "#0F385C", group: "example3" }
+] %}
+
 {% grid { columns: { mobile: 2, desktop: 2 } } %}
 
 <div>
 <div class="app-top-border">
 
-{% swatch { label: "Primary blue", hex: "#1D70B8" } %}
-{% swatch { label: "Primary yellow", hex: "#FFDD00" } %}
+{% swatchList { palette: companionColourExamples, group: "example1" } %}
 
 </div>
 
@@ -379,9 +394,7 @@ Indicative examples for illustrative purposes only.
 <div>
 <div class="app-top-border">
 
-{% swatch { label: "Primary magenta", hex: "#CA357C" } %}
-{% swatch { label: "Blue shade 50%", hex: "#0F385C" } %}
-{% swatch { label: "Magenta tint 95%", hex: "#FCF5F8" } %}
+{% swatchList { palette: companionColourExamples, group: "example2" } %}
 
 </div>
 
@@ -399,8 +412,7 @@ Indicative examples for illustrative purposes only.
 <div>
 <div class="app-top-border">
 
-{% swatch { label: "Accent green", hex: "#66F39E" } %}
-{% swatch { label: "Blue shade 50%", hex: "#0F385C" } %}
+{% swatchList { palette: companionColourExamples, group: "example3" } %}
 
 </div>
 

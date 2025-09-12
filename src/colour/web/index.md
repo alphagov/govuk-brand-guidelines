@@ -73,22 +73,28 @@ This means that your service will always use the most recent colour palette when
 
 Only use the variables in the context they’re designed for. In all other cases, you should reference the web primary directly. For example, if you wanted to use primary red, you should use `govuk-colour("primary-red")` rather than `$govuk-error-colour`.
 
+{% set webFunctionalColours = [
+  { label: "$govuk-text-colour", hex: "#0B0C0C", group: "text" },
+  { label: "$govuk-secondary-text-colour", hex: "#484949", group: "text" },
+  { label: "$govuk-link-colour", hex: "#1D70B8", group: "links" },
+  { label: "$govuk-link-visited-colour", hex: "#54319F", group: "links" },
+  { label: "$govuk-link-hover-colour", hex: "#0F385C", group: "links" },
+  { label: "$govuk-link-active-colour", hex: "#0B0C0C", group: "links" },
+  { label: "$govuk-border-colour", hex: "#CECECE", group: "border" },
+  { label: "$govuk-input-border-colour", hex: "#0B0C0C", group: "border" }
+] %}
+
 #### Text
 
-{% swatch { label: "$govuk-text-colour", hex: "#0B0C0C" } %}
-{% swatch { label: "$govuk-secondary-text-colour", hex: "#484949" } %}
+{% swatchList { palette: webFunctionalColours, group: "text" } %}
 
 #### Links
 
-{% swatch { label: "$govuk-link-colour", hex: "#1D70B8" } %}
-{% swatch { label: "$govuk-link-visited-colour", hex: "#54319F" } %}
-{% swatch { label: "$govuk-link-hover-colour", hex: "#0F385C" } %}
-{% swatch { label: "$govuk-link-active-colour", hex: "#0B0C0C" } %}
+{% swatchList { palette: webFunctionalColours, group: "links" } %}
 
 #### Border
 
-{% swatch { label: "$govuk-border-colour", hex: "#CECECE" } %}
-{% swatch { label: "$govuk-input-border-colour", hex: "#0B0C0C" } %}
+{% swatchList { palette: webFunctionalColours, group: "border" } %}
 
 #### Focus state
 
