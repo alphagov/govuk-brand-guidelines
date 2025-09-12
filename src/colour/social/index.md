@@ -59,7 +59,7 @@ The social palette has:
 
 ## Use colour to reflect tone
 
-Our updated palette has been developed to allow a range in expression across the inform to inspire scale. 
+Our updated palette has been developed to allow a range in expression across the inform to inspire scale.
 
 There are moments where the brand needs to feel functional and serious, guiding users seamlessly to the content and services they need. With the introduction of new channels such as social, there are also moments where the brand needs impact and visual differentiation.
 
@@ -89,29 +89,78 @@ For more sensitive messaging, colours from within the same tonal range are used 
 Indicative examples for illustrative purposes only.
 {% endcallout %}
 
+{% set tonalColourExamples = [
+  { label: "Green tint 95%", hex: "#F3F9F7", group: "example1" },
+  { label: "Green shade 50%", hex: "#09442D", group: "example1" },
+  { label: "Primary red", hex: "#CA3535", group: "example2" },
+  { label: "Red shade 50%", hex: "#651B1B", group: "example2" },
+  { label: "Accent red", hex: "#FF5E5E", group: "example2" },
+  { label: "Purple tint 95%", hex: "#F6F5FA", group: "example3" },
+  { label: "Primary purple", hex: "#54319F", group: "example3" },
+  { label: "Purple shade 50%", hex: "#2A1950", group: "example3" },
+  { label: "Accent purple", hex: "#BA4AFF", group: "example3" }
+] %}
+
+{% grid { columns: { mobile: 2, desktop: 2 } } %}
+
+<div>
+<div class="app-top-border">
+
+{% swatchList { palette: tonalColourExamples, group: "example1" } %}
+
+</div>
+
+</div>
+
+<div>
+
 ![Text "Fuel duty will be frozen next year" in Green shade 50%, within a whte circle, on a Green tint 50% background.](./example-tonal-1.png)
 
-{% swatch { label: "Green tint 95%", hex: "#F3F9F7" } %}
-{% swatch { label: "Green shade 50%", hex: "#09442D" } %}
+</div>
+
+{% endgrid %}
+
+{% grid { columns: { mobile: 2, desktop: 2 } } %}
+
+<div>
+<div class="app-top-border">
+
+{% swatchList { palette: tonalColourExamples, group: "example2" } %}
+
+</div>
+
+</div>
+
+<div>
 
 ![Text "Strong winds and expected disruptions" in white, above the text is an exclamation mark icon in Red shade 50% inside a small circle in Accent red, on a Primary red background.](./example-tonal-2.png)
 
-{% swatch { label: "Primary red", hex: "#CA3535" } %}
-{% swatch { label: "Red shade 50%", hex: "#651B1B" } %}
-{% swatch { label: "Accent red", hex: "#FF5E5E" } %}
+</div>
+{% endgrid %}
+
+{% grid { columns: { mobile: 2, desktop: 2 } } %}
+
+<div>
+<div class="app-top-border">
+
+{% swatchList { palette: tonalColourExamples, group: "example3" } %}
+
+</div>
+
+</div>
+
+<div>
 
 ![Text "Get your council bill reduced as a student" in white, with a Primary purple lozenge highlighting the word "reduced". Below the text is a large Accent purple arrow. Image background is in Purple shade 50%.](./example-tonal-3.png)
 
-{% swatch { label: "Purple tint 95%", hex: "#F6F5FA" } %}
-{% swatch { label: "Primary purple", hex: "#54319F" } %}
-{% swatch { label: "Purple shade 50%", hex: "#2A1950" } %}
-{% swatch { label: "Accent purple", hex: "#BA4AFF" } %}
+</div>
+{% endgrid %}
 
-## Companion colours
+## Companion colour set
 
 Use companion colours when you need to emphasise something, like prompting action or sharing something positive. We’ve kept the set to 9 combinations to make sure they stay accessible.
 
-Some pairings may be harder to see for people with visual impairments or colour blindness. 
+Some pairings may be harder to see for people with visual impairments or colour blindness.
 
 Choose combinations carefully and use a tool like [WhoCanUse.com](https://www.whocanuse.com/) to check they meet [WCAG 2.2 Contrast (Minimum) Level AA](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html).
 
@@ -119,50 +168,188 @@ Do not rely on colour alone to show meaning, signal an action or prompt a respon
 
 Remember, some users browse with high-contrast settings or dark mode. Colours may need to be adjusted to work in those contexts.
 
-<!-- the horizontal lines should not be there, but I added those temporarily to make groups clearer -->
+{% set companionColours = [
+  { label: "Primary blue", hex: "#1D70B8", group: "set1" },
+  { label: "Primary yellow", hex: "#FFDD00", group: "set1" },
+  { label: "Magenta tint 95%", hex: "#FCF5F8", group: "set2" },
+  { label: "Primary red", hex: "#CA3535", group: "set2" },
+  { label: "Blue tint 95%", hex: "#F4F8FB", group: "set3" },
+  { label: "Primary magenta", hex: "#CA357C", group: "set3" },
+  { label: "Primary yellow", hex: "#FFDD00", group: "set4" },
+  { label: "Purple shade 50%", hex: "#2A1950", group: "set4" },
+  { label: "Accent blue", hex: "#11E0F1", group: "set5" },
+  { label: "Purple shade 25%", hex: "#3F2577", group: "set5" },
+  { label: "Accent green", hex: "#66F39E", group: "set6" },
+  { label: "Blue shade 50%", hex: "#0F385C", group: "set6" },
+  { label: "Green shade 50%", hex: "#09442D", group: "set7" },
+  { label: "Accent blue", hex: "#11E0F1", group: "set7" },
+  { label: "Primary blue", hex: "#1D70B8", group: "set8" },
+  { label: "Accent blue", hex: "#11E0F1", group: "set8" },
+  { label: "Red shade 50%", hex: "#651B1B", group: "set9" },
+  { label: "Primary yellow", hex: "#FFDD00", group: "set9" }
+] %}
 
-{% swatch { label: "Primary blue", hex: "#1D70B8" } %}
-{% swatch { label: "Primary yellow", hex: "#FFDD00" } %}
+{% grid { columns: { mobile: 2, desktop: 2 } } %}
 
----
+<div>
 
-{% swatch { label: "Magenta tint 95%", hex: "#FCF5F8" } %}
-{% swatch { label: "Primary red", hex: "#CA3535" } %}
+![](./companion-colours-set1.svg)
 
----
+</div>
 
-{% swatch { label: "Blue tint 95%", hex: "#F4F8FB" } %}
-{% swatch { label: "Primary magenta", hex: "#CA357C" } %}
+<div>
+<div class="app-top-border">
 
----
+{% swatchList { palette: companionColours, group: "set1" } %}
 
-{% swatch { label: "Primary yellow", hex: "#FFDD00" } %}
-{% swatch { label: "Purple shade 50%", hex: "#2A1950" } %}
+</div>
 
----
+</div>
+{% endgrid %}
 
-{% swatch { label: "Accent blue", hex: "#11E0F1" } %}
-{% swatch { label: "Purple shade 25%", hex: "#3F2577" } %}
+{% grid { columns: { mobile: 2, desktop: 2 } } %}
 
----
+<div>
 
-{% swatch { label: "Accent green", hex: "#66F39E" } %}
-{% swatch { label: "Blue shade 50%", hex: "#0F385C" } %}
+![](./companion-colours-set2.svg)
 
----
+</div>
 
-{% swatch { label: "Green shade 50%", hex: "#09442D" } %}
-{% swatch { label: "Accent blue", hex: "#11E0F1" } %}
+<div>
+<div class="app-top-border">
 
----
+{% swatchList { palette: companionColours, group: "set2" } %}
 
-{% swatch { label: "Primary blue", hex: "#1D70B8" } %}
-{% swatch { label: "Accent blue", hex: "#11E0F1" } %}
+</div>
 
----
+</div>
+{% endgrid %}
 
-{% swatch { label: "Red shade 50%", hex: "#651B1B" } %}
-{% swatch { label: "Primary yellow", hex: "#FFDD00" } %}
+{% grid { columns: { mobile: 2, desktop: 2 } } %}
+
+<div>
+
+![](./companion-colours-set3.svg)
+
+</div>
+
+<div>
+<div class="app-top-border">
+
+{% swatchList { palette: companionColours, group: "set3" } %}
+
+</div>
+
+</div>
+{% endgrid %}
+
+{% grid { columns: { mobile: 2, desktop: 2 } } %}
+
+<div>
+
+![](./companion-colours-set4.svg)
+
+</div>
+
+<div>
+<div class="app-top-border">
+
+{% swatchList { palette: companionColours, group: "set4" } %}
+
+</div>
+
+</div>
+{% endgrid %}
+
+{% grid { columns: { mobile: 2, desktop: 2 } } %}
+
+<div>
+
+![](./companion-colours-set5.svg)
+
+</div>
+
+<div>
+<div class="app-top-border">
+
+{% swatchList { palette: companionColours, group: "set5" } %}
+
+</div>
+
+</div>
+{% endgrid %}
+
+{% grid { columns: { mobile: 2, desktop: 2 } } %}
+
+<div>
+
+![](./companion-colours-set6.svg)
+
+</div>
+
+<div>
+<div class="app-top-border">
+
+{% swatchList { palette: companionColours, group: "set6" } %}
+
+</div>
+
+</div>
+{% endgrid %}
+
+{% grid { columns: { mobile: 2, desktop: 2 } } %}
+
+<div>
+
+![](./companion-colours-set7.svg)
+
+</div>
+
+<div>
+<div class="app-top-border">
+
+{% swatchList { palette: companionColours, group: "set7" } %}
+
+</div>
+
+</div>
+{% endgrid %}
+
+{% grid { columns: { mobile: 2, desktop: 2 } } %}
+
+<div>
+
+![](./companion-colours-set8.svg)
+
+</div>
+
+<div>
+<div class="app-top-border">
+
+{% swatchList { palette: companionColours, group: "set8" } %}
+
+</div>
+
+</div>
+{% endgrid %}
+
+{% grid { columns: { mobile: 2, desktop: 2 } } %}
+
+<div>
+
+![](./companion-colours-set9.svg)
+
+</div>
+
+<div>
+<div class="app-top-border">
+
+{% swatchList { palette: companionColours, group: "set9" } %}
+
+</div>
+
+</div>
+{% endgrid %}
 
 ### Companion colour examples
 
@@ -174,18 +361,66 @@ For more sensitive messaging, colours from within the same tonal range are used 
 Indicative examples for illustrative purposes only.
 {% endcallout %}
 
+{% set companionColourExamples = [
+  { label: "Primary blue", hex: "#1D70B8", group: "example1" },
+  { label: "Primary yellow", hex: "#FFDD00", group: "example1" },
+  { label: "Primary magenta", hex: "#CA357C", group: "example2" },
+  { label: "Blue shade 50%", hex: "#0F385C", group: "example2" },
+  { label: "Magenta tint 95%", hex: "#FCF5F8", group: "example2" },
+  { label: "Accent green", hex: "#66F39E", group: "example3" },
+  { label: "Blue shade 50%", hex: "#0F385C", group: "example3" }
+] %}
+
+{% grid { columns: { mobile: 2, desktop: 2 } } %}
+
+<div>
+<div class="app-top-border">
+
+{% swatchList { palette: companionColourExamples, group: "example1" } %}
+
+</div>
+
+</div>
+
+<div>
+
 ![Text "Get your council bill reduced as a student" in white, with "reduced" in black text within a Primary yellow lozenge highlight. Above is a large Primary yellow arrow. Image background is in Primary blue.](./example-companion-1.png)
 
-{% swatch { label: "Primary blue", hex: "#1D70B8" } %}
-{% swatch { label: "Primary yellow", hex: "#FFDD00" } %}
+</div>
+{% endgrid %}
+
+{% grid { columns: { mobile: 2, desktop: 2 } } %}
+
+<div>
+<div class="app-top-border">
+
+{% swatchList { palette: companionColourExamples, group: "example2" } %}
+
+</div>
+
+</div>
+
+<div>
 
 ![Text "See to see if you need an Electronic Travel Authorisation (ETA)" in Blue shade 50%. Above is a map pin graphic in Primary magenta. Image background is in Magenta tint 90%.](./example-companion-2.png)
 
-{% swatch { label: "Primary magenta", hex: "#CA357C" } %}
-{% swatch { label: "Blue shade 50%", hex: "#0F385C" } %}
-{% swatch { label: "Magenta tint 95%", hex: "#FCF5F8" } %}
+</div>
+{% endgrid %}
+
+{% grid { columns: { mobile: 2, desktop: 2 } } %}
+
+<div>
+<div class="app-top-border">
+
+{% swatchList { palette: companionColourExamples, group: "example3" } %}
+
+</div>
+
+</div>
+
+<div>
 
 ![Text "Driving abroad" in white, with topic text "Step by step" above in Accent green, within a Blue shade 50% circle. Image background is Accent green.](./example-companion-3.png)
 
-{% swatch { label: "Accent green", hex: "#66F39E" } %}
-{% swatch { label: "Blue shade 50%", hex: "#0F385C" } %}
+</div>
+{% endgrid %}

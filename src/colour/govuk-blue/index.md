@@ -15,10 +15,6 @@ Accent teal also sits alongside to add impact and help the brand feel more moder
 <div class="app-top-border">
 
 {% swatch { label: "Primary blue", hex: "#1D70B8" } %}
-
-</div>
-<div class="app-top-border">
-
 {% swatch { label: "Accent teal", hex: "#00FFE0" } %}
 
 </div>
