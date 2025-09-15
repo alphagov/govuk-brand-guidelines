@@ -11,11 +11,11 @@ As our primary identifier, the GOV.UK wordmark should be used in all application
 
 [The exception to this rule is the GOV.UK website](/logo-system/web/).
 
-<div class="app-section-highlight app-section-highlight__wrapper--logo govuk-!-margin-top-6 govuk-!-margin-bottom-6">
+{% sectionHighlight { classes: 'app-section-highlight__wrapper--logo govuk-!-margin-top-6 govuk-!-margin-bottom-6' } %}
 
 ![Wordmark for GOV.UK in white. The dot between 'GOV' and 'UK' is Accent teal and vertically-centred. Shown on a Primary blue background.](./wordmark.svg)
 
-</div>
+{% endsectionHighlight %}
 
 ## Crown
 
@@ -23,11 +23,11 @@ As our primary identifier, the GOV.UK wordmark should be used in all application
 
 [The exception to this rule is the GOV.UK website](/logo-system/web/).
 
-<div class="app-section-highlight app-section-highlight__wrapper--logo govuk-!-margin-top-6 govuk-!-margin-bottom-6">
+{% sectionHighlight { classes: 'app-section-highlight__wrapper--logo govuk-!-margin-top-6 govuk-!-margin-bottom-6' } %}
 
 ![The crown element of the GOV.UK logo, shown as white on a Primary blue background.](./crown.svg)
 
-</div>
+{% endsectionHighlight %}
 
 ### Using the crown as a supporting element
 
@@ -71,7 +71,7 @@ Scaling should follow this rule:
 Wordmark dot = 2× crown dot
 
 </div>
-<div class="govuk-!-margin-0">
+<div>
 
 ![Dots from the crown are used to show the correct size of the dot in the wordmark.](./standard-crown.svg)
 
@@ -84,7 +84,7 @@ Scaling should follow this rule:
 Wordmark dot = 1× crown dot
 
 </div>
-<div class="govuk-!-margin-0">
+<div>
 
 ![Dots from the enlarged crown that's used in the app icon are used to show the correct size of the dot in the wordmark.](./enlarged-crown.svg)
 
@@ -103,11 +103,12 @@ By respecting clear space guidelines, we preserve the logo’s integrity and ens
 
 The clear space area is defined by the dot size within our wordmark.
 
-<div class="app-section-highlight app-section-highlight__wrapper--logo govuk-!-margin-top-6 govuk-!-margin-bottom-6">
+{% sectionHighlight { classes: 'app-section-highlight__wrapper--logo govuk-!-margin-top-6 govuk-!-margin-bottom-6' } %}
 
 ![Dots from the wordmark are used to show that its width is the equal to the minimum clear space required around logo elements.](./space-around-wordmark.svg)
 
-</div>
+{% endsectionHighlight %}
+
 </div>
 {% endgrid %}
 
@@ -117,31 +118,29 @@ Keeping the logo at its minimum size helps ensure it stays legible and accessibl
 
 If it’s too small, it can lose detail and be harder for some users to read or recognise.
 
-{% grid { columns: { mobile: 1, desktop: 2 }, classes: 'app-grid-min-size' } %}
+{% grid { columns: { mobile: 1, desktop: 2 } } %}
 
-<div class="govuk-!-margin-0">
+    {% gridCell %}
 
-![The wordmark for "GOV.UK". Minimum width of the wordmark: 50px.](./wordmark-min-width.svg)
+    ![The wordmark for "GOV.UK". Minimum width of the wordmark: 50px.](./wordmark-min-width.svg)
+    Minimum size:</br>
+    <strong class="govuk-!-font-size-24">50px</strong>
 
-Minimum size:</br>
-<strong class="govuk-!-font-size-24">50px</strong>
+    {% endgridCell %}
+    {% gridCell %}
 
-</div>
-<div class="govuk-!-margin-0">
+    ![The crown element of the GOV.UK logo. Minimum width of the crown on it own: 16px.](./crown-min-width.svg)
+    Minimum size:</br>
+    <strong class="govuk-!-font-size-24">16px</strong>
 
-![The crown element of the GOV.UK logo. Minimum width of the crown on it own: 16px.](./crown-min-width.svg)
+    {% endgridCell %}
+    {% gridCell { classes: 'govuk-!-margin-bottom-6'} %}
 
-Minimum size:</br>
-<strong class="govuk-!-font-size-24">16px</strong>
+    ![Smaller version of the crown, with adjustments such as fewer dots.](./crown-favicon.svg)
+    Use the small crown version for anything below the crown’s minimum size, such as web favicons.
 
-</div>
-<div class="govuk-!-margin-bottom-6">
+    {% endgridCell %}
 
-![Smaller version of the crown, with adjustments such as fewer dots.](./crown-favicon.svg)
-
-Use the small crown version for anything below the crown’s minimum size, such as web favicons.
-
-</div>
 {% endgrid %}
 
 ## Logo colour

@@ -118,38 +118,27 @@ This can be applied within the live artwork files using the relevant swatches. A
 
 To aid brand recognition and coherency, adaptive dot colour should not be used within video end frames.
 
-{% grid { columns: { mobile: 2, desktop: 3 }, classes: "app-grid-colour" } %}
+{% grid { columns: { mobile: 2, desktop: 3 } } %}
 
-<div>
+    {% gridCell %}
+    ![GOV.UK wordmark shown with adaptive dot to tonally match different coloured backgrouds.](./adaptive-primary-blue.svg)
+    {% endgridCell %}
+    {% gridCell %}
+    ![](./adaptive-primary-green.svg)
+    {% endgridCell %}
+    {% gridCell %}
+    ![](./adaptive-shade50-blue.svg)
+    {% endgridCell %}
+    {% gridCell %}
+    ![](./adaptive-shade50-purple.svg)
+    {% endgridCell %}
+    {% gridCell %}
+    ![](./adaptive-shade50-red.svg)
+    {% endgridCell %}
+    {% gridCell %}
+    ![](./adaptive-shade50-teal.svg)
+    {% endgridCell %}
 
-![GOV.UK wordmark shown with adaptive dot to tonally match different coloured backgrouds.](./adaptive-primary-blue.svg)
-
-</div>
-<div>
-
-![](./adaptive-primary-green.svg)
-
-</div>
-<div>
-
-![](./adaptive-shade50-blue.svg)
-
-</div> 
-<div>
-
-![](./adaptive-shade50-purple.svg)
-
-</div>
-<div>
-
-![](./adaptive-shade50-red.svg)
-
-</div>
-<div>
-
-![](./adaptive-shade50-teal.svg)
-
-</div>
 {% endgrid %}
 
 {% grid { columns: { mobile: 2, desktop: 2 } } %}
