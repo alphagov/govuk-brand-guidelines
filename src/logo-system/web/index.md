@@ -7,7 +7,7 @@ title: Web
 
 To aid recognition and trust we retain the locked-up version of the crown and wordmark on web.
 
-{% sectionHighlight { classes: 'app-section-highlight__wrapper--logo' } %}
+{% sectionHighlight { classes: 'app-section-highlight--logo' } %}
 
 ![](./web-logo-primary.svg)
 
