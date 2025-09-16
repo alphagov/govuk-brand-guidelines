@@ -11,7 +11,7 @@ As our primary identifier, the GOV.UK wordmark should be used in all application
 
 [The exception to this rule is the GOV.UK website](/logo-system/web/).
 
-{% sectionHighlight { classes: 'app-section-highlight__wrapper--logo govuk-!-margin-top-6 govuk-!-margin-bottom-6' } %}
+{% sectionHighlight { classes: 'app-section-highlight--logo' } %}
 
 ![Wordmark for GOV.UK in white. The dot between 'GOV' and 'UK' is Accent teal and vertically-centred. Shown on a Primary blue background.](./wordmark.svg)
 
@@ -23,7 +23,7 @@ As our primary identifier, the GOV.UK wordmark should be used in all application
 
 [The exception to this rule is the GOV.UK website](/logo-system/web/).
 
-{% sectionHighlight { classes: 'app-section-highlight__wrapper--logo govuk-!-margin-top-6 govuk-!-margin-bottom-6' } %}
+{% sectionHighlight { classes: 'app-section-highlight--logo' } %}
 
 ![The crown element of the GOV.UK logo, shown as white on a Primary blue background.](./crown.svg)
 
@@ -103,7 +103,7 @@ By respecting clear space guidelines, we preserve the logo’s integrity and ens
 
 The clear space area is defined by the dot size within our wordmark.
 
-{% sectionHighlight { classes: 'app-section-highlight__wrapper--logo govuk-!-margin-top-6 govuk-!-margin-bottom-6' } %}
+{% sectionHighlight { classes: 'app-section-highlight--logo' } %}
 
 ![Dots from the wordmark are used to show that its width is the equal to the minimum clear space required around logo elements.](./space-around-wordmark.svg)
 
