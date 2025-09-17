@@ -21,7 +21,7 @@
   <div class="app-page-wrapper">
     <nav class="app-chapter-navigation" aria-labelledby="side-navigation">
       {% if sidebarNavigationRoot.data.children | length %}
-        <h2 class="govuk-heading-s govuk-!-margin-bottom-1 govuk-!-margin-top-6" id="side-navigation">In this section</h2>
+        <h2 class="govuk-heading-s govuk-!-margin-bottom-1{{ ' govuk-!-margin-top-6' if landing else '' }}" id="side-navigation">In this section</h2>
       {% endif %}
       {% from "link-list.njk" import appLinkList %}
       {{ appLinkList({
