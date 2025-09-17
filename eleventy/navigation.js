@@ -49,6 +49,9 @@ export function setupNavigation(eleventyConfig) {
 
       page.data.ancestors = getAncestors(page)
 
+      // Now that we have ancestors we can get the accessible page title
+      page.data.pageTitle = buildPageTitle(page)
+
       page.data.sidebarNavigationRoot =
         page.data.ancestors.length === 1
           ? page
@@ -56,7 +59,8 @@ export function setupNavigation(eleventyConfig) {
               .filter((ancestor) => ancestor.data.ancestors.length === 1)
               .at(0)
 
-      page.data.isSidebarNavigationRoot = page.data.sidebarNavigationRoot === page
+      page.data.isSidebarNavigationRoot =
+        page.data.sidebarNavigationRoot === page
     }
 
     return pages
@@ -129,4 +133,19 @@ function getAncestors(page) {
     current = current.data.parent
   }
   return ancestors.toReversed()
+}
+
+/**
+ * Builds an accessible page title from the current page's title and the titles
+ * of its ancestors up to the homepage (GOV.UK Brand Guidelines)
+ *
+ * @param {data: {title: string}, ancestors: [{data: {title: string}]}}} page
+ * @returns
+ */
+function buildPageTitle(page) {
+  return [page.data.title]
+    .concat(
+      page.data.ancestors.reverse().map((ancestor) => ancestor.data.title)
+    )
+    .join(' - ')
 }
