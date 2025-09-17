@@ -192,7 +192,7 @@ Indicative examples for illustrative purposes only.
 {% figure { src: "./video-thumb-get-help.png", alt: "A video thumbnail for 'Get help with registering a death'. Title is shown within a simple blue circle graphic on a blue background." } %}
 Get help with...
 {% endfigure %}
-{% figure { src: "./video-thumb-influencer.png", alt: "A video thumbnail for 'How I learnt to drive. A smiling young adult is shown in front of a purple background, with the title in a dark purple circle.", classes: "govuk-!-text-align-left" } %}
+{% figure { src: "./video-thumb-influencer.png", alt: "A video thumbnail for 'How I learnt to drive. A smiling young adult is shown in front of a purple background, with the title in a dark purple circle." } %}
 Influencer/presenter
 {% endfigure %}
 {% endinformInspire %}
