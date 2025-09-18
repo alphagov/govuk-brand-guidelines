@@ -149,9 +149,9 @@ If it’s too small, it can lose detail and be harder for some users to read or 
 
 <div class="app-top-border">
 
-### Primary Blue background
+### Primary blue background
 
-When using on a Primary Blue background, the wordmark colour should use White and Accent Teal.
+When using on a Primary blue background, the wordmark colour should use White and Accent teal.
 
 </div>
 <div>
@@ -163,7 +163,7 @@ When using on a Primary Blue background, the wordmark colour should use White an
 
 ### Light background
 
-When using against a light background, the wordmark colour should use Black and Primary Blue.
+When using against a light background, the wordmark colour should use Black and Primary blue.
 
 </div>
 <div>
@@ -175,7 +175,7 @@ When using against a light background, the wordmark colour should use Black and 
 
 ### Special use
 
-When using against a busy background or in print situations where colour is not possible, white or black versions of the wordmark can be used.
+When using against a busy background or in print situations where colour is not possible, White or Black versions of the wordmark can be used.
 
 </div>
 <div>
