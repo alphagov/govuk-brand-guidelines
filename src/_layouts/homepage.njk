@@ -5,9 +5,9 @@
 {% block header %}
   {{ super() }}
   {% from "service-navigation.njk" import appServiceNavigation %}
-  {% if collections.pages[0].data.children | length %}
+  {% if collections.serviceNavigationPages | length %}
     {{ appServiceNavigation({
-      pages: collections.pages[0].data.children,
+      pages: collections.serviceNavigationPages,
       renderedPageUrl: page.url,
       inverse: true
     })}}
