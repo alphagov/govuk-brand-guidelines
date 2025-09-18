@@ -5,7 +5,7 @@ title: GOV.UK is a blue brand
 
 Our core brand colours are Primary blue and Accent teal.
 
-We’re building on the primary blue already in place to support recognition and trust. Using it more consistently will make it a clear visual signature of GOV.UK.
+We’re building on the Primary blue already in place to support recognition and trust. Using it more consistently will make it a clear visual signature of GOV.UK.
 
 Accent teal also sits alongside to add impact and help the brand feel more modern.
 
@@ -74,7 +74,7 @@ Indicative examples for illustrative purposes only.
 
 <div class="app-section-highlight__wrapper--space-around">
 
-![Screenshot of YouTube profile on mobile, showing blue and teal used in the banner image.](./youtube-profile.png)
+![Screenshot of YouTube profile on mobile, showing Primary blue and Accent teal used in the banner image.](./youtube-profile.png)
 
 </div>
 </div>
