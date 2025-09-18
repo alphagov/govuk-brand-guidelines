@@ -6,7 +6,7 @@ import {
 } from './navigation/aria-current.js'
 
 export function setupNavigation(eleventyConfig) {
-  eleventyConfig.addCollection('pages', (collectionAPI) => {
+  eleventyConfig.addCollection('serviceNavigationPages', (collectionAPI) => {
     // First sort the pages by the depth of their URL.
     // This will simplify the processing, ensuring parents
     // are processed before their descendants, making it easier
@@ -56,10 +56,13 @@ export function setupNavigation(eleventyConfig) {
               .filter((ancestor) => ancestor.data.ancestors.length === 1)
               .at(0)
 
-      page.data.isSidebarNavigationRoot = page.data.sidebarNavigationRoot === page
+      page.data.isSidebarNavigationRoot =
+        page.data.sidebarNavigationRoot === page
     }
 
-    return pages
+    return pages[0].data.children.filter(
+      ({ data }) => !data.excludeFromNavigation
+    )
   })
 
   eleventyConfig.addFilter('asBreadcrumbItems', asBreadcrumbItems)
