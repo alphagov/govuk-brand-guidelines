@@ -280,58 +280,76 @@ The dot has defined roles and behaviours, set out earlier in this guidance.
 
 To keep things consistent, avoid the following:
 
-{% grid { columns: { mobile: 1, tablet: 2 } } %}
+{% grid { columns: { mobile: 2, desktop: 2 } } %}
 
-<div>
+<div class="app-top-border">
 
 ### Overuse
 
 Dot not overuse the dot
 
+</div>
+<div>
+
 ![Crossed out graphic with a small blank dot on the top left. Text placed in the centre within a large circle, and also contains a lozenge-shaped text highlight.](./incorrect-overuse.png)
 
 </div>
-<div>
+<div class="app-top-border">
 
 ### Decorative elements
 
 Dot not use the dot in a decorative way
 
+</div>
+<div>
+
 ![Crossed out graphic some text, with a dot placed off-centre in the background.](./incorrect-decorative.png)
 
 </div>
-<div>
+<div class="app-top-border">
 
 ### Distortions
 
 Do not distort or skew the dot
 
+</div>
+<div>
+
 ![Crossed out graphic with some text placed inside a stretched-out oval.](./incorrect-distorted.png)
 
 </div>
-<div>
+<div class="app-top-border">
 
 ### Stroke
 
 Do not use stroke versions of the dot
 
+</div>
+<div>
+
 ![Crossed out graphic of a circular outline, resembling a ring.](./incorrect-stroke.png)
 
 </div>
-<div>
+<div class="app-top-border">
 
 ### Crops
 
 Do not use abstract crops of the dot
 
+</div>
+<div>
+
 ![Crossed out graphic showing only the cropped corner of a large circle.](./incorrect-crop.png)
 
 </div>
-<div>
+<div class="app-top-border">
 
 ### Unapproved filters and effects
 
 Do not apply shadows or gradients
+
+</div>
+<div>
 
 ![Crossed out graphic of a circle with drop shadow.](./incorrect-shadow.png)
 
