@@ -132,11 +132,11 @@ To aid brand recognition and coherency, adaptive dot colour should not be used w
 
 {% endgrid %}
 
+### Incorrect adaptive dot colour usage
+
 {% grid { columns: { mobile: 2, desktop: 2 } } %}
 
 <div class="app-top-border">
-
-### Incorrect adaptive dot colour usage
 
 Do not use colour combinations that are not accessible.
 

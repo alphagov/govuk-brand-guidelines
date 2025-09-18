@@ -233,54 +233,79 @@ The dot has defined roles and behaviours, set out earlier in this guidance.
 
 To keep things consistent, avoid the following:
 
-{% grid { columns: { mobile: 1, tablet: 2 } } %}
-{% gridCell %}
+{% grid { columns: { mobile: 1, desktop: 2 } } %}
 
-    ### Overuse
+<div class="app-top-border">
 
-    Do not overuse the dot
+### Overuse
 
-    ![Crossed out graphic with a small blank dot on the top left. Text placed in the centre within a large circle, and also contains a lozenge-shaped text highlight.](./incorrect-overuse.svg)
-    {% endgridCell %}
-    {% gridCell %}
+Do not overuse the dot
 
-    ### Decorative elements
+</div>
+<div>
 
-    Do not use the dot in a decorative way
+![Crossed out graphic with a small blank dot on the top left. Text placed in the centre within a large circle, and also contains a lozenge-shaped text highlight.](./incorrect-overuse.svg)
 
-    ![Crossed out graphic some text, with a dot placed off-centre in the background.](./incorrect-decorative.svg)
-    {% endgridCell %}
-    {% gridCell %}
+</div>
+<div class="app-top-border">
 
-    ### Distortions
+### Decorative elements
 
-    Do not distort or skew the dot
+Do not use the dot in a decorative way
 
-    ![Crossed out graphic with some text placed inside a stretched-out oval.](./incorrect-distorted.svg)
-    {% endgridCell %}
-    {% gridCell %}
+</div>
+<div>
 
-    ### Stroke
+![Crossed out graphic some text, with a dot placed off-centre in the background.](./incorrect-decorative.svg)
 
-    Do not use stroke versions of the dot
+</div>
+<div class="app-top-border">
 
-    ![Crossed out graphic of a circular outline, resembling a ring.](./incorrect-stroke.svg)
-    {% endgridCell %}
-    {% gridCell {verticalAlign: 'end'} %}
+### Distortions
 
-    ### Crops
+Do not distort or skew the dot
 
-    Do not use abstract crops of the dot
+</div>
+<div>
 
-    ![Crossed out graphic showing only the cropped corner of a large circle.](./incorrect-crop.svg)
-    {% endgridCell %}
-    {% gridCell %}
+![Crossed out graphic with some text placed inside a stretched-out oval.](./incorrect-distorted.svg)
 
-    ### Filters and effects
+</div>
+<div class="app-top-border">
 
-    Do not apply shadows or gradients
+### Stroke
 
-    ![Crossed out graphic of a circle with drop shadow.](./incorrect-shadow.png)
-    {% endgridCell %}
+Do not use stroke versions of the dot
+
+</div>
+<div>
+
+![Crossed out graphic of a circular outline, resembling a ring.](./incorrect-stroke.svg)
+
+</div>
+<div class="app-top-border">
+
+### Crops
+
+Do not use abstract crops of the dot
+
+</div>
+<div>
+
+![Crossed out graphic showing only the cropped corner of a large circle.](./incorrect-crop.svg)
+
+</div>
+<div class="app-top-border">
+
+### Filters and effects
+
+Do not apply shadows or gradients
+
+</div>
+<div>
+
+![Crossed out graphic of a circle with drop shadow.](./incorrect-shadow.png)
+
+</div>
 
 {% endgrid %}
