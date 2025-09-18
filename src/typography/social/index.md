@@ -40,8 +40,6 @@ Consistent use of type styles aids clarity and hierarchy.
 
 Headings should be attention-grabbing, whilst body text should prioritize readability with appropriate line spacing and contrast.
 
-<!-- TODO: lots to do here, some of the below should probably be in images -->
-
 {% grid { columns: { mobile: 2, desktop: 2 } } %}
 
 <div class="app-top-border">
@@ -80,9 +78,6 @@ img goes here
 {% endgrid %}
 
 ## Alignment
-
-<!-- TODO: the next two headings started with a small image that is not in here yet
-           but we might not need it for consistency reasons? -->
 
 {% callout %}
 Indicative examples for illustrative purposes only.
