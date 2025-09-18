@@ -122,21 +122,21 @@ If it’s too small, it can lose detail and be harder for some users to read or 
 
     {% gridCell %}
 
-    ![The wordmark for "GOV.UK". Minimum width of the wordmark: 50px.](./wordmark-min-width.svg)
+    ![The wordmark for "GOV.UK" with an arrow indicating its minimum width.](./wordmark-min-width.svg)
     Minimum size:</br>
     <strong class="govuk-!-font-size-24">50px</strong>
 
     {% endgridCell %}
     {% gridCell %}
 
-    ![The crown element of the GOV.UK logo. Minimum width of the crown on it own: 16px.](./crown-min-width.svg)
+    ![The crown element of the GOV.UK logo with an arrow indicating its minimum width when it's on its own.](./crown-min-width.svg)
     Minimum size:</br>
     <strong class="govuk-!-font-size-24">16px</strong>
 
     {% endgridCell %}
     {% gridCell { classes: 'govuk-!-margin-bottom-6'} %}
 
-    ![Smaller version of the crown, with adjustments such as fewer dots.](./crown-favicon.svg)
+    ![Smaller version of the crown, with adjustments such as fewer dots, and an arrow indicating its minimum width.](./crown-favicon.svg)
     Use the small crown version for anything below the crown’s minimum size, such as web favicons.
 
     {% endgridCell %}
