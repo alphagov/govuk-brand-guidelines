@@ -40,7 +40,7 @@ Indicative examples for illustrative purposes only.
 
 ### Informs
 
-![Infographic showing statistics for the 3 most visited pages on the GOV.UK website.](./expression-informs.png)
+![Infographic showing statistics in circles for the 3 most visited pages on the GOV.UK website.](./expression-informs.png)
 
 </div>
 {% endgrid %}
@@ -113,7 +113,7 @@ No audio. The small dot with a label showing 1% starts growing whilst the percen
 
 ### Transitions
 
-No audio. The dot shown in a title card, where it's the dotted "i" in "Childcare". The dot expands to cover the entire screen, to transition to a second title card with a message to "Apply for 30 hours of government funded childcare"
+No audio. The dot shown in a title card, where it's the dot above the "i" in "Childcare". The dot expands to cover the entire screen, to transition to a second title card with a message to "Apply for 30 hours of government funded childcare".
 
 </div>
 <div>
