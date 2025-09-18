@@ -33,7 +33,7 @@ The app splash screen utilises the dot in motion to represent GOV.UK bringing to
 
 ### Video description
 
-No audio. The dot leads a trail of other dots of various colours in a spiral towards the centre of a mobile screen, where it becomes the dot within the GOV.UK logo as it fades and pushes in. The crown logo is revealed by an circular iris effect at the bottom of the screen.
+No audio. The dot leads a trail of other dots of various colours in a spiral towards the centre of a mobile screen, where it becomes the dot within the GOV.UK logo as it fades and pushes in. The crown logo is revealed by a circular iris effect at the bottom of the screen.
 
 ## Illustration
 
@@ -55,7 +55,7 @@ The dot can be brought to life through animation in illustrations, adding person
     {% gridCell {span: {desktop: 2, tablet: 1, mobile: 1}, classes: "app-top-border"} %}
     ### Travel
 
-    No audio. An animation of luggage moving aross the frame. Suitcases are drawn as rectangles with corners. Circles are used to draw wheels and luggage tags, whilst pieces of a circle are used to draw the handles.
+    No audio. An animation of luggage moving aross the frame. Suitcases are drawn as rectangles with rounded corners. Circles are used to draw wheels and luggage tags, whilst pieces of a circle are used to draw the handles.
     {% endgridCell %}
     {% gridCell %}
     {% video { source: [
@@ -195,12 +195,12 @@ Indicative examples for illustrative purposes only.
 </div> 
 <div>
 
-![Instagram post with image saying "Get help with your pension" alongside a graphic of a circular-shaped piggy bank.](./static-dot-2.png)
+![Instagram post with image saying "Register to vote" inside a green circle.](./static-dot-2.png)
 
 </div> 
 <div>
 
-![Instagram post with image saying "Register to vote" inside a green circle.](./static-dot-3.png)
+![Instagram post with image saying "Get help with your pension" alongside a graphic of a circular-shaped piggy bank.](./static-dot-3.png)
 
 </div> 
 <div>

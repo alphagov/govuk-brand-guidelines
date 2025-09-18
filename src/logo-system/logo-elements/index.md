@@ -19,7 +19,7 @@ As our primary identifier, the GOV.UK wordmark should be used in all application
 
 ## Crown
 
-As our primary identifier, the GOV.UK wordmark should be used in all applications of the logo.
+The crown should be used as a supporting element that indicates trust and reassurance. It should always appear in close proximity to the wordmark.
 
 [The exception to this rule is the GOV.UK website](/logo-system/web/).
 

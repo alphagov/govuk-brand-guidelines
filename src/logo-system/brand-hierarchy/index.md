@@ -58,7 +58,7 @@ On 14.2pt type, letter spacing should be -0.21 pixels.
 </div>
 {% gridCell %}
 
-![Horizontal lock-ups for GOV.UK Pay, GOV.UK Wallet and GOV.UK Notify. Each lock-up is shown is on a single line.](./horizontal-pay.svg) ![](./horizontal-wallet.svg) ![](./horizontal-notify.svg)
+![Horizontal lock-ups for GOV.UK Pay, GOV.UK Wallet and GOV.UK Notify. Each lock-up is shown on a single line.](./horizontal-pay.svg) ![](./horizontal-wallet.svg) ![](./horizontal-notify.svg)
 
 {% endgridCell %}
 
@@ -71,7 +71,7 @@ Spacing between wordmark and crown on horizontal lock-up should be 3 crown dots 
 </div>
 {% gridCell %}
 
-![Horizontal lock-ups with the crown for GOV.UK Pay, GOV.UK Wallet and GOV.UK Notify. Each lock-up is shown is on a single line after the crown.](./horizontal-with-crown-pay.svg) ![](./horizontal-with-crown-wallet.svg) ![](./horizontal-with-crown-notify.svg)
+![Horizontal lock-ups with the crown for GOV.UK Pay, GOV.UK Wallet and GOV.UK Notify. Each lock-up is shown on a single line after the crown.](./horizontal-with-crown-pay.svg) ![](./horizontal-with-crown-wallet.svg) ![](./horizontal-with-crown-notify.svg)
 
 {% endgridCell %}
 
