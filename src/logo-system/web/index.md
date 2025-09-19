@@ -8,12 +8,7 @@ title: Web
 To aid recognition and trust we retain the locked-up version of the crown and wordmark on web.
 
 {% sectionHighlight %}
-
-<div class="app-section-highlight__wrapper--logo">
-
 ![](./web-logo-primary.svg)
-
-</div>
 {% endsectionHighlight %}
 
 ## Header and footer
