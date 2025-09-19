@@ -35,7 +35,7 @@
 
       {# Some pages, like test pages, don't have ancestors #}
       {% if ancestors.length %}
-        {%  set breadcrumbClasses = 'app-breadcrumbs govuk-breadcrumbs--inverse app-breadcrumbs--landing app-breadcrumbs--landing-' + page.fileSlug  if landing else 'app-breadcrumbs' %}
+        {%  set breadcrumbClasses = 'app-breadcrumbs govuk-breadcrumbs--inverse app-breadcrumbs--landing app-breadcrumbs--landing-' + page.fileSlug  if landing else 'app-breadcrumbs app-breadcrumbs--landing' %}
         {{
           govukBreadcrumbs({
             classes: breadcrumbClasses,

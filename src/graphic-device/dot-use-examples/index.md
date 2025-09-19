@@ -11,7 +11,7 @@ The app splash screen utilises the dot in motion to represent GOV.UK bringing to
 
 <div>
     
- ### App splash screen (long version)
+ ### Long splash screen
 
 {% video { source: [
     "./splash-screen-long-version.mp4",
@@ -21,7 +21,7 @@ The app splash screen utilises the dot in motion to represent GOV.UK bringing to
 </div>
 <div>
 
-### App splash screen (short version)
+### Short splash screen
 
 {% video { source: [
     "./splash-screen-short-version.mp4",
@@ -39,83 +39,64 @@ No audio. The dot leads a trail of other dots of various colours in a spiral tow
 
 The dot can be brought to life through animation in illustrations, adding personality and expression to moments such as app onboarding, or to tell visual stories within social.
 
-{% grid { columns: { mobile: 1, tablet: 2 }, classes: "govuk-!-padding-bottom-6" } %}
+{% grid { columns: { mobile: 1, tablet: 2, desktop: 3 }, classes: "govuk-!-padding-bottom-6" } %}
 
-<div class="app-top-border">
+    {% gridCell {span: {desktop: 2, tablet: 1, mobile: 1}, classes: "app-top-border"} %}
+    ### Person
 
-### Person
+    No audio. An animation of a person giving a friendly wave. Circles are used to draw the head and hand, whilst pieces of a circle are used to draw the shoulders and hairstyle.
+    {% endgridCell %}
+    {% gridCell %}
+    {% video { source: [
+    "./illustration-wave.mp4",
+    "./illustration-wave.webm"
+    ], classes: "app-video-border" } %}
+    {% endgridCell %}
+    {% gridCell {span: {desktop: 2, tablet: 1, mobile: 1}, classes: "app-top-border"} %}
+    ### Travel
 
-No audio. An animation of a person giving a friendly wave. Circles are used to draw the head and hand, whilst pieces of a circle are used to draw the shoulders and hairstyle.
+    No audio. An animation of luggage moving aross the frame. Suitcases are drawn as rectangles with corners. Circles are used to draw wheels and luggage tags, whilst pieces of a circle are used to draw the handles.
+    {% endgridCell %}
+    {% gridCell %}
+    {% video { source: [
+    "./thumbnail-illustration-travel.mp4",
+    "./illustration-travel.webm"
+    ], classes: "app-video-border" } %}
+    {% endgridCell %}
+    {% gridCell {span: {desktop: 2, tablet: 1, mobile: 1}, classes: "app-top-border"} %}
+    ### Lock
 
-</div>
-<div>
+    No audio. An animation of a circle-shaped padlock opening and closing.
+    {% endgridCell %}
+    {% gridCell %}
+    {% video { source: [
+    "./illustration-lock.mp4",
+    "./illustration-lock.webm"
+    ], classes: "app-video-border" } %}
+    {% endgridCell %}
+    {% gridCell {span: {desktop: 2, tablet: 1, mobile: 1}, classes: "app-top-border"} %}
+    ### Onboarding
 
-{% video { source: [
-  "./illustration-wave.mp4",
-  "./illustration-wave.webm"
-] } %}
+    No audio. Animation of various circle-themed icons, including a speech bubble, notification bell, map pin and toggle switch.
+    {% endgridCell %}
+    {% gridCell %}
+    {% video { source: [
+    "./illustration-onboarding.mp4",
+    "./illustration-onboarding.webm"
+    ], classes: "app-video-border" } %}
+    {% endgridCell %}
+    {% gridCell {span: {desktop: 2, tablet: 1, mobile: 1}, classes: "app-top-border"} %}
+    ### Piggy bank
 
-</div>
-<div class="app-top-border">
+    No audio. Animation of a circle-shaped piggy bank. Several coins drop into the piggy bank before it does a happy shake.
+    {% endgridCell %}
+    {% gridCell %}
+    {% video { source: [
+    "./illustration-piggy-bank.mp4",
+    "./illustration-piggy-bank.webm"
+    ], classes: "app-video-border" } %}
+    {% endgridCell %}
 
-### Travel
-
-No audio. An animation of luggage moving aross the frame. Suitcases are drawn as rectangles with corners. Circles are used to draw wheels and luggage tags, whilst pieces of a circle are used to draw the handles.
-
-</div>
-<div>
-
-{% video { source: [
-  "./illustration-travel.mp4",
-  "./illustration-travel.webm"
-] } %}
-
-</div>
-<div class="app-top-border">
-
-### Lock
-
-No audio. An animation of a circle-shaped padlock opening and closing.
-
-</div>
-<div>
-
-{% video { source: [
-  "./illustration-lock.mp4",
-  "./illustration-lock.webm"
-] } %}
-
-</div>
-<div class="app-top-border">
-
-### Onboarding
-
-No audio. Animation of various circle-themed icons, including a speech bubble, notification bell, map pin and toggle switch.
-
-</div>
-<div>
-
-{% video { source: [
-  "./illustration-onboarding.mp4",
-  "./illustration-onboarding.webm"
-] } %}
-
-</div>
-<div class="app-top-border">
-
-### Piggy bank
-
-No audio. Animation of a circle-shaped piggy bank. Several coins drop into the piggy bank before it does a happy shake.
-
-</div>
-<div>
-
-{% video { source: [
-  "./illustration-piggy-bank.mp4",
-  "./illustration-piggy-bank.webm"
-] } %}
-
-</div>
 {% endgrid %}
 
 ## Social media
@@ -189,15 +170,13 @@ Indicative examples for illustrative purposes only.
 {% endcallout %}
 
 {% informInspire { contentClasses: 'app-inform-inspire__content--flex app-inform-inspire__content--flex-2-items' } %}
-{% figure { src: "./video-thumb-get-help.png", alt: "A video thumbnail for 'Get help with registering a death'. Title is shown within a simple blue circle graphic on a blue background." } %}
+{% figure { src: "./video-thumb-get-help.png", alt: "A video thumbnail for 'Get help with registering a death'. Title is shown within a simple blue circle graphic on a blue background.", classes: "govuk-!-text-align-left"  } %}
 Get help with...
 {% endfigure %}
 {% figure { src: "./video-thumb-influencer.png", alt: "A video thumbnail for 'How I learnt to drive. A smiling young adult is shown in front of a purple background, with the title in a dark purple circle." } %}
 Influencer/presenter
 {% endfigure %}
 {% endinformInspire %}
-
-{% sectionHighlight {classes: "app-section-highlight--light-blue" } %}
 
 ## Static dot examples
 
@@ -207,7 +186,7 @@ The dot can also be used as a static graphic, adding emphasis and helping guide 
 Indicative examples for illustrative purposes only.
 {% endcallout %}
 
-{% grid { columns: { mobile: 2, tablet: 4 }, classes: "app-grid--reduced-gap" } %}
+{% grid { columns: { mobile: 2, tablet: 4 } } %}
 
 <div>
 
@@ -230,7 +209,6 @@ Indicative examples for illustrative purposes only.
 
 </div>
 {% endgrid %}
-{% endsectionHighlight %}
 
 ## Static dot storyboard
 
@@ -281,59 +259,53 @@ The dot has defined roles and behaviours, set out earlier in this guidance.
 To keep things consistent, avoid the following:
 
 {% grid { columns: { mobile: 1, tablet: 2 } } %}
+{% gridCell %}
 
-<div>
+    ### Overuse
 
-### Overuse
+    Do not overuse the dot
 
-Dot not overuse the dot
+    ![Crossed out graphic with a small blank dot on the top left. Text placed in the centre within a large circle, and also contains a lozenge-shaped text highlight.](./incorrect-overuse.svg)
+    {% endgridCell %}
+    {% gridCell %}
 
-![Crossed out graphic with a small blank dot on the top left. Text placed in the centre within a large circle, and also contains a lozenge-shaped text highlight.](./incorrect-overuse.png)
+    ### Decorative elements
 
-</div>
-<div>
+    Do not use the dot in a decorative way
 
-### Decorative elements
+    ![Crossed out graphic some text, with a dot placed off-centre in the background.](./incorrect-decorative.svg)
+    {% endgridCell %}
+    {% gridCell %}
 
-Dot not use the dot in a decorative way
+    ### Distortions
 
-![Crossed out graphic some text, with a dot placed off-centre in the background.](./incorrect-decorative.png)
+    Do not distort or skew the dot
 
-</div>
-<div>
+    ![Crossed out graphic with some text placed inside a stretched-out oval.](./incorrect-distorted.svg)
+    {% endgridCell %}
+    {% gridCell %}
 
-### Distortions
+    ### Stroke
 
-Do not distort or skew the dot
+    Do not use stroke versions of the dot
 
-![Crossed out graphic with some text placed inside a stretched-out oval.](./incorrect-distorted.png)
+    ![Crossed out graphic of a circular outline, resembling a ring.](./incorrect-stroke.svg)
+    {% endgridCell %}
+    {% gridCell {verticalAlign: 'end'} %}
 
-</div>
-<div>
+    ### Crops
 
-### Stroke
+    Do not use abstract crops of the dot
 
-Do not use stroke versions of the dot
+    ![Crossed out graphic showing only the cropped corner of a large circle.](./incorrect-crop.svg)
+    {% endgridCell %}
+    {% gridCell %}
 
-![Crossed out graphic of a circular outline, resembling a ring.](./incorrect-stroke.png)
+    ### Filters and effects
 
-</div>
-<div>
+    Do not apply shadows or gradients
 
-### Crops
+    ![Crossed out graphic of a circle with drop shadow.](./incorrect-shadow.png)
+    {% endgridCell %}
 
-Do not use abstract crops of the dot
-
-![Crossed out graphic showing only the cropped corner of a large circle.](./incorrect-crop.png)
-
-</div>
-<div>
-
-### Unapproved filters and effects
-
-Do not apply shadows or gradients
-
-![Crossed out graphic of a circle with drop shadow.](./incorrect-shadow.png)
-
-</div>
 {% endgrid %}

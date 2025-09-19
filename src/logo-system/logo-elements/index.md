@@ -49,11 +49,11 @@ This ensures visual balance and harmony between the elements.
 
 The pixel sizes displayed on this page are indicative and will vary across devices.
 
-<div>
+{% sectionHighlight { classes: 'app-section-highlight__wrapper--logo govuk-!-margin-top-6 govuk-!-margin-bottom-6' } %}
 
 ![Dots from the crown are used to show the correct spacing and scaling within the logo lock-up.](./lockup-detail.svg)
 
-</div>
+{% endsectionHighlight %}
 
 ### Use proportional scaling
 
@@ -243,7 +243,7 @@ Do not apply drop shadows or effects to the wordmark
 </div>
 <div>
 
-![](./incorrect-effects.svg)
+![](./incorrect-effects.png)
 
 </div>
 <div class="app-top-border">

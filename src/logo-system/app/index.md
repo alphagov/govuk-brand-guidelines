@@ -9,44 +9,33 @@ In GOV.UK apps we follow the primary logo system, using the wordmark as the main
 
 An example of this is the GOV.UK app icon.
 
-{% sectionHighlight %}
 {% grid { columns: 3 } %}
 
-{% figure {
-  src: "./wordmark-on-blue.svg",
-  alt: "Wordmark for GOV.UK in white. The dot between 'GOV' and 'UK' is Accent teal and vertically-centred. Shown on a Primary blue background.",
-  classes: "govuk-!-margin-bottom-0",
-  captionPosition: "top"
-} %}
+<div>
 
 ### Wordmark
 
-{% endfigure %}
+![Wordmark for GOV.UK in white. The dot between 'GOV' and 'UK' is Accent teal and vertically-centred. Shown on a Primary blue background.](./wordmark-on-blue.svg)
 
-{% figure {
-  src: "./crown-on-blue.svg",
-  alt: "Crown shown as white on a Primary blue background.",
-  classes: "govuk-!-margin-bottom-0",
-  captionPosition: "top"
-} %}
+</div>
+
+<div>
 
 ### Crown
 
-{% endfigure %}
+![Crown shown as white on a Primary blue background.](./crown-on-blue.svg)
 
-{% figure {
-  src: "./app-icon-on-blue.svg",
-  alt: "App icon with a Primary blue background, showing a stacked lock-up of the GOV.UK wordmark and crown. A rounded square outline shows positioning of logo elements.",
-  classes: "govuk-!-margin-bottom-0",
-  captionPosition: "top"
-} %}
+</div>
+
+<div>
 
 ### App icon
 
-{% endfigure %}
+![App icon with a Primary blue background, showing a stacked lock-up of the GOV.UK wordmark and crown. A rounded square outline shows positioning of logo elements.](./app-icon-on-blue.svg)
+
+</div>
 
 {% endgrid %}
-{% endsectionHighlight %}
 
 An exception to this principle includes other GOV.UK apps, where the symbol or identifier may be used instead of the crown within the app icon. See the [App icon suite section on this page](#app-icon-suite).
 
@@ -71,7 +60,6 @@ Indicative examples for illustrative purposes only.
     "/graphic-device/dot-use-examples/splash-screen-short-version.webm"
 ] } %}
 
-<!-- TODO: not sure if this should be the short or long version (both files are in the folder) -->
 </div>
 
 <div>
@@ -90,31 +78,13 @@ The GOV.UK app icon should follow the same principle, leading with the wordmark 
 
 As this is a small use application of the logo elements, we use the enlarged crown size to maximise legibility and recognition.
 
-{% sectionHighlight { classes: "app-section-highlight--light-blue" } %}
-{% grid { columns: { mobile: 2, desktop: 2 } } %}
-
-<div class="govuk-!-text-align-centre">
-
-![App icon of the GOV.UK app, with gridlines showing how the crown is placed centred directly under GOV.UK.](./app-icon-lines.svg) ![](./app-icon.svg)
-
-</div>
-
-<div>
-
-![Mockup of the GOV.UK app's page in an App Store.](./app-store-example.png)
-
-</div>
-
-{% endgrid %}
-{% endsectionHighlight %}
+![App icon of the GOV.UK app, with gridlines showing how the crown is placed centred directly under GOV.UK and a mockup of the GOV.UK app's page in an App Store.](./app-icon-examples.png)
 
 ### App icon suite
 
 As the family of GOV.UK applications grows, the need for a consistent approach to app icon design is necessary.
 
 The suite of icons should follow the same principles, leading with the GOV.UK wordmark for recognition, with the symbol below, replacing the crown.
-
-{% sectionHighlight %}
 
 An example of this is the GOV.UK One Login app.
 
@@ -133,4 +103,3 @@ Framework
 {% endfigure %}
 
 {% endgrid %}
-{% endsectionHighlight %}
