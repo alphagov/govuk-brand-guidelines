@@ -32,9 +32,11 @@ export const informInspire = blockPairedShortcode((content, options = {}) => {
       content
     }</div>${
       options.list.length > 0
-        ? `${options.listLabel
-          ? `<p class="govuk-body govuk-!-margin-top-4">${options.listLabel}</p>`
-          : ''}
+        ? `${
+            options.listLabel
+              ? `<p class="govuk-body govuk-!-margin-top-4">${options.listLabel}</p>`
+              : ''
+          }
         <ul class="govuk-list govuk-list--bullet govuk-!-margin-bottom-0">
         ${options.list.map((item) => `<li>${item}</li>`).join('\n')}
       </ul>`

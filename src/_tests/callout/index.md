@@ -21,11 +21,12 @@ This is another one
 ### List
 
 {% callout %}
+
 - this
 - is
 - a
 - list
-{% endcallout %}
+  {% endcallout %}
 
 ## `classes` parameter
 

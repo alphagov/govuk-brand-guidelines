@@ -42,5 +42,7 @@ export function setupMedia(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('**/*.webm')
 
   // Copy sass background images to the output site
-  eleventyConfig.addPassthroughCopy({'src/_stylesheets/images': 'styles/images'})
+  eleventyConfig.addPassthroughCopy({
+    'src/_stylesheets/images': 'styles/images'
+  })
 }
