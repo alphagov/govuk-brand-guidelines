@@ -25,7 +25,7 @@ export function setupShortcodes(eleventyConfig) {
   eleventyConfig.addShortcode('swatch', swatch)
   eleventyConfig.addShortcode('swatchList', swatchList)
   eleventyConfig.addShortcode('video', videoPlayer)
-  eleventyConfig.addShortcode('linkCard', linkCard);
+  eleventyConfig.addShortcode('linkCard', linkCard)
 
   // Paired shortcodes require a starting and ending tag. Any content between
   // those tags is passed as the first parameter.
