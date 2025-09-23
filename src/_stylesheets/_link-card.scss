@@ -2,13 +2,48 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: auto 1fr;
-  grid-template-areas: "title icon" "description icon";
+  grid-template-areas: 'title icon' 'description icon';
   gap: govuk-spacing(2);
   position: relative;
   border: 1px solid $app-blue-tint-50;
   border-radius: 3px;
-  background-color: $app-blue-tint-95;
   @include govuk-responsive-padding(5);
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    width: calc((100% + govuk-spacing(2)) / 3);
+    height: 100%;
+    background-color: $app-blue-tint-95;
+  }
+
+  &.app-link-card--graphic-device {
+    &::before {
+      background-color: $app-teal-shade-25;
+    }
+  }
+
+  &.app-link-card--logo-system {
+    &::before {
+      background-color: $app-green;
+    }
+  }
+
+  &.app-link-card--colour {
+    &::before {
+      background-color: $app-purple-shade-25;
+    }
+  }
+
+  &.app-link-card--typography {
+    &::before {
+      background-color: $app-magenta-shade-50;
+    }
+  }
 }
 
 .app-link-card__link {
@@ -20,7 +55,7 @@
   @include govuk-link-print-friendly;
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     right: 0;
@@ -36,8 +71,10 @@
 }
 
 .app-link-card__icon {
-  grid-area: icon;
-  align-self: end;
-  justify-self: end;
+  z-index: 1;
+  width: calc(100% - govuk-spacing(6));
   text-align: right;
+  grid-area: icon;
+  align-self: center;
+  justify-self: end;
 }
