@@ -11,7 +11,7 @@ The app splash screen utilises the dot in motion to represent GOV.UK bringing to
 
 <div>
     
- ### App splash screen (long version)
+ ### Long splash screen
 
 {% video { source: [
     "./splash-screen-long-version.mp4",
@@ -21,7 +21,7 @@ The app splash screen utilises the dot in motion to represent GOV.UK bringing to
 </div>
 <div>
 
-### App splash screen (short version)
+### Short splash screen
 
 {% video { source: [
     "./splash-screen-short-version.mp4",

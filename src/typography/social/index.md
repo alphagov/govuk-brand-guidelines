@@ -31,17 +31,13 @@ Consistent use of type styles aids clarity and hierarchy.
 
 Headings should be attention-grabbing, whilst body text should prioritize readability with appropriate line spacing and contrast.
 
-<!-- TODO: lots to do here, some of the below should probably be in images -->
-
 {% grid { columns: { mobile: 2, desktop: 2 } } %}
 
 {% gridCell {classes: "app-top-border"} %}
 
 ### Headline styles
 
-Bold, over a maximum 5 lines
-Light, over a maximum 5 lines
-Any content over 5 lines should be formatted as a body style
+Headlines should be bold or light over a maximum of 5 lines. Any content over 5 lines should be formatted as a body style.
 
 {% endgridCell %}
 {% gridCell %}
@@ -77,9 +73,6 @@ Tags should be set in Bold, but to aid hierarchy should be a smaller type size t
 {% endgrid %}
 
 ## Alignment
-
-<!-- TODO: the next two headings started with a small image that is not in here yet
-           but we might not need it for consistency reasons? -->
 
 {% callout %}
 Indicative examples for illustrative purposes only.

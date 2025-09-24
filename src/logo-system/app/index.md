@@ -50,7 +50,6 @@ Indicative examples for illustrative purposes only.
     "/graphic-device/dot-use-examples/splash-screen-short-version.webm"
 ] } %}
 
-<!-- TODO: not sure if this should be the short or long version (both files are in the folder) -->
 </div>
 
 <div>
