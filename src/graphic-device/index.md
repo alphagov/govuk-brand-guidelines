@@ -11,7 +11,7 @@ Our dot is the bridge between government and the UK, by the side of users to hel
 
 Used within our wordmark and as a graphic device across all GOV.UK channels, the dot is a guiding hand, for life.
 
-{% sectionHighlight %}
+{% sectionHighlight { classes: 'app-section-highlight__wrapper--logo' } %}
 
 ![The GOV.UK wordmark. An arrow points to the vertically-centred dot between 'GOV' and 'UK'.](./the-dot.svg)
 

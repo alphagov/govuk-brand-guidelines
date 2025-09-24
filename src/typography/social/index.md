@@ -9,14 +9,9 @@ GDS Transport is our primary brand typeface.
 
 Using it within our social channels can provide significant advantages, particularly in strengthening brand recognition and creating a cohesive user experience across platforms and channels.
 
-{% sectionHighlight { classes: "app-section-highlight--light-blue" } %}
-
 Whilst there may be cases where it is not possible, we should always try to use GDS Transport where possible.
 
-<!-- TODO: image is duplicated in ../app/ -->
-
 ![Sample of GDS Transport font.](./gds-transport.svg)
-{% endsectionHighlight %}
 
 ## Building visual hierarchy
 
@@ -28,11 +23,7 @@ Whilst there are many ways to build visual hierarchy, mixing weight and scale ac
 Indicative examples for illustrative purposes only.
 {% endcallout %}
 
-{% sectionHighlight { classes: "app-section-highlight--light-blue" } %}
-
 ![Graphic promoting pension information, with labels pointing out different type styles for the tag, headline and body copy, each with different font sizes and weights.](./type-hierarchy.png)
-
-{% endsectionHighlight %}
 
 ## Styles
 
@@ -44,7 +35,7 @@ Headings should be attention-grabbing, whilst body text should prioritize readab
 
 {% grid { columns: { mobile: 2, desktop: 2 } } %}
 
-<div class="app-top-border">
+{% gridCell {classes: "app-top-border"} %}
 
 ### Headline styles
 
@@ -52,31 +43,37 @@ Bold, over a maximum 5 lines
 Light, over a maximum 5 lines
 Any content over 5 lines should be formatted as a body style
 
-</div>
-<div>
-img goes here
-</div>
+{% endgridCell %}
+{% gridCell %}
 
-<div class="app-top-border">
+![](./headline-styles.svg) ![](./headline-styles-light.svg)
+
+{% endgridCell %}
+{% endgrid %}
+
+{% grid { columns: { mobile: 1, desktop: 2 }, classes: "app-top-border" } %}
+
+{% gridCell %}
 
 ### Body copy styles
 
 Body copy styles should always be set in Light and should be used for all longer form content.
 
-</div>
-<div>
-img goes here
-</div>
-<div class="app-top-border">
+{% endgridCell %}
+{% gridCell %}
+{% endgridCell %}
+{% endgrid %}
+
+{% grid { columns: { mobile: 1, desktop: 2 }, classes: "app-top-border" } %}
+{% gridCell %}
 
 ### Tags styles
 
 Tags should be set in Bold, but to aid hierarchy should be a smaller type size than body copy.
 
-</div>
-<div>
-img goes here
-</div>
+{% endgridCell %}
+{% gridCell %}
+{% endgridCell %}
 {% endgrid %}
 
 ## Alignment
@@ -156,13 +153,8 @@ There will be occasions where GDS Transport is not available for use, such as wi
 
 Where standard system fonts are available, Helvetica Neue or Arial should be used.
 
-{% sectionHighlight { classes: "app-section-highlight--light-blue" } %}
-
 In cases where system fonts are unavailable, the closest replacement should be used.
 
 This should always be a sans serif, low contrast typeface with a focus on accessibility.
 
-![Sample of Helvetica Neue font.](./helvetica-neue.svg)
-![Sample of Arial font.](./arial.svg)
-
-{% endsectionHighlight %}
+![Sample of Helvetica Neue font above sample of Arial font.](./helvetica-neue-arial.svg)
