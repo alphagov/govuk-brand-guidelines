@@ -136,7 +136,9 @@ Indicative examples for illustrative purposes only.
 </div>
 <div>
 
-![](./type-settings-dont-1.svg) ![](./type-settings-dont-2.svg)</div>
+![](./type-settings-dont-1.svg) ![](./type-settings-dont-2.svg)
+
+</div>
 
 {% endgrid %}
 

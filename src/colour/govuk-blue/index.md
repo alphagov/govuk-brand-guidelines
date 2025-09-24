@@ -80,11 +80,6 @@ To maintain consistency across channels the colours within our palette should ne
 
 {% grid { columns: { mobile: 2, desktop: 2 } } %}
 
-<div>
-
-![](./incorrect-colour-combos.svg)
-
-</div>
 <div class="app-top-border">
 
 Do not use colour combinations that do not meet [WCAG2.2 guidelines](https://www.w3.org/TR/WCAG22/#contrast-minimum)
@@ -92,9 +87,10 @@ Do not use colour combinations that do not meet [WCAG2.2 guidelines](https://www
 </div>
 <div>
 
-![](./incorrect-new-colours.svg)
+![](./incorrect-colour-combos.svg)
 
 </div>
+
 <div class="app-top-border">
 
 Do not create new colours
@@ -102,9 +98,10 @@ Do not create new colours
 </div>
 <div>
 
-![](./incorrect-too-many-colours.svg)
+![](./incorrect-new-colours.svg)
 
 </div>
+
 <div class="app-top-border">
 
 Do not use too many colours within an application
@@ -112,12 +109,18 @@ Do not use too many colours within an application
 </div>
 <div>
 
-![](./incorrect-gradients.png)
+![](./incorrect-too-many-colours.svg)
 
 </div>
+
 <div class="app-top-border">
 
 Do not mix colours to create gradients (single colour gradients are permitted for use over imagery)
+
+</div>
+<div>
+
+![](./incorrect-gradients.png)
 
 </div>
 
