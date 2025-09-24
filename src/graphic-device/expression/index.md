@@ -33,7 +33,7 @@ Indicative examples for illustrative purposes only.
 
 ### Illustrates
 
-![A graphic of a passport cover showing a globe that resembles the dot.](./expression-illustrates.png)
+![A graphic of a piggy bank showing a coin that resembles the dot.](./expression-illustrates.png)
 
 </div>
 <div>
