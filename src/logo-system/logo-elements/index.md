@@ -19,7 +19,7 @@ As our primary identifier, the GOV.UK wordmark should be used in all application
 
 ## Crown
 
-As our primary identifier, the GOV.UK wordmark should be used in all applications of the logo.
+The crown should be used as a supporting element that indicates trust and reassurance. It should always appear in close proximity to the wordmark.
 
 [The exception to this rule is the GOV.UK website](/logo-system/web/).
 
@@ -122,21 +122,21 @@ If it’s too small, it can lose detail and be harder for some users to read or 
 
     {% gridCell %}
 
-    ![The wordmark for "GOV.UK". Minimum width of the wordmark: 50px.](./wordmark-min-width.svg)
+    ![The wordmark for "GOV.UK" with an arrow indicating its minimum width.](./wordmark-min-width.svg)
     Minimum size:</br>
     <strong class="govuk-!-font-size-24">50px</strong>
 
     {% endgridCell %}
     {% gridCell %}
 
-    ![The crown element of the GOV.UK logo. Minimum width of the crown on it own: 16px.](./crown-min-width.svg)
+    ![The crown element of the GOV.UK logo with an arrow indicating its minimum width when it's on its own.](./crown-min-width.svg)
     Minimum size:</br>
     <strong class="govuk-!-font-size-24">16px</strong>
 
     {% endgridCell %}
     {% gridCell { classes: 'govuk-!-margin-bottom-6'} %}
 
-    ![Smaller version of the crown, with adjustments such as fewer dots.](./crown-favicon.svg)
+    ![Smaller version of the crown, with adjustments such as fewer dots, and an arrow indicating its minimum width.](./crown-favicon.svg)
     Use the small crown version for anything below the crown’s minimum size, such as web favicons.
 
     {% endgridCell %}
@@ -149,9 +149,9 @@ If it’s too small, it can lose detail and be harder for some users to read or 
 
 <div class="app-top-border">
 
-### Primary Blue background
+### Primary blue background
 
-When using on a Primary Blue background, the wordmark colour should use White and Accent Teal.
+When using on a Primary blue background, the wordmark colour should use White and Accent teal.
 
 </div>
 <div>
@@ -163,7 +163,7 @@ When using on a Primary Blue background, the wordmark colour should use White an
 
 ### Light background
 
-When using against a light background, the wordmark colour should use Black and Primary Blue.
+When using against a light background, the wordmark colour should use Black and Primary blue.
 
 </div>
 <div>
@@ -175,7 +175,7 @@ When using against a light background, the wordmark colour should use Black and 
 
 ### Special use
 
-When using against a busy background or in print situations where colour is not possible, white or black versions of the wordmark can be used.
+When using against a busy background or in print situations where colour is not possible, White or Black versions of the wordmark can be used.
 
 </div>
 <div>

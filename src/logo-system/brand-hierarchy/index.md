@@ -25,10 +25,12 @@ The diagrams on this page show how to space the wordmark and text in a lock-up. 
 
 In both horizontal and stacked lock-ups, the space between the wordmark and product name should be the width of the dot.
 
+Use the width and height of the G in the GOV.UK wordmark to set the overall margin spacing.
+
 {% grid { columns: { mobile: 2, desktop: 2 } } %}
 
 {% gridCell %}
-![Various diagrams of the GOV.UK Pay lock-up in black showing how the dot is used to set spacing between the product name and wordmark. Horizontal and stacked lock-ups are shown. The dot between 'GOV' and 'UK' is Primary blue.](./lockup-1.svg)
+![Various diagrams showing GOV.UK Pay as horizontal and vertically stacked lock-ups. Shapes of the dot and the G show various widths and heights for spacing.](./lockup-1.svg)
 {% endgridCell %}
 
 {% gridCell %}
@@ -58,7 +60,7 @@ On 14.2pt type, letter spacing should be -0.21 pixels.
 </div>
 {% gridCell %}
 
-![Horizontal lock-ups for GOV.UK Pay, GOV.UK Wallet and GOV.UK Notify. Each lock-up is shown is on a single line.](./horizontal-pay.svg) ![](./horizontal-wallet.svg) ![](./horizontal-notify.svg)
+![Horizontal lock-ups for GOV.UK Pay, GOV.UK Wallet and GOV.UK Notify. Each lock-up is shown on a single line.](./horizontal-pay.svg) ![](./horizontal-wallet.svg) ![](./horizontal-notify.svg)
 
 {% endgridCell %}
 
@@ -71,7 +73,7 @@ Spacing between wordmark and crown on horizontal lock-up should be 3 crown dots 
 </div>
 {% gridCell %}
 
-![Horizontal lock-ups with the crown for GOV.UK Pay, GOV.UK Wallet and GOV.UK Notify. Each lock-up is shown is on a single line after the crown.](./horizontal-with-crown-pay.svg) ![](./horizontal-with-crown-wallet.svg) ![](./horizontal-with-crown-notify.svg)
+![Horizontal lock-ups with the crown for GOV.UK Pay, GOV.UK Wallet and GOV.UK Notify. Each lock-up is shown on a single line after the crown.](./horizontal-with-crown-pay.svg) ![](./horizontal-with-crown-wallet.svg) ![](./horizontal-with-crown-notify.svg)
 
 {% endgridCell %}
 

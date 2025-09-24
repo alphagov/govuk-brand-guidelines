@@ -84,7 +84,7 @@ An example of this is the GOV.UK One Login app.
 Framework
 {% endfigure %}
 
-{% figure { src: "./app-icon.svg", alt: "App icon of the GOV.UK app.", classes: "govuk-!-margin-bottom-0" } %}
+{% figure { src: "./app-icon.svg", alt: "App icon of the GOV.UK app. The wordmark is shown above the crown.", classes: "govuk-!-margin-bottom-0" } %}
 **Example 1:** GOV.UK app
 {% endfigure %}
 
