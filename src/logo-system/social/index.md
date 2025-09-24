@@ -10,30 +10,21 @@ Within GOV.UK social channels we follow the primary logo system, using the wordm
 An example of this is in profile icons.
 
 {% grid { columns: 3 } %}
+{% gridCell {verticalAlign: 'end'} %} ### Wordmark
 
-<div>
+    ![Wordmark for GOV.UK in white. The dot between 'GOV' and 'UK' is Accent teal and vertically-centred. Shown on a Primary blue background.](./wordmark-on-blue.svg)
 
-### Wordmark
+{% endgridCell %}
+{% gridCell {verticalAlign: 'end'} %} ### Crown
 
-![Wordmark for GOV.UK in white. The dot between 'GOV' and 'UK' is Accent teal and vertically-centred. Shown on a Primary blue background.](./wordmark-on-blue.svg)
+    ![The crown element of the GOV.UK logo, shown as white on a Primary blue background.](./crown-on-blue.svg)
 
-</div>
+{% endgridCell %}
+{% gridCell {verticalAlign: 'end'} %} ### Profile icons
 
-<div>
+    ![Social profile icon with a Primary blue background, showing a stacked lock-up of the GOV.UK wordmark and crown. A circle outline shows positioning of logo elements.](./profile-icon-on-blue.svg)
 
-### Crown
-
-![The crown element of the GOV.UK logo, shown as white on a Primary blue background.](./crown-on-blue.svg)
-
-</div>
-
-<div>
-
-### Profile icons
-
-![Social profile icon with a Primary blue background, showing a stacked lock-up of the GOV.UK wordmark and crown. A circle outline shows positioning of logo elements.](./profile-icon-on-blue.svg)
-
-</div>
+{% endgridCell %}
 {% endgrid %}
 
 ## Logo elements within social

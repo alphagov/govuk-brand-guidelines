@@ -11,7 +11,17 @@ The recommended minimum sizes for typography in common document formats are:
 - header text: 16pt
 - body text: 12pt
 
-{% sectionHighlight { classes: "app-section-highlight--dark-magenta" } %}
+{% grid {columns: { desktop: 1, tablet: 1, mobile: 1 } }%}
 
-![Diagram of A4-sized letterhead and letter. Labels show the minimum sizes for the logo, header text and body text.](./print-guides.svg)
-{% endsectionHighlight %}
+<div>
+
+![Diagram of A4-sized letterhead. Labels show the minimum sizes for the logo.](./print-guide-1.svg)
+
+</div>
+<div>
+
+![Diagram of A4-sized letter. Labels show the minimum sizes for header text and body text.](./print-guide-2.svg)
+
+</div>
+
+{% endgrid %}

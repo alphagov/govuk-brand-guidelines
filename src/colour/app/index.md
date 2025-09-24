@@ -75,7 +75,9 @@ Indicative examples for illustrative purposes only.
 Indicative examples for illustrative purposes only.
 {% endcallout %}
 
-![Screenshot of the GOV.UK app, showing the start page of topics as greyed out.](./app-header1.png) ![Screenshot of the GOV.UK app, showing the Benefits topic page.](./app-header2.png) ![Screenshot of the GOV.UK app, showing the 'Pages you've visited' page.](./app-header3.png) ![Screenshot of the GOV.UK app, showing the Settings page.](./app-header4.png)
+![Screenshots of the GOV.UK app with the main content greyed out, showing the start page, Benefits, Pages you've visited and Settings pages.](./app-headers-1.png)
+
+![](./app-headers-2.png)
 
 ## Examples
 
@@ -89,4 +91,4 @@ Colour should be applied in a way that does not add visual complexity or reduce 
 Indicative examples for illustrative purposes only.
 {% endcallout %}
 
-![Screenshot of the GOV.UK app, showing the start page of topics, including tinted tile buttons.](./app-homepage.png) ![Screenshot of the GOV.UK app, showing the Settings page, including tinted menus.](./app-settings.png)
+![Screenshots of the GOV.UK app, showing the start page and the Settings page, including tinted tile buttons and tinted menus.](./app-header-in-examples.png)
