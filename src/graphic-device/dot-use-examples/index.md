@@ -59,7 +59,7 @@ The dot can be brought to life through animation in illustrations, adding person
     {% endgridCell %}
     {% gridCell %}
     {% video { source: [
-    "./thumbnail-illustration-travel.mp4",
+    "./illustration-travel.mp4",
     "./illustration-travel.webm"
     ], classes: "app-video-border" } %}
     {% endgridCell %}
