@@ -20,6 +20,14 @@
   }
 }
 
+// When no navigation is present, cancel the grid
+// and limit the width so the content doesn't go larger
+// than how it appears on desktop
+.app-page-wrapper--no-navigation {
+  display: block;
+  max-width: $govuk-page-width - $app-sidebar-nav-desktop;
+}
+
 .app-chapter-navigation {
   position: relative;
   z-index: 1;

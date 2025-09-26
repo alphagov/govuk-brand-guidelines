@@ -19,20 +19,22 @@
   {% endif %}
 {% endblock %}
 
+{% set hasSidebarNavigation = sidebarNavigationRoot.data.children | length %}
+
 {% block beforeContent %}
   {{ super() }}
 
-  <div class="app-page-wrapper">
-    <nav class="app-chapter-navigation" aria-labelledby="side-navigation">
-      {% if sidebarNavigationRoot.data.children | length %}
+  <div class="{{ ['app-page-wrapper', 'app-page-wrapper--no-navigation' if not hasSidebarNavigation] | select(truthy) | join(' ')}}">
+    {% if hasSidebarNavigation %}
+      <nav class="app-chapter-navigation" aria-labelledby="side-navigation">
         <h2 class="govuk-heading-s govuk-!-margin-bottom-1{{ ' govuk-!-margin-top-6' if landing else '' }}" id="side-navigation">In this section</h2>
-      {% endif %}
-      {% from "link-list.njk" import appLinkList %}
-      {{ appLinkList({
-        pages: sidebarNavigationRoot.data.children,
-        renderedPageUrl: page.url
-      })}}
-    </nav>
+        {% from "link-list.njk" import appLinkList %}
+        {{ appLinkList({
+          pages: sidebarNavigationRoot.data.children,
+          renderedPageUrl: page.url
+        })}}
+      </nav>
+    {% endif %}
     {%  set contentClasses = 'app-content app-content--section-' + page.fileSlug  if landing else 'app-content' %}
     <div class="{{ contentClasses }}">
       {% from "govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
@@ -71,7 +73,7 @@
 
   {# Render the list of pages under each chapter after the content
     as a fallback for mobile navigation if JavaScript does not load #}
-  {% if isSidebarNavigationRoot %}
+  {% if isSidebarNavigationRoot and hasSidebarNavigation %}
     <nav class="app-chapter-navigation--mobile-fallback" aria-labelledby="chapter-navigation">
       <h2 class="govuk-heading-l" id="chapter-navigation">Pages in {{title}}</h2>
       {% from "link-list.njk" import appLinkList %}
