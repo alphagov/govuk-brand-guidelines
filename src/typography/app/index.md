@@ -11,9 +11,7 @@ Using it within our apps can provide significant advantages, particularly in str
 
 Whilst there may be cases where it is not possible, we should always try to use GDS Transport where possible.
 
-<!-- TODO: image is duplicated in ../social/ -->
-
-![Sample of GDS Transport font.](./gds-transport.svg)
+![Sample of GDS Transport font.](./../social/gds-transport.svg)
 
 ## OS native fonts
 
