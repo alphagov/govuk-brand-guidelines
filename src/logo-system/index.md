@@ -15,7 +15,7 @@ The wordmark is our primary GOV.UK identifier, with the crown being used as a su
 
 {% grid { columns: { mobile: 1, desktop: 2 }, classes: 'govuk-!-margin-top-7' } %}
 
-<div class="app-top-border">
+<div class="app-border app-border--top">
 
 ### Wordmark
 
@@ -27,7 +27,7 @@ Our wordmark is our primary identifier and should be used as the lead asset on t
 ![Wordmark for GOV.UK in white. The dot between 'GOV' and 'UK' is Accent teal and vertically-centred. Shown on a Primary blue background.](./wordmark.svg)
 
 </div>
-<div class="app-top-border">
+<div class="app-border app-border--top">
 
 ### Crown
 
@@ -39,7 +39,7 @@ The crown must always be present but is used as a supporting asset within close 
 ![The crown element of the GOV.UK logo.](./crown.svg)
 
 </div>
-<div class="app-top-border">
+<div class="app-border app-border--top">
 
 ### Lock-up
 

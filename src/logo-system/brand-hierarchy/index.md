@@ -49,7 +49,7 @@ Use the width and height of the G in the GOV.UK wordmark to set the overall marg
 
 {% grid { columns: { mobile: 2, desktop: 2 } } %}
 
-<div class="app-top-border">
+<div class="app-border app-border--top">
 
 ### Horizontal
 
@@ -64,7 +64,7 @@ On 14.2pt type, letter spacing should be -0.21 pixels.
 
 {% endgridCell %}
 
-<div class="app-top-border">
+<div class="app-border app-border--top">
 
 ### Horizontal with crown
 
@@ -77,7 +77,7 @@ Spacing between wordmark and crown on horizontal lock-up should be 3 crown dots 
 
 {% endgridCell %}
 
-<div class="app-top-border">
+<div class="app-border app-border--top">
 
 ### Stacked for web
 
@@ -93,7 +93,7 @@ Spacing between wordmark and product name should be 1 large dot or 7 pixels from
 
 {% endgridCell %}
 
-<div class="app-top-border">
+<div class="app-border app-border--top">
 
 ### Stacked for app
 
@@ -108,7 +108,7 @@ Spacing between wordmark and product name should be 1 large dot or 7 pixels from
 
 {% endgridCell %}
 
-<div class="app-top-border">
+<div class="app-border app-border--top">
 
 ### Stacked with crown
 

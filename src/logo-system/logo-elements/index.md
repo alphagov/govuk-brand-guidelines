@@ -63,7 +63,7 @@ The size of the crown can be adjusted depending on context. For example, when be
 
 {% grid { columns: { mobile: 1, desktop: 2 }, classes: 'govuk-!-margin-top-6 govuk-!-margin-bottom-6' } %}
 
-<div class="app-top-border">
+<div class="app-border app-border--top">
 
 #### Standard crown size
 
@@ -76,7 +76,7 @@ Wordmark dot = 2× crown dot
 ![Dots from the crown are used to show the correct size of the dot in the wordmark.](./standard-crown.svg)
 
 </div>
-<div class="app-top-border">
+<div class="app-border app-border--top">
 
 #### Enlarged crown size
 
@@ -147,7 +147,7 @@ If it’s too small, it can lose detail and be harder for some users to read or 
 
 {% grid { columns: { mobile: 1, desktop: 2 } } %}
 
-<div class="app-top-border">
+<div class="app-border app-border--top">
 
 ### Primary blue background
 
@@ -159,7 +159,7 @@ When using on a Primary blue background, the wordmark colour should use White an
 ![](./logo-primary.svg)
 
 </div>
-<div class="app-top-border">
+<div class="app-border app-border--top">
 
 ### Light background
 
@@ -171,7 +171,7 @@ When using against a light background, the wordmark colour should use Black and 
 ![](./logo-light.svg)
 
 </div>
-<div class="app-top-border">
+<div class="app-border app-border--top">
 
 ### Special use
 
@@ -216,7 +216,7 @@ To maintain consistency across channels the logo elements should never be change
 
 {% grid { columns: { mobile: 1, desktop: 2 } } %}
 
-<div class="app-top-border">
+<div class="app-border app-border--top">
 
 Do not alter colour balance within the wordmark
 
@@ -226,7 +226,7 @@ Do not alter colour balance within the wordmark
 ![](./incorrect-altered-colours.svg)
 
 </div>
-<div class="app-top-border">
+<div class="app-border app-border--top">
 
 Do not distort, stretch or skew the wordmark
 
@@ -236,7 +236,7 @@ Do not distort, stretch or skew the wordmark
 ![](./incorrect-squashed.svg)
 
 </div>
-<div class="app-top-border">
+<div class="app-border app-border--top">
 
 Do not apply drop shadows or effects to the wordmark
 
@@ -246,7 +246,7 @@ Do not apply drop shadows or effects to the wordmark
 ![](./incorrect-effects.png)
 
 </div>
-<div class="app-top-border">
+<div class="app-border app-border--top">
 
 Do not use the wordmark on overly busy or low-contrast backgrounds
 
@@ -256,7 +256,7 @@ Do not use the wordmark on overly busy or low-contrast backgrounds
 ![](./incorrect-busy.png)
 
 </div>
-<div class="app-top-border">
+<div class="app-border app-border--top">
 
 Do not flip, mirror, or rotate the wordmark
 

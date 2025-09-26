@@ -1,0 +1,11 @@
+.app-border {
+  --app-border-colour: #{$app-blue-shade-25};
+  border: 1px solid var(--app-border-colour);
+}
+
+.app-border--top {
+  padding-top: govuk-spacing(2);
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 0;
+}
