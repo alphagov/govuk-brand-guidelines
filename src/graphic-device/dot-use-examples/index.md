@@ -50,7 +50,7 @@ The dot can be brought to life through animation in illustrations, adding person
     {% video { source: [
     "./illustration-wave.mp4",
     "./illustration-wave.webm"
-    ], classes: "app-video-border" } %}
+    ], classes: "app-border app-border--video" } %}
     {% endgridCell %}
     {% gridCell {span: {desktop: 2, tablet: 1, mobile: 1}, classes: "app-border app-border--top"} %}
     ### Travel
@@ -61,7 +61,7 @@ The dot can be brought to life through animation in illustrations, adding person
     {% video { source: [
     "./thumbnail-illustration-travel.mp4",
     "./illustration-travel.webm"
-    ], classes: "app-video-border" } %}
+    ], classes: "app-border app-border--video" } %}
     {% endgridCell %}
     {% gridCell {span: {desktop: 2, tablet: 1, mobile: 1}, classes: "app-border app-border--top"} %}
     ### Lock
@@ -72,7 +72,7 @@ The dot can be brought to life through animation in illustrations, adding person
     {% video { source: [
     "./illustration-lock.mp4",
     "./illustration-lock.webm"
-    ], classes: "app-video-border" } %}
+    ], classes: "app-border app-border--video" } %}
     {% endgridCell %}
     {% gridCell {span: {desktop: 2, tablet: 1, mobile: 1}, classes: "app-border app-border--top"} %}
     ### Onboarding
@@ -83,7 +83,7 @@ The dot can be brought to life through animation in illustrations, adding person
     {% video { source: [
     "./illustration-onboarding.mp4",
     "./illustration-onboarding.webm"
-    ], classes: "app-video-border" } %}
+    ], classes: "app-border app-border--video" } %}
     {% endgridCell %}
     {% gridCell {span: {desktop: 2, tablet: 1, mobile: 1}, classes: "app-border app-border--top"} %}
     ### Piggy bank
@@ -94,7 +94,7 @@ The dot can be brought to life through animation in illustrations, adding person
     {% video { source: [
     "./illustration-piggy-bank.mp4",
     "./illustration-piggy-bank.webm"
-    ], classes: "app-video-border" } %}
+    ], classes: "app-border app-border--video" } %}
     {% endgridCell %}
 
 {% endgrid %}

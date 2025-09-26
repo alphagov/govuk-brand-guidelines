@@ -9,3 +9,7 @@
   border-bottom: 0;
   border-left: 0;
 }
+
+.app-border--video {
+  --app-border-colour: #{$govuk-border-colour};
+}
