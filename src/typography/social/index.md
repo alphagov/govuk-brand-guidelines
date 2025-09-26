@@ -33,7 +33,7 @@ Headings should be attention-grabbing, whilst body text should prioritize readab
 
 {% grid { columns: { mobile: 2, desktop: 2 } } %}
 
-{% gridCell {classes: "app-top-border"} %}
+{% gridCell {classes: "app-border app-border--top"} %}
 
 ### Headline styles
 
@@ -47,7 +47,7 @@ Headlines should be bold or light over a maximum of 5 lines. Any content over 5 
 {% endgridCell %}
 {% endgrid %}
 
-{% grid { columns: { mobile: 1, desktop: 2 }, classes: "app-top-border" } %}
+{% grid { columns: { mobile: 1, desktop: 2 }, classes: "app-border app-border--top" } %}
 
 {% gridCell %}
 
@@ -60,7 +60,7 @@ Body copy styles should always be set in Light and should be used for all longer
 {% endgridCell %}
 {% endgrid %}
 
-{% grid { columns: { mobile: 1, desktop: 2 }, classes: "app-top-border" } %}
+{% grid { columns: { mobile: 1, desktop: 2 }, classes: "app-border app-border--top" } %}
 {% gridCell %}
 
 ### Tags styles
@@ -80,7 +80,7 @@ Indicative examples for illustrative purposes only.
 
 {% grid { columns: { mobile: 2, desktop: 2 } } %}
 
-<div class="app-top-border">
+<div class="app-border app-border--top">
 
 ### Left aligned text
 
@@ -94,7 +94,7 @@ It prevents uneven gaps (rivers of white space) found in fully justified text, m
 
 ![](./left-aligned.png)
 
-<div class="app-top-border">
+<div class="app-border app-border--top">
 
 ### Centre aligned text
 
@@ -121,7 +121,7 @@ Indicative examples for illustrative purposes only.
 
 {% grid { columns: { mobile: 2, desktop: 2 } } %}
 
-<div class="app-top-border">
+<div class="app-border app-border--top">
 
 **Do** use consistent and clear line and letter spacing.
 
@@ -129,7 +129,7 @@ Indicative examples for illustrative purposes only.
 
 ![](./type-settings-do.svg)
 
-<div class="app-top-border">
+<div class="app-border app-border--top">
 
 **Don't** use line and letter spacing that is too wide or tight.
 

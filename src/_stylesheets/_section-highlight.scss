@@ -15,19 +15,11 @@
   :last-child {
     margin-bottom: 0;
   }
-
-  .app-top-border {
-    --app-top-border-colour: #{govuk-colour('white')};
-  }
 }
 
 .app-section-highlight--light-blue,
 .app-section-highlight--light-grey {
   color: govuk-colour('black');
-
-  .app-top-border {
-    --app-top-border-colour: #{$app-blue-shade-25};
-  }
 }
 
 .app-section-highlight--light-blue {

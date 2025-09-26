@@ -136,7 +136,7 @@ To aid brand recognition and coherency, adaptive dot colour should not be used w
 
 {% grid { columns: { mobile: 2, desktop: 2 } } %}
 
-<div class="app-top-border">
+<div class="app-border app-border--top">
 
 Do not use colour combinations that are not accessible.
 
@@ -148,7 +148,7 @@ Do not use colour combinations that are not accessible.
 
 {% endgridCell %}
 
-<div class="app-top-border">
+<div class="app-border app-border--top">
 
 Do not use colour combinations that lack contrast between the wordmark and dot.
 
@@ -160,7 +160,7 @@ Do not use colour combinations that lack contrast between the wordmark and dot.
 
 {% endgridCell%}
 
-<div class="app-top-border">
+<div class="app-border app-border--top">
 
 Do not use colour combinations that are not from the same tonal range.
 

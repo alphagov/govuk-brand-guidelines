@@ -57,7 +57,7 @@ Indicative examples for illustrative purposes only.
 
 {% grid { columns: { tablet: 2 } } %}
 
-<div class="app-top-border">
+<div class="app-border app-border--top">
 
 ### Guides
 
@@ -70,7 +70,7 @@ No audio. The dot moves playfully from left to right, pausing briefly at points 
     "./expression-dot-guides.webm"
 ] } %}
 </div>
-<div class="app-top-border">
+<div class="app-border app-border--top">
 
 ### Navigates
 
@@ -83,7 +83,7 @@ No audio. The dot moves in a straight line from left to right across a navigatio
     "./expression-dot-navigates.webm"
 ] } %}
 </div>
-<div class="app-top-border">
+<div class="app-border app-border--top">
 
 ### Highlights
 
@@ -96,7 +96,7 @@ No audio. The dot is shown at the end of a "Don't forget to vote" message as it 
     "./expression-dot-highlights.webm"
 ] } %}
 </div>
-<div class="app-top-border">
+<div class="app-border app-border--top">
 
 ### Informs
 
@@ -109,7 +109,7 @@ No audio. The small dot with a label showing 1% starts growing whilst the percen
     "./expression-dot-informs.webm"
 ] } %}
 </div>
-<div class="app-top-border">
+<div class="app-border app-border--top">
 
 ### Transitions
 
@@ -122,7 +122,7 @@ No audio. The dot shown in a title card, where it's the dot above the "i" in "Ch
     "./expression-dot-transitions.webm"
 ] } %}
 </div>
-<div class="app-top-border">
+<div class="app-border app-border--top">
 
 ### Illustrates
 

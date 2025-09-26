@@ -104,7 +104,7 @@ Indicative examples for illustrative purposes only.
 {% grid { columns: { mobile: 2, desktop: 2 } } %}
 
 <div>
-<div class="app-top-border">
+<div class="app-border app-border--top">
 
 {% swatchList { palette: tonalColourExamples, group: "example1" } %}
 
@@ -123,7 +123,7 @@ Indicative examples for illustrative purposes only.
 {% grid { columns: { mobile: 2, desktop: 2 } } %}
 
 <div>
-<div class="app-top-border">
+<div class="app-border app-border--top">
 
 {% swatchList { palette: tonalColourExamples, group: "example2" } %}
 
@@ -141,7 +141,7 @@ Indicative examples for illustrative purposes only.
 {% grid { columns: { mobile: 2, desktop: 2 } } %}
 
 <div>
-<div class="app-top-border">
+<div class="app-border app-border--top">
 
 {% swatchList { palette: tonalColourExamples, group: "example3" } %}
 
@@ -198,7 +198,7 @@ Remember, some users browse with high-contrast settings or dark mode. Colours ma
 </div>
 
 <div>
-<div class="app-top-border">
+<div class="app-border app-border--top">
 
 {% swatchList { palette: companionColours, group: "set1" } %}
 
@@ -216,7 +216,7 @@ Remember, some users browse with high-contrast settings or dark mode. Colours ma
 </div>
 
 <div>
-<div class="app-top-border">
+<div class="app-border app-border--top">
 
 {% swatchList { palette: companionColours, group: "set2" } %}
 
@@ -234,7 +234,7 @@ Remember, some users browse with high-contrast settings or dark mode. Colours ma
 </div>
 
 <div>
-<div class="app-top-border">
+<div class="app-border app-border--top">
 
 {% swatchList { palette: companionColours, group: "set3" } %}
 
@@ -252,7 +252,7 @@ Remember, some users browse with high-contrast settings or dark mode. Colours ma
 </div>
 
 <div>
-<div class="app-top-border">
+<div class="app-border app-border--top">
 
 {% swatchList { palette: companionColours, group: "set4" } %}
 
@@ -270,7 +270,7 @@ Remember, some users browse with high-contrast settings or dark mode. Colours ma
 </div>
 
 <div>
-<div class="app-top-border">
+<div class="app-border app-border--top">
 
 {% swatchList { palette: companionColours, group: "set5" } %}
 
@@ -288,7 +288,7 @@ Remember, some users browse with high-contrast settings or dark mode. Colours ma
 </div>
 
 <div>
-<div class="app-top-border">
+<div class="app-border app-border--top">
 
 {% swatchList { palette: companionColours, group: "set6" } %}
 
@@ -306,7 +306,7 @@ Remember, some users browse with high-contrast settings or dark mode. Colours ma
 </div>
 
 <div>
-<div class="app-top-border">
+<div class="app-border app-border--top">
 
 {% swatchList { palette: companionColours, group: "set7" } %}
 
@@ -324,7 +324,7 @@ Remember, some users browse with high-contrast settings or dark mode. Colours ma
 </div>
 
 <div>
-<div class="app-top-border">
+<div class="app-border app-border--top">
 
 {% swatchList { palette: companionColours, group: "set8" } %}
 
@@ -342,7 +342,7 @@ Remember, some users browse with high-contrast settings or dark mode. Colours ma
 </div>
 
 <div>
-<div class="app-top-border">
+<div class="app-border app-border--top">
 
 {% swatchList { palette: companionColours, group: "set9" } %}
 
@@ -374,7 +374,7 @@ Indicative examples for illustrative purposes only.
 {% grid { columns: { mobile: 2, desktop: 2 } } %}
 
 <div>
-<div class="app-top-border">
+<div class="app-border app-border--top">
 
 {% swatchList { palette: companionColourExamples, group: "example1" } %}
 
@@ -392,7 +392,7 @@ Indicative examples for illustrative purposes only.
 {% grid { columns: { mobile: 2, desktop: 2 } } %}
 
 <div>
-<div class="app-top-border">
+<div class="app-border app-border--top">
 
 {% swatchList { palette: companionColourExamples, group: "example2" } %}
 
@@ -410,7 +410,7 @@ Indicative examples for illustrative purposes only.
 {% grid { columns: { mobile: 2, desktop: 2 } } %}
 
 <div>
-<div class="app-top-border">
+<div class="app-border app-border--top">
 
 {% swatchList { palette: companionColourExamples, group: "example3" } %}
 
