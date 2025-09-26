@@ -71,7 +71,7 @@
 
   {# Render the list of pages under each chapter after the content
     as a fallback for mobile navigation if JavaScript does not load #}
-  {% if isSidebarNavigationRoot %}
+  {% if isSidebarNavigationRoot and sidebarNavigationRoot.data.children | length %}
     <nav class="app-chapter-navigation--mobile-fallback" aria-labelledby="chapter-navigation">
       <h2 class="govuk-heading-l" id="chapter-navigation">Pages in {{title}}</h2>
       {% from "link-list.njk" import appLinkList %}
