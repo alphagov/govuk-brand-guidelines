@@ -13,7 +13,7 @@
   @extend %app-landing-hero-bleed;
   @include govuk-font($size: 19);
   margin-bottom: 0;
-  padding: govuk-spacing(6) govuk-spacing(6) 0;
+  padding: govuk-spacing(6) govuk-spacing(3) 0;
   background-color: var(--app-landing-hero-dark-colour);
 
   @include govuk-media-query($from: tablet) {
