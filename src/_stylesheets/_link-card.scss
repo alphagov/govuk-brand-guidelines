@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: auto 1fr;
-  grid-template-areas: "title icon" "description icon";
+  grid-template-areas: 'title icon' 'description icon';
   gap: govuk-spacing(2);
   position: relative;
   border: 1px solid $app-blue-tint-50;
@@ -20,7 +20,7 @@
   @include govuk-link-print-friendly;
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     right: 0;
