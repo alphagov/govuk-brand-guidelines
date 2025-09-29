@@ -41,7 +41,7 @@ The dot can be brought to life through animation in illustrations, adding person
 
 {% grid { columns: { mobile: 1, tablet: 2, desktop: 3 }, classes: "govuk-!-padding-bottom-6" } %}
 
-    {% gridCell {span: {desktop: 2, tablet: 1, mobile: 1}, classes: "app-top-border"} %}
+    {% gridCell {span: {desktop: 2, tablet: 1, mobile: 1}, classes: "app-border app-border--top"} %}
     ### Person
 
     No audio. An animation of a person giving a friendly wave. Circles are used to draw the head and hand, whilst pieces of a circle are used to draw the shoulders and hairstyle.
@@ -50,9 +50,9 @@ The dot can be brought to life through animation in illustrations, adding person
     {% video { source: [
     "./illustration-wave.mp4",
     "./illustration-wave.webm"
-    ], classes: "app-video-border" } %}
+    ], classes: "app-border app-border--video" } %}
     {% endgridCell %}
-    {% gridCell {span: {desktop: 2, tablet: 1, mobile: 1}, classes: "app-top-border"} %}
+    {% gridCell {span: {desktop: 2, tablet: 1, mobile: 1}, classes: "app-border app-border--top"} %}
     ### Travel
 
     No audio. An animation of luggage moving aross the frame. Suitcases are drawn as rectangles with rounded corners. Circles are used to draw wheels and luggage tags, whilst pieces of a circle are used to draw the handles.
@@ -61,9 +61,9 @@ The dot can be brought to life through animation in illustrations, adding person
     {% video { source: [
     "./thumbnail-illustration-travel.mp4",
     "./illustration-travel.webm"
-    ], classes: "app-video-border" } %}
+    ], classes: "app-border app-border--video" } %}
     {% endgridCell %}
-    {% gridCell {span: {desktop: 2, tablet: 1, mobile: 1}, classes: "app-top-border"} %}
+    {% gridCell {span: {desktop: 2, tablet: 1, mobile: 1}, classes: "app-border app-border--top"} %}
     ### Lock
 
     No audio. An animation of a circle-shaped padlock opening and closing.
@@ -72,9 +72,9 @@ The dot can be brought to life through animation in illustrations, adding person
     {% video { source: [
     "./illustration-lock.mp4",
     "./illustration-lock.webm"
-    ], classes: "app-video-border" } %}
+    ], classes: "app-border app-border--video" } %}
     {% endgridCell %}
-    {% gridCell {span: {desktop: 2, tablet: 1, mobile: 1}, classes: "app-top-border"} %}
+    {% gridCell {span: {desktop: 2, tablet: 1, mobile: 1}, classes: "app-border app-border--top"} %}
     ### Onboarding
 
     No audio. Animation of various circle-themed icons, including a speech bubble, notification bell, map pin and toggle switch.
@@ -83,9 +83,9 @@ The dot can be brought to life through animation in illustrations, adding person
     {% video { source: [
     "./illustration-onboarding.mp4",
     "./illustration-onboarding.webm"
-    ], classes: "app-video-border" } %}
+    ], classes: "app-border app-border--video" } %}
     {% endgridCell %}
-    {% gridCell {span: {desktop: 2, tablet: 1, mobile: 1}, classes: "app-top-border"} %}
+    {% gridCell {span: {desktop: 2, tablet: 1, mobile: 1}, classes: "app-border app-border--top"} %}
     ### Piggy bank
 
     No audio. Animation of a circle-shaped piggy bank. Several coins drop into the piggy bank before it does a happy shake.
@@ -94,7 +94,7 @@ The dot can be brought to life through animation in illustrations, adding person
     {% video { source: [
     "./illustration-piggy-bank.mp4",
     "./illustration-piggy-bank.webm"
-    ], classes: "app-video-border" } %}
+    ], classes: "app-border app-border--video" } %}
     {% endgridCell %}
 
 {% endgrid %}
@@ -235,7 +235,7 @@ To keep things consistent, avoid the following:
 
 {% grid { columns: { mobile: 1, desktop: 2 } } %}
 
-<div class="app-top-border">
+<div class="app-border app-border--top">
 
 ### Overuse
 
@@ -247,7 +247,7 @@ Do not overuse the dot
 ![Crossed out graphic with a small blank dot on the top left. Text placed in the centre within a large circle, and also contains a lozenge-shaped text highlight.](./incorrect-overuse.svg)
 
 </div>
-<div class="app-top-border">
+<div class="app-border app-border--top">
 
 ### Decorative elements
 
@@ -259,7 +259,7 @@ Do not use the dot in a decorative way
 ![Crossed out graphic some text, with a dot placed off-centre in the background.](./incorrect-decorative.svg)
 
 </div>
-<div class="app-top-border">
+<div class="app-border app-border--top">
 
 ### Distortions
 
@@ -271,7 +271,7 @@ Do not distort or skew the dot
 ![Crossed out graphic with some text placed inside a stretched-out oval.](./incorrect-distorted.svg)
 
 </div>
-<div class="app-top-border">
+<div class="app-border app-border--top">
 
 ### Stroke
 
@@ -283,7 +283,7 @@ Do not use stroke versions of the dot
 ![Crossed out graphic of a circular outline, resembling a ring.](./incorrect-stroke.svg)
 
 </div>
-<div class="app-top-border">
+<div class="app-border app-border--top">
 
 ### Crops
 
@@ -295,7 +295,7 @@ Do not use abstract crops of the dot
 ![Crossed out graphic showing only the cropped corner of a large circle.](./incorrect-crop.svg)
 
 </div>
-<div class="app-top-border">
+<div class="app-border app-border--top">
 
 ### Filters and effects
 
