@@ -59,7 +59,7 @@ The dot can be brought to life through animation in illustrations, adding person
     {% endgridCell %}
     {% gridCell %}
     {% video { source: [
-    "./thumbnail-illustration-travel.mp4",
+    "./illustration-travel.mp4",
     "./illustration-travel.webm"
     ], classes: "app-border app-border--video" } %}
     {% endgridCell %}
@@ -122,8 +122,8 @@ To build coherence across channels, our social end frames follow the same motion
 No audio.
 
 {% video { source: [
-    "./End-frame-1920-1080.mp4",
-    "./End-frame-1920-1080.webm"
+    "./end-frame-1920-1080.mp4",
+    "./end-frame-1920-1080.webm"
 ] } %}
 
 </div>
@@ -138,8 +138,8 @@ No audio.
 No audio.
 
 {% video { source: [
-    "./End-frame-1080-1920.mp4",
-    "./End-frame-1080-1920.webm"
+    "./end-frame-1080-1920.mp4",
+    "./end-frame-1080-1920.webm"
 ] } %}
 
 </div>
@@ -150,8 +150,8 @@ No audio.
 No audio.
 
 {% video { source: [
-    "./End-frame-1080-1080.mp4",
-    "./End-frame-1080-1080.webm"
+    "./end-frame-1080-1080.mp4",
+    "./end-frame-1080-1080.webm"
 ]} %}
 
 </div>

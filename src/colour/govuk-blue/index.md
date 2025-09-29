@@ -49,7 +49,10 @@ Indicative examples for illustrative purposes only.
 
 ### App splash screen
 
-{% video { source: "/graphic-device/dot-use-examples/splash-screen-long-version.mp4" } %}
+{% video { source: [
+    "/graphic-device/dot-use-examples/splash-screen-long-version.mp4",
+    "/graphic-device/dot-use-examples/splash-screen-long-version.webm"
+] } %}
 
 </div>
 <div>

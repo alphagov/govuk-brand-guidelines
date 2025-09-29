@@ -195,7 +195,10 @@ Both logo elements have a standalone animation that can be used to add dynamism 
 
 ### Wordmark
 
-{% video { source: "./wordmark-motion.mp4" } %}
+{% video { source: [
+    "./wordmark-motion.mp4",
+    "./wordmark-motion.webm"
+] } %}
 
 </div>
 <div>
