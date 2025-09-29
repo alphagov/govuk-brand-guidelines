@@ -1,6 +1,5 @@
 .app-border {
-  --app-border-colour: #{$app-blue-shade-25};
-  border: 1px solid var(--app-border-colour);
+  border: 1px solid $app-blue-shade-25;
 }
 
 .app-border--top {
@@ -11,5 +10,5 @@
 }
 
 .app-border--video {
-  --app-border-colour: #{$govuk-border-colour};
+  border-color: $govuk-border-colour;
 }
