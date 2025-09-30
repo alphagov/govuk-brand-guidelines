@@ -51,6 +51,19 @@
 
 {% set mainClasses = [mainClasses, 'app-main-wrapper app-prose'] | select('truthy') | join(' ') %}
 
+{% block footer %}
+  {{ govukFooter({
+    "meta": {
+      "items": [
+        {
+          "href": "/accessibility-statement/",
+          "text": "Accessibility statement"
+        }
+      ]
+    }
+  }) }}
+{% endblock %}
+
 {% block bodyEnd %}
 <script type="module" src="{{ '/assets/app.js' | url }}"></script>
 {% endblock %}
