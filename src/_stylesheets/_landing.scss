@@ -90,6 +90,8 @@
   @extend %app-landing-hero-bleed;
   min-height: govuk-em(410px, 16px);
   padding: 0 govuk-spacing(3) govuk-spacing(6);
+  // fallback for older browsers or users who disable images
+  background-color: var(--app-landing-hero-dark-colour);
   // Image plus a fake gradient to create a flat 2-colour effect
   background-image:
     var(--app-landing-hero-graphic),
