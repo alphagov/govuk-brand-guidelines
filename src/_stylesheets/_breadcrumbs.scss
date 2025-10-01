@@ -17,6 +17,7 @@
   background-color: var(--app-landing-hero-dark-colour);
 
   @include govuk-media-query($from: tablet) {
+    padding: govuk-spacing(6) govuk-spacing(6) 0;
     background-image: linear-gradient(
       to right,
       transparent $app-landing-container-width,
