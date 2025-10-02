@@ -221,7 +221,7 @@ To maintain consistency across channels the logo elements should never be change
 
 <div class="app-border app-border--top">
 
-Do not alter colour balance within the wordmark
+Do not alter colour balance within the wordmark.
 
 </div>
 <div>
@@ -231,7 +231,7 @@ Do not alter colour balance within the wordmark
 </div>
 <div class="app-border app-border--top">
 
-Do not distort, stretch or skew the wordmark
+Do not distort, stretch or skew the wordmark.
 
 </div>
 <div>
@@ -241,7 +241,7 @@ Do not distort, stretch or skew the wordmark
 </div>
 <div class="app-border app-border--top">
 
-Do not apply drop shadows or effects to the wordmark
+Do not apply drop shadows or effects to the wordmark.
 
 </div>
 <div>
@@ -251,7 +251,7 @@ Do not apply drop shadows or effects to the wordmark
 </div>
 <div class="app-border app-border--top">
 
-Do not use the wordmark on overly busy or low-contrast backgrounds
+Do not use the wordmark on overly busy or low-contrast backgrounds.
 
 </div>
 <div>
@@ -261,7 +261,7 @@ Do not use the wordmark on overly busy or low-contrast backgrounds
 </div>
 <div class="app-border app-border--top">
 
-Do not flip, mirror, or rotate the wordmark
+Do not flip, mirror, or rotate the wordmark.
 
 </div>
 <div>

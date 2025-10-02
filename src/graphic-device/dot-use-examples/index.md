@@ -239,7 +239,7 @@ To keep things consistent, avoid the following:
 
 ### Overuse
 
-Do not overuse the dot
+Do not overuse the dot.
 
 </div>
 <div>
@@ -251,7 +251,7 @@ Do not overuse the dot
 
 ### Decorative elements
 
-Do not use the dot in a decorative way
+Do not use the dot in a decorative way.
 
 </div>
 <div>
@@ -263,7 +263,7 @@ Do not use the dot in a decorative way
 
 ### Distortions
 
-Do not distort or skew the dot
+Do not distort or skew the dot.
 
 </div>
 <div>
@@ -275,7 +275,7 @@ Do not distort or skew the dot
 
 ### Stroke
 
-Do not use stroke versions of the dot
+Do not use stroke versions of the dot.
 
 </div>
 <div>
@@ -287,7 +287,7 @@ Do not use stroke versions of the dot
 
 ### Crops
 
-Do not use abstract crops of the dot
+Do not use abstract crops of the dot.
 
 </div>
 <div>
@@ -299,7 +299,7 @@ Do not use abstract crops of the dot
 
 ### Filters and effects
 
-Do not apply shadows or gradients
+Do not apply shadows or gradients.
 
 </div>
 <div>
