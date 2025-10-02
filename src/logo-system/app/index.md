@@ -9,8 +9,11 @@ In GOV.UK apps we follow the primary logo system, using the wordmark as the main
 
 An example of this is the GOV.UK app icon.
 
+<!-- The &shy; is intentionally between 'Word' and 'mark' because
+     otherwise the column gets too wide and therefore uneven in mobile view -->
+
 {% grid { columns: 3 } %}
-{% gridCell {verticalAlign: 'end'} %} ### Wordmark
+{% gridCell {verticalAlign: 'end'} %} ### Word&shy;mark
 
     ![Wordmark for GOV.UK in white. The dot between 'GOV' and 'UK' is Accent teal and vertically-centred. Shown on a Primary blue background.](./wordmark-on-blue.svg)
 
