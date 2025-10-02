@@ -85,7 +85,7 @@ To maintain consistency across channels the colours within our palette should ne
 
 <div class="app-border app-border--top">
 
-Do not use colour combinations that do not meet [WCAG2.2 guidelines](https://www.w3.org/TR/WCAG22/#contrast-minimum)
+Do not use colour combinations that do not meet [WCAG2.2 guidelines](https://www.w3.org/TR/WCAG22/#contrast-minimum).
 
 </div>
 <div>
@@ -96,7 +96,7 @@ Do not use colour combinations that do not meet [WCAG2.2 guidelines](https://www
 
 <div class="app-border app-border--top">
 
-Do not create new colours
+Do not create new colours.
 
 </div>
 <div>
@@ -107,7 +107,7 @@ Do not create new colours
 
 <div class="app-border app-border--top">
 
-Do not use too many colours within an application
+Do not use too many colours within an application.
 
 </div>
 <div>
@@ -118,7 +118,7 @@ Do not use too many colours within an application
 
 <div class="app-border app-border--top">
 
-Do not mix colours to create gradients (single colour gradients are permitted for use over imagery)
+Do not mix colours to create gradients (single colour gradients are permitted for use over imagery).
 
 </div>
 <div>
