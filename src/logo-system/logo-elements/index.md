@@ -122,17 +122,17 @@ If it’s too small, it can lose detail and be harder for some users to read or 
 
     {% gridCell %}
 
-    ![The wordmark for "GOV.UK" with an arrow indicating its minimum width.](./wordmark-min-width.svg)
+    ![](./wordmark-min-width.svg)
 
-    Minimum size:</br>
+    Wordmark minimum width:</br>
     <strong class="govuk-!-font-size-24">50px</strong>
 
     {% endgridCell %}
     {% gridCell %}
 
-    ![The crown element of the GOV.UK logo with an arrow indicating its minimum width when it's on its own.](./crown-min-width.svg)
+    ![](./crown-min-width.svg)
 
-    Minimum size:</br>
+    Crown minimum width:</br>
     <strong class="govuk-!-font-size-24">16px</strong>
 
     {% endgridCell %}
