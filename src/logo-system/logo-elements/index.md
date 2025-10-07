@@ -122,21 +122,24 @@ If it’s too small, it can lose detail and be harder for some users to read or 
 
     {% gridCell %}
 
-    ![The wordmark for "GOV.UK" with an arrow indicating its minimum width.](./wordmark-min-width.svg)
-    Minimum size:</br>
+    ![](./wordmark-min-width.svg)
+
+    Wordmark minimum width:</br>
     <strong class="govuk-!-font-size-24">50px</strong>
 
     {% endgridCell %}
     {% gridCell %}
 
-    ![The crown element of the GOV.UK logo with an arrow indicating its minimum width when it's on its own.](./crown-min-width.svg)
-    Minimum size:</br>
+    ![](./crown-min-width.svg)
+
+    Crown minimum width:</br>
     <strong class="govuk-!-font-size-24">16px</strong>
 
     {% endgridCell %}
     {% gridCell { classes: 'govuk-!-margin-bottom-6'} %}
 
     ![Smaller version of the crown, with adjustments such as fewer dots, and an arrow indicating its minimum width.](./crown-favicon.svg)
+
     Use the small crown version for anything below the crown’s minimum size, such as web favicons.
 
     {% endgridCell %}
@@ -221,7 +224,7 @@ To maintain consistency across channels the logo elements should never be change
 
 <div class="app-border app-border--top">
 
-Do not alter colour balance within the wordmark
+Do not alter colour balance within the wordmark.
 
 </div>
 <div>
@@ -231,7 +234,7 @@ Do not alter colour balance within the wordmark
 </div>
 <div class="app-border app-border--top">
 
-Do not distort, stretch or skew the wordmark
+Do not distort, stretch or skew the wordmark.
 
 </div>
 <div>
@@ -241,7 +244,7 @@ Do not distort, stretch or skew the wordmark
 </div>
 <div class="app-border app-border--top">
 
-Do not apply drop shadows or effects to the wordmark
+Do not apply drop shadows or effects to the wordmark.
 
 </div>
 <div>
@@ -251,7 +254,7 @@ Do not apply drop shadows or effects to the wordmark
 </div>
 <div class="app-border app-border--top">
 
-Do not use the wordmark on overly busy or low-contrast backgrounds
+Do not use the wordmark on overly busy or low-contrast backgrounds.
 
 </div>
 <div>
@@ -261,7 +264,7 @@ Do not use the wordmark on overly busy or low-contrast backgrounds
 </div>
 <div class="app-border app-border--top">
 
-Do not flip, mirror, or rotate the wordmark
+Do not flip, mirror, or rotate the wordmark.
 
 </div>
 <div>
