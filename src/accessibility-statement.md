@@ -66,8 +66,10 @@ The content listed below is non-accessible for the following reasons.
 
 ## Preparation of this accessibility statement
 
-This statement was prepared on 7 October 2025.<!--
-TODO: Add the following sentence after a review.
+This statement was prepared on 7 October 2025.
+
+<!--
+TODO: Add the following sentence after a review to the line above.
 
 It was last reviewed on \[date when it was last reviewed\].
 -->
