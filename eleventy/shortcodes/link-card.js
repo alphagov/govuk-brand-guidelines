@@ -14,10 +14,6 @@ export const linkCard = blockShortcode((options = {}) => {
       `<img class="app-link-card__icon" alt="" src="${options.icon}">`
   ].filter(Boolean)
 
-  const attributes = {
-    class: ['app-link-card', options.classes].filter(Boolean).join(' ')
-  }
-
   return `<div class="app-link-card${options.classes ? ` ${options.classes}` : ''}">
     ${parts.join('')}
   </div>`
