@@ -29,6 +29,10 @@
   }
 }
 
+.app-link-card__title {
+  margin: 0;
+}
+
 .app-link-card__description {
   grid-area: description;
   color: $govuk-text-colour;

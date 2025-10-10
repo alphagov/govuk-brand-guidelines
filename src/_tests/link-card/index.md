@@ -25,3 +25,12 @@ title: Link cards
 {% testExample %}
 {% linkCard {title: 'Typography', description: 'Which typeface and font to use, and how to use them', icon: './typography.svg' } %}
 {% endtestExample %}
+
+
+## Title with custom element type
+
+Use `titleContainer` to change which element is used to surround the title.
+
+{% testExample %}
+{% linkCard {titleContainer: 'h3', title: 'Typography', description: 'Which typeface and font to use, and how to use them', icon: './typography.svg' } %}
+{% endtestExample %}
