@@ -40,7 +40,7 @@
     "html-validate": "^9.7.1",
     "husky": "^9.1.7",
     "linkinator": "^6.1.4",
-    "lint-staged": "^16.1.2",
+    "lint-staged": "^16.2.3",
     "markdown-it": "^14.1.0",
     "markdown-it-anchor": "^9.2.0",
     "markdown-it-govuk": "^0.6.0",
