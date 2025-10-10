@@ -6,11 +6,19 @@
 
 {% block head %}
   {{ super() }}
+
   {#- Prevent search engine indexing for archive, preview and development builds -#}
   {% if site.env.CONTEXT !== "production" or metadata.noRobots %}
     <meta name="robots" content="noindex, nofollow">
   {% endif %}
+
+  {#- Prevent operating systems interpreting RGB values as phone numbers -#}
+  <meta name="format-detection" content="telephone=no">
+
+  {#- Import brand guidelines stylesheet -#}
   <link rel="stylesheet" href="{{ '/assets/stylesheet.css' | url }}">
+
+  {#- Bundled per-page CSS -#}
   {% getBundle "css" %}
 {% endblock %}
 
