@@ -145,9 +145,11 @@ function getAncestors(page) {
  * @returns
  */
 function buildPageTitle(page) {
+  // Reverse a copy of page.data.ancestors rather than changing it directly,
+  // as reverse manipulates arrays in-place
+  const ancestors = [...page.data.ancestors].reverse()
+
   return [page.data.title]
-    .concat(
-      page.data.ancestors.reverse().map((ancestor) => ancestor.data.title)
-    )
+    .concat(ancestors.map((ancestor) => ancestor.data.title))
     .join(' - ')
 }
