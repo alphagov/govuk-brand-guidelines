@@ -16,7 +16,7 @@ mainClasses: 'app-homepage'
 
 We’ve refreshed the GOV.UK brand to meet the needs and changing expectations of users across different channels and contexts.
 
-{{ govukButton({ href: ("/introduction/" | url), text: "Find out more", isStartButton: true, classes: "govuk-button--inverse govuk-!-margin-top-5" }) }}
+{{ govukButton({ href: ("/introduction/" | url), text: "Why the brand's evolved", isStartButton: true, classes: "govuk-button--inverse govuk-!-margin-top-5" }) }}
 
 {% endgridCell %}
 {% endgrid %}
