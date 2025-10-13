@@ -1,0 +1,31 @@
+---
+title: Sitemap
+excludeFromNavigation: true
+---
+
+{%- macro _nestedSitemapList(collection, level = 1) %}
+  {#- Don't output anything if the collection is empty #}
+  {%- if collection | length %}
+    {#- If a top-level section, output a h2 for it #}
+    {%- if level == 1 %}
+      {%- for page in collection %}
+        <h2 class="govuk-heading-l">
+          <a class="govuk-link" href="{{ page.url }}">{{ page.data.title }}</a>
+        </h2>
+        {{ _nestedSitemapList(page.data.children, level + 1) }}
+      {%- endfor %}
+    {#- If not top level, output as a list #}
+    {%- else %}
+      <ul class="govuk-list">
+        {%- for page in collection %}
+          <li>
+            <a class="govuk-link" href="{{ page.url }}">{{ page.data.title }}</a>
+            {{ _nestedSitemapList(page.data.children, level + 1) }}
+          </li>
+        {%- endfor %}
+      </ul>
+    {%- endif %}
+  {%- endif %}
+{%- endmacro %}
+
+{{ _nestedSitemapList(collections.serviceNavigationPages) }}
