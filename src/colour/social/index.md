@@ -101,6 +101,8 @@ Indicative examples for illustrative purposes only.
   { label: "Accent purple", hex: "#BA4AFF", group: "example3" }
 ] %}
 
+#### Green tones
+
 {% grid { columns: { mobile: 2, desktop: 2 } } %}
 
 <div>
@@ -120,6 +122,8 @@ Indicative examples for illustrative purposes only.
 
 {% endgrid %}
 
+#### Red tones
+
 {% grid { columns: { mobile: 2, desktop: 2 } } %}
 
 <div>
@@ -137,6 +141,8 @@ Indicative examples for illustrative purposes only.
 
 </div>
 {% endgrid %}
+
+#### Purple tones
 
 {% grid { columns: { mobile: 2, desktop: 2 } } %}
 
@@ -156,7 +162,7 @@ Indicative examples for illustrative purposes only.
 </div>
 {% endgrid %}
 
-## Companion colour set
+### Companion colour set
 
 Use companion colours when you need to emphasise something, like prompting action or sharing something positive. We’ve kept the set to 9 combinations to make sure they stay accessible.
 
@@ -189,6 +195,8 @@ Remember, some users browse with high-contrast settings or dark mode. Colours ma
   { label: "Primary yellow", hex: "#FFDD00", group: "set9" }
 ] %}
 
+#### Primary blue on Primary yellow
+
 {% grid { columns: { mobile: 2, desktop: 2 } } %}
 
 <div>
@@ -206,6 +214,8 @@ Remember, some users browse with high-contrast settings or dark mode. Colours ma
 
 </div>
 {% endgrid %}
+
+#### Primary red on Magenta tint 95%
 
 {% grid { columns: { mobile: 2, desktop: 2 } } %}
 
@@ -225,6 +235,8 @@ Remember, some users browse with high-contrast settings or dark mode. Colours ma
 </div>
 {% endgrid %}
 
+#### Primary magenta on Blue tint 95%
+
 {% grid { columns: { mobile: 2, desktop: 2 } } %}
 
 <div>
@@ -242,6 +254,8 @@ Remember, some users browse with high-contrast settings or dark mode. Colours ma
 
 </div>
 {% endgrid %}
+
+#### Purple shade 50% on Primary yellow
 
 {% grid { columns: { mobile: 2, desktop: 2 } } %}
 
@@ -261,6 +275,8 @@ Remember, some users browse with high-contrast settings or dark mode. Colours ma
 </div>
 {% endgrid %}
 
+#### Purple shade 25% on Accent blue
+
 {% grid { columns: { mobile: 2, desktop: 2 } } %}
 
 <div>
@@ -278,6 +294,8 @@ Remember, some users browse with high-contrast settings or dark mode. Colours ma
 
 </div>
 {% endgrid %}
+
+#### Blue shade 50% on Accent green
 
 {% grid { columns: { mobile: 2, desktop: 2 } } %}
 
@@ -297,6 +315,8 @@ Remember, some users browse with high-contrast settings or dark mode. Colours ma
 </div>
 {% endgrid %}
 
+#### Accent blue on Green shade 50%
+
 {% grid { columns: { mobile: 2, desktop: 2 } } %}
 
 <div>
@@ -315,6 +335,8 @@ Remember, some users browse with high-contrast settings or dark mode. Colours ma
 </div>
 {% endgrid %}
 
+#### Accent blue on Primary blue
+
 {% grid { columns: { mobile: 2, desktop: 2 } } %}
 
 <div>
@@ -332,6 +354,8 @@ Remember, some users browse with high-contrast settings or dark mode. Colours ma
 
 </div>
 {% endgrid %}
+
+#### Primary yellow on Red shade 50%
 
 {% grid { columns: { mobile: 2, desktop: 2 } } %}
 
@@ -371,6 +395,8 @@ Indicative examples for illustrative purposes only.
   { label: "Blue shade 50%", hex: "#0F385C", group: "example3" }
 ] %}
 
+#### Primary yellow on Primary blue
+
 {% grid { columns: { mobile: 2, desktop: 2 } } %}
 
 <div>
@@ -389,6 +415,8 @@ Indicative examples for illustrative purposes only.
 </div>
 {% endgrid %}
 
+#### Primary magenta and Primary magenta on Magenta tint 95%
+
 {% grid { columns: { mobile: 2, desktop: 2 } } %}
 
 <div>
@@ -406,6 +434,8 @@ Indicative examples for illustrative purposes only.
 
 </div>
 {% endgrid %}
+
+#### Blue shade 50% on Accent green
 
 {% grid { columns: { mobile: 2, desktop: 2 } } %}
 
