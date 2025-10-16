@@ -19,7 +19,7 @@ excludeFromNavigation: true
     If the page has children we'll need to render a heading so the page has a good hierarchy.
     For consistency of the top level items, we'll make them all headings
   #}
-  {% set renderHeading = page.data.children | length or page.data.ancestors.length == 1 %}
+  {% set renderHeading = (page.data.children | length) or (page.data.ancestors.length == 1) %}
 
   {# Render the link to the page #}
   {% if renderHeading%}
@@ -40,6 +40,9 @@ excludeFromNavigation: true
       </li>
     {% endfor %}
     </ul>
+  {% elif renderHeading %}
+    {# Avoid headings following each other without children #}
+    <p class="govuk-body">No other pages in this section</p>
   {% endif %}
 {% endmacro %}
 
