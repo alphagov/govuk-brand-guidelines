@@ -127,7 +127,7 @@ Indicative examples for illustrative purposes only.
 
 </div>
 
-![](./type-settings-do.svg)
+![](./type-settings-do.png)
 
 <div class="app-border app-border--top">
 
@@ -136,7 +136,7 @@ Indicative examples for illustrative purposes only.
 </div>
 <div>
 
-![](./type-settings-dont-1.svg) ![](./type-settings-dont-2.svg)
+![](./type-settings-dont-1.png) ![](./type-settings-dont-2.png)
 
 </div>
 
