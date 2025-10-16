@@ -2,6 +2,7 @@
 title: Sitemap
 excludeFromNavigation: true
 ---
+{# Associate heading levels to a corresponding heading class in GOV.UK Frontend #}
 {% set headingLevelClasses = {
   '2': 'govuk-heading-l',
   '3': 'govuk-heading-m',
@@ -10,10 +11,12 @@ excludeFromNavigation: true
   '6': 'govuk-body'
 } %}
 
+{# Render a link to a specific page with the appropriate title #}
 {%- macro _sitemapLink(page) %}
   <a class="govuk-link" href="{{ page.url }}">{{ page.data.sitemapTitle or page.data.title }}</a>
 {% endmacro %}
 
+{# Renders a page and its potential children on the sitemap #}
 {% macro _sitemapItem(page) %}
   {#
     If the page has children we'll need to render a heading so the page has a good hierarchy.
