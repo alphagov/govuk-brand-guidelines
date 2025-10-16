@@ -1,6 +1,6 @@
 ---
 order: 3
-title: Social
+title: Social colour
 ---
 
 ## Social palette

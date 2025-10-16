@@ -1,6 +1,7 @@
 ---
 order: 2
 title: Social
+sitemapTitle: Social typography
 ---
 
 ## GDS Transport and social media

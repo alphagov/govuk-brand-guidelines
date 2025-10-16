@@ -1,6 +1,7 @@
 ---
 order: 3
 title: Print
+sitemapTitle: Print typography
 ---
 
 ## Document element sizes

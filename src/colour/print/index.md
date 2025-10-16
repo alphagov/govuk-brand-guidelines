@@ -1,6 +1,7 @@
 ---
 order: 4
 title: Print
+sitemapTitle: Print colour
 ---
 
 ## Print palette

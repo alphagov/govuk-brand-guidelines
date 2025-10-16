@@ -3,6 +3,10 @@ title: Sitemap
 excludeFromNavigation: true
 ---
 
+{%- macro _sitemapLink(page) %}
+  <a class="govuk-link" href="{{ page.url }}">{{ page.data.sitemapTitle or page.data.title }}</a>
+{% endmacro %}
+
 {%- macro _nestedSitemapList(collection, level = 1) %}
   {#- Don't output anything if the collection is empty #}
   {%- if collection | length %}
@@ -10,7 +14,7 @@ excludeFromNavigation: true
     {%- if level == 1 %}
       {%- for page in collection %}
         <h2 class="govuk-heading-l">
-          <a class="govuk-link" href="{{ page.url }}">{{ page.data.title }}</a>
+          {{ _sitemapLink(page) }}
         </h2>
         {{ _nestedSitemapList(page.data.children, level + 1) }}
       {%- endfor %}
@@ -19,7 +23,7 @@ excludeFromNavigation: true
       <ul class="govuk-list">
         {%- for page in collection %}
           <li>
-            <a class="govuk-link" href="{{ page.url }}">{{ page.data.title }}</a>
+            {{ _sitemapLink(page) }}
             {{ _nestedSitemapList(page.data.children, level + 1) }}
           </li>
         {%- endfor %}

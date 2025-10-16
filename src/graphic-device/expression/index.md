@@ -1,6 +1,6 @@
 ---
 order: 0
-title: Expression
+title: Brand expression
 ---
 
 ## The dot is a guide and companion

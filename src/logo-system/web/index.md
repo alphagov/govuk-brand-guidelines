@@ -1,6 +1,7 @@
 ---
 order: 2
 title: Web
+sitemapTitle: Web logo
 ---
 
 ## Web use lock-up

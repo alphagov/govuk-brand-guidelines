@@ -1,6 +1,7 @@
 ---
 order: 1
 title: Web
+sitemapTitle: Web colour
 ---
 
 ## Web palette

@@ -1,6 +1,7 @@
 ---
 order: 1
 title: App
+sitemapTitle: App typography
 ---
 
 ## GDS Transport within app
