@@ -31,46 +31,31 @@ Consistent use of type styles aids clarity and hierarchy.
 
 Headings should be attention-grabbing, whilst body text should prioritize readability with appropriate line spacing and contrast.
 
-{% grid { columns: { mobile: 2, desktop: 2 } } %}
-
-{% gridCell {classes: "app-border app-border--top"} %}
-
 ### Headline styles
 
 Headlines should be bold or light over a maximum of 5 lines. Any content over 5 lines should be formatted as a body style.
 
+{% grid { columns: { mobile: 2, desktop: 2 } } %}
+
+{% gridCell %}
+
+![](./headline-styles.svg)
+
 {% endgridCell %}
 {% gridCell %}
 
-![](./headline-styles.svg) ![](./headline-styles-light.svg)
+![](./headline-styles-light.svg)
 
 {% endgridCell %}
 {% endgrid %}
-
-{% grid { columns: { mobile: 1, desktop: 2 }, classes: "app-border app-border--top" } %}
-
-{% gridCell %}
 
 ### Body copy styles
 
 Body copy styles should always be set in Light and should be used for all longer form content.
 
-{% endgridCell %}
-{% gridCell %}
-{% endgridCell %}
-{% endgrid %}
-
-{% grid { columns: { mobile: 1, desktop: 2 }, classes: "app-border app-border--top" } %}
-{% gridCell %}
-
 ### Tags styles
 
 Tags should be set in Bold, but to aid hierarchy should be a smaller type size than body copy.
-
-{% endgridCell %}
-{% gridCell %}
-{% endgridCell %}
-{% endgrid %}
 
 ## Alignment
 
