@@ -30,20 +30,23 @@
   background-color: govuk-colour('light-grey');
 }
 
-// Dark magenta section highlight likely to be deleted as it's just framing an
-// image, and the image should have it's own background
-.app-section-highlight--dark-magenta {
-  background-color: $app-magenta-shade-50;
-}
-
-.app-section-highlight__wrapper--logo {
-  padding: govuk-spacing(6);
+// Modifier for instances where we want to show one of our logos 'in situ' against
+// the brand blue background
+.app-section-highlight--logo {
+  @include govuk-responsive-margin(6, $direction: 'top');
+  @include govuk-responsive-margin(6, $direction: 'bottom');
   text-align: center;
 
   img {
     width: 366px;
     max-width: 100%;
   }
+}
+
+// Dark magenta section highlight likely to be deleted as it's just framing an
+// image, and the image should have it's own background
+.app-section-highlight--dark-magenta {
+  background-color: $app-magenta-shade-50;
 }
 
 .app-section-highlight__wrapper--space-around {
