@@ -75,7 +75,7 @@
     as a fallback for mobile navigation if JavaScript does not load #}
   {% if isSidebarNavigationRoot and hasSidebarNavigation %}
     <nav class="app-chapter-navigation--mobile-fallback" aria-labelledby="chapter-navigation">
-      <h2 class="govuk-heading-l" id="chapter-navigation">Pages in {{title}}</h2>
+      <h2 class="govuk-heading-l" id="chapter-navigation">In this section</h2>
       {% from "link-list.njk" import appLinkList %}
       {{ appLinkList({
         pages: sidebarNavigationRoot.data.children,
