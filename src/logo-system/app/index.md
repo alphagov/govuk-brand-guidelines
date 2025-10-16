@@ -46,6 +46,14 @@ Indicative examples for illustrative purposes only.
 
 <div>
 
+### Crown watermark
+
+![Screenshot of the GOV.UK app, showing the GOV.UK wordmark centred in the top header and the crown watermark centred at the end of a page.](./app-watermark-example.png)
+
+</div>
+
+<div>
+
 ### App splash screen
 
 {% video { source: [
@@ -55,15 +63,13 @@ Indicative examples for illustrative purposes only.
 
 </div>
 
-<div>
-
-### Crown watermark
-
-![Screenshot of the GOV.UK app, showing the GOV.UK wordmark centred in the top header and the crown watermark centred at the end of a page.](./app-watermark-example.png)
-
-</div>
-
 {% endgrid %}
+
+#### Video description of app splash screen
+
+No audio. The dot leads a trail of other dots of various colours in a spiral towards the centre of a mobile screen, where it becomes the dot within the GOV.UK logo as it fades and pushes in.
+
+At the bottom of the screen, the crown logo element is revealed by a circular iris effect at the bottom of the screen as the dots in the crown rise and fan out.
 
 ## App icon
 
