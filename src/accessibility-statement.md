@@ -16,10 +16,15 @@ AbilityNet has advice on [making your device easier to use](https://mcmw.ability
 
 ## How accessible this website is
 
+We're not aware of any accessibility issues on this website.
+
+<!-- If there are any issues, use the following text instead.
+
 We know some parts of this website are not fully accessible:
 
-- some videos do not have a description and do not say they have no audio
-- sets of colours are missing clear groupings
+- [add issues]
+
+-->
 
 ## Feedback and contact information
 
@@ -37,14 +42,11 @@ GDS is committed to making its website accessible, in accordance with the Public
 
 The website has been tested against the Web Content Accessibility Guidelines (WCAG) 2.2 AA standard.
 
-This website is partially compliant with the [Web Content Accessibility Guidelines version 2.2](https://www.w3.org/TR/WCAG22/) AA standard, due to the non-compliances listed below.
-
-<!--
-TODO: If all issues have been fixed, use the following sentence instead.
-      And remove the whole 'Non-accessible content' section.
-
 This website is fully compliant with the [Web Content Accessibility Guidelines version 2.2](https://www.w3.org/TR/WCAG22/) AA standard.
--->
+
+<!-- If there are any issues, use the following text instead.
+
+This website is partially compliant with the [Web Content Accessibility Guidelines version 2.2](https://www.w3.org/TR/WCAG22/) AA standard, due to the non-compliances listed below.
 
 ## Non-accessible content
 
@@ -52,27 +54,13 @@ The content listed below is non-accessible for the following reasons.
 
 ## Non-compliance with the accessibility regulations
 
-1. Some videos do not mention that they have no audio. This makes them inaccessible to users with hearing impairments. This fails WCAG 2.2 success criterion 1.1.1 Non-text Content.
+1. [add issues]
 
-2. Some videos do not have a description. This makes them inaccessible to users with vision impairments. This fails WCAG 2.2 success criterion 1.2.1 Audio-only and Video-only (Prerecorded).
-
-3. Some content appears to be a heading when it's not one. This makes it difficult for screen reader users to navigate the page. This fails WCAG 2.2 success criterion 1.3.1 Info and Relationships.
-
-4. Sets of colours are missing semantic groupings. This makes it difficult for scren reader users to understand how they are grouped. This fails WCAG 2.2 success criterion 1.3.1 Info and Relationships.
-
-5. Some link texts are not descriptive. This fails WCAG 2.2 success criterion 2.4.4 Link Purpose (In Context).
-
-6. Some pages cannot be found through more than one type of navigation. This fails WCAG 2.2 success criterion 2.4.5 Multiple Ways.
+-->
 
 ## Preparation of this accessibility statement
 
-This statement was prepared on 7 October 2025.
-
-<!--
-TODO: Add the following sentence after a review to the line above.
-
-It was last reviewed on \[date when it was last reviewed\].
--->
+This statement was prepared on 7 October 2025. It was last reviewed on 17 October 2025.
 
 This website was last tested on 30 September 2025 against the WCAG 2.2 AA standard.
 
