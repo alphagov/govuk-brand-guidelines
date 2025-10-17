@@ -47,16 +47,6 @@ Indicative examples for illustrative purposes only.
 
 <div>
 
-### App splash screen
-
-{% video { source: [
-    "/graphic-device/dot-use-examples/splash-screen-long-version.mp4",
-    "/graphic-device/dot-use-examples/splash-screen-long-version.webm"
-] } %}
-
-</div>
-<div>
-
 ### App header
 
 ![Screenshot of GOV.UK app, showing the Primary blue app header with the wordmark in white and the dot in Accent teal.](./app-header.png)
@@ -69,7 +59,25 @@ Indicative examples for illustrative purposes only.
 ![Screenshot of YouTube profile on mobile, showing Primary blue and Accent teal used in the banner image.](./youtube-example.png)
 
 </div>
+
+<div>
+
+### App splash screen
+
+{% video { source: [
+    "/graphic-device/dot-use-examples/splash-screen-long-version.mp4",
+    "/graphic-device/dot-use-examples/splash-screen-long-version.webm"
+] } %}
+
+</div>
+
 {% endgrid %}
+
+#### Video description of app splash screen
+
+No audio. The dot leads a trail of other dots of various colours in a spiral towards the centre of a mobile screen, where it becomes the dot within the GOV.UK logo as it fades and pushes in.
+
+At the bottom of the screen, the crown logo element is revealed by a circular iris effect at the bottom of the screen as the dots in the crown rise and fan out.
 
 ## Colour accessibility
 

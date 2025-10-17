@@ -194,7 +194,7 @@ Both logo elements have a standalone animation that can be used to add dynamism 
 
 {% grid { columns: { mobile: 1, desktop: 2 } } %}
 
-<div>
+    {% gridCell %}
 
 ### Wordmark
 
@@ -203,8 +203,11 @@ Both logo elements have a standalone animation that can be used to add dynamism 
     "./wordmark-motion.webm"
 ] } %}
 
-</div>
-<div>
+No audio. The dot fades in first. Then, GOV and UK fades and pushes in slightly from the left and right, forming the GOV.UK wordmark.
+
+    {% endgridCell %}
+
+    {% gridCell %}
 
 ### Crown
 
@@ -213,7 +216,10 @@ Both logo elements have a standalone animation that can be used to add dynamism 
     "./crown-motion.webm"
 ] } %}
 
-</div>
+No audio. The crown logo element is revealed by a circular iris effect at the bottom of the screen as the dots in the crown rise and fan out.
+
+    {% endgridCell %}
+
 {% endgrid %}
 
 ## Incorrect usage

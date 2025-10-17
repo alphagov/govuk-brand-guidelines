@@ -67,6 +67,8 @@ Indicative examples for illustrative purposes only.
 
 Social end frames can be used at the end of animated or filmed content. They incorporate both the wordmark and crown and act as a branded sign-off.
 
+No audio. In this series of videos, the dot leads a trail of other dots of various colours in a spiral towards the centre of a widescreen, where it becomes the dot within the GOV.UK logo as it fades and pushes in. The crown logo element is revealed by a circular iris effect at the bottom of the screen as the dots in the crown rise and fan out.
+
 ### Video end frame 16:9
 
 {% video { source: [

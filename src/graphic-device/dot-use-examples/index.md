@@ -10,8 +10,8 @@ The app splash screen utilises the dot in motion to represent GOV.UK bringing to
 {% grid { columns: { desktop: 2 } } %}
 
 <div>
-    
- ### Long splash screen
+
+### Long splash screen
 
 {% video { source: [
     "./splash-screen-long-version.mp4",
@@ -31,9 +31,11 @@ The app splash screen utilises the dot in motion to represent GOV.UK bringing to
 </div>
 {% endgrid %}
 
-### Video description
+### Video description of long and short splash screens
 
 No audio. The dot leads a trail of other dots of various colours in a spiral towards the centre of a mobile screen, where it becomes the dot within the GOV.UK logo as it fades and pushes in. The crown logo is revealed by a circular iris effect at the bottom of the screen.
+
+In the long version, the trail of dots moves in a wider spiral.
 
 ## Illustration
 
@@ -192,17 +194,17 @@ Indicative examples for illustrative purposes only.
 
 ![Instagram post with image saying "Today is the Summer bank holiday" alongside a graphic of the sun, made up of a yellow circle with yellow half circles as sun rays.](./static-dot-1.png)
 
-</div> 
+</div>
 <div>
 
 ![Instagram post with image saying "Register to vote" inside a green circle.](./static-dot-2.png)
 
-</div> 
+</div>
 <div>
 
 ![Instagram post with image saying "Get help with your pension" alongside a graphic of a circular-shaped piggy bank.](./static-dot-3.png)
 
-</div> 
+</div>
 <div>
 
 ![Instagram post with image saying "Here's how I got my driving licence" with various circular and rounded-corner graphics. "Driving license" is in a lozenge-shaped highlight.](./static-dot-4.png)
