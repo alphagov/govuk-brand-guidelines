@@ -1,6 +1,7 @@
 ---
 order: 3
-title: Social colour
+title: Social
+sitemapTitle: Social colour
 ---
 
 ## Social palette
