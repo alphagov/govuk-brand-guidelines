@@ -1,0 +1,61 @@
+---
+title: Sitemap
+excludeFromNavigation: true
+---
+{# Associate heading levels to a corresponding heading class in GOV.UK Frontend #}
+{% set headingLevelClasses = {
+  '2': 'govuk-heading-l',
+  '3': 'govuk-heading-m',
+  '4': 'govuk-heading-s',
+  '5': 'govuk-body',
+  '6': 'govuk-body'
+} %}
+
+{# Render a link to a specific page with the appropriate title #}
+{%- macro _sitemapLink(page) %}
+  <a class="govuk-link" href="{{ page.url }}">{{ page.data.sitemapTitle or page.data.title }}</a>
+{% endmacro %}
+
+{# Renders a page and its potential children on the sitemap #}
+{% macro _sitemapItem(page) %}
+  {#
+    If the page has children we'll need to render a heading so the page has a good hierarchy.
+    For consistency of the top level items, we'll make them all headings
+  #}
+  {% set renderHeading = (page.data.children | length) or (page.data.ancestors.length == 1) %}
+
+  {# Render the link to the page #}
+  {% if renderHeading%}
+    {% set headingLevel = page.data.ancestors.length + 1 %}
+    <h{{headingLevel}} class={{headingLevelClasses[headingLevel]}}>
+      {{_sitemapLink(page)}}
+    </h{{headingLevel}}>
+  {% else %}
+    {{_sitemapLink(page)}}
+  {% endif %}
+
+  {# Then any childern if they exist #}
+  {% if page.data.children | length %}
+    <ul class="govuk-list">
+    {% for child in page.data.children %}
+      <li>
+        {{_sitemapItem(child)}}
+      </li>
+    {% endfor %}
+    </ul>
+  {% elif renderHeading %}
+    {# Avoid headings following each other without children #}
+    <p class="govuk-body">No other pages in this section</p>
+  {% endif %}
+{% endmacro %}
+
+{% for page in collections.serviceNavigationPages %}
+  {{ _sitemapItem(page) }}
+{% endfor %}
+
+<h2 class="govuk-heading-l">About this website</h2>
+<ul class="govuk-list">
+  <li>
+    <a href="/accessibility-statement/" class="govuk-link">Accessibility statement</a>
+  </li>
+</ul>

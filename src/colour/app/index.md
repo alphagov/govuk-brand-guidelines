@@ -1,6 +1,7 @@
 ---
 order: 2
 title: App
+sitemapTitle: App colour
 ---
 
 ## App palette

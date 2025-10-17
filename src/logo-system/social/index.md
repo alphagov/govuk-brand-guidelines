@@ -1,6 +1,7 @@
 ---
 order: 4
 title: Social
+sitemapTitle: Social logo
 ---
 
 ## Social logo system

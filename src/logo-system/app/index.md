@@ -1,6 +1,7 @@
 ---
 order: 3
 title: App
+sitemapTitle: App logo
 ---
 
 ## App logo system

@@ -1,6 +1,7 @@
 ---
 order: 0
 title: Web
+sitemapTitle: Web typography
 ---
 
 ## Design System guidelines
