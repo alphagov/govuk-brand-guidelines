@@ -117,7 +117,7 @@ Indicative examples for illustrative purposes only.
 
 <div>
 
-![Text "Fuel duty will be frozen next year" in Green shade 50%, within a whte circle, on a Green tint 50% background.](./example-tonal-1.png)
+![Text "Fuel duty will be frozen next year" in Green shade 50%, within a white circle, on a Green tint 95% background.](./example-tonal-1.png)
 
 </div>
 
@@ -138,7 +138,7 @@ Indicative examples for illustrative purposes only.
 
 <div>
 
-![Text "Strong winds and expected disruptions" in white, above the text is an exclamation mark icon in Red shade 50% inside a small circle in Accent red, on a Primary red background.](./example-tonal-2.png)
+![Text "Strong winds and expected disruptions" in Purple tint 95%, above the text is an exclamation mark icon in Red shade 50% inside a small circle in Accent red, on a Primary red background.](./example-tonal-2.png)
 
 </div>
 {% endgrid %}
@@ -416,7 +416,7 @@ Indicative examples for illustrative purposes only.
 </div>
 {% endgrid %}
 
-#### Primary magenta and Primary magenta on Magenta tint 95%
+#### Primary magenta and Blue shade 50% on Magenta tint 95%
 
 {% grid { columns: { mobile: 2, desktop: 2 } } %}
 
@@ -431,7 +431,7 @@ Indicative examples for illustrative purposes only.
 
 <div>
 
-![Text "See to see if you need an Electronic Travel Authorisation (ETA)" in Blue shade 50%. Above is a map pin graphic in Primary magenta. Image background is in Magenta tint 90%.](./example-companion-2.png)
+![Text "Check to see if you need an Electronic Travel Authorisation (ETA)" in Blue shade 50%. Above is a map pin graphic in Primary magenta. Image background is in Magenta tint 95%.](./example-companion-2.png)
 
 </div>
 {% endgrid %}
