@@ -12,7 +12,7 @@ mainClasses: 'app-homepage'
 {% grid { columns: { desktop: 3 }, classes: "govuk-!-margin-bottom-0" } %}
 {% gridCell { span: 2 } %}
 
-# A brand that can inform and inspire
+# A refreshed brand for GOV.UK
 
 We’ve refreshed the GOV.UK brand to meet the needs and changing expectations of users across different channels and contexts.
 
