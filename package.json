@@ -3,6 +3,10 @@
   "type": "module",
   "name": "govuk-brand-guidelines",
   "description": "GOV.UK brand guidelines website.",
+  "engines": {
+    "node": "^24.11.0",
+    "npm": "^11.6.0"
+  },
   "scripts": {
     "start": "npm run clean && npx nodemon --watch eleventy --exec 'npx @11ty/eleventy --serve'",
     "build": "npm run clean && npx @11ty/eleventy",
