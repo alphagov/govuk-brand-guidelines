@@ -45,7 +45,7 @@
     "markdown-it-anchor": "^9.2.0",
     "markdown-it-govuk": "^0.8.0",
     "neostandard": "^0.12.2",
-    "nodemon": "^3.1.10",
+    "nodemon": "^3.1.11",
     "nunjucks": "^3.2.4",
     "outdent": "^0.8.0",
     "postcss": "^8.5.6",
