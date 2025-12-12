@@ -13,10 +13,6 @@
   @include govuk-responsive-padding(8, $direction: bottom);
   @include govuk-font-size($size: 24);
 
-  h1 {
-    text-wrap: balance;
-  }
-
   .govuk-body {
     font-size: inherit;
   }
