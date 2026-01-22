@@ -12,9 +12,9 @@ mainClasses: 'app-homepage'
 {% grid { columns: { desktop: 3 }, classes: "govuk-!-margin-bottom-0" } %}
 {% gridCell { span: 2 } %}
 
-# A brand that can inform and inspire
+# An updated brand for GOV.UK
 
-We’ve refreshed the GOV.UK brand to meet the needs and changing expectations of users across different channels and contexts.
+We’ve updated the GOV.UK brand to meet the needs and changing expectations of users across different channels and contexts.
 
 {{ govukButton({ href: ("/introduction/" | url), text: "Why the brand's evolved", isStartButton: true, classes: "govuk-button--inverse govuk-!-margin-top-5" }) }}
 
