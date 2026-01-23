@@ -5,9 +5,11 @@ title: Charts
 
 ## Elements of a chart
 
-TODO: add image
-
 Charts come in a variety of forms, but most share the same anatomy. Understanding the basic building blocks behind a chart can help when creating one.
+
+<!-- TODO: all of the elements in the image need to be mentioned in the text -->
+
+![Example chart highlighting elements of a chart: Grid line, annotation, mark, plot area, axis, tick mark, source, axis value (tick) label](./elements-of-a-chart.svg)
 
 ### Titles
 
@@ -172,24 +174,28 @@ When choosing colours for your data visualisation:
 
 {% swatchList { palette: chartCategoryColours, group: "single" } %}
 
-TODO: add image
+![Example of a bar chart with blue bars over grey lines](./example-single-category.svg)
 
 ### Multiple categories
 
 {% swatchList { palette: chartCategoryColours, group: "multiple" } %}
 
-TODO: add image
+![Example of a line chart with differently coloured lines over a grid and a legend on top](./example-multiple-categories.svg)
 
 ### Divergent categories
 
 {% swatchList { palette: chartCategoryColours, group: "divergent" } %}
 
-TODO: add image
+![Example of a stacked bar chart with four differently coloured stacks and a legend on top](./example-divergent-categories.svg)
 
 ## Using charts within social media
 
 On social, charts can leverage the full colour palette. For example, accent colours can be used to highlight key data points and positive messages. We also use larger and bolder graphical elements to help engage and inform audiences.
 
-TODO: 3 images
+<!--
+TODO: 3 image assets are still missing, the below is only a quick screenshot
+-->
+
+![Series of mock-ups of posts from GOV.UK on Instagram showing differently sized circles with numbers](./social-media-examples.png)
 
 Indicative examples for illustrative purposes only.
