@@ -131,7 +131,11 @@ If you can’t get enough contrast, try breaking the map into simpler versions, 
 
 ### Example
 
-TODO: image
+<!--
+TODO: image asset is still missing, the below is only a quick screenshot
+-->
+
+![Example map of South West England with green highlights](./example-map.png)
 
 A map of the south west England displaying the areas of conservation designated by Historic England
 
