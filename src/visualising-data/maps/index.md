@@ -144,13 +144,13 @@ Indicative examples for illustrative purposes only.
 ### Colours used in example
 
 {% set mapExampleColours = [
-  { label: "Accent Green", hex: "#66F39E", group: "poi" },
-  { label: "Primary Green", hex: "#11875A", group: "poi" },
+  { label: "Accent green", hex: "#66F39E", group: "poi" },
+  { label: "Primary green", hex: "#11875A", group: "poi" },
   { label: "Black", hex: "#0B0C0C", group: "poi" },
-  { label: "Black Tint 80%", hex: "#CECECE", group: "base" },
-  { label: "Black Tint 95%", hex: "#F3F3F3", group: "base" },
-  { label: "Teal Tint 80%", hex: "#D0E6E7", group: "base" },
-  { label: "Teal Tint 95%", hex: "#F3F9F9", group: "base" }
+  { label: "Black tint 80%", hex: "#CECECE", group: "base" },
+  { label: "Black tint 95%", hex: "#F3F3F3", group: "base" },
+  { label: "Teal tint 80%", hex: "#D0E6E7", group: "base" },
+  { label: "Teal tint 95%", hex: "#F3F9F9", group: "base" }
 ] %}
 
 #### Points of interest to the user

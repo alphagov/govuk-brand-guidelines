@@ -64,28 +64,28 @@ Using too many footnotes can interrupt the flow of the publication.
 In some charts, colours help differentiate between categories of data, such as in line charts or stacked bar charts. Some types of visualisations use colour to represent numerical values, such as heatmaps.
 
 {% set chartExtraColours = [
-  { label: "Primary Blue", hex: "#1D70B8", group: "categorical" },
-  { label: "Blue Shade 50%", hex: "#0F385C", group: "categorical" },
-  { label: "Primary Magenta", hex: "#CA357C", group: "categorical" },
-  { label: "Purple Tint 25%", hex: "#7F65B7", group: "categorical" },
-  { label: "Teal Tint 25%", hex: "#50A1A5", group: "categorical" },
-  { label: "Orange Tint 25%", hex: "#F7996A", group: "categorical" },
-  { label: "Black Tint 80%", hex: "#CECECE", group: "line" },
+  { label: "Primary blue", hex: "#1D70B8", group: "categorical" },
+  { label: "Blue shade 50%", hex: "#0F385C", group: "categorical" },
+  { label: "Primary magenta", hex: "#CA357C", group: "categorical" },
+  { label: "Purple tint 25%", hex: "#7F65B7", group: "categorical" },
+  { label: "Teal tint 25%", hex: "#50A1A5", group: "categorical" },
+  { label: "Orange tint 25%", hex: "#F7996A", group: "categorical" },
+  { label: "Black tint 80%", hex: "#CECECE", group: "line" },
   { label: "Black", hex: "#0B0C0C", group: "label" },
-  { label: "Blue Tint 95%", hex: "#F4F8FB", group: "tint" },
-  { label: "Magenta Tint 95%", hex: "#FCF5F8", group: "tint" },
-  { label: "Red Tint 95%", hex: "#FCF5F5", group: "tint" },
-  { label: "Green Tint 95%", hex: "#F3F9F7", group: "tint" },
-  { label: "Purple Tint 95%", hex: "#F6F5FA", group: "tint" },
-  { label: "Teal Tint 95%", hex: "#F3F9F9", group: "tint" },
-  { label: "Orange Tint 95%", hex: "#FEF8F5", group: "tint" },
-  { label: "Accent Blue", hex: "#11E0F1", group: "accent" },
-  { label: "Accent Magenta", hex: "#FF52EE", group: "accent" },
-  { label: "Accent Red", hex: "#FF5E5E", group: "accent" },
-  { label: "Accent Green", hex: "#66F39E", group: "accent" },
-  { label: "Accent Purple", hex: "#BA4AFF", group: "accent" },
-  { label: "Accent Teal", hex: "#00FFE0", group: "accent" },
-  { label: "Accent Orange", hex: "#FFAF4A", group: "accent" }
+  { label: "Blue tint 95%", hex: "#F4F8FB", group: "tint" },
+  { label: "Magenta tint 95%", hex: "#FCF5F8", group: "tint" },
+  { label: "Red tint 95%", hex: "#FCF5F5", group: "tint" },
+  { label: "Green tint 95%", hex: "#F3F9F7", group: "tint" },
+  { label: "Purple tint 95%", hex: "#F6F5FA", group: "tint" },
+  { label: "Teal tint 95%", hex: "#F3F9F9", group: "tint" },
+  { label: "Orange tint 95%", hex: "#FEF8F5", group: "tint" },
+  { label: "Accent blue", hex: "#11E0F1", group: "accent" },
+  { label: "Accent magenta", hex: "#FF52EE", group: "accent" },
+  { label: "Accent red", hex: "#FF5E5E", group: "accent" },
+  { label: "Accent green", hex: "#66F39E", group: "accent" },
+  { label: "Accent purple", hex: "#BA4AFF", group: "accent" },
+  { label: "Accent teal", hex: "#00FFE0", group: "accent" },
+  { label: "Accent orange", hex: "#FFAF4A", group: "accent" }
 ] %}
 
 ### Categorical palette
@@ -153,20 +153,20 @@ When choosing colours for your data visualisation:
 - Limit colours to avoid confusion.
 
 {% set chartCategoryColours = [
-  { label: "Primary Blue", hex: "#1D70B8", group: "single" },
-  { label: "Black Tint 80%", hex: "#CECECE", group: "single" },
+  { label: "Primary blue", hex: "#1D70B8", group: "single" },
+  { label: "Black tint 80%", hex: "#CECECE", group: "single" },
   { label: "Black", hex: "#0B0C0C", group: "single" },
-  { label: "Blue Shade 50%", hex: "#0F385C", group: "multiple" },
-  { label: "Teal Tint 25%", hex: "#50A1A5", group: "multiple" },
-  { label: "Primary Magenta", hex: "#CA357C", group: "multiple" },
-  { label: "Orange Tint 25%", hex: "#F7996A", group: "multiple" },
-  { label: "Black Tint 80%", hex: "#CECECE", group: "multiple" },
+  { label: "Blue shade 50%", hex: "#0F385C", group: "multiple" },
+  { label: "Teal tint 25%", hex: "#50A1A5", group: "multiple" },
+  { label: "Primary magenta", hex: "#CA357C", group: "multiple" },
+  { label: "Orange tint 25%", hex: "#F7996A", group: "multiple" },
+  { label: "Black tint 80%", hex: "#CECECE", group: "multiple" },
   { label: "Black", hex: "#0B0C0C", group: "multiple" },
-  { label: "Primary Red", hex: "#CA3535", group: "divergent" },
-  { label: "Red Tint 50%", hex: "#E59A9A", group: "divergent" },
-  { label: "Black Tint 80%", hex: "#CECECE", group: "divergent" },
-  { label: "Blue Tint 50%", hex: "#8EB8DC", group: "divergent" },
-  { label: "Primary Blue", hex: "#1D70B8", group: "divergent" },
+  { label: "Primary red", hex: "#CA3535", group: "divergent" },
+  { label: "Red tint 50%", hex: "#E59A9A", group: "divergent" },
+  { label: "Black tint 80%", hex: "#CECECE", group: "divergent" },
+  { label: "Blue tint 50%", hex: "#8EB8DC", group: "divergent" },
+  { label: "Primary blue", hex: "#1D70B8", group: "divergent" },
   { label: "Black", hex: "#0B0C0C", group: "divergent" }
 ] %}
 
