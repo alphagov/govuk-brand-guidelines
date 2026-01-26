@@ -75,7 +75,7 @@ Scale are not always appropriate on all map projections (e.g., Orthographic and 
 
 ## Map palette
 
-Use colour thoughtfully in maps choose a clear palette, limit colours, and ensure a 3:1 contrast ratio. Check for colour-blind accessibility and include a legend.
+Use colour thoughtfully in maps, choose a clear palette, limit colours, and ensure a 3:1 contrast ratio. Check for colour-blind accessibility and include a legend.
 Combine colour with shapes, patterns, and labels to improve clarity.
 
 Be aware that users may interpret colours differently, influenced by cultural or political associations.
@@ -137,7 +137,7 @@ TODO: image asset is still missing, the below is only a quick screenshot
 
 ![Example map of South West England with green highlights](./example-map.png)
 
-A map of the south west England displaying the areas of conservation designated by Historic England
+A map of the South West England displaying the areas of conservation designated by Historic England
 
 Indicative examples for illustrative purposes only.
 
