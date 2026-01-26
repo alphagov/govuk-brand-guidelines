@@ -131,6 +131,11 @@ If you can’t get enough contrast, try breaking the map into simpler versions, 
 
 ### Example
 
+{% grid { columns: { mobile: 2, desktop: 2 } } %}
+
+<div>
+<div class="app-border app-border--top">
+
 <!--
 TODO: image asset is still missing, the below is only a quick screenshot
 -->
@@ -140,6 +145,11 @@ TODO: image asset is still missing, the below is only a quick screenshot
 A map of the South West England displaying the areas of conservation designated by Historic England
 
 Indicative examples for illustrative purposes only.
+
+</div>
+</div>
+
+<div>
 
 ### Colours used in example
 
@@ -170,3 +180,6 @@ Land outline, land, coastal areas, sea
            but that functionality is not availabable yet -->
 
 {% swatchList { palette: mapExampleColours, group: "base" } %}
+
+</div>
+{% endgrid %}

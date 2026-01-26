@@ -172,21 +172,60 @@ When choosing colours for your data visualisation:
 
 ### Single category
 
+{% grid { columns: { mobile: 2, desktop: 2 } } %}
+
+<div>
+<div class="app-border app-border--top">
+
 {% swatchList { palette: chartCategoryColours, group: "single" } %}
+
+</div>
+</div>
+
+<div>
 
 ![Example of a bar chart with blue bars over grey lines](./example-single-category.svg)
 
+</div>
+{% endgrid %}
+
 ### Multiple categories
+
+{% grid { columns: { mobile: 2, desktop: 2 } } %}
+
+<div>
+<div class="app-border app-border--top">
 
 {% swatchList { palette: chartCategoryColours, group: "multiple" } %}
 
+</div>
+</div>
+
+<div>
+
 ![Example of a line chart with differently coloured lines over a grid and a legend on top](./example-multiple-categories.svg)
+
+</div>
+{% endgrid %}
 
 ### Divergent categories
 
+{% grid { columns: { mobile: 2, desktop: 2 } } %}
+
+<div>
+<div class="app-border app-border--top">
+
 {% swatchList { palette: chartCategoryColours, group: "divergent" } %}
 
+</div>
+</div>
+
+<div>
+
 ![Example of a stacked bar chart with four differently coloured stacks and a legend on top](./example-divergent-categories.svg)
+
+</div>
+{% endgrid %}
 
 ## Using charts within social media
 
