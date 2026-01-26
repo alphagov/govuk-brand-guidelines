@@ -112,7 +112,7 @@ Avoid using third-party packages for more control over the user experience (incl
 
 An interactive chart allows the user to change what the chart shows by taking an action.
 
-### Use a interactive visualisation when:
+### Use an interactive visualisation when:
 
 Only consider using an interactive visualisation where the most important information for the user cannot be clearly shown through a non-interactive chart.
 
@@ -120,7 +120,7 @@ Use interactive visualisations when:
 
 - users are likely to be most interested in personalising their data such as seeing data about their local authority
 - there is not a clear way of displaying data without interactivity
-- There is several interests or narratives across different locations or categories
+- there are several interests or narratives across different locations or categories
 
 ### Disadvantages of interactive charts:
 
