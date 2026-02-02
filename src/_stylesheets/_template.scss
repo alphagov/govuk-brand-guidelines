@@ -84,3 +84,13 @@
   --app-landing-hero-graphic-size-small: #{govuk-em(350px, 16)};
   --app-landing-hero-graphic-size-big: #{govuk-em(450px, 16)};
 }
+
+.app-content--section-visualising-data {
+  --app-landing-hero-dark-colour: #{$app-blue-shade-50};
+  --app-landing-hero-light-colour: #{$govuk-brand-colour};
+  --app-landing-hero-graphic: url('/styles/images/heroes/visualising-data-tmp.png');
+  --app-landing-hero-graphic-position-small: center #{govuk-em(150px, 16)};
+  --app-landing-hero-graphic-position-align: 100%;
+  --app-landing-hero-graphic-size-small: #{govuk-em(350px, 16)};
+  --app-landing-hero-graphic-size-big: #{govuk-em(450px, 16)};
+}
