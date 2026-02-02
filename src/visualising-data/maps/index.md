@@ -139,7 +139,9 @@ TODO: image asset is still missing, the below is only a quick screenshot
 
 A map of the South West England displaying the areas of conservation designated by Historic England
 
+{% callout %}
 Indicative examples for illustrative purposes only.
+{% endcallout %}
 
 ### Colours used in example
 

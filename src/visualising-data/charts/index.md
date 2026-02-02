@@ -198,4 +198,6 @@ TODO: 3 image assets are still missing, the below is only a quick screenshot
 
 ![Series of mock-ups of posts from GOV.UK on Instagram showing differently sized circles with numbers](./social-media-examples.png)
 
+{% callout %}
 Indicative examples for illustrative purposes only.
+{% endcallout %}

@@ -7,4 +7,6 @@ title: Examples
 
 ![Multiple examples of visualising data](./examples.svg)
 
+{% callout %}
 Indicative examples for illustrative purposes only.
+{% endcallout %}
