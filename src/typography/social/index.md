@@ -117,7 +117,7 @@ Indicative examples for illustrative purposes only.
 
 <div class="app-border app-border--top">
 
-**Don't** use line and letter spacing that is too wide or tight.
+**Do not** use line and letter spacing that is too wide or tight.
 
 </div>
 <div>
