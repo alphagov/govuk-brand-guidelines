@@ -192,11 +192,24 @@ When choosing colours for your data visualisation:
 
 On social, charts can leverage the full colour palette. For example, accent colours can be used to highlight key data points and positive messages. We also use larger and bolder graphical elements to help engage and inform audiences.
 
-<!--
-TODO: 3 image assets are still missing, the below is only a quick screenshot
--->
+{% grid { columns: { mobile: 1, desktop: 3 } } %}
 
-![Series of mock-ups of posts from GOV.UK on Instagram showing differently sized circles with numbers](./social-media-examples.png)
+<div>
+
+![Series of mock-ups of posts from GOV.UK on Instagram showing differently sized circles with numbers](./social-chart-A.png)
+
+</div>
+<div>
+
+![](./social-chart-B.png)
+
+</div>
+<div>
+
+![](./social-chart-C.png)
+
+</div>
+{% endgrid %}
 
 {% callout %}
 Indicative examples for illustrative purposes only.
