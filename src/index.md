@@ -28,10 +28,12 @@ We’ve refreshed the GOV.UK brand to meet the needs and changing expectations o
 ## Key elements
 
 {% grid {columns: { mobile: 1, tablet: 2 } } %}
-{% linkCard {titleContainer: 'h3', title: 'Graphic device', description: 'Using the dot as a guide and companion in images and videos.', icon: './graphic-device.svg', href: ('/graphic-device/' | url) } %}
+{% linkCard {titleContainer: 'h3', title: 'Graphic device', description: 'Using the dot as a guide and companion in images and videos.', icon: './graphic-device-icon.svg', href: ('/graphic-device/' | url) } %}
 {% linkCard {titleContainer: 'h3', title: 'Logo system', description: 'How the GOV.UK wordmark and crown work together in different contexts.', icon: './logo-system.svg', href: ('/logo-system/' | url) } %}
 {% linkCard {titleContainer: 'h3', title: 'Colour', description: 'Core brand colours, palettes and contrast requirements for accessibility.', icon: './colour.svg', href: ('/colour/' | url) } %}
 {% linkCard {titleContainer: 'h3', title: 'Typography', description: 'Which typeface and font to use, and how to use them.', icon: './typography.svg', href: ('/typography/' | url) } %}
+{% linkCard {titleContainer: 'h3', title: 'Data', description: 'TODO', icon: './data.svg', href: ('/visualising-data/' | url) } %}
+{% linkCard {titleContainer: 'h3', title: 'Brand in use', description: 'One brand. Many places.', icon: './brand-in-use.svg', href: ('/brand-in-use/' | url) } %}
 {% endgrid %}
 
 </div>
