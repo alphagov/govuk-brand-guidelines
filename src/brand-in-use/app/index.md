@@ -10,7 +10,7 @@ Indicative examples for illustrative purposes only.
 
 ## App icon
 
-![App icon of the GOV.UK app, the crown is placed centred directly under GOV.UK and a mockup of the GOV.UK app's page in an App Store.](./app-icon.png)
+![App icon of the GOV.UK app and a mockup of the GOV.UK app's page in an App Store.](./app-icon.png)
 
 ## App splash screen
 
@@ -19,18 +19,22 @@ Indicative examples for illustrative purposes only.
     "/graphic-device/dot-use-examples/splash-screen-short-version.webm"
 ] } %}
 
+No audio. The dot leads a trail of other dots of various colours in a spiral towards the centre of a mobile screen, where it becomes the dot within the GOV.UK logo as it fades and pushes in.
+
+At the bottom of the screen, the crown logo element is revealed by a circular iris effect at the bottom of the screen as the dots in the crown rise and fan out.
+
 ## App homepage
 
 {% grid { columns: { mobile: 1, desktop: 2 } } %}
 
 <div>
 
-![TODO](./app-home-A.png)
+![Screenshot of the start page in the GOV.UK app.](./app-home-A.png)
 
 </div>
 <div>
 
-![TODO](./app-home-B.png)
+![Screenshot of the search feature in the GOV.UK app.](./app-home-B.png)
 
 </div>
 
@@ -42,12 +46,12 @@ Indicative examples for illustrative purposes only.
 
 <div>
 
-![TODO](./app-screens-A.png)
+![Screenshot of the topic page for 'Driving and transport' in the GOV.UK app.](./app-screens-A.png)
 
 </div>
 <div>
 
-![TODO](./app-screens-B.png)
+![Screenshot of 'Pages you've visited' in the the GOV.UK app.](./app-screens-B.png)
 
 </div>
 

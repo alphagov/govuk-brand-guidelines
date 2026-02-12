@@ -22,4 +22,4 @@ Indicative examples for illustrative purposes only.
   "./bento.webm"
 ] } %}
 
-No audio.
+No audio. A selection of different animations from across the website are shown all at once.
