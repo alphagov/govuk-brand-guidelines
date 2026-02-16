@@ -48,15 +48,23 @@
   --sample-size: 1.5em;
   --sample-border: 3px;
 
+  // Add a third column so that values can appear next to one another
   grid-template-columns: auto auto 1fr;
   column-gap: govuk-spacing(2);
+
   @include govuk-font(16);
+
+  &::before {
+    margin-bottom: govuk-spacing(1);
+  }
 }
 
-.app-swatch--compact::before {
-  margin-bottom: govuk-spacing(1);
+// Allow swatch name to span the newly added column
+.app-swatch--compact .app-swatch__name {
+  grid-column: 2 / 4;
 }
 
+// Place every second value in the third column
 .app-swatch--compact .app-swatch__value:nth-of-type(2n) {
   grid-column: 3;
 }
