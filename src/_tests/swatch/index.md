@@ -33,6 +33,16 @@ For print values, additionally define `cmyk` and `pantone` properties, and add `
   print: true
 } %}
 
+## Compact swatch
+
+A smaller design for display where the swatch isn't the focus.
+
+{% swatch {
+  compact: true,
+  label: "Muted purple",
+  hex: "#786999"
+} %}
+
 ## `classes` parameter
 
 {% swatch {

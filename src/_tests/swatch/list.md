@@ -57,6 +57,12 @@ A custom `palette` can be specified in place of the global colour palette.
 
 Custom palettes can be filtered in the same way as the global colour palette, if the necessary `group` and `uses` parameters have been defined in the custom palette.
 
+## Compact layout
+
+Added `compact: true` to render all swatches in the list using the compact format. This is intended for documentation where the swatches aren't the focus.
+
+{% swatchList { palette: myCustomPalette, compact: true } %}
+
 ## `classes` parameter
 
 {% swatchList { palette: myCustomPalette, classes: "my-funky-swatch-list" } %}

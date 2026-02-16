@@ -14,7 +14,10 @@ export const swatchList = blockShortcode(function (options = {}) {
     use: undefined,
 
     // What group of colours to filter down to
-    group: undefined
+    group: undefined,
+
+    // Render list in compact format
+    compact: false
   }
   options = { ...defaultOptions, ...options }
 
@@ -23,7 +26,12 @@ export const swatchList = blockShortcode(function (options = {}) {
 
   // Modify the array to implant the print option and indicate this is a list of swatches
   colourList = colourList.map((c) => {
-    return { ...c, print: options.use === 'print', isInSwatchList: true }
+    return {
+      ...c,
+      print: options.use === 'print',
+      compact: options.compact,
+      isInSwatchList: true
+    }
   })
 
   return `<dl class="app-swatch-list${options.classes ? ` ${options.classes}` : ''}">
