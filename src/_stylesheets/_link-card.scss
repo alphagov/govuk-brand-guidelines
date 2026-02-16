@@ -1,14 +1,18 @@
 .app-link-card {
   display: grid;
+  position: relative;
+  padding: govuk-spacing(4);
+  padding-right: 0;
+
+  // Prevent clipping of icon by the border radius
+  overflow: hidden;
+  border: 1px solid $app-blue-tint-50;
+  border-radius: 3px;
+  background-color: govuk-colour('white');
   grid-template-columns: 2fr 1fr;
   grid-template-rows: auto 1fr;
   grid-template-areas: 'title icon' 'description icon';
   gap: govuk-spacing(2);
-  position: relative;
-  border: 1px solid $app-blue-tint-50;
-  border-radius: 3px;
-  background-color: govuk-colour('white');
-  @include govuk-responsive-padding(5);
 }
 
 .app-link-card__link {
@@ -39,9 +43,22 @@
   @include govuk-font($size: 19);
 }
 
-.app-link-card__icon {
+.app-link-card__icon-container {
   grid-area: icon;
-  align-self: end;
-  justify-self: end;
-  text-align: right;
+
+  // Vertically centre align icons
+  display: flex;
+  align-items: center;
+
+  // Push icon container to edges of box
+  margin-top: govuk-spacing(-4);
+  margin-bottom: govuk-spacing(-4);
+
+  // Extend perceived background to full height of card
+  background-color: var(--icon-background);
+}
+
+.app-link-card__icon {
+  // Remove bottom margin added by line-height
+  vertical-align: middle;
 }
