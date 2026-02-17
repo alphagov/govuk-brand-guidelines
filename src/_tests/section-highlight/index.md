@@ -27,3 +27,21 @@ This is some body copy. Amet quis magna in aliquip officia.
 - a list
 - made of items
   {% endsectionHighlight %}
+
+### Available variants
+
+{% sectionHighlight { classes: "app-section-highlight--light-blue" } %}
+`app-section-highlight--light-blue`
+{% endsectionHighlight%}
+
+{% sectionHighlight { classes: "app-section-highlight--light-grey" } %}
+`app-section-highlight--light-grey`
+{% endsectionHighlight%}
+
+{% sectionHighlight { classes: "app-section-highlight--white" } %}
+`app-section-highlight--white`
+{% endsectionHighlight%}
+
+{% sectionHighlight { classes: "app-section-highlight--logo" } %}
+`app-section-highlight--logo`
+{% endsectionHighlight%}

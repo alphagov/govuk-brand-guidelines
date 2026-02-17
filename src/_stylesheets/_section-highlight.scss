@@ -18,7 +18,8 @@
 }
 
 .app-section-highlight--light-blue,
-.app-section-highlight--light-grey {
+.app-section-highlight--light-grey,
+.app-section-highlight--white {
   color: govuk-colour('black');
 }
 
@@ -28,6 +29,11 @@
 
 .app-section-highlight--light-grey {
   background-color: govuk-colour('light-grey');
+}
+
+.app-section-highlight--white {
+  border: 1px solid govuk-colour('mid-grey');
+  background-color: govuk-colour('white');
 }
 
 // Modifier for instances where we want to show one of our logos 'in situ' against
@@ -41,14 +47,4 @@
     width: 366px;
     max-width: 100%;
   }
-}
-
-// Dark magenta section highlight likely to be deleted as it's just framing an
-// image, and the image should have it's own background
-.app-section-highlight--dark-magenta {
-  background-color: $app-magenta-shade-50;
-}
-
-.app-section-highlight__wrapper--space-around {
-  margin: govuk-spacing(8);
 }

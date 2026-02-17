@@ -170,23 +170,59 @@ When choosing colours for your data visualisation:
   { label: "Black", hex: "#0B0C0C", group: "divergent" }
 ] %}
 
+{% sectionHighlight { classes: "app-section-highlight--white" } %}
+{% grid { columns: { tablet: 2 } } %}
+
+{% gridCell %}
+
 ### Single category
 
-{% swatchList { palette: chartCategoryColours, group: "single" } %}
+{% endgridCell %}
 
+{% gridCell %}
 ![Example of a bar chart with blue bars over grey lines](./example-single-category.svg)
+{% endgridCell %}
+
+{% endgrid %}
+{% endsectionHighlight %}
+
+{% swatchList { compact: true, palette: chartCategoryColours, group: "single" } %}
+
+{% sectionHighlight { classes: "app-section-highlight--white" } %}
+{% grid { columns: { tablet: 2 } } %}
+
+{% gridCell %}
 
 ### Multiple categories
 
-{% swatchList { palette: chartCategoryColours, group: "multiple" } %}
+{% endgridCell %}
 
+{% gridCell %}
 ![Example of a line chart with differently coloured lines over a grid and a legend on top](./example-multiple-categories.svg)
+{% endgridCell %}
+
+{% endgrid %}
+{% endsectionHighlight %}
+
+{% swatchList { compact: true, palette: chartCategoryColours, group: "multiple" } %}
+
+{% sectionHighlight { classes: "app-section-highlight--white" } %}
+{% grid { columns: { tablet: 2 } } %}
+
+{% gridCell %}
 
 ### Divergent categories
 
-{% swatchList { palette: chartCategoryColours, group: "divergent" } %}
+{% endgridCell %}
 
+{% gridCell %}
 ![Example of a stacked bar chart with four differently coloured stacks and a legend on top](./example-divergent-categories.svg)
+{% endgridCell %}
+
+{% endgrid %}
+{% endsectionHighlight %}
+
+{% swatchList { compact: true, palette: chartCategoryColours, group: "divergent" } %}
 
 ## Using charts within social media
 
