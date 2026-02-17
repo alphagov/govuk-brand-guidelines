@@ -4,6 +4,9 @@ export const swatch = blockShortcode((options = {}) => {
   const defaultOptions = {
     classes: undefined,
 
+    // Whether to use compact layout (smaller swatch and text size)
+    compact: false,
+
     // The colours of the swatch
     hex: '#000',
     cmyk: [],
@@ -58,7 +61,7 @@ export const swatch = blockShortcode((options = {}) => {
 
   // Assemble attributes for the wrapping element separately, as what element
   // that is changes depending on `isInSwatchList`
-  const attributes = `class="app-swatch${options.classes ? ` ${options.classes}` : ''}" style="--app-swatch-colour:${options.hex};"`
+  const attributes = `class="app-swatch${options.compact ? ` app-swatch--compact` : ''}${options.classes ? ` ${options.classes}` : ''}" style="--app-swatch-colour:${options.hex};"`
 
   return options.isInSwatchList
     ? `<div ${attributes}>${$label}</div>`
