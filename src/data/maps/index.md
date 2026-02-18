@@ -164,18 +164,14 @@ Indicative examples for illustrative purposes only.
 
 #### Points of interest
 
-Data, data outline, labels
-
-<!-- TODO: these three titles should be extra labels on the swatch items
-           but that functionality is not availabable yet -->
+Data is shown in Accent green and outlined in Primary green. Labels show nearby population centres in Black.
 
 {% swatchList { palette: mapExampleColours, group: "poi" } %}
 
 #### Base map
 
-Land outline, land, coastal areas, sea
+Land is shown in Black tint 95% and outlined in Black tint 80%.
 
-<!-- TODO: these four titles should be extra labels on the swatch items
-           but that functionality is not availabable yet -->
+Sea is shown in Teal tint 95% with coastal areas shown in Teal tint 80%.
 
 {% swatchList { palette: mapExampleColours, group: "base" } %}
