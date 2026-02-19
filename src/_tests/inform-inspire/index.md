@@ -28,13 +28,13 @@ Influencer/presenter
 ## Inform inspire with flex container, 5 items and list
 
 {% informInspire { contentClasses: 'app-inform-inspire__content--flex app-inform-inspire__content--flex-5-items', list: ['black and white', 'dark shade', 'Primary blue', 'tonal colour', 'companion colour'], listLabel: 'Colour use options (from left to right):' } %}
-![TODO](./tone-black-and-white.png)
+![](./tone-black-and-white.png)
 
-![TODO](./tone-dark-shade.png)
+![](./tone-dark-shade.png)
 
-![TODO](./tone-primary-blue.png)
+![](./tone-primary-blue.png)
 
-![TODO](./tone-tonal-colour.png)
+![](./tone-tonal-colour.png)
 
-![TODO](./tone-companion-colour.png)
+![](./tone-companion-colour.png)
 {% endinformInspire %}
