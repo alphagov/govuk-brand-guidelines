@@ -13,8 +13,6 @@ The right axis scale helps convey the relative size of your data values accurate
 
 Text in a chart is just as important in helping users understand the chart and the data it shows.
 
-<!-- TODO: all of the elements in the image need to be mentioned in the text -->
-
 ![Example chart highlighting elements of a chart: Grid line, annotation, mark, plot area, axis, tick mark, source, axis value (tick) label](./elements-of-a-chart.svg)
 
 ### Titles
