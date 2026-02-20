@@ -2,7 +2,7 @@
 order: 5
 title: Data
 landing: true
-lead: Main principles for anyone creating GOV.UK-branded charts and visualisations.
+lead: Principles for creating GOV.UK-branded charts and visualisations.
 ---
 
 Data visualisation is the graphic representation of data. We use visual elements, like lines, shapes and colours, to convey information to users.
@@ -74,4 +74,3 @@ The table below, originally produced by ONS Analysis Function, provides examples
 | Spatial       | Geographical clusters of notifiable diseases   | Map                                               |
 | Part-to-whole | Total economic production by industrial sector | Pie chart, donut chart, tree map, bubble chart    |
 | Flow          | Trade between countries                        | Sankey graph                                      |
-
