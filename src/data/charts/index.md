@@ -3,6 +3,8 @@ order: 1
 title: Charts
 ---
 
+The [Colour: Charts](/colour/charts/) page shows the chart palette and how to use colour in charts, including charts in social media.
+
 ## Elements of a chart
 
 Charts come in many forms, but most share the same anatomy. Understanding the basic building blocks behind a chart can help when creating one.

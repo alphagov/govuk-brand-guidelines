@@ -3,6 +3,8 @@ order: 3
 title: Maps
 ---
 
+The [Colour: Maps](/colour/maps/) page shows the map palette and how to use colour combinations in maps.
+
 ## Elements of a map
 
 A well designed map can bring data to life.
