@@ -178,46 +178,59 @@ When choosing colours for your data visualisation:
   { label: "Black", hex: "#0B0C0C", group: "divergent" }
 ] %}
 
+{% grid { columns: { mobile: 1, desktop: 3 }, classes: 'govuk-!-margin-top-6' } %}
+
+{% gridCell {classes: "app-border app-border--top"} %}
+
 ### Single category
 
-{% swatchList { palette: chartCategoryColours, group: "single" } %}
+{% endgridCell %}
+{% gridCell {span: {desktop: 2, tablet: 1, mobile: 1}, classes: "app-border"} %}
 
 ![Example of a bar chart with blue bars over grey lines](./example-single-category.svg)
 
+{% endgridCell %}
+{% endgrid %}
+
+{% swatchList { palette: chartCategoryColours, group: "single", compact: true } %}
+
+{% grid { columns: { mobile: 1, desktop: 3 }, classes: 'govuk-!-margin-top-6' } %}
+
+{% gridCell {classes: "app-border app-border--top"} %}
+
 ### Multiple categories
 
-{% swatchList { palette: chartCategoryColours, group: "multiple" } %}
+{% endgridCell %}
+{% gridCell {span: {desktop: 2, tablet: 1, mobile: 1}, classes: "app-border"} %}
 
 ![Example of a line chart with differently coloured lines over a grid and a legend on top](./example-multiple-categories.svg)
 
+{% endgridCell %}
+{% endgrid %}
+
+{% swatchList { palette: chartCategoryColours, group: "multiple", compact: true } %}
+
+{% grid { columns: { mobile: 1, desktop: 3 }, classes: 'govuk-!-margin-top-6' } %}
+
+{% gridCell {classes: "app-border app-border--top"} %}
+
 ### Divergent categories
 
-{% swatchList { palette: chartCategoryColours, group: "divergent" } %}
+{% endgridCell %}
+{% gridCell {span: {desktop: 2, tablet: 1, mobile: 1}, classes: "app-border"} %}
 
 ![Example of a stacked bar chart with four differently coloured stacks and a legend on top](./example-divergent-categories.svg)
+
+{% endgridCell %}
+{% endgrid %}
+
+{% swatchList { palette: chartCategoryColours, group: "divergent", compact: true } %}
 
 ## Using charts within social media
 
 On social, charts can leverage the full colour palette. For example, accent colours can be used to highlight key data points and positive messages. We also use larger and bolder graphical elements to help engage and inform audiences.
 
-{% grid { columns: { mobile: 1, desktop: 3 } } %}
-
-<div>
-
-![Series of mock-ups of posts from GOV.UK on Instagram showing differently sized circles with numbers](./social-chart-A.png)
-
-</div>
-<div>
-
-![](./social-chart-B.png)
-
-</div>
-<div>
-
-![](./social-chart-C.png)
-
-</div>
-{% endgrid %}
+![Series of mock-ups of posts from GOV.UK on Instagram showing differently sized circles with numbers](./social-chart.png)
 
 {% callout %}
 Indicative examples for illustrative purposes only.
