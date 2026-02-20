@@ -43,38 +43,25 @@
   font-size: smaller;
 }
 
-// Compact layout variant
 .app-swatch--compact {
   --sample-size: 1.5em;
   --sample-border: 3px;
 
-  // Add a third column so that values can appear next to one another
-  grid-template-columns: auto auto 1fr;
-  column-gap: govuk-spacing(2);
-
   @include govuk-font(16);
-
-  &::before {
-    margin-bottom: govuk-spacing(1);
-  }
-}
-
-// Allow swatch name to span the newly added column
-.app-swatch--compact .app-swatch__name {
-  grid-column: 2 / 4;
-}
-
-// Place every second value in the third column
-.app-swatch--compact .app-swatch__value:nth-of-type(2n) {
-  grid-column: 3;
 }
 
 // Reduce the spacing between swatches in a list
 .app-swatch-list {
-  margin-top: govuk-spacing(1);
-  column-width: 17rem;
+  --column-width: 17rem;
+
+  column-width: var(--column-width);
   column-gap: $govuk-gutter-half;
+  margin-top: govuk-spacing(1);
   @include govuk-responsive-margin(5, $direction: 'bottom');
+
+  &.app-swatch-list--compact {
+    --column-width: 13rem;
+  }
 
   .app-swatch {
     // Do not break content within swatches
