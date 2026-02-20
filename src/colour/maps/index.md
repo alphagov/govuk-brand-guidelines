@@ -11,6 +11,17 @@ Combine colour with shapes, patterns, and labels to improve clarity.
 
 Be aware that users may interpret colours differently, influenced by cultural or political associations.
 
+The map palette has:
+
+- [blues](#blues)
+- [magentas](#magentas)
+- [reds](#reds)
+- [greens](#greens)
+- [purples](#purples)
+- [teals](#teals)
+- [oranges](#oranges)
+- [neutrals](#neutrals)
+
 ### Blues
 
 {% swatchList { use: "map", group: "blue" } %}

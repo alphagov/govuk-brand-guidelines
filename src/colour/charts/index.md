@@ -8,6 +8,19 @@ sitemapTitle: Charts colour
 
 In some charts, colours help differentiate between categories of data, such as in line charts or stacked bar charts. Some types of visualisations use colour to represent numerical values, such as heatmaps.
 
+The chart palette has:
+
+- [categorical colours](#categorical-palette)
+- [blues](#blues)
+- [magentas](#magentas)
+- [reds](#reds)
+- [greens](#greens)
+- [purples](#purples)
+- [teals](#teals)
+- [oranges](#oranges)
+- [neutrals](#neutrals)
+- [additional colours](#additional-palette-for-illustrative-infographics)
+
 {% set chartExtraColours = [
   { label: "Primary blue", hex: "#1D70B8", group: "categorical" },
   { label: "Blue shade 50%", hex: "#0F385C", group: "categorical" },
