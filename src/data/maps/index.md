@@ -68,7 +68,7 @@ Secondary features should fall to the background and not be as immediately prese
 
 ### Remove extraneous features
 
-Less is more. If features are not part of a story, feel free to remove them (for example: roads, rivers, rails, pipelines, and even country labels). Feel free to thin out line work.
+Less is more. If features are not part of a story, feel free to thin out networks of line work or remove features that are not part of a story. This can include features such as roads, rivers, rails, pipelines and even country labels.
 
 ### Projections
 
@@ -81,3 +81,33 @@ Ask yourself: What is the map’s purpose and what is the best type of projectio
 Scale bars are not always needed on a map, but are often helpful. If a map has anything to do with distance or shows features that a user would be curious how far apart they are, add a scale bar. If measuring distance is not helpful for the reader to understand the story, do not include one.
 
 Scale bars are not always appropriate on all map projections (for example, Orthographic and Robinson). At global map extents for instance, scale bars are not as useful as the scale may vary significantly from one part of the map to another.
+
+## Map accessibility
+
+When you create maps, make sure they are accessible to everyone.
+
+### Content
+
+Every map should include a text description. This helps users who use screen readers understand what the map is visualising. If the map is simple, a short sentence may be enough. For more complex maps, include a longer explanation near the map or link to a separate page with more detail.
+
+Use clear labels and ensure the structure of the page helps assistive technologies understand the content.
+
+If the map includes important data, provide another way for users to access it, such as a table or written summary.
+
+### Colour
+
+Do not use colour as the only way to show differences on a map. People who are colour blind may not be able to tell certain colours apart.
+
+Use patterns, shapes or clear labels alongside colour to help visualise the data to users.
+
+Make sure there is enough contrast between background colours, lines, labels and any shaded areas.
+
+Good colour contrast helps people with low vision and people using screens in different lighting conditions.
+
+### Test
+
+When you can, test your maps with people who use screen readers or other assistive technologies. This helps you find problems and make improvements based on real needs.
+
+### Example
+
+![Example map of East England highlighting educational facilities in pink. It is pointing out important aspects of maps: the legend at the top, use of clear labels throughout, the scale for geographic reference and the text description a the bottom.](./education-map.png)

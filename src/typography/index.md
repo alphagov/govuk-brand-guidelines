@@ -31,6 +31,8 @@ GDS Transport consists of two weights: light and bold.
 
 ### Glyphs
 
+Glyphs refer to the specific visual representation of a symbol, shapes or forms of characters within a font.
+
 GDS Transport offers a wide range of glyph support. It includes a comprehensive selection of letters, numerals, punctuation, and special symbols, making it suitable for various levels of communications.
 
 GDS Transport Light

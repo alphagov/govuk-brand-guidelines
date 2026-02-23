@@ -19,7 +19,7 @@ It builds on our recognisable and trusted foundations whilst introducing new ele
 
 The evolved brand is designed to adapt its tone, visuals and motion for different channels, formats and audiences. We call this the ‘inform to inspire’ scale.
 
-On social media, we aim to capture attention and prompt action. On the web, the focus is on helping people find what they need from government services and act.
+On the web, the focus is on helping people find what they need from government services and complete tasks. As the diagram highlights web is aligned to being more informative in its approach, app has flex moving from informative towards being more inspiring and social flexes from inform to inspire on the continuum scale.
 
 The brand can also shift depending on what we're saying. For sensitive topics, we use a more muted and reserved style. For positive content, we can look brighter and bolder.
 

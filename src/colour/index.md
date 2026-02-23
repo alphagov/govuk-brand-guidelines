@@ -5,9 +5,11 @@ landing: true
 lead: Core brand colours, palettes and contrast requirements for accessibility.
 ---
 
-Our colour palette is designed with accessibility in mind. It’s flexible enough to work across all GOV.UK channels.
+Our colour palette is designed with accessibility in mind.
 
-This section explains how to apply colour so it meets accessibility standards and helps everyone understand information clearly.
+However, it remains the responsibility of teams using the colours in the palette to ensure services are WCAG compliant when using colours in combination.
+
+This section explains how to apply colour and helps everyone understand information clearly.
 
 Always use the GOV.UK colour palette alongside other accessibility principles. This includes using accessible colour combinations and ensuring meaning is never conveyed by colour alone.
 

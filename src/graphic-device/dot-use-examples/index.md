@@ -251,21 +251,9 @@ Do not overuse the dot.
 </div>
 <div class="app-border app-border--top">
 
-### Decorative elements
-
-Do not use the dot in a decorative way.
-
-</div>
-<div>
-
-![Crossed out graphic some text, with a dot placed off-centre in the background.](./incorrect-decorative.svg)
-
-</div>
-<div class="app-border app-border--top">
-
 ### Distortions
 
-Do not distort or skew the dot.
+Whilst acceptable in motion under some circumstances, do not distort or skew the dot in static application.
 
 </div>
 <div>
@@ -289,7 +277,7 @@ Do not use stroke versions of the dot.
 
 ### Crops
 
-Do not use abstract crops of the dot.
+Do not crop the dot so that it becomes abstract. Ensure adjacent dots are visible to provide context.
 
 </div>
 <div>
