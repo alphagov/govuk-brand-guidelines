@@ -60,7 +60,7 @@
     "stylelint": "^16.26.1",
     "stylelint-config-gds": "^2.0.0",
     "stylelint-order": "^7.0.1",
-    "svglint": "^4.1.2"
+    "svglint": "^4.2.0"
   },
   "dependencies": {
     "sharp": "^0.34.5"
