@@ -14,16 +14,25 @@ Indicative examples for illustrative purposes only.
 
 ![App icon of the GOV.UK app and a mockup of the GOV.UK app's page in an App Store.](./app-icon.png)
 
-## App splash screen
+{% grid { columns: { tablet: 2 }, classes: "govuk-!-margin-top-8" } %}
 
-{% video { source: [
-    "/graphic-device/dot-use-examples/splash-screen-short-version.mp4",
-    "/graphic-device/dot-use-examples/splash-screen-short-version.webm"
-] } %}
+<div class="app-border app-border--top govuk-!-padding-top-6">
+
+## App splash screen
 
 No audio. The dot leads a trail of other dots of various colours in a spiral towards the centre of a mobile screen, where it becomes the dot within the GOV.UK logo as it fades and pushes in.
 
 At the bottom of the screen, the crown logo element is revealed by a circular iris effect at the bottom of the screen as the dots in the crown rise and fan out.
+
+</div>
+<div>
+{% video { source: [
+    "/graphic-device/dot-use-examples/splash-screen-short-version.mp4",
+    "/graphic-device/dot-use-examples/splash-screen-short-version.webm"
+] } %}
+</div>
+
+{% endgrid %}
 
 ## App homepage
 

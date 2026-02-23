@@ -12,39 +12,62 @@ Indicative examples for illustrative purposes only.
 
 ## Social - Instagram
 
-{% grid { columns: { mobile: 1, desktop: 3 } } %}
+![Series of images showing Instagram screenshots from the GOV.UK account, starting at the homepage to a story about 'Here's how I got my driving licence'.](./social-insta.png)
 
-<div>
+<!-- TODO: We need to update each asset with alt text now we are displaying each image individually -->
 
-![Series of images showing Instagram screenshots from the GOV.UK account, starting at the homepage to a story about 'Here's how I got my driving licence'.](./social-insta-A.png)
-
-</div>
-<div>
-
-![](./social-insta-B.png)
-
-</div>
-<div>
-
-![](./social-insta-C.png)
-
-</div>
-
+{% grid { columns: { mobile: 1, desktop: 3 }, classes: "govuk-!-padding-top-6" } %}
+{% gridCell %}
+![TODO](./insta-1.png)
+{% endgridCell %}
+{% gridCell %}
+![TODO](./insta-2.png)
+{% endgridCell %}
+{% gridCell %}
+![TODO](./insta-3.png)
+{% endgridCell %}
+{% gridCell %}
+![TODO](./insta-4.png)
+{% endgridCell %}
+{% gridCell %}
+![TODO](./insta-5.png)
+{% endgridCell %}
+{% gridCell %}
+![TODO](./insta-6.png)
+{% endgridCell %}
+{% gridCell %}
+![TODO](./insta-7.png)
+{% endgridCell %}
+{% gridCell %}
+![TODO](./insta-8.png)
+{% endgridCell %}
+{% gridCell %}
+![TODO](./insta-9.png)
+{% endgridCell %}
 {% endgrid %}
-
-<!-- TODO: this is not a great description because Anika doesn't understand what this is -->
-
-![A wall of different teaser images for Instagram.](./social-insta-D.png)
 
 ## Social - X
 
 ![Screenshots of GOV.UK's X account on mobile and on desktop.](./social-X.png)
 
+{% grid { columns: { tablet: 2 }, classes: "govuk-!-margin-top-8" } %}
+
+<div class="app-border app-border--top govuk-!-padding-top-6">
+
 ## Social - Instagram story
 
-<!-- TODO: this will be a video, so the description needs to change and be underneath -->
+Short clip of people being interviewed on the street. The end of it is overlayed with the social end frame. (As below, dots in a spiral turn into the dot within the GOV.UK logo.)
 
-![Screenshots of an Instagram story to 'get support with the cost of living'.](./insta-story.png)
+</div>
+<div>
+
+{% video { source: [
+    "./Insta_story_.mp4",
+    "./Insta_story_.webm"
+] } %}
+
+</div>
+{% endgrid %}
 
 ## Social - YouTube
 
