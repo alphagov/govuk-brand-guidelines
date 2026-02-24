@@ -61,7 +61,7 @@ In order to maintain visual hierarchy, consistency and balance between the two e
 
 The size of the crown can be adjusted depending on context. For example, when being used at smaller sizes such as within the app icon, the enlarged crown should be used to aid accessibility and legibility.
 
-{% grid { columns: { mobile: 1, desktop: 2 }, classes: 'govuk-!-margin-top-6 govuk-!-margin-bottom-6' } %}
+{% grid { columns: { mobile: 1, desktop: 2 } } %}
 
 <div class="app-border app-border--top">
 
@@ -136,7 +136,7 @@ If it’s too small, it can lose detail and be harder for some users to read or 
     <strong class="govuk-!-font-size-24">16px</strong>
 
     {% endgridCell %}
-    {% gridCell { classes: 'govuk-!-margin-bottom-6'} %}
+    {% gridCell %}
 
     ![Smaller version of the crown, with adjustments such as fewer dots, and an arrow indicating its minimum width.](./crown-favicon.svg)
 

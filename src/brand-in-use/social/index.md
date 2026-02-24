@@ -16,7 +16,7 @@ Indicative examples for illustrative purposes only.
 
 <!-- TODO: We need to update each asset with alt text now we are displaying each image individually -->
 
-{% grid { columns: { mobile: 1, desktop: 3 }, classes: "govuk-!-padding-top-6" } %}
+{% grid { columns: { mobile: 1, desktop: 3 } } %}
 {% gridCell %}
 ![TODO](./insta-1.png)
 {% endgridCell %}
@@ -50,23 +50,23 @@ Indicative examples for illustrative purposes only.
 
 ![Screenshots of GOV.UK's X account on mobile and on desktop.](./social-X.png)
 
-{% grid { columns: { tablet: 2 }, classes: "govuk-!-margin-top-8" } %}
+{% grid { columns: { tablet: 2 } } %}
 
-<div class="app-border app-border--top govuk-!-padding-top-6">
+{% gridCell { classes: "app-border app-border--top" } %}
 
 ## Social - Instagram story
 
 Short clip of people being interviewed on the street. The end of it is overlayed with the social end frame. (As below, dots in a spiral turn into the dot within the GOV.UK logo.)
 
-</div>
-<div>
+{% endgridCell %}
+{% gridCell %}
 
 {% video { source: [
     "./Insta_story_.mp4",
     "./Insta_story_.webm"
 ] } %}
 
-</div>
+{% endgridCell %}
 {% endgrid %}
 
 ## Social - YouTube

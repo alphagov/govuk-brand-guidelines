@@ -128,7 +128,7 @@ When choosing colours for your data visualisation:
   { label: "Black", hex: "#0B0C0C", group: "divergent" }
 ] %}
 
-{% grid { columns: { mobile: 1, desktop: 3 }, classes: 'govuk-!-margin-top-6' } %}
+{% grid { columns: { mobile: 1, desktop: 3 } } %}
 
 {% gridCell {classes: "app-border app-border--top"} %}
 
@@ -144,7 +144,7 @@ When choosing colours for your data visualisation:
 
 {% swatchList { palette: chartCategoryColours, group: "single", compact: true } %}
 
-{% grid { columns: { mobile: 1, desktop: 3 }, classes: 'govuk-!-margin-top-6' } %}
+{% grid { columns: { mobile: 1, desktop: 3 } } %}
 
 {% gridCell {classes: "app-border app-border--top"} %}
 
@@ -160,7 +160,7 @@ When choosing colours for your data visualisation:
 
 {% swatchList { palette: chartCategoryColours, group: "multiple", compact: true } %}
 
-{% grid { columns: { mobile: 1, desktop: 3 }, classes: 'govuk-!-margin-top-6' } %}
+{% grid { columns: { mobile: 1, desktop: 3 } } %}
 
 {% gridCell {classes: "app-border app-border--top"} %}
 

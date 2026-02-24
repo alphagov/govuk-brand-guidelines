@@ -90,15 +90,15 @@ An example of this is the GOV.UK One Login app.
 
 {% grid { columns: 3 } %}
 
-{% figure { src: "./app-icon-template.svg", alt: "Logo template for GOV.UK-branded apps. The wordmark is shown above a placeholder space for a symbol to replace the crown.", classes: "govuk-!-margin-bottom-0" } %}
+{% figure { src: "./app-icon-template.svg", alt: "Logo template for GOV.UK-branded apps. The wordmark is shown above a placeholder space for a symbol to replace the crown." } %}
 Framework
 {% endfigure %}
 
-{% figure { src: "./app-icon.svg", alt: "App icon of the GOV.UK app. The wordmark is shown above the crown.", classes: "govuk-!-margin-bottom-0" } %}
+{% figure { src: "./app-icon.svg", alt: "App icon of the GOV.UK app. The wordmark is shown above the crown." } %}
 **Example 1:** GOV.UK app
 {% endfigure %}
 
-{% figure { src: "./app-icon-one-login.svg", alt: "App icon of the GOV.UK One Login app, showing the symbol for One Login below the wordmark.", classes: "govuk-!-margin-bottom-0" } %}
+{% figure { src: "./app-icon-one-login.svg", alt: "App icon of the GOV.UK One Login app, showing the symbol for One Login below the wordmark." } %}
 **Example 2:** GOV.UK One Login
 {% endfigure %}
 
