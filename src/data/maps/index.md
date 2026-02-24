@@ -62,7 +62,7 @@ A well-designed map should consider a few things.
 
 ### Hierarchy
 
-Ensure the story is the foreground. The main story elements should be most prominent. Use bold colours with larger fonts and symbol size on these elements.
+Ensure the story is the foreground. The main story elements should be most prominent. Use bold colours with a larger font and symbol size on these elements.
 
 Secondary features should fall to the background and not be as immediately present. Ensure there is enough contrast between background elements and other features.
 
