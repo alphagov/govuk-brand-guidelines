@@ -6,11 +6,25 @@ sitemapTitle: Web colour
 
 ## Web palette
 
-Use these colours for supporting materials like illustrations, or in custom components where appropriate.
+Use these colours for supporting elements in your service like illustrations, or in custom components where appropriate.
 
-To reference colours from the palette directly you should use the `govuk-colour` function. For example, colour: `govuk-colour("blue")`.
+If you're using GOV.UK Frontend or the GOV.UK Prototype Kit, you can access the full web palette, and all its available colours, using the `govuk-colour` function.
 
-Avoid using the palette colours if there is a Sass variable that is designed for your context. For example, if you are styling the error state of a component you should use the `$govuk-error-colour` Sass variable rather than `govuk-colour("red")`.
+By default, the function will return the ‘primary’ variant of each colour. For example: `govuk-colour("blue")` will return ‘Primary blue’ `#1d70b8`.
+
+Access tints and shades of colour groups using the `$variant` option.
+
+For example:
+
+- `govuk-colour("red", $variant: "tint-25")` will return ‘Red tint 25%’, which is a variant of red with a tint of 25%
+- `govuk-colour("blue", $variant: "shade-50")` will return ‘Blue shade 50%’, which is a variant of blue with a shade of 50%
+
+Most colours include these variants:
+
+- tints at 25% (`tint-25`), 50% (`tint-50`), 80% (`tint-80`) and 95% (tint-95)
+- shades at 25% (`shade-25`) and 50% (`shade-50`)
+
+Black includes Primary black, with tints to show greys. White has no variants.
 
 The web palette has:
 
@@ -66,23 +80,32 @@ The web palette has:
 
 {% swatchList { use: "web", group: "neutral" } %}
 
-### Web functional colours
+## Functional colours
 
-If you are using GOV.UK Frontend or the GOV.UK Prototype Kit, use the [Sass variables](https://frontend.design-system.service.gov.uk/sass-api-reference/#colours) provided rather than copying the hexadecimal (hex) colour values. For example, use `$govuk-brand-colour` rather than `#1d70b8`.
+The GOV.UK Design System has a set of functional colours for essential page elements. These help apply colours across the Design System in a way that makes interactions predictable and consistent to users.
+
+If you're using GOV.UK Frontend or the GOV.UK Prototype Kit, use the `govuk-functional-colour` Sass function. The colours available using this function are based on specific purposes and contexts, so that function will automatically assign appropriate colours.
+
+Do not copy the specific hexadecimal (hex) colour values. For example, use `govuk-functional-colour("brand")` rather than `#1d70b8`.
 
 This means that your service will always use the most recent colour palette whenever you update.
 
-Only use the variables in the context they’re designed for. In all other cases, you should reference the web primary directly. For example, if you wanted to use primary red, you should use `govuk-colour("primary-red")` rather than `$govuk-error-colour`.
+Only use the variables in the context they’re designed for. In all other cases, you should reference the [GOV.UK web palette](https://design-system.service.gov.uk/styles/colour/#govuk-web-palette) directly. For example, if you wanted to use red, you should use `govuk-colour("red")` rather than `govuk-functional-colour("error")`.
 
 {% set webFunctionalColours = [
-  { label: "$govuk-text-colour", hex: "#0B0C0C", group: "text" },
-  { label: "$govuk-secondary-text-colour", hex: "#484949", group: "text" },
-  { label: "$govuk-link-colour", hex: "#1D70B8", group: "links" },
-  { label: "$govuk-link-visited-colour", hex: "#54319F", group: "links" },
-  { label: "$govuk-link-hover-colour", hex: "#0F385C", group: "links" },
-  { label: "$govuk-link-active-colour", hex: "#0B0C0C", group: "links" },
-  { label: "$govuk-border-colour", hex: "#CECECE", group: "border" },
-  { label: "$govuk-input-border-colour", hex: "#0B0C0C", group: "border" }
+  { label: "text", hex: "#0B0C0C", group: "text" },
+  { label: "secondary-text", hex: "#484949", group: "text" },
+  { label: "link", hex: "#1A65A6", group: "links" },
+  { label: "link-hover", hex: "#0F385C", group: "links" },
+  { label: "link-visited", hex: "#54319F", group: "links" },
+  { label: "link-active", hex: "#0B0C0C", group: "links" },
+  { label: "border", hex: "#CECECE", group: "border" },
+  { label: "input-border", hex: "#0B0C0C", group: "border" },
+  { label: "template-background", hex: "#F4F8FB", group: "background" },
+  { label: "body-background", hex: "#FFFFFF", group: "background" },
+  { label: "surface-background", hex: "#F4F8FB", group: "surface" },
+  { label: "surface-text", hex: "#0B0C0C", group: "surface" },
+  { label: "surface-border", hex: "#8EB8DC", group: "surface" }
 ] %}
 
 #### Text
@@ -97,29 +120,45 @@ Only use the variables in the context they’re designed for. In all other cases
 
 {% swatchList { palette: webFunctionalColours, group: "border" } %}
 
+#### Background
+
+{% swatchList { palette: webFunctionalColours, group: "background" } %}
+
+Use the ‘template-background‘ colour if you need to match the colour of the `<html>` element. Use the ‘body-background‘ colour if you need to match the colour of the `<body>` element.
+
 #### Focus state
 
-{% swatch { label: "$govuk-focus-colour", hex: "#FFDD00" } %}
+{% swatch { label: "focus", hex: "#FFDD00" } %}
 
-Only use this colour to indicate which element is focused on. For example, when a user tabs to an element with their keyboard.
+Only use the `focus` colour to indicate which element is focused on. For example, when a user tabs to an element with their keyboard.
 
-{% swatch { label: "$govuk-focus-text-colour", hex: "#0B0C0C" } %}
+{% swatch { label: "focus-text", hex: "#0B0C0C" } %}
 
 #### Error state
 
-{% swatch { label: "$govuk-error-colour", hex: "#CA3535" } %}
+{% swatch { label: "error", hex: "#CA3535" } %}
 
-Use for error messages.
+Use the `error` colour to show error messages.
 
-#### Success state.
+#### Success state
 
-{% swatch { label: "$govuk-success-colour", hex: "#11875A" } %}
+{% swatch { label: "success", hex: "#11875A" } %}
 
-Use for success messages.
+Use the `success` colour to show success messages.
+
+#### Hover state
+
+{% swatch { label: "hover", hex: "#CECECE" } %}
+
+Use the `hover` colour to show input hover states.
 
 #### Brand colour
 
-{% swatch { label: "$govuk-brand-colour", hex: "#1D70B8" } %}
+{% swatch { label: "brand", hex: "#1D70B8" } %}
+
+#### Surface
+
+{% swatchList { palette: webFunctionalColours, group: "surface" } %}
 
 ### Web palette example
 
