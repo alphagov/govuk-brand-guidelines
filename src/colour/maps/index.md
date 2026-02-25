@@ -85,7 +85,7 @@ Indicative examples for illustrative purposes only.
 
 {% set mapExampleColours = [
   { label: "Accent green", hex: "#66F39E", group: "poi" },
-  { label: "Primary green", hex: "#11875A", group: "poi" },
+  { label: "Primary green", hex: "#0F7A52", group: "poi" },
   { label: "Black", hex: "#0B0C0C", group: "poi" },
   { label: "Black tint 80%", hex: "#CECECE", group: "base" },
   { label: "Black tint 95%", hex: "#F3F3F3", group: "base" },

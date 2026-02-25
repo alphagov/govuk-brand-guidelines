@@ -142,7 +142,7 @@ Use the `error` colour to show error messages.
 
 #### Success state
 
-{% swatch { label: "success", hex: "#11875A" } %}
+{% swatch { label: "success", hex: "#0F7A52" } %}
 
 Use the `success` colour to show success messages.
 

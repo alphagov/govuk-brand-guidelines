@@ -82,51 +82,51 @@ export default function () {
     },
     {
       group: 'green',
-      hex: '#11875A',
-      cmyk: [87, 0, 33, 47],
-      pantone: '7725 C',
+      hex: '#0F7A52',
+      cmyk: [99, 0, 83, 37],
+      pantone: '7727 C',
       label: 'Primary green',
       uses: ['app', 'social', 'web', 'print', 'chart', 'map']
     },
     {
       group: 'green',
-      hex: '#4DA583',
-      cmyk: [57, 27, 0, 21],
-      pantone: '7688 C',
+      hex: '#4B9B7D',
+      cmyk: [70, 13, 52, 17],
+      pantone: '6153 C',
       label: 'Green tint 25%',
       uses: ['app', 'social', 'web', 'print', 'chart', 'map']
     },
     {
       group: 'green',
-      hex: '#88C3AD',
-      cmyk: [30, 0, 11, 24],
-      pantone: '564 C',
+      hex: '#87BCA8',
+      cmyk: [67, 4, 51, 5],
+      pantone: '7723 C',
       label: 'Green tint 50%',
       uses: ['app', 'social', 'web', 'print', 'chart', 'map']
     },
     {
       group: 'green',
-      hex: '#CFE7DE',
-      cmyk: [5, 0, 2, 5],
+      hex: '#CFE4DC',
+      cmyk: [13, 0, 9, 0],
       pantone: '621 C',
       label: 'Green tint 80%',
       uses: ['app', 'social', 'web', 'print', 'chart', 'map']
     },
     {
       group: 'green',
-      hex: '#F3F9F7',
+      hex: '#F3F8F6',
       label: 'Green tint 95%',
       uses: ['app', 'social', 'web', 'map']
     },
     {
       group: 'green',
-      hex: '#0D6544',
+      hex: '#0B5C3E',
       label: 'Green shade 25%',
       uses: ['app', 'social', 'web', 'chart', 'map']
     },
     {
       group: 'green',
-      hex: '#09442D',
+      hex: '#083D29',
       label: 'Green shade 50%',
       uses: ['app', 'social', 'web', 'chart', 'map']
     },

@@ -33,7 +33,7 @@ The chart palette has:
   { label: "Blue tint 95%", hex: "#F4F8FB", group: "tint" },
   { label: "Magenta tint 95%", hex: "#FCF5F8", group: "tint" },
   { label: "Red tint 95%", hex: "#FCF5F5", group: "tint" },
-  { label: "Green tint 95%", hex: "#F3F9F7", group: "tint" },
+  { label: "Green tint 95%", hex: "#F3F8F6", group: "tint" },
   { label: "Purple tint 95%", hex: "#F6F5FA", group: "tint" },
   { label: "Teal tint 95%", hex: "#F3F9F9", group: "tint" },
   { label: "Orange tint 95%", hex: "#FEF8F5", group: "tint" },
