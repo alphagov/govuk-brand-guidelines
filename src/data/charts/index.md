@@ -9,7 +9,13 @@ The [Colour: Charts](/colour/charts/) page shows the chart palette and how to us
 
 Charts come in many forms, but most share the same anatomy. Understanding the basic building blocks behind a chart can help when creating one.
 
-![Example chart highlighting elements of a chart: annotation, axis, source, axis value label](./elements-of-a-chart.svg)
+Graphical elements like the plot area, gridlines, marks and tick marks play an important role in helping the user understand and interpret the data in your chart.
+
+The right axis scale helps convey the relative size of your data values accurately and clearly to the user.
+
+Text in a chart is just as important in helping users understand the chart and the data it shows.
+
+![Example chart highlighting elements of a chart: Grid line, annotation, mark, plot area, axis, tick mark, source, axis value (tick) label](./elements-of-a-chart.svg)
 
 ### Titles
 
