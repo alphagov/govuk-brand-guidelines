@@ -44,9 +44,15 @@ export default function () {
     },
     {
       group: 'blue',
+      hex: '#1A65A6',
+      label: 'Blue shade 10%',
+      uses: ['app', 'chart', 'map', 'social', 'web']
+    },
+    {
+      group: 'blue',
       hex: '#16548A',
       label: 'Blue shade 25%',
-      uses: ['app', 'social', 'chart', 'map']
+      uses: ['app', 'social', 'web', 'chart', 'map']
     },
     {
       group: 'blue',
@@ -116,13 +122,13 @@ export default function () {
       group: 'green',
       hex: '#0D6544',
       label: 'Green shade 25%',
-      uses: ['app', 'social', 'chart', 'map']
+      uses: ['app', 'social', 'web', 'chart', 'map']
     },
     {
       group: 'green',
       hex: '#09442D',
       label: 'Green shade 50%',
-      uses: ['app', 'social', 'chart', 'map']
+      uses: ['app', 'social', 'web', 'chart', 'map']
     },
     {
       group: 'green',
@@ -172,13 +178,13 @@ export default function () {
       group: 'teal',
       hex: '#106165',
       label: 'Teal shade 25%',
-      uses: ['app', 'social', 'chart', 'map']
+      uses: ['app', 'social', 'web', 'chart', 'map']
     },
     {
       group: 'teal',
       hex: '#0B4144',
       label: 'Teal shade 50%',
-      uses: ['app', 'social', 'chart', 'map']
+      uses: ['app', 'social', 'web', 'chart', 'map']
     },
     {
       group: 'teal',
@@ -230,13 +236,13 @@ export default function () {
       group: 'purple',
       hex: '#3F2577',
       label: 'Purple shade 25%',
-      uses: ['app', 'social', 'chart', 'map']
+      uses: ['app', 'social', 'web', 'chart', 'map']
     },
     {
       group: 'purple',
       hex: '#2A1950',
       label: 'Purple shade 50%',
-      uses: ['app', 'social', 'chart', 'map']
+      uses: ['app', 'social', 'web', 'chart', 'map']
     },
     {
       group: 'purple',
@@ -286,13 +292,13 @@ export default function () {
       group: 'magenta',
       hex: '#98285D',
       label: 'Magenta shade 25%',
-      uses: ['app', 'social', 'chart', 'map']
+      uses: ['app', 'social', 'web', 'chart', 'map']
     },
     {
       group: 'magenta',
       hex: '#651B3E',
       label: 'Magenta shade 50%',
-      uses: ['app', 'social', 'chart', 'map']
+      uses: ['app', 'social', 'web', 'chart', 'map']
     },
     {
       group: 'magenta',
@@ -342,13 +348,13 @@ export default function () {
       group: 'red',
       hex: '#982828',
       label: 'Red shade 25%',
-      uses: ['app', 'social', 'chart', 'map']
+      uses: ['app', 'social', 'web', 'chart', 'map']
     },
     {
       group: 'red',
       hex: '#651B1B',
       label: 'Red shade 50%',
-      uses: ['app', 'social', 'chart', 'map']
+      uses: ['app', 'social', 'web', 'chart', 'map']
     },
     {
       group: 'red',
@@ -398,13 +404,13 @@ export default function () {
       group: 'orange',
       hex: '#B7592A',
       label: 'Orange shade 25%',
-      uses: ['app', 'social', 'chart', 'map']
+      uses: ['app', 'social', 'web', 'chart', 'map']
     },
     {
       group: 'orange',
       hex: '#7A3C1C',
       label: 'Orange shade 50%',
-      uses: ['app', 'social', 'chart', 'map']
+      uses: ['app', 'social', 'web', 'chart', 'map']
     },
     {
       group: 'orange',
@@ -454,13 +460,13 @@ export default function () {
       group: 'yellow',
       hex: '#BFA600',
       label: 'Yellow shade 25%',
-      uses: ['app', 'social', 'map']
+      uses: ['app', 'social', 'web', 'map']
     },
     {
       group: 'yellow',
       hex: '#806F00',
       label: 'Yellow shade 50%',
-      uses: ['app', 'social', 'map']
+      uses: ['app', 'social', 'web', 'map']
     },
     {
       group: 'yellow',
