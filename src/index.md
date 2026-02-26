@@ -9,7 +9,7 @@ mainClasses: 'app-homepage'
 
 {% breakOut {classes: "app-homepage-masthead"} %}
 
-{% grid { columns: { desktop: 3 }, classes: "govuk-!-margin-bottom-0" } %}
+{% grid { columns: { desktop: 3 }, classes: "govuk-!-margin-0" } %}
 {% gridCell { span: 2 } %}
 
 # A brand that can inform and inspire
