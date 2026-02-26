@@ -7,15 +7,15 @@
   padding-top: 0;
 }
 
-.app-prose :is(.govuk-body, .govuk-list) + .govuk-heading-l {
+.app-prose .govuk-heading-l:not(:first-child) {
   @include govuk-responsive-margin(7, $direction: 'top');
 }
 
-.app-prose :is(.govuk-body, .govuk-list) + .govuk-heading-m {
+.app-prose .govuk-heading-m:not(:first-child) {
   @include govuk-responsive-margin(6, $direction: 'top');
 }
 
-.app-prose :is(.govuk-body, .govuk-list) + .govuk-heading-s {
+.app-prose .govuk-heading-s:not(:first-child) {
   @include govuk-responsive-margin(5, $direction: 'top');
 }
 
