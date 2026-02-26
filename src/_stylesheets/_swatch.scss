@@ -6,7 +6,7 @@
   grid-template-columns: auto 1fr;
   column-gap: govuk-spacing(3);
   margin-top: 0;
-  @include govuk-responsive-margin(5, $direction: 'bottom');
+  @include govuk-responsive-margin(4, $direction: 'bottom');
   @include govuk-font(19);
 
   // The colour sample
@@ -57,7 +57,7 @@
   column-width: var(--column-width);
   column-gap: $govuk-gutter-half;
   margin-top: govuk-spacing(1);
-  @include govuk-responsive-margin(5, $direction: 'bottom');
+  margin-bottom: 0;
 
   &.app-swatch-list--compact {
     --column-width: 13rem;
@@ -66,9 +66,5 @@
   .app-swatch {
     // Do not break content within swatches
     break-inside: avoid;
-
-    // Margins can be quite buggy in columns, so use padding instead
-    @include govuk-responsive-margin(0, $direction: 'bottom');
-    @include govuk-responsive-padding(3, $direction: 'bottom');
   }
 }
