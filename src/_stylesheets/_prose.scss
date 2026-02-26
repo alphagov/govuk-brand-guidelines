@@ -2,21 +2,26 @@
 // Override spacing from GOV.UK Frontend
 //
 
-.govuk-heading-l,
-.govuk-heading-m {
+.app-prose .govuk-heading-l,
+.app-prose .govuk-heading-m {
   margin-bottom: govuk-spacing(2);
   padding-top: 0;
 }
 
-.govuk-body + .govuk-heading-l,
-.govuk-list + .govuk-heading-l {
-  margin-top: govuk-spacing(7);
+.app-prose .govuk-body + .govuk-heading-l,
+.app-prose .govuk-list + .govuk-heading-l {
+  @include govuk-responsive-margin(7, $direction: 'top');
 }
 
-.govuk-table,
-.govuk-body + .app-grid,
-.govuk-list + .app-grid {
-  margin-top: govuk-spacing(7);
+.app-prose .govuk-table,
+.app-prose .govuk-body + .app-grid,
+.app-prose .govuk-list + .app-grid {
+  @include govuk-responsive-margin(7, $direction: 'top');
+}
+
+.app-prose .app-grid {
+  @include govuk-responsive-margin(9, $direction: 'top');
+  @include govuk-responsive-margin(9, $direction: 'bottom');
 }
 
 //
