@@ -4,7 +4,7 @@ title: Social
 sitemapTitle: Social brand in use
 ---
 
-<!-- TODO: this needs some text on here, at least one introductory sentence -->
+These images and videos show how GOV.UK stays consistent and coherent in social contexts.
 
 {% callout %}
 Indicative examples for illustrative purposes only.
@@ -31,7 +31,7 @@ Indicative examples for illustrative purposes only.
 ![Teaser image saying "Get help with your pension" alongside a graphic of a circular-shaped piggy bank.](./insta-5.png)
 {% endgridCell %}
 {% gridCell %}
-![Teaser image saying "Check a vehicle before you buy it", branded as a "How to guide" with a accent teal circle](./insta-6.png)
+![Teaser image saying "Check a vehicle before you buy it", branded as a "How to guide" with an accent teal circle](./insta-6.png)
 {% endgridCell %}
 {% gridCell %}
 ![Teaser image saying "Step-by-step guide: Registering a death" in a large white circle on a dark blue background.](./insta-7.png)

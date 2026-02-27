@@ -4,7 +4,7 @@ title: App
 sitemapTitle: App brand in use
 ---
 
-<!-- TODO: this needs some text on here, at least one introductory sentence -->
+These images and videos show how GOV.UK stays consistent and coherent in app contexts.
 
 {% callout %}
 Indicative examples for illustrative purposes only.

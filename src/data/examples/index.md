@@ -3,7 +3,7 @@ order: 4
 title: Examples
 ---
 
-<!-- TODO: there needs to be some text on here-->
+These images show examples of GOV.UK-branded charts and visualisations.
 
 {% grid { columns: { mobile: 1, tablet: 3 } } %}
 {% gridCell %}
