@@ -5,7 +5,7 @@ landing: false
 lead: Dashboards can help show several different views of data together.
 ---
 
-A dashboard is a visual tool that shows different views of data to provide an overview of a specific topic. A dashboard will normally be a combination of several charts and important values. A dashboard usually updates automatically on a regular basis, so a user can monitor it over time.
+A dashboard is a visual tool that shows different views of data to provide an overview of a specific topic. A dashboard is usually a combination of several charts and important values. A dashboard usually updates automatically on a regular basis, so a user can monitor it over time.
 
 ### When to use a dashboard
 

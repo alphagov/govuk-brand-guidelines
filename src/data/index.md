@@ -5,11 +5,11 @@ landing: true
 lead: Principles for creating GOV.UK-branded charts and visualisations.
 ---
 
-Data visualisation is the graphic representation of data. We use visual elements, like lines, shapes and colours, to convey information to users.
+Data visualisation is the graphic representation of data. We use visual elements, such as lines, shapes and colours, to convey information to users.
 
-Visualising data can help to communicate information that may otherwise be lost due to its complexity.
+Visualising data can help communicate information that may otherwise be lost due to complexity.
 
-Showing these details in a clear and easy to understand way, allows users to make sense of complex information quickly and confidently. Users become more informed and equipped to make relevant decisions.
+Showing these details in a clear and easy to understand way allows users to understand information quickly and confidently. This helps inform users and equip them to make relevant decisions.
 
 ## Principles
 
