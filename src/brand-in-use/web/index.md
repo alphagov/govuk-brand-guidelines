@@ -12,11 +12,11 @@ Indicative examples for illustrative purposes only.
 
 ## Web homepage
 
-![A screenshot of the GOV.UK homepage on desktop.](/colour/web/example.png)
+![Screenshot of the GOV.UK homepage on desktop.](/colour/web/example.png)
 
 ## Web headers
 
-![Screenshot showing web header on mobile and desktop.](/logo-system/web/web-headers-grouped.png)
+![Mockup showing web header on mobile and desktop.](/logo-system/web/web-headers-grouped.png)
 
 ## Web footer
 
