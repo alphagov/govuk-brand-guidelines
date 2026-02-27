@@ -11,10 +11,6 @@ Charts come in many forms, but most share the same anatomy. Understanding the ba
 
 Graphical elements like the plot area, gridlines, marks and tick marks play an important role in helping the user understand and interpret the data in your chart.
 
-The right axis scale helps convey the relative size of your data values accurately and clearly to the user.
-
-Text in a chart is just as important in helping users understand the chart and the data it shows.
-
 {% grid { classes: "app-border" } %}
 {% gridCell %}
 ![Example chart highlighting elements of a chart: Title, subtitle, mark, annotation, tick mark, source, gridline, plot area, axis and axis value (tick) label.](./elements-of-a-chart.svg)
