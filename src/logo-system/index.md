@@ -13,7 +13,7 @@ There are two elements to the GOV.UK logo system: the wordmark and crown.
 
 The wordmark is our primary GOV.UK identifier, with the crown being used as a supporting element to indicate trust.
 
-{% grid { columns: { mobile: 1, desktop: 2 }, classes: 'govuk-!-margin-top-7' } %}
+{% grid { columns: { mobile: 1, desktop: 2 } } %}
 
 <div class="app-border app-border--top">
 

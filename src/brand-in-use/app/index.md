@@ -12,11 +12,15 @@ Indicative examples for illustrative purposes only.
 
 ## App icon
 
+{% grid %}
+{% gridCell %}
 ![App icon of the GOV.UK app and a mockup of the GOV.UK app's page in an App Store.](./app-icon.png)
+{% endgridCell %}
+{% endgrid %}
 
-{% grid { columns: { tablet: 2 }, classes: "govuk-!-margin-top-8" } %}
+{% grid { columns: { tablet: 2 } } %}
 
-<div class="app-border app-border--top govuk-!-padding-top-6">
+{% gridCell { classes: 'app-border app-border--top' } %}
 
 ## App splash screen
 
@@ -24,13 +28,13 @@ No audio. The dot leads a trail of other dots of various colours in a spiral tow
 
 At the bottom of the screen, the crown logo element is revealed by a circular iris effect at the bottom of the screen as the dots in the crown rise and fan out.
 
-</div>
-<div>
+{% endgridCell %}
+{% gridCell %}
 {% video { source: [
     "/graphic-device/dot-use-examples/splash-screen-short-version.mp4",
     "/graphic-device/dot-use-examples/splash-screen-short-version.webm"
 ] } %}
-</div>
+{% endgridCell %}
 
 {% endgrid %}
 

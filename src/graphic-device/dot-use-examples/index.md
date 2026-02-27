@@ -9,7 +9,7 @@ The app splash screen utilises the dot in motion to represent GOV.UK bringing to
 
 {% grid { columns: { desktop: 2 } } %}
 
-<div>
+{% gridCell %}
 
 ### Long splash screen
 
@@ -18,8 +18,8 @@ The app splash screen utilises the dot in motion to represent GOV.UK bringing to
     "./splash-screen-long-version.webm"
 ] } %}
 
-</div>
-<div>
+{% endgridCell %}
+{% gridCell %}
 
 ### Short splash screen
 
@@ -28,7 +28,7 @@ The app splash screen utilises the dot in motion to represent GOV.UK bringing to
     "./splash-screen-short-version.webm"
 ] } %}
 
-</div>
+{% endgridCell %}
 {% endgrid %}
 
 ### Video description of long and short splash screens
@@ -41,7 +41,7 @@ In the long version, the trail of dots moves in a wider spiral.
 
 The dot can be brought to life through animation in illustrations, adding personality and expression to moments such as app onboarding, or to tell visual stories within social.
 
-{% grid { columns: { mobile: 1, tablet: 2, desktop: 3 }, classes: "govuk-!-padding-bottom-6" } %}
+{% grid { columns: { mobile: 1, tablet: 2, desktop: 3 } } %}
 
     {% gridCell {span: {desktop: 2, tablet: 1, mobile: 1}, classes: "app-border app-border--top"} %}
     ### Person
@@ -116,8 +116,7 @@ The dot provides a distinctive, flexible visual thread that ties together differ
 To build coherence across channels, our social end frames follow the same motion behaviour as the app splash screen.
 
 {% grid %}
-
-<div>
+{% gridCell %}
 
 ### Video end frame 16:9
 
@@ -128,12 +127,12 @@ No audio.
     "./end-frame-1920-1080.webm"
 ] } %}
 
-</div>
+{% endgridCell %}
 {% endgrid %}
 
-{% grid { columns: { tablet: 2 }, classes: "govuk-!-padding-bottom-6 govuk-!-padding-top-4" } %}
+{% grid { columns: { tablet: 2 } } %}
 
-<div>
+{% gridCell %}
 
 ### Video end frame 9:16
 
@@ -144,8 +143,8 @@ No audio.
     "./end-frame-1080-1920.webm"
 ] } %}
 
-</div>
-<div>
+{% endgridCell %}
+{% gridCell %}
 
 ### Video end frame 1:1
 
@@ -156,7 +155,7 @@ No audio.
     "./end-frame-1080-1080.webm"
 ]} %}
 
-</div>
+{% endgridCell %}
 {% endgrid %}
 
 ## Video thumbnails
@@ -190,26 +189,26 @@ Indicative examples for illustrative purposes only.
 
 {% grid { columns: { mobile: 2, tablet: 4 } } %}
 
-<div>
+{% gridCell %}
 
 ![Instagram post with image saying "Today is the Summer bank holiday" alongside a graphic of the sun, made up of a yellow circle with yellow half circles as sun rays.](./static-dot-1.png)
 
-</div>
-<div>
+{% endgridCell %}
+{% gridCell %}
 
 ![Instagram post with image saying "Register to vote" inside a green circle.](./static-dot-2.png)
 
-</div>
-<div>
+{% endgridCell %}
+{% gridCell %}
 
 ![Instagram post with image saying "Get help with your pension" alongside a graphic of a circular-shaped piggy bank.](./static-dot-3.png)
 
-</div>
-<div>
+{% endgridCell %}
+{% gridCell %}
 
 ![Instagram post with image saying "Here's how I got my driving licence" with various circular and rounded-corner graphics. "Driving license" is in a lozenge-shaped highlight.](./static-dot-4.png)
 
-</div>
+{% endgridCell %}
 {% endgrid %}
 
 ## Static dot storyboard
@@ -237,65 +236,65 @@ To keep things consistent, avoid the following:
 
 {% grid { columns: { mobile: 1, desktop: 2 } } %}
 
-<div class="app-border app-border--top">
+{% gridCell { classes: "app-border app-border--top" } %}
 
 ### Overuse
 
 Do not overuse the dot.
 
-</div>
-<div>
+{% endgridCell %}
+{% gridCell %}
 
 ![Crossed out graphic with a small blank dot on the top left. Text placed in the centre within a large circle, and also contains a lozenge-shaped text highlight.](./incorrect-overuse.svg)
 
-</div>
-<div class="app-border app-border--top">
+{% endgridCell %}
+{% gridCell { classes: "app-border app-border--top" } %}
 
 ### Distortions
 
 In static application, do not distort or skew the dot. In motion, it’s acceptable to distort the dot under some circumstances.
 
-</div>
-<div>
+{% endgridCell %}
+{% gridCell %}
 
 ![Crossed out graphic with some text placed inside a stretched-out oval.](./incorrect-distorted.svg)
 
-</div>
-<div class="app-border app-border--top">
+{% endgridCell %}
+{% gridCell { classes: "app-border app-border--top" } %}
 
 ### Stroke
 
 Do not use stroke versions of the dot.
 
-</div>
-<div>
+{% endgridCell %}
+{% gridCell %}
 
 ![Crossed out graphic of a circular outline, resembling a ring.](./incorrect-stroke.svg)
 
-</div>
-<div class="app-border app-border--top">
+{% endgridCell %}
+{% gridCell { classes: "app-border app-border--top" } %}
 
 ### Crops
 
 Do not crop the dot so that it becomes abstract. Ensure adjacent dots are visible to provide context.
 
-</div>
-<div>
+{% endgridCell %}
+{% gridCell %}
 
 ![Crossed out graphic showing only the cropped corner of a large circle.](./incorrect-crop.svg)
 
-</div>
-<div class="app-border app-border--top">
+{% endgridCell %}
+{% gridCell { classes: "app-border app-border--top" } %}
 
 ### Filters and effects
 
 Do not apply shadows or gradients.
 
-</div>
-<div>
+{% endgridCell %}
+{% gridCell %}
 
 ![Crossed out graphic of a circle with drop shadow.](./incorrect-shadow.png)
 
-</div>
+{% endgridCell %}
 
 {% endgrid %}
