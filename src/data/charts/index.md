@@ -15,7 +15,11 @@ The right axis scale helps convey the relative size of your data values accurate
 
 Text in a chart is just as important in helping users understand the chart and the data it shows.
 
-![Example chart highlighting elements of a chart: Grid line, annotation, mark, plot area, axis, tick mark, source, axis value (tick) label](./elements-of-a-chart.svg)
+{% grid { classes: "app-border" } %}
+{% gridCell %}
+![Example chart highlighting elements of a chart: Title, subtitle, mark, annotation, tick mark, source, gridline, plot area, axis and axis value (tick) label.](./elements-of-a-chart.svg)
+{% endgridCell %}
+{% endgrid %}
 
 ### Titles
 
