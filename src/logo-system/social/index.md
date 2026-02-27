@@ -56,11 +56,11 @@ Indicative examples for illustrative purposes only.
 
 {% grid { columns: { mobile: 3, desktop: 3 } } %}
 
-![Mock-up of the GOV.UK channel page on YouTube.](./youtube-example.png)
+![Mockup of the GOV.UK channel page on YouTube.](./youtube-example.png)
 
-![Mock-up of a post from GOV.UK on Instagram.](./insta-example.png)
+![Mockup of a post from GOV.UK on Instagram.](./insta-example.png)
 
-![Mock-up of the GOV.UK profile page on Instagram.](./facebook-example.png)
+![Mockup of the GOV.UK profile page on Instagram.](./facebook-example.png)
 
 {% endgrid %}
 

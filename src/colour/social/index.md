@@ -91,8 +91,8 @@ Indicative examples for illustrative purposes only.
 {% endcallout %}
 
 {% set tonalColourExamples = [
-  { label: "Green tint 95%", hex: "#F3F9F7", group: "example1" },
-  { label: "Green shade 50%", hex: "#09442D", group: "example1" },
+  { label: "Green tint 95%", hex: "#F3F8F6", group: "example1" },
+  { label: "Green shade 50%", hex: "#083D29", group: "example1" },
   { label: "Primary red", hex: "#CA3535", group: "example2" },
   { label: "Red shade 50%", hex: "#651B1B", group: "example2" },
   { label: "Accent red", hex: "#FF5E5E", group: "example2" },
@@ -188,7 +188,7 @@ Remember, some users browse with high-contrast settings or dark mode. Colours ma
   { label: "Purple shade 25%", hex: "#3F2577", group: "set5" },
   { label: "Accent green", hex: "#66F39E", group: "set6" },
   { label: "Blue shade 50%", hex: "#0F385C", group: "set6" },
-  { label: "Green shade 50%", hex: "#09442D", group: "set7" },
+  { label: "Green shade 50%", hex: "#083D29", group: "set7" },
   { label: "Accent blue", hex: "#11E0F1", group: "set7" },
   { label: "Primary blue", hex: "#1D70B8", group: "set8" },
   { label: "Accent blue", hex: "#11E0F1", group: "set8" },

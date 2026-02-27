@@ -6,7 +6,7 @@
   grid-template-columns: auto 1fr;
   column-gap: govuk-spacing(3);
   margin-top: 0;
-  @include govuk-responsive-margin(5, $direction: 'bottom');
+  @include govuk-responsive-margin(4, $direction: 'bottom');
   @include govuk-font(19);
 
   // The colour sample
@@ -43,45 +43,28 @@
   font-size: smaller;
 }
 
-// Compact layout variant
 .app-swatch--compact {
   --sample-size: 1.5em;
   --sample-border: 3px;
 
-  // Add a third column so that values can appear next to one another
-  grid-template-columns: auto auto 1fr;
-  column-gap: govuk-spacing(2);
-
   @include govuk-font(16);
-
-  &::before {
-    margin-bottom: govuk-spacing(1);
-  }
-}
-
-// Allow swatch name to span the newly added column
-.app-swatch--compact .app-swatch__name {
-  grid-column: 2 / 4;
-}
-
-// Place every second value in the third column
-.app-swatch--compact .app-swatch__value:nth-of-type(2n) {
-  grid-column: 3;
 }
 
 // Reduce the spacing between swatches in a list
 .app-swatch-list {
-  margin-top: govuk-spacing(1);
-  column-width: 17rem;
+  --column-width: 17rem;
+
+  column-width: var(--column-width);
   column-gap: $govuk-gutter-half;
-  @include govuk-responsive-margin(5, $direction: 'bottom');
+  margin-top: govuk-spacing(1);
+  margin-bottom: 0;
+
+  &.app-swatch-list--compact {
+    --column-width: 13rem;
+  }
 
   .app-swatch {
     // Do not break content within swatches
     break-inside: avoid;
-
-    // Margins can be quite buggy in columns, so use padding instead
-    @include govuk-responsive-margin(0, $direction: 'bottom');
-    @include govuk-responsive-padding(3, $direction: 'bottom');
   }
 }

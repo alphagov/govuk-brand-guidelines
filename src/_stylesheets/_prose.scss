@@ -1,3 +1,34 @@
+//
+// Override spacing from GOV.UK Frontend
+//
+
+.app-prose :is(.govuk-heading-l, .govuk-heading-m, .govuk-heading-s) {
+  margin-bottom: govuk-spacing(2);
+  padding-top: 0;
+}
+
+.app-prose .govuk-heading-l:not(:first-child) {
+  @include govuk-responsive-margin(7, $direction: 'top');
+}
+
+.app-prose .govuk-heading-m:not(:first-child) {
+  @include govuk-responsive-margin(6, $direction: 'top');
+}
+
+.app-prose .govuk-heading-s:not(:first-child) {
+  @include govuk-responsive-margin(5, $direction: 'top');
+}
+
+.app-prose .govuk-table,
+.app-prose .app-grid {
+  @include govuk-responsive-margin(7, $direction: 'top');
+  @include govuk-responsive-margin(7, $direction: 'bottom');
+}
+
+//
+// Media
+//
+
 .app-prose img,
 .app-prose video {
   max-width: 100%;
@@ -8,6 +39,10 @@
   width: auto;
   max-height: 90vh;
 }
+
+//
+// Code blocks
+//
 
 .app-prose code {
   padding-right: govuk-spacing(1);

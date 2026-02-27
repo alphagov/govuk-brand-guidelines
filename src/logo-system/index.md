@@ -7,13 +7,13 @@ lead: How the GOV.UK wordmark and crown work together in different contexts.
 
 ## The GOV.UK logo system
 
-Our logo represents our visual identity at the very highest level and is vitally important to our brand. This guidance will give you the confidence and knowledge you need to use it correctly.
+Our logo system represents our visual identity at the very highest level and is vitally important to our brand. This guidance will give you the confidence and knowledge you need to use it correctly.
 
 There are two elements to the GOV.UK logo system: the wordmark and crown.
 
 The wordmark is our primary GOV.UK identifier, with the crown being used as a supporting element to indicate trust.
 
-{% grid { columns: { mobile: 1, desktop: 2 }, classes: 'govuk-!-margin-top-7' } %}
+{% grid { columns: { mobile: 1, desktop: 2 } } %}
 
 <div class="app-border app-border--top">
 

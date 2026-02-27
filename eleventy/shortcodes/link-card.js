@@ -3,7 +3,8 @@ import { blockShortcode } from './utils.js'
 export const linkCard = blockShortcode((options = {}) => {
   const defaultOptions = {
     classes: undefined,
-    titleContainer: "div"
+    iconBackgroundColour: undefined,
+    titleContainer: 'div'
   }
   options = { ...defaultOptions, ...options }
 
@@ -12,10 +13,10 @@ export const linkCard = blockShortcode((options = {}) => {
     options.description &&
       `<span class="app-link-card__description">${options.description}</span>`,
     options.icon &&
-      `<img class="app-link-card__icon" alt="" src="${options.icon}">`
+      `<div class="app-link-card__icon-container"><img class="app-link-card__icon" alt="" src="${options.icon}"></div>`
   ].filter(Boolean)
 
-  return `<div class="app-link-card${options.classes ? ` ${options.classes}` : ''}">
+  return `<div class="app-link-card${options.classes ? ` ${options.classes}` : ''}" ${options.iconBackgroundColour && ` style="--icon-background: ${options.iconBackgroundColour}"`}>
     ${parts.join('')}
   </div>`
 })
