@@ -32,8 +32,8 @@ We’ve refreshed the GOV.UK brand to meet the needs and changing expectations o
 {% linkCard {titleContainer: 'h3', title: 'Logo system', description: 'How the GOV.UK wordmark and crown work together in different contexts.', icon: './logo-system.svg', iconBackgroundColour: '#0F7A52', href: ('/logo-system/' | url) } %}
 {% linkCard {titleContainer: 'h3', title: 'Colour', description: 'Core brand colours, palettes and contrast requirements for accessibility.', icon: './colour.svg', iconBackgroundColour: '#54319f', href: ('/colour/' | url) } %}
 {% linkCard {titleContainer: 'h3', title: 'Typography', description: 'Which typeface and font to use, and how to use them.', icon: './typography.svg', iconBackgroundColour: '#651b3e', href: ('/typography/' | url) } %}
-{% linkCard {titleContainer: 'h3', title: 'Data', description: 'Principles for creating GOV.UK-branded charts and visualisations.', icon: './data.svg', iconBackgroundColour: '#0f385c', href: ('/data/' | url) } %}
-{% linkCard {titleContainer: 'h3', title: 'Brand in use', description: 'One brand. Many places.', icon: './brand-in-use.svg', iconBackgroundColour: '#98285d', href: ('/brand-in-use/' | url) } %}
+{% linkCard {titleContainer: 'h3', title: 'Data', description: 'Principles for creating GOV.UK-branded charts and visualisations.', icon: './data.svg', iconBackgroundColour: '#158187', href: ('/data/' | url) } %}
+{% linkCard {titleContainer: 'h3', title: 'Brand in use', description: 'One brand. Many places.', icon: './brand-in-use.svg', iconBackgroundColour: '#1d70b8', href: ('/brand-in-use/' | url) } %}
 {% endgrid %}
 
 </div>
