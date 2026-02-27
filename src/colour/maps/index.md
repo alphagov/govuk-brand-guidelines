@@ -6,7 +6,8 @@ sitemapTitle: Maps colour
 
 ## Map palette
 
-Use colour thoughtfully in maps, choose a clear palette, limit colours, and ensure a 3:1 contrast ratio. Check for colour-blind accessibility and include a legend.
+Use colour thoughtfully in maps, choose a clear palette, limit colours, and ensure a 3:1 contrast ratio. Check for accessibility, particularly for visually impaired and colour blind users, and include a legend.
+
 Combine colour with shapes, patterns, and labels to improve clarity.
 
 Be aware that users may interpret colours differently, influenced by cultural or political associations.
@@ -73,9 +74,7 @@ If you cannot get enough contrast, try breaking the map into simpler versions, a
 
 ### Example
 
-![Example map of South West England with green highlights](./example-map.png)
-
-A map of the South West England displaying the areas of conservation designated by Historic England.
+![Example map of South West England highlighting areas of conservation in green.](./example-map.png)
 
 {% callout %}
 Indicative examples for illustrative purposes only.
