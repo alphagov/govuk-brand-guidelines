@@ -4,7 +4,7 @@ title: Web
 sitemapTitle: Web brand in use
 ---
 
-<!-- TODO: this needs some text on here, at least one introductory sentence -->
+These images show how GOV.UK stays consistent and coherent on the GOV.UK website and services.
 
 {% callout %}
 Indicative examples for illustrative purposes only.
@@ -12,11 +12,11 @@ Indicative examples for illustrative purposes only.
 
 ## Web homepage
 
-![A screenshot of the GOV.UK homepage on desktop.](/colour/web/example.png)
+![Screenshot of the GOV.UK homepage on desktop.](/colour/web/example.png)
 
 ## Web headers
 
-![Screenshot showing web header on mobile and desktop.](/logo-system/web/web-headers-grouped.png)
+![Mockup showing web header on mobile and desktop.](/logo-system/web/web-headers-grouped.png)
 
 ## Web footer
 

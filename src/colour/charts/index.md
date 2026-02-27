@@ -137,7 +137,7 @@ When choosing colours for your data visualisation:
 {% endgridCell %}
 {% gridCell {span: {desktop: 2, tablet: 1, mobile: 1}, classes: "app-border"} %}
 
-![Example of a bar chart with blue bars over grey lines](./example-single-category.svg)
+![Example of a bar chart with blue bars over grey lines.](./example-single-category.svg)
 
 {% endgridCell %}
 {% endgrid %}
@@ -153,7 +153,7 @@ When choosing colours for your data visualisation:
 {% endgridCell %}
 {% gridCell {span: {desktop: 2, tablet: 1, mobile: 1}, classes: "app-border"} %}
 
-![Example of a line chart with differently coloured lines over a grid and a legend on top](./example-multiple-categories.svg)
+![Example of a line chart with differently coloured lines over a grid and a legend on top.](./example-multiple-categories.svg)
 
 {% endgridCell %}
 {% endgrid %}
@@ -169,7 +169,7 @@ When choosing colours for your data visualisation:
 {% endgridCell %}
 {% gridCell {span: {desktop: 2, tablet: 1, mobile: 1}, classes: "app-border"} %}
 
-![Example of a stacked bar chart with four differently coloured stacks and a legend on top](./example-divergent-categories.svg)
+![Example of a stacked bar chart with four differently coloured stacks and a legend on top.](./example-divergent-categories.svg)
 
 {% endgridCell %}
 {% endgrid %}
@@ -180,7 +180,7 @@ When choosing colours for your data visualisation:
 
 On social, charts can leverage the full colour palette. For example, accent colours can be used to highlight key data points and positive messages. We also use larger and bolder graphical elements to help engage and inform audiences.
 
-![Series of mock-ups of posts from GOV.UK on Instagram showing differently sized circles with numbers](./social-chart.png)
+![Series of mockups of a sponsored post from GOV.UK on Instagram showing differently-sized circles representing the most visited pages on GOV.UK.](./social-chart.png)
 
 {% callout %}
 Indicative examples for illustrative purposes only.
