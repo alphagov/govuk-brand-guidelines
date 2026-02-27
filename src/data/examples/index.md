@@ -19,7 +19,6 @@ These images show examples of GOV.UK-branded charts and visualisations.
 {% endgridCell %}
 {% gridCell %}
 ![A pie chart divided into 2 segments: a large accent teal section labeled as 60% and a smaller white section labeled as 40%.](./pie-chart.svg)
-
 ![Example of a bar chart with blue bars over grey lines.](./bar-chart.svg)
 {% endgridCell %}
 {% gridCell %}

@@ -122,35 +122,35 @@ Only use the variables in the context they’re designed for. In all other cases
 
 #### Background
 
-{% swatchList { palette: webFunctionalColours, group: "background" } %}
+Use the `template-background` colour if you need to match the colour of the `<html>` element. Use the `body-background` colour if you need to match the colour of the `<body>` element.
 
-Use the ‘template-background‘ colour if you need to match the colour of the `<html>` element. Use the ‘body-background‘ colour if you need to match the colour of the `<body>` element.
+{% swatchList { palette: webFunctionalColours, group: "background" } %}
 
 #### Focus state
 
-{% swatch { label: "focus", hex: "#FFDD00" } %}
-
 Only use the `focus` colour to indicate which element is focused on. For example, when a user tabs to an element with their keyboard.
+
+{% swatch { label: "focus", hex: "#FFDD00" } %}
 
 {% swatch { label: "focus-text", hex: "#0B0C0C" } %}
 
 #### Error state
 
-{% swatch { label: "error", hex: "#CA3535" } %}
-
 Use the `error` colour to show error messages.
+
+{% swatch { label: "error", hex: "#CA3535" } %}
 
 #### Success state
 
-{% swatch { label: "success", hex: "#0F7A52" } %}
-
 Use the `success` colour to show success messages.
+
+{% swatch { label: "success", hex: "#0F7A52" } %}
 
 #### Hover state
 
-{% swatch { label: "hover", hex: "#CECECE" } %}
-
 Use the `hover` colour to show input hover states.
+
+{% swatch { label: "hover", hex: "#CECECE" } %}
 
 #### Brand colour
 

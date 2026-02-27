@@ -7,12 +7,11 @@ The [Colour: Maps](/colour/maps/) page shows the map palette and how to use colo
 
 ## Elements of a map
 
-A well designed map can bring data to life.
-They can show geographical trends and patterns.
+A well designed map can bring data to life. They can show geographical trends and patterns.
 
 ### Titles
 
-All maps need at least one title, but it is considered best practice to give them two – a headline title and a formal statistical subtitle.
+All maps need at least one title, but you should give them two – a headline title and a formal statistical subtitle.
 
 Titles should be:
 
@@ -26,15 +25,13 @@ Subtitles should include the:
 
 - statistical measure
 - geographic coverage
-- time-period
+- time period
 
 ### Labels
 
 If showing administrative boundaries, annotate them directly on the map or identify the boundary in the legend.
 
-If only showing one or two features, we recommend labelling directly on the map.
-
-This removes the need for a legend and free up space for other features.
+If only showing one or two features, label them directly on the map. This removes the need for a legend and free up space.
 
 ### Legend
 

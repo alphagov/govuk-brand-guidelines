@@ -7,13 +7,9 @@ The [Colour: Charts](/colour/charts/) page shows the chart palette and how to us
 
 ## Elements of a chart
 
-Charts come in many forms, but most share the same anatomy. Understanding the basic building blocks behind a chart can help when creating one.
+Charts come in many forms, but most share the same anatomy. Understand the basic building blocks of a chart before creating one.
 
 Graphical elements like the plot area, gridlines, marks and tick marks play an important role in helping the user understand and interpret the data in your chart.
-
-The right axis scale helps convey the relative size of your data values accurately and clearly to the user.
-
-Text in a chart is just as important in helping users understand the chart and the data it shows.
 
 {% grid { classes: "app-border" } %}
 {% gridCell %}
@@ -23,7 +19,7 @@ Text in a chart is just as important in helping users understand the chart and t
 
 ### Titles
 
-All charts need at least one title, but it's considered best practice to also include a subtitle.
+All charts need at least one title, but you should also include a subtitle.
 
 Titles should be:
 
@@ -37,7 +33,7 @@ Subtitles should include the:
 
 - statistical measure
 - geographic coverage
-- time-period
+- time period
 
 ### Axes
 
