@@ -26,7 +26,7 @@ Indicative examples for illustrative purposes only.
 
 ### Highlights
 
-![Text of Get support with the cost of living with "support" in a lozenge-shaped highlight.](./expression-highlights.png)
+![Text of "Get support with the cost of living" with "support" in a lozenge-shaped highlight.](./expression-highlights.png)
 
 </div>
 <div>

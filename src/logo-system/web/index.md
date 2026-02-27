@@ -22,7 +22,7 @@ The lock-up combining the crown and wordmark is for use throughout the web exper
 Indicative examples for illustrative purposes only.
 {% endcallout %}
 
-![Screenshot showing web header on mobile and desktop.](./web-headers-grouped.png)
+![Mockup showing web header on mobile and desktop.](./web-headers-grouped.png)
 
 We also use the crown as a supporting element within the footer at the end of content.
 
