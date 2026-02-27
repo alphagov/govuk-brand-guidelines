@@ -6,7 +6,8 @@ sitemapTitle: Maps colour
 
 ## Map palette
 
-Use colour thoughtfully in maps, choose a clear palette, limit colours, and ensure a 3:1 contrast ratio. Check for colour-blind accessibility and include a legend.
+Use colour thoughtfully in maps, choose a clear palette, limit colours, and ensure a 3:1 contrast ratio. Check for accessibility, particularly for visually impaired and colour blind users, and include a legend.
+
 Combine colour with shapes, patterns, and labels to improve clarity.
 
 Be aware that users may interpret colours differently, influenced by cultural or political associations.

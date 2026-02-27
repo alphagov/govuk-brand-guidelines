@@ -90,7 +90,7 @@ When you create maps, make sure they are accessible to everyone.
 
 Every map should include a text description. This helps users who use screen readers understand what the map is visualising. If the map is simple, a short sentence may be enough. For more complex maps, include a longer explanation near the map or link to a separate page with more detail.
 
-Use clear labels and ensure the structure of the page helps assistive technologies understand the content.
+Use clear labels and ensure the structure of the page helps users of assistive technologies understand the content.
 
 If the map includes important data, provide another way for users to access it, such as a table or written summary.
 

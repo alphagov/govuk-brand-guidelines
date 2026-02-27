@@ -7,7 +7,7 @@ lead: Core brand colours, palettes and contrast requirements for accessibility.
 
 Our colour palette is designed with accessibility in mind.
 
-However, it remains the responsibility of teams using the colours in the palette to ensure services are WCAG compliant when using colours in combination.
+However, it remains the responsibility of teams using the colours in the palette to ensure services comply with the Web Content Accessibility Guidelines (WCAG) when using colours in combination.
 
 This section explains how to apply colour and helps everyone understand information clearly.
 

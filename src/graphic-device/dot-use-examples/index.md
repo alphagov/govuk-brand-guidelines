@@ -253,7 +253,7 @@ Do not overuse the dot.
 
 ### Distortions
 
-Whilst acceptable in motion under some circumstances, do not distort or skew the dot in static application.
+In static application, do not distort or skew the dot. In motion, it’s acceptable to distort the dot under some circumstances.
 
 </div>
 <div>
