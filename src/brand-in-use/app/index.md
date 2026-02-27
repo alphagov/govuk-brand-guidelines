@@ -12,7 +12,11 @@ Indicative examples for illustrative purposes only.
 
 ## App icon
 
+{% grid %}
+{% gridCell %}
 ![App icon of the GOV.UK app and a mockup of the GOV.UK app's page in an App Store.](./app-icon.png)
+{% endgridCell %}
+{% endgrid %}
 
 {% grid { columns: { tablet: 2 } } %}
 
