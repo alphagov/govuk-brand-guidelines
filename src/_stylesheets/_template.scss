@@ -86,21 +86,21 @@
 }
 
 .app-content--section-data {
-  --app-landing-hero-dark-colour: #{$app-blue-shade-50};
-  --app-landing-hero-light-colour: #{$app-blue-shade-25};
+  --app-landing-hero-dark-colour: #{$app-teal-shade-25};
+  --app-landing-hero-light-colour: #{$app-teal-tint-25};
   --app-landing-hero-graphic: url('/styles/images/heroes/data.svg');
-  --app-landing-hero-graphic-position-small: 0 100%;
+  --app-landing-hero-graphic-position-small: center #{govuk-em(160px, 16)};
   --app-landing-hero-graphic-position-align: 100%;
-  --app-landing-hero-graphic-size-small: #{govuk-em(450px, 16)};
-  --app-landing-hero-graphic-size-big: #{govuk-em(580px, 16)};
+  --app-landing-hero-graphic-size-small: #{govuk-em(360px, 16)};
+  --app-landing-hero-graphic-size-big: #{govuk-em(510px, 16)};
 }
 
 .app-content--section-brand-in-use {
-  --app-landing-hero-dark-colour: #{$app-magenta};
-  --app-landing-hero-light-colour: #{$app-magenta-tint-50};
+  --app-landing-hero-dark-colour: #{$govuk-brand-colour};
+  --app-landing-hero-light-colour: #{$app-blue-tint-50};
   --app-landing-hero-graphic: url('/styles/images/heroes/brand-in-use.svg');
   --app-landing-hero-graphic-position-small: center #{govuk-em(150px, 16)};
-  --app-landing-hero-graphic-position-align: 50%;
-  --app-landing-hero-graphic-size-small: #{govuk-em(350px, 16)};
-  --app-landing-hero-graphic-size-big: #{govuk-em(450px, 16)};
+  --app-landing-hero-graphic-position-align: 0;
+  --app-landing-hero-graphic-size-small: #{govuk-em(260px, 16)};
+  --app-landing-hero-graphic-size-big: #{govuk-em(328px, 16)};
 }
