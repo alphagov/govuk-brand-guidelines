@@ -38,7 +38,7 @@
     "eslint": "^9.39.3",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-promise": "^7.2.1",
-    "glob": "^13.0.0",
+    "glob": "^13.0.6",
     "globals": "^17.3.0",
     "govuk-frontend": "^5.14.0",
     "html-validate": "^10.7.0",
