@@ -103,6 +103,8 @@ Only use the variables in the context they’re designed for. In all other cases
   { label: "input-border", hex: "#0B0C0C", group: "border" },
   { label: "template-background", hex: "#F4F8FB", group: "background" },
   { label: "body-background", hex: "#FFFFFF", group: "background" },
+  { label: "focus", hex: "#FFDD00", group: "focus" },
+  { label: "focus-text", hex: "#0B0C0C", group: "focus" },
   { label: "surface-background", hex: "#F4F8FB", group: "surface" },
   { label: "surface-text", hex: "#0B0C0C", group: "surface" },
   { label: "surface-border", hex: "#8EB8DC", group: "surface" }
@@ -130,9 +132,7 @@ Use the `template-background` colour if you need to match the colour of the `<ht
 
 Only use the `focus` colour to indicate which element is focused on. For example, when a user tabs to an element with their keyboard.
 
-{% swatch { label: "focus", hex: "#FFDD00" } %}
-
-{% swatch { label: "focus-text", hex: "#0B0C0C" } %}
+{% swatchList { palette: webFunctionalColours, group: "focus" } %}
 
 #### Error state
 
