@@ -1,5 +1,5 @@
 ---
-order: 6
+order: 7
 title: Brand in use
 landing: true
 lead: 'One brand. Many places.'

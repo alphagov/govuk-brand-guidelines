@@ -1,5 +1,5 @@
 ---
-order: 5
+order: 6
 title: Data
 landing: true
 lead: Principles for creating GOV.UK-branded charts and visualisations.

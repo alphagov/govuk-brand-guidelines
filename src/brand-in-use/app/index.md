@@ -1,5 +1,5 @@
 ---
-order: 1
+order: 2
 title: App
 sitemapTitle: App brand in use
 ---

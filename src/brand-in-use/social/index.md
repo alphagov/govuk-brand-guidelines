@@ -1,5 +1,5 @@
 ---
-order: 2
+order: 3
 title: Social
 sitemapTitle: Social brand in use
 ---
