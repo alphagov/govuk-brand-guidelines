@@ -45,7 +45,9 @@ export function setupNavigation(eleventyConfig) {
     // Last thing before we can use the `children` data is to make
     // sure it is sorted according to the `order` property
     for (const page of pages) {
-      page.data.children?.sort((a, b) => a.data.order - b.data.order)
+      page.data.children?.sort(
+        (a, b) => (a.data.order ?? Infinity) - (b.data.order ?? Infinity)
+      )
 
       page.data.ancestors = getAncestors(page)
 
