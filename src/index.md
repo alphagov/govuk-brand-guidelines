@@ -16,7 +16,7 @@ mainClasses: 'app-homepage'
 
 Help users find, understand and trust the GOV.UK brand. Meet their needs across different channels and contexts.
 
-{{ govukButton({ href: ("/introduction/" | url), text: "Why the brand's evolved", isStartButton: true, classes: "govuk-button--inverse govuk-!-margin-top-5" }) }}
+{{ govukButton({ href: ("/introduction/" | url), text: "See how our brand works", isStartButton: true, classes: "govuk-button--inverse govuk-!-margin-top-5" }) }}
 
 {% endgridCell %}
 {% endgrid %}
