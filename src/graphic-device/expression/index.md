@@ -61,7 +61,7 @@ Indicative examples for illustrative purposes only.
 
 ### Guides
 
-No audio. The dot moves playfully from left to right, pausing briefly at points to show numbered steps from 1 to 4.
+No audio. The dot moves from left to right, pausing briefly at points to show numbered steps from 1 to 4.
 
 </div>
 <div>
