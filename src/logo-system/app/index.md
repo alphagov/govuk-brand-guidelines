@@ -6,7 +6,7 @@ sitemapTitle: App logo
 
 ## App logo system
 
-In GOV.UK apps we follow the primary logo system, using the wordmark as the main identifier whilst incorporating the crown as a supporting element to aid trust and recognition.
+In GOV.UK apps we follow the primary logo system, using the wordmark as the main identifier while incorporating the crown as a supporting element to aid trust and recognition.
 
 An example of this is the GOV.UK app icon.
 

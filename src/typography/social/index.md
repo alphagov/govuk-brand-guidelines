@@ -10,7 +10,7 @@ GDS Transport is our primary brand typeface.
 
 Using it within our social channels can provide significant advantages, particularly in strengthening brand recognition and creating a cohesive user experience across platforms and channels.
 
-Whilst there may be cases where it is not possible, we should always try to use GDS Transport where possible.
+While there may be cases where it is not possible, we should always try to use GDS Transport where possible.
 
 ![Sample of GDS Transport font.](./gds-transport.svg)
 
@@ -18,7 +18,7 @@ Whilst there may be cases where it is not possible, we should always try to use 
 
 Type hierarchy is key to creating content that is readable and easy to follow.
 
-Whilst there are many ways to build visual hierarchy, mixing weight and scale across tags, headlines and body copy is a simple yet effective approach.
+While there are many ways to build visual hierarchy, mixing weight and scale across tags, headlines and body copy is a simple yet effective approach.
 
 {% callout %}
 Indicative examples for illustrative purposes only.
@@ -30,7 +30,7 @@ Indicative examples for illustrative purposes only.
 
 Consistent use of type styles aids clarity and hierarchy.
 
-Headings should be attention-grabbing, whilst body text should prioritize readability with appropriate line spacing and contrast.
+Headings should be attention-grabbing, while body text should prioritize readability with appropriate line spacing and contrast.
 
 ### Headline styles
 
@@ -86,7 +86,7 @@ It prevents uneven gaps (rivers of white space) found in fully justified text, m
 
 Centred text should be used sparingly for shorter headlines, predominantly within social channels.
 
-Whilst it grabs attention, it reduces readability in longer text, making it harder for the eye to track.
+While it grabs attention, it reduces readability in longer text, making it harder for the eye to track.
 
 </div>
 

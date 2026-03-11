@@ -46,7 +46,7 @@ The dot can be brought to life through animation in illustrations, adding person
     {% gridCell {span: {desktop: 2, tablet: 1, mobile: 1}, classes: "app-border app-border--top"} %}
     ### Person
 
-    No audio. An animation of a person giving a friendly wave. Circles are used to draw the head and hand, whilst pieces of a circle are used to draw the shoulders and hairstyle.
+    No audio. An animation of a person giving a friendly wave. Circles are used to draw the head and hand, while pieces of a circle are used to draw the shoulders and hairstyle.
     {% endgridCell %}
     {% gridCell %}
     {% video { source: [
@@ -57,7 +57,7 @@ The dot can be brought to life through animation in illustrations, adding person
     {% gridCell {span: {desktop: 2, tablet: 1, mobile: 1}, classes: "app-border app-border--top"} %}
     ### Travel
 
-    No audio. An animation of luggage moving aross the frame. Suitcases are drawn as rectangles with rounded corners. Circles are used to draw wheels and luggage tags, whilst pieces of a circle are used to draw the handles.
+    No audio. An animation of luggage moving aross the frame. Suitcases are drawn as rectangles with rounded corners. Circles are used to draw wheels and luggage tags, while pieces of a circle are used to draw the handles.
     {% endgridCell %}
     {% gridCell %}
     {% video { source: [
