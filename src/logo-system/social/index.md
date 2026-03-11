@@ -6,7 +6,7 @@ sitemapTitle: Social logo
 
 ## Social logo system
 
-Within GOV.UK social channels we follow the primary logo system, using the wordmark as the main identifier whilst incorporating the crown as a supporting element to aid trust and recognition.
+Within GOV.UK social channels we follow the primary logo system, using the wordmark as the main identifier while incorporating the crown as a supporting element to aid trust and recognition.
 
 An example of this is in profile icons.
 

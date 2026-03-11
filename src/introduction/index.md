@@ -13,7 +13,7 @@ It needs to be able to compete for attention in busy environments like social me
 
 The updated GOV.UK identity has been designed with this in mind.
 
-It builds on our recognisable and trusted foundations whilst introducing new elements so we can thrive in the broader range of channels that people expect us in today and tomorrow.
+It builds on our recognisable and trusted foundations while introducing new elements so we can thrive in the broader range of channels that people expect us in today and tomorrow.
 
 ## A brand that can inform and inspire
 

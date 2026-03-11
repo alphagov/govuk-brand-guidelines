@@ -10,7 +10,7 @@ GDS Transport is our primary brand typeface.
 
 Using it within our apps can provide significant advantages, particularly in strengthening brand recognition and creating a cohesive user experience across platforms and channels.
 
-Whilst there may be cases where it is not possible, we should always try to use GDS Transport where possible.
+While there may be cases where it is not possible, we should always try to use GDS Transport where possible.
 
 ![Sample of GDS Transport font.](./../social/gds-transport.svg)
 
