@@ -61,7 +61,7 @@ Indicative examples for illustrative purposes only.
 
 ### Guides
 
-No audio. The dot moves playfully from left to right, pausing briefly at points to show numbered steps from 1 to 4.
+No audio. The dot moves from left to right, pausing briefly at points to show numbered steps from 1 to 4.
 
 </div>
 <div>
@@ -100,7 +100,7 @@ No audio. The dot is shown at the end of a "Don't forget to vote" message as it 
 
 ### Informs
 
-No audio. The small dot with a label showing 1% starts growing whilst the percentage label steadily increases up to 35%. Then, the dot continues to grow and cover the entire screen until the percentrage reaches 100%.
+No audio. The small dot with a label showing 1% starts growing while the percentage label steadily increases up to 35%. Then, the dot continues to grow and cover the entire screen until the percentrage reaches 100%.
 
 </div>
 <div>
