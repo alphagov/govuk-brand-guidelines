@@ -43,7 +43,7 @@ We’ve refreshed the GOV.UK brand to meet the needs and changing expectations o
 
 ## Using the GOV.UK brand
 
-These guidelines show GOV.UK teams within the Government Digital Service (GDS) how to apply the GOV.UK brand.
+These guidelines show government teams how to apply the brand on official GOV.UK channels.
 
 Teams in wider government also publish information and services as part of [the GOV.UK proposition](https://www.gov.uk/government/publications/govuk-proposition), with support from GDS. If you’re not part of GDS, you must get approval to apply the GOV.UK brand.
 
