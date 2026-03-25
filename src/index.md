@@ -58,9 +58,7 @@ You can find and download brand element and asset files in [the govuk-brand-asse
 
 ## Need help?
 
-If you’re part of a team that works on government products and services, and got a question about how to apply the brand guidelines, [contact the team](mailto:govuk-brand-team@dsit.gov.uk).
-
-You can also contact the team to get approval to use the brand.
+If you’re part of a team that works on government products and services, and you've got a question about how to apply the brand guidelines, [contact the team](mailto:govuk-brand-team@dsit.gov.uk).
 
 {% endgridCell %}
 {% endgrid %}
