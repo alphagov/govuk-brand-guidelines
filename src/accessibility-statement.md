@@ -3,7 +3,7 @@ title: Accessibility statement for the GOV.UK Brand Guidelines website
 excludeFromNavigation: true
 ---
 
-This accessibility statement applies to govuk-brand-guidelines.service.gov.uk.
+This accessibility statement applies to brand.design-system.service.gov.uk.
 
 This website is run by the Government Digital Service (GDS). We want as many people as possible to be able to use this website. For example, that means you should be able to:
 
