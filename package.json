@@ -35,7 +35,7 @@
     "@rollup/plugin-terser": "^0.4.4",
     "autoprefixer": "^10.4.27",
     "cssnano": "^7.1.2",
-    "eslint": "^9.39.3",
+    "eslint": "^9.39.4",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-promise": "^7.2.1",
     "glob": "^13.0.0",
@@ -48,7 +48,7 @@
     "markdown-it": "^14.1.1",
     "markdown-it-anchor": "^9.2.0",
     "markdown-it-govuk": "^0.8.0",
-    "neostandard": "^0.12.2",
+    "neostandard": "^0.13.0",
     "nodemon": "^3.1.14",
     "nunjucks": "^3.2.4",
     "outdent": "^0.8.0",
@@ -59,7 +59,7 @@
     "sass": "^1.97.3",
     "stylelint": "^16.26.1",
     "stylelint-config-gds": "^2.0.0",
-    "stylelint-order": "^7.0.1",
+    "stylelint-order": "^8.1.1",
     "svglint": "^4.2.1"
   },
   "dependencies": {
