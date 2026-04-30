@@ -4,9 +4,13 @@
 
 // Neither values are available as variables in GOV.UK Frontend
 // so adding them as private variables for future reference
-$_govuk-service-navigation-link-colour: govuk.govuk-shade(
+// $_govuk-service-navigation-link-colour: govuk-shade(
+//   govuk.$govuk-link-colour,
+//   10%
+// );
+$_govuk-service-navigation-link-colour: govuk-colour(
   govuk.$govuk-link-colour,
-  10%
+  $variant: 'tint-10'
 );
 $_govuk-service-navigation-font-size: 19px;
 
