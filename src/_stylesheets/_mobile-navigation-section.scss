@@ -2,12 +2,8 @@
 @use 'sass:math';
 @use 'sass:string';
 
-// Neither values are available as variables in GOV.UK Frontend
-// so adding them as private variables for future reference
-$_govuk-service-navigation-link-colour: govuk.govuk-shade(
-  govuk.$govuk-link-colour,
-  10%
-);
+// This value is not available as a variable in GOV.UK Frontend
+// so adding as a private variable for future reference
 $_govuk-service-navigation-font-size: 19px;
 
 // The Service Navigation container has a flex column layout
@@ -49,7 +45,7 @@ $_govuk-service-navigation-font-size: 19px;
   // Add back a border to separate each element of the menu
   border-top: solid 1px govuk.$govuk-border-colour;
 
-  color: $_govuk-service-navigation-link-colour;
+  color: govuk.govuk-functional-colour('link');
   background: none;
 
   // Meet the Service Nav's typography
