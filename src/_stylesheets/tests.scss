@@ -1,7 +1,5 @@
 /// Classes to help build component's test pages
-@use 'govuk/base' as * with (
-  $govuk-new-typography-scale: true
-);
+@use 'govuk/base' as *;
 
 //////
 /// Outlines
