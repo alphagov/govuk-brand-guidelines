@@ -16,7 +16,7 @@
     display: inline-block;
     width: var(--sample-size);
     height: var(--sample-size);
-    border: 1px solid govuk-colour('dark-grey');
+    border: 1px solid $app-black-tint-25;
     border-radius: 50%;
     background-color: var(--app-swatch-colour);
 
