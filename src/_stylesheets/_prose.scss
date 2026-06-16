@@ -47,9 +47,9 @@
 .app-prose code {
   padding-right: govuk-spacing(1);
   padding-left: govuk-spacing(1);
-  border: 1px solid govuk-colour('mid-grey');
+  border: 1px solid $app-black-tint-80;
   border-radius: 3px;
-  background-color: govuk-colour('light-grey');
+  background-color: $app-black-tint-95;
   font-family: ui-monospace, monospace;
 
   // Monospace fonts tend to look larger than the surrounding text due to having
