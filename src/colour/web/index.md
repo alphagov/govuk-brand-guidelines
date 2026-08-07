@@ -113,6 +113,8 @@ Only use the variables in the context they’re designed for. In all other cases
 
 #### Text
 
+Use the `inverse-text` colour for text on dark backgrounds.
+
 {% swatchList { palette: webFunctionalColours, group: "text" } %}
 
 #### Links
