@@ -95,6 +95,7 @@ Only use the variables in the context they’re designed for. In all other cases
 {% set webFunctionalColours = [
   { label: "text", hex: "#0B0C0C", group: "text" },
   { label: "secondary-text", hex: "#484949", group: "text" },
+  { label: "inverse-text", hex: "#FFFFFF", group: "text" },
   { label: "link", hex: "#1A65A6", group: "links" },
   { label: "link-hover", hex: "#0F385C", group: "links" },
   { label: "link-visited", hex: "#54319F", group: "links" },
