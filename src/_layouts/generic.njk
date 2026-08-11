@@ -8,7 +8,7 @@
   {{- pageTitle -}}
 {% endblock %}
 
-{% block header %}
+{% block govukHeader %}
   {{ super() }}
   {% from "service-navigation.njk" import appServiceNavigation %}
   {% if collections.serviceNavigationPages | length %}
