@@ -98,8 +98,8 @@ $arrow-width: 12px;
     position: absolute;
     width: $arrow-width;
     height: 0;
-    border: ($border-width / 2) solid;
-    border-radius: ($border-width / 2);
+    border: calc($border-width / 2) solid;
+    border-radius: calc($border-width / 2);
   }
 
   &:first-of-type {

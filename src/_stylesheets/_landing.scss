@@ -117,7 +117,10 @@
     // Graphic position is always within the last third of the landing page
     // width container
     background-position:
-      govuk-em((($app-landing-container-width / 3) * 2) + govuk-spacing(6), 16)
+      govuk-em(
+          (calc($app-landing-container-width / 3) * 2) + govuk-spacing(6),
+          16
+        )
         var(--app-landing-hero-graphic-position-align),
       0;
     background-size: var(--app-landing-hero-graphic-size-big), contain;
@@ -127,6 +130,6 @@
 // Container is always at least 2 thirds of the hero container
 .app-landing__hero-container {
   @include govuk-media-query($from: tablet) {
-    max-width: ($app-landing-container-width / 3) * 2;
+    max-width: calc($app-landing-container-width / 3) * 2;
   }
 }
