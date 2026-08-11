@@ -38,7 +38,7 @@ The web palette has:
 - [yellows](#yellows)
 - [browns](#browns)
 - [neutrals](#neutrals)
-- [web functional colours](#web-functional-colours)
+- [web functional colours](#functional-colours)
 
 ### Blues
 
