@@ -1,7 +1,5 @@
 // Import govuk-frontend's settings, helpers, etc. into global namespace
-@use 'govuk/base' as * with (
-  $govuk-new-typography-scale: true
-);
+@use 'govuk/base' as *;
 
 // Other partials can't be @use'd as they lack internal dependency references
 @import 'govuk/core';
