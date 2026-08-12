@@ -138,7 +138,7 @@ $arrow-width: 12px;
   height: $arrow-width * 2;
   margin-bottom: -10px;
   border-radius: $arrow-width;
-  background-color: $govuk-brand-colour;
+  background-color: govuk-functional-colour(brand);
   align-self: end;
 
   @media screen and (forced-colors: active) {

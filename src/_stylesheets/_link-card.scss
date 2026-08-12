@@ -39,7 +39,7 @@
 
 .app-link-card__description {
   grid-area: description;
-  color: $govuk-text-colour;
+  color: govuk-functional-colour(text);
   @include govuk-font($size: 19);
 }
 
