@@ -505,7 +505,15 @@ export default function () {
       cmyk: [8, 0, 0, 95],
       pantone: 'Black 3 C',
       label: 'Black',
-      uses: ['app', 'chart', 'map', 'print', 'social', 'web']
+      uses: ['app', 'chart', 'map', 'social', 'web']
+    },
+    {
+      group: 'neutral',
+      hex: '#000000',
+      cmyk: [0, 0, 0, 100],
+      pantone: 'Black C',
+      label: 'Black',
+      uses: ['print']
     },
     {
       group: 'neutral',
