@@ -24,7 +24,7 @@
 
 .test-outline--tight,
 .test-outline-children--tight > * {
-  outline: dashed 2px govuk-colour('teal', $variant: 'primary');
+  outline: dashed 2px govuk-colour('teal');
 
   outline-offset: -2px;
 }
@@ -42,7 +42,7 @@
   // Use custom properties to allow easily changing the position from the element itself
   --x: 50%;
   --y: 50%;
-  --guide-line-colour: #{govuk-colour('magenta', $variant: 'primary')};
+  --guide-line-colour: #{govuk-colour('magenta')};
   --vertical-guide-line-colour: var(--guide-line-colour);
   --horizontal-guide-line-colour: var(--guide-line-colour);
 }
