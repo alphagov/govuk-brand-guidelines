@@ -46,8 +46,8 @@
 // Modifiers for landing pages which set colours, hero graphic and graphic
 // position and size. Used by breadcrumbs and heroes
 .app-content--section-graphic-device {
-  --app-landing-hero-dark-colour: #{$app-teal-shade-25};
-  --app-landing-hero-light-colour: #{$app-teal};
+  --app-landing-hero-dark-colour: #{govuk-colour('teal', $variant: 'shade-25')};
+  --app-landing-hero-light-colour: #{govuk-colour('teal')};
   --app-landing-hero-graphic: url('/styles/images/heroes/graphic-device.svg');
   --app-landing-hero-graphic-position-small: center #{govuk-em(150px, 16)};
   --app-landing-hero-graphic-position-align: 0;
@@ -56,8 +56,8 @@
 }
 
 .app-content--section-logo-system {
-  --app-landing-hero-dark-colour: #{$app-green};
-  --app-landing-hero-light-colour: #{$app-green-tint-25};
+  --app-landing-hero-dark-colour: #{govuk-colour('green')};
+  --app-landing-hero-light-colour: #{govuk-colour('green', $variant: 'tint-25')};
   --app-landing-hero-graphic: url('/styles/images/heroes/logo-system.svg');
   --app-landing-hero-graphic-position-small: 0 100%;
   --app-landing-hero-graphic-position-align: 100%;
@@ -66,8 +66,11 @@
 }
 
 .app-content--section-colour {
-  --app-landing-hero-dark-colour: #{$app-purple-shade-25};
-  --app-landing-hero-light-colour: #{$app-purple};
+  --app-landing-hero-dark-colour: #{govuk-colour(
+      'purple',
+      $variant: 'shade-25'
+    )};
+  --app-landing-hero-light-colour: #{govuk-colour('purple')};
   --app-landing-hero-graphic: url('/styles/images/heroes/colour.svg');
   --app-landing-hero-graphic-position-small: center #{govuk-em(160px, 16)};
   --app-landing-hero-graphic-position-align: 100%;
@@ -76,8 +79,11 @@
 }
 
 .app-content--section-typography {
-  --app-landing-hero-dark-colour: #{$app-magenta-shade-50};
-  --app-landing-hero-light-colour: #{$app-magenta};
+  --app-landing-hero-dark-colour: #{govuk-colour(
+      'magenta',
+      $variant: 'shade-50'
+    )};
+  --app-landing-hero-light-colour: #{govuk-colour('magenta')};
   --app-landing-hero-graphic: url('/styles/images/heroes/typography.svg');
   --app-landing-hero-graphic-position-small: center #{govuk-em(150px, 16)};
   --app-landing-hero-graphic-position-align: 100%;
@@ -86,8 +92,8 @@
 }
 
 .app-content--section-data {
-  --app-landing-hero-dark-colour: #{$app-teal-shade-25};
-  --app-landing-hero-light-colour: #{$app-teal-tint-25};
+  --app-landing-hero-dark-colour: #{govuk-colour('teal', $variant: 'shade-25')};
+  --app-landing-hero-light-colour: #{govuk-colour('teal', $variant: 'tint-25')};
   --app-landing-hero-graphic: url('/styles/images/heroes/data.svg');
   --app-landing-hero-graphic-position-small: center #{govuk-em(160px, 16)};
   --app-landing-hero-graphic-position-align: 100%;
@@ -96,8 +102,8 @@
 }
 
 .app-content--section-brand-in-use {
-  --app-landing-hero-dark-colour: #{$govuk-brand-colour};
-  --app-landing-hero-light-colour: #{$app-blue-tint-50};
+  --app-landing-hero-dark-colour: #{govuk-functional-colour(brand)};
+  --app-landing-hero-light-colour: #{govuk-colour('blue', $variant: 'tint-50')};
   --app-landing-hero-graphic: url('/styles/images/heroes/brand-in-use.svg');
   --app-landing-hero-graphic-position-small: center #{govuk-em(150px, 16)};
   --app-landing-hero-graphic-position-align: 0;

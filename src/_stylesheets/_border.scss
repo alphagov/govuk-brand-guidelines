@@ -1,5 +1,5 @@
 .app-border {
-  border: 1px solid $app-black-tint-80;
+  border: 1px solid govuk-colour('black', $variant: 'tint-80');
 }
 
 .app-border--top {

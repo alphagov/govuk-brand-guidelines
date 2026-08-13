@@ -4,7 +4,7 @@ $arrow-width: 12px;
 .app-inform-inspire {
   @include govuk-responsive-margin(6, $direction: 'bottom');
   @include govuk-responsive-padding(6);
-  background-color: $app-blue-tint-95;
+  background-color: govuk-colour('blue', $variant: 'tint-95');
 }
 
 // Reset margins in content for non-component elements eg: figures
@@ -83,7 +83,7 @@ $arrow-width: 12px;
   width: calc(50% - (#{$arrow-width} * 2));
   padding-bottom: govuk-spacing(5);
   border-bottom: $border-width solid;
-  color: $app-blue-shade-50;
+  color: govuk-colour('blue', $variant: 'shade-50');
 
   // Arrow on either side is made up of 2 flat elements with borders that are
   // rotated. Done instead of the rotated box trick so that the arrows have
