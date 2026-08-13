@@ -45,7 +45,7 @@
     "husky": "^9.1.7",
     "linkinator": "^8.0.3",
     "lint-staged": "^17.2.0",
-    "markdown-it": "^14.2.0",
+    "markdown-it": "^15.0.0",
     "markdown-it-anchor": "^9.2.1",
     "markdown-it-govuk": "^0.9.0",
     "neostandard": "^0.13.0",
