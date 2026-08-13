@@ -30,7 +30,7 @@
   }) }}
 {% endblock %}
 
-{% block headerEnd %}
+{% block beforeContent %}
   {% from "govuk/components/phase-banner/macro.njk" import govukPhaseBanner %}
     {%- if site.env.CONTEXT === "dev" %}
       {{ govukPhaseBanner({
