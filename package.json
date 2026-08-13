@@ -43,7 +43,7 @@
     "govuk-frontend": "^5.14.0",
     "html-validate": "^11.6.2",
     "husky": "^9.1.7",
-    "linkinator": "^7.6.1",
+    "linkinator": "^8.0.3",
     "lint-staged": "^17.2.0",
     "markdown-it": "^14.2.0",
     "markdown-it-anchor": "^9.2.1",
