@@ -1,3 +1,6 @@
+@use 'govuk/base' as *;
+@use 'variables' as *;
+
 // Padding on the `<main>` element needs removing as it's been shifted to a parent
 .app-main-wrapper {
   padding-top: 0;

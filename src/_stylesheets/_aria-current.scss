@@ -1,3 +1,5 @@
+@use 'govuk/base' as *;
+
 // Style aria-current lists
 .app-current-with-dot {
   --dot-spacing: #{govuk-spacing(2)};

@@ -1,3 +1,5 @@
+@use 'govuk/base' as *;
+
 /// Creates a custom properties whose value can be set responsively
 /// at mobile, tablet and desktop breakpoint. Wider breakpoints
 /// inherit the value of the narrower ones if not set.

@@ -1,3 +1,5 @@
+@use 'govuk/base' as *;
+
 // Render nested lists indended
 .app-link-list .app-link-list {
   padding-left: govuk-spacing(3);
