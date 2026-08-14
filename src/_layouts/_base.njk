@@ -22,7 +22,7 @@
   {% getBundle "css" %}
 {% endblock %}
 
-{% block header %}
+{% block govukHeader %}
   {% from "govuk/components/header/macro.njk" import govukHeader %}
 
   {{ govukHeader({
@@ -42,8 +42,7 @@
     {%- elif site.env.PULL_REQUEST %}
       {{ govukPhaseBanner({
         tag: {
-          text: "Preview",
-          classes: "govuk-tag--light-blue"
+          text: "Preview"
         },
         html: 'This is a preview of <a class="govuk-link" href="https://github.com/alphagov/govuk-brand-guidelines/pull/' + site.env.REVIEW_ID + '">a proposed change</a> to the brand guidelines.'
       }) }}
@@ -52,7 +51,7 @@
 
 {% set mainClasses = [mainClasses, 'app-main-wrapper app-prose'] | select('truthy') | join(' ') %}
 
-{% block footer %}
+{% block govukFooter %}
   {{ govukFooter({
     "meta": {
       "items": [

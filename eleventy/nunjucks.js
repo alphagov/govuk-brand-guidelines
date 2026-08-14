@@ -18,8 +18,5 @@ export function setupNunjucks(eleventyConfig) {
     eleventyConfig.nunjucksEnvironmentOptions || { dev: true }
   )
 
-  // Enable the rebrand styles and assets
-  nunjucksEnvironment.addGlobal('govukRebrand', true)
-
   eleventyConfig.setLibrary('njk', nunjucksEnvironment)
 }

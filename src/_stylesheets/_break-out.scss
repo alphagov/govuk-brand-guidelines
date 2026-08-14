@@ -71,7 +71,7 @@
   }
 
   .govuk-phase-banner {
-    border-bottom-color: govuk-tint($govuk-brand-colour, 50%);
+    border-bottom-color: $app-blue-tint-50;
   }
 }
 
