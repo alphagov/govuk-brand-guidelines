@@ -6,7 +6,7 @@
 
   // Prevent clipping of icon by the border radius
   overflow: hidden;
-  border: 1px solid $app-blue-tint-50;
+  border: 1px solid govuk-colour('blue', $variant: 'tint-50');
   border-radius: 3px;
   background-color: govuk-colour('white');
   grid-template-columns: 2fr 1fr;

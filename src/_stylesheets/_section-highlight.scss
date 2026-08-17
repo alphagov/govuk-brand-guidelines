@@ -23,7 +23,7 @@
 }
 
 .app-section-highlight--light-blue {
-  background-color: $app-blue-tint-95;
+  background-color: govuk-colour('blue', $variant: 'tint-95');
 }
 
 .app-section-highlight--light-grey {
@@ -46,7 +46,7 @@
 // Dark magenta section highlight likely to be deleted as it's just framing an
 // image, and the image should have it's own background
 .app-section-highlight--dark-magenta {
-  background-color: $app-magenta-shade-50;
+  background-color: govuk-colour('magenta', $variant: 'shade-50');
 }
 
 .app-section-highlight__wrapper--space-around {

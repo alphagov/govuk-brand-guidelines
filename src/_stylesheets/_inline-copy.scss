@@ -10,7 +10,7 @@
   padding-right: $inline-padding;
   padding-left: $inline-padding;
   border: 1px solid transparent;
-  color: $app-black-tint-25;
+  color: govuk-colour('black', $variant: 'tint-25');
   background: none;
   font: inherit;
   text-align: left;
@@ -23,7 +23,7 @@
     width: 1.125rem;
     height: 1.125rem;
     margin-left: govuk-spacing(1);
-    background-color: $app-black-tint-95;
+    background-color: govuk-colour('black', $variant: 'tint-95');
     fill: currentcolor;
 
     // Forced colours doesn't override the background-color on SVGs,
@@ -44,8 +44,8 @@
   }
 
   &:hover {
-    background-color: $app-black-tint-95;
-    box-shadow: 0 2px 0 0 $app-black-tint-50;
+    background-color: govuk-colour('black', $variant: 'tint-95');
+    box-shadow: 0 2px 0 0 govuk-colour('black', $variant: 'tint-50');
   }
 
   // Uses :focus-visible as otherwise clicking the button also focuses the
@@ -63,12 +63,12 @@
     // We want these to apply when hovered so that visual feedback appears immediately
     &,
     &:hover {
-      border-color: $app-green;
-      color: $app-green;
+      border-color: govuk-colour('green');
+      color: govuk-colour('green');
       background-color: transparent;
 
       // Extend bottom border without increasing button dimensions
-      box-shadow: 0 3px 0 0 $app-green;
+      box-shadow: 0 3px 0 0 govuk-colour('green');
     }
   }
 }

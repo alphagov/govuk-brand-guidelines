@@ -72,7 +72,7 @@ $_govuk-service-navigation-font-size: 19px;
 .govuk-service-navigation--inverse {
   // Override mobile menu toggles colour
   .app-mobile-navigation-section__toggle {
-    border-top-color: $app-blue-tint-50;
+    border-top-color: govuk-colour('blue', $variant: 'tint-50');
     color: govuk-colour('white');
   }
 
