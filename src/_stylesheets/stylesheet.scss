@@ -1,47 +1,44 @@
 // Import govuk-frontend's settings, helpers, etc. into global namespace
 @use 'govuk/base' as *;
 
-// Other partials can't be @use'd as they lack internal dependency references
-@import 'govuk/core';
-@import 'govuk/objects';
+@use 'govuk/core';
+@use 'govuk/objects';
 
-// App variables
-@import 'variables';
+@use 'break-out';
 
 // GOV.UK Frontend components
-@import 'govuk/components/breadcrumbs';
-@import 'govuk/components/button';
-@import 'govuk/components/footer';
-@import 'govuk/components/header';
-@import 'govuk/components/inset-text';
-@import 'govuk/components/phase-banner';
-@import 'govuk/components/service-navigation';
-@import 'govuk/components/skip-link';
-@import 'govuk/components/table';
+@use 'govuk/components/breadcrumbs';
+@use 'govuk/components/button';
+@use 'govuk/components/footer';
+@use 'govuk/components/header';
+@use 'govuk/components/inset-text';
+@use 'govuk/components/phase-banner';
+@use 'govuk/components/service-navigation';
+@use 'govuk/components/skip-link';
+@use 'govuk/components/table';
 
 // App foundational styling
-@import 'prose';
-@import 'template';
+@use 'prose';
+@use 'template';
 
 // App components
-@import 'aria-current';
-@import 'border';
-@import 'breadcrumbs';
-@import 'break-out';
-@import 'callout';
-@import 'figure';
-@import 'grid';
-@import 'inform-inspire';
-@import 'inline-copy';
-@import 'link-card';
-@import 'link-list';
-@import 'landing';
-@import 'mobile-navigation-section';
-@import 'section-highlight';
-@import 'swatch';
+@use 'aria-current';
+@use 'border';
+@use 'app-breadcrumbs';
+@use 'callout';
+@use 'figure';
+@use 'grid';
+@use 'inform-inspire';
+@use 'inline-copy';
+@use 'link-card';
+@use 'link-list';
+@use 'landing';
+@use 'mobile-navigation-section';
+@use 'section-highlight';
+@use 'swatch';
 
 // Per-template overrides
-@import 'homepage';
+@use 'homepage';
 
-@import 'govuk/utilities';
-@import 'govuk/overrides';
+@use 'govuk/utilities';
+@use 'govuk/overrides';

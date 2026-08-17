@@ -1,4 +1,5 @@
-@use 'govuk/base' as govuk;
+@use 'govuk/base' as *;
+@use 'variables' as *;
 @use 'sass:math';
 @use 'sass:string';
 
@@ -43,9 +44,9 @@ $_govuk-service-navigation-font-size: 19px;
   border: 0;
 
   // Add back a border to separate each element of the menu
-  border-top: solid 1px govuk.$govuk-border-colour;
+  border-top: solid 1px $govuk-border-colour;
 
-  color: govuk.govuk-functional-colour('link');
+  color: govuk-functional-colour('link');
   background: none;
 
   // Meet the Service Nav's typography
@@ -55,7 +56,7 @@ $_govuk-service-navigation-font-size: 19px;
   cursor: pointer;
 
   &:hover {
-    color: govuk.$govuk-link-hover-colour;
+    color: $govuk-link-hover-colour;
   }
 
   &:focus {
@@ -169,7 +170,7 @@ $subnav-padding-left: $app-chevron-width + $app-chevron-margin-left +
     bottom: 0;
     // Compensate from the margin of the `govuk-width-container`
     // inside the Service Navigation
-    left: -(govuk.$govuk-gutter-half);
+    left: -($govuk-gutter-half);
     // Make it span the whole screen width
     width: 100vw;
     // Add a border at the top so it's visible in high contrast mode
@@ -178,14 +179,12 @@ $subnav-padding-left: $app-chevron-width + $app-chevron-margin-left +
 
     // Account for the `govuk-width-container` being aware of `safe-area`s
     @supports (margin: string.unquote('max(calc(0px))')) {
-      $safe-area-aware: calc(
-        #{govuk.$govuk-gutter-half} + env(safe-area-inset-left)
-      );
+      $safe-area-aware: calc(#{$govuk-gutter-half} + env(safe-area-inset-left));
 
       // Use max() to pick largest margin, default or with safe area
       // Escaped due to Sass max() vs. CSS native max()
       left: string.unquote(
-        'calc(-1 * max(#{govuk.$govuk-gutter-half}, #{$safe-area-aware}))'
+        'calc(-1 * max(#{$govuk-gutter-half}, #{$safe-area-aware}))'
       );
     }
   }

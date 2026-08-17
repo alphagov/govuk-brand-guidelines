@@ -1,3 +1,6 @@
+@use 'govuk/base' as *;
+@use 'variables' as *;
+
 // Intended to be used as a modifier on top of the govuk inset text component
 .app-callout {
   margin: govuk-spacing(4) 0 35px;

@@ -1,3 +1,6 @@
+@use 'govuk/base' as *;
+@use 'variables' as *;
+
 // Sections with break out backgrounds use an absolutely positioned
 // pseudo-element to render a background that breaks out of the
 // `govuk-width-container`

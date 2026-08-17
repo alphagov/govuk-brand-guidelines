@@ -1,3 +1,7 @@
+@use 'govuk/base' as *;
+@use 'variables' as *;
+@use 'landing' as *;
+
 .app-breadcrumbs {
   margin-top: 0;
   margin-bottom: govuk-spacing(1);

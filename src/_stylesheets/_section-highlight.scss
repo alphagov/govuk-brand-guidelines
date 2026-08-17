@@ -1,3 +1,6 @@
+@use 'govuk/base' as *;
+@use 'variables' as *;
+
 .app-section-highlight {
   border-radius: 3px;
   color: govuk-colour('white');
