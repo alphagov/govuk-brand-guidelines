@@ -47,7 +47,7 @@ Illustrations can be used across GOV.UK channels. These images show how they mig
 
 Pairing illustrations with simple typography helps them stand out and supports messaging without adding visual clutter. It keeps layouts clear and focused. Illustrations can be simple or more complex depending on the message needed or where they will be seen.
 
-{% grid { columns: { tablet: 3 } } %}
+{% grid { columns: { tablet: 3 }, gap: { mobile: '10px', desktop: '30px' } } %}
 {% gridCell { classes: 'app-grid__cell--image-full-width' } %}
 ![A yellow sun icon on a blue background with the text: "Today is the summer bank holiday."](./bank-holiday-social.svg)
 {% endgridCell %}
