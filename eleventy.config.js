@@ -1,10 +1,10 @@
-import { setupNunjucks } from './eleventy/nunjucks.js'
-import { setupStylesheetCompilation } from './eleventy/stylesheets.js'
 import { setupJavaScriptCompilation } from './eleventy/javascript.js'
 import { setupMarkdownCompilation } from './eleventy/markdown.js'
 import { setupMedia } from './eleventy/media.js'
 import { setupNavigation } from './eleventy/navigation.js'
+import { setupNunjucks } from './eleventy/nunjucks.js'
 import { setupShortcodes } from './eleventy/shortcodes.js'
+import { setupStylesheetCompilation } from './eleventy/stylesheets.js'
 
 /**
  *  @param {import("@11ty/eleventy/UserConfig")} eleventyConfig
@@ -47,6 +47,12 @@ export default function (eleventyConfig) {
   // Set up bundle for per-page CSS
   // https://www.11ty.dev/docs/plugins/bundle/
   eleventyConfig.addBundle('css')
+
+  eleventyConfig.addPreprocessor('drafts', '*', (data, content) => {
+    if (data.draft && process.env.CONTEXT === 'production') {
+      return false
+    }
+  })
 
   return {
     markdownTemplateEngine: 'njk',

@@ -69,6 +69,16 @@
   {% else %}
     <h1 class="govuk-heading-xl">{{title}}</h1>
   {% endif %}
+
+  {% from "govuk/components/tag/macro.njk" import govukTag %}
+  {%- if draft %}
+    {{ govukTag({
+      text: "Draft",
+      classes: "govuk-tag--grey"
+    }) }}
+  {%- endif %}
+
+
   {{ content | safe }}
 
   {# Render the list of pages under each chapter after the content
