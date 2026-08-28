@@ -1,6 +1,6 @@
 @use 'govuk/base' as *;
 
 // Grid and container widths
-$app-sidebar-nav-desktop: 260px;
+$app-sidebar-nav-desktop: 265px;
 $app-sidebar-nav-tablet: 210px;
 $app-landing-container-width: $govuk-page-width - $app-sidebar-nav-desktop;

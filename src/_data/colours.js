@@ -10,7 +10,7 @@ export default function () {
       cmyk: [84, 39, 0, 28],
       pantone: '7461 C',
       label: 'Primary blue',
-      uses: ['app', 'chart', 'map', 'print', 'social', 'web']
+      uses: ['app', 'chart', 'map', 'print', 'social', 'web', 'illustrations']
     },
     {
       group: 'blue',
@@ -66,7 +66,7 @@ export default function () {
       group: 'blue',
       hex: '#11E0F1',
       label: 'Accent blue',
-      uses: ['app', 'map', 'social']
+      uses: ['app', 'map', 'social', 'illustrations']
     },
     {
       group: 'blue',
@@ -192,7 +192,7 @@ export default function () {
       cmyk: [100, 0, 12, 0],
       pantone: '3255 C',
       label: 'Accent teal',
-      uses: ['app', 'map', 'print', 'social', 'web']
+      uses: ['app', 'map', 'print', 'social', 'web', 'illustrations']
     },
     {
       group: 'purple',
