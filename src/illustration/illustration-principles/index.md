@@ -149,4 +149,11 @@ Illustration can be used in different ways depending on the subject matter and w
 
 Where will your illustration fit best on this scale?
 
-![A horizontal scale ranging from "Inform" on the left to "Inspire" on the right. Left indicates "Process involved in completing a task"; right indicates "Telling a story."](./principles-inform-inspire.svg)
+{% informInspire { contentClasses: 'app-inform-inspire__content--flex app-inform-inspire__content--flex-2-items' } %}
+{% figure { images: [{ src: "./inform-ballot-box.svg", alt: "A hand placing a ballot paper into a ballot box." }, { src: "./inform-smartphone-photo.svg", alt: "A smartphone being used to capture a photo of a woman." }] } %}
+Process involved in completing the task
+{% endfigure %}
+{% figure { images: [{ src: "./inspire-mot-garage.svg", alt: "Two women greeting eachother in front of an MOT garage." }, { src: "./inspire-plant-pot.svg", alt: "Two women carrying a plant in a plant pot, framed by a window." }] } %}
+Telling a story
+{% endfigure %}
+{% endinformInspire %}
