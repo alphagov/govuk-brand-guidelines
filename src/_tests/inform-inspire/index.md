@@ -38,3 +38,14 @@ Influencer/presenter
 
 ![](./tone-companion-colour.png)
 {% endinformInspire %}
+
+## Inform inspire with flex container, 2 `figure` items with multiple images
+
+{% informInspire { contentClasses: 'app-inform-inspire__content--flex app-inform-inspire__content--flex-2-items' } %}
+{% figure { images: [{ src: "./tone-black-and-white.png", alt: "" }, { src: "./tone-dark-shade.png", alt: "" }] } %}
+Get help with...
+{% endfigure %}
+{% figure { images: [{ src: "./tone-primary-blue.png", alt: "" }, { src: "./tone-companion-colour.png", alt: "" }] } %}
+Get help with...
+{% endfigure %}
+{% endinformInspire %}
