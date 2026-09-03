@@ -11,11 +11,13 @@ Composite illustration of human characters, front view with props/items.
 {% endcallout %}
 {% endfigure %}
 
+## Drawing characters
+
 {% grid { columns: { desktop: 2 } } %}
 
 {% gridCell { classes: "app-border app-border--top" } %}
 
-## Human design
+### Human design
 
 Our geometric character system is built from three core shapes: circles for heads and hands, rounded rectangles for bodies, and curved paths for limbs.
 
@@ -27,7 +29,7 @@ To ensure a lightweight feel and realism for human characters maintain a consist
 
 {% gridCell { classes: "app-border app-border--top" } %}
 
-## Representation
+### Representation
 
 We use a colour palette that includes a variety of different skin tones. Be sure to represent a diverse range of people in your illustrations, bringing individuality to characters through:
 
@@ -45,7 +47,7 @@ Avoid relying on clichés or reinforcing misconceptions.
 
 {% gridCell { classes: "app-border app-border--top" } %}
 
-## Facial features
+### Facial features
 
 We deliberately refrain from depicting eyes or other facial features. This ensures that the focus remains on body language, mood and the overall atmosphere of the scene, rather than on a characters particular traits or expressions.
 
@@ -63,7 +65,7 @@ One concession to detailing on the face is the inclusion of spectacles.
 
 {% gridCell { classes: "app-border app-border--top" } %}
 
-## Creating arms
+### Creating arms
 
 Arms are drawn with the path tool using Bézier curves to create the desired shape, with a circle for the hand. Vary stroke width to match the body type, and ensure the hand diameter matches the arm width exactly.
 
@@ -73,7 +75,7 @@ Arms are drawn with the path tool using Bézier curves to create the desired sha
 
 {% gridCell { classes: "app-border app-border--top" } %}
 
-## Body language and interaction
+### Body language and interaction
 
 Storytelling can be hinted at through interactions between characters. Even with simple forms, subtle gestures and overlaps can effectively communicate narrative and human connections within the scene.
 
@@ -83,7 +85,7 @@ Storytelling can be hinted at through interactions between characters. Even with
 
 {% gridCell { classes: "app-border app-border--top" } %}
 
-## Animals
+### Animals
 
 When drawing animals, start with basic geometry. Avoid strokes unless they are essential for the readability of the shape, for e.g. the stroke on the elephants ear. For larger animals, use rounded eyes to ensure they feel 'alive'.
 
