@@ -3,11 +3,13 @@ order: 3
 title: Layout of a scene
 ---
 
+## Techniques to help communicate a scene
+
 When laying out a scene, use these techniques to help communicate emotion, action, and narrative clearly. They can be applied to both simple and more detailed illustrations, helping to keep compositions focused, dynamic, and easy to read.
 
-## Building composition
+### Building composition
 
-![Two women are shown inside speech bubbles with conversation icons and a circular arrow, representing ongoing communication. Labels identify examples of overlap, framing and negative space within the illustration.](./layout-composition.svg)
+![Two women are shown inside speech bubbles with icons indicating conversation, and arrows pointing in a clockwise direction. Label 1 (Overlaps) marks a conversation icon overlapping with a speech-bubble. Label 2 (Negative space) marks the plain background area outside of the speech bubbles. Label 3 (Framing) marks a speech-bubble that frames one of the women.](./layout-composition.svg)
 
 1. Overlaps: position objects on top of each other with slight overlaps to create a sense of depth and keep the image clear.
 
@@ -15,19 +17,19 @@ When laying out a scene, use these techniques to help communicate emotion, actio
 
 3. Framing: use larger overarching shapes, such as a window or a doorway, or the shape of the chat bubble in this example to frame the central action and guide the viewer’s focus.
 
-## Adding detail
+### Adding detail
 
-![A mechanic and customer shake hands outside an MOT garage beside a van with a flat tyre. Labels highlight design techniques: prioritise the key action, recognisable details such as the MOT sign, and supporting elements including like the car wheels.](./layout-detail.svg)
+![A mechanic and customer shake hands outside an MOT garage beside a van with a flat tyre. Label 1 (key action) marks the van with a flat tyre and the interaction between the two people. Label 2 (recognisable details) marks the MOT sign on the garage. Label 3 (supporting details) marks a car on a lift in the garage in the background.](./layout-detail.svg)
 
-1. Prioritise the key action: ensure secondary details never obstruct the primary key action that you’re communicating or disrupt the visual hierarchy of the composition.
+1. Prioritise the key action: ensure secondary details never obstruct the primary key action that you’re communicating, or disrupt the visual hierarchy of the composition.
 
-2. Recognisable details: use details to ground the scene in a specific environment, such as the MOT sign, that indicates this is a UK mechanic.
+2. Recognisable details: ground the scene in a specific environment using details like an MOT sign, which signals this is a UK mechanic's garage.
 
-3. Supporting elements: incorporate subtle background details, like the car on the car lift, this provides extra context and depth in this example
+3. Supporting elements: incorporate subtle background details, such as the car on the car lift, to add extra context and depth to the scene.
 
-## Movement
+### Movement
 
-![Illustration of a person running upward across a rising graph, representing career growth and progress. Labels highlight diagonal composition, the character's line of gravity, and dynamic details that reinforce movement and momentum.](./layout-movement.svg)
+![A person runs upward across a rising graph, briefcase in hand, representing career growth and progress. Label 1 (diagonal composition) marks the center of the illustration, highlighting it's diagonal arrangement. Label 2 (line of gravity) marks the direction and visible effect of gravity on the person in the illustration. Label 3 (dynamic details) marks the character's wavy tie, which highlights left-to-right motion.](./layout-movement.svg)
 
 1. Utilise diagonal composition: create energy and momentum by tilting figures and elements along a diagonal axis rather than using static, upright postures.
 
