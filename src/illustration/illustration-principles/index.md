@@ -3,7 +3,9 @@ order: 1
 title: Illustration Principles
 ---
 
-Our illustration style follows six key principles:
+## 6 key principles
+
+Our illustration style follows six key principles. Use these to create illustrations that remain consistent with the GOV.UK illustration style.
 
 {% grid { columns: { tablet: 2 } } %}
 
