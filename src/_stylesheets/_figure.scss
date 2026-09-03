@@ -22,6 +22,13 @@
   vertical-align: middle;
 }
 
+.app-figure__images-container {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  gap: govuk-spacing(4);
+}
+
 .app-figure--caption-top .app-figure__caption {
   @include govuk-responsive-margin(3, $direction: 'bottom');
 }
