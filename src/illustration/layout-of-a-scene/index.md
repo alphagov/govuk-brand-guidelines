@@ -3,9 +3,11 @@ order: 3
 title: Layout of a scene
 ---
 
+## Techniques to help communicate a scene
+
 When laying out a scene, use these techniques to help communicate emotion, action, and narrative clearly. They can be applied to both simple and more detailed illustrations, helping to keep compositions focused, dynamic, and easy to read.
 
-## Building composition
+### Building composition
 
 ![Two women are shown inside speech bubbles with conversation icons and a circular arrow, representing ongoing communication. Labels identify examples of overlap, framing and negative space within the illustration.](./layout-composition.svg)
 
@@ -15,7 +17,7 @@ When laying out a scene, use these techniques to help communicate emotion, actio
 
 3. Framing: use larger overarching shapes, such as a window or a doorway, or the shape of the chat bubble in this example to frame the central action and guide the viewer’s focus.
 
-## Adding detail
+### Adding detail
 
 ![A mechanic and customer shake hands outside an MOT garage beside a van with a flat tyre. Labels highlight design techniques: prioritise the key action, recognisable details such as the MOT sign, and supporting elements including like the car wheels.](./layout-detail.svg)
 
@@ -25,7 +27,7 @@ When laying out a scene, use these techniques to help communicate emotion, actio
 
 3. Supporting elements: incorporate subtle background details, like the car on the car lift, this provides extra context and depth in this example
 
-## Movement
+### Movement
 
 ![Illustration of a person running upward across a rising graph, representing career growth and progress. Labels highlight diagonal composition, the character's line of gravity, and dynamic details that reinforce movement and momentum.](./layout-movement.svg)
 
