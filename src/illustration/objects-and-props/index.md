@@ -5,11 +5,13 @@ title: Objects and props
 
 When creating objects and props use real-life reference images as a starting point and simplify them into clear geometric forms to communicate narrative and context effectively.
 
+## Illustrating objects and props
+
 {% grid { columns: { tablet: 2 } } %}
 
 <div class="app-border app-border--top">
 
-## Real life images
+### Real life images
 
 Use real life reference photos and minimal detail and where possible, less is more.
 
@@ -24,7 +26,7 @@ Break down objects into geometric components and/or simple shapes.
 
 <div class="app-border app-border--top">
 
-## Create a narrative
+### Create a narrative
 
 Suggest a narrative by layering symbols to build meaning. For example, placing an upward arrow inside a toolbox can imply productivity.
 
@@ -37,7 +39,7 @@ Suggest a narrative by layering symbols to build meaning. For example, placing a
 
 <div class="app-border app-border--top">
 
-## Standalone objects
+### Standalone objects
 
 Use standalone objects and items, or create a simple context for them, for example a calendar page being turned.
 
@@ -50,7 +52,7 @@ Use standalone objects and items, or create a simple context for them, for examp
 
 <div class="app-border app-border--top">
 
-## Perspective
+### Perspective
 
 Maintain a flat aesthetic, using stylised perspective only when a flat view reduces clarity. In this image, depth is suggested through different shades of blue from our palette to show a ballot paper being placed into a ballot box.
 
@@ -63,7 +65,7 @@ Maintain a flat aesthetic, using stylised perspective only when a flat view redu
 
 <div class="app-border app-border--top">
 
-## Buildings and landscapes
+### Buildings and landscapes
 
 Maintain authenticity by basing buildings on photographic references of real, diverse UK structures, depicted with squares, dots and with minimal detail.
 
