@@ -63,3 +63,23 @@ Use the `classes` parameter to add custom styles, such as override classes that 
 My **extremely cool** image.
 {% endfigure %}{% endraw %}
 ```
+
+## Multiple images
+
+Use the `images` parameter instead of `src` and `alt` to describe multiple images by a single caption.
+
+```
+{% raw %}{% figure {
+  images: [
+    { src: "image-1.png", alt: "A fire breathing tiger." },
+    { src: "image-2.png", alt: "A robot dinosaur." },
+    { src: "image-3.png", alt: "An adorable cat." },
+  ]
+} %}
+My **extremely cool** collection of images.
+{% endfigure %}{% endraw %}
+```
+
+{% figure { images: [ { src: "./test.svg", alt: "" }, { src: "./test.svg", alt: "" }, { src: "./test.svg", alt: "" } ] } %}
+My **extremely cool** collection of images.
+{% endfigure %}
