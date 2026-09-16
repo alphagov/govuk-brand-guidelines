@@ -31,7 +31,7 @@ Help users find, understand and trust the GOV.UK brand. Meet their needs across 
 {% linkCard {titleContainer: 'h3', title: 'Colour', description: 'Core brand colours, palettes and contrast requirements for accessibility.', icon: './colour.svg', iconBackgroundColour: '#54319f', href: ('/colour/' | url) } %}
 {% linkCard {titleContainer: 'h3', title: 'Typography', description: 'Which typeface and font to use, and how to use them.', icon: './typography.svg', iconBackgroundColour: '#651b3e', href: ('/typography/' | url) } %}
 {% linkCard {titleContainer: 'h3', title: 'Data', description: 'Principles for creating GOV.UK-branded charts and visualisations.', icon: './data.svg', iconBackgroundColour: '#158187', href: ('/data/' | url) } %}
-{% if site.env.CONTEXT !== "production" %}
+{% if site.flags.illustrationGuidelinesEnabled %}
 {% linkCard {titleContainer: 'h3', title: 'Illustration', description: 'Principles and guides for creating GOV.UK branded illustrations.', icon: './illustration.svg', iconBackgroundColour: '#CA3535', href: ('/illustration/' | url) } %}
 {% endif %}
 {% linkCard {titleContainer: 'h3', title: 'Brand in use', description: 'One brand. Many places.', icon: './brand-in-use.svg', iconBackgroundColour: '#1d70b8', href: ('/brand-in-use/' | url) } %}
@@ -61,7 +61,11 @@ You can find and download brand element and asset files in [the govuk-brand-asse
 
 ## Need help?
 
+{% if site.flags.illustrationGuidelinesEnabled %}
+If your service is part of the [GOV.UK Proposition](https://www.gov.uk/government/publications/govuk-proposition/govuk-proposition) and you have a question about how to apply the brand guidelines, contact the team at [govuk-brand-team@dsit.gov.uk](mailto:govuk-brand-team@dsit.gov.uk).
+{% else %}
 If you’re part of a team that works on government products and services, and you've got a question about how to apply the brand guidelines, [contact the team](mailto:govuk-brand-team@dsit.gov.uk).
+{% endif %}
 
 {% endgridCell %}
 {% endgrid %}
