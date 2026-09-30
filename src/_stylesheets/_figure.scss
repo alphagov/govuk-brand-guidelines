@@ -22,10 +22,25 @@
   vertical-align: middle;
 }
 
+.app-figure__images-container {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  gap: govuk-spacing(4);
+}
+
 .app-figure--caption-top .app-figure__caption {
   @include govuk-responsive-margin(3, $direction: 'bottom');
 }
 
 .app-figure--caption-bottom .app-figure__caption {
   @include govuk-responsive-margin(3, $direction: 'top');
+}
+
+.app-figure__caption--align-left {
+  text-align: left;
+}
+
+.app-figure__image-full-width img {
+  width: 100%;
 }
