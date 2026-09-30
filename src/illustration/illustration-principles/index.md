@@ -61,7 +61,7 @@ Overlap elements to create depth and harmony. Use layering to highlight key elem
 
 ### Use a slightly restricted colour palette
 
-To bring a sense of unity to our illustrations, we tend to work with 4-6 colors from our palette plus their associated shades and tints. Always use the specific color palette that matches the channel where the illustration will appear. Try to include the primary blue as a foundation, using the accent teal to highlight key elements and focal points.
+To bring a sense of unity to our illustrations, we tend to work with 4-6 colors from our palette plus their associated shades and tints. Always use the specific color palette that matches the channel where the illustration will appear. Try to include the [primary blue](/colour/illustrations/#applying-colour) as a foundation, using the accent teal to highlight key elements and focal points.
 
 {% endgridCell %}
 
@@ -73,7 +73,7 @@ To bring a sense of unity to our illustrations, we tend to work with 4-6 colors 
 
 ### Use contrasting colour and tones
 
-Use contrasting colours or tones, and a combination of warm and cool colours. This is both more visually appealing and accessible.
+Use [contrasting colours](/colour/illustrations/#using-contrast) or tones, and a combination of warm and cool colours. This is both more visually appealing and accessible.
 
 {% endgridCell %}
 
