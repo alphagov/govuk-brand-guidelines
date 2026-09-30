@@ -75,6 +75,8 @@ export function setupNavigation(eleventyConfig) {
   eleventyConfig.addFilter('asServiceNavigationItem', asServiceNavigationItem)
 
   eleventyConfig.addFilter('ariaCurrentValue', ariaCurrentValue)
+
+  eleventyConfig.addFilter('isActive', isActive)
 }
 
 /**
