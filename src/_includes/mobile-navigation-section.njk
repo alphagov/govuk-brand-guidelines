@@ -1,0 +1,64 @@
+{%- macro mobileNavigationSection(params) -%}
+  {% set navigationClasses = 'govuk-service-navigation govuk-service-navigation--inverse' if params.inverse else 'govuk-service-navigation' %}
+  <div class="{{ navigationClasses }}" data-module="govuk-service-navigation" data-govuk-service-navigation-init="">
+    <div class="govuk-width-container">
+      <div class="govuk-service-navigation__container">
+        <nav aria-label="Menu" class="govuk-service-navigation__wrapper app-service-navigation__wrapper">
+          <details>
+            <summary class="govuk-service-navigation__toggle">
+              <span>Menu</span></summary>
+            <ul class="govuk-service-navigation__list">
+              {%- for page in params.pages %}
+                {% set ariaCurrent = "page" if page.url | ariaCurrentValue(params.renderedPageUrl) === "page" else
+                  null %}
+                {%- if page.data.children | length > 0 %}
+                  <li class="govuk-service-navigation__item govuk-service-navigation__item govuk-service-navigation__item--active app-mobile-navigation-section__service-navigation-item">
+                    <details {% if page.url | isActive(params.renderedPageUrl) -%} open {%- endif -%} >
+                      <summary class="app-mobile-navigation-section__toggle">
+                        <span>{{ page.data.title }}</span></summary>
+                      <ul class="govuk-list app-link-list app-current-with-dot app-mobile-navigation-section__subnav">
+                        {% set chapterPages = [
+                          {
+                            url: page.url,
+                            ariaCurrent: ariaCurrent,
+                            data: {
+                              title: page.data.title + ' overview'
+                            }
+                          }
+                        ].concat(page.data.children) %}
+
+                        {%- for page in page.data.children %}
+                          {% set ariaCurrent = "page" if page.url | ariaCurrentValue(params.renderedPageUrl) === "page" else
+                            null %}
+                          <li class="app-mobile-navigation-section__item">
+                            <a href={{ page.url }} class="govuk-service-navigation__link" {% if ariaCurrent -%} aria-current="{{ariaCurrent}}" {%- endif -%} >
+                              {%- if ariaCurrent === 'page' -%}
+                                <strong>{{- page.data.title -}}</strong>
+                              {% else %}
+                                {{- page.data.title -}}
+                              {% endif %}
+                            </a>
+                          </li>
+                        {% endfor %}
+                      </ul>
+                    </details>
+                  </li>
+                {%- else  %}
+                  <li class="govuk-service-navigation__item">
+                    <a href={{ page.url }} class="govuk-service-navigation__link" {% if ariaCurrent -%} aria-current="{{ariaCurrent}}" {%- endif -%} >
+                      {%- if ariaCurrent === 'page' -%}
+                        <strong>{{- page.data.title -}}</strong>
+                      {% else %}
+                        {{- page.data.title -}}
+                      {% endif %}
+                    </a>
+                  </li>
+                {%- endif %}
+              {% endfor %}
+            </ul>
+          </details>
+        </nav>
+      </div>
+    </div>
+  </div>
+{% endmacro %}
