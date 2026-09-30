@@ -4,6 +4,13 @@
 
 {% block govukHeader %}
   {{ super() }}
+  {% from "mobile-navigation-section.njk" import mobileNavigationSection %}
+  {{ mobileNavigationSection({
+      pages: collections.serviceNavigationPages,
+      renderedPageUrl: page.url,
+      inverse: true
+    })
+  }}
 {% endblock %}
 
 {% block beforeContent %}
