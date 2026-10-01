@@ -19,7 +19,7 @@ Help users find, understand and trust the GOV.UK brand. Meet their needs across 
 
 {% endbreakOut %}
 
-<div class="app-homepage-section">
+<div class="app-homepage-section app-homepage-section--desktop-columns">
 
 {% from "service-navigation.njk" import appServiceNavigation %}
 {{ appServiceNavigation({

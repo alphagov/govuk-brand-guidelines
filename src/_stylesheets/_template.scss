@@ -9,7 +9,6 @@
 
 // The parent
 .app-page-wrapper {
-  @include govuk-responsive-margin(6, $direction: top);
   @include govuk-responsive-margin(7, $direction: bottom);
 
   @include govuk-media-query($from: tablet) {
@@ -23,14 +22,6 @@
   }
 }
 
-// When no navigation is present, cancel the grid
-// and limit the width so the content doesn't go larger
-// than how it appears on desktop
-.app-page-wrapper--no-navigation {
-  display: block;
-  max-width: $govuk-page-width - $app-sidebar-nav-desktop;
-}
-
 .app-chapter-navigation {
   position: relative;
   z-index: 1;
@@ -38,6 +29,10 @@
   @include govuk-media-query($until: tablet) {
     display: none;
   }
+}
+
+.app-page-wrapper .app-chapter-navigation {
+  margin-top: govuk-spacing(6);
 }
 
 .app-chapter-navigation--mobile-fallback {
