@@ -1,63 +1,11 @@
-{% from "govuk/components/service-navigation/macro.njk" import govukServiceNavigation %}
 {% from "link-list.njk" import appLinkList %}
 
 {% macro appServiceNavigation(params) %}
-
-{%- set navigation = [] %}
-{%- for page in params.pages %}
-  {%- if page.data.children | length > 0 %}
-  {# If the page has child pages... #}
-
-  {# Mock a link to the overview page, only setting ariaCurrent if the link is the current on, not just active #}
-  {% set overviewLink = {
-    url: page.url,
-    data: {
-      title: page.data.title + " overview",
-      appLinkList: {
-        ariaCurrent: "page" if page.url | ariaCurrentValue(params.renderedPageUrl) === "page" else null
-      }
-    }
-  } %}
-
-  {% set subNavigationHtml %}
-    <template>
-      {{ appLinkList({
-        pages: [overviewLink].concat(page.data.children),
-        renderedPageUrl: params.renderedPageUrl,
-        classes: 'app-mobile-navigation-section__subnav',
-        itemClasses: 'app-mobile-navigation-section__item',
-        linkClasses: 'govuk-service-navigation__link'
-      }) }}
-    </template>
-  {% endset %}
-
-  {% set navigation = navigation.concat([
-    page | asServiceNavigationItem({
+  <nav class="app-chapter-navigation">
+    {{ appLinkList({
+      pages: params.pages,
       renderedPageUrl: params.renderedPageUrl,
-      html: page.data.title + subNavigationHtml,
-      attributes: {
-        "data-module": "app-mobile-navigation-section"
-      }
-    })
-  ])%}
-
-  {%- else %}
-  {# If the page is standalone... #}
-
-  {% set navigation = navigation.concat([
-    page | asServiceNavigationItem({
-      renderedPageUrl: params.renderedPageUrl,
-      html: page.data.title
-    })
-  ])%}
-
-  {%- endif %}
-{% endfor %}
-
-{{ govukServiceNavigation({
-  navigation: navigation,
-  navigationClasses: 'app-service-navigation__wrapper',
-  classes: 'govuk-service-navigation--inverse' if params.inverse else null
-}) }}
-
+      sidebar: true
+    })}}
+  </nav>
 {% endmacro %}
