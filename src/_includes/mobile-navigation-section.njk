@@ -27,7 +27,7 @@
                           }
                         ].concat(page.data.children) %}
 
-                        {%- for page in page.data.children %}
+                        {%- for page in chapterPages %}
                           {% set ariaCurrent = "page" if page.url | ariaCurrentValue(params.renderedPageUrl) === "page" else
                             null %}
                           <li class="app-mobile-navigation-section__item">
