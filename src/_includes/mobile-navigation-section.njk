@@ -1,6 +1,6 @@
 {%- macro mobileNavigationSection(params) -%}
   {% set navigationClasses = 'govuk-service-navigation govuk-service-navigation--inverse' if params.inverse else 'govuk-service-navigation' %}
-  <div class="{{ navigationClasses }}" data-module="govuk-service-navigation" data-govuk-service-navigation-init="">
+  <div class="{{ navigationClasses }}">
     <div class="govuk-width-container">
       <div class="govuk-service-navigation__container">
         <nav aria-label="Menu" class="govuk-service-navigation__wrapper app-service-navigation__wrapper">
@@ -12,7 +12,7 @@
                 {% set ariaCurrent = "page" if page.url | ariaCurrentValue(params.renderedPageUrl) === "page" else
                   null %}
                 {%- if page.data.children | length > 0 %}
-                  <li class="govuk-service-navigation__item govuk-service-navigation__item govuk-service-navigation__item--active app-mobile-navigation-section__service-navigation-item">
+                  <li class="govuk-service-navigation__item govuk-service-navigation__item--active">
                     <details {% if page.url | isActive(params.renderedPageUrl) -%} open {%- endif -%} >
                       <summary class="app-mobile-navigation-section__toggle">
                         <span>{{ page.data.title }}</span></summary>

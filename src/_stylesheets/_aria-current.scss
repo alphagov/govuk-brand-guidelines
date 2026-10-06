@@ -1,15 +1,18 @@
 @use 'govuk/base' as *;
 
 // Style aria-current lists
-.app-current-with-dot [aria-current] + .app-current-with-dot {
+.app-current-with-dot [aria-current] + .app-current-with-dot,
+.govuk-service-navigation__item--active {
   $dash-width: 12px;
 
-  .govuk-link {
+  .govuk-link,
+  .govuk-service-navigation__link {
     display: inline-flex;
     align-items: center;
   }
 
-  .govuk-link::before {
+  .govuk-link::before,
+  .govuk-service-navigation__link::before {
     content: '';
     display: block;
     width: $dash-width;
