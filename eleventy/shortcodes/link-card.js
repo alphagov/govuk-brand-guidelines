@@ -9,11 +9,11 @@ export const linkCard = blockShortcode((options = {}) => {
   options = { ...defaultOptions, ...options }
 
   const parts = [
+    options.icon &&
+      `<div class="app-link-card__icon-container"><img class="app-link-card__icon" alt="" src="${options.icon}"></div>`,
     `<${options.titleContainer} class="app-link-card__title"><a class="app-link-card__link" href="${options.href ?? '#'}">${options.title}</a></${options.titleContainer}>`,
     options.description &&
-      `<span class="app-link-card__description">${options.description}</span>`,
-    options.icon &&
-      `<div class="app-link-card__icon-container"><img class="app-link-card__icon" alt="" src="${options.icon}"></div>`
+      `<span class="app-link-card__description">${options.description}</span>`
   ].filter(Boolean)
 
   return `<div class="app-link-card${options.classes ? ` ${options.classes}` : ''}" ${options.iconBackgroundColour && ` style="--icon-background: ${options.iconBackgroundColour}"`}>
