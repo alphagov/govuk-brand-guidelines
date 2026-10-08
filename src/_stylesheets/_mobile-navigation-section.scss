@@ -13,25 +13,35 @@ $_govuk-service-navigation-font-size: 19px;
 // the whole width, we need to make this wrapper 100% wide
 .app-service-navigation__wrapper {
   width: 100%;
+  @include govuk-media-query($from: tablet) {
+    display: none;
+  }
 }
 
-// Cancel out some of the Service Navigation styles.
-// That class is toggled by JavaScript
-// It needs no media query to gate its styles
-.app-mobile-navigation-section__service-navigation-item {
-  // Avoid double margins with the button, which needs some spacing
-  // from the subnav whether the subnav is closed or open
+.govuk-service-navigation__item:has([aria-current]) {
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    width: 4px;
+    height: calc(100% - govuk-spacing(2));
+    margin-top: 5%;
+    background-color: govuk-colour('blue', $variant: 'shade-10');
+  }
+}
+
+.govuk-service-navigation__item--active {
   margin-top: 0;
   margin-bottom: 0;
-
-  &.govuk-service-navigation__item--active {
-    padding-left: govuk-spacing(3);
-    // The active element is highlighted in the subnav
-    // so the items in the service navigation don't need to show it.
-    // We need to cancel out border width so it does not show
-    // in high contrast mode and restore the padding accordingly.
-    border-width: 0;
-  }
+  padding-left: govuk-spacing(3);
+  // The active element is highlighted in the subnav
+  // so the items in the service navigation don't need to show it.
+  // We need to cancel out border width so it does not show
+  // in high contrast mode and restore the padding accordingly.
+  border-width: 0;
 }
 
 .app-mobile-navigation-section__toggle {
@@ -68,6 +78,14 @@ $_govuk-service-navigation-font-size: 19px;
       @include govuk-focused-text;
     }
   }
+
+  &::marker {
+    content: '';
+  }
+
+  &::-webkit-details-marker {
+    display: none;
+  }
 }
 
 .govuk-service-navigation--inverse {
@@ -97,7 +115,7 @@ $app-chevron-margin-right: govuk-spacing(2) + 2px;
 }
 
 .app-mobile-navigation-section__toggle span::before,
-.govuk-service-navigation__toggle::before {
+.govuk-service-navigation__toggle span::before {
   content: '';
   display: inline-block;
   position: relative;
@@ -119,8 +137,8 @@ $app-chevron-margin-right: govuk-spacing(2) + 2px;
   vertical-align: baseline;
 }
 
-.app-mobile-navigation-section__toggle[aria-expanded='true'] span::before,
-.govuk-service-navigation__toggle[aria-expanded='true']::before {
+details[open] > .app-mobile-navigation-section__toggle span::before,
+details[open] > .govuk-service-navigation__toggle span::before {
   // Adjust the vertical shift so the chevron rotates around its centre
   // Easier than to do the maths for computing the centre and using it as `transform-origin`
   bottom: govuk-em(1px, $_govuk-service-navigation-font-size);
@@ -132,7 +150,7 @@ $app-chevron-margin-right: govuk-spacing(2) + 2px;
   bottom: govuk-em(2px, $_govuk-service-navigation-font-size);
 }
 
-.govuk-service-navigation__toggle[aria-expanded='true']::before {
+details[open] .govuk-service-navigation__toggle::before {
   bottom: govuk-em(-2px, $_govuk-service-navigation-font-size);
 }
 
@@ -143,7 +161,7 @@ $app-chevron-margin-right: govuk-spacing(2) + 2px;
 
 // Padding that aligns the text of the items with the text in the toggle
 $subnav-padding-left: $app-chevron-width + $app-chevron-margin-left +
-  $app-chevron-margin-right;
+  $app-chevron-margin-right + $govuk-gutter-half;
 
 .app-mobile-navigation-section__subnav {
   // Prepare for painting a white background edge to edge
@@ -155,7 +173,7 @@ $subnav-padding-left: $app-chevron-width + $app-chevron-margin-left +
   margin-top: 0;
   padding-top: govuk-spacing(3);
   padding-bottom: govuk-spacing(3);
-  padding-left: $subnav-padding-left;
+  padding-left: $app-chevron-margin-left;
 
   &::before {
     $border-top-width: 1px;
@@ -194,21 +212,9 @@ $subnav-padding-left: $app-chevron-width + $app-chevron-margin-left +
   padding: govuk-spacing(2) 0;
 }
 
-.app-current-with-dot.app-mobile-navigation-section__subnav {
-  --dot-spacing: 11.5px;
-
-  ul {
-    --dot-spacing: 10px;
-  }
-}
-
-// Add padding to mobile menu items that are not drop downs,
-// so they're aligned with their dropdown variants
-@include govuk-media-query($until: tablet) {
-  .js-enabled
-    .govuk-service-navigation__item:not(
-      .app-mobile-navigation-section__service-navigation-item
-    ) {
-    padding-left: $subnav-padding-left;
-  }
+.govuk-service-navigation__item:not(.govuk-service-navigation__item--active) {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: -$govuk-gutter-half;
+  padding: govuk-spacing(2) 0 govuk-spacing(2) $subnav-padding-left;
 }

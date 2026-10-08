@@ -25,7 +25,6 @@
         // 100cqi is preferable to 100vw because it accounts for scroll bars
         width: 100cqi;
         // The height of app-landing + its top padding + app-page-wrapper's padding
-        height: calc(100% + (govuk-spacing(9) + govuk-spacing(6)));
         background-color: govuk-colour('blue', $variant: 'tint-95');
       }
 

@@ -53,16 +53,6 @@ export function setupNavigation(eleventyConfig) {
 
       // Now that we have ancestors we can get the accessible page title
       page.data.pageTitle = buildPageTitle(page)
-
-      page.data.sidebarNavigationRoot =
-        page.data.ancestors.length === 1
-          ? page
-          : page.data.ancestors
-              .filter((ancestor) => ancestor.data.ancestors.length === 1)
-              .at(0)
-
-      page.data.isSidebarNavigationRoot =
-        page.data.sidebarNavigationRoot === page
     }
 
     return pages[0].data.children.filter(
@@ -75,6 +65,8 @@ export function setupNavigation(eleventyConfig) {
   eleventyConfig.addFilter('asServiceNavigationItem', asServiceNavigationItem)
 
   eleventyConfig.addFilter('ariaCurrentValue', ariaCurrentValue)
+
+  eleventyConfig.addFilter('isActive', isActive)
 }
 
 /**
