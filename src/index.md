@@ -5,8 +5,6 @@ layout: homepage.njk
 mainClasses: 'app-homepage'
 ---
 
-{% from "govuk/components/button/macro.njk" import govukButton %}
-
 {% breakOut {classes: "app-homepage-masthead"} %}
 
 {% grid { columns: { desktop: 3 }, classes: "govuk-!-margin-0" } %}
@@ -21,7 +19,15 @@ Help users find, understand and trust the GOV.UK brand. Meet their needs across 
 
 {% endbreakOut %}
 
-<div class="app-homepage-section">
+<div class="app-homepage-section app-homepage-section--desktop-columns">
+
+{% from "service-navigation.njk" import appServiceNavigation %}
+{{ appServiceNavigation({
+  pages: collections.serviceNavigationPages,
+  renderedPageUrl: page.url
+})}}
+
+<div>
 
 ## Key elements
 
@@ -36,6 +42,8 @@ Help users find, understand and trust the GOV.UK brand. Meet their needs across 
 {% endif %}
 {% linkCard {titleContainer: 'h3', title: 'Brand in use', description: 'One brand. Many places.', icon: './brand-in-use.svg', iconBackgroundColour: '#1d70b8', href: ('/brand-in-use/' | url) } %}
 {% endgrid %}
+
+</div>
 
 </div>
 

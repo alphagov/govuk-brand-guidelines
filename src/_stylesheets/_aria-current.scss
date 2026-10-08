@@ -1,39 +1,46 @@
 @use 'govuk/base' as *;
 
 // Style aria-current lists
-.app-current-with-dot {
-  --dot-spacing: #{govuk-spacing(2)};
+.app-current-with-dot [aria-current] + .app-current-with-dot {
+  $dash-width: 12px;
 
-  [aria-current] {
-    font-weight: bold;
+  .govuk-link {
+    display: inline-flex;
+    align-items: center;
   }
 
-  [aria-current='page'] {
-    display: inline-flex;
-    align-items: baseline;
-
-    &::before {
-      $dot-size: 0.5rem;
-
-      content: '';
-      display: block;
-      width: $dot-size;
-      height: $dot-size;
-      margin-right: var(--dot-spacing);
-      margin-left: calc(-#{$dot-size} - var(--dot-spacing));
-      // Prevent dot from shrinking in a flex context
-      flex-shrink: 0;
-
-      // Better alignment with the text
-      transform: translateY(-1px);
-      border-radius: 100%;
-      background: currentcolor;
-
-      // Force dot colour to match link text in high contrast mode
-      // stylelint-disable-next-line max-nesting-depth
-      @media (forced-colors: active) {
-        background: LinkText;
-      }
+  .govuk-link::before {
+    content: '';
+    display: block;
+    width: $dash-width;
+    height: 1px;
+    margin-right: govuk-spacing(2);
+    // Prevent dash/dot from shrinking in a flex context
+    flex-shrink: 0;
+    background: currentcolor;
+    // Force dot colour to match link text in high contrast mode
+    // stylelint-disable-next-line max-nesting-depth
+    @media (forced-colors: active) {
+      background: LinkText;
     }
+  }
+
+  [aria-current='page']::before {
+    $dot-size: 0.5rem;
+    width: $dot-size;
+    height: $dot-size;
+    margin-right: calc(govuk-spacing(2) + $dash-width / 2);
+    border-radius: 100%;
+  }
+}
+
+nav > .app-current-with-dot {
+  & > li {
+    margin-bottom: govuk-spacing(3);
+    padding-left: govuk-spacing(2); // 7px in designs - not a DS spacing value
+  }
+
+  & > :has([aria-current]) {
+    border-left: 2px solid govuk-colour('blue', $variant: 'tint-25');
   }
 }

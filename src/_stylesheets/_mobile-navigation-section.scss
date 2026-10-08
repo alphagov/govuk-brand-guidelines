@@ -13,6 +13,9 @@ $_govuk-service-navigation-font-size: 19px;
 // the whole width, we need to make this wrapper 100% wide
 .app-service-navigation__wrapper {
   width: 100%;
+  @include govuk-media-query($from: tablet) {
+    display: none;
+  }
 }
 
 // Cancel out some of the Service Navigation styles.
@@ -31,6 +34,10 @@ $_govuk-service-navigation-font-size: 19px;
     // We need to cancel out border width so it does not show
     // in high contrast mode and restore the padding accordingly.
     border-width: 0;
+  }
+
+  &.govuk-service-navigation__item--active:has(details[open]) {
+    border-left: 4px solid govuk-colour('blue', $variant: 'shade-10');
   }
 }
 
@@ -68,6 +75,14 @@ $_govuk-service-navigation-font-size: 19px;
       @include govuk-focused-text;
     }
   }
+
+  &::marker {
+    content: '';
+  }
+
+  &::-webkit-details-marker {
+    display: none;
+  }
 }
 
 .govuk-service-navigation--inverse {
@@ -97,7 +112,7 @@ $app-chevron-margin-right: govuk-spacing(2) + 2px;
 }
 
 .app-mobile-navigation-section__toggle span::before,
-.govuk-service-navigation__toggle::before {
+.govuk-service-navigation__toggle span::before {
   content: '';
   display: inline-block;
   position: relative;
@@ -119,8 +134,8 @@ $app-chevron-margin-right: govuk-spacing(2) + 2px;
   vertical-align: baseline;
 }
 
-.app-mobile-navigation-section__toggle[aria-expanded='true'] span::before,
-.govuk-service-navigation__toggle[aria-expanded='true']::before {
+details[open] > .app-mobile-navigation-section__toggle span::before,
+details[open] > .govuk-service-navigation__toggle span::before {
   // Adjust the vertical shift so the chevron rotates around its centre
   // Easier than to do the maths for computing the centre and using it as `transform-origin`
   bottom: govuk-em(1px, $_govuk-service-navigation-font-size);
@@ -132,7 +147,7 @@ $app-chevron-margin-right: govuk-spacing(2) + 2px;
   bottom: govuk-em(2px, $_govuk-service-navigation-font-size);
 }
 
-.govuk-service-navigation__toggle[aria-expanded='true']::before {
+details[open] .govuk-service-navigation__toggle::before {
   bottom: govuk-em(-2px, $_govuk-service-navigation-font-size);
 }
 
