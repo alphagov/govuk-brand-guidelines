@@ -7,6 +7,12 @@
 // so adding as a private variable for future reference
 $_govuk-service-navigation-font-size: 19px;
 
+.govuk-service-navigation {
+  @include govuk-media-query($from: tablet) {
+    display: none;
+  }
+}
+
 // The Service Navigation container has a flex column layout
 // aligning items at the start.
 // To make sure the toggles of the mobile navigation take
@@ -196,6 +202,7 @@ $subnav-padding-left: $app-chevron-width + $app-chevron-margin-left +
 
 .app-current-with-dot.app-mobile-navigation-section__subnav {
   --dot-spacing: 11.5px;
+  margin-left: 0;
 
   ul {
     --dot-spacing: 10px;

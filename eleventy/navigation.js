@@ -1,9 +1,5 @@
 import { dirname as posixDirname } from 'node:path/posix'
-import {
-  ariaCurrentValue,
-  isActive,
-  isCurrent
-} from './navigation/aria-current.js'
+import { ariaCurrentValue } from './navigation/aria-current.js'
 
 export function setupNavigation(eleventyConfig) {
   eleventyConfig.addCollection('serviceNavigationPages', (collectionAPI) => {
@@ -72,8 +68,6 @@ export function setupNavigation(eleventyConfig) {
 
   eleventyConfig.addFilter('asBreadcrumbItems', asBreadcrumbItems)
 
-  eleventyConfig.addFilter('asServiceNavigationItem', asServiceNavigationItem)
-
   eleventyConfig.addFilter('ariaCurrentValue', ariaCurrentValue)
 }
 
@@ -87,26 +81,6 @@ function asBreadcrumbItems(pages) {
     href: page.url,
     text: page.url === '/' ? 'Home' : page.data.title
   }))
-}
-
-/**
- * Converts an Eleventy page object into the shape expected for Service Navigation's `navigation` option
- *
- * @param {{url: string, data: {title: string}}} page -- The Eleventy page to convert into a Service Navigation item
- * @param {object} itemOptions -- Options merged into the generated item for the Service Navigation, except `renderedPageUrl`
- * @param {string} itemOptions.renderedPageUrl -- URL of the page currently being rendered
- */
-function asServiceNavigationItem(
-  page,
-  { renderedPageUrl, ...serviceNavigationItemOptions }
-) {
-  return {
-    href: page.url,
-    text: page.data.title,
-    current: isCurrent(page.url, renderedPageUrl),
-    active: isActive(page.url, renderedPageUrl),
-    ...serviceNavigationItemOptions
-  }
 }
 
 /**

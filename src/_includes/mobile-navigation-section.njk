@@ -1,0 +1,52 @@
+{% from "link-list.njk" import appLinkList %}
+
+{%- macro mobileNavigationSection(params) -%}
+  {% set navigationClasses = 'govuk-service-navigation govuk-service-navigation--inverse' if params.inverse else 'govuk-service-navigation' %}
+  <div class="{{ navigationClasses }}" data-module="govuk-service-navigation">
+    <div class="govuk-width-container">
+      <div class="govuk-service-navigation__container">
+        <nav aria-label="Menu" class="govuk-service-navigation__wrapper app-service-navigation__wrapper">
+          <button type="button" class="govuk-service-navigation__toggle govuk-js-service-navigation-toggle" aria-controls="navigation" hidden="" aria-hidden="true">
+            Menu
+          </button>
+          <ul class="govuk-service-navigation__list" id="navigation">
+            {%- for page in params.pages -%}
+              {% set ariaCurrent = page.url | ariaCurrentValue(params.renderedPageUrl) -%}
+              {% set hasNestedLinks = page.data.children | length > 0 -%}
+              <li class="govuk-service-navigation__item">
+                <a class="govuk-service-navigation__link"
+                  href="{{page.url | url}}"
+                  {% if ariaCurrent %} aria-current="{{ariaCurrent}}" {% endif %}
+                  {%- if hasNestedLinks %} data-module="app-mobile-navigation-section" {% endif %}
+                  >
+                  {{- page.data.title -}}
+                  {%- if hasNestedLinks %}
+                    {% set overviewLink = {
+                      url: page.url,
+                      data: {
+                        title: page.data.title + " overview",
+                        appLinkList: {
+                          ariaCurrent: "page" if page.url | ariaCurrentValue(params.renderedPageUrl) === "page" else
+                            null
+                        }
+                      }
+                    } %}
+                    <template>
+                      {{ appLinkList({
+                        pages: [overviewLink].concat(page.data.children),
+                        renderedPageUrl: params.renderedPageUrl,
+                        classes: 'app-mobile-navigation-section__subnav',
+                        itemClasses: 'app-mobile-navigation-section__item',
+                        linkClasses: 'govuk-service-navigation__link'
+                    }) }}
+                    </template>
+                  {%- endif -%}
+                </a>
+              </li>
+            {%- endfor -%}
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+{% endmacro %}
