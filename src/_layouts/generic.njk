@@ -10,23 +10,30 @@
 
 {% block govukHeader %}
   {{ super() }}
-  {% from "mobile-navigation-section.njk" import mobileNavigationSection %}
-  {{ mobileNavigationSection({
+  {% if collections.serviceNavigationPages | length %}
+    {% from "mobile-navigation-section.njk" import mobileNavigationSection %}
+    {{ mobileNavigationSection({
       pages: collections.serviceNavigationPages,
       renderedPageUrl: page.url
     })
   }}
+  {% endif %}
 {% endblock %}
+
+{% set hasSidebarNavigation = sidebarNavigationRoot.data %}
 
 {% block beforeContent %}
   {{ super() }}
 
-  <div class="app-page-wrapper">
-    {% from "service-navigation.njk" import appServiceNavigation %}
-    {{ appServiceNavigation({
+  <div class="{{ ['app-page-wrapper', 'app-page-wrapper--no-navigation' if not hasSidebarNavigation] | select(truthy) | join(' ')}}">
+    {% if hasSidebarNavigation %}
+      {% from "service-navigation.njk" import appServiceNavigation %}
+      {{ appServiceNavigation({
         pages: collections.serviceNavigationPages,
         renderedPageUrl: page.url
-    })}}
+      }) }}
+    {% endif %}
+
     {%  set contentClasses = 'app-content app-content--section-' + page.fileSlug  if landing else 'app-content' %}
     <div class="{{ contentClasses }}">
       {% from "govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}

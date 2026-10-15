@@ -1,9 +1,5 @@
 import { dirname as posixDirname } from 'node:path/posix'
-import {
-  ariaCurrentValue,
-  isActive,
-  isCurrent
-} from './navigation/aria-current.js'
+import { ariaCurrentValue } from './navigation/aria-current.js'
 
 export function setupNavigation(eleventyConfig) {
   eleventyConfig.addCollection('serviceNavigationPages', (collectionAPI) => {
@@ -53,6 +49,16 @@ export function setupNavigation(eleventyConfig) {
 
       // Now that we have ancestors we can get the accessible page title
       page.data.pageTitle = buildPageTitle(page)
+
+      page.data.sidebarNavigationRoot =
+        page.data.ancestors.length === 1
+          ? page
+          : page.data.ancestors
+              .filter((ancestor) => ancestor.data.ancestors.length === 1)
+              .at(0)
+
+      page.data.isSidebarNavigationRoot =
+        page.data.sidebarNavigationRoot === page
     }
 
     return pages[0].data.children.filter(
@@ -62,11 +68,7 @@ export function setupNavigation(eleventyConfig) {
 
   eleventyConfig.addFilter('asBreadcrumbItems', asBreadcrumbItems)
 
-  eleventyConfig.addFilter('asServiceNavigationItem', asServiceNavigationItem)
-
   eleventyConfig.addFilter('ariaCurrentValue', ariaCurrentValue)
-
-  eleventyConfig.addFilter('isActive', isActive)
 }
 
 /**
@@ -79,26 +81,6 @@ function asBreadcrumbItems(pages) {
     href: page.url,
     text: page.url === '/' ? 'Home' : page.data.title
   }))
-}
-
-/**
- * Converts an Eleventy page object into the shape expected for Service Navigation's `navigation` option
- *
- * @param {{url: string, data: {title: string}}} page -- The Eleventy page to convert into a Service Navigation item
- * @param {object} itemOptions -- Options merged into the generated item for the Service Navigation, except `renderedPageUrl`
- * @param {string} itemOptions.renderedPageUrl -- URL of the page currently being rendered
- */
-function asServiceNavigationItem(
-  page,
-  { renderedPageUrl, ...serviceNavigationItemOptions }
-) {
-  return {
-    href: page.url,
-    text: page.data.title,
-    current: isCurrent(page.url, renderedPageUrl),
-    active: isActive(page.url, renderedPageUrl),
-    ...serviceNavigationItemOptions
-  }
 }
 
 /**
