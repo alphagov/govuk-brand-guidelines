@@ -7,15 +7,18 @@
 // so adding as a private variable for future reference
 $_govuk-service-navigation-font-size: 19px;
 
+.govuk-service-navigation {
+  @include govuk-media-query($from: tablet) {
+    display: none;
+  }
+}
+
 // The Service Navigation container has a flex column layout
 // aligning items at the start.
 // To make sure the toggles of the mobile navigation take
 // the whole width, we need to make this wrapper 100% wide
 .app-service-navigation__wrapper {
   width: 100%;
-  @include govuk-media-query($from: tablet) {
-    display: none;
-  }
 }
 
 // Cancel out some of the Service Navigation styles.
@@ -34,10 +37,6 @@ $_govuk-service-navigation-font-size: 19px;
     // We need to cancel out border width so it does not show
     // in high contrast mode and restore the padding accordingly.
     border-width: 0;
-  }
-
-  &.govuk-service-navigation__item--active:has(details[open]) {
-    border-left: 4px solid govuk-colour('blue', $variant: 'shade-10');
   }
 }
 
@@ -75,14 +74,6 @@ $_govuk-service-navigation-font-size: 19px;
       @include govuk-focused-text;
     }
   }
-
-  &::marker {
-    content: '';
-  }
-
-  &::-webkit-details-marker {
-    display: none;
-  }
 }
 
 .govuk-service-navigation--inverse {
@@ -112,7 +103,7 @@ $app-chevron-margin-right: govuk-spacing(2) + 2px;
 }
 
 .app-mobile-navigation-section__toggle span::before,
-.govuk-service-navigation__toggle span::before {
+.govuk-service-navigation__toggle::before {
   content: '';
   display: inline-block;
   position: relative;
@@ -134,8 +125,8 @@ $app-chevron-margin-right: govuk-spacing(2) + 2px;
   vertical-align: baseline;
 }
 
-details[open] > .app-mobile-navigation-section__toggle span::before,
-details[open] > .govuk-service-navigation__toggle span::before {
+.app-mobile-navigation-section__toggle[aria-expanded='true'] span::before,
+.govuk-service-navigation__toggle[aria-expanded='true']::before {
   // Adjust the vertical shift so the chevron rotates around its centre
   // Easier than to do the maths for computing the centre and using it as `transform-origin`
   bottom: govuk-em(1px, $_govuk-service-navigation-font-size);
@@ -147,7 +138,7 @@ details[open] > .govuk-service-navigation__toggle span::before {
   bottom: govuk-em(2px, $_govuk-service-navigation-font-size);
 }
 
-details[open] .govuk-service-navigation__toggle::before {
+.govuk-service-navigation__toggle[aria-expanded='true']::before {
   bottom: govuk-em(-2px, $_govuk-service-navigation-font-size);
 }
 
@@ -211,6 +202,7 @@ $subnav-padding-left: $app-chevron-width + $app-chevron-margin-left +
 
 .app-current-with-dot.app-mobile-navigation-section__subnav {
   --dot-spacing: 11.5px;
+  margin-left: 0;
 
   ul {
     --dot-spacing: 10px;
