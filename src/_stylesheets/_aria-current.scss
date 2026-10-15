@@ -1,7 +1,7 @@
 @use 'govuk/base' as *;
 
-// Style only nested aria-current lists
-[aria-current] ~ .app-current-with-dot {
+[aria-current] ~ .app-current-with-dot, // Style only nested aria-current lists
+.govuk-service-navigation__item:not(.app-mobile-navigation-section__service-navigation-item) {
   $dot-size: 0.5rem;
 
   --dot-spacing: #{govuk-spacing(2)};
