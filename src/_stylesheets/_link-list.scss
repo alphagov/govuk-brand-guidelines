@@ -1,6 +1,6 @@
 @use 'govuk/base' as *;
 
-// Render nested lists indended
+// Render nested lists with smaller text
 .app-link-list .app-link-list {
-  padding-left: govuk-spacing(3);
+  @include govuk-font-size($size: 16);
 }
