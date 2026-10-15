@@ -1,6 +1,6 @@
 {%- macro appLinkList(options) -%}
   {%- if options.pages | length -%}
-    <ul class="govuk-list app-link-list app-current-with-dot {% if options.classes %} {{options.classes}}{% endif %}">
+    <ul class="govuk-list app-link-list app-current-with-dot {% if options.classes %} {{options.classes}}{% endif %}" >
       {%- for page in options.pages -%}
         <li {% if options.itemClasses %}class="{{options.itemClasses}}"{% endif %}>
           {#-
@@ -22,17 +22,18 @@
             -#}
             {%- if ariaCurrent === 'page' -%}
               <strong>{{- page.data.title -}}</strong>
-            {% else %}
+            {%- else -%}
               {{- page.data.title -}}
-            {% endif %}
+            {%- endif -%}
           </a>
-          {%- if (page.data.children | length) and (ariaCurrent if options.sidebar else true) -%}
+          {%- set showNestedLinks = (page.data.children | length) and ariaCurrent -%}
+          {%- if showNestedLinks -%}
             {{- appLinkList({
               pages: page.data.children,
               renderedPageUrl: options.renderedPageUrl,
               itemClasses: options.itemClasses,
               linkClasses: options.linkClasses
-            }) -}}
+          }) -}}
           {%- endif -%}
         </li>
       {%- endfor -%}

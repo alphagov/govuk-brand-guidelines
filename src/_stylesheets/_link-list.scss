@@ -1,5 +1,6 @@
 @use 'govuk/base' as *;
 
+// Render nested lists with smaller text
 .app-link-list .app-link-list {
   @include govuk-font-size($size: 16);
 }
