@@ -33,21 +33,21 @@
 
 {% block beforeContent %}
   {% from "govuk/components/phase-banner/macro.njk" import govukPhaseBanner %}
-    {%- if site.env.CONTEXT === "dev" %}
-      {{ govukPhaseBanner({
+  {%- if site.env.CONTEXT === "dev" %}
+    {{ govukPhaseBanner({
         tag: {
           text: "Development",
           classes: "govuk-tag--red"
         }
       }) }}
-    {%- elif site.env.PULL_REQUEST %}
-      {{ govukPhaseBanner({
+  {%- elif site.env.PULL_REQUEST %}
+    {{ govukPhaseBanner({
         tag: {
           text: "Preview"
         },
         html: 'This is a preview of <a class="govuk-link" href="https://github.com/alphagov/govuk-brand-guidelines/pull/' + site.env.REVIEW_ID + '">a proposed change</a> to the brand guidelines.'
       }) }}
-    {%- endif %}
+  {%- endif %}
 {% endblock %}
 
 {% set mainClasses = [mainClasses, 'app-main-wrapper app-prose'] | select('truthy') | join(' ') %}
@@ -70,5 +70,5 @@
 {% endblock %}
 
 {% block bodyEnd %}
-<script type="module" src="{{ '/assets/app.js' | url }}"></script>
+  <script type="module" src="{{ '/assets/app.js' | url }}"></script>
 {% endblock %}

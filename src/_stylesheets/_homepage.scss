@@ -6,6 +6,18 @@
   @include govuk-responsive-margin(8, $direction: bottom);
 }
 
+.app-homepage-section--desktop-columns {
+  @include govuk-media-query($from: tablet) {
+    display: grid;
+    grid-template-columns: $app-sidebar-nav-tablet 1fr;
+    gap: $govuk-gutter;
+  }
+
+  @include govuk-media-query($from: desktop) {
+    grid-template-columns: $app-sidebar-nav-desktop 1fr;
+  }
+}
+
 .app-homepage-section--top-border {
   border-top: 1px solid govuk-colour('blue', $variant: 'tint-50');
   @include govuk-responsive-padding(4, $direction: top);
