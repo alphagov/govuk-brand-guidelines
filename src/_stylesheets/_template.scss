@@ -123,3 +123,16 @@
   --app-landing-hero-graphic-size-small: #{govuk-em(360px, 16)};
   --app-landing-hero-graphic-size-big: #{govuk-em(420px, 16)};
 }
+
+.app-content--section-icons {
+  --app-landing-hero-dark-colour: #{govuk-colour('purple')};
+  --app-landing-hero-light-colour: #{govuk-colour(
+      'purple',
+      $variant: 'tint-25'
+    )};
+  --app-landing-hero-graphic: url('/styles/images/heroes/icons.svg');
+  --app-landing-hero-graphic-position-small: 50% #{govuk-em(190px, 16)};
+  --app-landing-hero-graphic-position-align: 0;
+  --app-landing-hero-graphic-size-small: #{govuk-em(250px)};
+  --app-landing-hero-graphic-size-big: #{govuk-em(325px, 16)};
+}
