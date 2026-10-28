@@ -9,7 +9,6 @@
 
 // The parent
 .app-page-wrapper {
-  @include govuk-responsive-margin(6, $direction: top);
   @include govuk-responsive-margin(7, $direction: bottom);
 
   @include govuk-media-query($from: tablet) {
@@ -32,12 +31,23 @@
 }
 
 .app-chapter-navigation {
-  position: relative;
+  position: sticky;
   z-index: 1;
+  top: 0;
+  align-self: start;
 
   @include govuk-media-query($until: tablet) {
     display: none;
   }
+}
+
+.app-page-wrapper .app-chapter-navigation {
+  padding-top: govuk-spacing(6);
+}
+
+.app-homepage-section .app-chapter-navigation {
+  margin-top: -#{govuk-spacing(6)};
+  padding-top: govuk-spacing(6);
 }
 
 .app-chapter-navigation--mobile-fallback {

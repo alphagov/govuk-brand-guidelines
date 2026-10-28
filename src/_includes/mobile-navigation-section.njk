@@ -13,7 +13,7 @@
             {%- for page in params.pages -%}
               {% set ariaCurrent = page.url | ariaCurrentValue(params.renderedPageUrl) -%}
               {% set hasNestedLinks = page.data.children | length > 0 -%}
-              <li class="govuk-service-navigation__item">
+              <li class="govuk-service-navigation__item{% if ariaCurrent %} app-mobile-navigation-section__service-navigation-item--active{% endif %}">
                 <a class="govuk-service-navigation__link"
                   href="{{page.url | url}}"
                   {% if ariaCurrent %} aria-current="{{ariaCurrent}}" {% endif %}
@@ -35,6 +35,7 @@
                       {{ appLinkList({
                         pages: [overviewLink].concat(page.data.children),
                         renderedPageUrl: params.renderedPageUrl,
+                        isNested: true,
                         classes: 'app-mobile-navigation-section__subnav',
                         itemClasses: 'app-mobile-navigation-section__item',
                         linkClasses: 'govuk-service-navigation__link'
