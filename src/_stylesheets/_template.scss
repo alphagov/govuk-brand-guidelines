@@ -9,7 +9,6 @@
 
 // The parent
 .app-page-wrapper {
-  @include govuk-responsive-margin(6, $direction: top);
   @include govuk-responsive-margin(7, $direction: bottom);
 
   @include govuk-media-query($from: tablet) {
@@ -38,6 +37,10 @@
   @include govuk-media-query($until: tablet) {
     display: none;
   }
+}
+
+.app-page-wrapper .app-chapter-navigation {
+  margin-top: govuk-spacing(6);
 }
 
 .app-chapter-navigation--mobile-fallback {

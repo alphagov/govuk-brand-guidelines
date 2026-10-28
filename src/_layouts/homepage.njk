@@ -4,19 +4,18 @@
 
 {% block govukHeader %}
   {{ super() }}
-  {% from "service-navigation.njk" import appServiceNavigation %}
-  {% if collections.serviceNavigationPages | length %}
-    {{ appServiceNavigation({
+  {% from "mobile-navigation-section.njk" import mobileNavigationSection %}
+  {{ mobileNavigationSection({
       pages: collections.serviceNavigationPages,
       renderedPageUrl: page.url,
       inverse: true
-    })}}
-  {% endif %}
+    })
+  }}
 {% endblock %}
 
 {% block beforeContent %}
   {% breakOut %}
-    {{ super() }}
+  {{ super() }}
   {% endbreakOut %}
 {% endblock %}
 
