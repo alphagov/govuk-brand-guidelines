@@ -13,7 +13,7 @@ Our visual grammar is designed to be a direct embodiment of our core principles.
 
 ### Reference the dot
 
-Start with a circle and switch to other basic shapes only to maintain legibility. Reference ‘the dot’ through rounded embellishments, like a bell’s crown and ringer, provided they enhance clarity without adding clutter.
+Start with a circle and switch to other basic shapes to maintain legibility. Reference ‘the dot’ through rounded details, such as a circular window in the home icon in the example or circle-based curves defining the geometry the open book.
 
 {% endgridCell %}
 
@@ -61,7 +61,7 @@ We maintain an approachable aesthetic by keeping the exterior joints and ends ro
 
 ### Filled Icons as Default
 
-Filled icons are our default. Although we design both variations together to allow for toggle options, the general guidance for GOV,UK’s icons is filled.
+Filled icons are our default across GOV.UK, except where icons are used as part of a toggle. Some native platforms may have different conventions or accessibility considerations. If you need to depart from our recommended approach consult an accessibility expert.
 
 {% endgridCell %}
 
@@ -108,7 +108,11 @@ At large scales in social media, web, and marketing, you can add extra details t
 
 ## Filled vs Outlined Styles
 
-Filled icons are our default. Both styles are designed together to support toggling, but optimisation should focus on the filled icon set first.
+Use filled icons by default, with filled and outlined variants to distinguish active and inactive states in navigation and toggles.
+
+This provides an additional visual cue beyond colour, supporting WCAG guidance that state should not be communicated through colour alone.
+
+When adapting GOV.UK icons to native components, consider the platform’s guidance and established interaction patterns alongside accessibility requirements. Where native conventions differ from our recommended filled and outlined states, consult an accessibility (AX) expert before departing from the GOV.UK pattern. If both states need to use filled icons, provide another clear visual indicator to communicate the active state.
 
 {% grid { columns: { mobile: 1, desktop: 2 } } %}
 
