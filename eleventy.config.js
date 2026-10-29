@@ -48,7 +48,7 @@ export default function (eleventyConfig) {
   // https://www.11ty.dev/docs/plugins/bundle/
   eleventyConfig.addBundle('css')
 
-  eleventyConfig.addPreprocessor('drafts', '*', (data, content) => {
+  eleventyConfig.addPreprocessor('drafts', '*', (data) => {
     if (data.draft && process.env.CONTEXT === 'production') {
       return false
     }
