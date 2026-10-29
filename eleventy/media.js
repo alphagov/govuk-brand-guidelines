@@ -12,8 +12,9 @@ export function setupMedia(eleventyConfig) {
     // Output image formats
     formats: ['auto', 'avif', 'webp'],
 
-    // If the input is SVG, only output SVG
-    svgShortCircuit: true,
+    // Output both SVG and optimised raster images at different sizes depending on which is smaller
+    svgShortCircuit: 'size',
+    svgCompressionSize: 'br',
 
     // Output image widths
     // These represent full-width, two-thirds and one-third grid widths respectively
@@ -23,7 +24,8 @@ export function setupMedia(eleventyConfig) {
     htmlOptions: {
       imgAttributes: {
         loading: 'lazy',
-        decoding: 'async'
+        decoding: 'async',
+        sizes: 'auto'
       },
       pictureAttributes: {}
     },
