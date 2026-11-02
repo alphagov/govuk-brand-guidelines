@@ -17,10 +17,6 @@ export default function () {
 
       // GitHub PR ID
       REVIEW_ID: process.env.REVIEW_ID ?? null
-    },
-
-    flags: {
-      illustrationGuidelinesEnabled: process.env.CONTEXT !== 'production'
     }
   }
 }
