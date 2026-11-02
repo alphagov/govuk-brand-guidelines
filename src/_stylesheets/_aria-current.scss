@@ -1,11 +1,9 @@
 @use 'govuk/base' as *;
 
-// Style only nested aria-current lists
-[aria-current] ~ .app-current-with-dot {
+.app-current-with-dot {
   $dot-size: 0.5rem;
 
   --dot-spacing: #{govuk-spacing(2)};
-
   margin-left: calc($dot-size + var(--dot-spacing));
 
   .govuk-link {
@@ -13,13 +11,10 @@
     align-items: center;
   }
 
-  [aria-current] {
-    font-weight: bold;
-  }
-
   [aria-current='page'] {
     display: inline-flex;
     align-items: baseline;
+    font-weight: bold;
 
     &::before {
       content: '';
@@ -45,13 +40,6 @@
   }
 }
 
-nav > .app-current-with-dot {
-  & > li {
-    margin-bottom: govuk-spacing(3);
-    padding-left: govuk-spacing(2);
-  }
-
-  & > :has([aria-current]) {
-    border-left: 2px solid govuk-colour('blue', $variant: 'tint-25');
-  }
+.app-current-with-indicator {
+  border-left: 2px solid govuk-colour('blue', $variant: 'tint-25');
 }

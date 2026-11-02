@@ -35,6 +35,7 @@
                       {{ appLinkList({
                         pages: [overviewLink].concat(page.data.children),
                         renderedPageUrl: params.renderedPageUrl,
+                        isNested: true,
                         classes: 'app-mobile-navigation-section__subnav',
                         itemClasses: 'app-mobile-navigation-section__item',
                         linkClasses: 'govuk-service-navigation__link'
