@@ -46,6 +46,24 @@
   }
 }
 
+.app-section-highlight--remember {
+  padding: 0 govuk-spacing(4);
+  padding-bottom: 0;
+
+  img {
+    width: auto;
+    height: 185px;
+  }
+}
+
+.app-section-highlight--remember .app-grid__cell {
+  justify-self: center;
+
+  @include govuk-media-query($from: desktop) {
+    justify-self: end;
+  }
+}
+
 // Dark magenta section highlight likely to be deleted as it's just framing an
 // image, and the image should have it's own background
 .app-section-highlight--dark-magenta {
