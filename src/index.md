@@ -34,6 +34,7 @@ Help users find, understand and trust the GOV.UK brand. Meet their needs across 
 {% if site.flags.illustrationGuidelinesEnabled %}
 {% linkCard {titleContainer: 'h3', title: 'Illustration', description: 'Principles and guides for creating GOV.UK branded illustrations.', icon: './illustration.svg', iconBackgroundColour: '#CA3535', href: ('/illustration/' | url) } %}
 {% endif %}
+{% linkCard {titleContainer: 'h3', title: 'Icons', description: 'Principles and guides for creating icons across all channels.', icon: './icons.svg', iconBackgroundColour: '#54319F', href: ('/icons/' | url) } %}
 {% linkCard {titleContainer: 'h3', title: 'Brand in use', description: 'One brand. Many places.', icon: './brand-in-use.svg', iconBackgroundColour: '#1d70b8', href: ('/brand-in-use/' | url) } %}
 {% endgrid %}
 
