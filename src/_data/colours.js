@@ -10,7 +10,17 @@ export default function () {
       cmyk: [84, 39, 0, 28],
       pantone: '7461 C',
       label: 'Primary blue',
-      uses: ['app', 'chart', 'map', 'print', 'social', 'web', 'illustrations']
+      uses: [
+        'app',
+        'chart',
+        'map',
+        'print',
+        'social',
+        'web',
+        'illustrations',
+        'icons-light',
+        'icons-dark'
+      ]
     },
     {
       group: 'blue',
@@ -52,7 +62,7 @@ export default function () {
       group: 'blue',
       hex: '#16548A',
       label: 'Blue shade 25%',
-      uses: ['app', 'chart', 'map', 'social', 'web']
+      uses: ['app', 'chart', 'map', 'social', 'web', 'icons-light']
     },
     {
       group: 'blue',
@@ -66,13 +76,20 @@ export default function () {
       group: 'blue',
       hex: '#11E0F1',
       label: 'Accent blue',
-      uses: ['app', 'map', 'social', 'illustrations']
+      uses: [
+        'app',
+        'map',
+        'social',
+        'illustrations',
+        'icons-light',
+        'icons-dark'
+      ]
     },
     {
       group: 'blue',
       hex: '#37A3FF',
       label: 'Dark mode primary blue',
-      uses: ['app']
+      uses: ['app', 'icons-dark']
     },
     {
       group: 'blue',
