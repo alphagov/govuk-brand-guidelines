@@ -21,7 +21,8 @@
 }
 
 .app-section-highlight--light-blue,
-.app-section-highlight--light-grey {
+.app-section-highlight--light-grey,
+.app-section-highlight--dark-mode-primary-blue {
   color: govuk-colour('black');
 }
 
@@ -31,6 +32,23 @@
 
 .app-section-highlight--light-grey {
   background-color: govuk-colour('black', $variant: 'tint-95');
+}
+
+.app-section-highlight--primary-blue {
+  background-color: govuk-colour('blue');
+}
+
+.app-section-highlight--dark-mode-primary-blue {
+  background-color: #37a3ff; // is this exposed by govuk-colour?
+}
+
+.app-section-highlight--shade-blue {
+  background-color: govuk-colour('blue', $variant: 'shade-25');
+}
+
+.app-section-highlight--accent-blue {
+  color: govuk-colour('blue', $variant: 'shade-25');
+  background-color: #11e0f1; // is this exposed by govuk-colour?
 }
 
 // Modifier for instances where we want to show one of our logos 'in situ' against
@@ -44,6 +62,17 @@
     width: 366px;
     max-width: 100%;
   }
+}
+
+// Modifier for ...
+.app-section-highlight--colour {
+  display: flex;
+  margin: 0;
+  padding: govuk-spacing(4);
+  border-radius: 0;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 // Dark magenta section highlight likely to be deleted as it's just framing an
