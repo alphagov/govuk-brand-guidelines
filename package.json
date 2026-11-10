@@ -41,7 +41,7 @@
     "glob": "^14.0.3",
     "globals": "^17.12.0",
     "govuk-frontend": "^6.5.1",
-    "html-validate": "^11.16.2",
+    "html-validate": "^11.17.0",
     "husky": "^9.1.7",
     "linkinator": "^8.1.0",
     "lint-staged": "^17.6.0",
