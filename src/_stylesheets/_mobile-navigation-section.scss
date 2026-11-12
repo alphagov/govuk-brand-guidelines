@@ -7,6 +7,12 @@
 // so adding as a private variable for future reference
 $_govuk-service-navigation-font-size: 19px;
 
+.govuk-service-navigation {
+  @include govuk-media-query($from: tablet) {
+    display: none;
+  }
+}
+
 // The Service Navigation container has a flex column layout
 // aligning items at the start.
 // To make sure the toggles of the mobile navigation take
@@ -196,10 +202,31 @@ $subnav-padding-left: $app-chevron-width + $app-chevron-margin-left +
 
 .app-current-with-dot.app-mobile-navigation-section__subnav {
   --dot-spacing: 11.5px;
+  margin-left: 0;
 
   ul {
     --dot-spacing: 10px;
   }
+}
+
+.app-mobile-navigation-section__service-navigation-item:has(
+    [aria-current='page']
+  )::before {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: -($govuk-gutter-half);
+  width: 4px;
+  height: calc(100% - 10px);
+  background-color: govuk-colour('blue', $variant: 'shade-10');
+}
+
+.govuk-service-navigation__item:not(
+  .app-mobile-navigation-section__service-navigation-item
+) {
+  margin-left: 0;
 }
 
 // Add padding to mobile menu items that are not drop downs,
