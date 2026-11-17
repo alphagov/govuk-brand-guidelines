@@ -5,12 +5,29 @@
 export default function () {
   return [
     {
+      group: 'neutral',
+      hex: '#FFFFFF',
+      label: 'White',
+      uses: ['ol', 'ol-web', 'ol-print', 'ol-bg-dark']
+    },
+    {
       group: 'blue',
       hex: '#1D70B8',
       cmyk: [84, 39, 0, 28],
       pantone: '7461 C',
       label: 'Primary blue',
-      uses: ['app', 'chart', 'map', 'print', 'social', 'web', 'illustrations']
+      uses: [
+        'app',
+        'chart',
+        'map',
+        'print',
+        'social',
+        'web',
+        'illustrations',
+        'ol',
+        'ol-web',
+        'ol-bg-light'
+      ]
     },
     {
       group: 'blue',
@@ -192,7 +209,16 @@ export default function () {
       cmyk: [100, 0, 12, 0],
       pantone: '3255 C',
       label: 'Accent teal',
-      uses: ['app', 'map', 'print', 'social', 'web', 'illustrations']
+      uses: [
+        'app',
+        'map',
+        'print',
+        'social',
+        'web',
+        'illustrations',
+        'ol',
+        'ol-bg-dark'
+      ]
     },
     {
       group: 'purple',
@@ -505,7 +531,7 @@ export default function () {
       cmyk: [8, 0, 0, 95],
       pantone: 'Black 3 C',
       label: 'Black',
-      uses: ['app', 'chart', 'map', 'social', 'web']
+      uses: ['app', 'chart', 'map', 'social', 'web', 'ol-print', 'ol-bg-light']
     },
     {
       group: 'neutral',
