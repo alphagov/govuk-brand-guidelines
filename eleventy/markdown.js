@@ -1,6 +1,7 @@
 import markdownIt from 'markdown-it'
 import markdownItGovuk from 'markdown-it-govuk'
 import markdownItAnchor from 'markdown-it-anchor'
+import markdownItAttrs from 'markdown-it-attrs'
 
 /**
  *  @param {import("@11ty/eleventy/UserConfig")} eleventyConfig
@@ -15,6 +16,11 @@ export function setupMarkdownCompilation(eleventyConfig) {
       headingsStartWith: 'xl'
     })
     .use(markdownItAnchor)
+    .use(markdownItAttrs, {
+      leftDelimiter: '{',
+      rightDelimiter: '}',
+      allowedAttributes: ['id', 'class', /^data.*$/]
+    })
 
   /**
    * Process a string as Markdown, treating it as a block of content (i.e. it will
