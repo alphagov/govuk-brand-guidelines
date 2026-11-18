@@ -1,0 +1,24 @@
+@use 'govuk/base' as *;
+
+.app-image-with-background {
+  display: grid;
+  width: 100%;
+  place-content: center;
+
+  @include govuk-media-query($from: tablet) {
+    padding: govuk-spacing(4);
+
+    img {
+      width: 100%;
+      max-width: auto;
+    }
+  }
+
+  p {
+    display: contents;
+  }
+
+  & ~ & {
+    margin-bottom: govuk-spacing(4);
+  }
+}
