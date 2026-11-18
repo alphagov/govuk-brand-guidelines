@@ -22,12 +22,14 @@
 @use 'template';
 
 // App components
+@use 'colors';
 @use 'aria-current';
 @use 'border';
 @use 'app-breadcrumbs';
 @use 'callout';
 @use 'figure';
 @use 'grid';
+@use 'image-with-background';
 @use 'inform-inspire';
 @use 'inline-copy';
 @use 'link-card';
