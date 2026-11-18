@@ -53,8 +53,7 @@ The wordmark is our longform identifier, used as a lock-up alongside the GOV.UK 
 
 GOV.UK One Login is an ingredient that exists within the GOV.UK master brand. It is not standalone and must always be presented in conjunction with the primary GOV.UK identity. This ensures consistency, trust, and clarity for users interacting with government services.
 
-1. Master brand: GOV.UK
-2. Ingredient brand: GOV.UK One Login
+![The visual relationship between the One Login brand and the GOV.UK master brand, represented by the GOV.UK logo above the One Login logo, with a number 1 next to the GOV.UK logo and a number 2 next to the One Login logo](./ingredients.png)
 
 ## Colour
 
@@ -228,70 +227,70 @@ Do not use the One Login identity in isolation. It must always appear as alongsi
 Do not alter colour balance within the symbol
 {% endgridCell %}
 {% gridCell { classes: 'app-grid__cell--image-full-width' } %}
-![TODO](./incorrect-symbol-colour.svg)
+![The symbol in yellow and black against a light blue background with a red ‘X’ in the top right corner.](./incorrect-symbol-colour.svg)
 {% endgridCell%}
 
 {% gridCell { classes: 'app-border app-border--top' } %}
 Do not distort, stretch or skew the symbol
 {% endgridCell %}
 {% gridCell { classes: 'app-grid__cell--image-full-width' } %}
-![TODO](./incorrect-symbol-distort.svg)
+![The ‘O’ and ‘L’ elements have been separated and stretched and are no longer combined to form the recognisable head-and-shoulders shape with a red ‘X’ in the top right corner.](./incorrect-symbol-distort.svg)
 {% endgridCell%}
 
 {% gridCell { classes: 'app-border app-border--top' } %}
 Do not apply drop shadows or effects to the symbol
 {% endgridCell %}
 {% gridCell { classes: 'app-grid__cell--image-full-width' } %}
-![TODO](./incorrect-symbol-effects.svg)
+![The ‘O’ and ‘L’ elements are a blue and orange gradient colour with a red ‘X’ in the top right corner.](./incorrect-symbol-effects.svg)
 {% endgridCell%}
 
 {% gridCell { classes: 'app-border app-border--top' } %}
 Do not use the symbol on overly busy or low-contrast backgrounds
 {% endgridCell %}
 {% gridCell { classes: 'app-grid__cell--image-full-width' } %}
-![TODO](./incorrect-symbol-bg.svg)
+![The symbol is placed over a busy, patterned background, reducing its clarity and legibility with a red ‘X’ in the top right corner.](./incorrect-symbol-bg.svg)
 {% endgridCell%}
 
 {% gridCell { classes: 'app-border app-border--top' } %}
 Do not flip, mirror, or rotate the symbol
 {% endgridCell %}
 {% gridCell { classes: 'app-grid__cell--image-full-width' } %}
-![TODO](./incorrect-symbol-flip.svg)
+![The proportions and alignment of the ‘O’ and ‘L’ elements have been rotated, changing the appearance of the head-and-shoulders shape.](./incorrect-symbol-flip.svg)
 {% endgridCell%}
 
 {% gridCell { classes: 'app-border app-border--top' } %}
 Do not alter colour balance within the wordmark
 {% endgridCell %}
 {% gridCell { classes: 'app-grid__cell--image-full-width' } %}
-![TODO](./incorrect-wordmark-colour.svg)
+![The wordmark is on an a lilac background that do not follow the approved GOV.UK One Login colour palette with a red ‘X’ in the corner.](./incorrect-wordmark-colour.svg)
 {% endgridCell%}
 
 {% gridCell { classes: 'app-border app-border--top' } %}
 Do not distort, stretch or skew the wordmark
 {% endgridCell %}
 {% gridCell { classes: 'app-grid__cell--image-full-width' } %}
-![TODO](./incorrect-wordmark-distort.svg)
+![The wordmark has been stretched with a red ‘X’ in the top right corner.](./incorrect-wordmark-distort.svg)
 {% endgridCell%}
 
 {% gridCell { classes: 'app-border app-border--top' } %}
 Do not apply drop shadows or effects to the wordmark
 {% endgridCell %}
 {% gridCell { classes: 'app-grid__cell--image-full-width' } %}
-![TODO](./incorrect-wordmark-effects.svg)
+![The wordmark is shown using a gradient of blue, purple and pink colours instead of the approved GOV.UK One Login colour palette with a red ‘X’ in the top right corner.](./incorrect-wordmark-effects.svg)
 {% endgridCell%}
 
 {% gridCell { classes: 'app-border app-border--top' } %}
 Do not use the wordmark on overly busy or low-contrast backgrounds
 {% endgridCell %}
 {% gridCell { classes: 'app-grid__cell--image-full-width' } %}
-![TODO](./incorrect-wordmark-bg.svg)
+![The wordmark is placed over a busy, patterned background, reducing its clarity and legibility with a red ‘X’ in the top right corner.](./incorrect-wordmark-bg.svg)
 {% endgridCell%}
 
 {% gridCell { classes: 'app-border app-border--top' } %}
 Do not flip, mirror, or rotate the wordmark
 {% endgridCell %}
 {% gridCell { classes: 'app-grid__cell--image-full-width' } %}
-![TODO](./incorrect-wordmark-flip.svg)
+![The wordmark has been rotated, changing the appearance with a red ‘X’ in the top right corner.](./incorrect-wordmark-flip.svg)
 {% endgridCell%}
 
 {% endgrid %}
