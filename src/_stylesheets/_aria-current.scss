@@ -1,20 +1,22 @@
 @use 'govuk/base' as *;
 
-// Style aria-current lists
 .app-current-with-dot {
-  --dot-spacing: #{govuk-spacing(2)};
+  $dot-size: 0.5rem;
 
-  [aria-current] {
-    font-weight: bold;
+  --dot-spacing: #{govuk-spacing(2)};
+  margin-left: calc($dot-size + var(--dot-spacing));
+
+  .govuk-link {
+    display: inline-flex;
+    align-items: center;
   }
 
   [aria-current='page'] {
     display: inline-flex;
     align-items: baseline;
+    font-weight: bold;
 
     &::before {
-      $dot-size: 0.5rem;
-
       content: '';
       display: block;
       width: $dot-size;
@@ -36,4 +38,8 @@
       }
     }
   }
+}
+
+.app-current-with-indicator {
+  border-left: 2px solid govuk-colour('blue', $variant: 'tint-25');
 }
