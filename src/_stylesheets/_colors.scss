@@ -1,0 +1,21 @@
+@use 'govuk/base' as *;
+
+.app-bg-blue-tint-25 {
+  background-color: govuk-colour('blue', $variant: 'tint-25');
+}
+
+.app-bg-blue-tint-50 {
+  background-color: govuk-colour('blue', $variant: 'tint-50');
+}
+
+.app-bg-black-tint-25 {
+  background-color: govuk-colour('black', $variant: 'tint-25');
+}
+
+.app-bg-black-tint-50 {
+  background-color: govuk-colour('black', $variant: 'tint-50');
+}
+
+.app-bg-black-tint-95 {
+  background-color: govuk-colour('black', $variant: 'tint-95');
+}

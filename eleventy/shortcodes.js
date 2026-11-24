@@ -2,6 +2,7 @@ import { callout } from './shortcodes/callout.js'
 import { figure } from './shortcodes/figure.js'
 import { grid } from './shortcodes/grid.js'
 import { gridCell } from './shortcodes/grid-cell.js'
+import { imageWithBG } from './shortcodes/image-with-bg.js'
 import { informInspire } from './shortcodes/inform-inspire.js'
 import { sectionHighlight } from './shortcodes/section-highlight.js'
 import { swatch } from './shortcodes/swatch.js'
@@ -39,6 +40,7 @@ export function setupShortcodes(eleventyConfig) {
   eleventyConfig.addPairedShortcode('figure', figure)
   eleventyConfig.addPairedShortcode('grid', grid)
   eleventyConfig.addPairedShortcode('gridCell', gridCell)
+  eleventyConfig.addPairedShortcode('imageWithBG', imageWithBG)
   eleventyConfig.addPairedShortcode('informInspire', informInspire)
   eleventyConfig.addPairedShortcode('sectionHighlight', sectionHighlight)
   eleventyConfig.addPairedShortcode('testExample', testExample)
