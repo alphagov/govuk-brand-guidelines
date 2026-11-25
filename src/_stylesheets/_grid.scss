@@ -67,6 +67,10 @@
   --app-grid-gap: 10px;
 }
 
+.app-grid--auto-rows {
+  grid-auto-rows: 1fr;
+}
+
 .app-grid__cell {
   @include responsive-custom-property(--app-grid-cell-span);
 
@@ -86,4 +90,8 @@
 
 .app-grid__cell--image-full-width img {
   width: 100%;
+}
+
+.app-grid-cell--reduced-body-margin p {
+  margin: govuk-spacing(2) 0;
 }
