@@ -1,6 +1,6 @@
 ---
-order: 3
-title: Maps
+order: 5
+title: Maps overview
 ---
 
 The [Colour: Maps](/colour/maps/) page shows the map palette and how to use colour combinations in maps.
@@ -27,13 +27,21 @@ Subtitles should include the:
 - geographic coverage
 - time period
 
+![Example statistical graphic titled “Public electric vehicle charging devices increased in all regions”, with the subtitle “UK Electric vehicle charging device statistics, 2025”. Annotations explain using concise, front-loaded titles in active sentence case and subtitles that state the statistical measure, geographic coverage and time period.](./electric-vehicle-map.png)
+
 ### Labels
 
 If showing administrative boundaries, annotate them directly on the map or identify the boundary in the legend.
 
 If only showing one or two features, label them directly on the map. This removes the need for a legend and free up space.
 
-### Legend
+![Map showing London highlighted in dark blue, surrounded by Berkshire, Surrey, Kent, Hampshire, West Sussex and East Sussex, with the Isle of Wight shown to the south.](./map-south.png)
+
+{% callout %}
+Example map of south-east England with London highlighted
+{% endcallout %}
+
+### Legend and wayfinders
 
 You can create a legend if it helps help make the map clearer and reduce clutter.
 
@@ -44,6 +52,12 @@ Place the legend in the top left corner, where people typically look first, and 
 Map features are the elements of a map that provide geographic context for the main data you’re showing. From bodies of water, terrain or boundaries, they help users understand where things are and how they relate to each other.
 
 Keep your map simple. Remove any features that are not essential to the map’s message, like towns, roads, rivers, railways, pipelines or regional and country labels. If they do not add to the story or provide context to a user’s experience, feel free to leave them out.
+
+![Map of England and Wales showing National Parks highlighted in dark green, with England, Wales and “National Park” labelled.](./map-wales-england.png)
+
+{% callout %}
+Example map national parks in England and Wales within the context of nearby rivers
+{% endcallout %}
 
 ### Source
 
@@ -56,6 +70,30 @@ It is best practice to provide source information in the following format:
 ## Map considerations
 
 A well-designed map should consider a few things.
+
+![Map of England and Wales showing areas categorised as no data, minor, moderate or major. Most of England is minor or moderate, with smaller clusters of major areas shown in dark purple. Wales is mostly shown as having no data.](./map-england.png)
+
+{% callout %}
+A choropleth map of England using illustrative data
+{% endcallout %}
+
+### Geographical names
+
+Geographical names are essentially labels which distinguish one part of the earth’s surface from another, and as such they must be considered with great care.
+
+They form a uniquely important part of any map or chart because they are written words, it is typically the names which are the most meaningful information for the user. It is the names which inform the user of the location which the map portrays.
+
+Names can vary based on a variety of factors:
+
+- from one location to another
+- changes through time, for example Salisbury to Harare (Zimbabwe)
+- change of political power, such as Kishinev (Soviet Union) to Chişinău (Moldova)
+- orthography, for example Erigavo to Ceerigaabo (Somalia)
+- contexts of language and politics
+
+Maps on GOV.UK must use geographical names recognised by the [Permanent Committee on Geographical Names (PCGN)](https://www.gov.uk/government/collections/the-permanent-committee-on-geographical-names-geographical-names-guidance) and [Ordnance Survey](https://www.ordnancesurvey.co.uk/).
+
+For information on specific locations (UK and abroad), please review [PCGN guidance](https://www.gov.uk/government/collections/the-permanent-committee-on-geographical-names-geographical-names-guidance) and [Ordnance Survey naming policy](https://www.ordnancesurvey.co.uk/governance/policies/geographical-names) for the proper writing of geographical names.
 
 ### Hierarchy
 
