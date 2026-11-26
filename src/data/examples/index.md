@@ -1,7 +1,6 @@
 ---
-order: 4
-title: Examples
-sitemapTitle: Data examples
+order: 6
+title: Data examples
 ---
 
 These images show examples of GOV.UK-branded charts and visualisations.

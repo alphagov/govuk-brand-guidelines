@@ -5,37 +5,33 @@ landing: true
 lead: Principles for creating GOV.UK-branded charts and visualisations.
 ---
 
+## What is data visualisation?
+
 Data visualisation is the graphic representation of data. We use visual elements, such as lines, shapes and colours, to convey information to users.
 
 Visualising data can help communicate information that may otherwise be lost due to complexity.
 
 Showing these details in a clear and easy to understand way allows users to understand information quickly and confidently. This helps inform users and equip them to make relevant decisions.
 
-## Principles
+## Why use data visualisation?
 
-When creating visualisations for GOV.UK, we follow these principles.
+A picture is worth a thousand words. Data visualisation help users absorb complex information almost instantly. Enabling greater clarity for the user to make better decisions.  By grouping data visually, presenting sources transparently and using elements like colour and shape, patterns become clear that would otherwise stay hidden in raw data.
 
-### 1. Clarity
+We visualise data to:
 
-By understanding user needs, we provide only the relevant information and reduce unnecessary complexity. We use a visual hierarchy, consistent labelling and align with the core brand to maintain clarity.
+- present complex information simply
+- improve engagement
+- make data easier to understand
+- communicate numbers in a non-technical way
+- give an overview or summary of a dataset
+- communicate memorable or important stories in a dataset
+- reveal insight that would otherwise be hidden
 
-### 2. Accessibility
+Data visualisation is a very useful way to communicate a message to users.
 
-We're committed to providing everyone access to the same content. We avoid using colour alone to convey information, use appropriate text contrast ratios and provide alternative versions of the same data.
+But, if not done well it can cause reputational damage and potentially a loss of public trust.
 
-### 3. Accuracy
-
-We take great care to ensure visualisations are true and accurate representations of the underlying data. This includes showing data along consistent intervals with a baseline that starts at zero where appropriate. We aim to cite sources and provide supporting information.
-
-### 4. Consistency
-
-A consistent approach to data visualisation enhances clarity, accessibility, and accuracy. Consistency allows users to gain familiarity and improve their understanding.
-
-### 5. Engagement
-
-Our principles and core brand allow us to create visualisations that are relevant, engaging and memorable. So users are more informed when they need it most.
-
-## Convey a clear narrative to users
+## Conveying a clear narrative to users
 
 When creating visualisations for GOV.UK, we ensure that we keep a few things in mind.
 
@@ -43,7 +39,7 @@ When creating visualisations for GOV.UK, we ensure that we keep a few things in 
 
 Before starting, take the time to clearly define the purpose of the visualisation.
 
-Understanding user needs and their level of expertise on the subject will guide design decisions. It will also help ensure the story you're telling with data is both meaningful and effective with users.
+Understanding user needs and their level of expertise on the subject will guide design decisions. It will also help ensure the story you’re telling with data is both meaningful and effective with users.
 
 ### 2. We know the story
 
@@ -74,3 +70,15 @@ The table below, originally produced by ONS Analysis Function, provides examples
 | Spatial       | Geographical clusters of notifiable diseases   | Map                                               |
 | Part-to-whole | Total economic production by industrial sector | Pie chart, donut chart, tree map, bubble chart    |
 | Flow          | Trade between countries                        | Sankey graph                                      |
+
+## How to use the GOV.UK Brand
+
+### If your product is on a GOV.UK domain or uses the GOV.UK brand
+
+You must use GOV.UK styles for all data visualisations and maps. Using established designs, styles and patterns makes sure your service is accessible and consistent with the rest of GOV.UK.
+
+If you are creating visualisations manually, outside of a coded environment, and do not have access to GOV.UK brand resources, follow the Government Analysis Function guidance on data visualisation instead.
+
+### If your product is not on a GOV.UK domain or using the GOV.UK brand
+
+Do not use this guidance if your product does not use a GOV.UK domain or the GOV.UK brand. Instead, you should follow your organisation’s guidance on brand or the [Government Analysis Function](https://analysisfunction.civilservice.gov.uk/area_of_work/data-visualisation/) guidance.
