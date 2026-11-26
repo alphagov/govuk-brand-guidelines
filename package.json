@@ -20,6 +20,8 @@
     "lint:js:cli": "eslint --cache --cache-location .cache/eslint --cache-strategy content --color",
     "lint:prettier": "npm run lint:prettier:cli -- \"**/*.{cjs,js,json,md,mjs,scss,yaml,yml}\"",
     "lint:prettier:cli": "prettier --cache --cache-location .cache/prettier --cache-strategy content --check",
+    "test:visual": "playwright test",
+    "test:visual:update": "playwright test --update-snapshots",
     "prepare": "husky",
     "check-links": "linkinator _site --recurse"
   },
