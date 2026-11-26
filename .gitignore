@@ -13,3 +13,7 @@ _site/
 *.log
 *.tsbuildinfo
 *.zip
+
+# Playwright VRTs
+playwright-report/
+test-results/
